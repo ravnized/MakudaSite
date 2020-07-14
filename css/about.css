@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: Gelion-Black;
+    src: url(../media/fonts/Gelion-Black.ttf);
+}
+@font-face {
+    font-family: Gelion-Regular;
+    src: url(../media/fonts/Gelion-Regular.ttf);
+}
+
+
+
+
+.rounded{
+    -webkit-box-shadow: 6px 4px 0 0 #24252b;
+    box-shadow: 6px 4px 0 0 #24252b;
+    overflow: hidden;
+}
+
+
+#navbar{
+    background-color: #1d1d1b;
+}
+
+.hero {
+    background-color: black;
+}
+
+.blackground{
+    background-color: black;
+}
+
+.colonnaVertical{
+    height: 50vh;
+}
+
+
+h1{
+    font-family: Gelion-Black, sans-serif;
+    color: white;
+}
+
+p{
+    font-family: Gelion-Regular, sans-serif;
+    color: grey;
+    font-size: x-large;
+}
+
+h3{
+    font-family: Gelion-Black, sans-serif;
+    color: grey;
+}
+
+
+
+.is-size-05{
+    font-size: 6rem !important;
+}
+
+.min-height{
+    min-height: 100vh;
+}

@@ -1,0 +1,365 @@
+@font-face {
+    font-family: Gelion-Black;
+    src: url(../media/fonts/Gelion-Black.ttf);
+}
+@font-face {
+    font-family: Gelion-Regular;
+    src: url(../media/fonts/Gelion-Regular.ttf);
+}
+
+
+
+#weAre{
+    text-align: center;
+    letter-spacing: 0.8em;
+}
+
+.makuda-logo{
+    width: 7.8em;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .makuda-logo{
+
+    }
+}
+
+#textOverlay{
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.makuda-spacing{
+    letter-spacing: 0.3em;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+
+.progress::-webkit-progress-value {
+    transition: width 0.5s ease;
+}
+
+.gelion-text{
+    font-family: Gelion-Black, sans-serif;
+}
+
+h2{
+    font-family: Gelion-Black, sans-serif;
+}
+
+.progress-bar {
+    /*transition: width 250ms ease-in-out;*/
+    transition: width 1s ease-in-out;
+}
+
+
+.char{
+    animation: an 1s ease-out 1 both;
+}
+.card{
+    background-color: black;
+}
+
+.colorContainer {
+    background-color: #1d1d1b;
+    color: whitesmoke;
+
+
+}
+.h2OverProgress{
+    margin-bottom: 10px;
+}
+
+.pUnderProgress{
+    margin-top: -15px;
+}
+
+p{
+    font-size: small;
+}
+
+
+#colonnaSpeciale{
+    height: 660px;
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+.progress.is-makuda::-webkit-progress-value {
+    background-color:#f6b600 ;
+}
+
+.progress.is-makuda::-moz-progress-bar {
+    background-color: #f6b600;
+}
+
+.progress.is-makuda::-ms-fill {
+    background-color: #f6b600;
+}
+
+.progress.is-makuda:indeterminate {
+    background-image: linear-gradient(to right, #f6b600 30%, #ededed 30%);
+}
+.progress{
+    border-radius: 0;
+}
+progress{
+    border-radius: 0;
+}
+
+.progressbar {
+    display: inline-block;
+    width: 100px;
+    margin: 25px;
+}
+.circle {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.circle:after {
+    width: 120px;
+    height: 120px;
+    content: "";
+    border-radius: 50%;
+    display: block;
+}
+
+.circle canvas {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.circle div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -86px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 31px;
+}
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+
+.circle-container{
+    color: whitesmoke;
+}
+
+.circle-container > h2{
+    text-align: center;
+}
+
+.margin-topCard{
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+.margin-left-right{
+    margin-right: 2vh;
+    margin-left: 2vh;
+    margin-bottom: 3vh;
+}
+
+.titleUnderCircle{
+    text-align: center;
+}
+
+
+.makuda-home-link--contacts.makuda-home-link-wrap {
+    left: calc(66.66% + 21px);
+    text-align: left;
+    top: 200%;
+}
+
+.makuda-home-link span:last-child {
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.makuda-home-link span:first-child {
+    display: block;
+    color: #5C5C60;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body .makuda-home-link span:first-child {
+    margin: 0px 0 3px 0;
+}
+body .makuda-home-link-works span:first-child {
+    margin: -23px 0 3px 0;
+}
+.makuda-home-link span:last-child {
+    font-size: 50px;
+    line-height: 55px;
+    margin: 0 0 28px 0;
+}
+
+a {
+    position: relative;
+}
+
+a,a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.makuda-home-link-wrap {
+    position: fixed;
+    top: 100%;
+    left: calc(100vw - 182px);
+    width: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    transform-origin: 0% 0%;
+    transform: rotate(-90deg) translate(0, 0);
+    z-index: 10;
+    cursor: default;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.makuda-home-link-wrap:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    left: 0;
+    top: 21px;
+}
+
+.makuda-home-link--works.makuda-home-link-wrap {
+    left: calc(15% - 21px);
+    text-align: center;
+    padding: 0;
+    top: 0;
+}
+
+.makuda-home-link--works.makuda-home-link-wrap .makuda-home-link {
+    margin: 0 auto;
+}
+
+.makuda-home-link--works span:first-child {
+    text-align: left;
+}
+
+body.is-loaded .makuda-home-link-wrap {
+    transition: transform 0.5s, z-index 0.6s;
+}
+
+.makuda-home-link {
+    cursor: pointer;
+}
+
+.makuda-home-link span {
+    display: block;
+    transition: transform 0.5s, color 0.5s;
+}
+
+.makuda-home-link--works span:first-child {
+    margin: 0 0px 3px 0 ;
+    transform: translateX(-100px);
+    color: rgba(255, 255, 255, 0);
+}
+
+.makuda-home-link--works span:last-child {
+    margin: 0;
+    color: rgba(255, 255, 255, 0);
+    transform: translateX(50px);
+}
+
+.makuda-home-link-wrap.is-loaded .makuda-home-link {
+    pointer-events: auto;
+}
+
+.makuda-home-link--works.is-loaded span:first-child {
+    color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-50px);
+}
+
+.makuda-home-link--works.is-loaded span:last-child {
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateX(0px);
+}
+
+.makuda-home-link--works.is-loaded .makuda-home-link:hover span:first-child {
+    transform: translateX(-40px);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.makuda-home-link--works.is-loaded .makuda-home-link:hover span:last-child {
+    transform: translateX(-10px);
+    color: #fff;
+}
+/*
+Contacts
+ */
+
+.makuda-home-link--contacts.makuda-home-link-wrap {
+    left: calc(80% + 21px);
+    text-align: left;
+    top: 200%;
+}
+
+.makuda-home-link--contacts span:first-child {
+    text-align: right;
+}
+.makuda-home-link--contacts span:first-child {
+    margin: 20px 0 3px 0;
+    transform: translateX(100px);
+    color: rgba(255,255,255,0);
+}
+
+.makuda-home-link--contacts span:last-child {
+    margin: 0;
+    color: rgba(255,255,255,0);
+    transform: translateX(-50px);
+}
+.makuda-home-link--contacts.is-loaded span:first-child {
+    color: rgba(255,255,255,0.6);
+    transform: translateX(50px);
+}
+
+.makuda-home-link--contacts.is-loaded span:last-child {
+    color: rgba(255,255,255,0.5);
+    transform: translateX(0px);
+}
+.makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
+    color: rgba(255,255,255,0.8);
+    transform: translateX(40px);
+}
+
+.makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:last-child {
+    transform: translateX(10px);
+    color: #fff;
+}
