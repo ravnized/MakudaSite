@@ -13,7 +13,6 @@ window.onload = function() {
 
 
     var testo = $('textOverlay');
-    var action2 = gsap.timeline();
     function initPixi() {
         app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, resizeTo: window});
         var videoSprite = new PIXI.Sprite.from(video);

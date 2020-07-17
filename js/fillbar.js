@@ -9,6 +9,7 @@ $( document ).ready(function() {
         progressArr.forEach(function(num, index) {
             setTimeout( async function() {
                 $('#progress-graphics').val(num);
+
                 await sleep(100);
                 $('#progress-photography').val(num);
                 await sleep(100);

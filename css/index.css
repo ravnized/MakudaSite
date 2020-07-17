@@ -127,11 +127,13 @@ progress{
 .progressbar {
     display: inline-block;
     width: 100px;
-    margin: 25px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .circle {
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 110px;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -142,6 +144,10 @@ progress{
     content: "";
     border-radius: 50%;
     display: block;
+}
+
+.has-text-light .strong-orange{
+
 }
 
 .circle canvas {
@@ -179,10 +185,38 @@ progress{
     margin-bottom: -12px;
 }
 
+.carousel{
+    width: 50vw;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.carousel .card{
+    margin-right: 5%;
+    margin-left: 5%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+.carousel, .carousel *{
+    outline:0 !important;
+}
+
+.carousel .card:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+
 .margin-left-right{
     margin-right: 2vh;
     margin-left: 2vh;
     margin-bottom: 3vh;
+    margin-top: -10px;
 }
 
 .titleUnderCircle{
@@ -363,3 +397,5 @@ Contacts
     transform: translateX(10px);
     color: #fff;
 }
+
+
