@@ -7,6 +7,11 @@
     src: url(../media/fonts/Gelion-Regular.ttf);
 }
 
+@font-face {
+    font-family: la-regular;
+    src: url(../media/fonts/la-regular-400.ttf);
+}
+
 
 
 #weAre{
@@ -209,6 +214,81 @@ progress{
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
+#replacement {
+    opacity: 0;
+    margin-top: 10vh;
+    transform: scale( 0);
+}
+
+
+.ashade-testimonials-item {
+    width: calc(66.66% - 40px);
+    margin: 15% 17%;
+}
+
+
+.ashade-testimonials-item__author {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+.ashade-testimonials-item__author img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 15px rgba(0,0,0,0.3);
+}
+
+
+.ashade-testimonials-item__author--name {
+    text-align: right;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    padding-top: 30px;
+}
+
+.ashade-testimonials-item__author--name h6 {
+    font-size: 30px;
+    line-height: 17px;
+}
+
+.ashade-testimonials-item__author--name span {
+    font-size: 20px;
+    line-height: 0;
+}
+
+
+
+.ashade-testimonials-item__content {
+    background: #1d1d1b;
+    margin: -30px 0 0 20px;
+    padding: 10px 20px 18px 20px;
+    color: #787777;
+}
+
+.ashade-testimonials-item__stars {
+    text-align: right;
+    margin: 0 0 2px 0;
+}
+
+.ashade-testimonials-item__stars.ashade-stars5:before {
+    content: '\f005\f005\f005\f005\f005';
+}
+
+.ashade-testimonials-item__stars:before {
+    font-family: la-regular, serif;
+    color: #5C5C60;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ashade-testimonials-item__content p{
+    font-size: 20px !important;
+}
+
+
+
 
 
 
