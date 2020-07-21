@@ -30,9 +30,10 @@
     }
 }
 
-#textOverlay{
+.textOverlay{
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
 }
+
 
 html{
     background-color: black;
@@ -96,6 +97,7 @@ p{
     height: 660px;
 }
 
+
 @keyframes an{
     from{
         opacity: 0;
@@ -106,6 +108,8 @@ p{
         transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
+
+
 
 .progress.is-makuda::-webkit-progress-value {
     background-color:#f6b600 ;
@@ -190,15 +194,14 @@ progress{
     margin-bottom: -12px;
 }
 
-.carousel{
-    width: 50vw;
-    height: auto;
-    margin-left: 15%;
-    margin-right: 15%;
+
+#carousel1 .card{
+    margin-right: 20rem;
+    margin-left: 20rem;
+
 }
-.carousel .card{
-    margin-right: 5%;
-    margin-left: 5%;
+
+#carousel2 .card{
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -215,16 +218,19 @@ progress{
     filter: grayscale(0%);
 }
 
-#replacement {
+#replacement{
     opacity: 0;
-    margin-top: 10vh;
-    transform: scale( 0);
+    transform: scale(0,0);
 }
 
 
 .ashade-testimonials-item {
-    width: calc(66.66% - 40px);
-    margin: 15% 17%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hide{
+    display: none !important;
 }
 
 
