@@ -1,24 +1,22 @@
-
 @font-face {
     font-family: Gelion-Black;
     src: url(../media/fonts/Gelion-Black.ttf);
 }
+
 @font-face {
     font-family: Gelion-Regular;
     src: url(../media/fonts/Gelion-Regular.ttf);
 }
 
 
-
-
-.rounded{
+.rounded {
     -webkit-box-shadow: 6px 4px 0 0 #24252b;
     box-shadow: 6px 4px 0 0 #24252b;
     overflow: hidden;
 }
 
 
-#navbar{
+#navbar {
     background-color: #1d1d1b;
 }
 
@@ -26,37 +24,76 @@
     background-color: black;
 }
 
-.blackground{
+.blackground {
     background-color: black;
 }
 
-.colonnaVertical{
+.colonnaVertical {
     height: 50vh;
 }
 
 
-h1{
+h1 {
     font-family: Gelion-Black, sans-serif;
     color: white;
 }
 
-p{
+p {
     font-family: Gelion-Regular, sans-serif;
     color: grey;
     font-size: x-large;
 }
 
-h3{
+h3 {
     font-family: Gelion-Black, sans-serif;
     color: grey;
 }
 
 
-
-.is-size-05{
+.is-size-05 {
     font-size: 6rem !important;
 }
 
-.min-height{
+.min-height {
     min-height: 100vh;
+}
+
+#video-compare-container {
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 100%;
+    padding-top: 42.3%;
+    background: #333;
+}
+
+#video-compare-container > video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#video-clipper {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#video-clipper video {
+    width: 200%;
+    position: absolute;
+    height: 100%;
+    max-width: unset;
+}
+
+.has-img-background {
+    background: url("../media/img/about-me.jpg") no-repeat center right;
+    background-size: 800px;
+}
+
+strong {
+    color: white;
 }

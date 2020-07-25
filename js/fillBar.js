@@ -1,13 +1,13 @@
-
-$( document ).ready(function() {
+$(document).ready(function () {
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     var progressArr = [0, 100];
+
     function fillProgress() {
-        progressArr.forEach(function(num, index) {
-            setTimeout( async function() {
+        progressArr.forEach(function (num, index) {
+            setTimeout(async function () {
                 $('#progress-graphics').val(num);
 
                 await sleep(100);

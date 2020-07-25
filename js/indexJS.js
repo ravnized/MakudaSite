@@ -7,16 +7,16 @@ var elementHeroBody = "<div class=\"container\" id=\"containerText\">\n" +
     "            </div>"
 var varCounter = false;
 var varCounterText = false;
-window.onload = function() {
+window.onload = function () {
     var app;
-    var video =  document.createElement('video');
+    var video = document.createElement('video');
     video.loop = true;
     video.crossOrigin = 'anonymous';
     video.preload = 'auto';
     video.src = 'media/video/VideoNoText.mp4';
     video.autoload = true;
     video.muted = true;
-    video.playsinline="playsinline";
+    video.playsinline = "playsinline";
     var divVideo = document.querySelector('#divVideo');
 
     function initPixi() {
@@ -34,31 +34,31 @@ window.onload = function() {
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
 
-        animate(displacementFilter , displacementSprite);
+        animate(displacementFilter, displacementSprite);
 
     }
 
 
-    function animate(displacementFilter , displacementSprite) {
+    function animate(displacementFilter, displacementSprite) {
         var controller = new ScrollMagic.Controller();
 
         var action = gsap.timeline()
-            .to( displacementSprite.scale, 10, { x: 1  , y: 1, ease: Power0.easeInOut})
-            .to( displacementFilter.scale, 10, { x: "+="+900  , y: "+="+900, ease: Power0.easeInOut},'-=10')
+            .to(displacementSprite.scale, 10, {x: 1, y: 1, ease: Power0.easeInOut})
+            .to(displacementFilter.scale, 10, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, '-=10')
             .to('.hero-video', 10, {css: {opacity: 0}, duration: 5})
-            .to('.hero-body',10 ,{css: {opacity: 0}, autoAlpha: 0},'-=5')
+            .to('.hero-body', 10, {css: {opacity: 0}, autoAlpha: 0}, '-=5')
 
             .add(function () {
-                $('#replacement').css("margin-top","0");
+                $('#replacement').css("margin-top", "0");
             })
 
             .add(function () {
-                $('#replacement').css("margin-top","10vh");
+                $('#replacement').css("margin-top", "10vh");
             })
 
 
             .add(function () {
-                if (varCounter === true){
+                if (varCounter === true) {
                     $('.containerDaLevare').remove();
                     $('#hero-body').removeClass('hide');
                     $('#makudaElement').removeClass('hide');
@@ -67,8 +67,8 @@ window.onload = function() {
                     varCounter = false;
                 }
             })
-            .add( function() {
-                if (varCounter === false){
+            .add(function () {
+                if (varCounter === false) {
                     $('#containerText').remove();
                     $('#hero-body').addClass('hide');
                     $('#makudaElement').addClass('hide');
@@ -78,9 +78,7 @@ window.onload = function() {
                 }
 
             })
-            .to('#replacement', 200,{css: {scaleX: 1, scaleY: 1,opacity: 1},ease: "back.out(4)",autoAlpha: 1})
-
-
+            .to('#replacement', 200, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "back.out(4)", autoAlpha: 1})
 
 
         var scene = new ScrollMagic.Scene({
@@ -93,19 +91,18 @@ window.onload = function() {
             .addTo(controller)
 
 
-
     }
 
 
-    function animateMakudaElement(){
+    function animateMakudaElement() {
         var controller = new ScrollMagic.Controller();
         var actionFindMe = gsap.timeline()
-            .to('#findMe', 3 , {x:"+=100"})
+            .to('#findMe', 3, {x: "+=100"})
         var actionContacs = gsap.timeline()
-            .to('#myContacts', 3 , {x:"+=-100"})
+            .to('#myContacts', 3, {x: "+=-100"})
 
         var actionRightBar = gsap.timeline()
-            .to('.makuda-home-link-wrap', 3 , {css: {opacity: 0 }, duration: 10})
+            .to('.makuda-home-link-wrap', 3, {css: {opacity: 0}, duration: 10})
 
         var sceneActionRight = new ScrollMagic.Scene({
             duration: '25%',
@@ -131,18 +128,14 @@ window.onload = function() {
             .addTo(controller)
 
 
-
     }
 
-    function animateMakudaElementLeft(){
+    function animateMakudaElementLeft() {
         var controller = new ScrollMagic.Controller();
         var actionPhoto = gsap.timeline()
-            .to('#photoPortofolio', 3 , {x:"+=100"})
+            .to('#photoPortofolio', 3, {x: "+=100"})
         var actionWorks = gsap.timeline()
-            .to('#exploreWorks', 3 , {x:"+=-100"})
-
-
-        
+            .to('#exploreWorks', 3, {x: "+=-100"})
 
 
         var sceneWorks = new ScrollMagic.Scene({
@@ -154,26 +147,23 @@ window.onload = function() {
             .on("progress", function (e) {
                 const element = document.querySelector('#exploreWorks');
 
-                function getTranslate3d (el) {
+                function getTranslate3d(el) {
                     var values = el.style.transform.split(/\w+\(|\);?/);
                     if (!values[1] || !values[1].length) {
                         return [];
                     }
                     return values[1].split(/,\s?/g);
                 }
+
                 var resultElement = getTranslate3d(element)
-                if (resultElement[0]==='0px'){
-                    $('#exploreWorks').removeAttr( 'style' );
-                    $('#findMe').removeAttr( 'style' );
-                    $('#myContacts').removeAttr( 'style' );
+                if (resultElement[0] === '0px') {
+                    $('#exploreWorks').removeAttr('style');
+                    $('#findMe').removeAttr('style');
+                    $('#myContacts').removeAttr('style');
                 }
 
 
-
             });
-
-
-
 
 
         var scenePhoto = new ScrollMagic.Scene({
@@ -182,19 +172,20 @@ window.onload = function() {
         })
             .setTween(actionPhoto)
             .addTo(controller)
-            .on("progress" ,function (e) {
+            .on("progress", function (e) {
                 const elementPhoto = document.querySelector('#photoPortofolio');
 
-                function getTranslate3d (el) {
+                function getTranslate3d(el) {
                     var values = el.style.transform.split(/\w+\(|\);?/);
                     if (!values[1] || !values[1].length) {
                         return [];
                     }
                     return values[1].split(/,\s?/g);
                 }
+
                 var resultElementPhoto = getTranslate3d(elementPhoto);
-                if (parseInt(resultElementPhoto[0],10) < 50){
-                    $('#photoPortofolio').removeAttr( 'style' );
+                if (parseInt(resultElementPhoto[0], 10) < 50) {
+                    $('#photoPortofolio').removeAttr('style');
                 }
 
             })
@@ -203,28 +194,27 @@ window.onload = function() {
     }
 
 
+    /*
+        function scrollspy(id, duration, triggerHook,classesBefore, classesAfter) {
+            $(id).addClass(classesBefore);
+            var controller = new ScrollMagic.Controller();
+            var scene = new ScrollMagic.Scene({
+                triggerElement: ''+id,
+                duration: duration,
+                triggerHook: ''+triggerHook,
 
-/*
-    function scrollspy(id, duration, triggerHook,classesBefore, classesAfter) {
-        $(id).addClass(classesBefore);
-        var controller = new ScrollMagic.Controller();
-        var scene = new ScrollMagic.Scene({
-            triggerElement: ''+id,
-            duration: duration,
-            triggerHook: ''+triggerHook,
-
-        })
-            .addIndicators()
-            .setClassToggle(id, classesAfter)
-            .addTo(controller)
-    }
-
-
-    scrollspy('#firstImage',800,'onEnter','hiddenElement','visible');
+            })
+                .addIndicators()
+                .setClassToggle(id, classesAfter)
+                .addTo(controller)
+        }
 
 
+        scrollspy('#firstImage',800,'onEnter','hiddenElement','visible');
 
- */
+
+
+     */
     initPixi();
 
 
@@ -239,6 +229,6 @@ window.onload = function() {
     divVideo.appendChild(app.view);
 
 
-
 }
+
 

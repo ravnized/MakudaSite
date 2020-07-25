@@ -554,7 +554,7 @@
                     var i = this,
                         t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : ".slider",
                         n = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : {},
-                        s = new Array,
+                        s = [],
                         e = Object(a.c)(t) ? document.querySelectorAll(t) : Array.isArray(t) ? t : [t];
                     return [].forEach.call(e, function(t) {
                         if (void 0 === t[i.constructor.name]) {

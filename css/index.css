@@ -2,6 +2,7 @@
     font-family: Gelion-Black;
     src: url(../media/fonts/Gelion-Black.ttf);
 }
+
 @font-face {
     font-family: Gelion-Regular;
     src: url(../media/fonts/Gelion-Regular.ttf);
@@ -13,38 +14,37 @@
 }
 
 
-
-#weAre{
+#weAre {
     text-align: center;
     letter-spacing: 0.8em;
 }
 
-.makuda-logo{
+.makuda-logo {
     width: 7.8em;
     height: auto;
 }
 
 @media only screen and (max-width: 600px) {
-    .makuda-logo{
+    .makuda-logo {
 
     }
 }
 
-.textOverlay{
+.textOverlay {
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
 }
 
 
-html{
+html {
     background-color: black;
 }
 
-body{
+body {
     background-color: black;
     color: whitesmoke;
 }
 
-.makuda-spacing{
+.makuda-spacing {
     letter-spacing: 0.3em;
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
 }
@@ -53,11 +53,11 @@ body{
     transition: width 0.5s ease;
 }
 
-.gelion-text{
+.gelion-text {
     font-family: Gelion-Black, sans-serif;
 }
 
-h2{
+h2 {
     font-family: Gelion-Black, sans-serif;
 }
 
@@ -67,10 +67,11 @@ h2{
 }
 
 
-.char{
+.char {
     animation: an 1s ease-out 1 both;
 }
-.card{
+
+.card {
     background-color: black;
 }
 
@@ -80,39 +81,39 @@ h2{
 
 
 }
-.h2OverProgress{
+
+.h2OverProgress {
     margin-bottom: 10px;
 }
 
-.pUnderProgress{
+.pUnderProgress {
     margin-top: -15px;
 }
 
-p{
+p {
     font-size: small;
 }
 
 
-#colonnaSpeciale{
+#colonnaSpeciale {
     height: 660px;
 }
 
 
-@keyframes an{
-    from{
+@keyframes an {
+    from {
         opacity: 0;
         transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
     }
-    to{
+    to {
         opacity: 1;
         transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
 
 
-
 .progress.is-makuda::-webkit-progress-value {
-    background-color:#f6b600 ;
+    background-color: #f6b600;
 }
 
 .progress.is-makuda::-moz-progress-bar {
@@ -126,10 +127,12 @@ p{
 .progress.is-makuda:indeterminate {
     background-image: linear-gradient(to right, #f6b600 30%, #ededed 30%);
 }
-.progress{
+
+.progress {
     border-radius: 0;
 }
-progress{
+
+progress {
     border-radius: 0;
 }
 
@@ -140,6 +143,7 @@ progress{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 .circle {
     width: 230px;
     height: 110px;
@@ -147,6 +151,7 @@ progress{
     position: relative;
     text-align: center;
 }
+
 .circle:after {
     width: 120px;
     height: 120px;
@@ -155,7 +160,7 @@ progress{
     display: block;
 }
 
-.has-text-light .strong-orange{
+.has-text-light .strong-orange {
 
 }
 
@@ -174,6 +179,7 @@ progress{
     line-height: 40px;
     font-size: 31px;
 }
+
 .circle strong i {
     font-style: normal;
     font-size: 0.6em;
@@ -181,46 +187,46 @@ progress{
 }
 
 
-.circle-container{
+.circle-container {
     color: whitesmoke;
 }
 
-.circle-container > h2{
+.circle-container > h2 {
     text-align: center;
 }
 
-.margin-topCard{
+.margin-topCard {
     margin-top: -12px;
     margin-bottom: -12px;
 }
 
 
-#carousel1 .card{
+#carousel1 .card {
     margin-right: 20rem;
     margin-left: 20rem;
 
 }
 
-#carousel2 .card{
+#carousel2 .card {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: all 0.5s ease;
 }
 
-.carousel, .carousel *{
-    outline:0 !important;
+.carousel, .carousel * {
+    outline: 0 !important;
 }
 
-.carousel .card:hover{
+.carousel .card:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 
-#replacement{
+#replacement {
     opacity: 0;
-    transform: scale(0,0);
+    transform: scale(0, 0);
 }
 
 
@@ -229,7 +235,7 @@ progress{
     padding-bottom: 100px;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
@@ -244,7 +250,7 @@ progress{
 .ashade-testimonials-item__author img {
     width: 100px;
     border-radius: 50%;
-    box-shadow: 2px 3px 15px rgba(0,0,0,0.3);
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -263,7 +269,6 @@ progress{
     font-size: 20px;
     line-height: 0;
 }
-
 
 
 .ashade-testimonials-item__content {
@@ -289,23 +294,19 @@ progress{
     line-height: 20px;
 }
 
-.ashade-testimonials-item__content p{
+.ashade-testimonials-item__content p {
     font-size: 20px !important;
 }
 
 
-
-
-
-
-.margin-left-right{
+.margin-left-right {
     margin-right: 2vh;
     margin-left: 2vh;
     margin-bottom: 3vh;
     margin-top: -10px;
 }
 
-.titleUnderCircle{
+.titleUnderCircle {
     text-align: center;
 }
 
@@ -334,9 +335,11 @@ progress{
 body .makuda-home-link span:first-child {
     margin: 0px 0 3px 0;
 }
+
 body .makuda-home-link-works span:first-child {
     margin: -23px 0 3px 0;
 }
+
 .makuda-home-link span:last-child {
     font-size: 50px;
     line-height: 55px;
@@ -347,7 +350,7 @@ a {
     position: relative;
 }
 
-a,a:hover {
+a, a:hover {
     text-decoration: none;
     color: #fff;
 }
@@ -407,7 +410,7 @@ body.is-loaded .makuda-home-link-wrap {
 }
 
 .makuda-home-link--works span:first-child {
-    margin: 0 0px 3px 0 ;
+    margin: 0 0px 3px 0;
     transform: translateX(-100px);
     color: rgba(255, 255, 255, 0);
 }
@@ -441,6 +444,7 @@ body.is-loaded .makuda-home-link-wrap {
     transform: translateX(-10px);
     color: #fff;
 }
+
 /*
 Contacts
  */
@@ -454,28 +458,31 @@ Contacts
 .makuda-home-link--contacts span:first-child {
     text-align: right;
 }
+
 .makuda-home-link--contacts span:first-child {
     margin: 20px 0 3px 0;
     transform: translateX(100px);
-    color: rgba(255,255,255,0);
+    color: rgba(255, 255, 255, 0);
 }
 
 .makuda-home-link--contacts span:last-child {
     margin: 0;
-    color: rgba(255,255,255,0);
+    color: rgba(255, 255, 255, 0);
     transform: translateX(-50px);
 }
+
 .makuda-home-link--contacts.is-loaded span:first-child {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     transform: translateX(50px);
 }
 
 .makuda-home-link--contacts.is-loaded span:last-child {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     transform: translateX(0px);
 }
+
 .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     transform: translateX(40px);
 }
 
