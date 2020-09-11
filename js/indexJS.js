@@ -7,7 +7,13 @@ var elementHeroBody = "<div class=\"container\" id=\"containerText\">\n" +
     "            </div>"
 var varCounter = false;
 var varCounterText = false;
+
+
+
+
+
 window.onload = function () {
+    var tl = gsap.timeline();
     var app;
     var video = document.createElement('video');
     video.loop = true;
@@ -18,15 +24,68 @@ window.onload = function () {
     video.muted = true;
     video.playsinline = "playsinline";
     var divVideo = document.querySelector('#divVideo');
+    ScrollTrigger.create({
+        trigger: "#section-animated",
+        start: "top +52px",
+        end: '+=3000',
+        markers: true,
+        pin: true,
+        scrub: 0.5,
+        animation: tl,
+        snap: {
+            snapTo: "labels", // snap to the closest label in the timeline
+            duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+            delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
+            ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
+        },
+        onToggle: self => console.log("toggled, isActive:", self.isActive),
+        onUpdate: self => {
+            console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+        }
+
+    });
+
+    /*
+    let tl = gsap.timeline({
+        // yes, we can add it to an entire timeline!
+        scrollTrigger: {
+            trigger: "#divVideo",
+            pin: true,   // pin the trigger element while active
+            start: "top top", // when the top of the trigger hits the top of the viewport
+            end: "+=3000", // end after scrolling 500px beyond the start
+            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+            snap: {
+                snapTo: "labels", // snap to the closest label in the timeline
+                duration: {min: 0.6, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+                delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+                ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
+            },
+            onUpdate: self => {
+                console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+            },
+            markers: true,
+        }
+    });
+
+     */
+
+// add animations and labels to the timeline
+
+
+
+
 
     function initPixi() {
         app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, resizeTo: window});
         var videoSprite = new PIXI.Sprite.from(video);
-        videoSprite.width = window.innerWidth;
-        videoSprite.height = window.innerHeight;
-        app.stage.addChild(videoSprite);
-        var displacementSprite = new PIXI.Sprite.from("media/img/clouds.jpg");
-        var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
+        const container = new PIXI.Container();
+        videoSprite.width = app.screen.width;
+        videoSprite.height = app.screen.height;
+
+        app.stage.addChild(container);
+        container.addChild(videoSprite)
+        displacementSprite = new PIXI.Sprite.from("media/img/clouds.jpg");
+        displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
         app.stage.addChild(displacementSprite);
         app.stage.filters = [displacementFilter];
@@ -34,27 +93,21 @@ window.onload = function () {
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
 
-        animate(displacementFilter, displacementSprite);
+        app.ticker.add((delta) => {
+            $( window ).resize(function() {
+                videoSprite.width = app.screen.width;
+                videoSprite.height = app.screen.height;
+            })
+        });
 
-    }
+        tl.addLabel('start')
 
-
-    function animate(displacementFilter, displacementSprite) {
-        var controller = new ScrollMagic.Controller();
-
-        var action = gsap.timeline()
             .to(displacementSprite.scale, 10, {x: 1, y: 1, ease: Power0.easeInOut})
             .to(displacementFilter.scale, 10, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, '-=10')
-            .to('.hero-video', 10, {css: {opacity: 0}, duration: 5})
-            .to('.hero-body', 10, {css: {opacity: 0}, autoAlpha: 0}, '-=5')
+            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5})
+            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, '-=2')
 
-            .add(function () {
-                $('#replacement').css("margin-top", "0");
-            })
 
-            .add(function () {
-                $('#replacement').css("margin-top", "10vh");
-            })
 
 
             .add(function () {
@@ -78,20 +131,20 @@ window.onload = function () {
                 }
 
             })
-            .to('#replacement', 200, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "back.out(4)", autoAlpha: 1})
-
-
-        var scene = new ScrollMagic.Scene({
-            duration: '150%',
-            triggerHook: 'onEnter',
-        })
-
-            .setPin("#sectionVideo")
-            .setTween(action)
-            .addTo(controller)
+            .to('#replacement', 2, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1})
+            .addLabel('finish')
 
 
     }
+
+
+
+
+
+
+
+
+    /*
 
 
     function animateMakudaElement() {
@@ -221,11 +274,11 @@ window.onload = function () {
     var text = document.getElementById('textOverlay');
     var animationDelay = 6;
 
-
+    /*
     animateMakudaElement();
     animateMakudaElementLeft();
 
-
+*/
     divVideo.appendChild(app.view);
 
 

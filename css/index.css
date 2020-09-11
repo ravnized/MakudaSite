@@ -42,6 +42,7 @@ html {
 body {
     background-color: black;
     color: whitesmoke;
+    overflow: hidden;
 }
 
 .makuda-spacing {
@@ -130,6 +131,7 @@ p {
 
 .progress {
     border-radius: 0;
+    height: 0.5rem;
 }
 
 progress {
@@ -173,11 +175,12 @@ progress {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -20px 0 0 -86px;
+    margin: -20px 0 0 -115px;
     width: 100%;
     text-align: center;
     line-height: 40px;
-    font-size: 31px;
+    font-size: 40px;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
 }
 
 .circle strong i {
@@ -225,8 +228,8 @@ progress {
 }
 
 #replacement {
-    opacity: 0;
-    transform: scale(0, 0);
+    opacity: 0.2;
+    transform: scale(0.5, 0.5);
 }
 
 
@@ -297,7 +300,9 @@ progress {
 .ashade-testimonials-item__content p {
     font-size: 20px !important;
 }
-
+.containerDaLevare{
+    margin-top: 15vh;
+}
 
 .margin-left-right {
     margin-right: 2vh;
@@ -310,7 +315,9 @@ progress {
     text-align: center;
 }
 
-
+.margin-top-vid{
+    margin-top:10vh;
+}
 .makuda-home-link--contacts.makuda-home-link-wrap {
     left: calc(66.66% + 21px);
     text-align: left;

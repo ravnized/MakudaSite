@@ -57,3 +57,44 @@ h3 {
 .min-height {
     min-height: 100vh;
 }
+
+.gelion-text{
+    font-family: Gelion-Black, sans-serif;
+}
+
+
+body {
+    background: #20262E;
+    padding: 20px;
+    font-family: Helvetica;
+}
+
+aside {
+    background: #1a1721;
+    margin: 0 1em;
+    text-align: center;
+    padding-top: 3em !important;
+}
+
+h1 {
+    opacity: 0.2;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+
+.item-cols {
+    position: relative;
+}
+.itm {
+    height: 15em;
+    cursor: pointer;
+    text-align: center;
+}
+.inner {
+    height: 100%;
+    padding: 5em 1em;
+    font-weight: bold;
+}
+
+
