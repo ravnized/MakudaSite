@@ -14,6 +14,7 @@
 }
 
 
+
 #weAre {
     text-align: center;
     letter-spacing: 0.8em;
@@ -82,6 +83,8 @@ h2 {
 
 
 }
+
+
 
 .h2OverProgress {
     margin-bottom: 10px;
@@ -162,10 +165,130 @@ progress {
     display: block;
 }
 
-.has-text-light .strong-orange {
+#carousel1>.slider>.slider-container>.slider-item{
+   width: 800px !important;
+    transform: translate(35%);
+}
+
+#carousel2>.slider>.slider-container>.slider-item{
+    width: 900px !important;
+    transform: translate(25%);
+}
+
+.testimonials-wrapper {
+    position: absolute;
+    width: 100%;
+}
+
+.testimonials-gradient {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.makuda-testimonials-item {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.testimonial-dopo:before{
+    opacity: 0;
+}
+
+.testimonial-dopo{
+
+    background: linear-gradient(
+            to left,
+            black 60%,
+            rgba(255, 0, 0, 0)
+    );
+
+    opacity: 100;
+    transition: opacity 5s;
 
 }
 
+.testimonial-prima:before{
+    opacity: 0;
+}
+.testimonial-prima{
+
+    background: linear-gradient(
+            to right,
+            black 60%,
+            rgba(255, 0, 0, 0)
+    );
+    opacity: 100;
+    transition: opacity 5s;
+
+}
+
+#carousel2{
+    height: 500px;
+}
+
+#carousel2>.slider{
+    height: 500px;
+}
+.video-dopo:before{
+opacity: 0;
+}
+
+.video-dopo{
+
+    background: linear-gradient(
+            to left,
+            black 60%,
+            rgba(255, 0, 0, 0)
+    );
+
+    opacity: 100;
+    transition: opacity 5s;
+
+}
+
+.wrapper-gradient {
+    position: absolute;
+    width: 100%;
+}
+
+.gradient-video {
+    width: 100%;
+    height: calc(100vh - 80px);
+    min-height: 600px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper-gradient>video {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    object-fit: cover;
+}
+
+
+.video-prima:before{
+    opacity: 0;
+}
+.video-prima{
+
+    background: linear-gradient(
+            to right,
+            black 60%,
+            rgba(255, 0, 0, 0)
+    );
+    opacity: 100;
+    transition: opacity 5s;
+
+}
 .circle canvas {
     vertical-align: middle;
     border-radius: 50%;
@@ -205,27 +328,24 @@ progress {
 
 
 #carousel1 .card {
-    margin-right: 20rem;
-    margin-left: 20rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 
 }
-
 #carousel2 .card {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
 }
+
+
+
 
 .carousel, .carousel * {
     outline: 0 !important;
 }
 
-.carousel .card:hover {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
+
 
 #replacement {
     opacity: 0.2;
@@ -233,9 +353,11 @@ progress {
 }
 
 
-.ashade-testimonials-item {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.makuda-testimonials-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+
 }
 
 .hide {
@@ -243,61 +365,62 @@ progress {
 }
 
 
-.ashade-testimonials-item__author {
+.makuda-testimonials-item__author {
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 3;
 }
 
-.ashade-testimonials-item__author img {
+.makuda-testimonials-item__author img {
     width: 100px;
     border-radius: 50%;
     box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 
-.ashade-testimonials-item__author--name {
+.makuda-testimonials-item__author--name {
+    padding-right: 20px;
     text-align: right;
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
     padding-top: 30px;
 }
 
-.ashade-testimonials-item__author--name h6 {
+.makuda-testimonials-item__author--name h6 {
     font-size: 30px;
     line-height: 17px;
 }
 
-.ashade-testimonials-item__author--name span {
+.makuda-testimonials-item__author--name span {
     font-size: 20px;
     line-height: 0;
 }
 
 
-.ashade-testimonials-item__content {
+.makuda-testimonials-item__content {
     background: #1d1d1b;
-    margin: -30px 0 0 20px;
+    margin: -30px 20px 0 20px;
     padding: 10px 20px 18px 20px;
     color: #787777;
 }
 
-.ashade-testimonials-item__stars {
+.makuda-testimonials-item__stars {
     text-align: right;
     margin: 0 0 2px 0;
 }
 
-.ashade-testimonials-item__stars.ashade-stars5:before {
+.makuda-testimonials-item__stars.makuda-stars5:before {
     content: '\f005\f005\f005\f005\f005';
 }
 
-.ashade-testimonials-item__stars:before {
+.makuda-testimonials-item__stars:before {
     font-family: la-regular, serif;
     color: #5C5C60;
     font-size: 16px;
     line-height: 20px;
 }
 
-.ashade-testimonials-item__content p {
+.makuda-testimonials-item__content p {
     font-size: 20px !important;
 }
 .containerDaLevare{

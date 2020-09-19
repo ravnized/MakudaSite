@@ -1,45 +1,4 @@
 
-
-    var currentSlideID = 0;
-
-    function incrementCurrentSlideID() {
-        currentSlideID+=1;
-        console.log(currentSlideID);
-        nextOperation()
-    }
-    function decrementCurrentSlideID() {
-        currentSlideID-=1;
-        console.log(currentSlideID);
-        nextOperation()
-    }
-
-    function nextOperation(){
-        var currentSlide = $('[data-slider-index="'+currentSlideID+'"]');
-        console.log(currentSlide);
-        var elementVideo = currentSlide.find('video');
-        var previousSlideID = currentSlideID-1;
-        var previousSlide = $('[data-slider-index="'+previousSlideID+'"]');
-        var elementVideoPrevious = previousSlide.find('video');
-        var nextSlideID = currentSlideID+1;
-        var nextSlide = $('[data-slider-index="'+nextSlideID+'"]');
-        var elementVideoNext = nextSlide.find('video');
-
-        if(elementVideo.length){
-            elementVideo[0].play();
-
-        }
-        if(elementVideoPrevious.length){
-            elementVideoPrevious[0].pause();
-        }
-        if(elementVideoNext.length){
-            elementVideoNext[0].pause();
-        }
-    }
-
-
-
-
-
 ! function(t, e) {
     "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.bulmaCarousel = e() : t.bulmaCarousel = e()
 }("undefined" != typeof self ? self : this, function() {
@@ -114,7 +73,8 @@
                     }), t.style.cssText += i
                 }
             }
-    }, function(t, e, i) {
+    },
+        function(t, e, i) {
         "use strict";
         e.a = function() {
             var t = !1;
@@ -893,10 +853,12 @@
             return r(e, [{
                 key: "init",
                 value: function() {
+
                     return this.node = document.createRange().createContextualFragment(Object(n.a)(this.slider.options.icons)), this._ui = {
                         previous: this.node.querySelector(".slider-navigation-previous"),
                         next: this.node.querySelector(".slider-navigation-next")
                     }, this._unbindEvents(), this._bindEvents(), this.refresh(), this
+
                 }
             }, {
                 key: "destroy",
@@ -922,12 +884,12 @@
             }, {
                 key: "onNextClick",
                 value: function(t) {
-                    this._supportsPassive || t.preventDefault(), this.slider.options.navigation && this.slider.next() || incrementCurrentSlideID()
+                    this._supportsPassive || t.preventDefault(), this.slider.options.navigation && this.slider.next()
                 }
             }, {
                 key: "onPreviousClick",
                 value: function(t) {
-                    this._supportsPassive || t.preventDefault(), this.slider.options.navigation && this.slider.previous() ||  decrementCurrentSlideID()
+                    this._supportsPassive || t.preventDefault(), this.slider.options.navigation && this.slider.previous()
                 }
             }, {
                 key: "onKeyUp",

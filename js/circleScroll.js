@@ -20,9 +20,8 @@ $(document).ready(function ($) {
                         color: '#f6b600'
                     }
                 }).on('circle-animation-progress', function (event, progress, stepValue) {
-                    var amount = progress*percent
+                    var amount = progress * percent
                     var textGenerated = ElementCounter.text(amount.toFixed(0))
-
                 }).stop();
             }
         });

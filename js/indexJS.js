@@ -9,9 +9,6 @@ var varCounter = false;
 var varCounterText = false;
 
 
-
-
-
 window.onload = function () {
     var tl = gsap.timeline();
     var app;
@@ -28,7 +25,7 @@ window.onload = function () {
         trigger: "#section-animated",
         start: "top +52px",
         end: '+=3000',
-        markers: true,
+        markers: false,
         pin: true,
         scrub: 0.5,
         animation: tl,
@@ -71,8 +68,28 @@ window.onload = function () {
 
 // add animations and labels to the timeline
 
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
 
+    var progressArr = [0, 100];
 
+    function fillProgress() {
+        progressArr.forEach(function (num, index) {
+            setTimeout(async function () {
+
+                    $('#progress-graphics').val(num);
+                    await sleep(100);
+                    $('#progress-photography').val(num);
+                    await sleep(100);
+                    $('#progress-videography').val(num);
+                    await sleep(100);
+                    $('#progress-marketing').val(num);
+                    await sleep(100);
+
+            }, 1000 * index);
+        });
+    }
 
 
     function initPixi() {
@@ -94,20 +111,30 @@ window.onload = function () {
         displacementSprite.scale.y = 0;
 
         app.ticker.add((delta) => {
-            $( window ).resize(function() {
+            $(window).resize(function () {
                 videoSprite.width = app.screen.width;
                 videoSprite.height = app.screen.height;
             })
         });
 
         tl.addLabel('start')
+            .to('#findMe', 3, {x: "+=50"}, '-=1')
+            .to('#photoPortofolio', 3, {x: "+=50"}, '-=1')
+            .to('#myContacts', 3, {x: "-=50"}, '-=1')
+            .to('#exploreWorks', 13, {x: "-=50"}, '-=1')
+            .to('.makuda-home-link-wrap', 3, {css: {opacity: 0}, duration: 5})
+            .to(displacementSprite.scale, 10, {x: 1, y: 1, ease: Power0.easeInOut}, '-=20')
+            .to(displacementFilter.scale, 10, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, '-=20')
+            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5}, '-=3')
+            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, '-=3')
 
-            .to(displacementSprite.scale, 10, {x: 1, y: 1, ease: Power0.easeInOut})
-            .to(displacementFilter.scale, 10, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, '-=10')
-            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5})
-            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, '-=2')
+            .add(function () {
+                $('#replacement').css("margin-top", "-10vh");
+            })
 
-
+            .add(function () {
+                $('#replacement').css("margin-top", "0");
+            })
 
 
             .add(function () {
@@ -131,17 +158,14 @@ window.onload = function () {
                 }
 
             })
-            .to('#replacement', 2, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1})
+            .to('#replacement', 10, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1})
             .addLabel('finish')
+            .add(function () {
+                fillProgress()
+            })
 
 
     }
-
-
-
-
-
-
 
 
     /*
@@ -269,10 +293,6 @@ window.onload = function () {
 
      */
     initPixi();
-
-
-    var text = document.getElementById('textOverlay');
-    var animationDelay = 6;
 
     /*
     animateMakudaElement();
