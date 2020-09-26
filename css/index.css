@@ -14,7 +14,6 @@
 }
 
 
-
 #weAre {
     text-align: center;
     letter-spacing: 0.8em;
@@ -83,7 +82,6 @@ h2 {
 
 
 }
-
 
 
 .h2OverProgress {
@@ -165,12 +163,12 @@ progress {
     display: block;
 }
 
-#carousel1>.slider>.slider-container>.slider-item{
-   width: 800px !important;
+#carousel1 > .slider > .slider-container > .slider-item {
+    width: 800px !important;
     transform: translate(35%);
 }
 
-#carousel2>.slider>.slider-container>.slider-item{
+#carousel2 > .slider > .slider-container > .slider-item {
     width: 900px !important;
     transform: translate(25%);
 }
@@ -189,7 +187,6 @@ progress {
 }
 
 
-
 .makuda-testimonials-item {
     position: absolute;
     top: 0;
@@ -197,11 +194,27 @@ progress {
     object-fit: cover;
 }
 
-.testimonial-dopo:before{
+.slider-navigation-next {
+    background: unset !important;
+    border: unset !important;
+    color: #f6b600 !important;
+}
+
+.slider-navigation-previous {
+    background: unset !important;
+    border: unset !important;
+    color: #f6b600 !important;
+}
+
+.testimonial-dopo:before {
     opacity: 0;
 }
 
-.testimonial-dopo{
+.slider-pagination .slider-page {
+    background: #f6b600 !important;
+}
+
+.testimonial-dopo {
 
     background: linear-gradient(
             to left,
@@ -210,14 +223,15 @@ progress {
     );
 
     opacity: 100;
-    transition: opacity 5s;
+    transition: opacity 10s;
 
 }
 
-.testimonial-prima:before{
+.testimonial-prima:before {
     opacity: 0;
 }
-.testimonial-prima{
+
+.testimonial-prima {
 
     background: linear-gradient(
             to right,
@@ -225,22 +239,23 @@ progress {
             rgba(255, 0, 0, 0)
     );
     opacity: 100;
-    transition: opacity 5s;
+    transition: opacity 10s;
 
 }
 
-#carousel2{
+#carousel2 {
     height: 500px;
 }
 
-#carousel2>.slider{
+#carousel2 > .slider {
     height: 500px;
 }
-.video-dopo:before{
-opacity: 0;
+
+.video-dopo:before {
+    opacity: 0;
 }
 
-.video-dopo{
+.video-dopo {
 
     background: linear-gradient(
             to left,
@@ -249,7 +264,7 @@ opacity: 0;
     );
 
     opacity: 100;
-    transition: opacity 5s;
+    transition: opacity 10s;
 
 }
 
@@ -267,7 +282,7 @@ opacity: 0;
     z-index: 2;
 }
 
-.wrapper-gradient>video {
+.wrapper-gradient > video {
     position: absolute;
     top: 0;
     z-index: 0;
@@ -275,10 +290,11 @@ opacity: 0;
 }
 
 
-.video-prima:before{
+.video-prima:before {
     opacity: 0;
 }
-.video-prima{
+
+.video-prima {
 
     background: linear-gradient(
             to right,
@@ -286,9 +302,12 @@ opacity: 0;
             rgba(255, 0, 0, 0)
     );
     opacity: 100;
-    transition: opacity 5s;
+    transition: opacity 10s;
 
 }
+
+
+
 .circle canvas {
     vertical-align: middle;
     border-radius: 50%;
@@ -332,6 +351,7 @@ opacity: 0;
     margin-left: 2rem;
 
 }
+
 #carousel2 .card {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -339,12 +359,9 @@ opacity: 0;
 }
 
 
-
-
 .carousel, .carousel * {
     outline: 0 !important;
 }
-
 
 
 #replacement {
@@ -423,7 +440,8 @@ opacity: 0;
 .makuda-testimonials-item__content p {
     font-size: 20px !important;
 }
-.containerDaLevare{
+
+.containerDaLevare {
     margin-top: 15vh;
 }
 
@@ -438,9 +456,10 @@ opacity: 0;
     text-align: center;
 }
 
-.margin-top-vid{
-    margin-top:10vh;
+.margin-top-vid {
+    margin-top: 10vh;
 }
+
 .makuda-home-link--contacts.makuda-home-link-wrap {
     left: calc(66.66% + 21px);
     text-align: left;

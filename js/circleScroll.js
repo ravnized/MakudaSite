@@ -21,7 +21,7 @@ $(document).ready(function ($) {
                     }
                 }).on('circle-animation-progress', function (event, progress, stepValue) {
                     var amount = progress * percent
-                    var textGenerated = ElementCounter.text(amount.toFixed(0))
+                    var textGenerated = ElementCounter.text(amount.toFixed(0) + '%')
                 }).stop();
             }
         });

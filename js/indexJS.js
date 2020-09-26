@@ -35,10 +35,24 @@ window.onload = function () {
             delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
             ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
         },
-        onToggle: self => console.log("toggled, isActive:", self.isActive),
+        onToggle: self => {
+            console.log("toggled, isActive:", self.isActive);
+            $('#exploreWorks').removeAttr("style");
+            $('#photoPortofolio').removeAttr("style");
+            $('#findMe').removeAttr("style");
+            $('#myContacts').removeAttr("style");
+        },
         onUpdate: self => {
             console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+            if (self.progress.toFixed(3) === '0.000') {
+                console.log('progress: porcamadonna');
+                $('#exploreWorks').removeAttr("style");
+                $('#photoPortofolio').removeAttr("style");
+                $('#findMe').removeAttr("style");
+                $('#myContacts').removeAttr("style");
+            }
         }
+
 
     });
 
@@ -78,14 +92,14 @@ window.onload = function () {
         progressArr.forEach(function (num, index) {
             setTimeout(async function () {
 
-                    $('#progress-graphics').val(num);
-                    await sleep(100);
-                    $('#progress-photography').val(num);
-                    await sleep(100);
-                    $('#progress-videography').val(num);
-                    await sleep(100);
-                    $('#progress-marketing').val(num);
-                    await sleep(100);
+                $('#progress-graphics').val(num);
+                await sleep(100);
+                $('#progress-photography').val(num);
+                await sleep(100);
+                $('#progress-videography').val(num);
+                await sleep(100);
+                $('#progress-marketing').val(num);
+                await sleep(100);
 
             }, 1000 * index);
         });

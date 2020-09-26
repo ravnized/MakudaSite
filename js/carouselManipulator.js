@@ -10,34 +10,34 @@ $(document).ready(function ($) {
 
     sliderNavigationNext2.click(function (event) {
         event.preventDefault();
-        currentSlideIDVideo+=1;
+        currentSlideIDVideo += 1;
         videoNextPrevious();
     })
 
     sliderNavigationPrevious2.click(function (event) {
         event.preventDefault();
-        currentSlideIDVideo-=1;
+        currentSlideIDVideo -= 1;
         videoNextPrevious();
     })
 
     sliderNavigationNext.click(function (event) {
         event.preventDefault();
-        currentSlideIDReview+=1;
+        currentSlideIDReview += 1;
         reviewNextPrevious();
     })
 
     sliderNavigationPrevious.click(function (event) {
         event.preventDefault();
-        currentSlideIDReview-=1;
+        currentSlideIDReview -= 1;
         reviewNextPrevious();
     })
 
     function reviewNextPrevious() {
-        var currentSlideReview = carouselFinderReview.find('[data-slider-index="'+currentSlideIDReview+'"]');
-        var previousSlideIDReview = currentSlideIDReview-1;
-        var previousSlideReview = carouselFinderReview.find('[data-slider-index="'+previousSlideIDReview+'"]');
-        var nextSlideIDReview = currentSlideIDReview+1;
-        var nextSlideReview = carouselFinderReview.find('[data-slider-index="'+nextSlideIDReview+'"]');
+        var currentSlideReview = carouselFinderReview.find('[data-slider-index="' + currentSlideIDReview + '"]');
+        var previousSlideIDReview = currentSlideIDReview - 1;
+        var previousSlideReview = carouselFinderReview.find('[data-slider-index="' + previousSlideIDReview + '"]');
+        var nextSlideIDReview = currentSlideIDReview + 1;
+        var nextSlideReview = carouselFinderReview.find('[data-slider-index="' + nextSlideIDReview + '"]');
         var elementTestimonial = currentSlideReview.find('.makuda-testimonials-item');
         var elementTestimonialGradient = currentSlideReview.find('.testimonials-gradient');
         var elementTestimonialPrevious = previousSlideReview.find('.makuda-testimonial-item');
@@ -51,27 +51,27 @@ $(document).ready(function ($) {
     }
 
     function videoNextPrevious() {
-        var currentSlideVideo = $('[data-slider-index="'+currentSlideIDVideo+'"]');
-        var previousSlideIDVideo = currentSlideIDVideo-1;
-        var previousSlideVideo = $('[data-slider-index="'+previousSlideIDVideo+'"]');
-        var nextSlideIDVideo = currentSlideIDVideo+1;
-        var nextSlideVideo = $('[data-slider-index="'+nextSlideIDVideo+'"]');
+        var currentSlideVideo = $('[data-slider-index="' + currentSlideIDVideo + '"]');
+        var previousSlideIDVideo = currentSlideIDVideo - 1;
+        var previousSlideVideo = $('[data-slider-index="' + previousSlideIDVideo + '"]');
+        var nextSlideIDVideo = currentSlideIDVideo + 1;
+        var nextSlideVideo = $('[data-slider-index="' + nextSlideIDVideo + '"]');
         var elementVideo = currentSlideVideo.find('video');
         var elementGradient = currentSlideVideo.find('.gradient-video');
         var elementVideoPrevious = previousSlideVideo.find('video');
         var elementGradientPrevious = previousSlideVideo.find('.gradient-video');
         var elementVideoNext = nextSlideVideo.find('video');
         var elementGradientNext = nextSlideVideo.find('.gradient-video');
-        console.log('current: '+currentSlideIDVideo)
-        console.log('previous: '+previousSlideIDVideo)
-        console.log('next: '+nextSlideIDVideo)
+        console.log('current: ' + currentSlideIDVideo)
+        console.log('previous: ' + previousSlideIDVideo)
+        console.log('next: ' + nextSlideIDVideo)
         elementVideo[0].play();
         elementGradient.removeClass('video-prima');
         elementGradient.removeClass('video-dopo');
-        if (elementVideoPrevious.length){
+        if (elementVideoPrevious.length) {
             elementVideoPrevious[0].pause();
         }
-        if (elementVideoNext.length){
+        if (elementVideoNext.length) {
             elementVideoNext[0].pause();
         }
         elementGradientPrevious.addClass("video-prima");
