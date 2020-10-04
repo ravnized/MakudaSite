@@ -219,7 +219,7 @@ progress {
     background: linear-gradient(
             to left,
             black 60%,
-            rgba(255, 0, 0, 0)
+            rgba(0, 0, 0, 0)
     );
 
     opacity: 100;
@@ -236,7 +236,7 @@ progress {
     background: linear-gradient(
             to right,
             black 60%,
-            rgba(255, 0, 0, 0)
+            rgba(0, 0, 0, 0)
     );
     opacity: 100;
     transition: opacity 10s;
@@ -260,7 +260,7 @@ progress {
     background: linear-gradient(
             to left,
             black 60%,
-            rgba(255, 0, 0, 0)
+            rgba(0, 0, 0, 0)
     );
 
     opacity: 100;
@@ -299,11 +299,10 @@ progress {
     background: linear-gradient(
             to right,
             black 60%,
-            rgba(255, 0, 0, 0)
+            rgba(0, 0, 0, 0)
     );
     opacity: 100;
     transition: opacity 10s;
-
 }
 
 

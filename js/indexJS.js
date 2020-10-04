@@ -32,7 +32,7 @@ window.onload = function () {
         snap: {
             snapTo: "labels", // snap to the closest label in the timeline
             duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-            delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
+            delay: 0, // wait 0.2 seconds from the last scroll event before doing the snapping
             ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
         },
         onToggle: self => {
@@ -131,8 +131,8 @@ window.onload = function () {
             })
         });
 
-        tl.addLabel('start')
-            .to('#findMe', 3, {x: "+=50"}, '-=1')
+
+            tl.to('#findMe', 3, {x: "+=50"}, '-=1')
             .to('#photoPortofolio', 3, {x: "+=50"}, '-=1')
             .to('#myContacts', 3, {x: "-=50"}, '-=1')
             .to('#exploreWorks', 13, {x: "-=50"}, '-=1')
