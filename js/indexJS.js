@@ -7,11 +7,15 @@ var elementHeroBody = "<div class=\"container\" id=\"containerText\">\n" +
     "            </div>"
 var varCounter = false;
 var varCounterText = false;
+var clickOnImage = sessionStorage.getItem('clickOnImage');
 
 
 window.onload = function () {
+    console.log(clickOnImage)
+    sessionStorage.removeItem('clickOnImage');
     var tl = gsap.timeline();
     var app;
+
     var video = document.createElement('video');
     video.loop = true;
     video.crossOrigin = 'anonymous';
@@ -107,6 +111,7 @@ window.onload = function () {
 
 
     function initPixi() {
+        var isFinished = false;
         app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, resizeTo: window});
         var videoSprite = new PIXI.Sprite.from(video);
         const container = new PIXI.Container();
@@ -131,6 +136,12 @@ window.onload = function () {
             })
         });
 
+            tl.add(function () {
+                if (isFinished === true){
+                    tl.addLabel('start')
+                    isFinished= false;
+                }
+            })
 
             tl.to('#findMe', 3, {x: "+=50"}, '-=1')
             .to('#photoPortofolio', 3, {x: "+=50"}, '-=1')
@@ -172,19 +183,26 @@ window.onload = function () {
                 }
 
             })
-            .to('#replacement', 10, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1})
-            .addLabel('finish')
-            .add(function () {
+            .to('#replacement', 10, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1});
+
+            tl.add(function () {
                 fillProgress()
+            });
+
+            tl.add(function () {
+                if (isFinished===false){
+                    tl.addLabel('finish');
+                    isFinished = true;
+                }
+
             })
+
 
 
     }
 
 
     /*
-
-
     function animateMakudaElement() {
         var controller = new ScrollMagic.Controller();
         var actionFindMe = gsap.timeline()

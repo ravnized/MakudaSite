@@ -4,6 +4,8 @@ var imageVideo = generalItem.find('img')
 var textVideo = generalItem.find('p');
 var arrayListElement = $('.workListItem');
 var heightElements = 0;
+var halfWindowHeight = 0;
+var halfWindowWidth = 0;
 (function () {
     const blurProperty = gsap.utils.checkPrefix("filter"),
         blurExp = /blur\((.+)?px\)/,
@@ -42,23 +44,29 @@ var heightElements = 0;
 
 console.log(textVideo)
 imageVideo.click(function () {
+    sessionStorage.setItem('clickOnImage', 'true')
     let navBarHeight = $('nav').height(),
         positionImageVideo = imageVideo.offset(),
         leftImagePos = positionImageVideo.left,
         topImagePos = positionImageVideo.top,
         workListItem = $(this).parent().parent().parent().parent(),
         idElement = workListItem.attr('id'),
+        fileNameRedirect = workListItem.attr('data-file-name'),
         imageHeight = imageVideo.height(),
         imageWidth = imageVideo.width();
 
+    console.log(fileNameRedirect)
+
     var totalHeight = 0,
         tl = gsap.timeline(),
+        tl2 = gsap.timeline(),
         cycle = 0,
         topTotalHeight = 0,
         centerImageLeft = 0,
-        centerImageTop = 0;
+        centerImageTop = 0,
+        scrollTop = 0;
     console.log(leftImagePos, topImagePos);
-
+    scrollTop = $(window).scrollTop();
     centerImageLeft = imageWidth / 2;
     centerImageTop = imageHeight / 2;
 
@@ -70,44 +78,70 @@ imageVideo.click(function () {
     }
     topTotalHeight = totalHeight + topImagePos;
 
-    console.log(topTotalHeight);
+
+    tl.to(textVideo, {duration: 0.2, css: {opacity: 0}, blur: 10})
     //calcolare il center dell'immagine
 
-    tl.to(textVideo, {duration: 0.5, ease: "power1.out", css: {opacity: 0}, blur: 10})
 
     for (let i = 0; i < arrayListElement.length; i++) {
 
         if (idElement !== $(arrayListElement[i]).attr('id')) {
-
             tl.to(arrayListElement[i], {duration: 0.2, css: {opacity: 0}})
-
         }
     }
-    var halfWindowHeight = (($(window).height() / 2 - topTotalHeight) - centerImageTop) + $(window).scrollTop()
-    var halfWindowWidth = ($(window).width() / 2 - leftImagePos) - centerImageLeft
+    sessionStorage.setItem("topTotalHeight",topTotalHeight)
+    sessionStorage.setItem("previousItem",this);
+    sessionStorage.setItem("centerImageTop",centerImageTop);
+    sessionStorage.setItem("leftImagePos",leftImagePos);
+    sessionStorage.setItem("centerImageLeft",centerImageLeft);
+    sessionStorage.setItem("scrollTop",scrollTop);
+    console.log(topTotalHeight,centerImageTop,leftImagePos,centerImageLeft,scrollTop)
+    tl.add(function () {
+        setTimeout(function () {
+            window.location.href = ""+fileNameRedirect+".html";
+        }, 0);
 
-
-    tl.to(this, {duration: 1.5, ease: "power2.in", css: {x: halfWindowWidth, y: halfWindowHeight}})
-    tl.to(this, {
-        duration: 2, ease: "power3.in", css: {transformOrigin: "center center", scale: 1.5}, onComplete: function () {
-            console.log('inizio ciclo')
-            for (let i = 0; i < arrayListElement.length; i++) {
-                console.log('inizio ciclo')
-                if (idElement !== $(arrayListElement[i]).attr('id')) {
-                    console.log('trovato')
-
-                    if (i !== 0) {
-                        console.log('rimosso')
-                        $(arrayListElement[i]).remove();
-                    }
-
-
-                }
-            }
-
-
-        }
     })
+
+
+
+
+
+
+    /*
+    tl2.delay(5)
+    tl2.add(function () {
+        console.log('aaaaaaa')
+        $('.imageVideo').remove()
+        $('.workBlockImageSub').append(element)
+        $("video").prop('muted', true);
+    })
+    console.log(imageHeight, imageWidth);
+
+    tl2.to('video', {
+        css: {x: halfWindowWidth, y: halfWindowHeight, transformOrigin: "center center", scale: 1.5, zIndex: 99},
+        delay: 2
+    })
+
+*/
+
+
+
+
+    /*
+
+
+
+         for (let i = 0; i < arrayListElement.length; i++) {
+             if (idElement !== $(arrayListElement[i]).attr('id')) {
+                 if (i !== 0) {
+                     $(arrayListElement[i]).remove();
+                 }
+
+
+             }
+         }
+         */
 
 
     /*
