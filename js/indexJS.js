@@ -136,14 +136,7 @@ window.onload = function () {
             })
         });
 
-            tl.add(function () {
-                if (isFinished === true){
-                    tl.addLabel('start')
-                    isFinished= false;
-                }
-            })
-
-            tl.to('#findMe', 3, {x: "+=50"}, '-=1')
+        tl.to('#findMe', 3, {x: "+=50"}, '-=1')
             .to('#photoPortofolio', 3, {x: "+=50"}, '-=1')
             .to('#myContacts', 3, {x: "-=50"}, '-=1')
             .to('#exploreWorks', 13, {x: "-=50"}, '-=1')
@@ -185,18 +178,10 @@ window.onload = function () {
             })
             .to('#replacement', 10, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1});
 
-            tl.add(function () {
-                fillProgress()
-            });
-
-            tl.add(function () {
-                if (isFinished===false){
-                    tl.addLabel('finish');
-                    isFinished = true;
-                }
-
-            })
-
+        tl.add(function () {
+            fillProgress()
+        });
+        tl.addLabel('finish');
 
 
     }

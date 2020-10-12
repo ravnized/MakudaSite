@@ -89,23 +89,19 @@ imageVideo.click(function () {
             tl.to(arrayListElement[i], {duration: 0.2, css: {opacity: 0}})
         }
     }
-    sessionStorage.setItem("topTotalHeight",topTotalHeight)
-    sessionStorage.setItem("previousItem",this);
-    sessionStorage.setItem("centerImageTop",centerImageTop);
-    sessionStorage.setItem("leftImagePos",leftImagePos);
-    sessionStorage.setItem("centerImageLeft",centerImageLeft);
-    sessionStorage.setItem("scrollTop",scrollTop);
-    console.log(topTotalHeight,centerImageTop,leftImagePos,centerImageLeft,scrollTop)
+    sessionStorage.setItem("topTotalHeight", topTotalHeight)
+    sessionStorage.setItem("previousItem", this);
+    sessionStorage.setItem("centerImageTop", centerImageTop);
+    sessionStorage.setItem("leftImagePos", leftImagePos);
+    sessionStorage.setItem("centerImageLeft", centerImageLeft);
+    sessionStorage.setItem("scrollTop", scrollTop);
+    console.log(topTotalHeight, centerImageTop, leftImagePos, centerImageLeft, scrollTop)
     tl.add(function () {
         setTimeout(function () {
-            window.location.href = ""+fileNameRedirect+".html";
+            window.location.href = "" + fileNameRedirect + ".html";
         }, 0);
 
     })
-
-
-
-
 
 
     /*
@@ -124,8 +120,6 @@ imageVideo.click(function () {
     })
 
 */
-
-
 
 
     /*
