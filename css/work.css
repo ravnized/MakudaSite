@@ -226,20 +226,49 @@ body {
     position: relative;
 }
 
-#containerInsideWorks .titleVideo {
-    transform: translate(-200px);
+.container .tVideo {
+    transform: translate(-400px);
     opacity: 0;
+    font-size: 5.6em;
+    letter-spacing: .2rem;
+    z-index: 2;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
 }
 
-#containerInsideWorks .subTitleVideo {
+.container .subVideo {
+    transform: translate(200px);
+    opacity: 0;
+    font-size: 5.6em;
+    letter-spacing: .2rem;
+    will-change: transform;
+    z-index: 2;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.container .descVideo {
+    transform: translate(0, 200px);
+    opacity: 0;
+}
+video{
+    outline: unset;
+}
+.is-floating-left{
     transform: translate(200px);
     opacity: 0;
 }
 
-#containerInsideWorks .descriptionVideo {
-    transform: translate(0, 200px);
-    opacity: 0;
+
+.textContainer{
+    z-index: 1;
+    position: relative;
+    display: block;
+    height: auto;
+
 }
-
-
 

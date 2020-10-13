@@ -128,6 +128,8 @@ window.onload = function () {
         app.renderer.view.style.transform = 'scale(1)';
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
+        displacementSprite.position.x = app.screen.width/2;
+        displacementSprite.position.y = app.screen.height/2;
 
         app.ticker.add((delta) => {
             $(window).resize(function () {
@@ -136,15 +138,18 @@ window.onload = function () {
             })
         });
 
-        tl.to('#findMe', 3, {x: "+=50"}, '-=1')
-            .to('#photoPortofolio', 3, {x: "+=50"}, '-=1')
-            .to('#myContacts', 3, {x: "-=50"}, '-=1')
-            .to('#exploreWorks', 13, {x: "-=50"}, '-=1')
+        /*
+        ('#findMe', 3, {x: "+=50"}, 0)
+            .to('#photoPortofolio', 3, {x: "+=50"}, 0)
+            .to('#myContacts', 3, {x: "-=50"}, 0)
+            .to('#exploreWorks', 13, {x: "-=50"}, 0)
             .to('.makuda-home-link-wrap', 3, {css: {opacity: 0}, duration: 5})
-            .to(displacementSprite.scale, 10, {x: 1, y: 1, ease: Power0.easeInOut}, '-=20')
-            .to(displacementFilter.scale, 10, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, '-=20')
-            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5}, '-=3')
-            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, '-=3')
+         */
+
+        tl.to(displacementSprite.scale, 5, {x: '+=10', y: '+=10', ease: Power0.easeInOut}, 0)
+            .to(displacementFilter.scale, 5, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, 0)
+            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5}, 3)
+            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, 3)
 
             .add(function () {
                 $('#replacement').css("margin-top", "-10vh");

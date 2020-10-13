@@ -1,11 +1,14 @@
 gsap.registerPlugin(CSSRulePlugin)
 var generalItem = $('.workBlockContainer');
-var imageVideo = generalItem.find('img')
+var imageVideo = generalItem.find('.imageVideo')
 var textVideo = generalItem.find('p');
 var arrayListElement = $('.workListItem');
 var heightElements = 0;
 var halfWindowHeight = 0;
 var halfWindowWidth = 0;
+var thisPrec;
+
+
 (function () {
     const blurProperty = gsap.utils.checkPrefix("filter"),
         blurExp = /blur\((.+)?px\)/,
@@ -41,10 +44,8 @@ var halfWindowWidth = 0;
     });
 })();
 
-
 console.log(textVideo)
 imageVideo.click(function () {
-    sessionStorage.setItem('clickOnImage', 'true')
     let navBarHeight = $('nav').height(),
         positionImageVideo = imageVideo.offset(),
         leftImagePos = positionImageVideo.left,
@@ -53,18 +54,22 @@ imageVideo.click(function () {
         idElement = workListItem.attr('id'),
         fileNameRedirect = workListItem.attr('data-file-name'),
         imageHeight = imageVideo.height(),
-        imageWidth = imageVideo.width();
+        imageWidth = imageVideo.width(),
+        workBlockImageSub = $(this).parent(),
+        containerTitle = workBlockImageSub.find('.container'),
+        workBlockTitle = workListItem.find('.workBlockTitle');
 
     console.log(fileNameRedirect)
+    thisPrec = this;
 
     var totalHeight = 0,
         tl = gsap.timeline(),
-        tl2 = gsap.timeline(),
         cycle = 0,
         topTotalHeight = 0,
         centerImageLeft = 0,
         centerImageTop = 0,
-        scrollTop = 0;
+        scrollTop = 0,
+        heightContainer = containerTitle.height();
     console.log(leftImagePos, topImagePos);
     scrollTop = $(window).scrollTop();
     centerImageLeft = imageWidth / 2;
@@ -89,66 +94,62 @@ imageVideo.click(function () {
             tl.to(arrayListElement[i], {duration: 0.2, css: {opacity: 0}})
         }
     }
-    sessionStorage.setItem("topTotalHeight", topTotalHeight)
-    sessionStorage.setItem("previousItem", this);
-    sessionStorage.setItem("centerImageTop", centerImageTop);
-    sessionStorage.setItem("leftImagePos", leftImagePos);
-    sessionStorage.setItem("centerImageLeft", centerImageLeft);
-    sessionStorage.setItem("scrollTop", scrollTop);
+    workListItem.css({'height':topTotalHeight+'px'})
+    workListItem.css({'top':totalHeight+'px'})
+
+
+    halfWindowHeight = ((($(window).height() / 2 - topTotalHeight) - centerImageTop) + scrollTop)
+    halfWindowWidth = ($(window).width() / 2 - leftImagePos) - centerImageLeft;
+    for (let i = 0; i < arrayListElement.length; i++) {
+        if (idElement !== $(arrayListElement[i]).attr('id')) {
+            $(arrayListElement[i]).remove();
+        }
+    }
+
+    tl.to(this, {
+        duration: 1,
+        ease: "power3.in",
+        css: {x: halfWindowWidth, y: halfWindowHeight, transformOrigin: "center center", scale: 1.5, zIndex: 1}
+    }, 'startAnimation')
+    tl.to(containerTitle, {
+        duration: 1,
+        ease: "power3.in",
+        css: {x: halfWindowWidth, y: halfWindowHeight + navBarHeight, transformOrigin: "center center", zIndex: 10},
+        onComplete: function () {
+            containerTitle.removeClass('hide');
+            workBlockTitle.remove();
+            $(this).get(0).play();
+        }
+    }, 'startAnimation')
+    //tl.to(workListItem,{duration:0.5,css:{top:}})
+
+    tl.to('.tVideo', {x: 0, opacity: 1}, 'animationStart')
+    tl.to('.subVideo', {x: 0, opacity: 1}, 'animationStart')
+    tl.to('.descVideo', {y: 0, opacity: 1, blur: 0}, 'animationStart')
+    if (fileNameRedirect === 'toyaMerda') {
+        $('.muteButton').removeClass('hide')
+        tl.to('.is-floating-left', {x: 0, opacity: 1}, 'animationStart')
+    }
     console.log(topTotalHeight, centerImageTop, leftImagePos, centerImageLeft, scrollTop)
-    tl.add(function () {
-        setTimeout(function () {
-            window.location.href = "" + fileNameRedirect + ".html";
-        }, 0);
+    tl.to(workListItem,{duration:0.5,delay:2,top: totalHeight-scrollTop})
+})
 
-    })
-
-
-    /*
-    tl2.delay(5)
-    tl2.add(function () {
-        console.log('aaaaaaa')
-        $('.imageVideo').remove()
-        $('.workBlockImageSub').append(element)
-        $("video").prop('muted', true);
-    })
-    console.log(imageHeight, imageWidth);
-
-    tl2.to('video', {
-        css: {x: halfWindowWidth, y: halfWindowHeight, transformOrigin: "center center", scale: 1.5, zIndex: 99},
-        delay: 2
-    })
-
-*/
-
-
-    /*
-
-
-
-         for (let i = 0; i < arrayListElement.length; i++) {
-             if (idElement !== $(arrayListElement[i]).attr('id')) {
-                 if (i !== 0) {
-                     $(arrayListElement[i]).remove();
-                 }
-
-
-             }
-         }
-         */
-
-
-    /*
-        let elementCssElementlist=$(this).parent().parent().parent().parent();
-        let elementCssElementImageSub=$(this).parent();
-        tl.to(elementCssElementlist,{duration:0.5,ease:"power2.in",css:{height:'100vh'}},'-=4')
-        tl.to(elementCssElementImageSub,{duration:0.5,ease:"power2.in",css:{height:'100vh'}},'-=4')
-
-*/
+var muted = true;
+$('.muteButton').on('click', function () {
+    if ($(thisPrec).is('video')) {
+        console.log('eiueueue')
+        if (muted === true) {
+            $(this).append('<i class="fas fa-volume-mute"></i>')
+            $('.fa-volume-up').remove()
+            $(thisPrec).get(0).muted = false;
+            muted = false;
+        } else {
+            $(this).append('<i class="fas fa-volume-up"></i>')
+            $('.fa-volume-mute').remove()
+            $(thisPrec).get(0).muted = true;
+            muted = true;
+        }
+    }
 
 
 })
-
-
-
-

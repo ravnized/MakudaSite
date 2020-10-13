@@ -1,18 +1,22 @@
 @font-face {
     font-family: Gelion-Black;
-    src: url(../media/fonts/Gelion-Black.ttf);
+    src: url(/media/fonts/Gelion-Black.ttf);
 }
 
 @font-face {
     font-family: Gelion-Regular;
-    src: url(../media/fonts/Gelion-Regular.ttf);
+    src: url(/media/fonts/Gelion-Regular.ttf);
 }
 
 @font-face {
     font-family: la-regular;
-    src: url(../media/fonts/la-regular-400.ttf);
+    src: url(/media/fonts/la-regular-400.ttf);
 }
 
+@font-face {
+    font-family: EuroStile-Bold;
+    src: url("/media/fonts/EurostileLTStd-BoldEx2.otf");
+}
 
 #weAre {
     text-align: center;
@@ -638,5 +642,16 @@ Contacts
     transform: translateX(10px);
     color: #fff;
 }
+
+.cardBackground{
+    background-image:url("/media/img/73401809_390252275190258_686177937147393055_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.has-background-blackMakuda{
+    background: rgba(0, 0, 0, 0.6);
+}
+
 
 
