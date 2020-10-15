@@ -46,7 +46,7 @@ var allHeight = 0;
 
 
 console.log(textVideo)
-imageVideo.click(function () {
+imageVideo.one('click',function () {
     let navBarHeight = $('nav').height(),
         positionImageVideo = imageVideo.offset(),
         leftImagePos = positionImageVideo.left,
