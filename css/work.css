@@ -263,12 +263,10 @@ video{
     opacity: 0;
 }
 
-
+.container .descVideo{
+    display: none;
+}
 .textContainer{
-    z-index: 1;
-    position: relative;
-    display: block;
-    height: auto;
-
+    position: absolute;
 }
 

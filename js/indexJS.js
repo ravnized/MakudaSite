@@ -10,12 +10,13 @@ var varCounterText = false;
 var clickOnImage = sessionStorage.getItem('clickOnImage');
 
 
-window.onload = function () {
+$(document).ready(function () {
+    var isFinished = false;
     console.log(clickOnImage)
     sessionStorage.removeItem('clickOnImage');
-    var tl = gsap.timeline();
+    var tl = gsap.timeline(),
+        tl2 = gsap.timeline();
     var app;
-
     var video = document.createElement('video');
     video.loop = true;
     video.crossOrigin = 'anonymous';
@@ -25,66 +26,7 @@ window.onload = function () {
     video.muted = true;
     video.playsinline = "playsinline";
     var divVideo = document.querySelector('#divVideo');
-    ScrollTrigger.create({
-        trigger: "#section-animated",
-        start: "top +52px",
-        end: '+=3000',
-        markers: false,
-        pin: true,
-        scrub: 0.5,
-        animation: tl,
-        snap: {
-            snapTo: "labels", // snap to the closest label in the timeline
-            duration: {min: 0.2, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-            delay: 0, // wait 0.2 seconds from the last scroll event before doing the snapping
-            ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
-        },
-        onToggle: self => {
-            console.log("toggled, isActive:", self.isActive);
-            $('#exploreWorks').removeAttr("style");
-            $('#photoPortofolio').removeAttr("style");
-            $('#findMe').removeAttr("style");
-            $('#myContacts').removeAttr("style");
-        },
-        onUpdate: self => {
-            console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-            if (self.progress.toFixed(3) === '0.000') {
-                console.log('progress: porcamadonna');
-                $('#exploreWorks').removeAttr("style");
-                $('#photoPortofolio').removeAttr("style");
-                $('#findMe').removeAttr("style");
-                $('#myContacts').removeAttr("style");
-            }
-        }
 
-
-    });
-
-    /*
-    let tl = gsap.timeline({
-        // yes, we can add it to an entire timeline!
-        scrollTrigger: {
-            trigger: "#divVideo",
-            pin: true,   // pin the trigger element while active
-            start: "top top", // when the top of the trigger hits the top of the viewport
-            end: "+=3000", // end after scrolling 500px beyond the start
-            scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-            snap: {
-                snapTo: "labels", // snap to the closest label in the timeline
-                duration: {min: 0.6, max: 3}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-                delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-                ease: 'CustomEase.create("custom", "M0,1,C0,0.704,0.338,0.7,0.5,0.7,0.668,0.7,1,0.704,1,1 ' // the ease of the snap animation ("power3" by default)
-            },
-            onUpdate: self => {
-                console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-            },
-            markers: true,
-        }
-    });
-
-     */
-
-// add animations and labels to the timeline
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -109,9 +51,26 @@ window.onload = function () {
         });
     }
 
+    var navbarHeight = $('nav').height()
+    ScrollTrigger.create({
+        trigger: "#section-animated",
+        start: 'top',
+        end: '+=3000',
+        markers: false,
+        pin: true,
+        scrub: false,
+        onEnter: self => {
+            animate();
+        },
+        onEnterBack: self => {
+            animateBackwards();
+        },
+
+
+    })
 
     function initPixi() {
-        var isFinished = false;
+
         app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight, resizeTo: window});
         var videoSprite = new PIXI.Sprite.from(video);
         const container = new PIXI.Container();
@@ -128,8 +87,8 @@ window.onload = function () {
         app.renderer.view.style.transform = 'scale(1)';
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
-        displacementSprite.position.x = app.screen.width/2;
-        displacementSprite.position.y = app.screen.height/2;
+        displacementSprite.position.x = app.screen.width / 2;
+        displacementSprite.position.y = app.screen.height / 2;
 
         app.ticker.add((delta) => {
             $(window).resize(function () {
@@ -138,192 +97,51 @@ window.onload = function () {
             })
         });
 
-        /*
-        ('#findMe', 3, {x: "+=50"}, 0)
-            .to('#photoPortofolio', 3, {x: "+=50"}, 0)
-            .to('#myContacts', 3, {x: "-=50"}, 0)
-            .to('#exploreWorks', 13, {x: "-=50"}, 0)
-            .to('.makuda-home-link-wrap', 3, {css: {opacity: 0}, duration: 5})
-         */
 
-        tl.to(displacementSprite.scale, 5, {x: '+=10', y: '+=10', ease: Power0.easeInOut}, 0)
-            .to(displacementFilter.scale, 5, {x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, 0)
-            .to('.hero-video', 3, {css: {opacity: 0}, duration: 5}, 3)
-            .to('.hero-body', 3, {css: {opacity: 0}, autoAlpha: 0}, 3)
+    }
 
+    function animateBackwards() {
+        tl2
+            .to('#replacement', {duration: 1, css: {scaleX: 0, scaleY: 0, opacity: 0}, ease: "power2.out"}, 0)
             .add(function () {
-                $('#replacement').css("margin-top", "-10vh");
-            })
-
-            .add(function () {
-                $('#replacement').css("margin-top", "0");
-            })
-
-
-            .add(function () {
-                if (varCounter === true) {
+                if (isFinished === true) {
                     $('.containerDaLevare').remove();
                     $('#hero-body').removeClass('hide');
-                    $('#makudaElement').removeClass('hide');
-                    $('#makudaElement2').removeClass('hide');
                     $('#hero-body').append(elementHeroBody);
-                    varCounter = false;
+                    isFinished = false;
                 }
             })
+            .to('.hero-body', {css: {opacity: 1}, duration: 1}, 1)
+            .to('.hero-video', {css: {opacity: 1}, duration: 1}, 1)
+            .to(displacementSprite.scale, {duration: 0.5, x: '-=10', y: '-=10', ease: Power0.easeInOut}, 1)
+            .to(displacementFilter.scale, {duration: 0.5, x: "-=" + 900, y: "-=" + 900, ease: Power0.easeInOut}, 1)
+            .to(window, {duration: 0.5, scrollTo: {x: 0, y: 0}}, 1)
+    }
+
+    function animate() {
+        tl.to(window, {duration: 1, scrollTo: {x: 0, y: '3000'}})
+            .to(displacementSprite.scale, {duration: 1, x: '+=10', y: '+=10', ease: Power0.easeInOut}, 0)
+            .to(displacementFilter.scale, {duration: 1, x: "+=" + 900, y: "+=" + 900, ease: Power0.easeInOut}, 0)
+            .to('.hero-video', {css: {opacity: 0}, duration: 1}, 1)
+            .to('.hero-body', {css: {opacity: 0}, duration: 1}, 1)
             .add(function () {
-                if (varCounter === false) {
+                if (isFinished === false) {
                     $('#containerText').remove();
                     $('#hero-body').addClass('hide');
-                    $('#makudaElement').addClass('hide');
-                    $('#makudaElement2').addClass('hide');
                     $('#replacement').append(elementInsideUS)
-                    varCounter = true
+                    isFinished = true;
                 }
 
             })
-            .to('#replacement', 10, {css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out", autoAlpha: 1});
-
-        tl.add(function () {
-            fillProgress()
-        });
-        tl.addLabel('finish');
-
-
-    }
-
-
-    /*
-    function animateMakudaElement() {
-        var controller = new ScrollMagic.Controller();
-        var actionFindMe = gsap.timeline()
-            .to('#findMe', 3, {x: "+=100"})
-        var actionContacs = gsap.timeline()
-            .to('#myContacts', 3, {x: "+=-100"})
-
-        var actionRightBar = gsap.timeline()
-            .to('.makuda-home-link-wrap', 3, {css: {opacity: 0}, duration: 10})
-
-        var sceneActionRight = new ScrollMagic.Scene({
-            duration: '25%',
-            triggerHook: 'onEnter',
-        })
-            .setTween(actionRightBar)
-            .addTo(controller)
-
-
-        var sceneContact = new ScrollMagic.Scene({
-            duration: '25%',
-            triggerHook: 'onEnter',
-        })
-            .setTween(actionContacs)
-            .addTo(controller)
-
-
-        var sceneFindMe = new ScrollMagic.Scene({
-            duration: '25%',
-            triggerHook: 'onEnter',
-        })
-            .setTween(actionFindMe)
-            .addTo(controller)
-
-
-    }
-
-    function animateMakudaElementLeft() {
-        var controller = new ScrollMagic.Controller();
-        var actionPhoto = gsap.timeline()
-            .to('#photoPortofolio', 3, {x: "+=100"})
-        var actionWorks = gsap.timeline()
-            .to('#exploreWorks', 3, {x: "+=-100"})
-
-
-        var sceneWorks = new ScrollMagic.Scene({
-            duration: '25%',
-            triggerHook: 'onEnter',
-        })
-            .setTween(actionWorks)
-            .addTo(controller)
-            .on("progress", function (e) {
-                const element = document.querySelector('#exploreWorks');
-
-                function getTranslate3d(el) {
-                    var values = el.style.transform.split(/\w+\(|\);?/);
-                    if (!values[1] || !values[1].length) {
-                        return [];
-                    }
-                    return values[1].split(/,\s?/g);
-                }
-
-                var resultElement = getTranslate3d(element)
-                if (resultElement[0] === '0px') {
-                    $('#exploreWorks').removeAttr('style');
-                    $('#findMe').removeAttr('style');
-                    $('#myContacts').removeAttr('style');
-                }
-
-
-            });
-
-
-        var scenePhoto = new ScrollMagic.Scene({
-            duration: '25%',
-            triggerHook: 'onEnter',
-        })
-            .setTween(actionPhoto)
-            .addTo(controller)
-            .on("progress", function (e) {
-                const elementPhoto = document.querySelector('#photoPortofolio');
-
-                function getTranslate3d(el) {
-                    var values = el.style.transform.split(/\w+\(|\);?/);
-                    if (!values[1] || !values[1].length) {
-                        return [];
-                    }
-                    return values[1].split(/,\s?/g);
-                }
-
-                var resultElementPhoto = getTranslate3d(elementPhoto);
-                if (parseInt(resultElementPhoto[0], 10) < 50) {
-                    $('#photoPortofolio').removeAttr('style');
-                }
-
+            .to('#replacement', {duration: 1, css: {scaleX: 1, scaleY: 1, opacity: 1}, ease: "power2.out"})
+            .add(function () {
+                fillProgress()
             })
-
+            .to(window,{duration: 0.5,scrollTo:{x:0,y:3100}})
 
     }
-
-
-    /*
-        function scrollspy(id, duration, triggerHook,classesBefore, classesAfter) {
-            $(id).addClass(classesBefore);
-            var controller = new ScrollMagic.Controller();
-            var scene = new ScrollMagic.Scene({
-                triggerElement: ''+id,
-                duration: duration,
-                triggerHook: ''+triggerHook,
-
-            })
-                .addIndicators()
-                .setClassToggle(id, classesAfter)
-                .addTo(controller)
-        }
-
-
-        scrollspy('#firstImage',800,'onEnter','hiddenElement','visible');
-
-
-
-     */
     initPixi();
-
-    /*
-    animateMakudaElement();
-    animateMakudaElementLeft();
-
-*/
     divVideo.appendChild(app.view);
-
-
-}
+})
 
 

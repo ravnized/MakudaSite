@@ -7,7 +7,7 @@ var heightElements = 0;
 var halfWindowHeight = 0;
 var halfWindowWidth = 0;
 var thisPrec;
-
+var allHeight = 0;
 
 (function () {
     const blurProperty = gsap.utils.checkPrefix("filter"),
@@ -44,6 +44,7 @@ var thisPrec;
     });
 })();
 
+
 console.log(textVideo)
 imageVideo.click(function () {
     let navBarHeight = $('nav').height(),
@@ -51,12 +52,13 @@ imageVideo.click(function () {
         leftImagePos = positionImageVideo.left,
         topImagePos = positionImageVideo.top,
         workListItem = $(this).parent().parent().parent().parent(),
+        workList = $(this).parent().parent().parent().parent().parent(),
         idElement = workListItem.attr('id'),
         fileNameRedirect = workListItem.attr('data-file-name'),
         imageHeight = imageVideo.height(),
         imageWidth = imageVideo.width(),
         workBlockImageSub = $(this).parent(),
-        containerTitle = workBlockImageSub.find('.container'),
+        containerTitle = workListItem.find('.container'),
         workBlockTitle = workListItem.find('.workBlockTitle');
 
     console.log(fileNameRedirect)
@@ -94,8 +96,17 @@ imageVideo.click(function () {
             tl.to(arrayListElement[i], {duration: 0.2, css: {opacity: 0}})
         }
     }
-    workListItem.css({'height':topTotalHeight+'px'})
-    workListItem.css({'top':totalHeight+'px'})
+    var arrayListElementHeight = $(arrayListElement[0]).height()
+    console.log(arrayListElementHeight)
+    workListItem.css({'top':(totalHeight)+'px'})
+    $('.descVideo').css({'display':'block'})
+    containerTitle.css({'top':arrayListElementHeight+'px'})
+
+    //'top':($(arrayListElement[0]).height()-(scrollTop))+'px'
+    console.log(heightContainer,workList.height())
+    workList.css({'height':((arrayListElementHeight+heightContainer)*2+totalHeight)+'px'})
+
+
 
 
     halfWindowHeight = ((($(window).height() / 2 - topTotalHeight) - centerImageTop) + scrollTop)
@@ -105,24 +116,28 @@ imageVideo.click(function () {
             $(arrayListElement[i]).remove();
         }
     }
-
+    tl.set(containerTitle,{css:{x:halfWindowWidth-leftImagePos}})
     tl.to(this, {
         duration: 1,
         ease: "power3.in",
-        css: {x: halfWindowWidth, y: halfWindowHeight, transformOrigin: "center center", scale: 1.5, zIndex: 1}
+        css: {x: halfWindowWidth, y: halfWindowHeight, transformOrigin: "center center", scale: 1.5, zIndex: 1},
     }, 'startAnimation')
     tl.to(containerTitle, {
         duration: 1,
         ease: "power3.in",
-        css: {x: halfWindowWidth, y: halfWindowHeight + navBarHeight, transformOrigin: "center center", zIndex: 10},
         onComplete: function () {
+            $(this).get(0).play();
             containerTitle.removeClass('hide');
             workBlockTitle.remove();
-            $(this).get(0).play();
         }
     }, 'startAnimation')
+    tl.to(workListItem,{duration:0.5,delay:2,css:{top:0}},'startAnimation')
+    tl.to(window,{duration:0.5,delay:2,scrollTo:{x:0,y:0}},'startAnimation')
+    tl.to(this, {duration:0.5,delay:2,y:heightContainer},'startAnimation')
+    tl.to(workListItem,{duration:0.5,delay:2,css:{height:(arrayListElementHeight+heightContainer)}},'startAnimation')
+    tl.to(workList,{duration:0.5,delay:2,css:{height:(arrayListElementHeight+heightContainer)*2}},'startAnimation')
+    //tl.to(workBlockImageSub,{duration:0.5,delay:2,css:{top:-scrollTop}},'startAnimation')
     //tl.to(workListItem,{duration:0.5,css:{top:}})
-
     tl.to('.tVideo', {x: 0, opacity: 1}, 'animationStart')
     tl.to('.subVideo', {x: 0, opacity: 1}, 'animationStart')
     tl.to('.descVideo', {y: 0, opacity: 1, blur: 0}, 'animationStart')
@@ -131,7 +146,6 @@ imageVideo.click(function () {
         tl.to('.is-floating-left', {x: 0, opacity: 1}, 'animationStart')
     }
     console.log(topTotalHeight, centerImageTop, leftImagePos, centerImageLeft, scrollTop)
-    tl.to(workListItem,{duration:0.5,delay:2,top: totalHeight-scrollTop})
 })
 
 var muted = true;
@@ -150,6 +164,8 @@ $('.muteButton').on('click', function () {
             muted = true;
         }
     }
+
+
 
 
 })
