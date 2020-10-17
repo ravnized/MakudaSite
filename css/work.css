@@ -1,11 +1,11 @@
 @font-face {
     font-family: Gelion-Black;
-    src: url(../media/fonts/Gelion-Black.ttf);
+    src: url('../media/fonts/Gelion-Black.ttf');
 }
 
 @font-face {
     font-family: Gelion-Regular;
-    src: url(../media/fonts/Gelion-Regular.ttf);
+    src: url('../media/fonts/Gelion-Regular.ttf');
 }
 
 
@@ -270,3 +270,7 @@ video{
     position: absolute;
 }
 
+.mainSection{
+    transform: translateY(50vh);
+    opacity: 0;
+}

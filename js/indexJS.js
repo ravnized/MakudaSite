@@ -5,12 +5,11 @@ var elementHeroBody = "<div class=\"container\" id=\"containerText\">\n" +
     "                    <h2 style=\"text-align: center; letter-spacing: 2em; font-size: medium;\">CONSULTING</h2>\n" +
     "                </div>\n" +
     "            </div>"
-var clickOnImage = sessionStorage.getItem('clickOnImage');
 
 
 $(document).ready(function () {
-    console.log(clickOnImage)
-    sessionStorage.removeItem('clickOnImage');
+
+
     var tl = gsap.timeline(),
         tl2 = gsap.timeline(),
         app,
@@ -30,6 +29,14 @@ $(document).ready(function () {
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    function enableScroll() {
+        document.body.style.overflow = '';
     }
 
 
@@ -58,9 +65,12 @@ $(document).ready(function () {
         pin: true,
         scrub: false,
         onEnter: self => {
+            disableScroll();
             animate();
+
         },
         onEnterBack: self => {
+            disableScroll();
             animateBackwards();
         },
     })
@@ -72,7 +82,6 @@ $(document).ready(function () {
         const container = new PIXI.Container();
         videoSprite.width = app.screen.width;
         videoSprite.height = app.screen.height;
-
         app.stage.addChild(container);
         container.addChild(videoSprite)
         displacementSprite = new PIXI.Sprite.from("media/img/clouds.jpg");
@@ -97,7 +106,8 @@ $(document).ready(function () {
     }
 
     function animateBackwards() {
-        tl2.to('#replacement', {duration: 1, css: {scaleX: 0, scaleY: 0, opacity: 0}, ease: "power2.out"}, 0)
+        tl2.to(window, {duration: 1, scrollTo: {x: 0, y: 0}})
+            .to('#replacement', {duration: 1, css: {scaleX: 0, scaleY: 0, opacity: 0}, ease: "power2.out"}, 0)
             .add(function () {
                 if (isFinished === true) {
                     $('.containerDaLevare').remove();
@@ -110,7 +120,7 @@ $(document).ready(function () {
             .to('.hero-video', {css: {opacity: 1}, duration: 1}, 1)
             .to(displacementSprite.scale, {duration: 0.5, x: '-=10', y: '-=10', ease: Power0.easeInOut}, 1)
             .to(displacementFilter.scale, {duration: 0.5, x: "-=" + 900, y: "-=" + 900, ease: Power0.easeInOut}, 1)
-            .to(window, {duration: 0.5, scrollTo: {x: 0, y: 0}}, 1)
+            .add(enableScroll())
     }
 
     function animate() {
@@ -133,11 +143,19 @@ $(document).ready(function () {
                 fillProgress()
             })
             .to(window, {duration: 0.5, scrollTo: {x: 0, y: 3100}})
-
+            .add(enableScroll())
     }
 
-    initPixi();
-    divVideo.appendChild(app.view);
+
+    const tl3 = gsap.timeline();
+    tl3.add(function () {
+        initPixi();
+        divVideo.appendChild(app.view);
+    }, 3);
+    tl3.to('.pageloader', {duration: 1, delay: 3, css: {opacity: 0}}, 0);
+
+    tl3.to('.pageloader', {duration: 1, css: {y: -100 + '%'}});
+
 })
 
 
