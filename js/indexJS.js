@@ -5,19 +5,20 @@ var elementHeroBody = "<div class=\"container\" id=\"containerText\">\n" +
     "                    <h2 style=\"text-align: center; letter-spacing: 2em; font-size: medium;\">CONSULTING</h2>\n" +
     "                </div>\n" +
     "            </div>"
-var varCounter = false;
-var varCounterText = false;
 var clickOnImage = sessionStorage.getItem('clickOnImage');
 
 
 $(document).ready(function () {
-    var isFinished = false;
     console.log(clickOnImage)
     sessionStorage.removeItem('clickOnImage');
     var tl = gsap.timeline(),
-        tl2 = gsap.timeline();
-    var app;
-    var video = document.createElement('video');
+        tl2 = gsap.timeline(),
+        app,
+        video = document.createElement('video'),
+        isFinished = false,
+        divVideo = document.querySelector('#divVideo'),
+        progressArr = [0, 100];
+
     video.loop = true;
     video.crossOrigin = 'anonymous';
     video.preload = 'auto';
@@ -25,14 +26,12 @@ $(document).ready(function () {
     video.autoload = true;
     video.muted = true;
     video.playsinline = "playsinline";
-    var divVideo = document.querySelector('#divVideo');
 
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    var progressArr = [0, 100];
 
     function fillProgress() {
         progressArr.forEach(function (num, index) {
@@ -51,7 +50,6 @@ $(document).ready(function () {
         });
     }
 
-    var navbarHeight = $('nav').height()
     ScrollTrigger.create({
         trigger: "#section-animated",
         start: 'top',
@@ -65,8 +63,6 @@ $(document).ready(function () {
         onEnterBack: self => {
             animateBackwards();
         },
-
-
     })
 
     function initPixi() {
@@ -101,8 +97,7 @@ $(document).ready(function () {
     }
 
     function animateBackwards() {
-        tl2
-            .to('#replacement', {duration: 1, css: {scaleX: 0, scaleY: 0, opacity: 0}, ease: "power2.out"}, 0)
+        tl2.to('#replacement', {duration: 1, css: {scaleX: 0, scaleY: 0, opacity: 0}, ease: "power2.out"}, 0)
             .add(function () {
                 if (isFinished === true) {
                     $('.containerDaLevare').remove();
@@ -137,9 +132,10 @@ $(document).ready(function () {
             .add(function () {
                 fillProgress()
             })
-            .to(window,{duration: 0.5,scrollTo:{x:0,y:3100}})
+            .to(window, {duration: 0.5, scrollTo: {x: 0, y: 3100}})
 
     }
+
     initPixi();
     divVideo.appendChild(app.view);
 })

@@ -1,13 +1,11 @@
 gsap.registerPlugin(CSSRulePlugin)
-var generalItem = $('.workBlockContainer');
-var imageVideo = generalItem.find('.imageVideo')
-var textVideo = generalItem.find('p');
-var arrayListElement = $('.workListItem');
-var heightElements = 0;
-var halfWindowHeight = 0;
-var halfWindowWidth = 0;
-var thisPrec;
-var allHeight = 0;
+var generalItem = $('.workBlockContainer'),
+    imageVideo = generalItem.find('.imageVideo'),
+    textVideo = generalItem.find('p'),
+    arrayListElement = $('.workListItem'),
+    halfWindowHeight = 0,
+    halfWindowWidth = 0,
+    thisPrec;
 
 (function () {
     const blurProperty = gsap.utils.checkPrefix("filter"),
@@ -46,7 +44,7 @@ var allHeight = 0;
 
 
 console.log(textVideo)
-imageVideo.one('click',function () {
+imageVideo.one('click', function () {
     let navBarHeight = $('nav').height(),
         positionImageVideo = imageVideo.offset(),
         leftImagePos = positionImageVideo.left,
@@ -59,8 +57,8 @@ imageVideo.one('click',function () {
         imageWidth = imageVideo.width(),
         workBlockImageSub = $(this).parent(),
         containerTitle = workListItem.find('.container'),
-        workBlockTitle = workListItem.find('.workBlockTitle');
-
+        workBlockTitle = workListItem.find('.workBlockTitle'),
+        arrayListElementHeight;
     console.log(fileNameRedirect)
     thisPrec = this;
 
@@ -72,12 +70,10 @@ imageVideo.one('click',function () {
         centerImageTop = 0,
         scrollTop = 0,
         heightContainer = containerTitle.height();
-    console.log(leftImagePos, topImagePos);
     scrollTop = $(window).scrollTop();
     centerImageLeft = imageWidth / 2;
     centerImageTop = imageHeight / 2;
-
-    console.log('centerx: ' + centerImageLeft + ' centery: ' + centerImageTop)
+    arrayListElementHeight = $(arrayListElement[0]).height();
 
     while (idElement !== $(arrayListElement[cycle]).attr('id')) {
         totalHeight += $(arrayListElement[cycle]).height();
@@ -85,9 +81,7 @@ imageVideo.one('click',function () {
     }
     topTotalHeight = totalHeight + topImagePos;
 
-
     tl.to(textVideo, {duration: 0.2, css: {opacity: 0}, blur: 10})
-    //calcolare il center dell'immagine
 
 
     for (let i = 0; i < arrayListElement.length; i++) {
@@ -96,19 +90,15 @@ imageVideo.one('click',function () {
             tl.to(arrayListElement[i], {duration: 0.2, css: {opacity: 0}})
         }
     }
-    var arrayListElementHeight = $(arrayListElement[0]).height()
-    console.log(arrayListElementHeight)
-    workListItem.css({'top':(totalHeight)+'px'})
-    $('.descVideo').css({'display':'block'})
-    containerTitle.css({'top':arrayListElementHeight+'px'})
+
+
+    workListItem.css({'top': (totalHeight) + 'px'})
+    $('.descVideo').css({'display': 'block'})
+    containerTitle.css({'top': arrayListElementHeight + 'px'})
 
     //'top':($(arrayListElement[0]).height()-(scrollTop))+'px'
-    console.log(heightContainer,workList.height())
-    workList.css({'height':((arrayListElementHeight+heightContainer)*2+totalHeight)+'px'})
 
-
-
-
+    workList.css({'height': ((arrayListElementHeight + heightContainer) * 2 + totalHeight) + 'px'})
     halfWindowHeight = ((($(window).height() / 2 - topTotalHeight) - centerImageTop) + scrollTop)
     halfWindowWidth = ($(window).width() / 2 - leftImagePos) - centerImageLeft;
     for (let i = 0; i < arrayListElement.length; i++) {
@@ -116,7 +106,7 @@ imageVideo.one('click',function () {
             $(arrayListElement[i]).remove();
         }
     }
-    tl.set(containerTitle,{css:{x:halfWindowWidth-leftImagePos}})
+    tl.set(containerTitle, {css: {x: halfWindowWidth - leftImagePos}})
     tl.to(this, {
         duration: 1,
         ease: "power3.in",
@@ -126,16 +116,24 @@ imageVideo.one('click',function () {
         duration: 1,
         ease: "power3.in",
         onComplete: function () {
-            $(this).get(0).play();
+            $('video')[0].play();
             containerTitle.removeClass('hide');
             workBlockTitle.remove();
         }
     }, 'startAnimation')
-    tl.to(workListItem,{duration:0.5,delay:2,css:{top:0}},'startAnimation')
-    tl.to(window,{duration:0.5,delay:2,scrollTo:{x:0,y:0}},'startAnimation')
-    tl.to(this, {duration:0.5,delay:2,y:heightContainer},'startAnimation')
-    tl.to(workListItem,{duration:0.5,delay:2,css:{height:(arrayListElementHeight+heightContainer)}},'startAnimation')
-    tl.to(workList,{duration:0.5,delay:2,css:{height:(arrayListElementHeight+heightContainer)*2}},'startAnimation')
+    tl.to(workListItem, {duration: 0.5, delay: 2, css: {top: 0}}, 'startAnimation')
+    tl.to(window, {duration: 0.5, delay: 2, scrollTo: {x: 0, y: 0}}, 'startAnimation')
+    tl.to(this, {duration: 0.5, delay: 2, y: heightContainer}, 'startAnimation')
+    tl.to(workListItem, {
+        duration: 0.5,
+        delay: 2,
+        css: {height: (arrayListElementHeight + heightContainer)}
+    }, 'startAnimation')
+    tl.to(workList, {
+        duration: 0.5,
+        delay: 2,
+        css: {height: (arrayListElementHeight + heightContainer) * 2}
+    }, 'startAnimation')
     //tl.to(workBlockImageSub,{duration:0.5,delay:2,css:{top:-scrollTop}},'startAnimation')
     //tl.to(workListItem,{duration:0.5,css:{top:}})
     tl.to('.tVideo', {x: 0, opacity: 1}, 'animationStart')
@@ -145,7 +143,6 @@ imageVideo.one('click',function () {
         $('.muteButton').removeClass('hide')
         tl.to('.is-floating-left', {x: 0, opacity: 1}, 'animationStart')
     }
-    console.log(topTotalHeight, centerImageTop, leftImagePos, centerImageLeft, scrollTop)
 })
 
 var muted = true;
@@ -164,8 +161,6 @@ $('.muteButton').on('click', function () {
             muted = true;
         }
     }
-
-
 
 
 })
