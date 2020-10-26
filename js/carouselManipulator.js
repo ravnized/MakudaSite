@@ -44,10 +44,10 @@ $(document).ready(function ($) {
         var elementTestimonialGradientPrevious = previousSlideReview.find('.testimonials-gradient');
         var elementTestimonialNext = nextSlideReview.find('.makuda-testimonial-item');
         var elementTestimonialGradientNext = nextSlideReview.find('.testimonials-gradient');
-        elementTestimonialGradient.removeClass('testimonial-prima');
-        elementTestimonialGradient.removeClass('testimonial-dopo');
         elementTestimonialGradientPrevious.addClass("testimonial-prima");
         elementTestimonialGradientNext.addClass("testimonial-dopo");
+        elementTestimonialGradient.removeClass('testimonial-prima');
+        elementTestimonialGradient.removeClass('testimonial-dopo');
     }
 
     function videoNextPrevious() {
@@ -66,8 +66,7 @@ $(document).ready(function ($) {
         console.log('previous: ' + previousSlideIDVideo)
         console.log('next: ' + nextSlideIDVideo)
         elementVideo[0].play();
-        elementGradient.removeClass('video-prima');
-        elementGradient.removeClass('video-dopo');
+
         if (elementVideoPrevious.length) {
             elementVideoPrevious[0].pause();
         }
@@ -76,6 +75,8 @@ $(document).ready(function ($) {
         }
         elementGradientPrevious.addClass("video-prima");
         elementGradientNext.addClass("video-dopo");
+        elementGradient.removeClass('video-prima');
+        elementGradient.removeClass('video-dopo');
     }
 
     videoNextPrevious();

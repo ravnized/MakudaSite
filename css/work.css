@@ -16,16 +16,12 @@
 }
 
 
-#navbar {
-    background-color: #1d1d1b;
-}
-
 .hero {
-    background-color: black;
+    background-color: #111;
 }
 
 .blackground {
-    background-color: black;
+    background-color: #111;
 }
 
 .colonnaVertical {
@@ -64,12 +60,12 @@ h3 {
 
 
 body {
-    background: #20262E;
+    background-color: #111;
     font-family: Helvetica;
 }
 
 aside {
-    background: #1a1721;
+    background-color: #111;
     margin: 0 1em;
     text-align: center;
     padding-top: 3em !important;
@@ -88,12 +84,12 @@ h1 {
 
 
 .blackground {
-    background: black;
+    background-color: #111;
     height: 100vh;
 }
 
 body {
-    background: black;
+    background-color: #111;
 }
 
 .elementVideoCollection {
@@ -135,7 +131,7 @@ body {
 .sectionFullWorks {
     z-index: 20;
     font-size: 1rem;
-    background-color: #000;
+    background-color: #111;
     width: 100%;
     height: 100%;
     top: 0;
@@ -273,4 +269,8 @@ video{
 .mainSection{
     transform: translateY(50vh);
     opacity: 0;
+}
+.descriptionVideo{
+    max-width: 40%;
+    transform: translateX(150%) translateY(100%);
 }

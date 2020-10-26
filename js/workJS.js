@@ -2,10 +2,12 @@ gsap.registerPlugin(CSSRulePlugin)
 var generalItem = $('.workBlockContainer'),
     imageVideo = generalItem.find('.imageVideo'),
     textVideo = generalItem.find('p'),
+    textVideoDiv = textVideo.parent(),
     arrayListElement = $('.workListItem'),
     halfWindowHeight = 0,
     halfWindowWidth = 0,
-    thisPrec;
+    thisPrec,
+    insideAWork = false;
 
 (function () {
     const blurProperty = gsap.utils.checkPrefix("filter"),
@@ -43,15 +45,49 @@ var generalItem = $('.workBlockContainer'),
 })();
 $(function () {
     var tlFirst = gsap.timeline();
-    tlFirst.to('.mainSection', {duration: 1, css: {y: 4.4+'rem'}, ease: 'power4.in'}, 0)
+    tlFirst.to('.mainSection', {duration: 1, css: {y: 4.4 + 'rem'}, ease: 'power4.in'}, 0)
     tlFirst.to('.mainSection', {duration: 1, css: {opacity: 1}, ease: 'power2.in'}, 0)
 })
 
 
-console.log(textVideo)
+imageVideo.mousemove(function (e) {
+    var timeline = gsap.timeline()
+    var offset = $(this).offset();
+    var relativeX = (e.pageX - offset.left);
+    var relativeY = (e.pageY - offset.top);
+    var cX = $(this).width() / 2;
+    var cY = $(this).height() / 2;
+    console.log(relativeX, relativeY)
+    console.log(cX, cY)
+    var cxRelative = (cX - relativeX) / 20;
+    var cyRelative = (cY - relativeY) / 20;
+    if (insideAWork === false) {
+        timeline.to($(this).parent(), {duration: 0.2, rotateX: cyRelative, rotateY: cxRelative})
+        timeline.to($(this).parent().parent().find('.workBlockTitle'), {
+            duration: 0.2,
+            rotateX: cyRelative,
+            rotateY: cxRelative,
+        }, '-=0.2')
+    }
+
+
+})
+imageVideo.mouseleave(function (event) {
+    var timeline = gsap.timeline();
+    if (insideAWork === false) {
+        timeline.to($(this).parent(), {duration: 1, rotateX: 0, rotateY: 0})
+        timeline.to($(this).parent().parent().find('.workBlockTitle'), {
+            duration: 1,
+            rotateX: 0,
+            rotateY: 0,
+        }, '-=1')
+    }
+
+})
+
+
 imageVideo.one('click', function () {
-    let navBarHeight = $('nav').height(),
-        positionImageVideo = imageVideo.offset(),
+    let positionImageVideo = imageVideo.offset(),
         leftImagePos = positionImageVideo.left,
         topImagePos = positionImageVideo.top,
         workListItem = $(this).parent().parent().parent().parent(),
@@ -60,21 +96,27 @@ imageVideo.one('click', function () {
         fileNameRedirect = workListItem.attr('data-file-name'),
         imageHeight = imageVideo.height(),
         imageWidth = imageVideo.width(),
-        workBlockImageSub = $(this).parent(),
         containerTitle = workListItem.find('.container'),
         workBlockTitle = workListItem.find('.workBlockTitle'),
         arrayListElementHeight;
     console.log(fileNameRedirect)
     thisPrec = this;
-
     var totalHeight = 0,
         tl = gsap.timeline(),
+        timeline = gsap.timeline(),
         cycle = 0,
         topTotalHeight = 0,
         centerImageLeft = 0,
         centerImageTop = 0,
         scrollTop = 0,
         heightContainer = containerTitle.height();
+    insideAWork = true;
+    timeline.to($(this).parent(), {duration: 1, rotateX: 0, rotateY: 0})
+    timeline.to($(this).parent().parent().find('.workBlockTitle'), {
+        duration: 1,
+        rotateX: 0,
+        rotateY: 0,
+    }, '-=1')
     scrollTop = $(window).scrollTop();
     centerImageLeft = imageWidth / 2;
     centerImageTop = imageHeight / 2;
@@ -87,6 +129,7 @@ imageVideo.one('click', function () {
     topTotalHeight = totalHeight + topImagePos;
 
     tl.to(textVideo, {duration: 0.5, css: {opacity: 0}, blur: 10}, 0)
+    tl.to('.descriptionVideo', {duration: 0.5, css: {opacity: 0}, blur: 10}, 0)
 
 
     for (let i = 0; i < arrayListElement.length; i++) {
@@ -117,11 +160,12 @@ imageVideo.one('click', function () {
         ease: "power3.in",
         onComplete: function () {
             $('video')[0].play();
+            $('video')[0].loop = true;
             containerTitle.removeClass('hide');
             workBlockTitle.remove();
         }
     }, 'startAnimation')
-    tl.to('.mainSection',{duration: 0.5, delay: 2, css: {y: 0}}, 'startAnimation')
+    tl.to('.mainSection', {duration: 0.5, delay: 2, css: {y: 0}}, 'startAnimation')
     tl.to(workListItem, {duration: 0.5, delay: 2, css: {top: 0}}, 'startAnimation')
     tl.to(window, {duration: 0.5, delay: 2, scrollTo: {x: 0, y: 0}}, 'startAnimation')
     tl.to(this, {duration: 0.5, delay: 2, y: heightContainer}, 'startAnimation')
@@ -146,22 +190,4 @@ imageVideo.one('click', function () {
     }
 })
 
-var muted = true;
-$('.muteButton').on('click', function () {
-    if ($(thisPrec).is('video')) {
-        console.log('eiueueue')
-        if (muted === true) {
-            $(this).append('<i class="fas fa-volume-mute"></i>')
-            $('.fa-volume-up').remove()
-            $(thisPrec).get(0).muted = false;
-            muted = false;
-        } else {
-            $(this).append('<i class="fas fa-volume-up"></i>')
-            $('.fa-volume-mute').remove()
-            $(thisPrec).get(0).muted = true;
-            muted = true;
-        }
-    }
 
-
-})

@@ -18,6 +18,28 @@
     src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
 }
 
+.makuda-icons {
+    float: left;
+    margin-right: 5%;
+    fill: #f6b600;
+}
+
+.makuda-font-title {
+    font-size: 20px;
+    color: #f6b600;
+    font-family: EuroStile-Bold, serif;
+}
+
+.makuda-font-subString {
+    font-size: 15px;
+
+}
+
+
+.textNearIcons {
+    color: white;
+}
+
 #weAre {
     text-align: center;
     letter-spacing: 0.8em;
@@ -28,11 +50,7 @@
     height: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    .makuda-logo {
 
-    }
-}
 
 .textOverlay {
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
@@ -40,18 +58,27 @@
 
 
 html {
-    background-color: black;
+    background-color: #111111;
 }
 
 body {
-    background-color: black;
+    background-color: #111111;
     color: whitesmoke;
     overflow: hidden;
 }
 
 .makuda-spacing {
     letter-spacing: 0.3em;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    font-family: EuroStile-Bold, serif;
+}
+
+.makuda-font {
+    font-family: EuroStile-Bold, serif;
+}
+
+.containerCar{
+    max-width: 800px;
+    margin-top: 4vh;
 }
 
 .progress::-webkit-progress-value {
@@ -72,16 +99,17 @@ h2 {
 }
 
 
+
 .char {
     animation: an 1s ease-out 1 both;
 }
 
 .card {
-    background-color: black;
+    background-color: #111111;
 }
 
 .colorContainer {
-    background-color: #1d1d1b;
+    background-color: #111111;
     color: whitesmoke;
 
 
@@ -92,9 +120,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-.pUnderProgress {
-    margin-top: -15px;
-}
 
 p {
     font-size: small;
@@ -122,6 +147,7 @@ p {
     background-color: #f6b600;
 }
 
+
 .progress.is-makuda::-moz-progress-bar {
     background-color: #f6b600;
 }
@@ -145,10 +171,9 @@ progress {
 
 .progressbar {
     display: inline-block;
-    width: 100px;
-    margin-left: 15%;
     margin-top: 5%;
     margin-bottom: 5%;
+    min-height: 120px;
 }
 
 .circle {
@@ -167,15 +192,8 @@ progress {
     display: block;
 }
 
-#carousel1 > .slider > .slider-container > .slider-item {
-    width: 800px !important;
-    transform: translate(35%);
-}
 
-#carousel2 > .slider > .slider-container > .slider-item {
-    width: 900px !important;
-    transform: translate(25%);
-}
+
 
 .testimonials-wrapper {
     position: absolute;
@@ -188,6 +206,35 @@ progress {
     object-fit: cover;
     position: relative;
     z-index: 2;
+}
+
+.gradient-video {
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+
+
+.wrapper-gradient {
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper-gradient > video {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    object-fit: cover;
+}
+
+
+.contMargin{
+    margin-top: 10%;
 }
 
 
@@ -218,11 +265,49 @@ progress {
     background: #f6b600 !important;
 }
 
+
+.section {
+    padding: 0 !important;
+}
+
+.video-dopo:before {
+    opacity: 0;
+}
+
+.video-dopo {
+
+    background: linear-gradient(
+            to left,
+            #111111 60%,
+            rgba(0, 0, 0, 0)
+    );
+
+    opacity: 100;
+    transition: opacity 10s;
+
+}
+
+.video-prima:before {
+    opacity: 0;
+}
+
+.video-prima {
+
+    background: linear-gradient(
+            to right,
+            #111111 60%,
+            rgba(0, 0, 0, 0)
+    );
+    opacity: 100;
+    transition: opacity 10s;
+}
+
+
 .testimonial-dopo {
 
     background: linear-gradient(
             to left,
-            black 60%,
+            #111111 60%,
             rgba(0, 0, 0, 0)
     );
 
@@ -239,76 +324,13 @@ progress {
 
     background: linear-gradient(
             to right,
-            black 60%,
+            #111111 60%,
             rgba(0, 0, 0, 0)
     );
     opacity: 100;
     transition: opacity 10s;
 
 }
-
-#carousel2 {
-    height: 500px;
-}
-
-#carousel2 > .slider {
-    height: 500px;
-}
-
-.video-dopo:before {
-    opacity: 0;
-}
-
-.video-dopo {
-
-    background: linear-gradient(
-            to left,
-            black 60%,
-            rgba(0, 0, 0, 0)
-    );
-
-    opacity: 100;
-    transition: opacity 10s;
-
-}
-
-.wrapper-gradient {
-    position: absolute;
-    width: 100%;
-}
-
-.gradient-video {
-    width: 100%;
-    height: calc(100vh - 80px);
-    min-height: 600px;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-}
-
-.wrapper-gradient > video {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    object-fit: cover;
-}
-
-
-.video-prima:before {
-    opacity: 0;
-}
-
-.video-prima {
-
-    background: linear-gradient(
-            to right,
-            black 60%,
-            rgba(0, 0, 0, 0)
-    );
-    opacity: 100;
-    transition: opacity 10s;
-}
-
 
 
 .circle canvas {
@@ -349,27 +371,14 @@ progress {
 }
 
 
-#carousel1 .card {
-    margin-right: 2rem;
-    margin-left: 2rem;
-
-}
-
-#carousel2 .card {
-    margin-right: 2rem;
-    margin-left: 2rem;
-
-}
-
-
 .carousel, .carousel * {
     outline: 0 !important;
 }
 
 
 #replacement {
-    opacity: 0.2;
-    transform: scale(0.5, 0.5);
+    opacity: 0;
+    transform: scale(0.2, 0.2);
 }
 
 
@@ -418,7 +427,7 @@ progress {
 
 
 .makuda-testimonials-item__content {
-    background: #1d1d1b;
+    background: #1a1a1a;
     margin: -30px 20px 0 20px;
     padding: 10px 20px 18px 20px;
     color: #787777;
@@ -444,9 +453,6 @@ progress {
     font-size: 20px !important;
 }
 
-.containerDaLevare {
-    margin-top: 15vh;
-}
 
 .margin-left-right {
     margin-right: 2vh;
@@ -496,6 +502,10 @@ body .makuda-home-link-works span:first-child {
     font-size: 50px;
     line-height: 55px;
     margin: 0 0 28px 0;
+}
+
+#hero-body {
+    height: 100vh;
 }
 
 a {
@@ -643,15 +653,49 @@ Contacts
     color: #fff;
 }
 
-.cardBackground{
-    background-image:url("/media/img/73401809_390252275190258_686177937147393055_n.jpg");
+.cardBackground {
+    background-image: url("../media/img/73401809_390252275190258_686177937147393055_n.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.has-background-blackMakuda{
-    background: rgba(0, 0, 0, 0.6);
+
+.has-background-blackMakuda {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 
+
+@media only screen and (max-width: 1024px) {
+    #containerText{
+        transform: scale(0.8,0.8);
+        transform-origin: left;
+    }
+    #weAre{
+        text-align: left;
+    }
+    .consultingText{
+        text-align: left !important;
+    }
+    .makuda-logo{
+        margin-top: 7%;
+        margin-bottom: 5%;
+    }
+
+    .gradient-video{
+        min-height: 100vh;
+    }
+
+}
+
+.pageloaderLogo{
+    background-color: #111111;
+    min-height: 100%;
+    min-width: 100%;
+    transform-origin: 0 0;
+}
+
+.consultingText{
+    text-align: center; letter-spacing: 2em; font-size: medium;
+}
 

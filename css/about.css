@@ -1,12 +1,18 @@
 @font-face {
     font-family: Gelion-Black;
-    src: url(../media/fonts/Gelion-Black.ttf);
+    src: url('../media/fonts/Gelion-Black.ttf');
 }
 
 @font-face {
     font-family: Gelion-Regular;
-    src: url(../media/fonts/Gelion-Regular.ttf);
+    src: url('../media/fonts/Gelion-Regular.ttf');
 }
+
+@font-face {
+    font-family: EuroStile-Bold;
+    src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
+}
+
 
 
 .rounded {
@@ -18,10 +24,6 @@
 
 #navbar {
     background-color: #1d1d1b;
-}
-
-.hero {
-    background-color: black;
 }
 
 .blackground {
@@ -90,7 +92,7 @@ h3 {
 }
 
 .has-img-background {
-    background: url("../media/img/about-me.jpg") no-repeat center right;
+    background: black no-repeat center right;
     background-size: 800px;
 }
 
@@ -101,3 +103,28 @@ strong {
 .gelion-text {
     font-family: Gelion-Black, sans-serif;
 }
+
+.makuda-font{
+    font-family: EuroStile-Bold, sans-serif;
+}
+
+.makuda-text-head strong{
+    color: #f6b600;
+}
+.makuda-text-head{
+    color: white;
+}
+
+#banner-background {
+    perspective: 8px;
+    perspective-origin: 0%;
+    background: url('../media/img/73401809_390252275190258_686177937147393055_n.jpg') no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+
