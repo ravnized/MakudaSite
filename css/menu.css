@@ -1,0 +1,48 @@
+.menu-background{
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    transform: translate(100%,-100%);
+}
+
+.menuWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: none;
+    z-index: 100;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.letter{
+    filter: blur(10px);
+    transform: translateY(-25%);
+    opacity: 0;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    font-size: 5.5rem;
+    color: black;
+    display: flex;
+}
+.buttonMenu{
+    display: inherit;
+    padding-right: 20%;
+}
+.letterWrapper{
+    display: inherit;
+    height: 20%;
+}
+
+.exit{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+}
+.exit a{
+    color: black;
+}

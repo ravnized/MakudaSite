@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/pageLoader.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
             integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -154,18 +155,54 @@
     <div class="navbar-menu" id="navBarMakuda">
         <div class="navbar-end">
             <div class="navbar-item">
-                    <a>
-                    menu
-                    </a>
-
+                <a onclick="animateMenu()"><span>m</span><span>e</span><span>n</span><span>u</span></a>
             </div>
         </div>
     </div>
 
 </nav>
 
+<div class="menuWrapper">
+    <div class="exit">
+        <a onclick="animateMenuReverse()"><span>c</span><span>l</span><span>o</span><span>s</span><span>e</span></a>
+    </div>
+    <div class="buttonMenu">
+        <div class="letterWrapper">
+            <span class="letter">H</span>
+            <span class="letter">O</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+        </div>
+    </div>
+    <div class="buttonMenu">
+        <div class="letterWrapper">
+            <span class="letter">A</span>
+            <span class="letter">B</span>
+            <span class="letter">O</span>
+            <span class="letter">U</span>
+            <span class="letter">T</span>
+        </div>
+    </div>
+    <div class="buttonMenu">
+        <div class="letterWrapper">
+            <span class="letter">W</span>
+            <span class="letter">O</span>
+            <span class="letter">R</span>
+            <span class="letter">K</span>
+            <span class="letter">S</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="menu-background">
 
 
+    <svg id="triangleMenu" width="280" height="280" viewBox="0 0 280 280" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M140 0L261.244 210H18.7565L140 0Z" fill="white"/>
+    </svg>
+</div>
 
 
 <div id="section-animated">
@@ -784,5 +821,6 @@
         crossorigin="anonymous"></script>
 <script src="js/indexJS.js"></script>
 <script src="js/carouselManipulator.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

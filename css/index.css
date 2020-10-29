@@ -699,3 +699,6 @@ Contacts
     text-align: center; letter-spacing: 2em; font-size: medium;
 }
 
+.slider-pagination{
+    display: none !important;
+}
