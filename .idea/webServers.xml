@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="b32cecd7-0a91-4f14-90a8-6627f12bd623" name="second server" url="http://gnldm1048.siteground.biz">
+        <fileTransfer host="gnldm1048.siteground.biz" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

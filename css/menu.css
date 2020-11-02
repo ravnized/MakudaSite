@@ -3,8 +3,11 @@
     right: 0;
     top: 0;
     z-index: 99;
-    transform: translate(100%,-100%);
+    transform: translate(30vw);
+    display: none;
 }
+
+
 
 .menuWrapper{
     position: fixed;
@@ -15,26 +18,25 @@
     opacity: 0;
     display: none;
     z-index: 100;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #f6b600;
 }
 
 .letter{
-    filter: blur(10px);
-    transform: translateY(-25%);
+    transform: translateX(-45%);
     opacity: 0;
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    font-size: 5.5rem;
     color: black;
     display: flex;
+    font-size: 100%;
+    filter: blur(10px);
+    transform-style: preserve-3d;
 }
 .buttonMenu{
     display: inherit;
-    padding-right: 20%;
 }
 .letterWrapper{
     display: inherit;
-    height: 20%;
+    margin: auto auto;
 }
 
 .exit{
@@ -45,4 +47,32 @@
 }
 .exit a{
     color: black;
+}
+
+.letterWrapper a{
+    display: inherit;
+
+}
+
+.rectangle{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    transform: translate(100vw);
+    background-color: #f6b600;
+}
+
+.menuButton{
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.rectangleNavbar{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
 }

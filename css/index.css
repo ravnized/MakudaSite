@@ -51,7 +51,6 @@
 }
 
 
-
 .textOverlay {
     font-family: 'Gelion-Black', Gelion-Black, sans-serif;
 }
@@ -76,7 +75,7 @@ body {
     font-family: EuroStile-Bold, serif;
 }
 
-.containerCar{
+.containerCar {
     max-width: 800px;
     margin-top: 4vh;
 }
@@ -97,7 +96,6 @@ h2 {
     /*transition: width 250ms ease-in-out;*/
     transition: width 1s ease-in-out;
 }
-
 
 
 .char {
@@ -193,8 +191,6 @@ progress {
 }
 
 
-
-
 .testimonials-wrapper {
     position: absolute;
     width: 100%;
@@ -210,7 +206,7 @@ progress {
 
 .gradient-video {
     width: 100%;
-    min-height: 400px;
+    min-height: 600px;
     object-fit: cover;
     position: absolute;
     z-index: 2;
@@ -233,7 +229,7 @@ progress {
 }
 
 
-.contMargin{
+.contMargin {
     margin-top: 10%;
 }
 
@@ -664,41 +660,53 @@ Contacts
     background: rgba(0, 0, 0, 0.8);
 }
 
-
+#containerText {
+    opacity: 0;
+}
 
 @media only screen and (max-width: 1024px) {
-    #containerText{
-        transform: scale(0.8,0.8);
+    #containerText {
+        transform: scale(0.8, 0.8);
         transform-origin: left;
     }
-    #weAre{
+
+    #weAre {
         text-align: left;
     }
-    .consultingText{
+
+    .consultingText {
         text-align: left !important;
     }
-    .makuda-logo{
+
+    .makuda-logo {
         margin-top: 7%;
         margin-bottom: 5%;
     }
 
-    .gradient-video{
+    .gradient-video {
         min-height: 100vh;
     }
 
 }
 
-.pageloaderLogo{
+.pageloaderLogo {
     background-color: #111111;
     min-height: 100%;
     min-width: 100%;
     transform-origin: 0 0;
 }
 
-.consultingText{
-    text-align: center; letter-spacing: 2em; font-size: medium;
+.consultingText {
+    text-align: center;
+    letter-spacing: 2em;
+    font-size: medium;
+    opacity: 0;
 }
 
-.slider-pagination{
+.slider-pagination {
     display: none !important;
+}
+
+.cardino {
+    background-color: #4a4a4a;
 }
