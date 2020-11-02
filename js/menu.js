@@ -39,48 +39,70 @@ $(function () {
         });
     })();
 })
-var letters = $('.letterWrapper');
-letters.on('mouseenter', function (event) {
-
-    var lettersLength = $(this).find('.letter').length;
-    var numberGenerate;
-    var numberGenerated = [];
-    for (let i = 0; i < lettersLength; i++) {
-        var tl = gsap.timeline();
-
-        do {
-            var uscire = false
-            numberGenerate = Math.floor(Math.random() * (lettersLength));
-            if (!numberGenerated.includes(numberGenerate)) {
-                numberGenerated.push(numberGenerate)
-                uscire = true
-            }
-        } while (!uscire)
-        var numberGeneratedI = numberGenerated[i].toFixed(0)
-
-        tl.to($(this).children().children()[numberGeneratedI], {
-            duration: 0.5,
-            rotationX: 100,
-            z: -200,
-            transformOrigin: '50% 50% -26rem',
-            ease: 'Power4.easeIn',
-        }, '0.' + (i))
 
 
-        tl.set($(this).children().children()[numberGeneratedI], {
-            rotationX: -90,
-            z: -200,
-            transformOrigin: '50% 50% -26rem',
-            ease: 'Power4.easeOut',
-        })
-        tl.to($(this).children().children()[numberGeneratedI], {
-            duration: 0.7,
-            rotationX: 0,
-            z: 0,
-            transformOrigin: '50% 50% -26rem',
-            ease: 'Power4.easeOut',
-        })
-    }
+let letters = document.querySelectorAll(".letterWrapper");
+letters.forEach(item => {
+    item.tl = gsap.timeline()
+    item.isFinished = false
+    item.addEventListener('mouseenter', (event) => {
+        item.lettersLength = $(item).find('.letter').length;
+        item.numberGenerate = 0;
+        item.numberGenerated = [];
+
+        if(item.tl.isActive()){
+            return
+        }
+
+        for (item.i = 0; item.i < item.lettersLength; item.i++) {
+
+            do {
+                item.uscire = false
+                item.numberGenerate = Math.floor(Math.random() * (item.lettersLength));
+                if (!item.numberGenerated.includes(item.numberGenerate)) {
+                    item.numberGenerated.push(item.numberGenerate);
+                    item.uscire = true;
+                }
+            } while (!item.uscire)
+            item.numberGeneratedI = item.numberGenerated[item.i].toFixed(0)
+
+            item.delay = '0.1' * item.i;
+            console.log(item.delay)
+
+            item.tl.to($(item).children().children()[item.numberGeneratedI], {
+                delay: item.delay,
+                duration: 0.5,
+                rotationX: 100,
+                z: -200,
+                transformOrigin: '50% 50% -26rem',
+                ease: 'Power4.easeIn',
+            } ,'startAnimation')
+
+
+            item.tl.set($(item).children().children()[item.numberGeneratedI], {
+                delay: item.delay+0.5,
+                rotationX: -90,
+                z: -200,
+                transformOrigin: '50% 50% -26rem',
+                ease: 'Power4.easeOut',
+            },'startAnimation')
+            item.tl.to($(item).children().children()[item.numberGeneratedI], {
+                delay: item.delay+0.5,
+                duration: 0.7,
+                rotationX: 0,
+                z: 0,
+                transformOrigin: '50% 50% -26rem',
+                ease: 'Power4.easeOut',
+                onComplete: function () {
+                    item.tl.clear()
+                    item.isFinished = true
+                }
+            },'startAnimation')
+
+        }
+
+    })
+
 
 })
 
@@ -94,7 +116,7 @@ function animateMenu() {
         ease: 'expo.in'
     }, 0)
         .to('.menuWrapper', {duration: 0.2, autoAlpha: 1, display: 'flex'})
-        .to('.letter', {duration: 0.5, autoAlpha: 1, blur: 0, translateX: 0})
+        .to('.letter', {duration: 0.5, blur: 0, translateX: 0, autoAlpha: 1})
 
 }
 
@@ -117,11 +139,23 @@ function menuSize() {
     let button = $('.buttonMenu')
     let buttonWidth = $(window).width() / button.length + 1
     let lettersHeight = $('.letter').width()
-    for (let i = 0; i < button.length; i++) {
-        $(button[i]).css({'margin-left': buttonWidth/5 + 'px', 'font-size': buttonWidth / 6 + 'px'})
+    for (let i = 0; i < button.length - 1; i++) {
+        $(button[i]).css({'padding-right': buttonWidth / 5 + 'px'})
+        console.log($(button[i]).outerWidth())
     }
+    for (let i = 0; i < button.length; i++) {
+        $(button[i]).css({'font-size': buttonWidth / 5 + 'px'})
+        $(button[i]).css({'transform': 'scale(0.9)', 'transform-origin': '50% 50%'})
+    }
+    $(button[3]).css('margin-right', '2rem')
 
 
 }
 
 menuSize()
+$(window).on('resize', function () {
+
+    menuSize()
+})
+
+
