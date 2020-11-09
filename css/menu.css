@@ -1,3 +1,24 @@
+@font-face {
+    font-family: Gelion-Black;
+    src: url("../media/fonts/Gelion-Black.ttf");
+}
+
+@font-face {
+    font-family: Gelion-Regular;
+    src: url("../media/fonts/Gelion-Regular.ttf");
+}
+
+@font-face {
+    font-family: la-regular;
+    src: url("../media/fonts/la-regular-400.ttf");
+}
+
+@font-face {
+    font-family: EuroStile-Bold;
+    src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
+}
+
+
 .menu-background{
     position:fixed;
     right: 0;

@@ -1,4 +1,3 @@
-var menuAnimationFinished = false;
 var heightTrinagle = $('#triangleMenu').attr('height') / 2;
 var heightTotal = ($(window).height() / 2) - heightTrinagle
 $('#triangleMenu').css({'transform': 'translateY(' + heightTotal + 'px)' + ' rotate(-90deg) scale(5)'});
@@ -50,7 +49,7 @@ letters.forEach(item => {
         item.numberGenerate = 0;
         item.numberGenerated = [];
 
-        if(item.tl.isActive()){
+        if (item.tl.isActive()) {
             return
         }
 
@@ -67,7 +66,6 @@ letters.forEach(item => {
             item.numberGeneratedI = item.numberGenerated[item.i].toFixed(0)
 
             item.delay = '0.1' * item.i;
-            console.log(item.delay)
 
             item.tl.to($(item).children().children()[item.numberGeneratedI], {
                 delay: item.delay,
@@ -76,30 +74,31 @@ letters.forEach(item => {
                 z: -200,
                 transformOrigin: '50% 50% -26rem',
                 ease: 'Power4.easeIn',
-            } ,'startAnimation')
+            }, 'startAnimation')
 
 
             item.tl.set($(item).children().children()[item.numberGeneratedI], {
-                delay: item.delay+0.5,
+                delay: item.delay + 0.5,
                 rotationX: -90,
                 z: -200,
                 transformOrigin: '50% 50% -26rem',
                 ease: 'Power4.easeOut',
-            },'startAnimation')
+            }, 'startAnimation')
             item.tl.to($(item).children().children()[item.numberGeneratedI], {
-                delay: item.delay+0.5,
+                delay: item.delay + 0.5,
                 duration: 0.7,
                 rotationX: 0,
                 z: 0,
                 transformOrigin: '50% 50% -26rem',
                 ease: 'Power4.easeOut',
-                onComplete: function () {
-                    item.tl.clear()
-                    item.isFinished = true
-                }
-            },'startAnimation')
+            }, 'startAnimation')
+
 
         }
+        item.tl.call(function () {
+            item.tl.clear()
+            item.isFinished = true
+        })
 
     })
 
@@ -108,7 +107,7 @@ letters.forEach(item => {
 
 
 function animateMenu() {
-    var tl = gsap.timeline();
+    let tl = gsap.timeline();
     tl.to('.menu-background', {
         duration: 1,
         translateX: '-' + $(window).width() + 'px',
@@ -121,7 +120,7 @@ function animateMenu() {
 }
 
 function animateMenuReverse() {
-    var tl = gsap.timeline();
+    let tl = gsap.timeline();
     tl.to('.letter', {duration: 0.5, autoAlpha: 0, blur: 10, translateX: '+45%'}, 0)
         .to('.menuWrapper', {duration: 0.2, autoAlpha: 0, display: 'none'})
         .to('.menu-background', {
@@ -141,7 +140,7 @@ function menuSize() {
     let lettersHeight = $('.letter').width()
     for (let i = 0; i < button.length - 1; i++) {
         $(button[i]).css({'padding-right': buttonWidth / 5 + 'px'})
-        console.log($(button[i]).outerWidth())
+        $(button[i]).outerWidth()
     }
     for (let i = 0; i < button.length; i++) {
         $(button[i]).css({'font-size': buttonWidth / 5 + 'px'})
@@ -154,7 +153,6 @@ function menuSize() {
 
 menuSize()
 $(window).on('resize', function () {
-
     menuSize()
 })
 

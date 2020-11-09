@@ -56,23 +56,16 @@ $(document).ready(function ($) {
         var previousSlideVideo = $('[data-slider-index="' + previousSlideIDVideo + '"]');
         var nextSlideIDVideo = currentSlideIDVideo + 1;
         var nextSlideVideo = $('[data-slider-index="' + nextSlideIDVideo + '"]');
-        var elementVideo = currentSlideVideo.find('video');
+        var elementVideo = currentSlideVideo.find('.cardinoVideo');
         var elementGradient = currentSlideVideo.find('.gradient-video');
-        var elementVideoPrevious = previousSlideVideo.find('video');
+        var elementVideoPrevious = previousSlideVideo.find('.cardinoVideo');
         var elementGradientPrevious = previousSlideVideo.find('.gradient-video');
-        var elementVideoNext = nextSlideVideo.find('video');
+        var elementVideoNext = nextSlideVideo.find('.cardinoVideo');
         var elementGradientNext = nextSlideVideo.find('.gradient-video');
         console.log('current: ' + currentSlideIDVideo)
         console.log('previous: ' + previousSlideIDVideo)
         console.log('next: ' + nextSlideIDVideo)
-        elementVideo[0].play();
 
-        if (elementVideoPrevious.length) {
-            elementVideoPrevious[0].pause();
-        }
-        if (elementVideoNext.length) {
-            elementVideoNext[0].pause();
-        }
         elementGradientPrevious.addClass("video-prima");
         elementGradientNext.addClass("video-dopo");
         elementGradient.removeClass('video-prima');

@@ -1,0 +1,35 @@
+.startContainer {
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+label {
+    color: #f6b600 !important;
+}
+
+.inputMakuda.inputMakuda {
+    background-color: #2f2f2f;
+    border: none;
+    color: white;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+
+.inputMakuda::placeholder {
+    color: white;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+
+.textAreaMakuda.textAreaMakuda{
+    background-color: #2f2f2f;
+    border: none;
+    color: white;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+.textAreaMakuda::placeholder {
+    color: white;
+    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+}
+
+.hide{
+    display: none;
+}

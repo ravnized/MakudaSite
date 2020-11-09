@@ -18,30 +18,24 @@ $(document).ready(function () {
         video.playsinline = "playsinline";
 
 
-        function disableScroll() {
-            document.body.style.overflow = 'hidden';
-        }
-
-        function enableScroll() {
-            document.body.style.overflow = '';
-        }
-
-        let displacementSprite
-        let displacementFilter
+        var displacementSprite
+        var displacementFilter
         let isFinished
-        let heightWindow = $(window).height()
-        let widthWindow = $(window).width()
+        var heightWindow = $(window).height();
+        var widthWindow = $(window).width();
+
 
         function initPixi() {
+
             isFinished = false;
             app = new PIXI.Application({
                 width: widthWindow,
                 height: heightWindow,
             });
-            const videoTexture = new PIXI.Texture.from(video)
-            const videoSprite = new PIXI.Sprite.from(videoTexture);
-            const container = new PIXI.Container();
-            videoSprite.width = widthWindow
+            var videoTexture = new PIXI.Texture.from(video)
+            var videoSprite = new PIXI.Sprite.from(videoTexture);
+            var container = new PIXI.Container();
+            videoSprite.width = widthWindow;
             videoSprite.height = heightWindow;
             app.stage.addChild(container);
             container.addChild(videoSprite);
@@ -55,33 +49,45 @@ $(document).ready(function () {
             displacementSprite.scale.y = 0;
             displacementSprite.position.x = app.screen.width / 2;
             displacementSprite.position.y = app.screen.height / 2;
-            tl3.to('#containerText', {
-                delay: 2,
-                duration: 2,
-                opacity: 1,
+
+            tl3.to('.consultingText', {delay: 2, duration: 0.5, autoAlpha: 1})
+            tl3.to('#weAre', {
+                delay: 1,
+                duration: 0.5,
+                autoAlpha: 1,
 
             })
             app.ticker.stop();
             gsap.ticker.add(() => {
                 app.ticker.update();
+                $(window).resize(function () {
+                    heightWindow = $(window).height();
+                    widthWindow = $(window).width();
+                    console.log(heightWindow, widthWindow)
+                    app.screen.width = widthWindow;
+                    app.screen.height = heightWindow;
+                    videoSprite.width = widthWindow;
+                    videoSprite.height = heightWindow;
+                    app.renderer.resize(widthWindow, heightWindow);
+                })
             });
 
-            tl3.to('.consultingText', {duration: 0.5, opacity: 1})
-            ScrollTrigger.create({
+
+            var scroller = ScrollTrigger.create({
                 trigger: "#section-animated",
-                start: '10',
-                end: '3000',
+                start: ($(window).height() / 30),
+                end: '+=3010',
                 markers: false,
                 pin: true,
                 scrub: false,
                 onEnter: self => {
                     var tl = gsap.timeline();
 
-                    tl.to(window, {duration: 1, scrollTo: {x: 0, y: 3010}})
+                    tl.to(window, {duration: 1, scrollTo: {y: ($(window).height() / 30) + 3010}})
                         .to(displacementSprite.scale, {duration: 1, x: '+=10', y: '+=10'}, 0)
                         .to(displacementFilter.scale, {duration: 1, x: "+=900", y: "+=900"}, 0)
-                        .to('.hero-video', {css: {autoAlpha: 0}, duration: 1}, 0.7)
-                        .to('.hero-body', {css: {autoAlpha: 0}, duration: 1}, 0.7)
+                        .to('.hero-video', {autoAlpha: 0, duration: 0.5}, 0.5)
+                        .to('.hero-body', {autoAlpha: 0, duration: 0.5}, 0.5)
                         .add(function () {
                             if (isFinished === false) {
                                 $('.hero-body').addClass('hide');
@@ -108,7 +114,7 @@ $(document).ready(function () {
                 },
                 onEnterBack: self => {
                     var tl2 = gsap.timeline();
-                    tl2.to(window, {duration: 1, scrollTo: {x: 0, y: 0}})
+                    tl2.to(window, {duration: 1, scrollTo: {y: 0}})
                         .to('#replacement', {
                             duration: 1,
                             css: {scaleX: 0.2, scaleY: 0.2, autoAlpha: 0},
@@ -116,24 +122,20 @@ $(document).ready(function () {
                         }, 0)
                         .add(function () {
                             if (isFinished === true) {
-                                console.log('animateBack')
-                                console.log(isFinished)
                                 $('#containerDaLevare').remove();
                                 $('.hero-body').append(elementHeroBody);
                                 $('.hero-body').removeClass('hide');
                                 isFinished = false;
                             }
                         })
-                        .to('.hero-video', {css: {autoAlpha: 1}, duration: 1}, 0.5)
-                        .to('.hero-body', {css: {autoAlpha: 1}, duration: 2}, 0.5)
-                        .to(displacementSprite.scale, {duration: 1, x: '-=10', y: '-=10'}, 1)
-                        .to(displacementFilter.scale, {duration: 1, x: "-=900", y: "-=900"}, 1)
+                        .to('.hero-video', {autoAlpha: 1, duration: 0.5}, 0.5)
+                        .to('.hero-body', {autoAlpha: 1, duration: 0.5}, 0.5)
+                        .to(displacementSprite.scale, {duration: 1, x: '-=10', y: '-=10'}, 0.5)
+                        .to(displacementFilter.scale, {duration: 1, x: "-=900", y: "-=900"}, 0.5)
 
                 },
             })
         }
-
-
 
 
         var finished = false
@@ -149,7 +151,6 @@ $(document).ready(function () {
                 }
             })
             if ($(window).width() > 1024) {
-
                 initPixi();
                 tl3.to('.pageloader', {
                     duration: 0.5, autoAlpha: 0, onComplete: function () {
@@ -182,27 +183,7 @@ $(document).ready(function () {
 
             var makuda = ['M', 'A_2', 'K', 'U', 'D', 'A', 'triangle']
             for (let k = 0; k < makuda.length; k++) {
-
-                tl3.to('#' + makuda[k], {
-                    duration: 0, autoAlpha: 1, onComplete: function () {
-
-                        //$('#pageloaderImg').css('opacity','1')
-                        /*
-                                            $(pageloader).remove()
-                                            for (let l = 5;l>2;l--){
-                                                tl3.to('#'+makuda[l],{duration:0.2 ,scaleY:0, ease: 'power2.in'})
-                                            }
-                                            for (let z = 0;z<2;z++){
-                                                tl3.to('#'+makuda[z],{duration:0.2,scaleY:0, ease: 'power2.in'})
-                                            }
-
-
-                         */
-
-                    }
-                })
-
-
+                tl3.to('#' + makuda[k], {duration: 0, autoAlpha: 1})
             }
 
 

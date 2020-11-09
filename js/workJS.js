@@ -46,7 +46,7 @@ var generalItem = $('.workBlockContainer'),
 $(function () {
     var tlFirst = gsap.timeline();
     tlFirst.to('.mainSection', {duration: 1, css: {y: 4.4 + 'rem'}, ease: 'power4.in'}, 0)
-    tlFirst.to('.mainSection', {duration: 1, css: {opacity: 1}, ease: 'power2.in'}, 0)
+    tlFirst.to('.mainSection', {duration: 1, css: {autoAlpha: 1}, ease: 'power2.in'}, 0)
 })
 
 
@@ -128,14 +128,14 @@ imageVideo.one('click', function () {
     }
     topTotalHeight = totalHeight + topImagePos;
 
-    tl.to(textVideo, {duration: 0.5, css: {opacity: 0}, blur: 10}, 0)
-    tl.to('.descriptionVideo', {duration: 0.5, css: {opacity: 0}, blur: 10}, 0)
+    tl.to(textVideo, {duration: 0.5, css: {autoAlpha: 0}, blur: 10}, 0)
+    tl.to('.descriptionVideo', {duration: 0.5, css: {autoAlpha: 0}, blur: 10}, 0)
 
 
     for (let i = 0; i < arrayListElement.length; i++) {
 
         if (idElement !== $(arrayListElement[i]).attr('id')) {
-            tl.to(arrayListElement[i], {duration: 0.5, css: {opacity: 0}, ease: 'power2.in'}, 0)
+            tl.to(arrayListElement[i], {duration: 0.5, css: {autoAlpha: 0}, ease: 'power2.in'}, 0)
             $(arrayListElement[i]).remove();
         }
     }
@@ -181,12 +181,12 @@ imageVideo.one('click', function () {
     }, 'startAnimation')
     //tl.to(workBlockImageSub,{duration:0.5,delay:2,css:{top:-scrollTop}},'startAnimation')
     //tl.to(workListItem,{duration:0.5,css:{top:}})
-    tl.to('.tVideo', {x: 0, opacity: 1}, 'animationStart')
-    tl.to('.subVideo', {x: 0, opacity: 1}, 'animationStart')
-    tl.to('.descVideo', {y: 0, opacity: 1, blur: 0}, 'animationStart')
+    tl.to('.tVideo', {x: 0, autoAlpha: 1}, 'animationStart')
+    tl.to('.subVideo', {x: 0, autoAlpha: 1}, 'animationStart')
+    tl.to('.descVideo', {y: 0, autoAlpha: 1, blur: 0}, 'animationStart')
     if (fileNameRedirect === 'toyaMerda') {
         $('.muteButton').removeClass('hide')
-        tl.to('.is-floating-left', {x: 0, opacity: 1}, 'animationStart')
+        tl.to('.is-floating-left', {x: 0, autoAlpha: 1}, 'animationStart')
     }
 })
 
