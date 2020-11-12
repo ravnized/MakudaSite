@@ -27,29 +27,15 @@
     <div class="navbar-menu" id="navBarMakuda">
         <div class="navbar-end">
             <div class="navbar-item">
-                <a class="menuButton"
-                   onclick="animateMenu()"><span>M</span><span>E</span><span>N</span><span>U</span>
-
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                   onclick="animateMenu()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" height="33" width="33"
-                     class="rectangleNavbar">
-                    <style type="text/css">
-                        .st0 {
-                            fill: none;
-                            stroke: #F6B707;
-                            stroke-width: 3;
-                            stroke-miterlimit: 10;
-                        }
-                    </style>
-                    <polyline class="st0" points="1.5,8.07 1.5,1.5 28.63,1.5 28.63,28.63 1.5,28.63 1.5,22.86 		"/>
-                </svg>
-
-
             </div>
         </div>
     </div>
-
 </nav>
 
 <div class="menuWrapper">
@@ -123,8 +109,10 @@
     </svg>
 </div>
 
-
 <div class="container startContainer">
+    <img  style="border:0; width: 100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+&key=AIzaSyBt31e7pnIm_4q4tQz2DDtWVUBgW-wqRfQ" allowfullscreen/>
+
     <form action=" " method="post" id="form">
         <div class="field">
             <label class="label">Name</label>

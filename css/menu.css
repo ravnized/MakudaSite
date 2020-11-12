@@ -28,7 +28,9 @@
     display: none;
 }
 
-
+.navbar-burger{
+    display: initial !important;
+}
 
 .menuWrapper{
     position: fixed;
