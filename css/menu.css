@@ -1,102 +1,107 @@
 @font-face {
-    font-family: Gelion-Black;
-    src: url("../media/fonts/Gelion-Black.ttf");
+  font-family: Gelion-Black;
+  src: url("../media/fonts/Gelion-Black.ttf");
 }
 
 @font-face {
-    font-family: Gelion-Regular;
-    src: url("../media/fonts/Gelion-Regular.ttf");
+  font-family: Gelion-Regular;
+  src: url("../media/fonts/Gelion-Regular.ttf");
 }
 
 @font-face {
-    font-family: la-regular;
-    src: url("../media/fonts/la-regular-400.ttf");
+  font-family: la-regular;
+  src: url("../media/fonts/la-regular-400.ttf");
 }
 
 @font-face {
-    font-family: EuroStile-Bold;
-    src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
+  font-family: EuroStile-Bold;
+  src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
 }
 
-
-.menu-background{
-    position:fixed;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    transform: translate(30vw);
-    display: none;
+@font-face {
+  font-family: Gelion-light;
+  src: url("../media/fonts/Gelion-Light.ttf");
 }
 
-.navbar-burger{
-    display: initial !important;
+.menu-background {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  transform: translate(30vw);
+  display: none;
 }
 
-.menuWrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0;
-    display: none;
-    z-index: 100;
-    background-color: #f6b600;
+.navbar-burger {
+  display: initial !important;
 }
 
-.letter{
-    transform: translateX(-45%);
-    opacity: 0;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    color: black;
-    display: flex;
-    font-size: 100%;
-    filter: blur(10px);
-    transform-style: preserve-3d;
-}
-.buttonMenu{
-    display: inherit;
-    margin: auto;
-}
-.letterWrapper{
-    display: inherit;
-    margin: auto auto;
+.menuWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  display: none;
+  z-index: 100;
+  background-color: #f6b600;
 }
 
-.exit{
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 100;
-}
-.exit a{
-    color: black;
-}
-
-.letterWrapper a{
-    display: inherit;
-
+.letter {
+  transform: translateX(-45%);
+  opacity: 0;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
+  color: black;
+  display: flex;
+  font-size: 100%;
+  transform-style: preserve-3d;
 }
 
-.rectangle{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    transform: translate(100vw);
-    background-color: #f6b600;
+.buttonMenu {
+  display: inherit;
+  margin: auto;
 }
 
-.menuButton{
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    letter-spacing: 0.2em;
-    left: -5px
+.letterWrapper {
+  display: inherit;
+  margin: auto auto;
 }
 
-.rectangleNavbar{
-    position: absolute;
-    z-index: -1;
-    right: 5px;
+.exit {
+  position: fixed;
+  right: 3em;
+  top: 2em;
+  z-index: 100;
+}
+
+.exit a {
+  color: black;
+}
+
+.letterWrapper a {
+  display: inherit;
+}
+
+.rectangle {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  transform: translate(100vw);
+  background-color: #f6b600;
+}
+
+.menuButton {
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
+  letter-spacing: 0.2em;
+  left: -5px;
+}
+
+.rectangleNavbar {
+  position: absolute;
+  z-index: -1;
+  right: 5px;
 }

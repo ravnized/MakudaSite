@@ -1,194 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contact US</title>
-    <link href="css/bulma.min.css" rel="stylesheet">
-    <link href="css/bello.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/contacts.css">
-    <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9eeab300fc.js" crossorigin="anonymous"></script>
+    <link href="css/bulma.min.css" rel="stylesheet" />
+    <link href="css/bello.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9eeab300fc.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"
+      integrity="sha512-O7kHS9ooekX8EveiC94z9xSvD/4xt10Qigl6uEKvspYykdux3Ci5QNu5fwi4ca0ZkZI/oCgx5ja8RklWUEqzxQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+      integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-</head>
-<body style="background-color: #111">
-
-<nav aria-label="main navigation" class="navbar is-fixed-top is-black" role="navigation">
-    <div class="navbar-brand">
+  </head>
+  <body style="background-color: #111">
+    <nav
+      aria-label="main navigation"
+      class="navbar is-fixed-top is-black"
+      role="navigation"
+    >
+      <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-            <img height="28" src="media/img/LogoIcona_PNG_Negativo(1).png" width="28">
+          <img
+            height="28"
+            src="media/img/LogoIcona_PNG_Negativo(1).png"
+            width="28"
+          />
         </a>
-
-    </div>
-    <div class="navbar-menu" id="navBarMakuda">
+      </div>
+      <div class="navbar-menu" id="navBarMakuda">
         <div class="navbar-end">
-            <div class="navbar-item">
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                   onclick="animateMenu()">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<div class="menuWrapper">
-    <div class="exit">
-        <a onclick="animateMenuReverse()"><span>c</span><span>l</span><span>o</span><span>s</span><span>e</span></a>
-    </div>
-
-
-    <div class="buttonMenu">
-        <div class="letterWrapper">
-            <a href="index.html">
-                <span class="letter">H</span>
-                <span class="letter">O</span>
-                <span class="letter">M</span>
-                <span class="letter">E</span>
+          <div class="navbar-item">
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              onclick="animateMenu()"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </a>
-
+          </div>
         </div>
-    </div>
+      </div>
+    </nav>
 
+    <div class="menuWrapper">
+      <div class="exit">
+        <a onclick="animateMenuReverse()"
+          ><span>c</span><span>l</span><span>o</span><span>s</span
+          ><span>e</span></a
+        >
+      </div>
 
-    <div class="buttonMenu ">
+      <div class="buttonMenu">
         <div class="letterWrapper">
-            <a href="about.html">
-                <span class="letter">A</span>
-                <span class="letter">B</span>
-                <span class="letter">O</span>
-                <span class="letter">U</span>
-                <span class="letter">T</span>
-            </a>
-
+          <a href="index.html">
+            <span class="letter">H</span>
+            <span class="letter">O</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+          </a>
         </div>
-    </div>
-    <div class="buttonMenu">
+      </div>
+
+      <div class="buttonMenu">
         <div class="letterWrapper">
-            <a href="work.html">
-                <span class="letter">W</span>
-                <span class="letter">O</span>
-                <span class="letter">R</span>
-                <span class="letter">K</span>
-                <span class="letter">S</span>
-            </a>
+          <a href="about.html">
+            <span class="letter">A</span>
+            <span class="letter">B</span>
+            <span class="letter">O</span>
+            <span class="letter">U</span>
+            <span class="letter">T</span>
+          </a>
         </div>
-    </div>
-    <div class="buttonMenu">
+      </div>
+      <div class="buttonMenu">
         <div class="letterWrapper">
-            <a href="contacts.html">
-                <span class="letter">C</span>
-                <span class="letter">O</span>
-                <span class="letter">N</span>
-                <span class="letter">T</span>
-                <span class="letter">A</span>
-                <span class="letter">C</span>
-                <span class="letter">T</span>
-                <span class="letter">S</span>
-
-            </a>
+          <a href="work.html">
+            <span class="letter">W</span>
+            <span class="letter">O</span>
+            <span class="letter">R</span>
+            <span class="letter">K</span>
+            <span class="letter">S</span>
+          </a>
         </div>
+      </div>
+      <div class="buttonMenu">
+        <div class="letterWrapper">
+          <a href="contacts.html">
+            <span class="letter">C</span>
+            <span class="letter">O</span>
+            <span class="letter">N</span>
+            <span class="letter">T</span>
+            <span class="letter">A</span>
+            <span class="letter">C</span>
+            <span class="letter">T</span>
+            <span class="letter">S</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-</div>
+    <div class="menu-background">
+      <div class="rectangle"></div>
+      <svg
+        id="triangleMenu"
+        width="280"
+        height="280"
+        viewBox="0 0 460 280"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M460 231L230 1V231H460Z" fill="#f6b600" />
+        <path d="M0 231L230 1V231H0Z" fill="#f6b600" />
+        <rect
+          id="rectangle"
+          x="227"
+          y="6"
+          width="7"
+          height="225"
+          fill="#f6b600"
+        />
+      </svg>
+    </div>
 
-
-<div class="menu-background">
-    <div class="rectangle"></div>
-    <svg id="triangleMenu" width="280" height="280" viewBox="0 0 460 280" fill="none"
-         xmlns="http://www.w3.org/2000/svg">
-        <path d="M460 231L230 1V231H460Z" fill="#f6b600"/>
-        <path d="M0 231L230 1V231H0Z" fill="#f6b600"/>
-        <rect id="rectangle" x="227" y="6" width="7" height="225" fill="#f6b600"/>
-    </svg>
-</div>
-
-<div class="container startContainer">
-    <img  style="border:0; width: 100%" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-&key=AIzaSyBt31e7pnIm_4q4tQz2DDtWVUBgW-wqRfQ" allowfullscreen/>
-
-    <form action=" " method="post" id="form">
-        <div class="field">
-            <label class="label">Name</label>
-            <div class="control  has-icons-left">
-                <input class="input inputMakuda" name="firstName" type="text" placeholder="Mario">
+    <div class="container startContainer">
+      <div id="map" class="map">
+        <div id="popup"></div>
+      </div>
+      <div class="columns" style="margin-top: 3em">
+        <div class="column">
+          <img
+            src="/media/img/LogoIcona_PNG_Negativo(1).png"
+            height="100px"
+            width="100px"
+            alt=""
+          />
+          <h1 style="max-width: 50%" class="whiteH1">
+            Seguici sui nostri social network!
+          </h1>
+          <br />
+          <div class="orangeStick">
+            <h1 class="whiteH1meno"><a>Facebook</a></h1>
+            <h1 class="whiteH1meno"><a>Instagram</a></h1>
+          </div>
+        </div>
+        <div class="column">
+          <form action=" " method="post" id="form">
+            <div class="field">
+              <div class="control has-icons-left">
+                <input
+                  class="input inputMakuda"
+                  name="firstName"
+                  type="text"
+                  placeholder="Name"
+                />
                 <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
             </div>
+            <br />
 
-        </div>
-
-        <div class="field">
-            <label class="label">Last Name</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input inputMakuda" name="lastName" type="text" placeholder="Rossi">
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input inputMakuda"
+                  name="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                />
                 <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
             </div>
-        </div>
+            <br />
 
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-                <input class="input inputMakuda inputMakudaEmail" name="email" type="email" placeholder="mario.rossi@test.com">
+            <div class="field">
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input inputMakuda inputMakudaEmail"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                />
                 <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
             </div>
-        </div>
-
-
-        <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-                <textarea name="textArea" class="textarea textAreaMakuda" placeholder="Hey, how are you..."></textarea>
+            <br />
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  name="textArea"
+                  class="textarea textAreaMakuda"
+                ></textarea>
+              </div>
             </div>
-        </div>
-        <!--
-        <div class="field">
-            <div class="control">
-                <label class="checkbox">
-                    <input type="checkbox">
-                    I agree to the <a href="#">terms and conditions</a>
-                </label>
+            <br />
+            <!--
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms and conditions</a>
+                        </label>
+                    </div>
+                </div>
+                -->
+            <div class="field">
+              <div class="control">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LdPUN8ZAAAAADCiqD9YhLrwyY2U_NiuqdKw7c0C"
+                ></div>
+              </div>
             </div>
-        </div>
-        -->
-        <div class="field">
-            <div class="control">
-                <div class="g-recaptcha" data-sitekey="6LdPUN8ZAAAAADCiqD9YhLrwyY2U_NiuqdKw7c0C"></div>
-            </div>
-        </div>
-
-        <div class="field is-grouped">
-
-            <div class="control">
+            <br />
+            <div class="field is-grouped">
+              <div class="control">
                 <button class="button is-link" type="submit">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light" type="reset">
+                  Cancel
+                </button>
+              </div>
             </div>
-            <div class="control">
-                <button class="button is-link is-light" type="reset">Cancel</button>
-            </div>
+          </form>
         </div>
-    </form>
-</div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
+      integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
+      crossorigin="anonymous"
+    ></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
-        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"
-        integrity="sha512-HxCVV6ztUUQxy4YKONLIA2qjMsobBr0OVaXrVWqVcuDrlY9cFxQs9u346FLzDXQlrGKYTXfA+w5DbGyq2P5C+g=="
-        crossorigin="anonymous"></script>
-<script src="js/menu.js"></script>
-<script src="js/contactJS.js"></script>
-</body>
+    <script src="js/menu.js"></script>
+    <script src="js/contactJS.js"></script>
+  </body>
 </html>

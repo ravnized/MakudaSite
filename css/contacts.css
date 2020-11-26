@@ -1,35 +1,57 @@
 .startContainer {
-    padding-top: 100px;
-    min-height: 100vh;
+  padding-top: 100px;
+  min-height: 100vh;
 }
 
 label {
-    color: #f6b600 !important;
+  color: white !important;
+  font-family: Gelion-light, sans-serif;
 }
 
 .inputMakuda.inputMakuda {
-    background-color: #2f2f2f;
-    border: none;
-    color: white;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+  background: transparent;
+  color: white;
+  font-family: Gelion-light, sans-serif;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #f6b600;
+  border-radius: 0px;
 }
 
 .inputMakuda::placeholder {
-    color: white;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+  color: white;
+  font-family: Gelion-light, sans-serif;
 }
 
-.textAreaMakuda.textAreaMakuda{
-    background-color: #2f2f2f;
-    border: none;
-    color: white;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-}
-.textAreaMakuda::placeholder {
-    color: white;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+.textAreaMakuda.textAreaMakuda {
+  background: #2f2f2f;
+  border: none;
+  color: white;
+  font-family: Gelion-light, sans-serif;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
+}
+
+.whiteH1 {
+  font-size: 3em !important;
+  color: white;
+}
+.whiteH1meno {
+  font-size: 2em !important;
+  color: white;
+}
+
+.orangeStick {
+  width: 100%;
+}
+
+.orangeStick::after {
+  content: "";
+  display: block;
+  width: 9em;
+  height: 5px;
+  margin-top: 1em;
+  background-color: #f6b600;
 }
