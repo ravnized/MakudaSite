@@ -86,9 +86,7 @@ body {
 }
 
 .imageVideo {
-  z-index: 1;
-  width: 100%;
-  left: 10rem;
+  background-color: transparent !important;
 }
 
 .mainSection {
@@ -187,24 +185,33 @@ body {
   color: #fff;
   font-weight: 500;
   line-height: 1;
+  font-family: Gelion-black;
+  text-transform: uppercase;
 }
 
 .container .subVideo {
   transform: translate(200px);
   opacity: 0;
-  font-size: 5.6em;
   letter-spacing: 0.2rem;
   will-change: transform;
   z-index: 2;
   display: block;
-  color: #fff;
+  color: #f6b600;
   font-weight: 500;
   line-height: 1;
+  text-transform: uppercase;
+  font-family: Gelion-black;
 }
 
 .container .descVideo {
+  will-change: transform;
+  z-index: 2;
+  color: white;
+  line-height: 1;
+  font-family: Gelion-light;
   transform: translate(0, 200px);
   opacity: 0;
+  font-size: 2em;
 }
 video {
   outline: unset;
@@ -243,4 +250,35 @@ video {
   width: 100%;
   height: 100%;
   border-left: 5px solid #f6b600;
+}
+.simpleOrange {
+  color: #f6b600;
+  font-family: Gelion-light;
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.orangeOnly {
+  color: #f6b600;
+  font-family: Gelion-light;
+  font-size: 1em;
+}
+
+.giantAssText {
+  font-size: 6em;
+  color: white;
+  font-family: Gelion-light;
+}
+
+.whiteText {
+  color: white;
+  font-family: Gelion-light;
+  font-size: 1.5em;
+}
+.vjs-poster {
+  background-color: transparent !important;
+}
+
+.vjs-big-play-button {
+  display: none !important;
 }

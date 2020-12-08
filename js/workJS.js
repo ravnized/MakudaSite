@@ -2,6 +2,7 @@ gsap.registerPlugin(CSSRulePlugin);
 var generalItem = $(".workBlockContainer"),
   imageVideo = generalItem.find(".imageVideo"),
   textVideo = generalItem.find("p"),
+  workBlockImageSub = generalItem.find(".workBlockImageSub"),
   textVideoDiv = textVideo.parent(),
   arrayListElement = $(".workListItem"),
   halfWindowHeight = 0,
@@ -60,18 +61,16 @@ $(function () {
     0
   );
 });
-
-imageVideo.mousemove(function (e) {
+$(workBlockImageSub).mousemove(function (e) {
   var timeline = gsap.timeline();
-  var offset = $(this).offset();
+  var offset = $(this).parent().offset();
   var relativeX = e.pageX - offset.left;
   var relativeY = e.pageY - offset.top;
   var cX = $(this).width() / 2;
   var cY = $(this).height() / 2;
-  console.log(relativeX, relativeY);
-  console.log(cX, cY);
-  var cxRelative = (cX - relativeX) / 20;
-  var cyRelative = (cY - relativeY) / 20;
+  var cxRelative = (cX - relativeX) / 15;
+  var cyRelative = (cY - relativeY) / 15;
+
   if (insideAWork === false) {
     timeline.to($(this).parent(), {
       duration: 0.2,
@@ -87,7 +86,7 @@ imageVideo.mousemove(function (e) {
         */
   }
 });
-imageVideo.mouseleave(function (event) {
+$(workBlockImageSub).mouseleave(function (event) {
   var timeline = gsap.timeline();
   if (insideAWork === false) {
     timeline.to($(this).parent(), { duration: 1, rotateX: 0, rotateY: 0 });
@@ -101,7 +100,7 @@ imageVideo.mouseleave(function (event) {
   }
 });
 
-imageVideo.one("click", function () {
+$(workBlockImageSub).one("click", function () {
   let positionImageVideo = imageVideo.offset(),
     leftImagePos = positionImageVideo.left,
     topImagePos = positionImageVideo.top,
@@ -111,10 +110,8 @@ imageVideo.one("click", function () {
       .parent()
       .parent()
       .parent()
-      .parent()
       .parent(),
     workList = $(this)
-      .parent()
       .parent()
       .parent()
       .parent()
@@ -139,17 +136,7 @@ imageVideo.one("click", function () {
     heightContainer = containerTitle.height();
   insideAWork = true;
   timeline.to($(this).parent(), { duration: 1, rotateX: 0, rotateY: 0 });
-  /*
-  timeline.to(
-    $(this).parent().parent().find(".workBlockTitle"),
-    {
-      duration: 1,
-      rotateX: 0,
-      rotateY: 0,
-    },
-    "-=1"
-  );
-  */
+
   scrollTop = $(window).scrollTop();
   centerImageLeft = imageWidth / 2;
   centerImageTop = imageHeight / 2;
@@ -189,6 +176,7 @@ imageVideo.one("click", function () {
   halfWindowHeight =
     $(window).height() / 2 - topTotalHeight - centerImageTop + scrollTop;
   halfWindowWidth = $(window).width() / 2 - leftImagePos - centerImageLeft;
+  console.log(halfWindowHeight);
 
   //tl.set(containerTitle, { css: { x: halfWindowWidth - leftImagePos } });
   tl.to(
@@ -206,15 +194,13 @@ imageVideo.one("click", function () {
     },
     "startAnimation"
   );
-
   tl.to(
     containerTitle,
     {
+      delay: 0.2,
       duration: 1,
       ease: "power3.in",
       onComplete: function () {
-        $("video")[0].play();
-        $("video")[0].loop = true;
         containerTitle.removeClass("hide");
       },
     },
@@ -236,11 +222,8 @@ imageVideo.one("click", function () {
     { duration: 0.5, delay: 2, scrollTo: { x: 0, y: 0 } },
     "startAnimation"
   );
-  tl.to(
-    this,
-    { duration: 0.5, delay: 2, y: heightContainer },
-    "startAnimation"
-  );
+  tl.to(this, { duration: 0.5, delay: 2, y: topImagePos }, "startAnimation");
+
   tl.to(
     workListItem,
     {
@@ -255,14 +238,21 @@ imageVideo.one("click", function () {
     {
       duration: 0.5,
       delay: 2,
-      css: { height: (arrayListElementHeight + heightContainer) * 2 },
+      css: { height: arrayListElementHeight + heightContainer + 500 },
     },
     "startAnimation"
   );
   //tl.to(workBlockImageSub,{duration:0.5,delay:2,css:{top:-scrollTop}},'startAnimation')
   //tl.to(workListItem,{duration:0.5,css:{top:}})
-
   tl.to(".tVideo", { x: 0, autoAlpha: 1 }, "animationStart");
   tl.to(".subVideo", { x: 0, autoAlpha: 1 }, "animationStart");
-  tl.to(".descVideo", { y: 0, autoAlpha: 1, blur: 0 }, "animationStart");
+  tl.to(
+    ".descVideo",
+    {
+      y: 0,
+      autoAlpha: 1,
+      blur: 0,
+    },
+    "animationStart"
+  );
 });
