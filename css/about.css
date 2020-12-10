@@ -226,46 +226,63 @@ strong {
   -ms-transform: skewY(-20deg); /* IE 9 */
   -webkit-transform: skewY(-20deg); /* Safari and Chrome */
   background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
   transition: all 300ms;
   position: relative;
   overflow: hidden;
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 100;
 }
+.parallelepipedo:hover {
+  transform: skewY(-20deg) scale(1.1);
+  background-color: #f6b600;
+}
+/*
 .parallelepipedo::before {
   content: "";
-  width: 150px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   transform: skewY(20deg);
-  -ms-transform: skewY(20deg); /* IE 9 */
-  -webkit-transform: skewY(20deg); /* Safari and Chrome */
+  -ms-transform: skewY(20deg);
+  -webkit-transform: skewY(20deg); 
   background-position: center center;
-  background-image: url("/media/img/72186387_10214948717687702_6706908027628290048_n.jpg");
+  background-color: grey;
   background-size: cover;
 
-  /* new styles */
   position: absolute;
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
 }
-
-.parallelepipedo:hover {
-  background-color: #f6b600;
-  transform: skewY(-20deg) scale(1.3);
-}
-
+*/
 .square {
   background-color: white;
-  width: 400px;
+  width: 0px;
   height: 200px;
-  transform: skewY(0);
+  display: none;
+  transition: all 300ms;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  z-index: 0;
+  transform: translateX(0px) translateY(50px);
 }
 .paralleGruppo {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.paralleGruppo > div {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
 }
 
 .boldBig {
@@ -274,4 +291,30 @@ strong {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.parallelepipedo .numberParallelepipedo {
+  margin-top: -150px;
+  font-size: 20em;
+  transform: skewY(20deg);
+  font-family: Gelion-light;
+}
+.parallelepipedo .secondText {
+  font-size: 2em;
+  position: absolute;
+  transform: skewY(20deg) translateX(-50px) translateY(500px) scale(-1, -1);
+  transform-origin: 0 0;
+  font-family: Gelion-black;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.nonUno {
+  transform: skewY(20deg) translateX(50px) !important;
+}
+
+.textInsideSquare {
+  font-size: 1em;
 }

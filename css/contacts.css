@@ -55,3 +55,9 @@ label {
   margin-top: 1em;
   background-color: #f6b600;
 }
+
+.button-makuda {
+  color: black;
+  border-color: transparent;
+  background-color: #f6b600;
+}

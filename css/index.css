@@ -1,610 +1,554 @@
 @font-face {
-    font-family: Gelion-Black;
-    src: url("../media/fonts/Gelion-Black.ttf");
+  font-family: Gelion-Black;
+  src: url("../media/fonts/Gelion-Black.ttf");
 }
 
 @font-face {
-    font-family: Gelion-Regular;
-    src: url("../media/fonts/Gelion-Regular.ttf");
+  font-family: Gelion-Regular;
+  src: url("../media/fonts/Gelion-Regular.ttf");
 }
 
 @font-face {
-    font-family: la-regular;
-    src: url("../media/fonts/la-regular-400.ttf");
+  font-family: la-regular;
+  src: url("../media/fonts/la-regular-400.ttf");
 }
 
 @font-face {
-    font-family: EuroStile-Bold;
-    src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
+  font-family: EuroStile-Bold;
+  src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
 }
 
 .makuda-icons {
-    float: left;
-    margin-right: 5%;
-    fill: #f6b600;
+  float: left;
+  margin-right: 5%;
+  fill: #f6b600;
 }
 
 .makuda-font-title {
-    font-size: 20px;
-    color: #f6b600;
-    font-family: EuroStile-Bold, serif;
+  font-size: 20px;
+  color: #f6b600;
+  font-family: EuroStile-Bold, serif;
 }
 
 .makuda-font-subString {
-    font-size: 15px;
-
+  font-size: 15px;
 }
 
-
 .textNearIcons {
-    color: white;
+  color: white;
 }
 
 #weAre {
-    text-align: center;
-    letter-spacing: 0.8em;
-    opacity: 0;
+  text-align: center;
+  letter-spacing: 0.8em;
+  opacity: 0;
 }
 
 .makuda-logo {
-    width: 7.8em;
-    height: auto;
+  width: 7.8em;
+  height: auto;
 }
-
 
 .textOverlay {
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
 }
-
 
 html {
-    background-color: #111111;
+  background-color: #111111;
 }
 
-
 body {
-    background-color: #111111;
-    color: whitesmoke;
-    overflow: hidden;
+  background-color: #111111;
+  color: whitesmoke;
+  overflow: hidden;
 }
 
 .makuda-spacing {
-    letter-spacing: 0.3em;
-    font-family: EuroStile-Bold, serif;
+  letter-spacing: 0.3em;
+  font-family: EuroStile-Bold, serif;
 }
 
 .makuda-font {
-    font-family: EuroStile-Bold, serif;
+  font-family: EuroStile-Bold, serif;
 }
 
 .containerCar {
-    max-width: 800px;
-    margin-top: 4vh;
+  max-width: 800px;
+  margin-top: 4vh;
 }
 
 .progress::-webkit-progress-value {
-    transition: width 0.5s ease;
+  transition: width 0.5s ease;
 }
 
 .gelion-text {
-    font-family: Gelion-Black, sans-serif;
+  font-family: Gelion-Black, sans-serif;
 }
 
 h2 {
-    font-family: Gelion-Black, sans-serif;
+  font-family: Gelion-Black, sans-serif;
 }
 
 .progress-bar {
-    /*transition: width 250ms ease-in-out;*/
-    transition: width 1s ease-in-out;
+  /*transition: width 250ms ease-in-out;*/
+  transition: width 1s ease-in-out;
 }
 
-
 .char {
-    animation: an 1s ease-out 1 both;
+  animation: an 1s ease-out 1 both;
 }
 
 .card {
-    background-color: #111111;
+  background-color: #111111;
 }
 
 .colorContainer {
-    background-color: #111111;
-    color: whitesmoke;
-
-
+  background-color: #111111;
+  color: whitesmoke;
 }
-
 
 .h2OverProgress {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 p {
-    font-size: small;
+  font-size: small;
 }
-
 
 #colonnaSpeciale {
-    height: 660px;
+  height: 660px;
 }
-
 
 @keyframes an {
-    from {
-        opacity: 0;
-        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    }
-    to {
-        opacity: 1;
-        transform: perspective(500px) translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    transform: perspective(500px) translate3d(-35px, -40px, -150px)
+      rotate3d(1, -1, 0, 35deg);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(500px) translate3d(0, 0, 0);
+  }
 }
-
 
 .progress.is-makuda::-webkit-progress-value {
-    background-color: #f6b600;
+  background-color: #f6b600;
 }
 
-
 .progress.is-makuda::-moz-progress-bar {
-    background-color: #f6b600;
+  background-color: #f6b600;
 }
 
 .progress.is-makuda::-ms-fill {
-    background-color: #f6b600;
+  background-color: #f6b600;
 }
 
 .progress.is-makuda:indeterminate {
-    background-image: linear-gradient(to right, #f6b600 30%, #ededed 30%);
+  background-image: linear-gradient(to right, #f6b600 30%, #ededed 30%);
 }
 
 .progress {
-    border-radius: 0;
-    height: 0.5rem;
+  border-radius: 0;
+  height: 0.5rem;
 }
 
 progress {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .progressbar {
-    display: inline-block;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    min-height: 120px;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  min-height: 120px;
 }
 
 .circle {
-    width: 230px;
-    height: 110px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
+  width: 230px;
+  height: 110px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
 }
 
 .circle:after {
-    width: 120px;
-    height: 120px;
-    content: "";
-    border-radius: 50%;
-    display: block;
+  width: 120px;
+  height: 120px;
+  content: "";
+  border-radius: 50%;
+  display: block;
 }
 
-
 .testimonials-wrapper {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .testimonials-gradient {
-    width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
 }
 
 .gradient-video {
-    width: 100%;
-    min-height: 600px;
-    object-fit: cover;
-    position: absolute;
-    z-index: 2;
+  width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
 }
 
-
 .wrapper-gradient {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .wrapper-gradient > video {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  object-fit: cover;
 }
-
 
 .contMargin {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
-
 .makuda-testimonials-item {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  object-fit: cover;
 }
 
 .slider-navigation-next {
-    background: unset !important;
-    border: unset !important;
-    color: #f6b600 !important;
+  background: unset !important;
+  border: unset !important;
+  color: #f6b600 !important;
 }
 
 .slider-navigation-previous {
-    background: unset !important;
-    border: unset !important;
-    color: #f6b600 !important;
+  background: unset !important;
+  border: unset !important;
+  color: #f6b600 !important;
 }
 
 .testimonial-dopo:before {
-    opacity: 0;
+  opacity: 0;
 }
 
 .slider-pagination .slider-page {
-    background: #f6b600 !important;
+  background: #f6b600 !important;
 }
 
-
 .section {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .video-dopo:before {
-    opacity: 0;
+  opacity: 0;
 }
 
 .video-dopo {
+  background: linear-gradient(to left, #111111 60%, rgba(0, 0, 0, 0));
 
-    background: linear-gradient(
-            to left,
-            #111111 60%,
-            rgba(0, 0, 0, 0)
-    );
-
-    opacity: 100;
-    transition: opacity 10s;
-
-}
-
-.video-prima:before {
-    opacity: 0;
+  animation: opacityAnimation 2s;
 }
 
 .video-prima {
-
-    background: linear-gradient(
-            to right,
-            #111111 60%,
-            rgba(0, 0, 0, 0)
-    );
-    opacity: 100;
-    transition: opacity 10s;
+  background: linear-gradient(to right, #111111 60%, rgba(0, 0, 0, 0));
+  animation: opacityAnimation 2s;
 }
-
 
 .testimonial-dopo {
+  background: linear-gradient(to left, #111111 60%, rgba(0, 0, 0, 0));
 
-    background: linear-gradient(
-            to left,
-            #111111 60%,
-            rgba(0, 0, 0, 0)
-    );
-
-    opacity: 100;
-    transition: opacity 10s;
-
+  animation: opacityAnimation 2s;
 }
 
-.testimonial-prima:before {
+@keyframes opacityAnimation {
+  0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .testimonial-prima {
-
-    background: linear-gradient(
-            to right,
-            #111111 60%,
-            rgba(0, 0, 0, 0)
-    );
-    opacity: 100;
-    transition: opacity 10s;
-
+  background: linear-gradient(to right, #111111 60%, rgba(0, 0, 0, 0));
+  animation: opacityAnimation 1s;
 }
 
-
 .circle canvas {
-    vertical-align: middle;
-    border-radius: 50%;
+  vertical-align: middle;
+  border-radius: 50%;
 }
 
 .circle div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px 0 0 -115px;
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 40px;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -115px;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 40px;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
 }
 
 .circle strong i {
-    font-style: normal;
-    font-size: 0.6em;
-    font-weight: normal;
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
 }
 
-
 .circle-container {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .circle-container > h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .margin-topCard {
-    margin-top: -12px;
-    margin-bottom: -12px;
+  margin-top: -12px;
+  margin-bottom: -12px;
 }
 
-
-.carousel, .carousel * {
-    outline: 0 !important;
+.carousel,
+.carousel * {
+  outline: 0 !important;
 }
-
 
 #replacement {
-    opacity: 0;
-    transform: scale(0.2, 0.2);
+  opacity: 0;
+  transform: scale(0.2, 0.2);
 }
 
-
-
-
 .makuda-testimonials-item {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
 }
 
-
 .makuda-testimonials-item__author {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
 }
 
 .makuda-testimonials-item__author img {
-    width: 100px;
-    border-radius: 50%;
-    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
-
 .makuda-testimonials-item__author--name {
-    padding-right: 20px;
-    text-align: right;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    padding-top: 30px;
+  padding-right: 20px;
+  text-align: right;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
+  padding-top: 30px;
 }
 
 .makuda-testimonials-item__author--name h6 {
-    font-size: 30px;
-    line-height: 17px;
+  font-size: 30px;
+  line-height: 17px;
 }
 
 .makuda-testimonials-item__author--name span {
-    font-size: 20px;
-    line-height: 0;
+  font-size: 20px;
+  line-height: 0;
 }
 
-
 .makuda-testimonials-item__content {
-    background: #1a1a1a;
-    margin: -30px 20px 0 20px;
-    padding: 10px 20px 18px 20px;
-    color: #787777;
+  background: #1a1a1a;
+  margin: -30px 20px 0 20px;
+  padding: 10px 20px 18px 20px;
+  color: #787777;
 }
 
 .makuda-testimonials-item__stars {
-    text-align: right;
-    margin: 0 0 2px 0;
+  text-align: right;
+  margin: 0 0 2px 0;
 }
 
 .makuda-testimonials-item__stars.makuda-stars5:before {
-    content: '\f005\f005\f005\f005\f005';
+  content: "\f005\f005\f005\f005\f005";
 }
 
 .makuda-testimonials-item__stars:before {
-    font-family: la-regular, serif;
-    color: #5C5C60;
-    font-size: 16px;
-    line-height: 20px;
+  font-family: la-regular, serif;
+  color: #5c5c60;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .makuda-testimonials-item__content p {
-    font-size: 20px !important;
+  font-size: 20px !important;
 }
 
-
 .margin-left-right {
-    margin-right: 2vh;
-    margin-left: 2vh;
-    margin-bottom: 3vh;
-    margin-top: -10px;
+  margin-right: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 3vh;
+  margin-top: -10px;
 }
 
 .titleUnderCircle {
-    text-align: center;
+  text-align: center;
 }
 
 .margin-top-vid {
-    margin-top: 10vh;
+  margin-top: 10vh;
 }
 
 .makuda-home-link--contacts.makuda-home-link-wrap {
-    left: calc(66.66% + 21px);
-    text-align: left;
-    top: 200%;
+  left: calc(66.66% + 21px);
+  text-align: left;
+  top: 200%;
 }
 
 .makuda-home-link span:last-child {
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .makuda-home-link span:first-child {
-    display: block;
-    color: #5C5C60;
-    font-family: 'Gelion-Black', Gelion-Black, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+  display: block;
+  color: #5c5c60;
+  font-family: "Gelion-Black", Gelion-Black, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 body .makuda-home-link span:first-child {
-    margin: 0px 0 3px 0;
+  margin: 0px 0 3px 0;
 }
 
 body .makuda-home-link-works span:first-child {
-    margin: -23px 0 3px 0;
+  margin: -23px 0 3px 0;
 }
 
 .makuda-home-link span:last-child {
-    font-size: 50px;
-    line-height: 55px;
-    margin: 0 0 28px 0;
+  font-size: 50px;
+  line-height: 55px;
+  margin: 0 0 28px 0;
 }
 
 #hero-body {
-    height: 100vh;
+  height: 100vh;
 }
 
 a {
-    position: relative;
+  position: relative;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: #fff;
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
-
 
 .makuda-home-link-wrap {
-    position: fixed;
-    top: 100%;
-    left: calc(100vw - 182px);
-    width: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    transform-origin: 0% 0%;
-    transform: rotate(-90deg) translate(0, 0);
-    z-index: 10;
-    cursor: default;
-    text-align: right;
-    padding-left: 100px;
+  position: fixed;
+  top: 100%;
+  left: calc(100vw - 182px);
+  width: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  transform-origin: 0% 0%;
+  transform: rotate(-90deg) translate(0, 0);
+  z-index: 10;
+  cursor: default;
+  text-align: right;
+  padding-left: 100px;
 }
 
 .makuda-home-link-wrap:before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.15);
-    position: absolute;
-    left: 0;
-    top: 21px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  left: 0;
+  top: 21px;
 }
 
 .makuda-home-link--works.makuda-home-link-wrap {
-    left: calc(15% - 21px);
-    text-align: center;
-    padding: 0;
-    top: 0;
+  left: calc(15% - 21px);
+  text-align: center;
+  padding: 0;
+  top: 0;
 }
 
 .makuda-home-link--works.makuda-home-link-wrap .makuda-home-link {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .makuda-home-link--works span:first-child {
-    text-align: left;
+  text-align: left;
 }
 
 body.is-loaded .makuda-home-link-wrap {
-    transition: transform 0.5s, z-index 0.6s;
+  transition: transform 0.5s, z-index 0.6s;
 }
 
 .makuda-home-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .makuda-home-link span {
-    display: block;
-    transition: transform 0.5s, color 0.5s;
+  display: block;
+  transition: transform 0.5s, color 0.5s;
 }
 
 .makuda-home-link--works span:first-child {
-    margin: 0 0px 3px 0;
-    transform: translateX(-100px);
-    color: rgba(255, 255, 255, 0);
+  margin: 0 0px 3px 0;
+  transform: translateX(-100px);
+  color: rgba(255, 255, 255, 0);
 }
 
 .makuda-home-link--works span:last-child {
-    margin: 0;
-    color: rgba(255, 255, 255, 0);
-    transform: translateX(50px);
+  margin: 0;
+  color: rgba(255, 255, 255, 0);
+  transform: translateX(50px);
 }
 
 .makuda-home-link-wrap.is-loaded .makuda-home-link {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 .makuda-home-link--works.is-loaded span:first-child {
-    color: rgba(255, 255, 255, 0.6);
-    transform: translateX(-50px);
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-50px);
 }
 
 .makuda-home-link--works.is-loaded span:last-child {
-    color: rgba(255, 255, 255, 0.5);
-    transform: translateX(0px);
+  color: rgba(255, 255, 255, 0.5);
+  transform: translateX(0px);
 }
 
 .makuda-home-link--works.is-loaded .makuda-home-link:hover span:first-child {
-    transform: translateX(-40px);
-    color: rgba(255, 255, 255, 0.8);
+  transform: translateX(-40px);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .makuda-home-link--works.is-loaded .makuda-home-link:hover span:last-child {
-    transform: translateX(-10px);
-    color: #fff;
+  transform: translateX(-10px);
+  color: #fff;
 }
 
 /*
@@ -612,102 +556,95 @@ Contacts
  */
 
 .makuda-home-link--contacts.makuda-home-link-wrap {
-    left: calc(80% + 21px);
-    text-align: left;
-    top: 200%;
+  left: calc(80% + 21px);
+  text-align: left;
+  top: 200%;
 }
 
 .makuda-home-link--contacts span:first-child {
-    text-align: right;
+  text-align: right;
 }
 
 .makuda-home-link--contacts span:first-child {
-    margin: 20px 0 3px 0;
-    transform: translateX(100px);
-    color: rgba(255, 255, 255, 0);
+  margin: 20px 0 3px 0;
+  transform: translateX(100px);
+  color: rgba(255, 255, 255, 0);
 }
 
 .makuda-home-link--contacts span:last-child {
-    margin: 0;
-    color: rgba(255, 255, 255, 0);
-    transform: translateX(-50px);
+  margin: 0;
+  color: rgba(255, 255, 255, 0);
+  transform: translateX(-50px);
 }
 
 .makuda-home-link--contacts.is-loaded span:first-child {
-    color: rgba(255, 255, 255, 0.6);
-    transform: translateX(50px);
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateX(50px);
 }
 
 .makuda-home-link--contacts.is-loaded span:last-child {
-    color: rgba(255, 255, 255, 0.5);
-    transform: translateX(0px);
+  color: rgba(255, 255, 255, 0.5);
+  transform: translateX(0px);
 }
 
 .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
-    color: rgba(255, 255, 255, 0.8);
-    transform: translateX(40px);
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(40px);
 }
 
 .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:last-child {
-    transform: translateX(10px);
-    color: #fff;
+  transform: translateX(10px);
+  color: #fff;
 }
 
 .cardBackground {
-    background-image: url("../media/img/73401809_390252275190258_686177937147393055_n.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  background-image: url("../media/img/73401809_390252275190258_686177937147393055_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .has-background-blackMakuda {
-    background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
-
 @media only screen and (max-width: 1024px) {
-    #containerText {
-        transform: scale(0.8, 0.8);
-        transform-origin: left;
-    }
+  #containerText {
+    transform: scale(0.8, 0.8);
+    transform-origin: left;
+  }
 
-    #weAre {
-        text-align: left;
-    }
+  #weAre {
+    text-align: left;
+  }
 
-    .consultingText {
-        text-align: left !important;
-    }
+  .consultingText {
+    text-align: left !important;
+  }
 
-    .makuda-logo {
-        margin-top: 7%;
-        margin-bottom: 5%;
-    }
+  .makuda-logo {
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
 
-    .gradient-video {
-        min-height: 100vh;
-    }
-
+  .gradient-video {
+    min-height: 100vh;
+  }
 }
 
 .pageloaderLogo {
-    background-color: #111111;
-    min-height: 100%;
-    min-width: 100%;
-    transform-origin: 0 0;
+  background-color: #111111;
+  min-height: 100%;
+  min-width: 100%;
+  transform-origin: 0 0;
 }
 
 .consultingText {
-    text-align: center;
-    letter-spacing: 2em;
-    font-size: medium;
-    opacity: 0;
+  text-align: center;
+  letter-spacing: 2em;
+  font-size: medium;
+  opacity: 0;
 }
 
 .slider-pagination {
-    display: none !important;
-}
-
-.cardino {
-    background-color: #4a4a4a;
+  display: none !important;
 }
