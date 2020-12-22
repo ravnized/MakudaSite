@@ -1,48 +1,4 @@
 $().ready(function () {
-  var iconStyle = new ol.style.Style({
-    image: new ol.style.Icon({
-      anchor: [0, 0],
-      src: "/media/img/LogoIcona_PNG_Negativo(1).png",
-      scale: 0.1,
-    }),
-  });
-
-  var iconFeature = new ol.Feature({
-    geometry: new ol.geom.Point(ol.proj.fromLonLat([8.9117385, 45.6078168])),
-    name: "Makuda Office",
-  });
-  iconFeature.setStyle(iconStyle);
-
-  var vectorSource = new ol.source.Vector({
-    features: [iconFeature],
-  });
-
-  var vectorLayer = new ol.layer.Vector({
-    source: vectorSource,
-  });
-
-  var rasterLayer = new ol.layer.Tile({
-    source: new ol.source.OSM(),
-  });
-
-  var map = new ol.Map({
-    target: "map",
-    layers: [rasterLayer, vectorLayer],
-    view: new ol.View({
-      center: ol.proj.fromLonLat([8.9117385, 45.6078168]),
-      zoom: 3,
-    }),
-  });
-  var element = document.getElementById("popup");
-
-  var popup = new ol.Overlay({
-    element: element,
-    positioning: "bottom-center",
-    stopEvent: false,
-    offset: [0, -50],
-  });
-  map.addOverlay(popup);
-
   $("#form").validate({
     rules: {
       firstName: {

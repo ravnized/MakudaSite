@@ -82,10 +82,10 @@ $(document).ready(function () {
                     .to(displacementSprite.scale, {duration: 1, x: '+=10', y: '+=10'}, 0)
                     .to(displacementFilter.scale, {duration: 1, x: "+=900", y: "+=900"}, 0)
                     .to('.hero-video', {autoAlpha: 0, duration: 0.5}, 0.5)
-                    .to('.hero-body', {autoAlpha: 0, duration: 0.5}, 0.5)
+                    .to($('#section-animated').find('.hero-body'), {autoAlpha: 0, duration: 0.5}, 0.5)
                     .add(function () {
                         if (isFinished === false) {
-                            $('.hero-body').addClass('hide');
+                            $('#section-animated').find('.hero-body').addClass('hide');
                             $('#containerText').remove();
                             $('#replacement').append(elementInsideUS)
                             isFinished = true;
@@ -117,14 +117,15 @@ $(document).ready(function () {
                     }, 0)
                     .add(function () {
                         if (isFinished === true) {
+
                             $('#containerDaLevare').remove();
-                            $('.hero-body').append(elementHeroBody);
-                            $('.hero-body').removeClass('hide');
+                            $('#section-animated').find('.hero-body').append(elementHeroBody);
+                            $('#section-animated').find('.hero-body').removeClass('hide');
                             isFinished = false;
                         }
                     })
                     .to('.hero-video', {autoAlpha: 1, duration: 0.5}, 0.5)
-                    .to('.hero-body', {autoAlpha: 1, duration: 0.5}, 0.5)
+                    .to('.hero-body', {autoAlpha: 1, duration: 1}, 1)
                     .to(displacementSprite.scale, {duration: 1, x: '-=10', y: '-=10'}, 0.5)
                     .to(displacementFilter.scale, {duration: 1, x: "-=900", y: "-=900"}, 0.5)
 

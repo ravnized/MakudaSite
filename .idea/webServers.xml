@@ -2,15 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="75a3775b-beed-4026-aa5e-3a5d6f6502b5" name="MakudaServer" url="http://ftp.makuda-consulting.com">
-        <fileTransfer host="ftp.makuda-consulting.com" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="b32cecd7-0a91-4f14-90a8-6627f12bd623" name="second server" url="http://gnldm1048.siteground.biz">
-        <fileTransfer host="gnldm1048.siteground.biz" port="21">
+      <webServer id="b455bcf9-0397-485c-8418-da090f6e5344" name="StefanoD10" url="http://gnldm1048.siteground.biz">
+        <fileTransfer rootFolder="/stefanod10.sg-host.com/public_html" host="gnldm1048.siteground.biz" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

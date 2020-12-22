@@ -1,4 +1,5 @@
 gsap.registerPlugin(CSSRulePlugin);
+
 var generalItem = $(".workBlockContainer"),
   imageVideo = generalItem.find(".imageVideo"),
   textVideo = generalItem.find("p"),
@@ -52,40 +53,18 @@ $(function () {
   var tlFirst = gsap.timeline();
   tlFirst.to(
     ".mainSection",
-    { duration: 1, css: { y: 4.4 + "rem" }, ease: "power4.in" },
-    0
+    { duration: 1, css: { y: 6 +'em' }, ease: "power4.in" },
+    0.2
   );
   tlFirst.to(
     ".mainSection",
     { duration: 1, css: { autoAlpha: 1 }, ease: "power2.in" },
-    0
+    0.2
   );
+  tlFirst.to($(window),
+      {duration: 0.5, scrollTo: 0},0)
 });
-$(workBlockImageSub).mousemove(function (e) {
-  var timeline = gsap.timeline();
-  var offset = $(this).parent().offset();
-  var relativeX = e.pageX - offset.left;
-  var relativeY = e.pageY - offset.top;
-  var cX = $(this).width() / 2;
-  var cY = $(this).height() / 2;
-  var cxRelative = (cX - relativeX) / 15;
-  var cyRelative = (cY - relativeY) / 15;
 
-  if (insideAWork === false) {
-    timeline.to($(this).parent(), {
-      duration: 0.2,
-      rotateX: cyRelative,
-      rotateY: cxRelative,
-    });
-    /*
-        timeline.to($(this).parent().parent().find('.workBlockTitle'), {
-            duration: 0.2,
-            rotateX: cyRelative,
-            rotateY: cxRelative,
-        }, '-=0.2')
-        */
-  }
-});
 $(workBlockImageSub).mouseleave(function (event) {
   var timeline = gsap.timeline();
   if (insideAWork === false) {

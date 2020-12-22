@@ -23,6 +23,16 @@
   src: url("../media/fonts/Gelion-Light.ttf");
 }
 
+@font-face {
+  font-family: Gelion-Regular-italic;
+  src: url("../media/fonts/Gelion-RegularItalic.ttf")
+}
+
+@font-face {
+  font-family: Gelion-SemiBoldItalic;
+  src: url("../media/fonts/Gelion-SemiBoldItalic.ttf");
+}
+
 .menu-background {
   position: fixed;
   right: 0;
