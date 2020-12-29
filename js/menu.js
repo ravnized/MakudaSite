@@ -1,8 +1,4 @@
-var heightTrinagle = $("#triangleMenu").attr("height") / 2;
-var heightTotal = $(window).height() / 2 - heightTrinagle;
-$("#triangleMenu").css({
-  transform: "translateY(" + heightTotal + "px)" + " rotate(-90deg) scale(5)",
-});
+var heightTotal = $(window).height() / 2;
 
 let letters = document.querySelectorAll(".letterWrapper");
 letters.forEach((item) => {
@@ -80,17 +76,17 @@ function animateMenu() {
     ".menu-background",
     {
       duration: 1,
-      translateX: "-" + $(window).width() + "px",
+      translateX: "-500px",
       display: "initial",
       ease: "expo.in",
     },
     0
   )
-    .to(".menuWrapper", {
-      duration: 0.2,
-      autoAlpha: 1,
-      display: "flex",
-    })
+      .to(".menuWrapper", {
+          duration: 0.2,
+          autoAlpha: 1,
+          display: "flex",
+      })
     .to(".letter", {
       duration: 0.5,
       translateX: 0,
@@ -118,7 +114,7 @@ function animateMenuReverse() {
       ".menu-background",
       {
         duration: 1,
-        translateX: "30vw",
+        translateX: "50%",
         scale: 1,
         display: "none",
         ease: "expo.in",

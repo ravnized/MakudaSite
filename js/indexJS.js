@@ -78,8 +78,7 @@ $(document).ready(function () {
             onEnter: self => {
                 var tl = gsap.timeline();
 
-                tl.to(window, {duration: 1, scrollTo: {y: ($(window).height() / 30) + 3010}})
-                    .to(displacementSprite.scale, {duration: 1, x: '+=10', y: '+=10'}, 0)
+                tl.to(displacementSprite.scale, {duration: 1, x: '+=10', y: '+=10'}, 0)
                     .to(displacementFilter.scale, {duration: 1, x: "+=900", y: "+=900"}, 0)
                     .to('.hero-video', {autoAlpha: 0, duration: 0.5}, 0.5)
                     .to($('#section-animated').find('.hero-body'), {autoAlpha: 0, duration: 0.5}, 0.5)
@@ -98,38 +97,17 @@ $(document).ready(function () {
                         css: {scaleX: 1, scaleY: 1, autoAlpha: 1},
                         ease: "power4.out"
                     }, 1.3)
+                    .to(window, {duration: 0.1, scrollTo: {y: 0}})
                     .add(function () {
-                        if (oneTime === false) {
-                            animateElements()
-                            oneTime = true;
-
-                        }
-
+                            scroller.kill()
                     })
-            },
-            onEnterBack: self => {
-                var tl2 = gsap.timeline();
-                tl2.to(window, {duration: 1, scrollTo: {y: 0}})
-                    .to('#replacement', {
+                    .to('.paralleGruppo',{
                         duration: 1,
-                        css: {scaleX: 0.2, scaleY: 0.2, autoAlpha: 0},
-                        ease: "power4.out"
-                    }, 0)
-                    .add(function () {
-                        if (isFinished === true) {
-
-                            $('#containerDaLevare').remove();
-                            $('#section-animated').find('.hero-body').append(elementHeroBody);
-                            $('#section-animated').find('.hero-body').removeClass('hide');
-                            isFinished = false;
-                        }
+                        y: 0,
+                        ease: "power4.out",
                     })
-                    .to('.hero-video', {autoAlpha: 1, duration: 0.5}, 0.5)
-                    .to('.hero-body', {autoAlpha: 1, duration: 1}, 1)
-                    .to(displacementSprite.scale, {duration: 1, x: '-=10', y: '-=10'}, 0.5)
-                    .to(displacementFilter.scale, {duration: 1, x: "-=900", y: "-=900"}, 0.5)
-
             },
+
         })
     }
 

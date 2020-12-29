@@ -1,22 +1,3 @@
-@font-face {
-  font-family: Gelion-Black;
-  src: url("../media/fonts/Gelion-Black.ttf");
-}
-
-@font-face {
-  font-family: Gelion-Regular;
-  src: url("../media/fonts/Gelion-Regular.ttf");
-}
-
-@font-face {
-  font-family: la-regular;
-  src: url("../media/fonts/la-regular-400.ttf");
-}
-
-@font-face {
-  font-family: EuroStile-Bold;
-  src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
-}
 
 .makuda-icons {
   float: left;
@@ -712,7 +693,7 @@ Contacts
   flex-direction: row;
   justify-content: center;
   margin-bottom: 10em;
-  margin-top: -5em;
+  transform: translateY(500px);
 }
 
 .paralleGruppo > div {
@@ -854,4 +835,19 @@ div > .uno {
 }
 *{
   outline: none;
+}
+
+.textInsideSquareWork{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  font-size: 3em;
+}
+.containerText{
+  position: relative;
+  text-align: center;
+  color: white;
+
 }

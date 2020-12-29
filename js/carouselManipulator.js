@@ -115,11 +115,4 @@ function videoNextPrevious() {
   if (elementVideoNext.length != 0) {
     tl.to($(elementVideoNext), { duration: 1, scaleX: 0.7, scaleY: 0.7 }, 0);
   }
-  elementGradientPrevious.addClass("video-prima");
-  elementGradientNext.addClass("video-dopo");
-  elementGradient.removeClass("video-prima");
-  elementGradient.removeClass("video-dopo");
 }
-
-videoNextPrevious();
-reviewNextPrevious();

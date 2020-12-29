@@ -360,15 +360,10 @@
 
 <div class="menuWrapper">
     <div class="exit">
-        <a
-                aria-expanded="false"
-                aria-label="menu"
-                class="navbar-burger is-active"
-                onclick="animateMenuReverse()"
-        ><span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span
-            ></a>
+        <a onclick="animateMenuReverse()"
+        ><span>c</span><span>l</span><span>o</span><span>s</span
+        ><span>e</span></a
+        >
     </div>
 
     <div class="buttonMenu">
@@ -421,26 +416,7 @@
 </div>
 
 <div class="menu-background">
-    <div class="rectangle"></div>
-    <svg
-            fill="none"
-            height="280"
-            id="triangleMenu"
-            viewBox="0 0 460 280"
-            width="280"
-            xmlns="http://www.w3.org/2000/svg"
-    >
-        <path d="M460 231L230 1V231H460Z" fill="#f6b600"/>
-        <path d="M0 231L230 1V231H0Z" fill="#f6b600"/>
-        <rect
-                fill="#f6b600"
-                height="225"
-                id="rectangle"
-                width="7"
-                x="227"
-                y="6"
-        />
-    </svg>
+    <img src="/media/img/Freccia_Menu.png" style="height: 100%; width: 100%" alt="">
 </div>
 
 <div id="section-animated">
@@ -492,30 +468,38 @@
 
 <div class="container" id="containerDaLevare">
     <div class="stickHorizontal">
-
-
-        <p class="boldBig">About Us</p>
+        <p class="boldBig halfWidth">BLACK IS NOT DARK</p>
     </div>
     <br>
     <p class="boldOrange">Mission</p>
-    <p class="whiteText halfWidth">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-        scelerisque urna, eget ullamcorper mauris. Nam sit amet sem in sapien
-        vehicula commodo. Etiam quis diam libero. Aliquam faucibus posuere
-        nisl. Maecenas
+    <p class="whiteText" style="font-weight:bold">
+        “Trasmettere un modo nuovo di vedere i colori della vita quotidiana, per raggiungere i propri obiettivi senza
+        timore degli ostacoli.”
+
+        Makuda è in un processo di costante crescita che ci porta ad affrontare ogni realtà in maniera positiva
+        aggiungendo nuove competenze.
+
+        Crescere per noi è imparare a saper offrire le giuste sfumature di colore per un obiettivo finale concreto, che
+        sia sempre di successo e di qualità.
+
     </p>
     <br><br>
-    <p class="boldOrange">Perche' Sceglierci?</p>
-    <p class="whiteText halfWidth">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in
-        scelerisque urna, eget ullamcorper mauris. Nam sit amet sem in sapien
-        vehicula commodo. Etiam quis diam libero. Aliquam faucibus posuere
-        nisl. Maecenas
+    <p class="boldOrange">VALORI</p>
+    <p class="whiteText">
+        <span style="font-weight:bold">Curiosità: </span>Se il nero rappresenta l’oscurità, l’inesplorato allora
+        rappresenta anche tutto ciò che la curiosità ti porta ad esplorare. <br><br>
+        <span style="font-weight:bold">Creazione: </span>Perché il nero rappresenta l’attimo prima del processo di
+        creazione, l’attimo prima che si accenda la lampadina. <br><br>
+        <span style="font-weight:bold">Crescita: </span>Qualsiasi sia il valore che si dà al nero esso rappresenta anche
+        un punto di arrivo. Se è vero che il nero è un non colore, è anche vero che esso è l’insieme di tutti colori. E’
+        solo esplorando tutte le sfumature che è possibile crescere. <br><br>
     </p>
     <br><br>
+
+</div>
+<div class="container" style="margin-top:-100px;margin-bottom: 100px">
     <p class="boldOrange">Infografica Figa</p>
 </div>
-
 
 <div class="paralleGruppo">
     <div id="1">
@@ -744,31 +728,43 @@
     <p class="boldOrange">Ultimi Lavori</p>
 </div>
 <div class="container">
-    <section class="hero is-large has-carousel">
+    <section class="hero is-fullheight has-carousel">
         <div class="hero-carousel">
             <div class="item-1">
-                <div class="image imageMask">
-                    <img alt="" src="/media/img/screenshotVideo.png"/>
+                <div class="containerText">
+                    <p class="textInsideSquareWork">AAAA</p>
+                    <div class="image imageMask">
+                        <img alt="" src="/media/img/Matteo_Toia.jpg"/>
+                    </div>
                 </div>
+
 
                 <!-- Slide Content -->
             </div>
             <div class="item-2">
-                <div class="image imageMask">
-                    <img alt="" src="/media/img/72186387_10214948717687702_6706908027628290048_n.jpg"/>
+                <div class="containerText">
+                    <p class="textInsideSquareWork">AAAA</p>
+                    <div class="image imageMask">
+                        <img alt="" src="/media/img/Suites%20&%20Atelier.png"/>
+                    </div>
                 </div>
                 <!-- Slide Content -->
             </div>
             <div class="item-3">
-                <div class="image imageMask">
-                    <img alt="" src="/media/img/71841572_467757223825732_7507721153139431832_n.jpg"/>
+                <div class="containerText">
+                    <p class="textInsideSquareWork">AAAA</p>
+                    <div class="image imageMask">
+                        <img alt="" src="/media/img/Buffel%202.0.png"/>
+                    </div>
                 </div>
                 <!-- Slide Content -->
             </div>
         </div>
 
         <div class="hero-head"></div>
-        <div class="hero-body"></div>
+        <div class="hero-body">
+
+        </div>
         <div class="hero-foot"></div>
     </section>
     <br><br><br><br>
@@ -807,14 +803,13 @@
         </div>
 
 
-
-
-
     </div>
     <section class="section">
         <div class="container">
             <!-- Start Carousel -->
-            <div id="carousel3" class="carousel" data-navigation="false" data-infinite="true" data-autoplay="true" data-slidesToShow="7">
+            <div class="carousel" data-autoplay="true" data-infinite="true" data-navigation="false"
+                 data-slidesToShow="7"
+                 id="carousel3">
                 <div class="item-1">
                     <div class="image" style="width: 200px; height: auto;">
                         <img alt="" src="/media/img/tork-logo.png"/>
@@ -857,7 +852,6 @@
 </div>
 
 
-
 <script
         crossorigin="anonymous"
         integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw=="
@@ -871,7 +865,7 @@
 
 
     var carousels = bulmaCarousel.attach(".carousel");
-    var carousel2 =bulmaCarousel.attach(".hero-carousel");
+    var carousel2 = bulmaCarousel.attach(".hero-carousel");
 </script>
 <script src="js/carouselManipulator.js"></script>
 <script

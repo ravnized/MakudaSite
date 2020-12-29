@@ -35,11 +35,13 @@
 
 .menu-background {
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   z-index: 99;
-  transform: translate(30vw);
+  transform: translate(50%);
   display: none;
+  height: 100vh;
+  width: 200vw;
 }
 
 .navbar-burger {
@@ -100,7 +102,7 @@
   right: 0;
   top: 0;
   z-index: 99;
-  transform: translate(100vw);
+  transform: translate(100%);
   background-color: #f6b600;
 }
 
@@ -114,4 +116,9 @@
   position: absolute;
   z-index: -1;
   right: 5px;
+}
+
+.quote{
+  font-family: Gelion-Regular-italic, serif;
+  font-size: 4em;
 }

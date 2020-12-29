@@ -11,6 +11,12 @@ var generalItem = $(".workBlockContainer"),
   thisPrec,
   insideAWork = false;
 
+function delay(URL) {
+  setTimeout(function () {
+    window.location = URL;
+  }, 2000);
+}
+
 (function () {
   const blurProperty = gsap.utils.checkPrefix("filter"),
     blurExp = /blur\((.+)?px\)/,
@@ -53,16 +59,15 @@ $(function () {
   var tlFirst = gsap.timeline();
   tlFirst.to(
     ".mainSection",
-    { duration: 1, css: { y: 6 +'em' }, ease: "power4.in" },
-    0.2
+    { duration: 1, css: { y: 0 }, ease: "power4.in" },
+    0.5
   );
   tlFirst.to(
     ".mainSection",
     { duration: 1, css: { autoAlpha: 1 }, ease: "power2.in" },
-    0.2
+    0.5
   );
-  tlFirst.to($(window),
-      {duration: 0.5, scrollTo: 0},0)
+  tlFirst.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
 });
 
 $(workBlockImageSub).mouseleave(function (event) {
@@ -70,19 +75,19 @@ $(workBlockImageSub).mouseleave(function (event) {
   if (insideAWork === false) {
     timeline.to($(this).parent(), { duration: 1, rotateX: 0, rotateY: 0 });
     /*
-        timeline.to($(this).parent().parent().find('.workBlockTitle'), {
-            duration: 1,
-            rotateX: 0,
-            rotateY: 0,
-        }, '-=1')
-        */
+            timeline.to($(this).parent().parent().find('.workBlockTitle'), {
+                duration: 1,
+                rotateX: 0,
+                rotateY: 0,
+            }, '-=1')
+            */
   }
 });
 
 $(workBlockImageSub).one("click", function () {
   let positionImageVideo = imageVideo.offset(),
     leftImagePos = positionImageVideo.left,
-    topImagePos = positionImageVideo.top,
+    topImagePos = $(".workListItem").offset().top,
     workListItem = $(this)
       .parent()
       .parent()
@@ -99,65 +104,47 @@ $(workBlockImageSub).one("click", function () {
       .parent()
       .parent(),
     idElement = workListItem.attr("id"),
-    imageHeight = imageVideo.height(),
-    imageWidth = imageVideo.width(),
-    containerTitle = workListItem.find(".textContainer"),
+    imageHeight = $(workListItem).find(".workBlockImageSub").height(),
+    imageWidth = $(workListItem).find(".workBlockImageSub").width(),
     arrayListElementHeight;
   thisPrec = this;
   var totalHeight = 0,
     tl = gsap.timeline(),
-    timeline = gsap.timeline(),
     cycle = 0,
     topTotalHeight = 0,
     centerImageLeft = 0,
     centerImageTop = 0,
-    scrollTop = 0,
-    heightContainer = containerTitle.height();
-  insideAWork = true;
-  timeline.to($(this).parent(), { duration: 1, rotateX: 0, rotateY: 0 });
-
-  scrollTop = $(window).scrollTop();
+    scrollTop = 0;
   centerImageLeft = imageWidth / 2;
   centerImageTop = imageHeight / 2;
   arrayListElementHeight = $(arrayListElement[0]).height();
-
+  scrollTop = $(window).scrollTop();
   while (idElement !== $(arrayListElement[cycle]).attr("id")) {
     totalHeight += $(arrayListElement[cycle]).height();
     cycle++;
   }
   topTotalHeight = totalHeight + topImagePos;
-
-  //tl.to(textVideo, { duration: 0.5, css: { autoAlpha: 0 }, blur: 10 }, 0);
+  console.log(topTotalHeight, totalHeight, topImagePos, arrayListElementHeight);
   tl.to(
     ".descriptionVideo",
-    { duration: 0.5, css: { autoAlpha: 0 }, blur: 10 },
+    { duration: 0.5, css: { autoAlpha: 0 }, blur: 1 },
     0
   );
+  workListItem.css({ top: totalHeight + "px" });
+  workList.css({
+    height: arrayListElementHeight * 4 + totalHeight + "px",
+  });
 
   for (let i = 0; i < arrayListElement.length; i++) {
-    if (idElement !== $(arrayListElement[i]).attr("id")) {
-      tl.to(
-        arrayListElement[i],
-        { duration: 0.5, css: { autoAlpha: 0 }, ease: "power2.in" },
-        0
-      );
+    if ($(arrayListElement[i]).attr("id") !== idElement) {
+      tl.to(arrayListElement[i], { duration: 1, opacity: 0 }, 0);
       $(arrayListElement[i]).remove();
     }
   }
 
-  workListItem.css({ top: totalHeight + "px" });
-  $(".descVideo").css({ display: "block" });
-  containerTitle.css({ top: arrayListElementHeight + "px" });
-
-  workList.css({
-    height: (arrayListElementHeight + heightContainer) * 2 + totalHeight + "px",
-  });
-  halfWindowHeight =
-    $(window).height() / 2 - topTotalHeight - centerImageTop + scrollTop;
+  halfWindowHeight =$(window).height() /2 - topTotalHeight - imageHeight + scrollTop;
   halfWindowWidth = $(window).width() / 2 - leftImagePos - centerImageLeft;
   console.log(halfWindowHeight);
-
-  //tl.set(containerTitle, { css: { x: halfWindowWidth - leftImagePos } });
   tl.to(
     this,
     {
@@ -172,66 +159,5 @@ $(workBlockImageSub).one("click", function () {
       },
     },
     "startAnimation"
-  );
-  tl.to(
-    containerTitle,
-    {
-      delay: 0.2,
-      duration: 1,
-      ease: "power3.in",
-      onComplete: function () {
-        containerTitle.removeClass("hide");
-      },
-    },
-    "startAnimation"
-  );
-
-  tl.to(
-    ".mainSection",
-    { duration: 0.5, delay: 2, css: { y: 0 } },
-    "startAnimation"
-  );
-  tl.to(
-    workListItem,
-    { duration: 0.5, delay: 2, css: { top: 0 } },
-    "startAnimation"
-  );
-  tl.to(
-    window,
-    { duration: 0.5, delay: 2, scrollTo: { x: 0, y: 0 } },
-    "startAnimation"
-  );
-  tl.to(this, { duration: 0.5, delay: 2, y: topImagePos }, "startAnimation");
-
-  tl.to(
-    workListItem,
-    {
-      duration: 0.5,
-      delay: 2,
-      css: { height: arrayListElementHeight + heightContainer },
-    },
-    "startAnimation"
-  );
-  tl.to(
-    workList,
-    {
-      duration: 0.5,
-      delay: 2,
-      css: { height: arrayListElementHeight + heightContainer + 500 },
-    },
-    "startAnimation"
-  );
-  //tl.to(workBlockImageSub,{duration:0.5,delay:2,css:{top:-scrollTop}},'startAnimation')
-  //tl.to(workListItem,{duration:0.5,css:{top:}})
-  tl.to(".tVideo", { x: 0, autoAlpha: 1 }, "animationStart");
-  tl.to(".subVideo", { x: 0, autoAlpha: 1 }, "animationStart");
-  tl.to(
-    ".descVideo",
-    {
-      y: 0,
-      autoAlpha: 1,
-      blur: 0,
-    },
-    "animationStart"
   );
 });

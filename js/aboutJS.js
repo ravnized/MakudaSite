@@ -1,55 +1,35 @@
-$.fn.isInViewport = function () {
-    let elementTop = $(this).offset().top;
-    let elementBottom = elementTop + $(this).outerHeight();
-
-    let viewportTop = $(window).scrollTop();
-    let viewportBottom = viewportTop + $(window).height();
-
-    return elementBottom > viewportTop && elementTop < viewportBottom;
+$.fn.isOnScreen = function () {
+  var viewport = {};
+  viewport.top = $(window).scrollTop();
+  viewport.bottom = viewport.top + $(window).height();
+  var bounds = {};
+  bounds.top = this.offset().top;
+  bounds.bottom = bounds.top + this.outerHeight();
+  return bounds.top <= viewport.bottom && bounds.bottom >= viewport.top;
 };
+$(window).scrollTop(1);
+document.addEventListener("scroll", function (e) {
+  $(".counter").each(function () {
+    var $this = $(this),
+      countTo = $this.attr("data-count");
+    if ($(this).isOnScreen()) {
+      $({ countNum: $this.text() }).animate(
+        {
+          countNum: countTo,
+        },
 
-$(document).ready(function ($) {
-    $(".counter-count").each(function (index) {
-        if ($(this).isInViewport()) {
-            $(this)
-                .prop("Counter", 0)
-                .animate(
-                    {
-                        Counter: $(this).text(),
-                    },
-                    {
-                        duration: 1000,
-
-                        step: function (now) {
-                            $(this).text(Math.ceil(now));
-                        },
-                    }
-                );
+        {
+          duration: 3000,
+          easing: "linear",
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+            console.log("aaa");
+          },
         }
-    });
-
-    var images = $(".imagesStudio");
-    images.mousemove(function (e) {
-        var timeline = gsap.timeline();
-        var offset = $(this).offset();
-        var relativeX = e.pageX - offset.left;
-        var relativeY = e.pageY - offset.top;
-        var cX = $(this).width() / 2;
-        var cY = $(this).height() / 2;
-        console.log(relativeX, relativeY);
-        console.log(cX, cY);
-        var cxRelative = (cX - relativeX) / 20;
-        var cyRelative = (cY - relativeY) / 20;
-        timeline.to($(this).parent(), {
-            duration: 0.2,
-            rotateX: cyRelative,
-            rotateY: cxRelative,
-        });
-    });
-    images.mouseleave(function (event) {
-        var timeline = gsap.timeline();
-
-        timeline.to($(this).parent(), {duration: 1, rotateX: 0, rotateY: 0});
-    });
-    var alreadyClicked = false;
+      );
+    }
+  });
 });

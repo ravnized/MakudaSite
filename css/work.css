@@ -86,10 +86,6 @@ body {
   pointer-events: none;
 }
 
-.imageVideo {
-  background-color: transparent !important;
-}
-
 .mainSection {
   z-index: 1;
   width: 100%;
@@ -108,9 +104,7 @@ body {
   left: 0;
   display: block;
 }
-
 .workListItem {
-  height: 40rem;
   left: 0;
   will-change: transform;
   transform: translateZ(0);
@@ -143,7 +137,7 @@ body {
   will-change: transform;
   transform: translateZ(40px);
 }
-.workBlock{
+.workBlock {
   width: 100%;
   height: 100%;
 }
@@ -229,14 +223,7 @@ video {
 .container .descVideo {
   display: none;
 }
-.textContainer {
-  position: absolute;
-}
 
-.mainSection {
-  transform: translateY(50vh);
-  opacity: 0;
-}
 .descriptionVideo {
   color: white;
   font-family: Gelion-light;
@@ -253,7 +240,7 @@ video {
   color: #f6b600;
 }
 
-.stickDiv p{
+.stickDiv p {
   margin-left: 10px;
 }
 
@@ -269,7 +256,7 @@ video {
   font-size: 1em;
 }
 
-.subTitleOrange{
+.subTitleOrange {
   color: #f6b600;
   font-family: Gelion-Regular;
   font-size: 1.5em;
@@ -293,10 +280,62 @@ video {
   font-family: Gelion-light;
   font-size: 1.5em;
 }
+
+.spaceWorkList {
+  padding-top: 4em;
+}
+
+.iconsMakuda {
+  width: auto;
+  height: 100px;
+  background: white;
+}
+
+/*
+VideoJS Custom
+ */
+
 .vjs-poster {
   background-color: transparent !important;
 }
 
 .vjs-big-play-button {
   display: none !important;
+}
+
+.video-js .vjs-control-bar {
+  background-color: rgba(17, 17, 17, 0.7) !important;
+}
+
+.video-js .vjs-play-control {
+  color: #f6b600;
+}
+.video-js .vjs-mute-control {
+  color: #f6b600;
+}
+
+.video-js .vjs-progress-holder .vjs-play-progress {
+  color: #f0c859;
+  background-color: #f6b600;
+}
+
+.video-js .vjs-load-progress {
+  background: rgba(246, 182, 0, 0.2) !important;
+}
+
+.video-js .vjs-time-control {
+  color: #f6b600;
+}
+.video-js .vjs-load-progress div {
+  background: rgba(71, 71, 71, 0.7) !important;
+}
+
+.video-js .vjs-slider {
+  background: rgba(71, 71, 71, 0.7) !important;
+}
+.video-js .vjs-control {
+  color: #f6b600;
+}
+.video-js .vjs-volume-level {
+  background: rgba(246, 182, 0, 0.2) !important;
 }

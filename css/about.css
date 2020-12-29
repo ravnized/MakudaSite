@@ -152,7 +152,7 @@ strong {
 }
 
 .halfWidth {
-    width: 50%;
+    max-width: 50%;
 }
 
 .noWrap {
@@ -191,8 +191,8 @@ strong {
 }
 
 .parallelepipedo {
-    width: 150px;
-    height: 400px;
+    max-width: 150px;
+    max-height: 400px;
     transform: skewY(-20deg);
     -ms-transform: skewY(-20deg); /* IE 9 */
     -webkit-transform: skewY(-20deg); /* Safari and Chrome */
@@ -319,6 +319,7 @@ strong {
 
 div > .uno {
     transform: skewY(20deg) translateX(0px);
+    margin-left: 50px;
 }
 
 .textInsideSquareLong {
@@ -343,7 +344,6 @@ div > .uno {
 
 .video-dopo {
     background: linear-gradient(to left, #111111 60%, rgba(0, 0, 0, 0));
-
     animation: opacityAnimation 2s;
 }
 
@@ -361,14 +361,11 @@ div > .uno {
     }
 }
 
-.containerCar {
-    max-width: 800px;
-    margin-top: 4vh;
-}
+
 
 .gradient-video {
     width: 100%;
-    min-height: 600px;
+    height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: 2;
