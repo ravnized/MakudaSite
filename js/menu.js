@@ -76,17 +76,16 @@ function animateMenu() {
     ".menu-background",
     {
       duration: 1,
-      translateX: "-500px",
-      display: "initial",
+      translateX: "-20%",
       ease: "expo.in",
     },
     0
   )
-      .to(".menuWrapper", {
-          duration: 0.2,
-          autoAlpha: 1,
-          display: "flex",
-      })
+    .to(".menuWrapper", {
+      duration: 0.2,
+      autoAlpha: 1,
+      display: "flex",
+    })
     .to(".letter", {
       duration: 0.5,
       translateX: 0,
@@ -116,7 +115,6 @@ function animateMenuReverse() {
         duration: 1,
         translateX: "50%",
         scale: 1,
-        display: "none",
         ease: "expo.in",
       },
       "-=0.5"
@@ -124,6 +122,10 @@ function animateMenuReverse() {
     .to(".letter", {
       translateX: "-45%",
     });
+  tl.add(function () {
+    $(".menu-background").removeAttr("style");
+    $(".menuWrapper").removeAttr("style");
+  });
 }
 
 function menuSize() {
