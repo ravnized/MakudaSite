@@ -52,6 +52,7 @@ $(document).ready(function () {
       autoAlpha: 1,
     });
     tl3.to(".consultingText", { duration: 0.5, autoAlpha: 1 });
+    tl3.to(".consultingBtn", { duration: 0.5, autoAlpha: 1 });
 
     app.ticker.stop();
     gsap.ticker.add(() => {

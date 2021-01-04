@@ -644,6 +644,48 @@ Contacts
   opacity: 0;
 }
 
+/*definizione consultingBtn */
+.consultingBtn {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  width: 320px;
+  padding-top: 13px;
+  opacity: 0;
+}
+.consultingBtn svg {
+  position: absolute;
+}
+.consultingBtn .svg-wrapper {
+  position: absolute;
+  margin: auto;
+  width: 320px;  
+}
+.consultingBtn .shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #f6b600;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.consultingBtn .text {
+  position: relative;
+  margin: auto;
+  font-size: 15px;
+  letter-spacing: 8px;
+  color: #fff;
+  padding-top: 18px;
+}
+.consultingBtn:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+/*fine definizione consultingBtn */
+
 .slider-pagination {
   display: none !important;
 }
