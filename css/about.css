@@ -368,3 +368,7 @@ div > .uno {
 .slider-container .card {
   background-color: transparent;
 }
+
+.section {
+  overflow: hidden;
+}

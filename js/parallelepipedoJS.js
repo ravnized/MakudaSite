@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-  let disable = [false, false, false, false, false];
+  let disable = [false, false, false, false, false, false];
   var parallelepipedo = $(".parallelepipedo");
   parallelepipedo.click(function (e) {
     let idElement = $(this).parent().attr("id"),
@@ -9,7 +9,7 @@ $(document).ready(function ($) {
     disable[idElement - 1] = true;
     let secondText = $(this).find(".secondText");
     let number = $(this).find(".numberParallelepipedo");
-    for (let i = 4; i >= idElement; i--) {
+    for (let i = 6; i >= idElement; i--) {
       if (idElement !== $(parallelepipedParent[i]).attr("id")) {
         disable[$(parallelepipedParent[i]).attr("id") - 1] = false;
         tl.to(
@@ -298,12 +298,7 @@ $(document).ready(function ($) {
       "mouseenter",
 
       function () {
-        console.log(idElement);
-        console.log(disable);
-        if (disable[idElement - 1] != true) {
-          console.log("sanGesuale");
-          tl.play();
-        }
+        tl.play();
       }
     );
 
@@ -311,8 +306,6 @@ $(document).ready(function ($) {
       "mouseleave",
 
       function () {
-        console.log(idElement);
-        console.log(disable);
         if (disable[idElement - 1] != true) {
           tl.reverse();
         }

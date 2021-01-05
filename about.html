@@ -294,44 +294,41 @@
       <br /><br />
       <br /><br />
     </div>
-    <div class="container is-max-desktop">
-      <section class="section">
-        <div class="container">
-          <div class="carousel" data-initial-slide="1" id="carousel2">
-            <div class="item-1">
-              <div class="card cardino">
-                <div class="card-image">
-                  <img
-                    class="cardinoVideo"
-                    src="media/img/orionthemes-placeholder-image.png"
-                  />
-                </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="carousel" id="carousel2">
+          <div class="item-1">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="media/img/orionthemes-placeholder-image.png" />
+                </figure>
               </div>
             </div>
-            <div class="item-2">
-              <div class="card cardino">
-                <div class="">
-                  <img
-                    class="cardinoVideo"
-                    src="media/img/orionthemes-placeholder-image.png"
-                  />
-                </div>
+          </div>
+          <div class="item-2">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="media/img/orionthemes-placeholder-image.png" />
+                </figure>
               </div>
             </div>
-            <div class="item-3">
-              <div class="card cardino">
-                <div class="">
-                  <img
-                    class="cardinoVideo"
-                    src="media/img/orionthemes-placeholder-image.png"
-                  />
-                </div>
+          </div>
+          <div class="item-3">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="media/img/orionthemes-placeholder-image.png" />
+                </figure>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
@@ -341,10 +338,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script>
       var carousel1 = bulmaCarousel.attach("#carousel1");
-      var carousel = bulmaCarousel.attach(".carousel");
+      var carousel = bulmaCarousel.attach("#carousel2");
     </script>
     <script src="js/carouselManipulator.js"></script>
-
+    <script>
+      videoNextPrevious();
+    </script>
     <script src="js/parallelepipedoJS.js"></script>
   </body>
 </html>
