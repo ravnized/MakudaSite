@@ -9,11 +9,12 @@ $(document).ready(function ($) {
     disable[idElement - 1] = true;
     let secondText = $(this).find(".secondText");
     let number = $(this).find(".numberParallelepipedo");
-    for (let i = 6; i >= idElement; i--) {
+
+    for (let i = parallelepipedParent.length - 1; i >= idElement; i--) {
       if (idElement !== $(parallelepipedParent[i]).attr("id")) {
         disable[$(parallelepipedParent[i]).attr("id") - 1] = false;
         tl.to(
-          parallelepipedParent[i],
+          $(parallelepipedParent[i]),
           {
             duration: 0.5,
             scale: 1,
@@ -90,8 +91,9 @@ $(document).ready(function ($) {
     for (let i = 0; i < idElement; i++) {
       if (idElement !== $(parallelepipedParent[i]).attr("id")) {
         disable[$(parallelepipedParent[i]).attr("id") - 1] = false;
+
         tl.to(
-          parallelepipedParent[i],
+          $(parallelepipedParent[i]),
           {
             duration: 0.5,
             scale: 1,

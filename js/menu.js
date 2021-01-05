@@ -1,5 +1,18 @@
 var heightTotal = $(window).height() / 2;
 
+$(document).ready(function () {
+  var burgerNavbar = $(".navbar-burger");
+  $(burgerNavbar).on("mouseenter", function () {
+    let timeline = gsap.timeline({});
+    let navbarChildren = burgerNavbar.children();
+    Array.from(navbarChildren).forEach(function (element) {
+      var random = Math.floor(Math.random() * 3);
+      timeline.to(element, { duration: 0.2, width: 0, x: 16 }, "0." + random);
+      timeline.to(element, { duration: 0.2, width: 16, x: 0 }, "+=0.1");
+    });
+  });
+});
+
 let letters = document.querySelectorAll(".letterWrapper");
 letters.forEach((item) => {
   item.tl = gsap.timeline();
@@ -154,3 +167,6 @@ menuSize();
 $(window).on("resize", function () {
   menuSize();
 });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};

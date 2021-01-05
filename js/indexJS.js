@@ -1,8 +1,9 @@
 var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 
+window.onbeforeunload;
+
 $(document).ready(function () {
-  window.scrollTo(0, 0);
   var app,
     video = document.createElement("video"),
     divVideo = document.querySelector("#divVideo"),
@@ -60,7 +61,6 @@ $(document).ready(function () {
       $(window).resize(function () {
         heightWindow = $(window).height();
         widthWindow = $(window).width();
-        console.log(heightWindow, widthWindow);
         app.screen.width = widthWindow;
         app.screen.height = heightWindow;
         videoSprite.width = widthWindow;
