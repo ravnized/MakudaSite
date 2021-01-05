@@ -39,7 +39,6 @@
               aria-expanded="false"
               aria-label="menu"
               class="navbar-burger"
-              onclick="animateMenu()"
               role="button"
             >
               <span aria-hidden="true"></span>
@@ -58,7 +57,19 @@
           ><span>e</span></a
         >
       </div>
-
+      <div class="exit">
+        <a
+          onclick="animateMenuReverse()"
+          aria-expanded="false"
+          aria-label="menu"
+          class="navbar-burger is-active"
+          role="button"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
       <div class="buttonMenu">
         <div class="letterWrapper">
           <a href="index.php">

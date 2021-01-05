@@ -121,3 +121,7 @@
   font-family: Gelion-Regular-italic, serif;
   font-size: 4em;
 }
+
+.navbar-burger {
+  z-index: 101 !important;
+}

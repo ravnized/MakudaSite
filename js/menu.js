@@ -1,18 +1,5 @@
 var heightTotal = $(window).height() / 2;
 
-$(document).ready(function () {
-  var burgerNavbar = $(".navbar-burger");
-  $(burgerNavbar).on("mouseenter", function () {
-    let timeline = gsap.timeline({});
-    let navbarChildren = burgerNavbar.children();
-    Array.from(navbarChildren).forEach(function (element) {
-      var random = Math.floor(Math.random() * 3);
-      timeline.to(element, { duration: 0.2, width: 0, x: 16 }, "0." + random);
-      timeline.to(element, { duration: 0.2, width: 16, x: 0 }, "+=0.1");
-    });
-  });
-});
-
 let letters = document.querySelectorAll(".letterWrapper");
 letters.forEach((item) => {
   item.tl = gsap.timeline();
@@ -82,9 +69,26 @@ letters.forEach((item) => {
     });
   });
 });
+$(document).ready(function () {
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function () {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
 
+    animateMenu();
+  });
+  $(".navbar-burger").hover(function () {
+    let timeline = gsap.timeline();
+    let navbarChildren = $(".navbar-burger ").children();
+    Array.from(navbarChildren).forEach(function (element) {
+      var random = Math.floor(Math.random() * 3);
+      timeline.to(element, { duration: 0.2, width: 0 });
+      timeline.to(element, { duration: 0.2, width: 16 });
+    });
+  });
+});
 function animateMenu() {
   let tl = gsap.timeline();
+
   tl.to(
     ".menu-background",
     {
