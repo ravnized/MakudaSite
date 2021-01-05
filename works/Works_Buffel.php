@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Suites - Works</title>
+    <title>Buffel - Works</title>
     <link href="../css/bulma.min.css" rel="stylesheet" />
     <link href="../css/work.css" rel="stylesheet" type="text/css" />
     <link href="../css/bello.css" rel="stylesheet" type="text/css" />
@@ -20,102 +20,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
   <body style="background-color: #111; min-height: 200vh">
-    <nav
-      aria-label="main navigation"
-      class="navbar is-fixed-top is-black"
-      role="navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.php">
-          <img
-            height="28"
-            src="../media/img/LogoIcona_PNG_Negativo(1).png"
-            width="28"
-          />
-        </a>
-      </div>
-      <div class="navbar-menu" id="navBarMakuda">
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a
-              aria-expanded="false"
-              aria-label="menu"
-              class="navbar-burger"
-              onclick="animateMenu()"
-              role="button"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="menuWrapper">
-      <div class="exit">
-        <a onclick="animateMenuReverse()"
-          ><span>c</span><span>l</span><span>o</span><span>s</span
-          ><span>e</span></a
-        >
-      </div>
+    
+    <?php require("../components/navbar.php"); ?>
 
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="/index.php">
-            <span class="letter">H</span>
-            <span class="letter">O</span>
-            <span class="letter">M</span>
-            <span class="letter">E</span>
-          </a>
-        </div>
-      </div>
+    <?php require("../components/menu.php"); ?>
 
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="/about.html">
-            <span class="letter">A</span>
-            <span class="letter">B</span>
-            <span class="letter">O</span>
-            <span class="letter">U</span>
-            <span class="letter">T</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="/work.html">
-            <span class="letter">W</span>
-            <span class="letter">O</span>
-            <span class="letter">R</span>
-            <span class="letter">K</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="/contacts.html">
-            <span class="letter">C</span>
-            <span class="letter">O</span>
-            <span class="letter">N</span>
-            <span class="letter">T</span>
-            <span class="letter">A</span>
-            <span class="letter">C</span>
-            <span class="letter">T</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="menu-background">
-      <img
-        src="/media/img/Freccia_Menu.png"
-        style="height: 100%; width: 100%"
-        alt=""
-      />
-    </div>
     <div class="mainSection">
       <section class="sectionFullWorks">
         <div class="workList">
@@ -134,7 +43,7 @@
                         preload="none"
                       >
                         <source
-                          src="../media/video/Suite_&_Atelier_Finalev2.mp4"
+                          src="../media/video/Buffel_2.0.mp4"
                           type="video/mp4"
                         />
                         <p class="vjs-no-js">
@@ -152,7 +61,7 @@
                 </div>
               </div>
               <div class="container textContainer">
-                <h1 class="tVideo">Suites & Atelier Lake Como</h1>
+                <h1 class="tVideo">GELATERIA BUFFEL</h1>
                 <br /><br />
                 <p class="subVideo">STRATEGIA</p>
                 <br /><br />
@@ -160,50 +69,89 @@
                   <div class="column is-two-thirds">
                     <p class="descVideo">
                       Per questo progetto è stata elaborata una strategia OKR
-                      con l’obiettivo di massimizzare i processi di prenotazione
-                      iniziati in primis dagli utenti stranieri. Il target di
-                      riferimento è rappresentato dai Paesi Europei Franco -
-                      Anglosassoni e U.S.A. Il mix tra location e experience è
-                      stato il focus scelto per indirizzare la creazione dei
-                      contenuti video, fotografici e scritti finalizzati a
-                      trasmettere l’unicità dell’esperienza italiana.
+                      con l’obiettivo di creare opportunità per l’incremento
+                      degli acquisti instore e online. Il target di riferimento
+                      è rappresentato dagli utenti nel raggio geografico intorno
+                      a Busto Arsizio (VA). E’ stato quindi strutturato un piano
+                      marketing a 360° online e offline, incentrato sulla novità
+                      della caffetteria e bakery, senza però dimenticare la
+                      qualità riconosciuta del prodotto gelato. L’attenzione è
+                      stata posta sulla varietà e la qualità dei prodotti, in
+                      particolare quelli tipici del brand Buffel, con anche
+                      l’auto di ambassador locali, eventi e promozioni. La
+                      strategia è di supporto al continuo sviluppo sia in
+                      termini di prodotto, che in termini di iniziative
+                      marketing.
                     </p>
                   </div>
                   <div class="column">
-                    <p>
-                      <span class="boldOrange">Cliente</span> Suites & Atelier
-                      Lake Como
-                    </p>
-                    <p><span class="boldOrange">Anno</span> 2020</p>
+                    <p><span class="boldOrange">Cliente:</span> Buffel SRL</p>
+                    <p><span class="boldOrange">Anno:</span> 2020</p>
                     <p>
                       <span class="boldOrange">Focus:</span>
                     </p>
                     <p>
-                      <span class="boldOrange"
-                        >Comunicazione web e digitale</span
-                      >
+                      <span class="boldOrange">Strategia Marketing</span>
                     </p>
                   </div>
                 </div>
                 <br />
                 <p class="subVideo">INDICATORI PRINCIPALI</p>
                 <br />
-                <div class="columns is-6">
+                <div class="columns is-vcentered">
                   <div class="column">
-                    <p class="descVideo">
-                      Click CTA “Book Now” (Versione ENG): + 150 al mese
-                      Traffico Sito Web: + 500 visite al mese
-                    </p>
+                    <img
+                      src="/media/gif/Grafico Buffel Visite sullo shop.gif"
+                      width="100%"
+                      height="auto"
+                    />
+                  </div>
+                  <div class="column">
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="30"
+                          >0</span
+                        >
+                        <span class="giantAssText">%</span>
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">
+                          entrate derivanti da caffetteria bakery
+                        </p>
+                      </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="249"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">ordini online primo mese</p>
+                      </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="129"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">
+                          ordini Deliveroo in un mese dall’inaugurazione
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <br /><br /><br />
                 <p class="subVideo">OBIETTIVO</p>
                 <p class="giantAssText">
-                  <span class="orangeOnly">“</span>Massimizzare n. utenti
-                  stranieri che iniziano processo di booking<span
-                    class="orangeOnly"
-                    >”</span
-                  >
+                  <span class="orangeOnly">“</span>Massimizzare il flusso
+                  clienti in-store e online<span class="orangeOnly">”</span>
                 </p>
                 <br /><br /><br />
                 <p class="subVideo">REALIZZAZIONE PROGETTO</p>
@@ -212,7 +160,9 @@
 
                 <div class="columns">
                   <div class="column is-one-third">
-                    <p class="subVideo" style="text-align: center">HOMEPAGE</p>
+                    <p class="subVideo" style="text-align: center">
+                      E-COMMERCE
+                    </p>
                     <img
                       alt=""
                       height="auto"
@@ -222,17 +172,16 @@
                   </div>
                   <div class="column">
                     <p class="orangeOnly">
-                      UI & UX, SiteMap, Navigazione, Creazione Contenuti Web
+                      UI & UX, SiteMap, Navigazione, Creazione Contenuti Web,
+                      Checkout
                     </p>
                     <p class="whiteText">
-                      Interfaccia e navigazione chiara, semplice (Italiano e
-                      Inglese). <br />
-                      Homepage d’impatto (video panoramico realizzato con drone
-                      e call to action “Book Now”).<br />
-                      Sitemap classica (about us, suites, events, tourism,
-                      contacts, how to find us). <br />Pagina merchandising
-                      “Archivio Spadacini” disponibile tramite QR Code ai solo
-                      ospiti della Location. <br />
+                      Interfaccia e navigazione chiara, semplice durante tutto
+                      il processo d’acquisto (Italiano)<br />
+                      Homepage categorizzata per prodotti principali e CTA per
+                      inizio checkout.<br />
+                      Sitemap funnel e-commerce.<br />
+                      Pagina shop (trovare cosa dire di figo)<br />
                       Contenuti multimediali, testi e traduzioni completamente
                       realizzati dal nostro team.
                     </p>
@@ -259,17 +208,19 @@
                       In linea con gli indicatori chiavi definiti dalla
                       strategia, sono stati attivati i principali canali di
                       tracciamento: <br />
-                      Google Tag Manger e Analytics
-                      <br />
-                      Hotjar
-                      <br />
-                      Facebook Pixel
-                      <br />
-                      JotUrl <br />
+                      Google Tag Manger e Analytics<br />
+                      Facebook Pixel<br />
+                      JotUrl<br />
+
+                      Per rendere efficaci le attività di marketing e e-commerce
+                      sono stati integrati:<br />
+                      Hubspot<br />
+                      Mailchimp<br />
+                      WooCommerce<br />
+
                       Per garantire il corretto posizionamento del domino, è
-                      stato attivato un processo SEO e linkbuilding, nonché
-                      connessione con i principali referrals, motori di ricerca,
-                      TripAdvisor, AirBnB e piattaforme OTA.
+                      stato attivato un processo di connessione con i principali
+                      referrals, motori di ricerca e TripAdvisor
                     </p>
                   </div>
                 </div>
@@ -280,7 +231,7 @@
                 <div class="columns">
                   <div class="column is-one-third">
                     <p class="subVideo" style="text-align: center">
-                      Strategia Instagram
+                      INIZIATIVE
                     </p>
                     <img
                       alt=""
@@ -292,18 +243,21 @@
                   <div class="column">
                     <p class="orangeOnly">Piano editoriale e Gestione Pagina</p>
                     <p class="whiteText">
-                      Elaborazione Piano editoriale caratterizzato da: <br />
-                      Programmazione post Location, Experience <br />
+                      Elaborazione Piano editoriale caratterizzato da:<br />
+                      Programmazione post prodotto, experience<br />
                       Aggiornamento storie quotidiane ed in evidenza<br />
-                      Sfruttamento User Generated Content <br />
-                      Creazione copy ed utilizzo frequente delle recensioni
-                      <br />
-                      Sponsorizzata su contenuto mensile di riferimento
-                      <br />Per migliorare la gestione della pagina sono stati
+                      Sfruttamento User Generated Content<br />
+                      Creazione copy <br />
+                      Sponsorizzata su prodotto/promozione di riferimento<br />
+
+                      Per migliorare la gestione della pagina sono stati
                       integrati:<br />
-                      Facebook <br />Business<br />
+                      Facebook Business<br />
                       Hootsuite<br />
-                      Linktree <br />JotUrl
+                      Linktree<br />
+                      JotUrl<br />
+                      local marketing and events, retail marketing Digital
+                      signage,
                     </p>
                   </div>
                 </div>
@@ -319,7 +273,7 @@
                     />
                   </div>
                   <div class="column">
-                    <p class="subVideo">Indicatori Principali Mensili</p>
+                    <p class="subVideo">Indicatori Principali</p>
                     <p class="subVideo">Visite profilo Instagram:</p>
                     <div class="columns is-vcentered">
                       <div class="column">
@@ -344,10 +298,18 @@
                         >
                       </div>
                       <div class="column">
-                        <img
-                          class="iconsMakuda"
-                          src="/media/icons/icon_likes_cuore.png"
-                        />
+                        <p class="whiteText">visite</p>
+                      </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="43"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">intenzioni di acquisto</p>
                       </div>
                     </div>
                   </div>
@@ -371,20 +333,19 @@
                     <p class="orangeOnly">Piano editoriale e Gestione Pagina</p>
                     <p class="whiteText">
                       Elaborazione Piano editoriale caratterizzato da:<br />
-                      Progrmmazione post Location, Experience, Dettagli storici
-                      e degli interni<br />
+                      Programmazione post prodotto, experience<br />
                       Aggiornamento storie quotidiane ed in evidenza<br />
                       Sfruttamento User Generated Content<br />
-                      Creazione copy ed utilizzo frequente delle recensioni<br />
-                      Sponsorizzata su contenuto mensile di riferimento<br />
+                      Creazione copy <br />
+                      Sponsorizzata su prodotto/promozione di riferimento<br />
 
                       Per migliorare la gestione della pagina sono stati
                       integrati:<br />
                       Facebook Business<br />
-                      Chatbot<br />
-                      WhatsApp Business<br />
                       Hootsuite<br />
+                      Linktree<br />
                       JotUrl<br />
+                      Chatbot
                     </p>
                   </div>
                 </div>
@@ -402,12 +363,12 @@
                     />
                   </div>
                   <div class="column">
-                    <p class="subVideo">Indicatori Principali Mensili</p>
-                    <p class="subVideo">Visite profilo Facebook:</p>
+                    <p class="subVideo">Indicatori Principali</p>
+                    <p class="subVideo">Visite profilo Instagram:</p>
                     <div class="columns is-vcentered">
                       <div class="column">
                         <span class="giantAssText">+</span>
-                        <span class="counter giantAssText" data-count="250"
+                        <span class="counter giantAssText" data-count="600"
                           >0</span
                         ><br />
                       </div>
@@ -422,57 +383,103 @@
                     <div class="columns is-vcentered">
                       <div class="column">
                         <span class="giantAssText">+</span>
-                        <span class="counter giantAssText" data-count="350"
+                        <span class="counter giantAssText" data-count="250"
                           >0</span
                         >
                       </div>
                       <div class="column">
-                        <img
-                          class="iconsMakuda"
-                          src="/media/icons/icon_likes_cuore.png"
-                        />
+                        <p class="whiteText">visite</p>
+                      </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="43"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">intenzioni di acquisto</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <br /><br /><br />
-                <p class="subVideo">Engagment</p>
-                <div class="columns is-vcentered">
+                <p class="giantAssText">MARKETING MIX</p>
+
+                <div class="columns">
                   <div class="column is-one-third">
-                    <span class="giantAssText">+</span>
-                    <span class="counter giantAssText" data-count="100">0</span>
-                    <span class="giantAssText">%</span>
+                    <p class="subVideo" style="text-align: center">
+                      INIZIATIVE
+                    </p>
+                    <img
+                      alt=""
+                      height="auto"
+                      src="/media/img/iphone.png"
+                      width="100%"
+                    />
                   </div>
                   <div class="column">
-                    <img class="iconsMakuda" src="/media/icons/like.png" />
+                    <p class="orangeOnly">
+                      Eventi e iniziative marketing locali
+                    </p>
+                    <p class="whiteText">
+                      Buffel 2.0<br />
+                      Box Natalizi<br />
+                      Mail Marketing <br />
+                      CRM<br />
+                      Influencer locali<br />
+                      Programma fidelity iscritti<br />
+                      Studio prodotti nuovi funzionali<br />
+                    </p>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="132"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">iscritti in un mese</p>
+                      </div>
+                    </div>
+                    <div class="columns is-vcentered">
+                      <div class="column">
+                        <span class="giantAssText">+</span>
+                        <span class="counter giantAssText" data-count="10"
+                          >0</span
+                        >
+                      </div>
+                      <div class="column">
+                        <p class="whiteText">ambassador</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <br /><br /><br />
-                <p class="subVideo">Crediti</p>
-                <div class="columns is-vcentered">
-                  <div class="column">
-                    <span class="counter giantAssText" data-count="6">0</span>
+                <p class="giantAssText">RETAIL MARKETING</p>
+
+                <div class="columns">
+                  <div class="column is-one-third">
+                    <p class="subVideo" style="text-align: center">
+                      INIZIATIVE
+                    </p>
+                    <img
+                      alt=""
+                      height="auto"
+                      src="/media/img/iphone.png"
+                      width="100%"
+                    />
                   </div>
                   <div class="column">
-                    <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
+                    <p class="orangeOnly">
+                      Eventi e iniziative marketing locali
                     </p>
                     <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
-                    </p>
-                    <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
-                    </p>
-                    <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
-                    </p>
-                    <p class="whiteText">
-                      <span class="boldOrange">Anno</span> 2020
+                      Digital Signage<br />
+                      Grafiche interne, pannelli espositivi<br />
+                      Vespa brandizzata<br />
+                      Packaging, bandierine design<br />
                     </p>
                   </div>
                 </div>

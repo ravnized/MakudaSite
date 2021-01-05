@@ -2,6 +2,14 @@ var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 
 $(document).ready(function () {
+  /*NAPO*/
+  let band_texts = ["STRATEGIA", "PRODUZIONE", "INNOVAZIONE"];
+  let band_actual_index = 0;
+  setInterval(function myMethod( )
+  {
+    $(".home-band p").html(band_texts[++band_actual_index % 3]);
+  }, 1000);
+  /*FINE NAPO*/
   window.scrollTo(0, 0);
   var app,
     video = document.createElement("video"),
@@ -52,7 +60,7 @@ $(document).ready(function () {
       autoAlpha: 1,
     });
     tl3.to(".consultingText", { duration: 0.5, autoAlpha: 1 });
-    tl3.to(".consultingBtn", { duration: 0.5, autoAlpha: 1 });
+    tl3.to(".animatedBtn", { duration: 0.5, autoAlpha: 1 });
 
     app.ticker.stop();
     gsap.ticker.add(() => {

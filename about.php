@@ -17,103 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
   <body style="background-color: #111">
-    <nav
-      aria-label="main navigation"
-      class="navbar is-fixed-top is-black"
-      role="navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.php">
-          <img
-            height="28"
-            src="media/img/LogoIcona_PNG_Negativo(1).png"
-            width="28"
-          />
-        </a>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a
-              aria-expanded="false"
-              aria-label="menu"
-              class="navbar-burger"
-              onclick="animateMenu()"
-              role="button"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
 
-    <div class="menuWrapper">
-      <div class="exit">
-        <a onclick="animateMenuReverse()"
-          ><span>c</span><span>l</span><span>o</span><span>s</span
-          ><span>e</span></a
-        >
-      </div>
+    <?php require("components/navbar.php"); ?>
 
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="index.php">
-            <span class="letter">H</span>
-            <span class="letter">O</span>
-            <span class="letter">M</span>
-            <span class="letter">E</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="about.html">
-            <span class="letter">A</span>
-            <span class="letter">B</span>
-            <span class="letter">O</span>
-            <span class="letter">U</span>
-            <span class="letter">T</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="work.html">
-            <span class="letter">W</span>
-            <span class="letter">O</span>
-            <span class="letter">R</span>
-            <span class="letter">K</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="contacts.html">
-            <span class="letter">C</span>
-            <span class="letter">O</span>
-            <span class="letter">N</span>
-            <span class="letter">T</span>
-            <span class="letter">A</span>
-            <span class="letter">C</span>
-            <span class="letter">T</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="menu-background">
-      <img
-        src="/media/img/Freccia_Menu.png"
-        style="height: 100%; width: 100%"
-        alt=""
-      />
-    </div>
+    <?php require("components/menu.php"); ?>
 
     <div class="container">
       <p class="boldBig halfWidth">WE ARE MAKUDA</p>
