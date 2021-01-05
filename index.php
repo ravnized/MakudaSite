@@ -19,6 +19,10 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/9eeab300fc.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/pixi.min.js"></script>
   </head>
 
@@ -49,105 +53,11 @@
 </header>
 -->
 
-    <?php require("loader.html"); ?>
+    <?php require("components/loader.html"); ?>
 
-    <nav
-      aria-label="main navigation"
-      class="navbar is-fixed-top is-black"
-      role="navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.php">
-          <img
-            height="28"
-            src="media/img/LogoIcona_PNG_Negativo(1).png"
-            width="28"
-          />
-        </a>
-      </div>
-      <div class="navbar-menu" id="navBarMakuda">
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <a
-              aria-expanded="false"
-              aria-label="menu"
-              class="navbar-burger"
-              onclick="animateMenu()"
-              role="button"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <?php require("components/navbar.php"); ?>
 
-    <div class="menuWrapper">
-      <div class="exit">
-        <a onclick="animateMenuReverse()"
-          ><span>c</span><span>l</span><span>o</span><span>s</span
-          ><span>e</span></a
-        >
-      </div>
-
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="index.php">
-            <span class="letter">H</span>
-            <span class="letter">O</span>
-            <span class="letter">M</span>
-            <span class="letter">E</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="about.html">
-            <span class="letter">A</span>
-            <span class="letter">B</span>
-            <span class="letter">O</span>
-            <span class="letter">U</span>
-            <span class="letter">T</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="work.html">
-            <span class="letter">W</span>
-            <span class="letter">O</span>
-            <span class="letter">R</span>
-            <span class="letter">K</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-      <div class="buttonMenu">
-        <div class="letterWrapper">
-          <a href="contacts.html">
-            <span class="letter">C</span>
-            <span class="letter">O</span>
-            <span class="letter">N</span>
-            <span class="letter">T</span>
-            <span class="letter">A</span>
-            <span class="letter">C</span>
-            <span class="letter">T</span>
-            <span class="letter">S</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="menu-background">
-      <img
-        src="/media/img/Freccia_Menu.png"
-        style="height: 100%; width: 100%"
-        alt=""
-      />
-    </div>
+    <?php require("components/menu.php"); ?>
 
     <div id="section-animated">
       <section class="hero is-fullheight video" id="sectionVideo">
@@ -166,13 +76,13 @@
                 />
               </h2>
               <h2 class="consultingText">CONSULTING</h2>
-              <!-- <div class="consultingBtn">
+              <!-- <div class="animatedBtn">
                 <span class="noselect">VISUALIZZA LAVORI</span>
               </div> -->
-              <a href="work.html">
-                <div class="consultingBtn">
-                    <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-                      <rect class="shape" height="60" width="320" />
+              <a href="work.php">
+                <div class="animatedBtn">
+                    <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="50" width="320" />
                     </svg>
                   <div class="text">VISUALIZZA LAVORI</div>
                 </div>
@@ -206,8 +116,10 @@
 </div>
 </div>
 -->
-
-    <div class="container" id="containerDaLevare">
+    <div class="makuda-bgcolor home-band">
+      <p class="boldBig has-text-centered">STRATEGIA</p>
+    </div>
+    <!-- <div class="container" id="containerDaLevare">
       <div class="stickHorizontal">
         <p class="boldBig halfWidth">BLACK IS NOT DARK</p>
       </div>
@@ -237,115 +149,156 @@
         <br /><br />
       </p>
       <br /><br />
-    </div>
-    <div class="container" style="margin-bottom: 100px">
-      <p class="boldOrange">Infografica Figa</p>
-    </div>
-
-    <div class="paralleGruppo">
-      <div id="1">
-        <div class="parallelepipedo">
-          <p class="secondText">Meeting</p>
-          <p class="numberParallelepipedo uno">1</p>
-        </div>
-        <div class="square">
-          <div style="padding: 10px">
-            <div class="textInsideSquare">
-              <p class="titleInsideSquare">Mario</p>
-              <p class="underTitleInsideSquare">Art Director</p>
-              <p class="textInsideSquareLong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                Aliquam faucibus posuere nisl. Maecenas
-              </p>
-            </div>
-          </div>
-        </div>
+    </div> -->
+    <div class="sezione-infografica">
+      <div class="container" style="margin-bottom: 100px">
+        <p class="boldOrange">Infografica Figa</p>
       </div>
 
-      <div id="2">
-        <div class="parallelepipedo">
-          <p class="secondText">Meeting</p>
-          <p class="numberParallelepipedo">2</p>
+      <div class="paralleGruppo">
+        <div id="1">
+          <div class="parallelepipedo">
+            <p class="secondText">Meeting</p>
+            <p class="numberParallelepipedo uno">1</p>
+          </div>
+          <div class="square">
+            <div style="padding: 10px">
+              <div class="textInsideSquare">
+                <p class="titleInsideSquare">Mario</p>
+                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="textInsideSquareLong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
+                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
+                  Aliquam faucibus posuere nisl. Maecenas
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="square">
-          <div style="padding: 10px">
-            <div class="textInsideSquare">
-              <p class="titleInsideSquare">Mario</p>
-              <p class="underTitleInsideSquare">Art Director</p>
-              <p class="textInsideSquareLong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                Aliquam faucibus posuere nisl. Maecenas
-              </p>
+        <div id="2">
+          <div class="parallelepipedo">
+            <p class="secondText">Meeting</p>
+            <p class="numberParallelepipedo">2</p>
+          </div>
+
+          <div class="square">
+            <div style="padding: 10px">
+              <div class="textInsideSquare">
+                <p class="titleInsideSquare">Mario</p>
+                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="textInsideSquareLong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
+                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
+                  Aliquam faucibus posuere nisl. Maecenas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="3">
+          <div class="parallelepipedo">
+            <p class="secondText">Meeting</p>
+            <p class="numberParallelepipedo">3</p>
+          </div>
+          <div class="square">
+            <div style="padding: 10px">
+              <div class="textInsideSquare">
+                <p class="titleInsideSquare">Mario</p>
+                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="textInsideSquareLong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
+                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
+                  Aliquam faucibus posuere nisl. Maecenas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="4">
+          <div class="parallelepipedo">
+            <p class="secondText">Meeting</p>
+            <p class="numberParallelepipedo">4</p>
+          </div>
+          <div class="square">
+            <div style="padding: 10px">
+              <div class="textInsideSquare">
+                <p class="titleInsideSquare">Mario</p>
+                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="textInsideSquareLong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
+                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
+                  Aliquam faucibus posuere nisl. Maecenas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="5">
+          <div class="parallelepipedo">
+            <p class="secondText">Meeting</p>
+            <p class="numberParallelepipedo">5</p>
+          </div>
+          <div class="square">
+            <div style="padding: 10px">
+              <div class="textInsideSquare">
+                <p class="titleInsideSquare">Mario</p>
+                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="textInsideSquareLong">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
+                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
+                  Aliquam faucibus posuere nisl. Maecenas
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="3">
-        <div class="parallelepipedo">
-          <p class="secondText">Meeting</p>
-          <p class="numberParallelepipedo">3</p>
+      <a href="about.php">
+        <div class="animatedBtn">
+            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="50" width="320" />
+            </svg>
+          <div class="text makuda-bold makuda-color">SCOPRI CHI SIAMO</div>
         </div>
-        <div class="square">
-          <div style="padding: 10px">
-            <div class="textInsideSquare">
-              <p class="titleInsideSquare">Mario</p>
-              <p class="underTitleInsideSquare">Art Director</p>
-              <p class="textInsideSquareLong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                Aliquam faucibus posuere nisl. Maecenas
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="4">
-        <div class="parallelepipedo">
-          <p class="secondText">Meeting</p>
-          <p class="numberParallelepipedo">4</p>
-        </div>
-        <div class="square">
-          <div style="padding: 10px">
-            <div class="textInsideSquare">
-              <p class="titleInsideSquare">Mario</p>
-              <p class="underTitleInsideSquare">Art Director</p>
-              <p class="textInsideSquareLong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                Aliquam faucibus posuere nisl. Maecenas
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="5">
-        <div class="parallelepipedo">
-          <p class="secondText">Meeting</p>
-          <p class="numberParallelepipedo">5</p>
-        </div>
-        <div class="square">
-          <div style="padding: 10px">
-            <div class="textInsideSquare">
-              <p class="titleInsideSquare">Mario</p>
-              <p class="underTitleInsideSquare">Art Director</p>
-              <p class="textInsideSquareLong">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                Aliquam faucibus posuere nisl. Maecenas
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </a>
     </div>
+    <!-- POSSIBILE CAROUSEL FATTO A MANO
+    <div class="container">
+      <p class="boldOrange">OUR PROJECTS</p>
+      <div class="projects-slider">
+  
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+
+        <div class="projects-slides">
+          <div id="slide-1">
+            1
+          </div>
+          <div id="slide-2">
+            2
+          </div>
+          <div id="slide-3">
+            3
+          </div>
+          <div id="slide-4">
+            4
+          </div>
+          <div id="slide-5">
+            5
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
 
     <div class="container">
       <p class="boldOrange">FeedBack</p>
@@ -592,7 +545,44 @@
         </div>
       </section>
     </div>
-
+    <footer>
+      <div class="container" style="margin-bottom: 100px">
+        <p class="has-text-centered makuda-color get-in-touch">GET IN TOUCH!</p>
+        <div class="columns">
+          <div class="column find-us">
+            <p class="has-text-centered">FIND US</p>
+            <a href="contacts.php">
+              <div class="animatedBtn">
+                  <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="50" width="200" />
+                  </svg>
+                <div class="text">milano</div>
+              </div>
+            </a>
+          </div>
+          <div class="column">
+            <p class="has-text-centered">FOLLOW US</p>
+            <p class="brand-icons">
+              <a href="https://www.facebook.com/makudaconsulting/"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/makudaofficial/?hl=it"><i class="fab fa-instagram"></i></a>
+              <a href="https://vimeo.com/490741306"><i class="fab fa-vimeo"></i></a>
+              <a href="https://www.linkedin.com/company/makudaconsulting/"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
+          <div class="column">
+            <p class="has-text-centered">CALL US</p>
+            <a href="tel:+393454044802">
+              <div class="animatedBtn">
+                  <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="50" width="320" />
+                  </svg>
+                <div class="text">+39 345 4044802</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       crossorigin="anonymous"
       integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw=="
