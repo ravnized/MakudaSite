@@ -9,7 +9,6 @@ $(document).ready(function () {
     $(".home-band p").html(band_texts[++band_actual_index % 3]);
   }, 1000);
   /*FINE NAPO*/
-  window.scrollTo(0, 0);
   var app,
     video = document.createElement("video"),
     divVideo = document.querySelector("#divVideo"),
