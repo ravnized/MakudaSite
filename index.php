@@ -67,9 +67,6 @@
           </div>
         </div>
         <div id="replacement">
-        <div class="makuda-bgcolor home-band">
-      <p class="boldBig has-text-centered">STRATEGIA</p>
-    </div>
         </div>
       </section>
     </div>
@@ -96,43 +93,21 @@
 </div>
 </div>
 -->
-
-
+    <div class="home-band makuda-bgcolor" style="background-color: rgb(255, 197, 32) !important">
+      <p class="boldBig has-text-centered" style="color: white !important;">STRATEGIA</p>
+    </div>
+    <div class="container has-text-centered" style="padding-bottom:50px;">
+      <p class="makuda-color title" style="font-size:75px;">WE ARE</p>
+      <p class="whiteText" style="line-height:1.5;">
+        Strategia, produzione e innovazione sono i 3 criteri sulla quale è stata
+        fondata Makuda; affida la tua azienda ad <span class="makuda-bold makuda-color">una singola realtà</span>, capace di
+        unire la consulenza manageriale alla produzione di contenuti multimediali.
+      </p>
+    </div>
     
-    <!-- <div class="container" id="containerDaLevare">
-      <div class="stickHorizontal">
-        <p class="boldBig halfWidth">BLACK IS NOT DARK</p>
-      </div>
-      <br />
-      <p class="boldOrange">Mission</p>
-      <p class="whiteText" style="font-weight: bold">
-        “Trasmettere un modo nuovo di vedere i colori della vita quotidiana, per
-        raggiungere i propri obiettivi senza timore degli ostacoli.” Makuda è in
-        un processo di costante crescita che ci porta ad affrontare ogni realtà
-        in maniera positiva aggiungendo nuove competenze. Crescere per noi è
-        imparare a saper offrire le giuste sfumature di colore per un obiettivo
-        finale concreto, che sia sempre di successo e di qualità.
-      </p>
-      <br /><br />
-      <p class="boldOrange">VALORI</p>
-      <p class="whiteText">
-        <span style="font-weight: bold">Curiosità: </span>Se il nero rappresenta
-        l’oscurità, l’inesplorato allora rappresenta anche tutto ciò che la
-        curiosità ti porta ad esplorare. <br /><br />
-        <span style="font-weight: bold">Creazione: </span>Perché il nero
-        rappresenta l’attimo prima del processo di creazione, l’attimo prima che
-        si accenda la lampadina. <br /><br />
-        <span style="font-weight: bold">Crescita: </span>Qualsiasi sia il valore
-        che si dà al nero esso rappresenta anche un punto di arrivo. Se è vero
-        che il nero è un non colore, è anche vero che esso è l’insieme di tutti
-        colori. E’ solo esplorando tutte le sfumature che è possibile crescere.
-        <br /><br />
-      </p>
-      <br /><br />
-    </div> -->
     <div class="sezione-infografica">
       <div class="container" style="margin-bottom: 100px">
-        <p class="boldOrange">Infografica Figa</p>
+        <p class="title">IL NOSTRO <span class="makuda-color">METODO</span></p>
       </div>
 
       <div class="paralleGruppo">
@@ -248,47 +223,96 @@
         </div>
       </a>
     </div>
-    <!-- POSSIBILE CAROUSEL FATTO A MANO
-    <div class="container">
-      <p class="boldOrange">OUR PROJECTS</p>
-      <div class="projects-slider">
-  
-        <a href="#slide-1">1</a>
-        <a href="#slide-2">2</a>
-        <a href="#slide-3">3</a>
-        <a href="#slide-4">4</a>
-        <a href="#slide-5">5</a>
+    
 
-        <div class="projects-slides">
-          <div id="slide-1">
-            1
+
+
+
+
+
+
+    <div class="nostri-progetti">
+      <div class="works-band"></div>
+      <div class="works-content">
+        <p class="title">I NOSTRI PROGETTI</p>
+        <div class="fading-carousel">
+          <?php
+            $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+            $to_parse = fread($myfile,filesize("media/json/home-works.json"));
+            fclose($myfile);
+            $parsed = json_decode($to_parse, true);
+          ?>
+          <div class="fading-images">
+            <?php
+              $c = 0;
+              foreach($parsed as $view) {
+                $c++;
+                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+                echo "<div class='fading-image $classes_added'>
+                  <img class='' src='media/img/works/$view[image]'></img>
+                </div>";
+              }
+            ?>
           </div>
-          <div id="slide-2">
-            2
-          </div>
-          <div id="slide-3">
-            3
-          </div>
-          <div id="slide-4">
-            4
-          </div>
-          <div id="slide-5">
-            5
+          <div class="fading-caption-content">
+            <?php
+              $c = 0;
+              foreach($parsed as $view) {
+                $c++;
+                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+            ?>
+            <div class="fading-caption<?=$classes_added?>">
+              <p class="fading-subtitle"><?=$view["subtitle"]?></p>
+              <p class="fading-title"><?=$view["title"]?></p>
+              <p class="fading-description" style="line-height:1.5;"><?=$view["description"]?></p>
+              <a href="<?="works/".$view["link"]?>">
+                <div class="animatedBtn">
+                    <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="shape" height="50" width="200" />
+                    </svg>
+                  <div class="text makuda-color">Visualizza</div>
+                </div>
+              </a>
+            </div>
+            <?php } ?>
+            <div class="fading-select">
+              <?php
+                $c = 1;
+                foreach($parsed as $view) {
+                  $line = '<div class="fading-line"></div>';
+                  if($c == count($parsed))
+                    $line = '<div class="fading-line hidden"></div>';;
+              ?>
+              <div data-index=<?=$c?> class="fading-choise <?=($c == 1) ? "selected" : ""?> index-<?=$c?>">
+                <div class="fading-shapes">
+                  <div class="fading-circle" data-index=<?=$c?>></div>
+                  <?=$line?>
+                </div>
+                <p class="makuda-color">0<?=$c++?></p>
+              </div>
+              <?php } ?>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     
 
-    <div class="container">
-      <p class="boldOrange">FeedBack</p>
-    </div>
-    <div class="testimonial-container" style="height: 100%">
+
+
+
+
+
+
+
+
+
+    
+    <div class="testimonial-container" style="height: 100%;">
       <section class="section containerCarousel">
         <div class="container containerCar">
           <div class="carousel" data-initial-slide="1" id="carousel1">
             <div class="item-1">
-              <!-- Slide Content -->
               <div class="card">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
@@ -305,7 +329,6 @@
                         <h6>Tony Norton</h6>
                       </div>
                     </div>
-                    <!-- .ashade-testimonials-item__author -->
                     <div class="makuda-testimonials-item__content">
                       <div
                         class="makuda-testimonials-item__stars makuda-stars5"
@@ -324,7 +347,6 @@
               </div>
             </div>
             <div class="item-2">
-              <!-- Slide Content -->
               <div class="card">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
@@ -341,7 +363,6 @@
                         <h6>Tony Norton</h6>
                       </div>
                     </div>
-                    <!-- .ashade-testimonials-item__author -->
                     <div class="makuda-testimonials-item__content">
                       <div
                         class="makuda-testimonials-item__stars makuda-stars5"
@@ -360,7 +381,6 @@
               </div>
             </div>
             <div class="item-3">
-              <!-- Slide Content -->
               <div class="card">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
@@ -377,7 +397,6 @@
                         <h6>Tony Norton</h6>
                       </div>
                     </div>
-                    <!-- .ashade-testimonials-item__author -->
                     <div class="makuda-testimonials-item__content">
                       <div
                         class="makuda-testimonials-item__stars makuda-stars5"
@@ -395,14 +414,12 @@
                 </div>
               </div>
             </div>
-
-            <!-- End Carousel -->
           </div>
         </div>
       </section>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <p class="boldOrange">Ultimi Lavori</p>
     </div>
     <div class="container">
@@ -415,8 +432,6 @@
                 <img alt="" src="/media/img/Matteo_Toia.jpg" />
               </div>
             </div>
-
-            <!-- Slide Content -->
           </div>
           <div class="item-2">
             <div class="containerText">
@@ -425,7 +440,6 @@
                 <img alt="" src="/media/img/Suites%20&%20Atelier.png" />
               </div>
             </div>
-            <!-- Slide Content -->
           </div>
           <div class="item-3">
             <div class="containerText">
@@ -434,7 +448,6 @@
                 <img alt="" src="/media/img/Buffel%202.0.png" />
               </div>
             </div>
-            <!-- Slide Content -->
           </div>
         </div>
 
@@ -442,9 +455,9 @@
         <div class="hero-body"></div>
         <div class="hero-foot"></div>
       </section>
-      <br /><br /><br /><br />
+      <br /><br /><br /><br /> -->
 
-      <p class="boldOrange" style="margin-bottom: -7em">Aziende</p>
+      <!-- <p class="boldOrange" style="margin-bottom: -7em">Aziende</p>
       <div class="columns is-vcentered">
         <div class="column" style="display: flex">
           <h1 class="giantAssTextLight">+</h1>
@@ -473,10 +486,9 @@
           <h1 class="giantAssTextLight">+</h1>
           <p class="counter-count giantAssTextLight">200</p>
         </div>
-      </div>
+      </div> -->
       <section class="section">
         <div class="container">
-          <!-- Start Carousel -->
           <div
             class="carousel"
             data-autoplay="true"
@@ -521,7 +533,6 @@
               </div>
             </div>
           </div>
-          <!-- End Carousel -->
         </div>
       </section>
     </div>
@@ -529,7 +540,7 @@
 
     
       <div class="container" style="margin-bottom: 100px">
-        <p class="has-text-centered makuda-color get-in-touch">GET IN TOUCH!</p>
+        <p class="has-text-centered makuda-color title" style="padding-bottom:30px">GET IN TOUCH!</p>
         <div class="columns">
           <div class="column find-us">
             <p class="has-text-centered">FIND US</p>
@@ -595,6 +606,7 @@
       integrity="sha512-HxCVV6ztUUQxy4YKONLIA2qjMsobBr0OVaXrVWqVcuDrlY9cFxQs9u346FLzDXQlrGKYTXfA+w5DbGyq2P5C+g=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"
     ></script>
+    <script src="js/swipe.js"></script>
     <script src="js/indexJS.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/parallelepipedoJS.js"></script>

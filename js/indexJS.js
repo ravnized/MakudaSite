@@ -7,6 +7,34 @@ $(document).ready(function () {
   setInterval(function myMethod() {
     $(".home-band p").html(band_texts[++band_actual_index % 3]);
   }, 1000);
+  $(".fading-circle").click(function(target){
+    $(".selected").removeClass("selected");
+    $(".index-"+$(this).attr("data-index")).addClass("selected");
+  });
+  setInterval(function myMethod() {
+    let works_length = $(".fading-circle").length;
+    let works_actual_index = $(".fading-choise.selected").attr("data-index");
+    let new_work_index = (parseInt(works_actual_index) + 1) % (works_length + 1);
+    if(new_work_index == 0)
+      new_work_index = 1;
+    let iormga = $(".fading-image.index-"+new_work_index);
+    let iormgaParent = iormga.parent();
+    iormga.remove();
+    iormga.insertAfter(".selected.fading-image");
+    $(".selected").removeClass("selected");
+    $(".index-"+new_work_index).addClass("selected");
+  }, 3000);
+  //DA GESTIRE MOBILE
+  $(".fading-carousel").onSwipe(function(results){
+    if(results.up == true)
+      alert("Up")
+    if(results.right == true)
+      alert("Right")
+    if(results.down == true)
+      alert("Down")
+    if(results.left == true)
+      alert("Left")
+  });
   /*FINE NAPO*/
 
   var app,
@@ -66,6 +94,7 @@ $(document).ready(function () {
       $(window).resize(function () {
         heightWindow = $(window).height();
         widthWindow = $(window).width();
+        // console.log(heightWindow, widthWindow);
         app.screen.width = widthWindow;
         app.screen.height = heightWindow;
         videoSprite.width = widthWindow;
