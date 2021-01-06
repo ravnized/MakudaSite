@@ -67,9 +67,6 @@
           </div>
         </div>
         <div id="replacement">
-        <div class="makuda-bgcolor home-band">
-      <p class="boldBig has-text-centered">STRATEGIA</p>
-    </div>
         </div>
       </section>
     </div>
