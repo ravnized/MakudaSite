@@ -24,7 +24,7 @@
         <a
           aria-expanded="false"
           aria-label="menu"
-          class="navbar-burger"
+          class="navbar-burger navbarBurgerMain"
           onclick="animateMenu()"
           role="button"
         >
