@@ -242,7 +242,18 @@ $(document).ready(function ($) {
     let secondText = $(parallelepipedo).find(".secondText");
     let number = $(parallelepipedo).find(".numberParallelepipedo");
     let tl = gsap.timeline({ paused: true });
-
+    tl.fromTo(
+      $(parallelepipedo),
+      {
+        duration: 0.2,
+        background: "#3b3b3b",
+      },
+      {
+        duration: 0.2,
+        background: "linear-gradient(#dcac02,#372d0a)",
+      },
+      0
+    );
     tl.to(
       $(parallelepipedo).parent(),
       {

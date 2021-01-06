@@ -163,8 +163,8 @@ $(document).ready(function () {
     var scroller = ScrollTrigger.create({
       trigger: "#section-animated",
       start: "50px",
-      end: "+=1000px",
-      markers: true,
+      end: "+=3000px",
+      markers: false,
       pin: true,
       scrub: false,
       onEnter: (self) => {

@@ -71,14 +71,9 @@ letters.forEach((item) => {
 });
 $(document).ready(function () {
   // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function () {
-    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-
-    animateMenu();
-  });
-  $(".navbar-burger").hover(function () {
+  $(".navbarBurgerMain").hover(function () {
     let timeline = gsap.timeline();
-    let navbarChildren = $(".navbar-burger ").children();
+    let navbarChildren = $(".navbarBurgerMain").children();
     Array.from(navbarChildren).forEach(function (element) {
       var random = Math.floor(Math.random() * 3);
       timeline.to(element, { duration: 0.2, width: 0 });
