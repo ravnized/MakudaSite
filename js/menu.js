@@ -69,9 +69,26 @@ letters.forEach((item) => {
     });
   });
 });
+$(document).ready(function () {
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function () {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
 
+    animateMenu();
+  });
+  $(".navbar-burger").hover(function () {
+    let timeline = gsap.timeline();
+    let navbarChildren = $(".navbar-burger ").children();
+    Array.from(navbarChildren).forEach(function (element) {
+      var random = Math.floor(Math.random() * 3);
+      timeline.to(element, { duration: 0.2, width: 0 });
+      timeline.to(element, { duration: 0.2, width: 16 });
+    });
+  });
+});
 function animateMenu() {
   let tl = gsap.timeline();
+
   tl.to(
     ".menu-background",
     {
@@ -154,3 +171,13 @@ menuSize();
 $(window).on("resize", function () {
   menuSize();
 });
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+window.onpageshow = function (evt) {
+  // If persisted then it is in the page cache, force a reload of the page.
+  if (evt.persisted) {
+    document.body.style.display = "none";
+    location.reload();
+  }
+};

@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-  let disable = [false, false, false, false, false];
+  let disable = [false, false, false, false, false, false];
   var parallelepipedo = $(".parallelepipedo");
   parallelepipedo.click(function (e) {
     let idElement = $(this).parent().attr("id"),
@@ -9,11 +9,12 @@ $(document).ready(function ($) {
     disable[idElement - 1] = true;
     let secondText = $(this).find(".secondText");
     let number = $(this).find(".numberParallelepipedo");
-    for (let i = 4; i >= idElement; i--) {
+
+    for (let i = parallelepipedParent.length - 1; i >= idElement; i--) {
       if (idElement !== $(parallelepipedParent[i]).attr("id")) {
         disable[$(parallelepipedParent[i]).attr("id") - 1] = false;
         tl.to(
-          parallelepipedParent[i],
+          $(parallelepipedParent[i]),
           {
             duration: 0.5,
             scale: 1,
@@ -90,8 +91,9 @@ $(document).ready(function ($) {
     for (let i = 0; i < idElement; i++) {
       if (idElement !== $(parallelepipedParent[i]).attr("id")) {
         disable[$(parallelepipedParent[i]).attr("id") - 1] = false;
+
         tl.to(
-          parallelepipedParent[i],
+          $(parallelepipedParent[i]),
           {
             duration: 0.5,
             scale: 1,
@@ -240,18 +242,7 @@ $(document).ready(function ($) {
     let secondText = $(parallelepipedo).find(".secondText");
     let number = $(parallelepipedo).find(".numberParallelepipedo");
     let tl = gsap.timeline({ paused: true });
-    tl.fromTo(
-      $(parallelepipedo),
-      {
-        duration: 0.2,
-        background: "#3b3b3b",
-      },
-      {
-        duration: 0.2,
-        background: "linear-gradient(#dcac02,#372d0a)",
-      },
-      0
-    );
+
     tl.to(
       $(parallelepipedo).parent(),
       {
@@ -298,12 +289,7 @@ $(document).ready(function ($) {
       "mouseenter",
 
       function () {
-        console.log(idElement);
-        console.log(disable);
-        if (disable[idElement - 1] != true) {
-          console.log("sanGesuale");
-          tl.play();
-        }
+        tl.play();
       }
     );
 
@@ -311,8 +297,6 @@ $(document).ready(function ($) {
       "mouseleave",
 
       function () {
-        console.log(idElement);
-        console.log(disable);
         if (disable[idElement - 1] != true) {
           tl.reverse();
         }

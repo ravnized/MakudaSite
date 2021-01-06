@@ -1,6 +1,5 @@
 var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
-
 $(document).ready(function () {
   /*NAPO*/
   let band_texts = ["STRATEGIA", "PRODUZIONE", "INNOVAZIONE"];
@@ -37,7 +36,7 @@ $(document).ready(function () {
       alert("Left")
   });
   /*FINE NAPO*/
-  window.scrollTo(0, 0);
+
   var app,
     video = document.createElement("video"),
     divVideo = document.querySelector("#divVideo"),
@@ -103,76 +102,7 @@ $(document).ready(function () {
         app.renderer.resize(widthWindow, heightWindow);
       });
     });
-
-    var scroller = ScrollTrigger.create({
-      trigger: "#section-animated",
-      start: "50px",
-      end: "3010px",
-      markers: false,
-      pin: true,
-      scrub: false,
-      onEnter: (self) => {
-        var tl = gsap.timeline();
-
-        tl.to(
-          displacementSprite.scale,
-          { duration: 1, x: "+=10", y: "+=10" },
-          0
-        )
-          .to(
-            displacementFilter.scale,
-            { duration: 1, x: "+=900", y: "+=900" },
-            0
-          )
-          .to(".hero-video", { autoAlpha: 0, duration: 0.5 }, 0.5)
-          .to(
-            $("#section-animated").find(".hero-body"),
-            { autoAlpha: 0, duration: 0.5 },
-            0.5
-          )
-          .add(function () {
-            if (isFinished === false) {
-              $("#section-animated").find(".hero-body").addClass("hide");
-              $("#containerText").remove();
-              $("#replacement").append(elementInsideUS);
-              isFinished = true;
-            }
-          })
-          .to(
-            "#replacement",
-            {
-              duration: 1,
-              css: { scaleX: 1, scaleY: 1, autoAlpha: 1 },
-              ease: "power4.out",
-            },
-            1.3
-          )
-          .to(window, { duration: 0.1, scrollTo: { y: 0 } })
-          .add(function () {
-            scroller.kill();
-          })
-          .to(
-            "#sectionVideo",
-            {
-              duration: 1,
-              css: {
-                minHeight: 0,
-              },
-            },
-            "animationVideoGruppo"
-          )
-          .to(
-            ".paralleGruppo",
-            {
-              duration: 1,
-              y: 0,
-              ease: "power4.out",
-            },
-            "animationVideoGruppo"
-          );
-      },
-    });
-    $("#section-animated").one("click", function () {
+    function animationScroller() {
       var tl = gsap.timeline();
 
       tl.to(displacementSprite.scale, { duration: 1, x: "+=10", y: "+=10" }, 0)
@@ -188,13 +118,11 @@ $(document).ready(function () {
           0.5
         )
         .add(function () {
-          if (isFinished === false) {
-            $("#section-animated").find(".hero-body").addClass("hide");
-            $("#containerText").remove();
-            $("#replacement").append(elementInsideUS);
-            isFinished = true;
-          }
+          $("#section-animated").find(".hero-body").addClass("hide");
+          $("#containerText").remove();
+          $("#replacement").append(elementInsideUS);
         })
+        .to(window, { duration: 0.1, scrollTo: { y: 0 } })
         .to(
           "#replacement",
           {
@@ -204,15 +132,44 @@ $(document).ready(function () {
           },
           1.3
         )
-        .to(window, { duration: 0.1, scrollTo: { y: 0 } })
+
         .add(function () {
           scroller.kill();
         })
-        .to(".paralleGruppo", {
-          duration: 1,
-          y: 0,
-          ease: "power4.out",
-        });
+        .to(
+          "#sectionVideo",
+          {
+            duration: 1,
+            css: {
+              minHeight: 0,
+            },
+          },
+          "animationVideoGruppo"
+        )
+        .to(
+          ".paralleGruppo",
+          {
+            duration: 1,
+            y: 0,
+            ease: "power4.out",
+          },
+          "animationVideoGruppo"
+        );
+    }
+    $("#section-animated").click(function () {
+      animationScroller();
+    });
+
+    var scroller = ScrollTrigger.create({
+      trigger: "#section-animated",
+      start: "50px",
+      end: "+=1000px",
+      markers: true,
+      pin: true,
+      scrub: false,
+      onEnter: (self) => {
+        animationScroller();
+      },
     });
   }
 
@@ -278,11 +235,5 @@ $(document).ready(function () {
     }
     tl3.to(".pageloader", { duration: 1, css: { autoAlpha: 0 } });
     tl3.to(".pageloader", { duration: 1, css: { display: "none" } }, "-=0.5");
-    /*
-    
-    
-    }
-    
-    */
   }
 });

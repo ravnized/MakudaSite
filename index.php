@@ -27,31 +27,7 @@
   </head>
 
   <body>
-    <!--
-</nav>
-<header id="makudaElement">
-<div class="makuda-home-link--works makuda-home-link-wrap is-loaded" style="top: 100%;">
-       
-    <div class="makuda-home-link makuda-home-link-works is-link ">
-               <a>        
-        <span id="photoPortofolio">My Photo Portfolio</span>
-        <span id="exploreWorks">Explore Works</span>
-                </a>
-         
-    </div>
-</div>
-</header>
-<header id="makudaElement2">
-<div class="makuda-home-link--contacts makuda-home-link-wrap is-loaded" style="top: 100%;">
-    <div class="makuda-home-link is-link ">
-        <a>
-            <span id="findMe">How to find me</span>
-            <span id="myContacts">My Contacts</span>
-        </a>
-    </div>
-</div>
-</header>
--->
+   
 
     <?php require("components/loader.html"); ?>
 
@@ -90,7 +66,11 @@
             </div>
           </div>
         </div>
-        <div id="replacement"></div>
+        <div id="replacement">
+        <div class="makuda-bgcolor home-band">
+      <p class="boldBig has-text-centered">STRATEGIA</p>
+    </div>
+        </div>
       </section>
     </div>
 
@@ -560,6 +540,8 @@
       </section>
     </div>
     <footer>
+
+    
       <div class="container" style="margin-bottom: 100px">
         <p class="has-text-centered makuda-color title" style="padding-bottom:30px">GET IN TOUCH!</p>
         <div class="columns">
@@ -597,6 +579,7 @@
         </div>
       </div>
     </footer>
+
     <script
       crossorigin="anonymous"
       integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw=="
