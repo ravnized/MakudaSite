@@ -683,7 +683,7 @@ Contacts
 .animatedBtn .svg-wrapper {
   position: absolute;
   margin: auto;
-  width: 320px;  
+  width: 320px;
 }
 .animatedBtn .shape {
   stroke-dasharray: 140 240;
@@ -721,7 +721,7 @@ Contacts
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+
   /*
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
@@ -750,14 +750,14 @@ Contacts
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 100px;
 }
 .projects-slides > div:target {
-/*   transform: scale(0.8); */
+  /*   transform: scale(0.8); */
 }
 .projects-slider .author-info {
   background: rgba(0, 0, 0, 0.75);
@@ -829,6 +829,8 @@ Contacts
 }
 
 .parallelepipedo:hover {
+  transition: all 1s;
+  background: linear-gradient(#dcac02, #372d0a);
   -webkit-box-shadow: 0px 0px 15px 16px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 15px 16px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -1048,7 +1050,7 @@ footer .find-us .animatedBtn {
   width: 200px;
 }
 footer .find-us .animatedBtn .svg-wrapper {
-  width: 200px;  
+  width: 200px;
 }
 footer .find-us .animatedBtn .shape {
   stroke-dasharray: 50 200;
