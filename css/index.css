@@ -871,17 +871,19 @@ div > .uno {
 /* FADING CAROUSEL */
 .nostri-progetti {
   padding: 100px 0;
+  color: black;
 }
 .nostri-progetti .title {
   margin: auto;
   margin-top: 25px;
   margin-bottom: 50px;
   position: relative;
+  color: black;
 }
 .works-band {
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: 60vh;
   background-color: rgb(255, 197, 32) !important;;
 }
 .fading-carousel {
@@ -914,7 +916,7 @@ div > .uno {
   margin-right: 25px;
   margin-left: 75px;
   margin-top: 0;
-  background-color: #222;
+  background-color: #2220;
 }
 .fading-caption {
   width: 70%;
@@ -938,7 +940,7 @@ div > .uno {
   z-index: 2;
 }
 .fading-subtitle {
-  color: rgb(255, 197, 32);
+  color: white;
   padding-bottom: 15px;
 }
 .fading-title {
@@ -975,12 +977,12 @@ p.fading-description {
   border-radius: 100%;
   width: 17px;
   height: 17px;
-  border: solid rgb(111 101 69) 2px;
+  border: solid white 2px;
   cursor: pointer;
   margin: 10px 0;
 }
 .fading-line {
-  border-left: 2px solid rgb(255, 197, 32);
+  border-left: 2px solid white;
   width: 2px;
   margin: 0px auto;
   height: 0px;
@@ -991,7 +993,7 @@ p.fading-description {
   border-left: 2px solid transparent;
 }
 .fading-choise.selected .fading-circle {
-  background-color: rgb(255, 197, 32);
+  background-color: white;
   border-width: 0;
   width: 16px;
   height: 16px;
@@ -1014,16 +1016,19 @@ p.fading-description {
 .fading-caption .animatedBtn .shape {
   stroke-dasharray: 50 200;
   stroke-dashoffset: -75;
+  stroke: white;
 }
 .fading-caption .animatedBtn:hover .shape {
   stroke-dasharray: 550;
   stroke-dashoffset: 0;
 }
 .fading-caption .animatedBtn .text {
+  color: white !important;
   font-size: 20px !important;
   letter-spacing: 8px !important;
   padding-top: 9px;
 }
+
 /* FOOTER */
 footer {
   font-family: Gelion-black;
