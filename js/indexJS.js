@@ -108,7 +108,6 @@ $(document).ready(function () {
         .to(window, { duration: 0.1, scrollTo: { y: 0 } })
         .add(function () {
           scroller.kill();
-          $("#sectionHidden").removeClass("hide");
         })
         .to(
           "#sectionVideo",
