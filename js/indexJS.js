@@ -89,13 +89,11 @@ $(document).ready(function () {
           0.5
         )
         .add(function () {
-          if (isFinished === false) {
-            $("#section-animated").find(".hero-body").addClass("hide");
-            $("#containerText").remove();
-            $("#replacement").append(elementInsideUS);
-            isFinished = true;
-          }
+          $("#section-animated").find(".hero-body").addClass("hide");
+          $("#containerText").remove();
+          $("#replacement").append(elementInsideUS);
         })
+        .to(window, { duration: 0.1, scrollTo: { y: 0 } })
         .to(
           "#replacement",
           {
@@ -105,7 +103,7 @@ $(document).ready(function () {
           },
           1.3
         )
-        .to(window, { duration: 0.1, scrollTo: { y: 0 } })
+
         .add(function () {
           scroller.kill();
         })
@@ -129,6 +127,10 @@ $(document).ready(function () {
           "animationVideoGruppo"
         );
     }
+    $("#section-animated").click(function () {
+      animationScroller();
+    });
+
     var scroller = ScrollTrigger.create({
       trigger: "#section-animated",
       start: "50px",
