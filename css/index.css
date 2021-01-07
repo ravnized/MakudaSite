@@ -24,7 +24,7 @@
 
 .home-band:after {
   animation: grain 8s steps(10) infinite;
-  background-image: url("/media/img/paper.png");
+  background-image: url("/media/img/grain.png");
   content: "";
   height: 300%;
   left: -50%;
