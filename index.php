@@ -27,13 +27,13 @@
   </head>
 
   <body>
-   
 
-    <?php require("components/loader.html"); ?>
 
-    <?php require("components/navbar.php"); ?>
+    <?php require "components/loader.html";?>
 
-    <?php require("components/menu.php"); ?>
+    <?php require "components/navbar.php";?>
+
+    <?php require "components/menu.php";?>
 
     <div id="section-animated">
       <section class="hero is-fullheight video" id="sectionVideo">
@@ -67,6 +67,9 @@
           </div>
         </div>
         <div id="replacement">
+        <div class="home-band makuda-bgcolor" style="background-color: rgb(255, 197, 32) !important">
+      <p class="boldBig has-text-centered" style="color: white !important;">STRATEGIA</p>
+    </div>
         </div>
       </section>
     </div>
@@ -93,9 +96,7 @@
 </div>
 </div>
 -->
-    <div class="home-band makuda-bgcolor" style="background-color: rgb(255, 197, 32) !important">
-      <p class="boldBig has-text-centered" style="color: white !important;">STRATEGIA</p>
-    </div>
+
     <div class="container has-text-centered" style="padding-bottom:50px;">
       <p class="makuda-color title" style="font-size:75px;">WE ARE</p>
       <p class="whiteText" style="line-height:1.5;">
@@ -104,7 +105,7 @@
         unire la consulenza manageriale alla produzione di contenuti multimediali.
       </p>
     </div>
-    
+
     <div class="sezione-infografica">
       <div class="container" style="margin-bottom: 100px">
         <p class="title">IL NOSTRO <span class="makuda-color">METODO</span></p>
@@ -223,7 +224,7 @@
         </div>
       </a>
     </div>
-    
+
 
 
 
@@ -237,35 +238,35 @@
         <p class="title">I NOSTRI PROGETTI</p>
         <div class="fading-carousel">
           <?php
-            $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
-            $to_parse = fread($myfile,filesize("media/json/home-works.json"));
-            fclose($myfile);
-            $parsed = json_decode($to_parse, true);
-          ?>
+$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+$to_parse = fread($myfile, filesize("media/json/home-works.json"));
+fclose($myfile);
+$parsed = json_decode($to_parse, true);
+?>
           <div class="fading-images">
             <?php
-              $c = 0;
-              foreach($parsed as $view) {
-                $c++;
-                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-                echo "<div class='fading-image $classes_added'>
+$c = 0;
+foreach ($parsed as $view) {
+    $c++;
+    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+    echo "<div class='fading-image $classes_added'>
                   <img class='' src='media/img/works/$view[image]'></img>
                 </div>";
-              }
-            ?>
+}
+?>
           </div>
           <div class="fading-caption-content">
             <?php
-              $c = 0;
-              foreach($parsed as $view) {
-                $c++;
-                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-            ?>
+$c = 0;
+foreach ($parsed as $view) {
+    $c++;
+    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+    ?>
             <div class="fading-caption<?=$classes_added?>">
               <p class="fading-subtitle"><?=$view["subtitle"]?></p>
               <p class="fading-title"><?=$view["title"]?></p>
               <p class="fading-description" style="line-height:1.5;"><?=$view["description"]?></p>
-              <a href="<?="works/".$view["link"]?>">
+              <a href="<?="works/" . $view["link"]?>">
                 <div class="animatedBtn">
                     <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
                       <rect class="shape" height="50" width="200" />
@@ -274,15 +275,17 @@
                 </div>
               </a>
             </div>
-            <?php } ?>
+            <?php }?>
             <div class="fading-select">
               <?php
-                $c = 1;
-                foreach($parsed as $view) {
-                  $line = '<div class="fading-line"></div>';
-                  if($c == count($parsed))
-                    $line = '<div class="fading-line hidden"></div>';;
-              ?>
+$c = 1;
+foreach ($parsed as $view) {
+    $line = '<div class="fading-line"></div>';
+    if ($c == count($parsed)) {
+        $line = '<div class="fading-line hidden"></div>';
+    }
+
+    ?>
               <div data-index=<?=$c?> class="fading-choise <?=($c == 1) ? "selected" : ""?> index-<?=$c?>">
                 <div class="fading-shapes">
                   <div class="fading-circle" data-index=<?=$c?>></div>
@@ -290,13 +293,12 @@
                 </div>
                 <p class="makuda-color">0<?=$c++?></p>
               </div>
-              <?php } ?>
+              <?php }?>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 
 
 
@@ -307,7 +309,8 @@
 
 
 
-    
+
+
     <div class="testimonial-container" style="height: 100%;">
       <section class="section containerCarousel">
         <div class="container containerCar">
@@ -538,7 +541,7 @@
     </div>
     <footer>
 
-    
+
       <div class="container" style="margin-bottom: 100px">
         <p class="has-text-centered makuda-color title" style="padding-bottom:30px">GET IN TOUCH!</p>
         <div class="columns">
