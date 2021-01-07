@@ -8,8 +8,12 @@ $(document).ready(function () {
     $(".home-band p").html(band_texts[++band_actual_index % 3]);
   }, 1000);
   $(".fading-circle").click(function(target){
+    let new_work_index = $(this).attr("data-index");
+    let iormga = $(".fading-image.index-"+new_work_index);
+    iormga.remove();
+    iormga.insertAfter(".selected.fading-image");
     $(".selected").removeClass("selected");
-    $(".index-"+$(this).attr("data-index")).addClass("selected");
+    $(".index-"+new_work_index).addClass("selected");
   });
   setInterval(function myMethod() {
     let works_length = $(".fading-circle").length;
@@ -18,7 +22,6 @@ $(document).ready(function () {
     if(new_work_index == 0)
       new_work_index = 1;
     let iormga = $(".fading-image.index-"+new_work_index);
-    let iormgaParent = iormga.parent();
     iormga.remove();
     iormga.insertAfter(".selected.fading-image");
     $(".selected").removeClass("selected");
@@ -26,14 +29,14 @@ $(document).ready(function () {
   }, 3000);
   //DA GESTIRE MOBILE
   $(".fading-carousel").onSwipe(function(results){
-    if(results.up == true)
-      alert("Up")
-    if(results.right == true)
-      alert("Right")
-    if(results.down == true)
-      alert("Down")
-    if(results.left == true)
-      alert("Left")
+    // if(results.up == true)
+    //   alert("Up")
+    // if(results.right == true)
+    //   alert("Right")
+    // if(results.down == true)
+    //   alert("Down")
+    // if(results.left == true)
+    //   alert("Left")
   });
   /*FINE NAPO*/
 

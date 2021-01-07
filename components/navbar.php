@@ -2,6 +2,7 @@
   $dir_name = dirname(__FILE__);
   $root = $_SERVER['DOCUMENT_ROOT'];
   $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
+  // echo $dir_name . "<br>" . $root
 ?>
 
 <nav
@@ -13,7 +14,7 @@
     <a class="navbar-item" href="<?=$this_folder;?>/../index.php">
       <img
         height="28"
-        src="<?=$this_folder;?>/../media/img/LogoIcona_PNG_Negativo(1).png"
+        src="/media/img/LogoIcona_PNG_Negativo(1).png"
         width="28"
       />
     </a>
