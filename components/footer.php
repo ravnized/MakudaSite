@@ -1,3 +1,4 @@
+<link rel='stylesheet' href='/components/footer.css'>
 <footer>
   <div class="container" style="margin-bottom: 100px">
     <p class="has-text-centered makuda-color title" style="padding-bottom:30px">GET IN TOUCH!</p>
