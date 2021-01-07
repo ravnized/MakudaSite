@@ -83,6 +83,7 @@ $(document).ready(function () {
     displacementSprite.scale.y = 0;
     displacementSprite.position.x = app.screen.width / 2;
     displacementSprite.position.y = app.screen.height / 2;
+    tl3.to("#sectionVideo", { duration: 0.5, css: { autoAlpha: 1 } });
     tl3.to("#weAre", {
       delay: 2,
       duration: 0.5,
@@ -106,9 +107,8 @@ $(document).ready(function () {
       });
     });
     function animationScroller() {
-      unloadScrollBars();
       var tl = gsap.timeline();
-
+      unloadScrollBars();
       tl.to(displacementSprite.scale, { duration: 1, x: "+=10", y: "+=10" }, 0)
         .to(
           displacementFilter.scale,
@@ -161,7 +161,7 @@ $(document).ready(function () {
         )
         .add(function () {
           reloadScrollBars();
-        });
+        }, "animationVideoGruppo");
     }
     $("#section-animated").click(function () {
       animationScroller();

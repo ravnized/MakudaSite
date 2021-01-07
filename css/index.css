@@ -994,3 +994,13 @@ div.cardino div.card-image figure.image {
     height: 52%;
   }
 }
+.square div .cross {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#sectionVideo {
+  opacity: 0;
+}
