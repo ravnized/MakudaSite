@@ -745,6 +745,7 @@ div > .uno {
 #carousel3 .slider-item {
   width: 200px !important;
   height: auto;
+  margin-right: 50px;
 }
 
 #carousel3 .slider-navigation-next {
@@ -791,7 +792,7 @@ div > .uno {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+
   /*
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
@@ -820,7 +821,7 @@ div > .uno {
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,7 +885,7 @@ div > .uno {
   position: absolute;
   width: 100%;
   height: 60vh;
-  background-color: rgb(255, 197, 32) !important;;
+  background-color: rgb(255, 197, 32) !important;
 }
 .fading-carousel {
   font-family: Gelion-light;
@@ -962,7 +963,7 @@ p.fading-description {
 .fading-choise {
   display: flex;
 }
-.fading-choise p{
+.fading-choise p {
   margin: 0;
   font-size: 25px;
   margin-top: -3px;
@@ -1011,7 +1012,7 @@ p.fading-description {
   margin-top: 20px;
 }
 .fading-caption .animatedBtn .svg-wrapper {
-  width: 200px;  
+  width: 200px;
 }
 .fading-caption .animatedBtn .shape {
   stroke-dasharray: 50 200;
@@ -1064,4 +1065,23 @@ footer .brand-icons {
 footer .brand-icons i {
   font-size: 30px;
   letter-spacing: 10px;
+}
+
+.cardino {
+  width: 400px;
+  height: auto;
+}
+
+div.cardino div.card-image figure.image {
+  padding-top: 100%;
+}
+
+.slider-container .slider-item .image.is-covered img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.card-padding {
+  padding-left: 100px;
+  padding-right: 100px;
 }
