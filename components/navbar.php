@@ -2,6 +2,7 @@
 $dir_name = dirname(__FILE__);
 $root = $_SERVER['DOCUMENT_ROOT'];
 $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
+// echo $dir_name . "<br>" . $root
 ?>
 
 <nav

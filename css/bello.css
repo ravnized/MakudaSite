@@ -61,6 +61,44 @@
 a, a:visited {
     color: white;
 }
-
-
-
+/*definizione animatedBtn */
+.animatedBtn {
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    width: 320px;
+    padding-top: 15px;
+    opacity: 0;
+  }
+  .animatedBtn svg {
+    position: absolute;
+  }
+  .animatedBtn .svg-wrapper {
+    position: absolute;
+    margin: auto;
+    width: 320px;
+  }
+  .animatedBtn .shape {
+    stroke-dasharray: 140 240;
+    stroke-dashoffset: -465;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #f6b600;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  .animatedBtn .text {
+    position: relative;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: 8px;
+    color: #fff;
+    padding-top: 13px;
+  }
+  .animatedBtn:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+  /*fine definizione animatedBtn */

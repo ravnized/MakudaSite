@@ -6,8 +6,8 @@
     <title>About Us</title>
     <link href="css/bulma.min.css" rel="stylesheet" />
     <link href="css/about.css" rel="stylesheet" type="text/css" />
-    <link href="css/bello.css" rel="stylesheet" type="text/css" />
     <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/bello.css" rel="stylesheet" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
       rel="stylesheet"
@@ -239,6 +239,9 @@
         </div>
       </section>
     </div>
+    
+    <?php require("components/footer.php") ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 

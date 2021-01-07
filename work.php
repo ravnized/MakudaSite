@@ -376,6 +376,9 @@
         </div>
       </section>
     </div>
+    
+    <?php require("components/footer.php") ?>
+
     <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
     <script
       crossorigin="anonymous"
