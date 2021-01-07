@@ -119,6 +119,10 @@
           </div>
           <div class="square">
             <div style="padding: 10px">
+            <a class='cross'>
+            <i class="fas fa-times"></i>
+</a>
+
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -141,6 +145,9 @@
 
           <div class="square">
             <div style="padding: 10px">
+            <a class='cross'>
+            <i class="fas fa-times"></i>
+</a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -161,6 +168,9 @@
           </div>
           <div class="square">
             <div style="padding: 10px">
+            <a class='cross'>
+            <i class="fas fa-times"></i>
+</a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -181,6 +191,9 @@
           </div>
           <div class="square">
             <div style="padding: 10px">
+            <a class='cross'>
+            <i class="fas fa-times"></i>
+</a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -201,6 +214,9 @@
           </div>
           <div class="square">
             <div style="padding: 10px">
+            <a class='cross'>
+            <i class="fas fa-times"></i>
+</a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>

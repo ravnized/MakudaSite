@@ -1085,3 +1085,14 @@ div.cardino div.card-image figure.image {
   padding-left: 100px;
   padding-right: 100px;
 }
+
+.square div .cross {
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#sectionVideo {
+  opacity: 0;
+}
