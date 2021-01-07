@@ -316,7 +316,7 @@ foreach ($parsed as $view) {
         <div class="container containerCar">
           <div class="carousel" data-initial-slide="1" id="carousel1">
             <div class="item-1">
-              <div class="card">
+              <div class="card card-padding">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
                   <div class="makuda-testimonials-item">
@@ -350,7 +350,7 @@ foreach ($parsed as $view) {
               </div>
             </div>
             <div class="item-2">
-              <div class="card">
+              <div class="card card-padding">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
                   <div class="makuda-testimonials-item">
@@ -384,7 +384,7 @@ foreach ($parsed as $view) {
               </div>
             </div>
             <div class="item-3">
-              <div class="card">
+              <div class="card card-padding">
                 <div class="card-image wrapper-testimonial">
                   <div class="testimonials-gradient"></div>
                   <div class="makuda-testimonials-item">
@@ -491,54 +491,63 @@ foreach ($parsed as $view) {
         </div>
       </div> -->
       <section class="section">
-        <div class="container">
-          <div
-            class="carousel"
-            data-autoplay="true"
-            data-infinite="true"
-            data-navigation="false"
-            data-slidesToShow="7"
-            id="carousel3"
-          >
-            <div class="item-1">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+   <div class="container">
+      <div
+         class="carousel"
+         data-autoplay="true"
+         data-infinite="true"
+         data-navigation="false"
+         data-slidesToShow="7"
+         id="carousel3"
+         >
+         <div class="card cardino" >
+            <div class="card-image" >
+               <figure class="image is-16by9  is-covered">
+                  <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-2">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+         </div>
+         <div class="card cardino" >
+            <div class="card-image">
+               <figure class="image is-16by9  is-covered">
+               <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-3">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+         </div>
+         <div class="card cardino">
+            <div class="card-image">
+               <figure class="image is-16by9  is-covered">
+               <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-4">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+         </div>
+         <div class="card cardino" >
+            <div class="card-image">
+               <figure class="image is-16by9  is-covered">
+               <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-5">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+
+         </div>
+         <div class="card cardino" >
+            <div class="card-image">
+               <figure class="image is-16by9 is-covered">
+               <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-6">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
+         </div>
+         <div class="card cardino" >
+            <div class="card-image">
+              <figure class="image is-16by9 is-covered">
+              <img src="/media/img/tork-logo.png" alt="">
+               </figure>
             </div>
-            <div class="item-7">
-              <div class="image" style="width: 200px; height: auto">
-                <img alt="" src="/media/img/tork-logo.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+
+         </div>
+      </div>
+   </div>
+</section>
+
     <footer>
 
 
