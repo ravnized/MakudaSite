@@ -99,6 +99,7 @@ $(document).ready(function () {
       });
     });
     function animationScroller() {
+      unloadScrollBars();
       var tl = gsap.timeline();
 
       tl.to(displacementSprite.scale, { duration: 1, x: "+=10", y: "+=10" }, 0)
@@ -150,7 +151,10 @@ $(document).ready(function () {
             ease: "power4.out",
           },
           "animationVideoGruppo"
-        );
+        )
+        .add(function () {
+          reloadScrollBars();
+        });
     }
     $("#section-animated").click(function () {
       animationScroller();
@@ -173,6 +177,7 @@ $(document).ready(function () {
   const tl3 = gsap.timeline();
 
   function loader() {
+    unloadScrollBars();
     var pageloader;
     pageloader = $(".pageloaderLogo").find("circle");
     for (let i = 0; i < 20; i += 2) {
@@ -192,19 +197,23 @@ $(document).ready(function () {
     for (let k = 0; k < makuda.length; k++) {
       tl3.to("#" + makuda[k], { duration: 0, autoAlpha: 1, delay: 0.1 });
     }
+    tl3.to(".pageloader", {
+      duration: 0.5,
+      autoAlpha: 0,
+      onComplete: function () {
+        reloadScrollBars();
+        $(".pageloader").hide();
+        if ($(window).width() > 1024) {
+          initPixi();
+          divVideo.appendChild(app.view);
+        } else {
+          $(".gradient-video").css(
+            "height",
+            $(".cardinoVideo").height() + "px"
+          );
+        }
+      },
+    });
   }
   loader();
-  tl3.to(".pageloader", {
-    duration: 0.5,
-    autoAlpha: 0,
-    onComplete: function () {
-      $(".pageloader").hide();
-      if ($(window).width() > 1024) {
-        initPixi();
-        divVideo.appendChild(app.view);
-      } else {
-        $(".gradient-video").css("height", $(".cardinoVideo").height() + "px");
-      }
-    },
-  });
 });
