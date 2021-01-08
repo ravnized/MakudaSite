@@ -1,0 +1,27 @@
+.fade-in-animation {
+    opacity: 0;
+}
+  
+.fade-in-top-animation {
+    opacity: 0;
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+.fade-in-left-animation {
+    opacity: 0;
+    margin-left: 800px;
+    margin-right: -800px;
+}
+
+.fade-in-right-animation {
+    opacity: 0;
+    margin-right: 800px;
+    margin-left: -800px;
+}
+
+.fade-in-bottom-animation {
+    opacity: 0;
+    margin-bottom: 200px;
+    margin-top: -200px;
+}

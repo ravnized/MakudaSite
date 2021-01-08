@@ -20,22 +20,71 @@
   margin-top: 70px;
   margin-bottom: 50px;
   background-image: url("/media/img/home_band_bg.png");
+  position: relative;
+  overflow: hidden;
 }
 
 .home-band:after {
   animation: grain 8s steps(10) infinite;
   background-image: url("/media/img/noise.png");
+  background-size: 600px;
+  background-repeat: repeat;
   content: "";
   height: 300%;
   left: -50%;
   opacity: 0.3;
-  position: fixed;
+  position: absolute;
   top: -100%;
   width: 300%;
 }
 
 .home-band p {
   color: white;
+}
+
+.scrolldown-wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	bottom: 15px;
+	transform: translate(-50%, -50%);
+}
+  
+.scrolldown {
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	margin: 0 auto 8px;
+	text-align: center;
+  width: 30px;
+  transform: scale(1);
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
 }
 
 @keyframes grain {
@@ -75,6 +124,10 @@
 .home-band p {
   margin: auto;
   color: white !important;
+}
+
+.scopri-chi-siamo {
+  opacity: 0;
 }
 
 .textNearIcons {
@@ -755,6 +808,7 @@ div > .uno {
   width: 200px !important;
   height: auto;
   margin-right: 50px;
+  opacity: 0;
 }
 
 #carousel3 .slider-navigation-next {
@@ -833,8 +887,8 @@ div > .uno {
   position: relative;
   display: flex;
   flex: 1;
-  margin-right: 25px;
-  margin-left: 75px;
+  /* margin-right: 25px;
+  margin-left: 75px; */
   margin-top: 0;
   background-color: #2220;
 }
@@ -969,6 +1023,10 @@ p.fading-description {
   .works-band {
     height: 56%;
   }
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .cardino {

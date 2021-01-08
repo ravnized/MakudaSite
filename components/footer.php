@@ -1,8 +1,8 @@
 <link rel='stylesheet' href='/components/footer.css'>
 <footer>
-  <div class="container" style="margin-bottom: 100px">
-    <p class="has-text-centered makuda-color title" style="padding-bottom:30px">GET IN TOUCH!</p>
-    <div class="columns">
+  <div class="container">
+    <p class="has-text-centered makuda-color title fade-in-top-animation" id="get-in-touch">GET IN TOUCH!</p>
+    <div class="columns fade-in-top-animation" id="main-block-footer">
       <div class="column find-us">
         <p class="has-text-centered">FIND US</p>
         <a href="contacts.php">
@@ -37,3 +37,4 @@
     </div>
   </div>
 </footer>
+<script src="/js/footer.js"></script>

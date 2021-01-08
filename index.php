@@ -7,6 +7,7 @@
     <link href="css/bulma.min.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
       rel="stylesheet"
@@ -58,9 +59,9 @@
               </div> -->
               <a href="work.php">
                 <div class="animatedBtn">
-                    <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
-                      <rect class="shape" height="50" width="320" />
-                    </svg>
+                  <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="50" width="320" />
+                  </svg>
                   <div class="text">VISUALIZZA LAVORI</div>
                 </div>
               </a>
@@ -68,9 +69,17 @@
           </div>
         </div>
         <div id="replacement">
-        <div class="home-band">
-          <p class="boldBig has-text-centered">STRATEGIA</p>
-        </div>
+          <div class="home-band">
+            <p class="boldBig has-text-centered">STRATEGIA</p>
+            <div class="scrolldown-wrapper" id="rotellina">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -98,7 +107,7 @@
 </div>
 -->
 
-    <div class="container has-text-centered" style="padding-bottom:50px;">
+    <div class="container has-text-centered fade-in-animation" style="padding-bottom:50px;" id="we-are">
       <p class="makuda-color title" style="font-size:75px;">WE ARE</p>
       <p class="whiteText" style="line-height:1.5;">
         Strategia, produzione e innovazione sono i 3 criteri sulla quale è stata
@@ -108,21 +117,21 @@
     </div>
 
     <div class="sezione-infografica">
-      <div class="container" style="margin-bottom: 100px">
+      <div class="container fade-in-animation" style="margin-bottom: 100px" id="il-nostro-metodo">
         <p class="title">IL NOSTRO <span class="makuda-color">METODO</span></p>
       </div>
 
       <div class="paralleGruppo">
-        <div id="1">
+        <div id="1" class="fade-in-top-animation">
           <div class="parallelepipedo">
             <p class="secondText">Meeting</p>
             <p class="numberParallelepipedo uno">1</p>
           </div>
           <div class="square">
             <div style="padding: 10px">
-            <a class='cross'>
-            <i class="fas fa-times"></i>
-</a>
+              <a class='cross'>
+                <i class="fas fa-times"></i>
+              </a>
 
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
@@ -137,8 +146,7 @@
             </div>
           </div>
         </div>
-
-        <div id="2">
+        <div id="2" class="fade-in-top-animation">
           <div class="parallelepipedo">
             <p class="secondText">Meeting</p>
             <p class="numberParallelepipedo">2</p>
@@ -146,9 +154,9 @@
 
           <div class="square">
             <div style="padding: 10px">
-            <a class='cross'>
-            <i class="fas fa-times"></i>
-</a>
+              <a class='cross'>
+                <i class="fas fa-times"></i>
+              </a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -162,16 +170,16 @@
             </div>
           </div>
         </div>
-        <div id="3">
+        <div id="3" class="fade-in-top-animation">
           <div class="parallelepipedo">
             <p class="secondText">Meeting</p>
             <p class="numberParallelepipedo">3</p>
           </div>
           <div class="square">
             <div style="padding: 10px">
-            <a class='cross'>
-            <i class="fas fa-times"></i>
-</a>
+              <a class='cross'>
+                <i class="fas fa-times"></i>
+              </a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -185,16 +193,16 @@
             </div>
           </div>
         </div>
-        <div id="4">
+        <div id="4" class="fade-in-top-animation">
           <div class="parallelepipedo">
             <p class="secondText">Meeting</p>
             <p class="numberParallelepipedo">4</p>
           </div>
           <div class="square">
             <div style="padding: 10px">
-            <a class='cross'>
-            <i class="fas fa-times"></i>
-</a>
+              <a class='cross'>
+                <i class="fas fa-times"></i>
+              </a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -208,16 +216,16 @@
             </div>
           </div>
         </div>
-        <div id="5">
+        <div id="5" class="fade-in-top-animation">
           <div class="parallelepipedo">
             <p class="secondText">Meeting</p>
             <p class="numberParallelepipedo">5</p>
           </div>
           <div class="square">
             <div style="padding: 10px">
-            <a class='cross'>
-            <i class="fas fa-times"></i>
-</a>
+              <a class='cross'>
+                <i class="fas fa-times"></i>
+              </a>
               <div class="textInsideSquare">
                 <p class="titleInsideSquare">Mario</p>
                 <p class="underTitleInsideSquare">Art Director</p>
@@ -234,43 +242,43 @@
       </div>
       <a href="about.php">
         <div class="animatedBtn">
-            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
+            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg" class="scopri-chi-siamo">
               <rect class="shape" height="50" width="320" />
             </svg>
-          <div class="text makuda-bold makuda-color">SCOPRI CHI SIAMO</div>
+          <div class="text makuda-bold makuda-color scopri-chi-siamo">SCOPRI CHI SIAMO</div>
         </div>
       </a>
     </div>
     <div class="nostri-progetti">
       <div class="works-band"></div>
       <div class="works-content">
-        <p class="title">I NOSTRI PROGETTI</p>
+        <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
         <div class="fading-carousel">
           <?php
-$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
-$to_parse = fread($myfile, filesize("media/json/home-works.json"));
-fclose($myfile);
-$parsed = json_decode($to_parse, true);
-?>
-          <div class="fading-images">
+            $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+            $to_parse = fread($myfile, filesize("media/json/home-works.json"));
+            fclose($myfile);
+            $parsed = json_decode($to_parse, true);
+          ?>
+          <div class="fading-images fade-in-right-animation">
             <?php
-$c = 0;
-foreach ($parsed as $view) {
-    $c++;
-    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-    echo "<div class='fading-image $classes_added'>
-                  <img class='' src='media/img/works/$view[image]'></img>
-                </div>";
-}
-?>
+              $c = 0;
+              foreach ($parsed as $view) {
+                $c++;
+                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+                echo "<div class='fading-image $classes_added'>
+                        <img class='' src='media/img/works/$view[image]'></img>
+                      </div>";
+              }
+            ?>
           </div>
-          <div class="fading-caption-content">
+          <div class="fade-in-left-animation fading-caption-content">
             <?php
-$c = 0;
-foreach ($parsed as $view) {
-    $c++;
-    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-    ?>
+              $c = 0;
+              foreach ($parsed as $view) {
+                $c++;
+                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+            ?>
             <div class="fading-caption<?=$classes_added?>">
               <p class="fading-subtitle"><?=$view["subtitle"]?></p>
               <p class="fading-title"><?=$view["title"]?></p>
@@ -287,20 +295,19 @@ foreach ($parsed as $view) {
             <?php }?>
             <div class="fading-select">
               <?php
-$c = 1;
-foreach ($parsed as $view) {
-    $line = '<div class="fading-line"></div>';
-    if ($c == count($parsed)) {
-        $line = '<div class="fading-line hidden"></div>';
-    }
-
-    ?>
+                $c = 1;
+                foreach ($parsed as $view) {
+                    $line = '<div class="fading-line"></div>';
+                    if ($c == count($parsed)) {
+                        $line = '<div class="fading-line hidden"></div>';
+                    }
+              ?>
               <div data-index=<?=$c?> class="fading-choise <?=($c == 1) ? "selected" : ""?> index-<?=$c?>">
                 <div class="fading-shapes">
                   <div class="fading-circle" data-index=<?=$c?>></div>
                   <?=$line?>
                 </div>
-                <p class="makuda-color">0<?=$c++?></p>
+                <p style="color: white;">0<?=$c++?></p>
               </div>
               <?php }?>
             </div>
@@ -308,7 +315,7 @@ foreach ($parsed as $view) {
         </div>
       </div>
     </div>
-    <div class="testimonial-container" style="height: 100%;">
+    <div class="testimonial-container fade-in-animation" style="height: 100%;">
       <section class="section containerCarousel">
         <div class="container containerCar">
           <div class="carousel" data-initial-slide="1" id="carousel1">
@@ -575,6 +582,7 @@ foreach ($parsed as $view) {
       integrity="sha512-HxCVV6ztUUQxy4YKONLIA2qjMsobBr0OVaXrVWqVcuDrlY9cFxQs9u346FLzDXQlrGKYTXfA+w5DbGyq2P5C+g=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"
     ></script>
+    <script src="js/animations.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/indexJS.js"></script>
     <script src="js/menu.js"></script>
