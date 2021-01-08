@@ -26,14 +26,14 @@
 
     <?php require "components/menu.php";?>
 
-
+<div id='mainSection'>
     <header>
 <div class="makuda-home-link--works makuda-home-link-wrap is-loaded" style="top: 100%;">
 
     <div class="makuda-home-link makuda-home-link-works is-link ">
                <a>
-        <span>My Photo Portfolio</span>
-        <span>Explore Works</span>
+        <span class='noWrap'>strategia, branding, management, social media</span>
+        <span class='noWrap'>case study</span>
                 </a>
 
     </div>
@@ -43,8 +43,8 @@
 <div class="makuda-home-link--contacts makuda-home-link-wrap is-loaded" style="top: 100%;">
     <div class="makuda-home-link is-link ">
         <a>
-            <span>How to find me</span>
-            <span>My Contacts</span>
+            <span class='noWrap'>PRODUZIONI</span>
+            <span class='noWrap'>cinematic & spot adv, shooting, 3D VFX</span>
         </a>
     </div>
 </div>
@@ -58,7 +58,7 @@
       muted
     >
       <source
-      src='/media/video/Suite_&_Atelier_Finalev2.mp4'>
+      src='/media/video/A Story Of Matteo web Optimization.mp4'>
 
     </video>
     <div id="video-clipper">
@@ -68,13 +68,13 @@
         muted
       >
         <source
-        src='/media/video/A_Story_Of_Matteo_Toia.mp4'>
+         src='/media/video/Suites for Web.mp4'>
 
       </video>
     </div>
   </div>
 </div>
-
+</div>
     <script
       crossorigin="anonymous"
       integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
