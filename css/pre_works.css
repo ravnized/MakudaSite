@@ -12,9 +12,10 @@
 #video-compare-container > video {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 100vh;
   right: 0;
   filter: grayscale(100%);
+  max-width: none;
 }
 
 #video-clipper {
@@ -27,7 +28,7 @@
 
 #video-clipper video {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   max-width: unset;
   filter: grayscale(100%);
 }

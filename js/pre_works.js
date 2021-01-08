@@ -1,5 +1,6 @@
 function video1Enter() {
   var tl = gsap.timeline();
+
   tl.to(
     $("#video-clipper"),
     { duration: 0.5, width: "75%" },
@@ -30,11 +31,6 @@ function video1Leave() {
       duration: 0.5,
       css: { filter: "grayscale(100%)", "-webkit-filter": "grayscale(100%)" },
     },
-    "filterAnimation"
-  );
-  tl.to(
-    $("#video-clipper"),
-    { duration: 0.5, width: "50%" },
     "filterAnimation"
   );
 }
@@ -72,40 +68,35 @@ function video2Leave() {
     },
     "filterAnimation"
   );
-  tl.to(
-    $("#video-clipper"),
-    { duration: 0.5, width: "50%" },
-    "filterAnimation"
-  );
 }
 
 $(document).ready(function () {
   $("#video1").on("mouseenter", function () {
     video1Enter();
+    video2Leave();
   });
   $(".makuda-home-link--works").on("mouseenter", function () {
     video1Enter();
   });
 
-  $("#video1").on("mouseleave", function () {
-    video1Leave();
-  });
-  $(".makuda-home-link--works").on("mouseleave", function () {
-    video1Leave();
-  });
   $("#video2").on("mouseenter", function () {
     video2Enter();
+    video1Leave();
   });
   $(".makuda-home-link--contacts").on("mouseenter", function () {
     video2Enter();
   });
 
-  $("#video2").on("mouseleave", function () {
+  $("#mainSection").on("mouseleave", function () {
+    var tl = gsap.timeline();
+    video1Leave();
     video2Leave();
-  });
 
-  $(".makuda-home-link--contacts").on("mouseleave", function () {
-    video2Leave();
+    tl.to(
+      $("#video-clipper"),
+      { duration: 0.5, width: "50%" },
+      "filterAnimation"
+    );
   });
 
   var tlStart = gsap.timeline();
