@@ -247,3 +247,8 @@ Contacts
 .noWrap {
   white-space: nowrap;
 }
+
+#mainSection {    
+  overflow: hidden;
+  position: relative;
+}
