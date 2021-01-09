@@ -26,42 +26,13 @@
     <div class="container has-text-centered">
         <p class="boldBig makuda-color">WE ARE</p>
     </div>
-    <div class="container" style="margin-top: 30px;">
-        <p class="boldBig makuda-color titleInsideSquare" style="font-size: 17px;"> MISSION </p>
-        <p class="start-text">
-            “Trasmettere un modo nuovo di vedere i colori della vita quotidiana,
-            per raggiungere i propri obiettivi senza timore degli ostacoli”. Makuda è
-            in un processo di costante crescita che ci porta ad affrontare ogni realtà
-            in maniera positiva aggiungendo nuove competenze. Crescere per noi è imparare
-            a saper offrire le giuste sfumature di colore per un obiettivo finale concreto,
-            che sia sempre di successo e di qualità.
-        </p>
-    </div>
-    <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
-        <p class="boldBig makuda-color" style="font-size: 17px;"> VALORI </p>
-        <p class="start-text">
-            Curiosità: Se il nero rappresenta l'oscurità, l'inesplorato allora rappresenta anche
-            tutto ciò che la curiosità ti porta ad esplorare.
-        </p>
-        <br>
-        <p class="start-text">
-            Creazione: Perché il nero rappresenta l'attimo prima del processo di creazione, l'attimo prima
-            che si accenda la lampadina.
-        </p>
-        <br>
-        <p class="start-text">
-            Crescita: Qualsiasi sia il valore che si dà al nero esso rappresenta anche un punto di arrivo.
-            Se è vero che il nero è un non colore, è anche vero che esso è l'insieme di tutti i colori.
-            È solo esplorando tutte le sfumature che è possibile crescere.
-        </p>
-    </div>
     <div class="container has-text-centered">
         <p class="boldBig white-font" style="font-size: 25px; padding-top: 30px;">IL NOSTRO <span class="makuda-color">
                 TEAM </span>
         </p>
-        <p class="white-font" style="line-height: 25px;">Il tuo progetto nelle migliori mani</p>
+        <!-- <p class="white-font" style="line-height: 25px;">Il tuo progetto nelle migliori mani</p> -->
     </div>
-    <div class="container" style="margin-top: 50px;">
+    <div class="container" style="margin-top: 25px;">
         <div id="team-container">
             <div class="person-container">
                 <img src="/media/img/team/1.jpg" class="person-image">
@@ -151,7 +122,38 @@
             </p>
         </div>
     </div>
-    <div class="container" style="padding: 50px 0;">
+    <div style="margin: 60px 0;">
+        <div class="container">
+            <p class="boldBig makuda-color titleInsideSquare" style="font-size: 17px;"> MISSION </p>
+            <p class="start-text">
+                “Trasmettere un modo nuovo di vedere i colori della vita quotidiana,
+                per raggiungere i propri obiettivi senza timore degli ostacoli”. Makuda è
+                in un processo di costante crescita che ci porta ad affrontare ogni realtà
+                in maniera positiva aggiungendo nuove competenze. Crescere per noi è imparare
+                a saper offrire le giuste sfumature di colore per un obiettivo finale concreto,
+                che sia sempre di successo e di qualità.
+            </p>
+        </div>
+        <div class="container" style="margin-top: 30px;">
+            <p class="boldBig makuda-color" style="font-size: 17px;"> VALORI </p>
+            <p class="start-text">
+                Curiosità: Se il nero rappresenta l'oscurità, l'inesplorato allora rappresenta anche
+                tutto ciò che la curiosità ti porta ad esplorare.
+            </p>
+            <br>
+            <p class="start-text">
+                Creazione: Perché il nero rappresenta l'attimo prima del processo di creazione, l'attimo prima
+                che si accenda la lampadina.
+            </p>
+            <br>
+            <p class="start-text">
+                Crescita: Qualsiasi sia il valore che si dà al nero esso rappresenta anche un punto di arrivo.
+                Se è vero che il nero è un non colore, è anche vero che esso è l'insieme di tutti i colori.
+                È solo esplorando tutte le sfumature che è possibile crescere.
+            </p>
+        </div>
+    </div>
+    <div class="container" style="padding-bottom: 60px;">
         <div style="display: flex;">
             <div style="flex: 1"></div>
             <div style="display: flex;">

@@ -438,7 +438,7 @@ div > .uno {
 }
 
 .counter-box {
-  width: 200px;
+  width: 210px;
   border-radius: 4px;
   margin: 0 9px;
   text-align: center;
@@ -451,17 +451,21 @@ div > .uno {
   font-size: 35px;
   font-weight: bold;
   color: white;
+  font-family: Gelion-Regular, sans-serif;
 }
 
 .english-counter {
   font-size: 13px;
   font-size: bold;
   color: white;
+  font-family: Gelion-Light, sans-serif;
 }
 
 .italian-counter {
   font-size: 15px;
   color: white;
+  font-family: Gelion-Black, sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .titleInsideSquare:before {
