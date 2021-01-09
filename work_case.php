@@ -21,50 +21,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
   <body style="background-color: #111">
-
     <?php require "components/navbar.php";?>
 
     <?php require "components/menu.php";?>
-
-    <div class="mainSection" >
+    <div class="progress_wrap">
+      <div class="progress">
+        <div class="progress_w_in">
+          <div class="progress_in_selected"></div>
+          <div class="progress_in"></div>
+        </div>
+        <div class="progress_subtitle">
+          <img alt="" src="/media/gif/Scroll-Down.gif" />
+        </div>
+      </div>
+    </div>
+    <div class="mainSection">
       <section class="sectionFullWorks">
         <div class="workList">
-        <?php $id = '1';
+          <?php $id = '1';
 $linkPage = '/works/Works_Toia.php';
 $srcImg = '/media/img/Matteo_Toia.jpg';
 $title = 'Buffel';
 $subTitle = 'Case Study';
 include './components/workListTemplate.php';?>
 
-<?php $id = '2';
+          <?php $id = '2';
 $linkPage = '/works/Works_Toia.php';
 $srcImg = '/media/img/Matteo_Toia.jpg';
 $title = 'Fabbrica di Pedavena';
 $subTitle;
 include './components/workListTemplate.php';?>
 
-<?php $id = '3';
+          <?php $id = '3';
 $linkPage = '/works/Works_Toia.php';
 $srcImg = '/media/img/Matteo_Toia.jpg';
 $title = 'Suites & Atelier';
 $subTitle;
 include './components/workListTemplate.php';?>
 
-<?php $id = '4';
+          <?php $id = '4';
 $linkPage = '/works/Works_Toia.php';
 $srcImg = '/media/img/Matteo_Toia.jpg';
 $title = 'Centro Arti Danza';
 $subTitle;
 include './components/workListTemplate.php';?>
 
-<?php $id = '5';
+          <?php $id = '5';
 $linkPage = '/works/Works_Toia.php';
 $srcImg = '/media/img/Matteo_Toia.jpg';
 $title = 'De cube';
 $subTitle;
 include './components/workListTemplate.php';?>
-
-
         </div>
       </section>
     </div>

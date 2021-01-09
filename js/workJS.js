@@ -59,15 +59,36 @@ $(function () {
   var tlFirst = gsap.timeline();
   var workListItem = $(".workListItem");
   tlFirst.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
+
   Array.prototype.forEach.call(workListItem, (element) => {
-    tlFirst.to(element, {
-      duration: 1,
-      y: 0,
-      opacity: 1,
-      ease: "back.out",
-    });
+    tlFirst.fromTo(
+      element,
+      {
+        y: 600,
+        opacity: 0,
+      },
+      {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: "back.out(1)",
+      }
+    );
   });
 });
+var timelineScroll = gsap.timeline();
+document.addEventListener(
+  "scroll",
+  function (event) {
+    var windowHeight = $(window).height();
+    var scroll = $(window).scrollTop();
+    $(".progress_in_selected").css(
+      "height",
+      (scroll * 50) / windowHeight + "%"
+    );
+  },
+  true /*Capture event*/
+);
 
 imageVideo.mousemove(function (e) {
   var timeline = gsap.timeline();
