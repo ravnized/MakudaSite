@@ -22,9 +22,9 @@
   </head>
   <body style="background-color: #111">
 
-    <?php require("components/navbar.php"); ?>
+    <?php require "components/navbar.php";?>
 
-    <?php require("components/menu.php"); ?>
+    <?php require "components/menu.php";?>
 
     <div class="mainSection" style="transform: translateY(600px); opacity: 0">
       <section class="sectionFullWorks">
@@ -36,46 +36,20 @@
                   <div class="workBlockContainer">
                     <div class="workBlock">
                       <div class="workBlockImageSub">
-                        <a class="imageVideo" href="javascript:delay('./works/Works_Toia.php')">
-                          <img alt="" src="media/img/Matteo_Toia.jpg" />
+                        <a href="javascript:delay('./works/Works_Toia.php')">
+                          <img alt="" class="imageVideo"  src="media/img/Matteo_Toia.jpg" />
                         </a>
                       </div>
+                      <div class='workBlockTitle'>
+
+                    <span class="titleVideo">Matteo Toia</span
+                    >
+                    </div>
                     </div>
                   </div>
                 </div>
-                <div class="column descriptionHide">
-                  <div class="descriptionVideo">
-                    <span class="titleDescriptionVideo">Matteo Toia:</span
-                    ><br />
-                    <span class="subTitleOrange">Image Growth</span>
-                    <p>
-                      Imprenditore sostenibile, <br />
-                      Founder di Think Soluzioni Creative, <br />
-                      Direttore commerciale Arti Grafiche Alpine.
-                    </p>
+                <div class="column ">
 
-                    <div class="stickDiv">
-                      <p>
-                        <span class="boldOrange">Focus:</span> Strategia
-                        comunicazione brand personale;
-                        <br />
-                        <span style="margin-left: 80px"
-                          >Video Personal Brand</span
-                        >
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Canali digitali principali:</span
-                        >
-                        Facebook, Instagram, Linkedin
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Giugno 2020 – Settembre 2020</span
-                        >
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -88,56 +62,26 @@
                     <div class="workBlock">
                       <div class="workBlockImageSub">
                         <a
-                          class="imageVideo"
+
                           href="javascript:delay('./works/Works_Suites.php')"
                         >
                           <img
                             alt=""
+                            class="imageVideo"
                             src="media/img/Suites%20&%20Atelier.png"
                           />
                         </a>
                       </div>
+                      <div class='workBlockTitle'>
+
+                    <span class="titleVideo">Suites Lake</span
+                    >
+                    </div>
                     </div>
                   </div>
                 </div>
-                <div class="column descriptionHide">
-                  <div class="descriptionVideo">
-                    <span class="titleDescriptionVideo">SUITES & ATELIER:</span
-                    ><br />
-                    <span class="subTitleOrange"></span>
-                    <p>
-                      Boutique Hotel in centro città di Como situato sulle rive
-                      del lago <br />
-                      nella storica dimora dell’artista Beppe Spadacini. <br />
-                      Restaurata e inaugurata nel 2020 dalla società Lungo Lario
-                      SRL.
-                    </p>
+                <div class="column">
 
-                    <div class="stickDiv">
-                      <p>
-                        <span class="boldOrange">Focus:</span> Strategia
-                        comunicazione web e digitale<br />
-                      </p>
-                      <p>
-                        <span class="boldOrange">Website:</span>
-                        <a href="https://www.suiteslakecomo.com"
-                          >www.suiteslakecomo.com</a
-                        >
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Canali digitali principali:</span
-                        >
-                        Facebook, Instagram, TripAdvisor,
-                        <span style="margin-left: 80px">Booking, AirBnB</span>
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Inizio progetto: Giugno 2020</span
-                        >
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -376,8 +320,8 @@
         </div>
       </section>
     </div>
-    
-    <?php require("components/footer.php") ?>
+
+    <?php require "components/footer.php"?>
 
     <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
     <script

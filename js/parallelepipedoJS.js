@@ -324,25 +324,25 @@ $(document).ready(function ($) {
   });
 
   gsap.utils.toArray(".parallelepipedo").forEach((parallelepipedo) => {
-    var idElement = $(parallelepipedo).parent().attr("id");
-    let secondText = $(parallelepipedo).find(".secondText");
-    let number = $(parallelepipedo).find(".numberParallelepipedo");
+    parallelepipedo.idElement = $(parallelepipedo).parent().attr("id");
+    parallelepipedo.secondText = $(parallelepipedo).find(".secondText");
+    parallelepipedo.number = $(parallelepipedo).find(".numberParallelepipedo");
 
     parallelepipedo.addEventListener(
       "mouseenter",
 
       function () {
-        let tl = gsap.timeline();
-        tl.to(
+        parallelepipedo.tl = gsap.timeline({ paused: true });
+        parallelepipedo.tl.to(
           $(parallelepipedo),
 
           {
             duration: 0.5,
             background: "linear-gradient(#dcac02,#372d0a)",
           },
-          0
+          "mouseEnter"
         );
-        tl.to(
+        parallelepipedo.tl.to(
           $(parallelepipedo).parent(),
           {
             duration: 0.3,
@@ -350,20 +350,20 @@ $(document).ready(function ($) {
             scaleY: 1.2,
             ease: "power3",
           },
-          0
+          "mouseEnter"
         );
 
-        tl.to(
-          secondText,
+        parallelepipedo.tl.to(
+          parallelepipedo.secondText,
           {
             duration: 0.3,
             y: 350,
             ease: "power2.in",
           },
-          0
+          "mouseEnter"
         );
-        tl.to(
-          number,
+        parallelepipedo.tl.to(
+          parallelepipedo.number,
           {
             duration: 0.3,
             color: "#edca02",
@@ -371,18 +371,19 @@ $(document).ready(function ($) {
             translateY: -50,
             ease: "power2.in",
           },
-          0
+          "mouseEnter"
         );
-        tl.to(
-          secondText,
+        parallelepipedo.tl.to(
+          parallelepipedo.secondText,
           {
             duration: 0.3,
             css: {
               letterSpacing: 0.3 + "em",
             },
           },
-          0
+          "mouseEnter"
         );
+        parallelepipedo.tl.play();
       }
     );
 
@@ -390,19 +391,18 @@ $(document).ready(function ($) {
       "mouseleave",
 
       function () {
-        let tl = gsap.timeline();
-
-        if (disable[idElement - 1] != true) {
-          tl.to(
+        if (disable[parallelepipedo.idElement - 1] != true) {
+          parallelepipedo.tl = gsap.timeline({ paused: true });
+          parallelepipedo.tl.to(
             $(parallelepipedo),
 
             {
               duration: 0.2,
               background: "linear-gradient(#3b3b3b,#3b3b3b)",
             },
-            0
+            "mouseleave"
           );
-          tl.to(
+          parallelepipedo.tl.to(
             $(parallelepipedo).parent(),
             {
               duration: 0.3,
@@ -410,19 +410,19 @@ $(document).ready(function ($) {
               scaleY: 1,
               ease: "power3",
             },
-            0
+            "mouseleave"
           );
-          tl.to(
-            secondText,
+          parallelepipedo.tl.to(
+            parallelepipedo.secondText,
             {
               duration: 0.3,
               y: 600,
               ease: "power2.in",
             },
-            0
+            "mouseleave"
           );
-          tl.to(
-            number,
+          parallelepipedo.tl.to(
+            parallelepipedo.number,
             {
               duration: 0.3,
               color: "#4a4a4a",
@@ -430,18 +430,19 @@ $(document).ready(function ($) {
               translateY: 0,
               ease: "power2.in",
             },
-            0
+            "mouseleave"
           );
-          tl.to(
-            secondText,
+          parallelepipedo.tl.to(
+            parallelepipedo.secondText,
             {
               duration: 0.3,
               css: {
                 letterSpacing: 0 + "em",
               },
             },
-            0
+            "mouseleave"
           );
+          parallelepipedo.tl.play();
         }
       }
     );

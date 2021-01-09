@@ -22,10 +22,7 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/9eeab300fc.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script src="js/pixi.min.js"></script>
   </head>
 
@@ -59,7 +56,7 @@
                 <span class="noselect">VISUALIZZA LAVORI</span>
               </div> -->
               <a href="work.php">
-                <div class="animatedBtn">
+                <div class="animatedBtn" style="opacity: 0;">
                   <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="50" width="320" />
                   </svg>
@@ -70,7 +67,7 @@
           </div>
         </div>
         <div id="replacement">
-          <div class="home-band">
+          <div class="home-band grained">
             <p class="boldBig has-text-centered">STRATEGIA</p>
             <div class="scrolldown-wrapper" id="rotellina">
               <div class="scrolldown">
@@ -256,33 +253,33 @@
         <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
         <div class="fading-carousel">
           <?php
-            $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
-            $to_parse = fread($myfile, filesize("media/json/home-works.json"));
-            fclose($myfile);
-            $parsed = json_decode($to_parse, true);
-          ?>
+$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+$to_parse = fread($myfile, filesize("media/json/home-works.json"));
+fclose($myfile);
+$parsed = json_decode($to_parse, true);
+?>
           <div class="fading-images fade-in-right-animation">
             <?php
-              $c = 0;
-              foreach ($parsed as $view) {
-                $c++;
-                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-                echo "<div class='fading-image $classes_added'>
+$c = 0;
+foreach ($parsed as $view) {
+    $c++;
+    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+    echo "<div class='fading-image $classes_added'>
                         <img class='' src='media/img/works/$view[image]'></img>
                       </div>";
-              }
-            ?>
+}
+?>
           </div>
           <div style="flex: 1;">
             <img class='opacity-0' src='media/img/works/img1.png'></img>
           </div>
           <div class="fade-in-left-animation fading-caption-content">
             <?php
-              $c = 0;
-              foreach ($parsed as $view) {
-                $c++;
-                $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-            ?>
+$c = 0;
+foreach ($parsed as $view) {
+    $c++;
+    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+    ?>
             <div class="fading-caption<?=$classes_added?>">
               <p class="fading-subtitle"><?=$view["subtitle"]?></p>
               <p class="fading-title"><?=$view["title"]?></p>
@@ -299,13 +296,13 @@
             <?php }?>
             <div class="fading-select">
               <?php
-                $c = 1;
-                foreach ($parsed as $view) {
-                    $line = '<div class="fading-line"></div>';
-                    if ($c == count($parsed)) {
-                        $line = '<div class="fading-line hidden"></div>';
-                    }
-              ?>
+$c = 1;
+foreach ($parsed as $view) {
+    $line = '<div class="fading-line"></div>';
+    if ($c == count($parsed)) {
+        $line = '<div class="fading-line hidden"></div>';
+    }
+    ?>
               <div data-index=<?=$c?> class="fading-choise <?=($c == 1) ? "selected" : ""?> index-<?=$c?>">
                 <div class="fading-shapes">
                   <div class="fading-circle" data-index=<?=$c?>></div>
@@ -586,7 +583,6 @@
       integrity="sha512-HxCVV6ztUUQxy4YKONLIA2qjMsobBr0OVaXrVWqVcuDrlY9cFxQs9u346FLzDXQlrGKYTXfA+w5DbGyq2P5C+g=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"
     ></script>
-    <script src="js/animations.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/indexJS.js"></script>
     <script src="js/menu.js"></script>
