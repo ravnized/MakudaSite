@@ -1,48 +1,52 @@
 /* FOOTER */
 footer {
-    font-family: Gelion-black;
-    text-transform: uppercase;
-  }
-  footer p {
-    font-size: 20px;
-    letter-spacing: 8px !important;
-  }
-  footer .find-us .animatedBtn {
-    width: 200px;
-  }
-  footer .find-us .animatedBtn .svg-wrapper {
-    width: 200px;
-  }
-  footer .find-us .animatedBtn .shape {
-    stroke-dasharray: 50 200;
-    stroke-dashoffset: -75;
-  }
-  footer .find-us .animatedBtn:hover .shape {
-    stroke-dasharray: 550;
-    stroke-dashoffset: 0;
-  }
-  footer .animatedBtn .text {
-    font-size: 20px !important;
-    letter-spacing: 8px !important;
-    padding-top: 9px;
-  }
-  footer .brand-icons {
-    text-align: center;
-    padding-top: 20px;
-  }
-  footer .brand-icons i {
-    font-size: 30px;
-    letter-spacing: 10px;
-  }
-  footer .container {
-    overflow: hidden;
-    padding-bottom: 100px;
-    height: 300px;
-  }
+  font-family: Gelion-black;
+  text-transform: uppercase;
+}
+footer p {
+  font-size: 20px;
+  letter-spacing: 8px !important;
+}
+footer .find-us .animatedBtn {
+  width: 200px;
+}
+footer .find-us .animatedBtn .svg-wrapper {
+  width: 200px;
+}
+footer .find-us .animatedBtn .shape {
+  stroke-dasharray: 50 200;
+  stroke-dashoffset: -75;
+}
+footer .find-us .animatedBtn:hover .shape {
+  stroke-dasharray: 550;
+  stroke-dashoffset: 0;
+}
+footer .animatedBtn .text {
+  font-size: 20px !important;
+  letter-spacing: 8px !important;
+  padding-top: 9px;
+}
+footer .brand-icons {
+  text-align: center;
+  padding-top: 20px;
+}
+footer .brand-icons i {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+footer .container {
+  overflow: hidden;
+  padding-bottom: 100px;
+  height: 300px;
+}
 
-  @media (max-width: 768px) {
-    footer .container {
-      height: 513px;
-    }
+@media (max-width: 768px) {
+  footer .container {
+    height: 513px;
   }
-  
+}
+footer p {
+  font-family: Gelion-Black, sans-serif !important;
+  color: whitesmoke !important;
+  font-size: x-large !important;
+}

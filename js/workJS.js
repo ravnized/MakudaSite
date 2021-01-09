@@ -173,7 +173,7 @@ $(workBlockImageSub).one("click", function () {
   topTotalHeight = totalHeight + topImagePos;
   console.log(topTotalHeight, totalHeight, topImagePos, arrayListElementHeight);
   tl.to(
-    ".descriptionVideo",
+    ".workBlockTitle",
     { duration: 0.5, css: { autoAlpha: 0 }, blur: 1 },
     0
   );

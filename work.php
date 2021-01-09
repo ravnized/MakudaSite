@@ -62,56 +62,26 @@
                     <div class="workBlock">
                       <div class="workBlockImageSub">
                         <a
-                          class="imageVideo"
+
                           href="javascript:delay('./works/Works_Suites.php')"
                         >
                           <img
                             alt=""
+                            class="imageVideo"
                             src="media/img/Suites%20&%20Atelier.png"
                           />
                         </a>
                       </div>
+                      <div class='workBlockTitle'>
+
+                    <span class="titleVideo">Suites Lake</span
+                    >
+                    </div>
                     </div>
                   </div>
                 </div>
-                <div class="column descriptionHide">
-                  <div class="descriptionVideo">
-                    <span class="titleDescriptionVideo">SUITES & ATELIER:</span
-                    ><br />
-                    <span class="subTitleOrange"></span>
-                    <p>
-                      Boutique Hotel in centro città di Como situato sulle rive
-                      del lago <br />
-                      nella storica dimora dell’artista Beppe Spadacini. <br />
-                      Restaurata e inaugurata nel 2020 dalla società Lungo Lario
-                      SRL.
-                    </p>
+                <div class="column">
 
-                    <div class="stickDiv">
-                      <p>
-                        <span class="boldOrange">Focus:</span> Strategia
-                        comunicazione web e digitale<br />
-                      </p>
-                      <p>
-                        <span class="boldOrange">Website:</span>
-                        <a href="https://www.suiteslakecomo.com"
-                          >www.suiteslakecomo.com</a
-                        >
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Canali digitali principali:</span
-                        >
-                        Facebook, Instagram, TripAdvisor,
-                        <span style="margin-left: 80px">Booking, AirBnB</span>
-                      </p>
-                      <p>
-                        <span class="boldOrange"
-                          >Inizio progetto: Giugno 2020</span
-                        >
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
