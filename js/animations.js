@@ -1,8 +1,8 @@
 function isScrolledIntoView (element, fullyInView, offset = 0) {
-    var pageTop = $(window).scrollTop();
-    var pageBottom = pageTop + $(window).height();
-    var elementTop = element.offset().top;
-    var elementBottom = elementTop + element.height();
+    let pageTop = $(window).scrollTop();
+    let pageBottom = pageTop + $(window).height();
+    let elementTop = element.offset().top;
+    let elementBottom = elementTop + element.height();
 
     if (fullyInView === true) {
         return ((pageTop < elementTop) && (pageBottom > elementBottom));
@@ -11,7 +11,7 @@ function isScrolledIntoView (element, fullyInView, offset = 0) {
     }
 }
 
-function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0})
+function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0}, easing = "easeOutExpo", queue = false)
 {
     if (margins.top == undefined)
         margins.top = 0;
@@ -23,31 +23,108 @@ function animateFadeIn(element, time, direction = null, margins = {top: 0, left:
         margins.bottom = 0;
 
     if (direction == null)
-        element.animate({"opacity" : "1"}, time);
+        element.animate({"opacity" : "1"}, {
+            duration: time,
+            queue: queue
+        });
     else if (direction == AnimationDirection.top)
         element.animate({
             "opacity" : "1",
             "margin-top" : margins.top,
             "margin-bottom" : margins.bottom
-        }, time, "easeOutExpo");
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
     else if (direction == AnimationDirection.left)
         element.animate({
             "opacity" : "1",
             "margin-left" : margins.left,
             "margin-right" : margins.right
-        }, time, "easeOutExpo");
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
     else if (direction == AnimationDirection.bottom)
         element.animate({
             "opacity" : "1",
             "margin-top" : margins.top,
             "margin-bottom" : margins.bottom
-        }, time, "easeOutExpo");
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
     else if (direction == AnimationDirection.right)
         element.animate({
             "opacity" : "1",
             "margin-left" : margins.left,
             "margin-right" : margins.right
-        }, time, "easeOutExpo");
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
+}
+
+function animateFadeOut(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0}, easing = "easeOutExpo", queue = false)
+{
+    if (margins.top == undefined)
+        margins.top = 600;
+    if (margins.left == undefined)
+        margins.left = 800;
+    if (margins.right == undefined)
+        margins.right = 800;
+    if (margins.bottom == undefined)
+        margins.bottom = 600;
+
+    if (direction == null)
+        element.animate({"opacity" : "0"}, {
+            duration: time,
+            queue: queue
+        });
+    else if (direction == AnimationDirection.top)
+        element.animate({
+            "opacity" : "0",
+            "margin-top" : -margins.top,
+            "margin-bottom" : margins.bottom
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
+    else if (direction == AnimationDirection.left)
+        element.animate({
+            "opacity" : "0",
+            "margin-left" : -margins.left,
+            "margin-right" : margins.right
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
+    else if (direction == AnimationDirection.bottom)
+        element.animate({
+            "opacity" : "0",
+            "margin-top" : margins.top,
+            "margin-bottom" : -margins.bottom
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
+    else if (direction == AnimationDirection.right)
+        element.animate({
+            "opacity" : "0",
+            "margin-left" : margins.left,
+            "margin-right" : -margins.right
+        }, {
+            duration: time,
+            easing: easing,
+            queue: queue
+        });
 }
 
 function setElementForScrollDelay(element)
