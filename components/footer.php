@@ -39,3 +39,8 @@
   </div>
 </footer>
 <script src="/js/footer.js"></script>
+<script src="/js/animations.js"></script>
+<script
+      src="https://kit.fontawesome.com/9eeab300fc.js"
+      crossorigin="anonymous"
+    ></script>

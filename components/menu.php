@@ -7,17 +7,15 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
 <div class="menuWrapper">
   <div class="exit" onclick="animateMenuReverse()">
   <div class='columns is-vcentered'>
-    <div class='column'>
-  <a><span>c</span><span>l</span><span>o</span><span>s</span
-          ><span>e</span></a></div>
-          <div class='column'>
+
+
     <a
     role="button" class="navbar-burger is-active" aria-label="menu" aria-expanded="false">
   <span aria-hidden="true"></span>
   <span aria-hidden="true"></span>
   <span aria-hidden="true"></span>
 </a>
-</div>
+
 </div>
   </div>
 
