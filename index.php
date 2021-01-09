@@ -66,7 +66,7 @@
           </div>
         </div>
         <div id="replacement">
-          <div class="home-band">
+          <div class="home-band grained">
             <p class="boldBig has-text-centered">STRATEGIA</p>
             <div class="scrolldown-wrapper" id="rotellina">
               <div class="scrolldown">

@@ -26,7 +26,7 @@
 
     <?php require "components/menu.php";?>
 
-<div id='mainSection'>
+<div id='mainSection' class="grained">
     <header>
 <div class="makuda-home-link--works makuda-home-link-wrap is-loaded" style="top: 100%;">
 
