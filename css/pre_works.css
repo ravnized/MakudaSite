@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 50%;
+  padding-top: 100vh;
   background-color: #0a0a0a;
   opacity: 0;
 }
@@ -16,6 +16,7 @@
   right: 0;
   filter: grayscale(100%);
   max-width: none;
+  transform: translateX(30%);
 }
 
 #video-clipper {
