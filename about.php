@@ -23,7 +23,7 @@
     <?php require("components/menu.php"); ?>
 
     <div class="container">
-      <p class="boldBig halfWidth">WE ARE MAKUDAssssssss</p>
+      <p class="boldBig halfWidth">WE ARE MAKUDA</p>
       <br />
       <p class="boldOrange">AL FIANCO DELLE AZIENDE PIÙ AMBIZIOSE</p>
       <br />
