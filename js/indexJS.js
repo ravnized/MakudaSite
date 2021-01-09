@@ -257,7 +257,7 @@ $(document).ready(function () {
     {
       weAreAnimation = true;
       animateFadeIn($("#we-are"), 2000);
-      $("#rotellina").remove();
+      $("#rotellina").css("opacity", 0);
     }
     
     if (!ilNostroMetodoAnimation && isScrolledIntoView($("#il-nostro-metodo"), true))
