@@ -70,18 +70,65 @@ $(function () {
   tlFirst.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
 });
 
-$(workBlockImageSub).mouseleave(function (event) {
+imageVideo.mousemove(function (e) {
   var timeline = gsap.timeline();
+  var offset = $(this).offset();
+  var relativeX = e.pageX - offset.left;
+  var relativeY = e.pageY - offset.top;
+  var cX = $(this).width() / 2;
+  var cY = $(this).height() / 2;
+  var cxRelative = (cX - relativeX) / 20;
+  var cyRelative = (cY - relativeY) / 20;
   if (insideAWork === false) {
-    timeline.to($(this).parent(), { duration: 1, rotateX: 0, rotateY: 0 });
-    /*
-            timeline.to($(this).parent().parent().find('.workBlockTitle'), {
-                duration: 1,
-                rotateX: 0,
-                rotateY: 0,
-            }, '-=1')
-            */
+    timeline.to($(this).parent().parent(), {
+      duration: 0.2,
+      rotateX: cyRelative,
+      rotateY: cxRelative,
+    });
+
+    timeline.to(
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .find(".workBlockTitle"),
+      {
+        duration: 0.2,
+        rotateX: cyRelative,
+        rotateY: cxRelative,
+      },
+      "-=0.2"
+    );
   }
+});
+imageVideo.mouseleave(function (event) {
+  var timeline = gsap.timeline();
+
+  timeline.to($(this).parent().parent(), {
+    duration: 1,
+    rotateX: 0,
+    rotateY: 0,
+  });
+
+  timeline.to(
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .parent()
+      .find(".workBlockTitle"),
+    {
+      duration: 1,
+      rotateX: 0,
+      rotateY: 0,
+    },
+    "-=1"
+  );
 });
 
 $(workBlockImageSub).one("click", function () {
@@ -142,9 +189,19 @@ $(workBlockImageSub).one("click", function () {
     }
   }
 
-  halfWindowHeight =$(window).height() /2 - topTotalHeight - imageHeight + scrollTop;
+  halfWindowHeight =
+    $(window).height() / 2 - topTotalHeight - imageHeight + scrollTop;
   halfWindowWidth = $(window).width() / 2 - leftImagePos - centerImageLeft;
   console.log(halfWindowHeight);
+  tl.to(
+    workBlockImageSub,
+    {
+      duration: 0.5,
+      rotateX: 0,
+      rotateY: 0,
+    },
+    "startAnimation"
+  );
   tl.to(
     this,
     {

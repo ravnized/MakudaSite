@@ -111,6 +111,15 @@ body {
   position: relative;
 }
 
+.workBlockContainer {
+  display: block;
+  padding: 0.75rem;
+}
+
+.containerWork {
+  display: flex;
+}
+
 .workBlockImage {
   position: absolute;
   top: 0;
@@ -121,6 +130,17 @@ body {
   transform-origin: 20% 50%;
 }
 
+.workBlockTitle {
+  font-family: Gelion-Black;
+  z-index: 10;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  will-change: transform;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translateZ(100px) translateY(-300%) translateX(100%);
+}
+
 .workBlockImageSub {
   top: 0;
   left: 0;
@@ -128,22 +148,15 @@ body {
   z-index: 1;
 }
 
-.workBlockTitle {
-  left: 50%;
-  z-index: 10;
-  position: absolute;
-  pointer-events: none;
-  transform-style: preserve-3d;
-  will-change: transform;
-  transform: translateZ(40px);
-}
 .workBlock {
   width: 100%;
-  height: 100%;
+  position: relative;
+  display: block;
+  perspective: 1500px;
 }
 
 .titleVideo {
-  font-size: 5.6em;
+  font-size: 4em;
   letter-spacing: 0.2rem;
   will-change: transform;
   transform: translateZ(0);
@@ -227,6 +240,8 @@ video {
 .descriptionVideo {
   color: white;
   font-family: Gelion-light;
+  transform: translateX(-25%);
+  perspective: 1000px;
 }
 .titleDescriptionVideo {
   color: #f6b600;
