@@ -251,4 +251,5 @@ Contacts
 #mainSection {    
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
