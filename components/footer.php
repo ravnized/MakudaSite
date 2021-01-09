@@ -35,6 +35,7 @@
         </a>
       </div>
     </div>
+    <p class="has-text-centered copyright">© MAKUDA 2021 - P.IVA 03736540125</p>
   </div>
 </footer>
 <script src="/js/footer.js"></script>

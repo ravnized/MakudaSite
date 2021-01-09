@@ -2,6 +2,9 @@
 footer {
   font-family: Gelion-black;
   text-transform: uppercase;
+  padding-top: 100px;
+  background-color: black;
+  padding-bottom: 100px;
 }
 footer p {
   font-size: 20px;
@@ -36,17 +39,22 @@ footer .brand-icons i {
 }
 footer .container {
   overflow: hidden;
-  padding-bottom: 100px;
-  height: 300px;
+  /* padding-bottom: 100px;
+  height: 300px; */
 }
-
+footer .copyright { 
+  font-family: Gelion-light;
+  font-size: 15px;
+  padding-top: 25px;
+  letter-spacing: 0.15em !important;
+}
+footer #get-in-touch {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   footer .container {
     height: 513px;
   }
 }
-footer p {
-  font-family: Gelion-Black, sans-serif !important;
-  color: whitesmoke !important;
-  font-size: x-large !important;
-}
+  
