@@ -38,40 +38,22 @@
     <div class="mainSection">
       <section class="sectionFullWorks">
         <div class="workList">
-          <?php $id = '1';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Buffel';
-$subTitle = 'Case Study';
-include './components/workListTemplate.php';?>
-
-          <?php $id = '2';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Fabbrica di Pedavena';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-          <?php $id = '3';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Suites & Atelier';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-          <?php $id = '4';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Centro Arti Danza';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-          <?php $id = '5';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'De cube';
-$subTitle;
-include './components/workListTemplate.php';?>
+        <?php
+$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+$to_parse = fread($myfile, filesize("media/json/home-works.json"));
+fclose($myfile);
+$parsed = json_decode($to_parse, true);
+$c = 1;
+foreach ($parsed as $view) {
+  $id = $c."";
+  $linkPage = "/works/$view[link]";
+  $srcImg = "/media/img/works/$view[image]";
+  $title = $view["title"];
+  $subTitle = 'Case Study';
+  $c++;
+  include './components/workListTemplate.php';
+}
+?>
         </div>
       </section>
     </div>

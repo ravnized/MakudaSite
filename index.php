@@ -264,7 +264,7 @@ foreach ($parsed as $view) {
     $c++;
     $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
     echo "<div class='fading-image $classes_added'>
-                        <img class='' src='media/img/works/$view[image]'></img>
+                        <img class='' src='media/img/works/".$view["fragmented-image"]."'></img>
                       </div>";
 }
 ?>

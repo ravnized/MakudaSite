@@ -4,7 +4,6 @@ footer {
   text-transform: uppercase;
   padding-top: 100px;
   background-color: black;
-  padding-bottom: 100px;
   position: relative;
 }
 footer p {
@@ -40,8 +39,8 @@ footer .brand-icons i {
 }
 footer .container {
   overflow: hidden;
-  /* padding-bottom: 100px;
-  height: 300px; */
+  padding-bottom: 100px;
+  height: 350px;
 }
 footer .copyright { 
   font-family: Gelion-light;
@@ -55,7 +54,7 @@ footer #get-in-touch {
 }
 @media (max-width: 768px) {
   footer .container {
-    height: 513px;
+    height: 570px;
   }
 }
   

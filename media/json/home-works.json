@@ -1,36 +1,41 @@
 [
     {
         "link": "Works_Toia.php",
-        "image": "img1.png",
-        "title": "CLASSIC FURNISHING",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Buffel",
         "subtitle": "Interior Design",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
         "link": "Works_Toia.php",
-        "image": "img2.png",
-        "title": "CLASSIC FURNISHING2",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img2.png",
+        "title": "Fabbrica di Pedavena",
         "subtitle": "Interior Design",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
         "link": "Works_Toia.php",
-        "image": "img1.png",
-        "title": "CLASSIC FURNISHING3",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Suites & Atelier",
         "subtitle": "Interior Design",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
         "link": "Works_Toia.php",
-        "image": "img2.png",
-        "title": "CLASSIC FURNISHING4",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img2.png",
+        "title": "Centro Arti Danza",
         "subtitle": "Interior Design",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
         "link": "Works_Toia.php",
-        "image": "img1.png",
-        "title": "CLASSIC FURNISHING5",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "De cube",
         "subtitle": "Interior Design",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     }
