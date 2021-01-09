@@ -139,14 +139,6 @@
   font-family: Gelion-black;
 }
 
-.makuda-color {
-  color: rgb(255, 197, 32) !important;
-}
-
-.makuda-bgcolor {
-  background-color: rgb(255, 197, 32) !important;
-}
-
 #weAre {
   text-align: center;
   letter-spacing: 0.8em;
@@ -833,14 +825,6 @@ div > .uno {
 .containerText {
   position: relative;
   text-align: center;
-  color: white;
-}
-.title {
-  font-family: Gelion-black;
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 8px !important;
   color: white;
 }
 /* FADING CAROUSEL */
