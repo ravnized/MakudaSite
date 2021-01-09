@@ -29,25 +29,30 @@ function animateFadeIn(element, time, direction = null, margins = {top: 0, left:
             "opacity" : "1",
             "margin-top" : margins.top,
             "margin-bottom" : margins.bottom
-        }, time);
+        }, time, "easeOutExpo");
     else if (direction == AnimationDirection.left)
         element.animate({
             "opacity" : "1",
             "margin-left" : margins.left,
             "margin-right" : margins.right
-        }, time);
+        }, time, "easeOutExpo");
     else if (direction == AnimationDirection.bottom)
         element.animate({
             "opacity" : "1",
             "margin-top" : margins.top,
             "margin-bottom" : margins.bottom
-        }, time);
+        }, time, "easeOutExpo");
     else if (direction == AnimationDirection.right)
         element.animate({
             "opacity" : "1",
             "margin-left" : margins.left,
             "margin-right" : margins.right
-        }, time);
+        }, time, "easeOutExpo");
+}
+
+function setElementForScrollDelay(element)
+{
+    elementsForScrollDelay.push({element: element, offset: element.offset().top});
 }
 
 const AnimationDirection = {
@@ -56,3 +61,15 @@ const AnimationDirection = {
     bottom: 2,
     right: 3,
 };
+
+const elementsForScrollDelay = [];
+var pos;
+
+$(document).ready(function() {
+    $(document).on("scroll", function() {
+        elementsForScrollDelay.forEach(function (e) {
+            pos = e.offset - $(window).scrollTop() - $(window).height();
+            e.element.css({"top": pos + "px", "transform": "translateY(" + -pos + "px)"});
+        });
+    });
+})
