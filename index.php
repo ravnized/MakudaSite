@@ -16,6 +16,7 @@
     <link href="css/menu.css" rel="stylesheet" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script
       crossorigin="anonymous"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -269,6 +270,9 @@ foreach ($parsed as $view) {
 }
 ?>
           </div>
+          <div style="flex: 1;">
+            <img class='opacity-0' src='media/img/works/img1.png'></img>
+          </div>
           <div class="fade-in-left-animation fading-caption-content">
             <?php
 $c = 0;
@@ -492,7 +496,7 @@ foreach ($parsed as $view) {
         </div>
       </div> -->
       <section class="section">
-   <div class="container">
+   <div class="container fade-in-animation" id="logos-carousel">
       <div
          class="carousel"
          data-autoplay="true"

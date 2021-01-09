@@ -239,67 +239,60 @@ $(document).ready(function () {
   var ilNostroMetodoAnimation = false;
   var testimonialAnimation = false;
 
-  function isScrolledIntoView (element, fullyInView, offset = 200) {
-    var pageTop = $(window).scrollTop();
-    var pageBottom = pageTop + $(window).height();
-    var elementTop = element.offset().top;
-    var elementBottom = elementTop + element.height();
-
-    if (fullyInView === true) {
-      return ((pageTop < elementTop) && (pageBottom > elementBottom));
-    } else {
-      return ((elementTop + offset <= pageBottom) && (elementBottom >= pageTop));
-    }
-  }
-
-  $(window).on("scroll resize", function() {    
+  $(window).on("scroll resize", function() {
+    //Rotellina home-band
+    if ($(window).scrollTop() > 200)
+      $("#rotellina").fadeOut();
+    else
+      $("#rotellina").fadeIn();
+    
+    //Titolo e testo "WE ARE"
     if (!weAreAnimation && isScrolledIntoView($("#we-are"), true))
     {
       weAreAnimation = true;
       animateFadeIn($("#we-are"), 2000);
-      $("#rotellina").css("opacity", 0);
+      $("#rotellina").fadeOut();
+      
+      // setElementForScrollDelay($(".fading-images"));
     }
     
+    //Titolo "IL NOSTRO METODO"
     if (!ilNostroMetodoAnimation && isScrolledIntoView($("#il-nostro-metodo"), true))
     {
       ilNostroMetodoAnimation = true;
       animateFadeIn($("#il-nostro-metodo"), 2000);
     }
 
+    //Parallelogrammi 1 2 3 4 5
     if (paralleGruppoAnimation == 0 && isScrolledIntoView($(".paralleGruppo"), false, 130))
     {
       paralleGruppoAnimation = 1;
 
-      animateFadeIn($(".paralleGruppo #3"), 350, AnimationDirection.top);
+      animateFadeIn($(".paralleGruppo #3"), 400, AnimationDirection.top);
 
       var paralleGruppoInterval = setInterval(function() {
         switch (paralleGruppoAnimation)
         {
           case 1:
-            animateFadeIn($(".paralleGruppo #2, .paralleGruppo #4"), 350, AnimationDirection.top);
+            animateFadeIn($(".paralleGruppo #2, .paralleGruppo #4"), 400, AnimationDirection.top);
             break;
           case 2:
-            animateFadeIn($(".paralleGruppo #1, .paralleGruppo #5"), 350, AnimationDirection.top);
-            break;
-          case 3:
-            if (isScrolledIntoView($(".scopri-chi-siamo"), true))
-            {
-              animateFadeIn($(".scopri-chi-siamo"), 3000);
-              scopriChiSiamoAnimation = true;
-            }
+            animateFadeIn($(".paralleGruppo #1, .paralleGruppo #5"), 400, AnimationDirection.top);
             clearInterval(paralleGruppoInterval);
             break;
         }
         paralleGruppoAnimation++;
-      }, 250);
+      }, 400);
     }
 
-    if (!scopriChiSiamoAnimation && paralleGruppoAnimation > 3 && isScrolledIntoView($(".scopri-chi-siamo"), true))
+    //Pulsante SCOPRI CHI SIAMO
+    if (!scopriChiSiamoAnimation && isScrolledIntoView($(".scopri-chi-siamo"), true))
     {
       scopriChiSiamoAnimation = true;
       animateFadeIn($(".scopri-chi-siamo"), 3000);
     }
 
+    //Titolo, immagine e testo I NOSTRI PROGETTI
     if (!progettiAnimation && isScrolledIntoView($(".works-content"), false, 250))
     {
       progettiAnimation = true;
@@ -315,32 +308,35 @@ $(document).ready(function () {
       }, 200);
     }
     
+    //Testimonials
     if (!testimonialAnimation && isScrolledIntoView($(".testimonial-container"), false, 90))
     {
       testimonialAnimation = true;
       animateFadeIn($(".testimonial-container"), 2000);
     }
 
+    //Carousel dei loghi
     if (carousel3Animation == 0 && isScrolledIntoView($("#carousel3"), true))
     {
       carousel3Animation++;
-      var carousel3Item = $("#carousel3 .is-current").eq(0);
-      animateFadeIn(carousel3Item, 250);
+      animateFadeIn($("#logos-carousel"), 1500);
+      // var carousel3Item = $("#carousel3 .is-current").eq(0);
+      // animateFadeIn(carousel3Item, 50);
 
-      var carousel3Interval = setInterval(function () {
-        carousel3Item = carousel3Item.next();
+      // var carousel3Interval = setInterval(function () {
+      //   carousel3Item = carousel3Item.next();
 
-        if (carousel3Item.length == 0 || parseInt(carousel3Item.data("slider-index")) >= parseInt($("#carousel3").data("slidesToShow")))
-          carousel3Item = $("#carousel3 .slider-item").eq(0);
+      //   if (carousel3Item.length == 0 || parseInt(carousel3Item.data("slider-index")) >= parseInt($("#carousel3").data("slidesToShow")))
+      //     carousel3Item = $("#carousel3 .slider-item").eq(0);
 
-        if (carousel3Item.css("opacity") == 1)
-          clearInterval(carousel3Interval);
-        else
-        {
-          animateFadeIn(carousel3Item, 250);
-          carousel3Animation++;
-        }
-      }, 250);
+      //   if (carousel3Item.css("opacity") == 1)
+      //     clearInterval(carousel3Interval);
+      //   else
+      //   {
+      //     animateFadeIn(carousel3Item, 50);
+      //     carousel3Animation++;
+      //   }
+      // }, 50);
     }
   });
   //FINE PIGNA

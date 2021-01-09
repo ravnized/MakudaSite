@@ -752,7 +752,6 @@ div > .uno {
   width: 200px !important;
   height: auto;
   margin-right: 50px;
-  opacity: 0;
 }
 
 #carousel3 .slider-navigation-next {
@@ -799,6 +798,7 @@ div > .uno {
 .fading-carousel {
   font-family: Gelion-light;
   display: flex;
+  position: relative;
 }
 .fading-carousel p {
   font-size: 20px;
@@ -807,8 +807,11 @@ div > .uno {
   width: 10%;
 }
 .fading-images {
-  position: relative;
-  flex: 1;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  z-index: 1;
+  transition: top 0.3s;
 }
 .fading-image {
   position: absolute;
