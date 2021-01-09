@@ -57,17 +57,16 @@ function delay(URL) {
 })();
 $(function () {
   var tlFirst = gsap.timeline();
-  tlFirst.to(
-    ".mainSection",
-    { duration: 1, css: { y: 0 }, ease: "power4.in" },
-    0.5
-  );
-  tlFirst.to(
-    ".mainSection",
-    { duration: 1, css: { autoAlpha: 1 }, ease: "power2.in" },
-    0.5
-  );
+  var workListItem = $(".workListItem");
   tlFirst.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
+  Array.prototype.forEach.call(workListItem, (element) => {
+    tlFirst.to(element, {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      ease: "back.out",
+    });
+  });
 });
 
 imageVideo.mousemove(function (e) {
@@ -81,7 +80,7 @@ imageVideo.mousemove(function (e) {
   var cyRelative = (cY - relativeY) / 20;
   if (insideAWork === false) {
     timeline.to($(this).parent().parent(), {
-      duration: 0.2,
+      duration: 0.5,
       rotateX: cyRelative,
       rotateY: cxRelative,
     });
@@ -96,11 +95,12 @@ imageVideo.mousemove(function (e) {
         .parent()
         .find(".workBlockTitle"),
       {
-        duration: 0.2,
+        duration: 0.5,
         rotateX: cyRelative,
         rotateY: cxRelative,
+        translateZ: 100,
       },
-      "-=0.2"
+      "-=0.5"
     );
   }
 });
@@ -126,6 +126,7 @@ imageVideo.mouseleave(function (event) {
       duration: 1,
       rotateX: 0,
       rotateY: 0,
+      translateZ: 0,
     },
     "-=1"
   );
@@ -177,6 +178,7 @@ $(workBlockImageSub).one("click", function () {
     { duration: 0.5, css: { autoAlpha: 0 }, blur: 1 },
     0
   );
+  tl.to("footer", { duration: 0.5, css: { autoAlpha: 0 }, blur: 1 }, 0);
   workListItem.css({ top: totalHeight + "px" });
   workList.css({
     height: arrayListElementHeight * 4 + totalHeight + "px",

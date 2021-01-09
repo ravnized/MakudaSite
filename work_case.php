@@ -26,7 +26,7 @@
 
     <?php require "components/menu.php";?>
 
-    <div class="mainSection" style="transform: translateY(600px); opacity: 0">
+    <div class="mainSection" >
       <section class="sectionFullWorks">
         <div class="workList">
         <?php $id = '1';

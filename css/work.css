@@ -102,8 +102,9 @@ body {
 .workListItem {
   left: 0;
   will-change: transform;
-  transform: translateZ(0);
   position: relative;
+  opacity: 0;
+  transform: translateY(600px);
 }
 
 .workBlockContainer {

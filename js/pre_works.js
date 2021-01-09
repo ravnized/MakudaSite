@@ -113,7 +113,7 @@ $(document).ready(function () {
         opacity: 0,
       },
     },
-    { duration: 0.5, css: { opacity: 1 } },
+    { duration: 1, css: { opacity: 1 } },
     0
   );
   tlStart.fromTo(
