@@ -43,7 +43,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
   </div>
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="<?=$this_folder;?>/../work.php">
+      <a href="<?=$this_folder;?>/../pre_works.php">
         <span class="letter">W</span>
         <span class="letter">O</span>
         <span class="letter">R</span>

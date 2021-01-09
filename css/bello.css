@@ -187,3 +187,6 @@ body {
     transform: translate(-10%, 10%);
   }
 }
+.noWrap {
+  white-space: nowrap;
+}

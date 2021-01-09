@@ -75,11 +75,6 @@ body {
   left: 0;
 }
 
-.titleVideo {
-  top: 50%;
-  left: 10em;
-}
-
 .titleVideoContainer {
   z-index: 10;
   position: absolute;
@@ -138,7 +133,10 @@ body {
   will-change: transform;
   text-transform: uppercase;
   position: absolute;
-  transform: translateZ(100px) translateY(-300%) translateX(100%);
+  left: 0;
+  top: 0;
+  transform: translateY(200px) translateX(500px);
+  background: url("/media/icons/TRIANGOLINO.png") no-repeat;
 }
 
 .workBlockImageSub {
@@ -156,27 +154,21 @@ body {
 }
 
 .titleVideo {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
   font-size: 4em;
   letter-spacing: 0.2rem;
   will-change: transform;
-  transform: translateZ(0);
-  z-index: 2;
-  display: block;
-  color: #fff;
-  font-weight: 500;
-  line-height: 1;
+  color: white;
 }
 
 .subTitleVideo {
-  font-size: 5.6em;
+  text-align: right;
+  font-size: 2em;
   letter-spacing: 0.2rem;
   will-change: transform;
-  transform: translateZ(0);
-  z-index: 2;
-  display: block;
-  color: #fff;
-  font-weight: 500;
-  line-height: 1;
+  margin-top: -40px;
 }
 
 .workListContainer {
