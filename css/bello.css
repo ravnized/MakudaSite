@@ -74,7 +74,7 @@ a:visited {
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 8px !important;
+  letter-spacing: 2em !important;
   color: white;
 }
 .light-font {
@@ -113,7 +113,7 @@ a:visited {
   position: relative;
   margin: auto;
   font-size: 15px;
-  letter-spacing: 8px;
+  letter-spacing: 0.2em;
   color: #fff;
   padding-top: 13px;
 }
@@ -127,12 +127,28 @@ a:visited {
   color: rgb(255, 197, 32) !important;
 }
 
+.black-font {
+  color: black;
+}
+
+.white-font {
+  color: white;
+}
+
+.makuda-bold {
+  font-family: Gelion-black;
+}
+
+.makuda-light {
+  font-family: Gelion-light;
+}
+
 .title {
   font-family: Gelion-black;
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 8px !important;
+  letter-spacing: 0.2em !important;
   color: white;
 }
 body {

@@ -134,7 +134,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(200px) translateX(500px);
+  transform: translateY(200px) translateX(450px);
   background: url("/media/icons/TRIANGOLINO.png") no-repeat;
 }
 

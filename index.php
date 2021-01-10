@@ -68,7 +68,41 @@
         </div>
         <div id="replacement">
           <div class="home-band grained">
-            <p class="boldBig has-text-centered">STRATEGIA</p>
+            <div id="g0" class="band-view">
+              <p class="makuda-bold" style="font-size:7em;">
+                <span id="s0">STRATEGIA</span>
+              </p>
+              <p class="black-font makuda-light">
+                <span id="s1">PER RAGGIUNGERE I</span>
+              </p>
+              <p class="black-font makuda-bold" style="font-size:4em;">
+                <span id="s2">TUOI OBBIETTIVI</span>
+              </p>
+            </div>
+            <div id="g1" class="band-view">
+              <p class="makuda-bold" style="font-size:8.7em;">
+                <span id="s3">PRODUZIONE</span>
+              </p>
+              <p class="black-font makuda-light">
+                <span id="s4" style="vertical-align:top;">PER RACCONTARTI</span> 
+                <span id="s5" class="makuda-bold" style="font-size:2em;">AL MEGLIO</span>
+              </p>
+            </div>
+            <div id="g2" class="band-view">
+              <p class="makuda-bold" style="font-size:7em;">
+                <span id="s6">INNOVAZIONE</span>
+              </p>
+              <p class="black-font makuda-light">
+                <span id="s7">PER NON</span>
+                <span id="s8" class="makuda-bold">FERMARTI</span>
+              </p>
+              <p class="white-font makuda-bold" 
+                style="font-size:19em;
+                margin-left:0.15em;
+                margin-top:-0.15em;">
+                <span id="s9">MAI</span>
+              </p>
+            </div>
             <div class="scrolldown-wrapper" id="rotellina">
               <div class="scrolldown">
                 <svg height="30" width="10">
@@ -132,13 +166,17 @@
               </a>
 
               <div class="textInsideSquare">
-                <p class="titleInsideSquare">Mario</p>
-                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="titleInsideSquare">Meeting</p>
+                <p class="underTitleInsideSquare"></p>
                 <p class="textInsideSquareLong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                  Aliquam faucibus posuere nisl. Maecenas
+                  <ul>
+                    <li>Presentazione</li>
+                    <li>Ascolto</li>
+                    <li>Analisi</li>
+                    <li>Condivisione</li>
+                    <li>Bozza strategia</li>
+                  </ul>
+                  Come in ogni viaggio, conoscersi è la parte più interessante e stimolante.
                 </p>
               </div>
             </div>
@@ -146,7 +184,7 @@
         </div>
         <div id="2" class="fade-in-top-animation">
           <div class="parallelepipedo">
-            <p class="secondText">Meeting</p>
+            <p class="secondText">Strategia</p>
             <p class="numberParallelepipedo">2</p>
           </div>
 
@@ -156,13 +194,16 @@
                 <i class="fas fa-times"></i>
               </a>
               <div class="textInsideSquare">
-                <p class="titleInsideSquare">Mario</p>
-                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="titleInsideSquare">Strategia</p>
+                <p class="underTitleInsideSquare"></p>
                 <p class="textInsideSquareLong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                  Aliquam faucibus posuere nisl. Maecenas
+                Una volta condivisa la fase conoscitiva, si sviluppa in maniera approfondita 
+                una strategia condivisa che sia:
+                <ul>
+                  <li>diretta all’obiettivo</li>
+                  <li>efficiente nel minimizzare i rischi</li>
+                  <li>con iniziative coerenti ed efficaci</li>
+                </ul>
                 </p>
               </div>
             </div>
@@ -170,7 +211,7 @@
         </div>
         <div id="3" class="fade-in-top-animation">
           <div class="parallelepipedo">
-            <p class="secondText">Meeting</p>
+            <p class="secondText">Creazione</p>
             <p class="numberParallelepipedo">3</p>
           </div>
           <div class="square">
@@ -179,13 +220,19 @@
                 <i class="fas fa-times"></i>
               </a>
               <div class="textInsideSquare">
-                <p class="titleInsideSquare">Mario</p>
-                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="titleInsideSquare">Creazione</p>
+                <p class="underTitleInsideSquare"></p>
                 <p class="textInsideSquareLong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                  Aliquam faucibus posuere nisl. Maecenas
+                  La cura per la realizzazione di un progetto passa da un attento studio e 
+                  sviluppo di ogni singola iniziativa e contenuto da parte 
+                  di un team di professionisti di:
+                  <ul>
+                    <li>Marketers</li>
+                    <li>Fotografi e Videomakers</li>
+                    <li>Grafici</li>
+                    <li>Specialisti Design</li>
+                    <li>Programmatori e Specialisti digitali</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -193,7 +240,7 @@
         </div>
         <div id="4" class="fade-in-top-animation">
           <div class="parallelepipedo">
-            <p class="secondText">Meeting</p>
+            <p class="secondText">Management</p>
             <p class="numberParallelepipedo">4</p>
           </div>
           <div class="square">
@@ -202,13 +249,13 @@
                 <i class="fas fa-times"></i>
               </a>
               <div class="textInsideSquare">
-                <p class="titleInsideSquare">Mario</p>
-                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="titleInsideSquare">Management</p>
+                <p class="underTitleInsideSquare"></p>
                 <p class="textInsideSquareLong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                  Aliquam faucibus posuere nisl. Maecenas
+                  Alla creazione e realizzazione del progetto viene sempre 
+                  accompagnato un cospicuo lavoro di accounting e monitoraggio 
+                  dei processi esecutivi, al fine di massimizzare il successo delle 
+                  iniziative non solo nel breve, ma anche nel medio e lungo periodo.
                 </p>
               </div>
             </div>
@@ -216,7 +263,7 @@
         </div>
         <div id="5" class="fade-in-top-animation">
           <div class="parallelepipedo">
-            <p class="secondText">Meeting</p>
+            <p class="secondText">Risultati</p>
             <p class="numberParallelepipedo">5</p>
           </div>
           <div class="square">
@@ -225,13 +272,14 @@
                 <i class="fas fa-times"></i>
               </a>
               <div class="textInsideSquare">
-                <p class="titleInsideSquare">Mario</p>
-                <p class="underTitleInsideSquare">Art Director</p>
+                <p class="titleInsideSquare">Risultati</p>
+                <p class="underTitleInsideSquare"></p>
                 <p class="textInsideSquareLong">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Curabitur in scelerisque urna, eget ullamcorper mauris. Nam sit
-                  amet sem in sapien vehicula commodo. Etiam quis diam libero.
-                  Aliquam faucibus posuere nisl. Maecenas
+                  In fase strategia vengono definiti i così detti “speed temporali” che 
+                  determinano quando e/o ogni quanto il progetto sarà oggetto di valutazione.<br>
+                  Lo sviluppo di un report consente di capire se la direzione verso l’obiettivo 
+                  è sempre corretta, oppure si rende necessario attuare nuove iniziative o 
+                  un cambio strategico per facilitarne il raggiungimento.
                 </p>
               </div>
             </div>
@@ -281,8 +329,8 @@ foreach ($parsed as $view) {
     $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
     ?>
             <div class="fading-caption<?=$classes_added?>">
-              <p class="fading-subtitle"><?=$view["subtitle"]?></p>
               <p class="fading-title"><?=$view["title"]?></p>
+              <p class="fading-subtitle"><?=$view["subtitle"]?></p>
               <p class="fading-description" style="line-height:1.5;"><?=$view["description"]?></p>
               <a href="<?="works/" . $view["link"]?>">
                 <div class="animatedBtn">
