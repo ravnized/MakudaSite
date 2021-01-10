@@ -27,7 +27,7 @@
         <p class="boldBig makuda-color">WE ARE</p>
     </div>
     <div style="margin: 60px 5%;">
-        <div>
+        <div class="container">
             <p class="boldBig makuda-color titleInsideSquare" style="font-size: 17px;"> MISSION </p>
             <p class="start-text">
                 “Trasmettere un modo nuovo di vedere i colori della vita quotidiana,
@@ -38,7 +38,7 @@
                 che sia sempre di successo e di qualità.
             </p>
         </div>
-        <div style="margin-top: 30px;">
+        <div class="container" style="margin-top: 30px;">
             <p class="boldBig makuda-color" style="font-size: 17px;"> VALORI </p>
             <p class="start-text">
                 Curiosità: Se il nero rappresenta l'oscurità, l'inesplorato allora rappresenta anche
@@ -153,28 +153,24 @@
             </p>
         </div>
     </div>
-    <div class="container" style="padding-bottom: 60px;">
+    <div class="container" style="padding: 60px 0;">
         <div style="display: flex;">
             <div style="flex: 1"></div>
             <div style="display: flex;">
                 <div class="counter-box">
                     <p class="counter">2451</p>
-                    <p class="english-counter">Projects Complete</p>
                     <p class="italian-counter">PROGETTI COMPLETATI</p>
                 </div>
                 <div class="counter-box">
                     <p class="counter">1245</p>
-                    <p class="english-counter">Satisfied Clients</p>
                     <p class="italian-counter">CLIENTI SODDISFATTI</p>
                 </div>
                 <div class="counter-box">
                     <p class="counter">870</p>
-                    <p class="english-counter">Awards Winners</p>
                     <p class="italian-counter">POST - IT ATTACCATI</p>
                 </div>
                 <div class="counter-box">
                     <p class="counter">2451</p>
-                    <p class="english-counter">Cup Of Coffee</p>
                     <p class="italian-counter">CAFFÈ BEVUTI</p>
                 </div>
             </div>

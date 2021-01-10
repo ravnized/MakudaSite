@@ -250,7 +250,7 @@ $(document).ready(function () {
     if (!weAreAnimation && isScrolledIntoView($("#we-are"), true))
     {
       weAreAnimation = true;
-      animateFadeIn($("#we-are"), 2000);
+      animateFadeIn($("#we-are"), 700, AnimationDirection.top, {isPadding: true});
       $("#rotellina").fadeOut();
       
       // setElementForScrollDelay($(".fading-images"));
@@ -260,7 +260,7 @@ $(document).ready(function () {
     if (!ilNostroMetodoAnimation && isScrolledIntoView($("#il-nostro-metodo"), true))
     {
       ilNostroMetodoAnimation = true;
-      animateFadeIn($("#il-nostro-metodo"), 2000);
+      animateFadeIn($("#il-nostro-metodo"), 700);
     }
 
     //Parallelogrammi 1 2 3 4 5
@@ -268,28 +268,29 @@ $(document).ready(function () {
     {
       paralleGruppoAnimation = 1;
 
-      animateFadeIn($(".paralleGruppo #3"), 400, AnimationDirection.top);
+      let animationTime = 600;
+      animateFadeIn($(".paralleGruppo #3"), animationTime, AnimationDirection.top);
 
       var paralleGruppoInterval = setInterval(function() {
         switch (paralleGruppoAnimation)
         {
           case 1:
-            animateFadeIn($(".paralleGruppo #2, .paralleGruppo #4"), 400, AnimationDirection.top);
+            animateFadeIn($(".paralleGruppo #2, .paralleGruppo #4"), animationTime, AnimationDirection.top);
             break;
           case 2:
-            animateFadeIn($(".paralleGruppo #1, .paralleGruppo #5"), 400, AnimationDirection.top);
+            animateFadeIn($(".paralleGruppo #1, .paralleGruppo #5"), animationTime, AnimationDirection.top);
             clearInterval(paralleGruppoInterval);
             break;
         }
         paralleGruppoAnimation++;
-      }, 400);
+      }, 100);
     }
 
     //Pulsante SCOPRI CHI SIAMO
     if (!scopriChiSiamoAnimation && isScrolledIntoView($(".scopri-chi-siamo"), true))
     {
       scopriChiSiamoAnimation = true;
-      animateFadeIn($(".scopri-chi-siamo"), 3000);
+      animateFadeIn($(".scopri-chi-siamo"), 700);
     }
 
     //Titolo, immagine e testo I NOSTRI PROGETTI
@@ -298,10 +299,10 @@ $(document).ready(function () {
       progettiAnimation = true;
       animateFadeIn($(".works-content .title"), 500, AnimationDirection.bottom, {top: "25px", bottom: "50px"});
       setTimeout(function () {
-        animateFadeIn($(".works-content .fading-images"), 1000, AnimationDirection.right);
+        animateFadeIn($(".works-content .fading-images"), 800, AnimationDirection.right);
         animateFadeIn(
           $(".works-content .fading-caption-content"),
-          1000,
+          800,
           AnimationDirection.left,
           {left: "75px", right: "25px"}
         );
@@ -312,14 +313,14 @@ $(document).ready(function () {
     if (!testimonialAnimation && isScrolledIntoView($(".testimonial-container"), false, 90))
     {
       testimonialAnimation = true;
-      animateFadeIn($(".testimonial-container"), 2000);
+      animateFadeIn($(".testimonial-container"), 500);
     }
 
     //Carousel dei loghi
-    if (carousel3Animation == 0 && isScrolledIntoView($("#carousel3"), true))
+    if (carousel3Animation == 0 && isScrolledIntoView($("#carousel3"), false, 0))
     {
       carousel3Animation++;
-      animateFadeIn($("#logos-carousel"), 1500);
+      animateFadeIn($("#logos-carousel"), 500);
       // var carousel3Item = $("#carousel3 .is-current").eq(0);
       // animateFadeIn(carousel3Item, 50);
 

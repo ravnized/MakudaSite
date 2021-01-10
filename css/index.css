@@ -28,49 +28,49 @@
 }
 
 .scrolldown-wrapper {
-	left: 50%;
-	position: absolute;
-	text-align: center;
-	bottom: 15px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
   transform: translate(-50%, -50%);
   transition: all 1s;
 }
-  
+
 .scrolldown {
-	border: 2px solid #FFFFFF;
-	border-radius: 30px;
-	height: 46px;
-	margin: 0 auto 8px;
-	text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  height: 46px;
+  margin: 0 auto 8px;
+  text-align: center;
   width: 30px;
   transform: scale(1);
 }
 
 .scrolldown-p1,
 .scrolldown-p2 {
-	animation-duration: 1.5s;
-	animation-name: scrolldown;
-	animation-iteration-count: infinite;
-	fill: #FFFFFF;
+  animation-duration: 1.5s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #ffffff;
 }
-  
+
 .scrolldown-p2 {
-	animation-delay: .75s;
+  animation-delay: 0.75s;
 }
 
 @keyframes scrolldown {
-	0% {
-		opacity: 0;
-		transform: translate(0, -8px);
-	}
-	50% {
-		opacity: 1;
-		transform: translate(0, 0);
-	}
-	100% {
-		opacity: 0;
-		transform: translate(0, 8px);
-	}
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
 }
 
 .home-band p {
@@ -94,6 +94,12 @@
   text-align: center;
   letter-spacing: 0.8em;
   opacity: 0;
+}
+
+#we-are {
+  font-size: 75px;
+  height: 49px;
+  line-height: 43px;
 }
 
 .makuda-logo {

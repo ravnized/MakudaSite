@@ -5,11 +5,11 @@ $(document).ready(function () {
         if (!footerAnimation && isScrolledIntoView($("footer .container"), false, 150))
         {
             footerAnimation = true;
-            animateFadeIn($("#get-in-touch"), 250, AnimationDirection.top, {bottom: "54px"});
+            animateFadeIn($("#get-in-touch"), 400);
 
             setTimeout(function () {
-                animateFadeIn($("#main-block-footer"), 250, AnimationDirection.top);
-            }, 250);
+                animateFadeIn($("#main-block-footer"), 400);
+            }, 150);
         }
     });
 });

@@ -39,10 +39,10 @@ footer .brand-icons i {
 }
 footer .container {
   overflow: hidden;
-  padding-bottom: 100px;
-  height: 350px;
+  padding-bottom: 20px;
+  height: 290px;
 }
-footer .copyright { 
+footer .copyright {
   font-family: Gelion-light;
   font-size: 15px;
   padding-top: 25px;
@@ -54,7 +54,6 @@ footer #get-in-touch {
 }
 @media (max-width: 768px) {
   footer .container {
-    height: 570px;
+    height: 500px;
   }
 }
-  
