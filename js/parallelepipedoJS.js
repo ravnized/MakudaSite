@@ -49,7 +49,7 @@ $(document).ready(function ($) {
         $(parallelepipedParent[i]).find(".secondText"),
         {
           duration: 0.5,
-          translateY: 600,
+          translateY: 650,
           ease: "power2.in",
         },
         0.2
@@ -135,7 +135,7 @@ $(document).ready(function ($) {
           $(parallelepipedParent[i]).find(".secondText"),
           {
             duration: 0.5,
-            translateY: 600,
+            translateY: 650,
             ease: "power2.in",
           },
           0
@@ -213,7 +213,7 @@ $(document).ready(function ($) {
           $(parallelepipedParent[i]).find(".secondText"),
           {
             duration: 0.5,
-            translateY: 600,
+            translateY: 650,
             ease: "power2.in",
           },
           0
@@ -416,7 +416,7 @@ $(document).ready(function ($) {
             parallelepipedo.secondText,
             {
               duration: 0.3,
-              y: 600,
+              y: 650,
               ease: "power2.in",
             },
             "mouseleave"

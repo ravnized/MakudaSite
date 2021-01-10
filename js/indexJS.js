@@ -2,12 +2,51 @@ var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 $(document).ready(function () {
   /*NAPO*/
-  let band_texts = ["STRATEGIA", "PRODUZIONE", "INNOVAZIONE"];
-  let band_actual_index = 0;
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  async function homeBandAnimation() {
+    while(true) {
+      $("#g0").show();
+      $("#s0").css("opacity", 1);
+      await sleep(500);
+      $("#s1").css("opacity", 1);
+      await sleep(500);
+      $("#s2").css("opacity", 1);
+      await sleep(1000);
+      $("#s0").css("opacity", 0);
+      $("#s1").css("opacity", 0);
+      $("#s2").css("opacity", 0);
+      $("#g0").hide();
+      $("#g1").show();
+      $("#s3").css("opacity", 1);
+      await sleep(500);
+      $("#s4").css("opacity", 1);
+      await sleep(500);
+      $("#s5").css("opacity", 1);
+      await sleep(1000);
+      $("#s3").css("opacity", 0);
+      $("#s4").css("opacity", 0);
+      $("#s5").css("opacity", 0);
+      $("#g1").hide();
+      $("#g2").show();
+      $("#s6").css("opacity", 1);
+      await sleep(500);
+      $("#s7").css("opacity", 1);
+      await sleep(500);
+      $("#s8").css("opacity", 1);
+      await sleep(500);
+      $("#s9").css("opacity", 1);
+      await sleep(1000);
+      $("#s6").css("opacity", 0);
+      $("#s7").css("opacity", 0);
+      $("#s8").css("opacity", 0);
+      $("#s9").css("opacity", 0);
+      $("#g2").hide();
+    }
+  }  
   let fadingCarouselClicked = false;
-  setInterval(function myMethod() {
-    $(".home-band p").html(band_texts[++band_actual_index % 3]);
-  }, 1000);
+  homeBandAnimation();
   $(".fading-circle").click(function (target) {
     let new_work_index = $(this).attr("data-index");
     let iormga = $(".fading-image.index-" + new_work_index);
@@ -91,7 +130,7 @@ $(document).ready(function () {
     displacementSprite.position.y = app.screen.height / 2;
     tl3.to("#sectionVideo", { duration: 0.5, css: { autoAlpha: 1 } });
     tl3.to("#weAre", {
-      delay: 2,
+      delay: 1.5,
       duration: 0.5,
       autoAlpha: 1,
     });
