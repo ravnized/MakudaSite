@@ -276,6 +276,16 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <a href="about.php">
+        <div class="animatedBtn">
+            <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg" class="scopri-chi-siamo">
+              <rect class="shape" height="50" width="320" />
+            </svg>
+          <div class="text makuda-bold makuda-color scopri-chi-siamo">SCOPRI CHI SIAMO</div>
         </div>
         <a href="about.php">
             <div class="animatedBtn">
