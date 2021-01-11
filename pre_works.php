@@ -52,15 +52,18 @@
 
 
     <div id="video-compare-container">
-    <video id="video2"
-      autoplay
-      loop
-      muted
-    >
-      <source
-      src='/media/video/A Story Of Matteo web Optimization.mp4'>
+        <div class="mask">
+            <video id="video2"
+                   autoplay
+                   loop
+                   muted
+            >
+                <source
+                        src='/media/video/A Story Of Matteo web Optimization.mp4'>
 
-    </video>
+            </video>
+        </div>
+
     <div id="video-clipper">
       <video id="video1"
         autoplay

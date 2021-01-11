@@ -7,6 +7,11 @@ function video1Enter() {
         "filterAnimation"
     );
     tl.to(
+        $(".mask"),
+        {duration: 0.5, width: "25%"},
+        "filterAnimation"
+    );
+    tl.to(
         $("#video1"),
         {
             duration: 1,
@@ -33,6 +38,7 @@ function video1Leave() {
         },
         "filterAnimation"
     );
+
 }
 
 function video2Enter() {
@@ -48,6 +54,11 @@ function video2Enter() {
     tl.to(
         $("#video-clipper"),
         {duration: 0.5, width: "25%"},
+        "filterAnimation"
+    );
+    tl.to(
+        $(".mask"),
+        {duration: 0.5, width: "75%"},
         "filterAnimation"
     );
     $(".makuda-home-link--contacts.is-loaded .makuda-home-link").addClass(
@@ -102,30 +113,36 @@ $(document).ready(function () {
             {duration: 0.5, width: "50%"},
             "filterAnimation"
         );
+        tl.to(
+            $(".mask"),
+            {duration: 0.5, width: "50%"},
+            "filterAnimation"
+        );
     });
 
     var tlStart = gsap.timeline();
     tlStart.fromTo(
-        $("#video1"),
+        $("#video-clipper"),
         {
-            clipPath: 'inset(0 0 0 100%)'
+            left: 50+'%',
+            width: 0,
         },
         {
             duration: 2,
-            clipPath: 'inset(0 0 0 0%)',
-            ease: "slow(0.3, 1, false)"
+            left: 0+'%',
+            width: 50+'%',
         },
         0
     );
-    tlStart.fromTo($("#video2"),
+    tlStart.fromTo($(".mask"),
         {
-            clipPath: 'inset(0 100% 0 0)'
+            right: 50+'%',
+            width: 0,
         },
         {
-            delay: 1.5,
-            duration: 3,
-            clipPath: 'inset(0 0% 0 0)',
-            ease: "slow(0.3, 1, false)"
+            duration: 2,
+            right: 0+'%',
+            width: 50+'%',
         },
         0)
     ;
