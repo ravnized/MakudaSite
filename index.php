@@ -38,7 +38,7 @@
         <div class="hero-video">
             <div id="divVideo"></div>
         </div>
-        <div class="hero-body" id="hero-body">
+        <div class="hero-body grained" id="hero-body">
             <div class="container" id="containerText">
                 <div class="textOverlay" id="textOverlay">
                     <h2 class="is-size-1" id="weAre">
