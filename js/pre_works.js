@@ -133,6 +133,7 @@ $(document).ready(function () {
             duration: 2,
             left: 0+'%',
             width: 50+'%',
+            ease: 'power4.out'
         },
         0
     );
@@ -146,6 +147,7 @@ $(document).ready(function () {
             duration: 2,
             right: 0+'%',
             width: 50+'%',
+            ease: 'power4.out'
         },
         0)
     ;
