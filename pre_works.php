@@ -54,7 +54,7 @@
     <div id="video-compare-container">
         <div class="mask">
             <video id="video2"
-                   autoplay
+
                    loop
                    muted
             >
@@ -66,7 +66,7 @@
 
     <div id="video-clipper">
       <video id="video1"
-        autoplay
+
         loop
         muted
       >

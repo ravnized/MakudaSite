@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Toia - Works</title>
-    <link href="../css/bulma.min.css" rel="stylesheet" />
-    <link href="../css/work.css" rel="stylesheet" type="text/css" />
-    <link href="../css/bello.css" rel="stylesheet" type="text/css" />
-    <link href="../css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bulma.min.css" rel="stylesheet" />
+    <link href="/css/work.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bello.css" rel="stylesheet" type="text/css" />
+    <link href="/css/menu.css" rel="stylesheet" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
       rel="stylesheet"

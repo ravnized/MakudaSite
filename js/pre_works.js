@@ -119,7 +119,9 @@ $(document).ready(function () {
             "filterAnimation"
         );
     });
-
+    $('#video2').get(0).currentTime = 5;
+    $('#video1').get(0).play();
+    $('#video2').get(0).play();
     var tlStart = gsap.timeline();
     tlStart.fromTo(
         $("#video-clipper"),
@@ -137,6 +139,7 @@ $(document).ready(function () {
         },
         0
     );
+
     tlStart.fromTo($(".mask"),
         {
             right: 50+'%',
@@ -149,8 +152,10 @@ $(document).ready(function () {
             width: 50+'%',
             ease: 'power4.out'
         },
-        0)
-    ;
+        0);
+    tlStart.add(function () {
+
+    })
     tlStart.fromTo(
         $(".makuda-home-link--contacts.is-loaded span:first-child "),
         {
