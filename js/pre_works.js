@@ -89,14 +89,14 @@ $(document).ready(function () {
     $(".makuda-home-link--works").on("mouseenter", function () {
         video1Enter();
     });
-    $("#video1").on("click", function () {
+    $("#video1,#text-case-study").on("click", function () {
         location.href = "/work_case.php";
     });
     $("#video2").on("mouseenter", function () {
         video2Enter();
         video1Leave();
     });
-    $("#video2").on("click", function () {
+    $("#video2,#text-produzioni").on("click", function () {
         location.href = "/work_prod.php";
     });
     $(".makuda-home-link--contacts").on("mouseenter", function () {
