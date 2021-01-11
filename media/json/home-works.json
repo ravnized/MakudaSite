@@ -1,11 +1,11 @@
 [
     {
-        "id": "TOIA",
+        "id": "BUFFEL",
         "link": "Works_Toia.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
         "title": "Buffel",
-        "subtitle": "Interior Design",
+        "subtitle": "Case Study",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
@@ -14,7 +14,7 @@
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img2.png",
         "title": "Fabbrica<br> di Pedavena",
-        "subtitle": "Interior Design",
+        "subtitle": "",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
@@ -23,7 +23,7 @@
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
         "title": "Suites & <br>Atelier",
-        "subtitle": "Interior Design",
+        "subtitle": "",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
@@ -32,7 +32,7 @@
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img2.png",
         "title": "Centro Arti<br> Danza",
-        "subtitle": "Interior Design",
+        "subtitle": "",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     },
     {
@@ -41,7 +41,7 @@
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
         "title": "De cube",
-        "subtitle": "Interior Design",
+        "subtitle": "Case Study",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     }
 ]

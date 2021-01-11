@@ -68,6 +68,10 @@ body {
   background-color: #111;
 }
 
+.workList{
+  padding: 50px 0;
+}
+
 .elementVideoCollection {
   width: 100.4em;
   height: 38.4em;
@@ -160,6 +164,8 @@ body {
   letter-spacing: 0.2rem;
   will-change: transform;
   color: white;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 .subTitleVideo {
@@ -288,7 +294,7 @@ video {
 }
 
 .spaceWorkList {
-  padding-top: 4em;
+  padding-top: 1em;
   transform-origin: center center;
 }
 
@@ -352,7 +358,7 @@ VideoJS Custom
     position: fixed;
     width: 10em;
     height: 20em;
-    right: 30em;
+    right: 0;
     bottom: 5em;
   }
   .progress {
@@ -364,7 +370,7 @@ VideoJS Custom
   }
   .progress_w_in {
     position: absolute;
-    width: 1px;
+    width: 3px;
     height: 90%;
     left: 50%;
     overflow: hidden;
@@ -373,8 +379,9 @@ VideoJS Custom
     position: absolute;
     width: 200%;
     height: auto;
-    bottom: -25%;
+    bottom: 15%;
     left: -50%;
+    font-family: 'Gelion-light';
   }
   .progress_in,
   .progress_in_selected {
@@ -382,13 +389,14 @@ VideoJS Custom
     width: 3px;
     left: 0;
     top: 0;
-    height: 80%;
+    height: 0;
     background-color: #3c3b3b;
   }
   .progress_in_selected {
     z-index: 10;
-    height: 1em;
-    background-color: #2fe0b8;
+    height: 0;
+    background-color: #f6b600;
+    max-height: 80%;
   }
 }
 

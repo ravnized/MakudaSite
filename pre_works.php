@@ -29,20 +29,18 @@
 <div id='mainSection' class="grained">
     <header>
 <div class="makuda-home-link--works makuda-home-link-wrap is-loaded" style="top: 100%;">
-
     <div class="makuda-home-link makuda-home-link-works is-link ">
-               <a>
+      <a id="text-case-study">
         <span class='noWrap'>strategia, branding, management, social media</span>
         <span class='noWrap'>case study</span>
-                </a>
-
+      </a>
     </div>
 </div>
 </header>
 <header>
 <div class="makuda-home-link--contacts makuda-home-link-wrap is-loaded" style="top: 100%;">
     <div class="makuda-home-link is-link ">
-        <a>
+        <a id="text-produzioni">
             <span class='noWrap'>PRODUZIONI</span>
             <span class='noWrap'>cinematic & spot adv, shooting, 3D VFX</span>
         </a>
