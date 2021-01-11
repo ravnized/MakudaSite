@@ -17,7 +17,6 @@ document.addEventListener("scroll", function (e) {
         {
           countNum: countTo,
         },
-
         {
           duration: 3000,
           easing: "linear",
@@ -26,7 +25,6 @@ document.addEventListener("scroll", function (e) {
           },
           complete: function () {
             $this.text(this.countNum);
-            console.log("aaa");
           },
         }
       );
@@ -58,7 +56,7 @@ $(document).ready(function() {
 
   function resizeTeam(animation = true)
   {
-    if (animation == false)
+    if (animation === false)
       $(".person-container").css({"transition": "none"});
     else
       $(".person-container").css({"transition": "all 0.8s ease"});

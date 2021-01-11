@@ -6,8 +6,10 @@
   overflow: hidden;
   padding-top: 100vh;
   background-color: #0a0a0a;
-  opacity: 0;
+  opacity: 1;
+
 }
+
 
 #video-compare-container > video {
   position: absolute;
@@ -17,6 +19,8 @@
   filter: grayscale(100%);
   max-width: none;
   transform: translateX(30%);
+  opacity: 1;
+  clip-path: inset(0 100% 0 0);
 }
 
 #video-clipper {
@@ -27,11 +31,20 @@
   overflow: hidden;
 }
 
+
 #video-clipper video {
   position: absolute;
   height: 100vh;
   max-width: unset;
   filter: grayscale(100%);
+  opacity: 1;
+  clip-path: inset(0 0 0 100%);
+
+}
+
+@-webkit-keyframes  opacityAnimation{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .makuda-home-link--contacts.makuda-home-link-wrap {
