@@ -124,10 +124,12 @@ $(document).ready(function () {
     tlStart.fromTo(
         $("#video-clipper"),
         {
+
             left: 50+'%',
             width: 0,
         },
         {
+            delay: 1,
             duration: 2,
             left: 0+'%',
             width: 50+'%',
@@ -140,6 +142,7 @@ $(document).ready(function () {
             width: 0,
         },
         {
+            delay: 1,
             duration: 2,
             right: 0+'%',
             width: 50+'%',
