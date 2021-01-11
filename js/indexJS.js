@@ -91,7 +91,7 @@ $(document).ready(function () {
   video.loop = true;
   video.crossOrigin = "anonymous";
   video.preload = "auto";
-  video.src = "../media/video/VideoNoText.mp4";
+  video.src = "../media/video/Finale-1 web.m4v";
   video.autoload = true;
   video.muted = true;
   video.playsinline = "playsinline";
