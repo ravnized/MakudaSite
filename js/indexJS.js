@@ -141,7 +141,7 @@ $(document).ready(function () {
 
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
-        app.renderer.view.style.transform = 'scale(1.5)';
+        app.renderer.view.style.transform = 'scale(1.3)';
         app.renderer.view.style.transformOrigin = 'center center';
         displacementSprite.position.x = app.screen.width / 2;
         displacementSprite.position.y = app.screen.height / 2;
