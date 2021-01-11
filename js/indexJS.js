@@ -209,15 +209,7 @@ $(document).ready(function () {
                     },
                     "animationVideoGruppo"
                 )
-                .to(
-                    ".paralleGruppo",
-                    {
-                        duration: 1,
-                        y: 0,
-                        ease: "power4.out",
-                    },
-                    "animationVideoGruppo"
-                )
+
                 .add(function () {
                     reloadScrollBars();
                 }, "animationVideoGruppo");

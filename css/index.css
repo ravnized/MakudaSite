@@ -632,7 +632,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transform: translateY(500px);
     margin-bottom: 70px;
 }
 
@@ -769,6 +768,9 @@ div > .uno {
 }
 
 #carousel3 .slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px !important;
     height: auto;
     margin-right: 50px;
@@ -1032,14 +1034,6 @@ p.fading-description {
     opacity: 0;
 }
 
-.cardino {
-    width: 400px;
-    height: auto;
-}
-
-div.cardino div.card-image figure.image {
-    padding-top: 100%;
-}
 
 .card-padding {
     padding-left: 100px;
@@ -1062,10 +1056,6 @@ div.cardino div.card-image figure.image {
 #sectionVideo {
     opacity: 0;
 }
-
-.centeredImg{
-    display: inline-block !important;
-    width: auto !important;
-    height: 100% !important;
-    vertical-align: middle;
+.cardino{
+    padding-top: 50%;
 }

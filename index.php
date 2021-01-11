@@ -79,7 +79,7 @@
                         <span id="s1">PER RAGGIUNGERE I</span>
                     </p>
                     <p class="black-font makuda-bold" style="font-size: 4em">
-                        <span id="s2">TUOI OBBIETTIVI</span>
+                        <span id="s2">TUOI OBIETTIVI</span>
                     </p>
                 </div>
                 <div id="g1" class="band-view">
@@ -140,135 +140,136 @@
     <div class="container fade-in-animation" style="margin-bottom: 100px" id="il-nostro-metodo">
         <p class="title">IL NOSTRO <span class="makuda-color">METODO</span></p>
     </div>
+    <div class="container">
+        <div class="paralleGruppo">
+            <div id="1" class="fade-in-top-animation">
+                <div class="parallelepipedo">
+                    <p class="secondText">Meeting</p>
+                    <p class="numberParallelepipedo uno">1</p>
+                </div>
+                <div class="square">
+                    <div style="padding: 10px">
+                        <a class='cross'>
+                            <i class="fas fa-times"></i>
+                        </a>
 
-    <div class="paralleGruppo">
-        <div id="1" class="fade-in-top-animation">
-            <div class="parallelepipedo">
-                <p class="secondText">Meeting</p>
-                <p class="numberParallelepipedo uno">1</p>
+                        <div class="textInsideSquare">
+                            <p class="titleInsideSquare">Meeting</p>
+                            <p class="underTitleInsideSquare"></p>
+                            <p class="textInsideSquareLong">
+                            <ul>
+                                <li>Presentazione</li>
+                                <li>Ascolto</li>
+                                <li>Analisi</li>
+                                <li>Condivisione</li>
+                                <li>Bozza strategia</li>
+                            </ul>
+                            Come in ogni viaggio, conoscersi è la parte più interessante e stimolante.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="square">
-                <div style="padding: 10px">
-                    <a class='cross'>
-                        <i class="fas fa-times"></i>
-                    </a>
+            <div id="2" class="fade-in-top-animation">
+                <div class="parallelepipedo">
+                    <p class="secondText">Strategia</p>
+                    <p class="numberParallelepipedo">2</p>
+                </div>
 
-                    <div class="textInsideSquare">
-                        <p class="titleInsideSquare">Meeting</p>
-                        <p class="underTitleInsideSquare"></p>
-                        <p class="textInsideSquareLong">
-                        <ul>
-                            <li>Presentazione</li>
-                            <li>Ascolto</li>
-                            <li>Analisi</li>
-                            <li>Condivisione</li>
-                            <li>Bozza strategia</li>
-                        </ul>
-                        Come in ogni viaggio, conoscersi è la parte più interessante e stimolante.
-                        </p>
+                <div class="square">
+                    <div style="padding: 10px">
+                        <a class='cross'>
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <div class="textInsideSquare">
+                            <p class="titleInsideSquare">Strategia</p>
+                            <p class="underTitleInsideSquare"></p>
+                            <p class="textInsideSquareLong">
+                                Una volta condivisa la fase conoscitiva, si sviluppa in maniera approfondita
+                                una strategia condivisa che sia:
+                            <ul>
+                                <li>diretta all’obiettivo</li>
+                                <li>efficiente nel minimizzare i rischi</li>
+                                <li>con iniziative coerenti ed efficaci</li>
+                            </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="2">
-            <div class="parallelepipedo">
-                <p class="secondText">Strategia</p>
-                <p class="numberParallelepipedo">2</p>
-            </div>
-
-            <div class="square">
-                <div style="padding: 10px">
-                    <a class='cross'>
-                        <i class="fas fa-times"></i>
-                    </a>
-                    <div class="textInsideSquare">
-                        <p class="titleInsideSquare">Strategia</p>
-                        <p class="underTitleInsideSquare"></p>
-                        <p class="textInsideSquareLong">
-                            Una volta condivisa la fase conoscitiva, si sviluppa in maniera approfondita
-                            una strategia condivisa che sia:
-                        <ul>
-                            <li>diretta all’obiettivo</li>
-                            <li>efficiente nel minimizzare i rischi</li>
-                            <li>con iniziative coerenti ed efficaci</li>
-                        </ul>
-                        </p>
+            <div id="3" class="fade-in-top-animation">
+                <div class="parallelepipedo">
+                    <p class="secondText">Creazione</p>
+                    <p class="numberParallelepipedo">3</p>
+                </div>
+                <div class="square">
+                    <div style="padding: 10px">
+                        <a class='cross'>
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <div class="textInsideSquare">
+                            <p class="titleInsideSquare">Creazione</p>
+                            <p class="underTitleInsideSquare"></p>
+                            <p class="textInsideSquareLong">
+                                La cura per la realizzazione di un progetto passa da un attento studio e
+                                sviluppo di ogni singola iniziativa e contenuto da parte
+                                di un team di professionisti di:
+                            <ul>
+                                <li>Marketers</li>
+                                <li>Fotografi e Videomakers</li>
+                                <li>Grafici</li>
+                                <li>Specialisti Design</li>
+                                <li>Programmatori e Specialisti digitali</li>
+                            </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="3">
-            <div class="parallelepipedo">
-                <p class="secondText">Creazione</p>
-                <p class="numberParallelepipedo">3</p>
-            </div>
-            <div class="square">
-                <div style="padding: 10px">
-                    <a class='cross'>
-                        <i class="fas fa-times"></i>
-                    </a>
-                    <div class="textInsideSquare">
-                        <p class="titleInsideSquare">Creazione</p>
-                        <p class="underTitleInsideSquare"></p>
-                        <p class="textInsideSquareLong">
-                            La cura per la realizzazione di un progetto passa da un attento studio e
-                            sviluppo di ogni singola iniziativa e contenuto da parte
-                            di un team di professionisti di:
-                        <ul>
-                            <li>Marketers</li>
-                            <li>Fotografi e Videomakers</li>
-                            <li>Grafici</li>
-                            <li>Specialisti Design</li>
-                            <li>Programmatori e Specialisti digitali</li>
-                        </ul>
-                        </p>
+            <div id="4" class="fade-in-top-animation">
+                <div class="parallelepipedo">
+                    <p class="secondText">Management</p>
+                    <p class="numberParallelepipedo">4</p>
+                </div>
+                <div class="square">
+                    <div style="padding: 10px">
+                        <a class='cross'>
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <div class="textInsideSquare">
+                            <p class="titleInsideSquare">Management</p>
+                            <p class="underTitleInsideSquare"></p>
+                            <p class="textInsideSquareLong">
+                                Alla creazione e realizzazione del progetto viene sempre
+                                accompagnato un cospicuo lavoro di accounting e monitoraggio
+                                dei processi esecutivi, al fine di massimizzare il successo delle
+                                iniziative non solo nel breve, ma anche nel medio e lungo periodo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="4">
-            <div class="parallelepipedo">
-                <p class="secondText">Management</p>
-                <p class="numberParallelepipedo">4</p>
-            </div>
-            <div class="square">
-                <div style="padding: 10px">
-                    <a class='cross'>
-                        <i class="fas fa-times"></i>
-                    </a>
-                    <div class="textInsideSquare">
-                        <p class="titleInsideSquare">Management</p>
-                        <p class="underTitleInsideSquare"></p>
-                        <p class="textInsideSquareLong">
-                            Alla creazione e realizzazione del progetto viene sempre
-                            accompagnato un cospicuo lavoro di accounting e monitoraggio
-                            dei processi esecutivi, al fine di massimizzare il successo delle
-                            iniziative non solo nel breve, ma anche nel medio e lungo periodo.
-                        </p>
-                    </div>
+            <div id="5" class="fade-in-top-animation">
+                <div class="parallelepipedo">
+                    <p class="secondText">Risultati</p>
+                    <p class="numberParallelepipedo">5</p>
                 </div>
-            </div>
-        </div>
-        <div id="5">
-            <div class="parallelepipedo">
-                <p class="secondText">Risultati</p>
-                <p class="numberParallelepipedo">5</p>
-            </div>
-            <div class="square">
-                <div style="padding: 10px">
-                    <a class='cross'>
-                        <i class="fas fa-times"></i>
-                    </a>
-                    <div class="textInsideSquare">
-                        <p class="titleInsideSquare">Risultati</p>
-                        <p class="underTitleInsideSquare"></p>
-                        <p class="textInsideSquareLong">
-                            In fase strategia vengono definiti i così detti “speed temporali” che
-                            determinano quando e/o ogni quanto il progetto sarà oggetto di valutazione.<br>
-                            Lo sviluppo di un report consente di capire se la direzione verso l’obiettivo
-                            è sempre corretta, oppure si rende necessario attuare nuove iniziative o
-                            un cambio strategico per facilitarne il raggiungimento.
-                        </p>
+                <div class="square">
+                    <div style="padding: 10px">
+                        <a class='cross'>
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <div class="textInsideSquare">
+                            <p class="titleInsideSquare">Risultati</p>
+                            <p class="underTitleInsideSquare"></p>
+                            <p class="textInsideSquareLong">
+                                In fase strategia vengono definiti i così detti “speed temporali” che
+                                determinano quando e/o ogni quanto il progetto sarà oggetto di valutazione.<br>
+                                Lo sviluppo di un report consente di capire se la direzione verso l’obiettivo
+                                è sempre corretta, oppure si rende necessario attuare nuove iniziative o
+                                un cambio strategico per facilitarne il raggiungimento.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -545,22 +546,22 @@
     <div class="container fade-in-animation" id="logos-carousel">
         <div
                 class="carousel"
-                data-autoplay="true"
                 data-infinite="true"
+                data-autoplay="true"
                 data-navigation="false"
                 data-slidesToShow="7"
                 id="carousel3"
         >
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_900.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img
                                 src="/media/img/Carousel_Logo/Logo_buffel_bianco.png"
                                 alt="" class="centeredImg"
@@ -570,63 +571,63 @@
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_carpisa.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_deCube.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/Logo_Josselin.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_LBA.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_pedavena.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_prime.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_suites.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/logo_yolown.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
+                    <figure class="image is-covered">
                         <img
                                 src="/media/img/Carousel_Logo/Tork_logo_bianco.png"
                                 alt="" class="centeredImg"
