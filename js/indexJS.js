@@ -134,11 +134,16 @@ $(document).ready(function () {
         displacementFilter = new PIXI.filters.DisplacementFilter(
             displacementSprite
         );
+
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
         app.stage.addChild(displacementSprite);
         app.stage.filters = [displacementFilter];
+
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
+        app.renderer.view.style.transform = 'scale(1.16)';
+        app.renderer.view.style.transformOrigin = 'center center';
+        app.renderer.view.style.opacity = '60%';
         displacementSprite.position.x = app.screen.width / 2;
         displacementSprite.position.y = app.screen.height / 2;
         tl3.to("#sectionVideo", {duration: 0.5, css: {autoAlpha: 1}});
