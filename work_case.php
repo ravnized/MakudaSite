@@ -39,24 +39,21 @@
       <section class="sectionFullWorks">
         <div class="workList">
 <?php
-  $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
-  $to_parse = fread($myfile, filesize("media/json/home-works.json"));
-  fclose($myfile);
-  $parsed = json_decode($to_parse, true);
-  $c = 1;
-  foreach ($parsed as $view) {
-    $id = $c."";
+$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+$to_parse = fread($myfile, filesize("media/json/home-works.json"));
+fclose($myfile);
+$parsed = json_decode($to_parse, true);
+$c = 1;
+foreach ($parsed as $view) {
+    $id = $c . "";
     $linkPage = "/works/$view[link]";
-    $srcImg = "/media/img/works /$view[image]";
+    $srcImg = "/media/img/$view[image]";
     $title = $view["title"];
-    $subTitle = 'Case Study';
+    $subTitle = $view['subtitle'];
     $c++;
-    if($view["id"] == "PEDAVENA"){
-      $title = "Fabbrica di<br>Pedavena";
-      $subTitle = '';
-    }
+
     include './components/workListTemplate.php';
-  }
+}
 ?>
         </div>
       </section>

@@ -76,19 +76,15 @@ $(function () {
     );
   });
 });
-var timelineScroll = gsap.timeline();
-document.addEventListener(
-  "scroll",
-  function (event) {
-    var windowHeight = $(window).height();
-    var scroll = $(window).scrollTop();
-    $(".progress_in_selected").css(
-      "height",
-      (scroll * 50) / windowHeight + "%"
-    );
-  },
-  true /*Capture event*/
-);
+$(window).on("scroll", function () {
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
+
+  var scrollPercent = (s / (d - c)) * 100;
+  $(".progress_in_selected").css("height", scrollPercent + "%");
+  console.log(scrollPercent);
+});
 
 imageVideo.mousemove(function (e) {
   var timeline = gsap.timeline();

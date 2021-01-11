@@ -3,10 +3,10 @@ var elementHeroBody = $("#containerText");
 $(document).ready(function () {
   /*NAPO*/
   function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
   async function homeBandAnimation() {
-    while(true) {
+    while (true) {
       $("#g0").show();
       $("#s0").css("opacity", 1);
       await sleep(500);
@@ -44,7 +44,7 @@ $(document).ready(function () {
       $("#s9").css("opacity", 0);
       $("#g2").hide();
     }
-  }  
+  }
   let fadingCarouselClicked = false;
   homeBandAnimation();
   $(".fading-circle").click(function (target) {
@@ -65,8 +65,7 @@ $(document).ready(function () {
     let iormga = $(".fading-image.index-" + new_work_index);
     iormga.remove();
     iormga.insertAfter(".selected.fading-image");
-    if (fadingCarouselClicked)
-      fadingCarouselClicked = false;
+    if (fadingCarouselClicked) fadingCarouselClicked = false;
     else {
       $(".selected").removeClass("selected");
       $(".index-" + new_work_index).addClass("selected");
@@ -130,7 +129,7 @@ $(document).ready(function () {
     displacementSprite.position.y = app.screen.height / 2;
     tl3.to("#sectionVideo", { duration: 0.5, css: { autoAlpha: 1 } });
     tl3.to("#weAre", {
-      delay: 1.5,
+      delay: 0.5,
       duration: 0.5,
       autoAlpha: 1,
     });
@@ -278,46 +277,60 @@ $(document).ready(function () {
   var ilNostroMetodoAnimation = false;
   var testimonialAnimation = false;
 
-  $(window).on("scroll resize", function() {
+  $(window).on("scroll resize", function () {
     //Rotellina home-band
-    if ($(window).scrollTop() > 200)
-      $("#rotellina").fadeOut();
-    else
-      $("#rotellina").fadeIn();
-    
+    if ($(window).scrollTop() > 200) $("#rotellina").fadeOut();
+    else $("#rotellina").fadeIn();
+
     //Titolo e testo "WE ARE"
-    if (!weAreAnimation && isScrolledIntoView($("#we-are"), true))
-    {
+    if (!weAreAnimation && isScrolledIntoView($("#we-are"), true)) {
       weAreAnimation = true;
-      animateFadeIn($("#we-are"), 700, AnimationDirection.top, {isPadding: true});
+      animateFadeIn($("#we-are"), 700, AnimationDirection.top, {
+        isPadding: true,
+      });
       $("#rotellina").fadeOut();
-      
+
       // setElementForScrollDelay($(".fading-images"));
     }
-    
+
     //Titolo "IL NOSTRO METODO"
-    if (!ilNostroMetodoAnimation && isScrolledIntoView($("#il-nostro-metodo"), true))
-    {
+    if (
+      !ilNostroMetodoAnimation &&
+      isScrolledIntoView($("#il-nostro-metodo"), true)
+    ) {
       ilNostroMetodoAnimation = true;
       animateFadeIn($("#il-nostro-metodo"), 700);
     }
 
     //Parallelogrammi 1 2 3 4 5
-    if (paralleGruppoAnimation == 0 && isScrolledIntoView($(".paralleGruppo"), false, 130))
-    {
+    if (
+      paralleGruppoAnimation == 0 &&
+      isScrolledIntoView($(".paralleGruppo"), false, 130)
+    ) {
       paralleGruppoAnimation = 1;
 
       let animationTime = 600;
-      animateFadeIn($(".paralleGruppo #3"), animationTime, AnimationDirection.top);
+      animateFadeIn(
+        $(".paralleGruppo #3"),
+        animationTime,
+        AnimationDirection.top
+      );
 
-      var paralleGruppoInterval = setInterval(function() {
-        switch (paralleGruppoAnimation)
-        {
+      var paralleGruppoInterval = setInterval(function () {
+        switch (paralleGruppoAnimation) {
           case 1:
-            animateFadeIn($(".paralleGruppo #2, .paralleGruppo #4"), animationTime, AnimationDirection.top);
+            animateFadeIn(
+              $(".paralleGruppo #2, .paralleGruppo #4"),
+              animationTime,
+              AnimationDirection.top
+            );
             break;
           case 2:
-            animateFadeIn($(".paralleGruppo #1, .paralleGruppo #5"), animationTime, AnimationDirection.top);
+            animateFadeIn(
+              $(".paralleGruppo #1, .paralleGruppo #5"),
+              animationTime,
+              AnimationDirection.top
+            );
             clearInterval(paralleGruppoInterval);
             break;
         }
@@ -326,38 +339,55 @@ $(document).ready(function () {
     }
 
     //Pulsante SCOPRI CHI SIAMO
-    if (!scopriChiSiamoAnimation && isScrolledIntoView($(".scopri-chi-siamo"), true))
-    {
+    if (
+      !scopriChiSiamoAnimation &&
+      isScrolledIntoView($(".scopri-chi-siamo"), true)
+    ) {
       scopriChiSiamoAnimation = true;
       animateFadeIn($(".scopri-chi-siamo"), 700);
     }
 
     //Titolo, immagine e testo I NOSTRI PROGETTI
-    if (!progettiAnimation && isScrolledIntoView($(".works-content"), false, 250))
-    {
+    if (
+      !progettiAnimation &&
+      isScrolledIntoView($(".works-content"), false, 250)
+    ) {
       progettiAnimation = true;
-      animateFadeIn($(".works-content .title"), 500, AnimationDirection.bottom, {top: "25px", bottom: "50px"});
+      animateFadeIn(
+        $(".works-content .title"),
+        500,
+        AnimationDirection.bottom,
+        { top: "25px", bottom: "50px" }
+      );
       setTimeout(function () {
-        animateFadeIn($(".works-content .fading-images"), 800, AnimationDirection.right);
+        animateFadeIn(
+          $(".works-content .fading-images"),
+          800,
+          AnimationDirection.right
+        );
         animateFadeIn(
           $(".works-content .fading-caption-content"),
           800,
           AnimationDirection.left,
-          {left: "75px", right: "25px"}
+          { left: "75px", right: "25px" }
         );
       }, 200);
     }
-    
+
     //Testimonials
-    if (!testimonialAnimation && isScrolledIntoView($(".testimonial-container"), false, 90))
-    {
+    if (
+      !testimonialAnimation &&
+      isScrolledIntoView($(".testimonial-container"), false, 90)
+    ) {
       testimonialAnimation = true;
       animateFadeIn($(".testimonial-container"), 500);
     }
 
     //Carousel dei loghi
-    if (carousel3Animation == 0 && isScrolledIntoView($("#carousel3"), false, 0))
-    {
+    if (
+      carousel3Animation == 0 &&
+      isScrolledIntoView($("#carousel3"), false, 0)
+    ) {
       carousel3Animation++;
       animateFadeIn($("#logos-carousel"), 500);
       // var carousel3Item = $("#carousel3 .is-current").eq(0);

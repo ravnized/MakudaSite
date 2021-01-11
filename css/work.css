@@ -365,9 +365,8 @@ VideoJS Custom
   .progress_w_in {
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 90%;
     left: 50%;
-    margin: 0 auto 4.4em;
     overflow: hidden;
   }
   .progress_subtitle {
