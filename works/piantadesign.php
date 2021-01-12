@@ -28,7 +28,31 @@ foreach ($parsed as $v)
 </head>
 
 <body style="background-color:#111;">
+<style>
+    #img1 {
+        background-image: url(/media/img/works/piantanida_1.JPG);
+    }
 
+    #img2 {
+        background-image: url(/media/img/works/piantanida_2.JPG);
+    }
+
+    #img3 {
+        background-image: url(/media/img/works/piantanida_3.JPG);
+    }
+
+    #img4 {
+        background-image: url(/media/img/works/piantanida_4.JPG);
+    }
+
+    #img5 {
+        background-image: url(/media/img/works/piantanida_5.JPG);
+    }
+
+    #img6 {
+        background-image: url(/media/img/works/piantanida_6.JPG);
+    }
+</style>
 <?php require("../components/navbar.php"); ?>
 
 <?php require("../components/menu.php"); ?>
@@ -106,33 +130,33 @@ foreach ($parsed as $v)
             Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
             condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
         </p>
-        <div class="gif-cellulari columns" data-animated="true">
-            <div class="column"
-                 style="margin-top: 220px; transform: scale(1.2); transition: transform 0.8s; opacity: 0;">
-                <br><br>
-                <div id="video-compare-container">
-                    <video
-                            autoplay
-                            loop
-                            muted
+        <div class="gif-firstSection">
 
+            <br><br>
+            <div id="video-compare-container">
+                <div class="mask">
+                    <video id="video2"
+                           autoplay
+                           loop
+                           muted
+                    >
+                        <source
+
+                                src='/media/video/works/Piantanida_Color.mp4'>
+
+                    </video>
+                </div>
+
+                <div id="video-clipper">
+                    <video id="video1"
+                            autoplay
+                           loop
+                           muted
                     >
                         <source
                                 src='/media/video/works/Piantanida_NoColor.mp4'>
 
                     </video>
-                    <div id="video-clipper">
-                        <video
-                                autoplay
-                                loop
-                                muted
-
-                        >
-                            <source
-                                    src='/media/video/works/Piantanida_Color.mp4'>
-
-                        </video>
-                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +173,7 @@ foreach ($parsed as $v)
         <br/>
 
         <div class="container">
-            <div class="gif-cellulari columns" data-animated="true">
+            <div class="columns gif-photo">
                 <div class="column"
                 >
                     <div class="img-slide">
@@ -169,7 +193,7 @@ foreach ($parsed as $v)
                     </div>
                 </div>
             </div>
-            <div class="columns">
+            <div class="columns gif-photo">
                 <div class="column">
                     <div class="img-slide">
                         <div id="img4" class="big-image"></div>

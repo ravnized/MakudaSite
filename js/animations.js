@@ -7,7 +7,17 @@ const AnimationDirection = {
 
 let liveAnimations = [];
 
-function isScrolledIntoView (element, fullyInView, offset = 0) {
+$.fn.isOnScreen = function () {
+    var viewport = {};
+    viewport.top = $(window).scrollTop();
+    viewport.bottom = viewport.top + $(window).height();
+    var bounds = {};
+    bounds.top = this.offset().top;
+    bounds.bottom = bounds.top + this.outerHeight();
+    return bounds.top <= viewport.bottom && bounds.bottom >= viewport.top;
+};
+
+function isScrolledIntoView(element, fullyInView, offset = 0) {
     let pageTop = $(window).scrollTop();
     let pageBottom = pageTop + $(window).height();
     let elementTop = element.offset().top;
@@ -20,17 +30,15 @@ function isScrolledIntoView (element, fullyInView, offset = 0) {
     }
 }
 
-function stopAllAnimations()
-{
-    for(let i=0; i<liveAnimations.length; i++)
+function stopAllAnimations() {
+    for (let i = 0; i < liveAnimations.length; i++)
         $(liveAnimations[i]).stop(true);
     liveAnimations = [];
 }
 
-async function animateWithQueue (queue)
-{
-    return new Promise(async function(resolve) {
-        for(let i=0; i<queue.length; i++)
+async function animateWithQueue(queue) {
+    return new Promise(async function (resolve) {
+        for (let i = 0; i < queue.length; i++)
             await animateCustom(
                 queue[i][0],
                 queue[i][1],
@@ -48,7 +56,7 @@ async function animateCustom(element, time, animation, easing = "linear", queue 
         easing = "linear";
     if (queue == undefined)
         queue = false;
-    
+
     liveAnimations.push(this);
 
     return new Promise(resolve => {
@@ -57,7 +65,7 @@ async function animateCustom(element, time, animation, easing = "linear", queue 
             queue: queue,
             easing: easing,
             step: step,
-            done: function() {
+            done: function () {
                 liveAnimations.remove(this);
                 resolve(true);
             }
@@ -65,8 +73,13 @@ async function animateCustom(element, time, animation, easing = "linear", queue 
     });
 }
 
-async function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
-{
+async function animateFadeIn(element, time, direction = null, margins = {
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    isPadding: false
+}, easing = "easeOutCubic", queue = false) {
     if (margins.top == undefined)
         margins.top = 0;
     if (margins.left == undefined)
@@ -80,89 +93,86 @@ async function animateFadeIn(element, time, direction = null, margins = {top: 0,
 
     let animation;
 
-    if (margins.isPadding == true)
-    {
+    if (margins.isPadding == true) {
         if (direction == null)
             animation = {
-                "opacity" : "1"
+                "opacity": "1"
             };
         else if (direction == AnimationDirection.top)
             animation = {
-                "opacity" : "1",
-                "padding-top" : margins.top,
-                "padding-bottom" : margins.bottom
+                "opacity": "1",
+                "padding-top": margins.top,
+                "padding-bottom": margins.bottom
             };
         else if (direction == AnimationDirection.left)
             animation = {
-                "opacity" : "1",
-                "padding-left" : margins.left,
-                "padding-right" : margins.right
+                "opacity": "1",
+                "padding-left": margins.left,
+                "padding-right": margins.right
             };
         else if (direction == AnimationDirection.bottom)
             animation = {
-                "opacity" : "1",
-                "padding-top" : margins.top,
-                "padding-bottom" : margins.bottom
+                "opacity": "1",
+                "padding-top": margins.top,
+                "padding-bottom": margins.bottom
             };
         else if (direction == AnimationDirection.right)
             animation = {
-                "opacity" : "1",
-                "padding-left" : margins.left,
-                "padding-right" : margins.right
+                "opacity": "1",
+                "padding-left": margins.left,
+                "padding-right": margins.right
             };
         else
             return;
-    }
-    else
-    {
+    } else {
         if (direction == null)
             animation = {
-                "opacity" : "1"
+                "opacity": "1"
             };
         else if (direction == AnimationDirection.top)
             animation = {
-                "opacity" : "1",
-                "margin-top" : margins.top,
-                "margin-bottom" : margins.bottom
+                "opacity": "1",
+                "margin-top": margins.top,
+                "margin-bottom": margins.bottom
             };
         else if (direction == AnimationDirection.left)
             animation = {
-                "opacity" : "1",
-                "margin-left" : margins.left,
-                "margin-right" : margins.right
+                "opacity": "1",
+                "margin-left": margins.left,
+                "margin-right": margins.right
             };
         else if (direction == AnimationDirection.bottom)
             animation = {
-                "opacity" : "1",
-                "margin-top" : margins.top,
-                "margin-bottom" : margins.bottom
+                "opacity": "1",
+                "margin-top": margins.top,
+                "margin-bottom": margins.bottom
             };
         else if (direction == AnimationDirection.right)
             animation = {
-                "opacity" : "1",
-                "margin-left" : margins.left,
-                "margin-right" : margins.right
+                "opacity": "1",
+                "margin-left": margins.left,
+                "margin-right": margins.right
             };
         else
             return;
     }
 
 
-    return new Promise(function(resolve) {
+    return new Promise(function (resolve) {
         let options = {
             duration: time,
             easing: easing,
             queue: queue,
-            done: function() {
+            done: function () {
                 resolve();
             }
         };
-        
+
         if (direction == null)
             element.animate(animation, {
                 duration: time,
                 queue: queue,
-                done: function() {
+                done: function () {
                     resolve();
                 }
             });
@@ -171,8 +181,13 @@ async function animateFadeIn(element, time, direction = null, margins = {top: 0,
     });
 }
 
-function animateFadeOut(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
-{
+function animateFadeOut(element, time, direction = null, margins = {
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    isPadding: false
+}, easing = "easeOutCubic", queue = false) {
     if (margins.top == undefined)
         margins.top = 600;
     if (margins.left == undefined)
@@ -184,18 +199,17 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
     if (margins.isPadding == undefined)
         margins.isPadding = false;
 
-    if (margins.isPadding == true)
-    {
+    if (margins.isPadding == true) {
         if (direction == null)
-            element.animate({"opacity" : "0"}, {
+            element.animate({"opacity": "0"}, {
                 duration: time,
                 queue: queue
             });
         else if (direction == AnimationDirection.top)
             element.animate({
-                "opacity" : "0",
-                "padding-top" : -margins.top,
-                "padding-bottom" : margins.bottom
+                "opacity": "0",
+                "padding-top": -margins.top,
+                "padding-bottom": margins.bottom
             }, {
                 duration: time,
                 easing: easing,
@@ -203,9 +217,9 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.left)
             element.animate({
-                "opacity" : "0",
-                "padding-left" : -margins.left,
-                "padding-right" : margins.right
+                "opacity": "0",
+                "padding-left": -margins.left,
+                "padding-right": margins.right
             }, {
                 duration: time,
                 easing: easing,
@@ -213,9 +227,9 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.bottom)
             element.animate({
-                "opacity" : "0",
-                "padding-top" : margins.top,
-                "padding-bottom" : -margins.bottom
+                "opacity": "0",
+                "padding-top": margins.top,
+                "padding-bottom": -margins.bottom
             }, {
                 duration: time,
                 easing: easing,
@@ -223,27 +237,25 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.right)
             element.animate({
-                "opacity" : "0",
-                "padding-left" : margins.left,
-                "padding-right" : -margins.right
+                "opacity": "0",
+                "padding-left": margins.left,
+                "padding-right": -margins.right
             }, {
                 duration: time,
                 easing: easing,
                 queue: queue
             });
-    }
-    else
-    {
+    } else {
         if (direction == null)
-            element.animate({"opacity" : "0"}, {
+            element.animate({"opacity": "0"}, {
                 duration: time,
                 queue: queue
             });
         else if (direction == AnimationDirection.top)
             element.animate({
-                "opacity" : "0",
-                "margin-top" : -margins.top,
-                "margin-bottom" : margins.bottom
+                "opacity": "0",
+                "margin-top": -margins.top,
+                "margin-bottom": margins.bottom
             }, {
                 duration: time,
                 easing: easing,
@@ -251,9 +263,9 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.left)
             element.animate({
-                "opacity" : "0",
-                "margin-left" : -margins.left,
-                "margin-right" : margins.right
+                "opacity": "0",
+                "margin-left": -margins.left,
+                "margin-right": margins.right
             }, {
                 duration: time,
                 easing: easing,
@@ -261,9 +273,9 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.bottom)
             element.animate({
-                "opacity" : "0",
-                "margin-top" : margins.top,
-                "margin-bottom" : -margins.bottom
+                "opacity": "0",
+                "margin-top": margins.top,
+                "margin-bottom": -margins.bottom
             }, {
                 duration: time,
                 easing: easing,
@@ -271,9 +283,9 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
             });
         else if (direction == AnimationDirection.right)
             element.animate({
-                "opacity" : "0",
-                "margin-left" : margins.left,
-                "margin-right" : -margins.right
+                "opacity": "0",
+                "margin-left": margins.left,
+                "margin-right": -margins.right
             }, {
                 duration: time,
                 easing: easing,
@@ -282,16 +294,15 @@ function animateFadeOut(element, time, direction = null, margins = {top: 0, left
     }
 }
 
-function setElementForScrollDelay(element)
-{
+function setElementForScrollDelay(element) {
     elementsForScrollDelay.push({element: element, offset: element.offset().top});
 }
 
 const elementsForScrollDelay = [];
 var pos;
 
-$(document).ready(function() {
-    $(document).on("scroll", function() {
+$(document).ready(function () {
+    $(document).on("scroll", function () {
         elementsForScrollDelay.forEach(function (e) {
             pos = e.offset - $(window).scrollTop() - $(window).height();
             e.element.css({"top": pos + "px", "transform": "translateY(" + -pos + "px)"});
@@ -299,7 +310,7 @@ $(document).ready(function() {
     });
 });
 
-Array.prototype.remove = function() {
+Array.prototype.remove = function () {
     var what, a = arguments, L = a.length, ax;
     while (L && this.length) {
         what = a[--L];
