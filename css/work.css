@@ -106,7 +106,6 @@ body {
   left: 0;
   will-change: transform;
   position: relative;
-  opacity: 0;
 }
 
 .workBlockContainer {
@@ -126,6 +125,7 @@ body {
   will-change: transform;
   transform-style: preserve-3d;
   transform-origin: 20% 50%;
+  opacity: 70%;
 }
 
 .workBlockTitle {
@@ -138,7 +138,17 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(200px) translateX(450px);
+  transform: translateY(200px) translateX(380px);
+  background: url("/media/icons/TRIANGOLINO.png") no-repeat;
+}
+
+.singleWorkBlockTitle {
+  font-family: Gelion-Black;
+  z-index: 10;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  will-change: transform;
+  text-transform: uppercase;
   background: url("/media/icons/TRIANGOLINO.png") no-repeat;
 }
 
@@ -147,6 +157,12 @@ body {
   left: 0;
   will-change: transform;
   z-index: 1;
+  opacity: 70%;
+  transition: all 0.5s;
+}
+
+.workBlockImageSub:hover {
+  opacity: 100%;
 }
 
 .workBlock {
@@ -166,6 +182,13 @@ body {
   color: white;
   line-height: 1;
   padding-bottom: 10px;
+  transition: all 1s;
+}
+.workBlockTitle .titleVideo{
+  transition: all 1s;
+}
+.workBlockImageSub:hover + .workBlockTitle .titleVideo {
+  text-shadow: -2px 2px #f6b600;
 }
 
 .subTitleVideo {
@@ -305,7 +328,11 @@ video {
 
 /*
 VideoJS Custom
- */
+*/
+
+ .workBlockImageSub .imageVideo {
+  padding-top: 34% !important;
+}
 
 .vjs-poster {
   background-color: transparent !important;
@@ -352,13 +379,50 @@ VideoJS Custom
   background: rgba(246, 182, 0, 0.2) !important;
 }
 
+.pubblicazione-social .frase {
+  color: black;
+  font-family: Gelion-light;
+  text-align: center;
+}
+
+.gif-cellulari .imageVideo {
+  background-color: rgb(255, 197, 32);
+  padding-top: 200% !important;
+}
+
+.gif-cellulare {
+  opacity: 0;
+}
+
+.small-image {
+  padding-bottom: 60%;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+}
+.big-image {
+  padding-bottom: 90%;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+}
+
+#img1 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img2 {
+  background-image: url(/media/img/macchina2.jpg);
+}
+#img3 {
+  background-image: url(/media/img/macchina1.jpg);
+}
 @media screen and (min-width: 1024px) {
   .progress_wrap {
     z-index: 1;
     position: fixed;
     width: 10em;
     height: 20em;
-    right: 0;
+    right: 10vw;
     bottom: 5em;
   }
   .progress {

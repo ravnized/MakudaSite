@@ -10,10 +10,10 @@
               </a>
             </div>
             <div class='workBlockTitle'>
-          <p class="titleVideo noWrap"><?php echo $title; ?></p>
-          <br>
-          <p class='subTitleVideo makuda-color'><?php echo $subTitle; ?></p>
-          </div>
+              <p class="titleVideo noWrap"><?php echo $title; ?></p>
+              <br>
+              <p class='subTitleVideo makuda-color'><?php echo $subTitle; ?></p>
+            </div>
           </div>
         </div>
       </div>

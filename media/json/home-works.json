@@ -1,7 +1,9 @@
 [
     {
         "id": "BUFFEL",
-        "link": "Works_Toia.php",
+        "case-study": true,
+        "produzione": false,
+        "link": "Works_Buffel.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
         "title": "Buffel",
@@ -10,6 +12,8 @@
     },
     {
         "id": "PEDAVENA",
+        "case-study": true,
+        "produzione": false,
         "link": "Works_Toia.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img2.png",
@@ -19,6 +23,8 @@
     },
     {
         "id": "SUITES",
+        "case-study": true,
+        "produzione": false,
         "link": "Works_Toia.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
@@ -28,6 +34,8 @@
     },
     {
         "id": "DANZA",
+        "case-study": true,
+        "produzione": false,
         "link": "Works_Toia.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img2.png",
@@ -37,11 +45,79 @@
     },
     {
         "id": "DECUBE",
+        "case-study": true,
+        "produzione": false,
         "link": "Works_Toia.php",
         "image": "Matteo_Toia.jpg",
         "fragmented-image": "img1.png",
         "title": "De cube",
         "subtitle": "Case Study",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "ZODA",
+        "case-study": false,
+        "produzione": true,
+        "link": "Works_Toia.php",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Zoda",
+        "subtitle": "oh madre mia",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "DSQUARED2",
+        "case-study": false,
+        "produzione": true,
+        "link": "Works_Toia.php",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Dsquared2",
+        "subtitle": "55th anniversary",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "CARPISA",
+        "case-study": false,
+        "produzione": true,
+        "link": "carpisa.php",
+        "image": "carpisa1.png",
+        "fragmented-image": "img1.png",
+        "title": "Carpisa",
+        "subtitle": "Cordusio",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "TOIA",
+        "case-study": false,
+        "produzione": true,
+        "link": "Works_Toia.php",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Matteo Toia",
+        "subtitle": "\"Il Film\"",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "PIANTANIDA",
+        "case-study": false,
+        "produzione": true,
+        "link": "Works_Toia.php",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Piantadesign",
+        "subtitle": "Corporate",
+        "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    },
+    {
+        "id": "CIROC",
+        "case-study": false,
+        "produzione": true,
+        "link": "Works_Toia.php",
+        "image": "Matteo_Toia.jpg",
+        "fragmented-image": "img1.png",
+        "title": "Ciroc",
+        "subtitle": "B-roll",
         "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
     }
 ]

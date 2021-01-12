@@ -25,46 +25,37 @@
     <?php require "components/navbar.php";?>
 
     <?php require "components/menu.php";?>
-
+    <div class="progress_wrap">
+      <div class="progress">
+        <div class="progress_w_in">
+          <div class="progress_in_selected"></div>
+          <div class="progress_in"></div>
+        </div>
+        <div class="progress_subtitle">
+          <p>Scroll</p>
+        </div>
+      </div>
+    </div>
     <div class="mainSection">
       <section class="sectionFullWorks">
         <div class="workList">
-        <?php $id = '1';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Zoda';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-<?php $id = '2';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'DSQuared2';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-<?php $id = '3';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'Carpisa';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-<?php $id = '4';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'MATTEO TOIA';
-$subTitle;
-include './components/workListTemplate.php';?>
-
-<?php $id = '5';
-$linkPage = '/works/Works_Toia.php';
-$srcImg = '/media/img/Matteo_Toia.jpg';
-$title = 'PIANTANIDA DESIGN';
-$subTitle = 'quello che mi deve il $';
-include './components/workListTemplate.php';?>
-
-
+        <?php
+$myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
+$to_parse = fread($myfile, filesize("media/json/home-works.json"));
+fclose($myfile);
+$parsed = json_decode($to_parse, true);
+$c = 1;
+foreach ($parsed as $view) {
+  if(!$view['produzione']) continue;
+  $id = $c . "";
+  $linkPage = "/works/$view[link]";
+  $srcImg = "/media/img/works/$view[image]";
+  $title = $view["title"];
+  $subTitle = $view['subtitle'];
+  $c++;
+  include './components/workListTemplate.php';
+}
+?>
         </div>
       </section>
     </div>
