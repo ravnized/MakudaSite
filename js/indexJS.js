@@ -2,66 +2,7 @@ var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 $(document).ready(function () {
     /*NAPO*/
-    function sleep(ms) {
-        return new Promise((resolve) => setTimeout(resolve, ms));
-    }
-
-    async function homeBandAnimation() {
-        while (true) {
-            let g0 = $('#g0');
-            let g1 = $('#g1');
-            let g2 = $('#g2');
-            let s0 = $('#s0');
-            let s1 = $('#s1');
-            let s2 = $('#s2');
-            let s3 = $('#s3');
-            let s4 = $('#s4');
-            let s5 = $('#s5');
-            let s6 = $('#s6');
-            let s7 = $('#s7');
-            let s8 = $('#s8');
-            let s9 = $('#s9');
-            g0.show();
-            s0.css("opacity", 1);
-            await sleep(500);
-            s1.css("opacity", 1);
-            await sleep(500);
-            s2.css("opacity", 1);
-            await sleep(1000);
-            s0.css("opacity", 0);
-            s1.css("opacity", 0);
-            s2.css("opacity", 0);
-            g0.hide();
-            g1.show();
-            s3.css("opacity", 1);
-            await sleep(500);
-            s4.css("opacity", 1);
-            await sleep(500);
-            s5.css("opacity", 1);
-            await sleep(1000);
-            s3.css("opacity", 0);
-            s4.css("opacity", 0);
-            s5.css("opacity", 0);
-            g1.hide();
-            g2.show();
-            s6.css("opacity", 1);
-            await sleep(500);
-            s7.css("opacity", 1);
-            await sleep(500);
-            s8.css("opacity", 1);
-            await sleep(500);
-            s9.css("opacity", 1);
-            await sleep(1000);
-            s6.css("opacity", 0);
-            s7.css("opacity", 0);
-            s8.css("opacity", 0);
-            s9.css("opacity", 0);
-            g2.hide();
-        }
-    }
-
     let fadingCarouselClicked = false;
-    homeBandAnimation();
     $(".fading-circle").click(function (target) {
         let new_work_index = $(this).attr("data-index");
         let iormga = $(".fading-image.index-" + new_work_index);
@@ -216,7 +157,64 @@ $(document).ready(function () {
                 )
 
                 .add(function () {
+                    function sleep(ms) {
+                        return new Promise((resolve) => setTimeout(resolve, ms));
+                    }
+                    async function homeBandAnimation() {
+                        while (true) {
+                            let g0 = $('#g0');
+                            let g1 = $('#g1');
+                            let g2 = $('#g2');
+                            let s0 = $('#s0');
+                            let s1 = $('#s1');
+                            let s2 = $('#s2');
+                            let s3 = $('#s3');
+                            let s4 = $('#s4');
+                            let s5 = $('#s5');
+                            let s6 = $('#s6');
+                            let s7 = $('#s7');
+                            let s8 = $('#s8');
+                            let s9 = $('#s9');
+                            s1.css("opacity", 1);
+                            await sleep(500);
+                            s2.css("opacity", 1);
+                            await sleep(1000);
+                            s0.css("opacity", 0);
+                            s1.css("opacity", 0);
+                            s2.css("opacity", 0);
+                            g0.hide();
+                            g1.show();
+                            s3.css("opacity", 1);
+                            await sleep(500);
+                            s4.css("opacity", 1);
+                            await sleep(500);
+                            s5.css("opacity", 1);
+                            await sleep(1000);
+                            s3.css("opacity", 0);
+                            s4.css("opacity", 0);
+                            s5.css("opacity", 0);
+                            g1.hide();
+                            g2.show();
+                            s6.css("opacity", 1);
+                            await sleep(500);
+                            s7.css("opacity", 1);
+                            await sleep(500);
+                            s8.css("opacity", 1);
+                            await sleep(500);
+                            s9.css("opacity", 1);
+                            await sleep(1000);
+                            s6.css("opacity", 0);
+                            s7.css("opacity", 0);
+                            s8.css("opacity", 0);
+                            s9.css("opacity", 0);
+                            g2.hide();
+                            g0.show();
+                            s0.css("opacity", 1);
+                            await sleep(500);
+                        }
+                    }
                     reloadScrollBars();
+                    homeBandAnimation();
                 }, "animationVideoGruppo");
         }
 

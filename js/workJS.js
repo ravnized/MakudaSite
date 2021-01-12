@@ -56,25 +56,63 @@ function delay(URL) {
   });
 })();
 $(function () {
-  var tlFirst = gsap.timeline();
-  var workListItem = $(".workListItem");
-  tlFirst.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
-
-  Array.prototype.forEach.call(workListItem, (element) => {
-    tlFirst.fromTo(
-      element,
-      {
-        y: 600,
-        opacity: 0,
-      },
-      {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        ease: "back.out(1)",
-      }
-    );
-  });
+  var workListItem = $($(".workListItem").get().reverse());
+  gsap.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
+  gsap.fromTo(
+    workListItem,
+    {
+      opacity: 0,
+    },
+    {
+      duration: 1,
+      opacity: 1,
+      delay: 0.5
+    },
+  );
+  gsap.fromTo(
+    ".workListItem:nth-child(1)",
+    {
+      y: 200,
+    },
+    {
+      duration: 0.3,
+      y: 0,
+      delay: 0.5
+    },
+  );
+  gsap.fromTo(
+    ".workListItem:nth-child(2)",
+    {
+      y: 200,
+    },
+    {
+      duration: 0.8,
+      y: 0,
+      delay: 0.5
+    },
+  );
+  gsap.fromTo(
+    ".workListItem:nth-child(3)",
+    {
+      y: 200,
+    },
+    {
+      duration: 1.4,
+      y: 0,
+      delay: 0.5
+    },
+  );
+  gsap.fromTo(
+    ".progress_in",
+    {
+      height: 0,
+    },
+    {
+      duration: 1.5,
+      height: "80%",
+      delay: 1.5
+    },
+  );
 });
 $(window).on("scroll", function () {
   var s = $(window).scrollTop(),
@@ -83,7 +121,15 @@ $(window).on("scroll", function () {
 
   var scrollPercent = (s / (d - c)) * 100;
   $(".progress_in_selected").css("height", scrollPercent + "%");
-  console.log(scrollPercent);
+  //NAPO
+  var body = document.body,
+    html = document.documentElement;
+  var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+  if(s >  height - $(window).height() - $("footer").height())
+    $(".progress_wrap").css("bottom", s - (height - $(window).height() - $("footer").height()) + 100);
+  else 
+    $(".progress_wrap").css("bottom", "5em");
 });
 
 imageVideo.mousemove(function (e) {

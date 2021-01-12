@@ -1,28 +1,24 @@
 <div class="workListItem spaceWorkList" id="<?php echo $id; ?>">
-            <div class="container">
-              <div class="columns is-vcentered">
-                <div class="column">
-                  <div class="workBlockContainer">
-                    <div class="workBlock">
-                      <div class="workBlockImageSub">
-                        <a href="javascript:delay('<?php echo $linkPage; ?>')">
-                          <img alt="" class="imageVideo"  src="<?php echo $srcImg; ?>" />
-                        </a>
-                      </div>
-                      <div class='workBlockTitle'>
-
-                    <p class="titleVideo noWrap"><?php echo $title; ?></p
-                    >
-                    <br>
-                    <p class='subTitleVideo makuda-color'><?php echo $subTitle; ?></p
-                    >
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column ">
-
-                </div>
-              </div>
+  <div class="container" style="margin-left:10%;">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <div class="workBlockContainer">
+          <div class="workBlock">
+            <div class="workBlockImageSub">
+              <a href="javascript:delay('<?php echo $linkPage; ?>')">
+                <img alt="" class="imageVideo"  src="<?php echo $srcImg; ?>" />
+              </a>
             </div>
+            <div class='workBlockTitle'>
+          <p class="titleVideo noWrap"><?php echo $title; ?></p>
+          <br>
+          <p class='subTitleVideo makuda-color'><?php echo $subTitle; ?></p>
           </div>
+          </div>
+        </div>
+      </div>
+      <div class="column ">
+      </div>
+    </div>
+  </div>
+</div>

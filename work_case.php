@@ -31,7 +31,7 @@
           <div class="progress_in"></div>
         </div>
         <div class="progress_subtitle">
-          <img alt="" src="/media/gif/Scroll-Down.gif" />
+          <p>Scroll</p>
         </div>
       </div>
     </div>
