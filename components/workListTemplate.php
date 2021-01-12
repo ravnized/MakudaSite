@@ -6,7 +6,7 @@
           <div class="workBlock">
             <div class="workBlockImageSub">
               <a href="javascript:delay('<?php echo $linkPage; ?>')">
-                <img alt="" class="imageVideo"  src="<?php echo $srcImg; ?>" />
+                <img alt="" class="imageVideo" style="padding-top: 0 !important;"  src="<?php echo $srcImg; ?>" />
               </a>
             </div>
             <div class='workBlockTitle'>
