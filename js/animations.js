@@ -65,7 +65,7 @@ async function animateCustom(element, time, animation, easing = "linear", queue 
     });
 }
 
-function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
+async function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
 {
     if (margins.top == undefined)
         margins.top = 0;
@@ -147,19 +147,28 @@ function animateFadeIn(element, time, direction = null, margins = {top: 0, left:
             return;
     }
 
-    let options = {
-        duration: time,
-        easing: easing,
-        queue: queue,
-    };
 
-    if (direction == null)
-        element.animate(animation, {
+    return new Promise(function(resolve) {
+        let options = {
             duration: time,
-            queue: queue
-        });
-    else
-        element.animate(animation, options);
+            easing: easing,
+            queue: queue,
+            done: function() {
+                resolve();
+            }
+        };
+        
+        if (direction == null)
+            element.animate(animation, {
+                duration: time,
+                queue: queue,
+                done: function() {
+                    resolve();
+                }
+            });
+        else
+            element.animate(animation, options);
+    });
 }
 
 function animateFadeOut(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
