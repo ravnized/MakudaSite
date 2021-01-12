@@ -68,6 +68,10 @@ body {
   background-color: #111;
 }
 
+.workList{
+  padding: 50px 0;
+}
+
 .elementVideoCollection {
   width: 100.4em;
   height: 38.4em;
@@ -102,7 +106,6 @@ body {
   left: 0;
   will-change: transform;
   position: relative;
-  opacity: 0;
 }
 
 .workBlockContainer {
@@ -122,6 +125,7 @@ body {
   will-change: transform;
   transform-style: preserve-3d;
   transform-origin: 20% 50%;
+  opacity: 70%;
 }
 
 .workBlockTitle {
@@ -134,7 +138,17 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(200px) translateX(450px);
+  transform: translateY(200px) translateX(380px);
+  background: url("/media/icons/TRIANGOLINO.png") no-repeat;
+}
+
+.singleWorkBlockTitle {
+  font-family: Gelion-Black;
+  z-index: 10;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  will-change: transform;
+  text-transform: uppercase;
   background: url("/media/icons/TRIANGOLINO.png") no-repeat;
 }
 
@@ -143,6 +157,12 @@ body {
   left: 0;
   will-change: transform;
   z-index: 1;
+  opacity: 70%;
+  transition: all 0.5s;
+}
+
+.workBlockImageSub:hover {
+  opacity: 100%;
 }
 
 .workBlock {
@@ -160,6 +180,15 @@ body {
   letter-spacing: 0.2rem;
   will-change: transform;
   color: white;
+  line-height: 1;
+  padding-bottom: 10px;
+  transition: all 1s;
+}
+.workBlockTitle .titleVideo{
+  transition: all 1s;
+}
+.workBlockImageSub:hover + .workBlockTitle .titleVideo {
+  text-shadow: -2px 2px #f6b600;
 }
 
 .subTitleVideo {
@@ -288,7 +317,7 @@ video {
 }
 
 .spaceWorkList {
-  padding-top: 4em;
+  padding-top: 1em;
   transform-origin: center center;
 }
 
@@ -299,7 +328,11 @@ video {
 
 /*
 VideoJS Custom
- */
+*/
+
+ .workBlockImageSub .imageVideo {
+  padding-top: 34% !important;
+}
 
 .vjs-poster {
   background-color: transparent !important;
@@ -346,13 +379,75 @@ VideoJS Custom
   background: rgba(246, 182, 0, 0.2) !important;
 }
 
+.pubblicazione-social .frase {
+  color: black;
+  font-family: Gelion-light;
+  text-align: center;
+}
+
+.gif-cellulari .imageVideo {
+  background-color: rgb(255, 197, 32);
+  padding-top: 200% !important;
+}
+
+.gif-cellulare {
+  opacity: 0;
+}
+
+.imgs-slide {
+  padding: 50px 0;
+}
+.img-slide {
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 0 5px;
+}
+.img-slide:hover {
+  transform: scale(1.05, 1.05);
+  transform-origin: center;
+}
+.small-image {
+  padding-bottom: 70%;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+  margin: auto;
+}
+.big-image {
+  padding-bottom: 120%;
+  background-position: bottom;
+  width: 100%;
+  background-size: cover;
+  margin: auto;
+}
+
+#img1 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img2 {
+  background-image: url(/media/img/macchina2.jpg);
+}
+#img3 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img4 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img5 {
+  background-image: url(/media/img/macchina2.jpg);
+}
+#img6 {
+  background-image: url(/media/img/macchina1.jpg);
+}
 @media screen and (min-width: 1024px) {
   .progress_wrap {
     z-index: 1;
     position: fixed;
     width: 10em;
     height: 20em;
-    right: 30em;
+    right: 10vw;
     bottom: 5em;
   }
   .progress {
@@ -364,7 +459,7 @@ VideoJS Custom
   }
   .progress_w_in {
     position: absolute;
-    width: 1px;
+    width: 3px;
     height: 90%;
     left: 50%;
     overflow: hidden;
@@ -373,8 +468,9 @@ VideoJS Custom
     position: absolute;
     width: 200%;
     height: auto;
-    bottom: -25%;
+    bottom: 15%;
     left: -50%;
+    font-family: 'Gelion-light';
   }
   .progress_in,
   .progress_in_selected {
@@ -382,13 +478,14 @@ VideoJS Custom
     width: 3px;
     left: 0;
     top: 0;
-    height: 80%;
+    height: 0;
     background-color: #3c3b3b;
   }
   .progress_in_selected {
     z-index: 10;
-    height: 1em;
-    background-color: #2fe0b8;
+    height: 0;
+    background-color: #f6b600;
+    max-height: 80%;
   }
 }
 

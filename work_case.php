@@ -31,7 +31,7 @@
           <div class="progress_in"></div>
         </div>
         <div class="progress_subtitle">
-          <img alt="" src="/media/gif/Scroll-Down.gif" />
+          <p>Scroll</p>
         </div>
       </div>
     </div>
@@ -45,14 +45,14 @@ fclose($myfile);
 $parsed = json_decode($to_parse, true);
 $c = 1;
 foreach ($parsed as $view) {
-    $id = $c . "";
-    $linkPage = "/works/$view[link]";
-    $srcImg = "/media/img/$view[image]";
-    $title = $view["title"];
-    $subTitle = $view['subtitle'];
-    $c++;
-
-    include './components/workListTemplate.php';
+  if(!$view['case-study']) continue;
+  $id = $c . "";
+  $linkPage = "/works/$view[link]";
+  $srcImg = "/media/img/works/$view[image]";
+  $title = $view["title"];
+  $subTitle = $view['subtitle'];
+  $c++;
+  include './components/workListTemplate.php';
 }
 ?>
         </div>

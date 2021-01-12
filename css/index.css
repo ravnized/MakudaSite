@@ -39,6 +39,7 @@
 
 .band-view {
     margin: auto;
+    display: none;
 }
 
 .scrolldown-wrapper {

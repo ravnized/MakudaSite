@@ -30,7 +30,7 @@
         <div class="workList">
           <div class="workListItem">
             <div class="container">
-              <div class="workBlockContainer">
+              <!-- <div class="workBlockContainer">
                 <div class="workBlock">
                   <div class="workBlockImageSub">
                     <div class="container is-max-desktop">
@@ -59,7 +59,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="container textContainer">
                 <h1 class="tVideo">GELATERIA BUFFEL</h1>
                 <br /><br />

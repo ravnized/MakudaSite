@@ -71,9 +71,9 @@
 
         <div id="replacement"> <!-- se si sposta il replacement rompe lo scroller al refresh -->
             <div class="home-band grained">
-                <div id="g0" class="band-view">
-                    <p class="makuda-bold" style="font-size: 7em">
-                        <span id="s0">STRATEGIA</span>
+                <div id="g0" class="band-view" style="display:block;">
+                    <p class="makuda-bold" style="font-size: 7em;">
+                        <span id="s0" style="opacity:100%;">STRATEGIA</span>
                     </p>
                     <p class="black-font makuda-light">
                         <span id="s1">PER RAGGIUNGERE I</span>
@@ -87,10 +87,8 @@
                         <span id="s3">PRODUZIONE</span>
                     </p>
                     <p class="black-font makuda-light">
-                        <span id="s4" style="vertical-align: top">PER RACCONTARTI</span>
-                        <span id="s5" class="makuda-bold" style="font-size: 2em"
-                        >AL MEGLIO</span
-                        >
+                        <span id="s4" style="vertical-align:top">PER RACCONTARTI</span>
+                        <span id="s5" class="makuda-bold" style="font-size:2em;position:relative;top:-12px;">AL MEGLIO</span>
                     </p>
                 </div>
                 <div id="g2" class="band-view">
@@ -102,12 +100,11 @@
                         <span id="s8" class="makuda-bold">FERMARTI</span>
                     </p>
                     <p
-                            class="white-font makuda-bold"
-                            style="
-                  font-size: 19em;
-                  margin-left: 0.15em;
-                  margin-top: -0.15em;
-                "
+                        class="white-font makuda-bold"
+                        style="
+                        font-size: 19em;
+                        margin-left: 0.15em;
+                        margin-top: -0.15em;"
                     >
                         <span id="s9">MAI</span>
                     </p>
