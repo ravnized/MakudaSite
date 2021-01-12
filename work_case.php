@@ -38,20 +38,21 @@
     <div class="mainSection">
       <section class="sectionFullWorks">
         <div class="workList">
-        <?php
+<?php
 $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
 $to_parse = fread($myfile, filesize("media/json/home-works.json"));
 fclose($myfile);
 $parsed = json_decode($to_parse, true);
 $c = 1;
 foreach ($parsed as $view) {
-  $id = $c."";
-  $linkPage = "/works/$view[link]";
-  $srcImg = "/media/img/works/$view[image]";
-  $title = $view["title"];
-  $subTitle = 'Case Study';
-  $c++;
-  include './components/workListTemplate.php';
+    $id = $c . "";
+    $linkPage = "/works/$view[link]";
+    $srcImg = "/media/img/$view[image]";
+    $title = $view["title"];
+    $subTitle = $view['subtitle'];
+    $c++;
+
+    include './components/workListTemplate.php';
 }
 ?>
         </div>

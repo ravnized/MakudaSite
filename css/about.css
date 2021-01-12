@@ -237,7 +237,7 @@ strong {
   font-size: 6em;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 .numberParallelepipedo {
@@ -251,7 +251,7 @@ strong {
 .parallelepipedo .secondText {
   font-size: 2em;
   position: absolute;
-  transform: skewY(20deg) translateX(-50px) translateY(600px) scale(-1, -1);
+  transform: skewY(20deg) translateX(-50px) translateY(650px) scale(-1, -1);
   transform-origin: 0 0;
   font-family: Gelion-black;
   writing-mode: vertical-rl;
@@ -464,7 +464,7 @@ div > .uno {
   font-size: 15px;
   color: white;
   font-family: Gelion-Black, sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 .titleInsideSquare:before {

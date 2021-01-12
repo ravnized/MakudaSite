@@ -52,18 +52,21 @@
 
 
     <div id="video-compare-container">
-    <video id="video2"
-      autoplay
-      loop
-      muted
-    >
-      <source
-      src='/media/video/A Story Of Matteo web Optimization.mp4'>
+        <div class="mask">
+            <video id="video2"
 
-    </video>
+                   loop
+                   muted
+            >
+                <source
+                        src='/media/video/A Story Of Matteo web Optimization.mp4'>
+
+            </video>
+        </div>
+
     <div id="video-clipper">
       <video id="video1"
-        autoplay
+
         loop
         muted
       >
@@ -80,6 +83,7 @@
       integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script src="js/menu.js" type="text/javascript"></script>
     <script src='js/pre_works.js' type='text/javascript'></script>

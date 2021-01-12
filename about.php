@@ -71,7 +71,6 @@
         <p class="boldBig white-font" style="font-size: 25px;">IL NOSTRO <span class="makuda-color">
                 TEAM </span>
         </p>
-        <p class="white-font" style="line-height: 25px;">Il tuo progetto nelle migliori mani</p>
     </div>
     <div class="container" style="margin-top: 25px;">
         <div id="team-container">
@@ -147,6 +146,7 @@
             </div>
         </div>
     </div>
+    </div>
     <div class="makuda-bgcolor has-text-centered significato-makuda">
         <div class="container">
             <p class="whiteText quote">
@@ -160,19 +160,19 @@
             <div style="flex: 1"></div>
             <div style="display: flex;">
                 <div class="counter-box">
-                    <p class="counter">2451</p>
+                    <span class="counter" data-count='249'>0</span>
                     <p class="italian-counter">PROGETTI COMPLETATI</p>
                 </div>
                 <div class="counter-box">
-                    <p class="counter">1245</p>
+                    <span class="counter" data-count='249'>0</span>
                     <p class="italian-counter">CLIENTI SODDISFATTI</p>
                 </div>
                 <div class="counter-box">
-                    <p class="counter">870</p>
+                    <span class="counter" data-count='249'>0</span>
                     <p class="italian-counter">POST - IT ATTACCATI</p>
                 </div>
                 <div class="counter-box">
-                    <p class="counter">2451</p>
+                    <span class="counter" data-count='249'>0</span>
                     <p class="italian-counter">CAFFÈ BEVUTI</p>
                 </div>
             </div>
@@ -195,7 +195,7 @@
     <script src="js/carouselManipulator.js"></script>
 
     <script src="js/parallelepipedoJS.js"></script>
-    <script src="js/animations.js"></script>
+
 </body>
 
 </html>

@@ -1,9 +1,3 @@
-<?php
-$dir_name = dirname(__FILE__);
-$root = $_SERVER['DOCUMENT_ROOT'];
-$this_folder = substr($dir_name, strlen($root), strlen($dir_name));
-?>
-
 <div class="menuWrapper">
   <div class="exit" onclick="animateMenuReverse()">
   <div class='columns is-vcentered'>
@@ -21,7 +15,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
 
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="<?=$this_folder;?>/../index.php">
+      <a href="/index.php">
         <span class="letter">H</span>
         <span class="letter">O</span>
         <span class="letter">M</span>
@@ -32,7 +26,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
 
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="<?=$this_folder;?>/../about.php">
+      <a href="/about.php">
         <span class="letter">A</span>
         <span class="letter">B</span>
         <span class="letter">O</span>
@@ -43,7 +37,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
   </div>
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="<?=$this_folder;?>/../pre_works.php">
+      <a href="/pre_works.php">
         <span class="letter">W</span>
         <span class="letter">O</span>
         <span class="letter">R</span>
@@ -54,7 +48,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
   </div>
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="<?=$this_folder;?>/../contacts.php">
+      <a href="/contacts.php">
         <span class="letter">C</span>
         <span class="letter">O</span>
         <span class="letter">N</span>
@@ -70,7 +64,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
 
 <div class="menu-background">
   <img
-    src="<?=$this_folder;?>/../media/img/Freccia_Menu.png"
+    src="/media/img/Freccia_Menu.png"
     style="height: 100%; width: 100%"
     alt=""
   />

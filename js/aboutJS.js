@@ -17,7 +17,6 @@ document.addEventListener("scroll", function (e) {
         {
           countNum: countTo,
         },
-
         {
           duration: 3000,
           easing: "linear",
@@ -26,7 +25,6 @@ document.addEventListener("scroll", function (e) {
           },
           complete: function () {
             $this.text(this.countNum);
-            console.log("aaa");
           },
         }
       );
