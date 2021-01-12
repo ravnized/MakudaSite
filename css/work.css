@@ -68,7 +68,7 @@ body {
   background-color: #111;
 }
 
-.workList{
+.workList {
   padding: 50px 0;
 }
 
@@ -184,7 +184,7 @@ body {
   padding-bottom: 10px;
   transition: all 1s;
 }
-.workBlockTitle .titleVideo{
+.workBlockTitle .titleVideo {
   transition: all 1s;
 }
 .workBlockImageSub:hover + .workBlockTitle .titleVideo {
@@ -330,7 +330,7 @@ video {
 VideoJS Custom
 */
 
- .workBlockImageSub .imageVideo {
+.workBlockImageSub .imageVideo {
   padding-top: 34% !important;
 }
 
@@ -390,9 +390,9 @@ VideoJS Custom
   padding-top: 200% !important;
 }
 
-.gif-cellulare {
+/* .gif-cellulare {
   opacity: 0;
-}
+} */
 
 .imgs-slide {
   padding: 50px 0;
@@ -470,7 +470,7 @@ VideoJS Custom
     height: auto;
     bottom: 15%;
     left: -50%;
-    font-family: 'Gelion-light';
+    font-family: "Gelion-light";
   }
   .progress_in,
   .progress_in_selected {
