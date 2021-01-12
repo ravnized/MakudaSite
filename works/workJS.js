@@ -13,8 +13,19 @@ $(function () {
     //     },
     //     "animationStart"
     // );
+    var otslider = new OTSlider();
+    otslider.init({
+        element: document.getElementById('ot-slider')
+      });
 });
 gsap.registerPlugin(CSSRulePlugin);
+$(".img-slide").on("mouseenter", function (){
+    $(".img-slide").css("opacity", "60%");
+    $(this).css("opacity", 1);
+});
+$(".img-slide").on("mouseleave", function (){
+    $(".img-slide").css("opacity", 1);
+});
 $(window).on("scroll", function () {
     var s = $(window).scrollTop(),
         d = $(document).height(),

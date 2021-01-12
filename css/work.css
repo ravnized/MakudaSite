@@ -394,17 +394,33 @@ VideoJS Custom
   opacity: 0;
 }
 
+.imgs-slide {
+  padding: 50px 0;
+}
+.img-slide {
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 0 5px;
+}
+.img-slide:hover {
+  transform: scale(1.05, 1.05);
+  transform-origin: center;
+}
 .small-image {
-  padding-bottom: 60%;
+  padding-bottom: 70%;
   background-position: center;
   width: 100%;
   background-size: cover;
+  margin: auto;
 }
 .big-image {
-  padding-bottom: 90%;
-  background-position: center;
+  padding-bottom: 120%;
+  background-position: bottom;
   width: 100%;
   background-size: cover;
+  margin: auto;
 }
 
 #img1 {
@@ -414,6 +430,15 @@ VideoJS Custom
   background-image: url(/media/img/macchina2.jpg);
 }
 #img3 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img4 {
+  background-image: url(/media/img/macchina1.jpg);
+}
+#img5 {
+  background-image: url(/media/img/macchina2.jpg);
+}
+#img6 {
   background-image: url(/media/img/macchina1.jpg);
 }
 @media screen and (min-width: 1024px) {

@@ -193,16 +193,39 @@ foreach ($parsed as $v)
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container imgs-slide">
       <div class="columns">
         <div class="column">
-          <div id="img1" class="small-image"></div>
+          <div class="img-slide">
+            <div id="img1" class="small-image" data-toggle="modal" data-target="#myModal"></div>
+          </div>
         </div>
         <div class="column">
-          <div id="img2" class="big-image"></div>
+          <div class="img-slide">
+            <div id="img2" class="big-image"></div>
+          </div>
         </div>
         <div class="column">
-          <div id="img3" class="small-image"></div>
+          <div class="img-slide">
+            <div id="img3" class="small-image"></div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="img-slide">
+            <div id="img4" class="big-image"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img-slide">
+            <div id="img5" class="small-image"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="img-slide">
+            <div id="img6" class="big-image"></div>
+          </div>
         </div>
       </div>
     </div>
