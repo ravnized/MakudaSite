@@ -476,7 +476,90 @@ div > .uno {
 }
 
 .start-text {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
-  line-height: 18px;
+  line-height: 24px;
 }
+
+.text-light {
+  font-family: Gelion-Light;
+}
+
+.we-are-title {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+#subtitle-valore {
+  color: #f6b600;
+  font-size: 25px;
+  opacity: 1;
+  margin-bottom: 18px;
+}
+
+#valori-container {
+  position: relative;
+  display: inline-block;
+  width: 770px;
+}
+
+.valori-title {
+  font-size: 27px;
+  font-style: italic;
+  font-family: Gelion-Regular;
+  cursor: pointer;
+}
+
+.valori-line {
+  width: 10px;
+  display: inline-block;
+  height: 3px;
+  transform: skewX(-40deg);
+  margin: 0 20px 4px 20px;
+  background-color: #f6b600;
+}
+
+.separation-line {
+  height: 2px;
+  margin: 0 auto;
+  width: 140px;
+  background-color: white;
+}
+
+#valori-text-container {
+  position: relative;
+  display: flex;
+}
+
+.valori-vertical-line {
+  margin-top: 15px;
+  height: 0px;
+  background-color: #111;
+  z-index: 2;
+  position: absolute;
+  border-right: 3px solid white;
+  /* padding-bottom: 5px; */
+}
+
+#valori-text {
+  opacity: 0;
+  font-size: 21px;
+  font-family: Gelion-Regular;
+  text-align: left;
+  color: #f6b600;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 700px;
+  z-index: 0;
+}
+
+/* #valori-mask {
+  opacity: 0;
+  z-index: 2;
+  width: 400px;
+  top: 0;
+  left: 30px;
+  position: absolute;
+  background-color: #111;
+} */

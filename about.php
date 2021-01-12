@@ -23,42 +23,52 @@
 
     <?php require("components/menu.php"); ?>
 
-    <div class="container has-text-centered">
+    <div class="container has-text-centered" style="margin-bottom: 10px;">
         <p class="boldBig makuda-color">WE ARE</p>
     </div>
-    <div style="margin: 60px 5%;">
+    <hr class="separation-line">
+    <div class="has-text-centered" style="margin-top: 20px;">
         <div class="container">
-            <p class="boldBig makuda-color titleInsideSquare" style="font-size: 17px;"> MISSION </p>
-            <p class="start-text">
-                “Trasmettere un modo nuovo di vedere i colori della vita quotidiana,
-                per raggiungere i propri obiettivi senza timore degli ostacoli”. Makuda è
-                in un processo di costante crescita che ci porta ad affrontare ogni realtà
-                in maniera positiva aggiungendo nuove competenze. Crescere per noi è imparare
-                a saper offrire le giuste sfumature di colore per un obiettivo finale concreto,
-                che sia sempre di successo e di qualità.
+            <p class="boldBig makuda-color we-are-title"> MISSION </p>
+            <p class="start-text" style="font-style: italic; margin-bottom: 25px;">
+                “Trasmettere un modo nuovo di vedere i colori della vita quotidiana,<br>
+                per raggiungere i propri obiettivi senza timore degli ostacoli”
+            </p>
+            <p class="start-text text-light">
+                Makuda è in un processo di costante crescita che ci porta ad affrontare
+                ogni realtà in maniera positiva.<br>
+                Crescere per noi è imparare a saper offrire le giuste sfumature di colore
+                per un obiettivo finale<br>
+                concreto, che sia sempre di successo e di qualità.
             </p>
         </div>
-        <div class="container" style="margin-top: 30px;">
-            <p class="boldBig makuda-color" style="font-size: 17px;"> VALORI </p>
-            <p class="start-text">
-                Curiosità: Se il nero rappresenta l'oscurità, l'inesplorato allora rappresenta anche
-                tutto ciò che la curiosità ti porta ad esplorare.
-            </p>
-            <br>
-            <p class="start-text">
-                Creazione: Perché il nero rappresenta l'attimo prima del processo di creazione, l'attimo prima
-                che si accenda la lampadina.
-            </p>
-            <br>
-            <p class="start-text">
-                Crescita: Qualsiasi sia il valore che si dà al nero esso rappresenta anche un punto di arrivo.
-                Se è vero che il nero è un non colore, è anche vero che esso è l'insieme di tutti i colori.
-                È solo esplorando tutte le sfumature che è possibile crescere.
-            </p>
+        <div class="" id="valori-container" style="margin-top: 30px; margin-bottom: 30px;">
+            <p class="boldBig makuda-color we-are-title"> VALORI </p>
+            <p id="subtitle-valore"> “Makuda significa tutto nero in lingua Shona” </p>
+            <div>
+                <span class="valori-title"> Trasparenza </span>
+                <hr class="valori-line">
+                <span class="valori-title"> Curiosità </span>
+                <hr class="valori-line">
+                <span class="valori-title"> Creazione </span>
+                <hr class="valori-line">
+                <span class="valori-title"> Crescita </span>
+            </div>
+            <div id="valori-text-container">
+                <div class="valori-vertical-line" id="valori-vertical-line"> </div>
+                <div class="valori-vertical-line" style="position: relative;"> </div>
+                <div style="flex: 1"> </div>
+                <p id="valori-text">
+                    Makuda crede che il proprio operato debba essere un esempio
+                    di una consulenza chiara e trasparente in ogni step, nel
+                    rispetto dei ruoli e degli obiettivi.
+                </p>
+            </div>
         </div>
     </div>
+    <hr class="separation-line" style="margin: 0 auto 40px auto;">
     <div class="container has-text-centered">
-        <p class="boldBig white-font" style="font-size: 25px; padding-top: 30px;">IL NOSTRO <span class="makuda-color">
+        <p class="boldBig white-font" style="font-size: 25px;">IL NOSTRO <span class="makuda-color">
                 TEAM </span>
         </p>
         <p class="white-font" style="line-height: 25px;">Il tuo progetto nelle migliori mani</p>
@@ -68,79 +78,71 @@
             <div class="person-container">
                 <img src="/media/img/team/1.jpg" class="person-image">
                 <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
-                    <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
+                    <li><a class="person-link" href="#">Facebook</a></li>
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
                 </ul>
                 <div style="flex: 1"> </div>
                 <div class="person-infos">
-                    <h5 style="font-size: 30px;">Herald Johnson</h5>
-                    <h6 style="font-size: 26px;">Backend</h6>
-                </div>
-            </div>
-            <div class="person-container">
-                <img src="/media/img/team/1b.jpg" class="person-image">
-                <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
-                    <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
-                </ul>
-                <div style="flex: 1"> </div>
-                <div class="person-infos">
-                    <h5 style="font-size: 30px;">Jake Thompson</h5>
-                    <h6 style="font-size: 26px;">UX Desing</h6>
+                    <h5 style="font-size: 30px;">Stefano D'onofrio</h5>
+                    <h6 style="font-size: 26px;">Founder & Manager</h6>
                 </div>
             </div>
             <div class="person-container">
                 <img src="/media/img/team/2.jpg" class="person-image">
                 <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
                     <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
                 </ul>
                 <div style="flex: 1"> </div>
                 <div class="person-infos">
-                    <h5 style="font-size: 30px;">Tobias Dupré</h5>
-                    <h6 style="font-size: 26px;">Illustration</h6>
-                </div>
-            </div>
-            <div class="person-container">
-                <img src="/media/img/team/2b.jpg" class="person-image">
-                <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
-                    <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
-                </ul>
-                <div style="flex: 1"> </div>
-                <div class="person-infos">
-                    <h5 style="font-size: 30px;">Liam Kim</h5>
-                    <h6 style="font-size: 26px;">Frontend</h6>
+                    <h5 style="font-size: 30px;">Simone Santacroce</h5>
+                    <h6 style="font-size: 26px;">Founder & Director</h6>
                 </div>
             </div>
             <div class="person-container">
                 <img src="/media/img/team/3.jpg" class="person-image">
                 <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
-                    <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
                 </ul>
                 <div style="flex: 1"> </div>
                 <div class="person-infos">
-                    <h5 style="font-size: 30px;">Lin Becker</h5>
-                    <h6 style="font-size: 26px;">Marketing</h6>
+                    <h5 style="font-size: 30px;">Simone Bioli</h5>
+                    <h6 style="font-size: 26px;">Photografer & Videomaker</h6>
                 </div>
             </div>
             <div class="person-container">
-                <img src="/media/img/team/3b.jpg" class="person-image">
+                <img src="/media/img/team/4.jpg" class="person-image">
                 <ul class="person-links">
-                    <li><a class="person-link" href="#">Twitter</a></li>
                     <li><a class="person-link" href="#">Instagram</a></li>
-                    <li><a class="person-link" href="#">Behance</a></li>
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
                 </ul>
                 <div style="flex: 1"> </div>
                 <div class="person-infos">
-                    <h5 style="font-size: 30px;">Ronald Duncan</h5>
-                    <h6 style="font-size: 26px;">Photography</h6>
+                    <h5 style="font-size: 30px;">Taras Snegovoy</h5>
+                    <h6 style="font-size: 26px;">Director & 3D Generalist</h6>
+                </div>
+            </div>
+            <div class="person-container">
+                <img src="/media/img/team/5.jpg" class="person-image">
+                <ul class="person-links">
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
+                </ul>
+                <div style="flex: 1"> </div>
+                <div class="person-infos">
+                    <h5 style="font-size: 30px;">Riccardo Vitonto</h5>
+                    <h6 style="font-size: 26px;">Designer</h6>
+                </div>
+            </div>
+            <div class="person-container">
+                <img src="/media/img/team/6.jpg" class="person-image">
+                <ul class="person-links">
+                    <li><a class="person-link" href="#">Instagram</a></li>
+                    <li><a class="person-link" href="#">LinkedIn</a></li>
+                </ul>
+                <div style="flex: 1"> </div>
+                <div class="person-infos">
+                    <h5 style="font-size: 30px;">Armando Aspesani</h5>
+                    <h6 style="font-size: 26px;">Project Manager</h6>
                 </div>
             </div>
         </div>

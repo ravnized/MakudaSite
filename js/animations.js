@@ -5,6 +5,8 @@ const AnimationDirection = {
     right: 3,
 };
 
+let liveAnimations = [];
+
 function isScrolledIntoView (element, fullyInView, offset = 0) {
     let pageTop = $(window).scrollTop();
     let pageBottom = pageTop + $(window).height();
@@ -16,6 +18,51 @@ function isScrolledIntoView (element, fullyInView, offset = 0) {
     } else {
         return ((elementTop + offset <= pageBottom) && (elementBottom >= pageTop));
     }
+}
+
+function stopAllAnimations()
+{
+    for(let i=0; i<liveAnimations.length; i++)
+        $(liveAnimations[i]).stop(true);
+    liveAnimations = [];
+}
+
+async function animateWithQueue (queue)
+{
+    return new Promise(async function(resolve) {
+        for(let i=0; i<queue.length; i++)
+            await animateCustom(
+                queue[i][0],
+                queue[i][1],
+                queue[i][2],
+                queue[i][3],
+                queue[i][4],
+                queue[i][5]
+            );
+        resolve(true);
+    });
+}
+
+async function animateCustom(element, time, animation, easing = "linear", queue = false, step = undefined) {
+    if (easing == undefined)
+        easing = "linear";
+    if (queue == undefined)
+        queue = false;
+    
+    liveAnimations.push(this);
+
+    return new Promise(resolve => {
+        element.animate(animation, {
+            duration: time,
+            queue: queue,
+            easing: easing,
+            step: step,
+            done: function() {
+                liveAnimations.remove(this);
+                resolve(true);
+            }
+        });
+    });
 }
 
 function animateFadeIn(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
@@ -100,8 +147,6 @@ function animateFadeIn(element, time, direction = null, margins = {top: 0, left:
             return;
     }
 
-    console.log(margins.isPadding, direction);
-
     let options = {
         duration: time,
         easing: easing,
@@ -117,7 +162,7 @@ function animateFadeIn(element, time, direction = null, margins = {top: 0, left:
         element.animate(animation, options);
 }
 
-function animateFadeOut(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutExpo", queue = false)
+function animateFadeOut(element, time, direction = null, margins = {top: 0, left: 0, bottom: 0, right: 0, isPadding: false}, easing = "easeOutCubic", queue = false)
 {
     if (margins.top == undefined)
         margins.top = 600;
@@ -243,4 +288,15 @@ $(document).ready(function() {
             e.element.css({"top": pos + "px", "transform": "translateY(" + -pos + "px)"});
         });
     });
-})
+});
+
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
