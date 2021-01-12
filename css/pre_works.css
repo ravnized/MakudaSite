@@ -89,7 +89,7 @@ body .makuda-home-link span:first-child {
 
 body .makuda-home-link-works span:first-child {
     font-size: 1.7em;
-    margin: -40px 0 3px 0;
+    margin: -16px 0 3px 0;
 }
 
 .makuda-home-link--works .makuda-home-link span:last-child {
@@ -229,48 +229,44 @@ Contacts
     margin: 20px 0 3px 0;
 
     transform: translateX(100px);
-    color: rgb(255, 197, 32, 0);
+    color: rgba(255, 197, 32, 0);
 }
 
 .makuda-home-link--contacts span:last-child {
     margin: 0;
     font-size: 1.7em;
-    color: rgb(255, 197, 32, 0);
+    color: rgba(255, 197, 32, 0);
     transform: translateX(-50px);
 }
 
 .makuda-home-link--contacts.is-loaded span:first-child {
-    color: rgb(255, 197, 32, 0.6);
+    color: rgba(255, 197, 32, 0.6);
     transform: translateX(-1000px);
 }
 
 .makuda-home-link--contacts.is-loaded span:last-child {
-    color: rgb(255, 197, 32, 0.6);
+    color: rgba(255, 197, 32, 0.6);
     transform: translateX(1000px);
 }
 
-.makuda-home-link--contacts.is-loaded
-.makuda-home-link.is-hover
-span:first-child {
-    color: rgb(255, 197, 32, 1);
-    transform: translateX(0px) !important;
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+    color: rgba(255, 197, 32, 1);
+    transform: translateX(-40px) !important;
 }
 
-.makuda-home-link--contacts.is-loaded
-.makuda-home-link.is-hover
-span:last-child {
-    transform: translateX(0px) !important;
-    color: rgb(255, 197, 32, 1);
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+    transform: translateX(-40px) !important;
+    color: rgba(255, 197, 32, 1);
 }
 
 .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
-    color: rgb(255, 197, 32, 1);
-    transform: translateX(0px) !important;
+    color: rgba(255, 197, 32, 1);
+    transform: translateX(-40px) !important;
 }
 
 .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:last-child {
-    transform: translateX(0px) !important;
-    color: rgb(255, 197, 32, 1);
+    transform: translateX(-40px) !important;
+    color: rgba(255, 197, 32, 1);
 }
 
 .noWrap {
