@@ -144,48 +144,73 @@ foreach ($parsed as $v)
         <div class="columns">
             <div class="column">
                 <div class="img-slide">
-                    <div id="img1" class="small-image" data-toggle="modal" data-target="#myModal"></div>
+                    <div id="img1" class="small-image image-div"></div>
                 </div>
             </div>
             <div class="column">
                 <div class="img-slide">
-                    <div id="img2" class="big-image"></div>
+                    <div id="img2" class="big-image image-div"></div>
                 </div>
             </div>
             <div class="column">
                 <div class="img-slide">
-                    <div id="img3" class="small-image"></div>
+                    <div id="img3" class="small-image image-div"></div>
                 </div>
             </div>
         </div>
         <div class="columns">
             <div class="column">
                 <div class="img-slide">
-                    <div id="img4" class="big-image"></div>
+                    <div id="img4" class="big-image image-div"></div>
                 </div>
             </div>
             <div class="column">
                 <div class="img-slide">
-                    <div id="img5" class="small-image"></div>
+                    <div id="img5" class="small-image image-div"></div>
                 </div>
             </div>
             <div class="column">
                 <div class="img-slide">
-                    <div id="img6" class="big-image"></div>
+                    <div id="img6" class="big-image image-div"></div>
                 </div>
             </div>
         </div>
-        <?php require "../components/footer.php"?>
+    </div>
+    <div class="full-screen-carousel" style="display:none;">
+        <div class="full-screen-carousel-background"></div>
+        <div class="full-screen-carousel-container">
+            <div id="img1" class="full-screen-carousel-image"></div>
+            <div id="img2" class="full-screen-carousel-image"></div>
+            <div id="img3" class="full-screen-carousel-image"></div>
+            <div id="img4" class="full-screen-carousel-image"></div>
+            <div id="img5" class="full-screen-carousel-image"></div>
+            <div id="img6" class="full-screen-carousel-image"></div>
+        </div>
+        <div class="full-screen-carousel-control left">
+            <div class="full-screen-carousel-arrow">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+        </div>
+        <div class="full-screen-carousel-control right">
+            <div class="full-screen-carousel-arrow right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <?php require "../components/footer.php"?>
 
-        <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
-        <script crossorigin="anonymous"
-            integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-        <script src="workJS.js" type="text/javascript"></script>
-        <script src="/js/menu.js" type="text/javascript"></script>
-        <script src="/js/aboutJS.js" type="text/javascript"></script>
-        <script src="/js/animations.js" type="text/javascript"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/9eeab300fc.js"
+    ></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+    <script crossorigin="anonymous"
+        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script src="workJS.js" type="text/javascript"></script>
+    <script src="/js/menu.js" type="text/javascript"></script>
+    <script src="/js/aboutJS.js" type="text/javascript"></script>
 </body>
 
 </html>

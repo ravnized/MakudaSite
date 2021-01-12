@@ -1,88 +1,172 @@
 $(function () {
-    var tl = gsap.timeline();
-    $(".descVideo").css({display: "block"});
-    // tl.to('.workListItem',{duration: 0.5, opacity: 1});
-    // tl.to(window, {duration: 0.5, scrollTo: {x: 0, y: 0}});
-    // tl.to(".tVideo", {x: 0, autoAlpha: 1}, "animationStart");
-    // tl.to(".subVideo", {x: 0, autoAlpha: 1}, "animationStart");
-    // tl.to(
-    //     ".descVideo",
-    //     {
-    //         y: 0,
-    //         autoAlpha: 1,
-    //         blur: 0,
-    //     },
-    //     "animationStart"
-    // );
-
+  var tl = gsap.timeline();
+  $(".descVideo").css({ display: "block" });
+  // tl.to('.workListItem',{duration: 0.5, opacity: 1});
+  // tl.to(window, {duration: 0.5, scrollTo: {x: 0, y: 0}});
+  // tl.to(".tVideo", {x: 0, autoAlpha: 1}, "animationStart");
+  // tl.to(".subVideo", {x: 0, autoAlpha: 1}, "animationStart");
+  // tl.to(
+  //     ".descVideo",
+  //     {
+  //         y: 0,
+  //         autoAlpha: 1,
+  //         blur: 0,
+  //     },
+  //     "animationStart"
+  // );
 });
 gsap.registerPlugin(CSSRulePlugin);
 $(".img-slide").on("mouseenter", function () {
-    $(".img-slide").css("opacity", "60%");
-    $(this).css("opacity", 1);
+  $(".img-slide").css("opacity", "60%");
+  $(this).css("opacity", 1);
 });
 $(".img-slide").on("mouseleave", function () {
-    $(".img-slide").css("opacity", 1);
+  $(".img-slide").css("opacity", 1);
 });
 $(window).on("scroll", function () {
-    var s = $(window).scrollTop(),
-        d = $(document).height(),
-        c = $(window).height();
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
 
-//     var animatedPhone = $(".gif-cellulari").attr("data-animated");
-//     if(s + c > parseInt($(".gif-cellulari").offset().top) && animatedPhone == "true"){
-//         $(".gif-cellulari").attr("data-animated", "false");
-//         gsap.fromTo(
-//             "#video2",
-//             {
-//               opacity: 0,
-//             },
-//             {
-//               opacity: 1,
-//               duration: 1,
-//               delay: 0.5
-//             },
-//           );
-//         // gsap.fromTo(
-//         //     ".gif-cellulare:nth-child(even)",
-//         //     {
-//         //         opacity: 0,
-//         //     },
-//         //     {
-//         //         duration: 3,
-//         //         opacity: 1,
-//         //         delay: 0.5
-//         //     },
-//         // );
-//     }
+  //     var animatedPhone = $(".gif-cellulari").attr("data-animated");
+  //     if(s + c > parseInt($(".gif-cellulari").offset().top) && animatedPhone == "true"){
+  //         $(".gif-cellulari").attr("data-animated", "false");
+  //         gsap.fromTo(
+  //             "#video2",
+  //             {
+  //               opacity: 0,
+  //             },
+  //             {
+  //               opacity: 1,
+  //               duration: 1,
+  //               delay: 0.5
+  //             },
+  //           );
+  //         // gsap.fromTo(
+  //         //     ".gif-cellulare:nth-child(even)",
+  //         //     {
+  //         //         opacity: 0,
+  //         //     },
+  //         //     {
+  //         //         duration: 3,
+  //         //         opacity: 1,
+  //         //         delay: 0.5
+  //         //     },
+  //         // );
+  //     }
+});
+$(".image-div").on("click", function () {
+  $(".full-screen-carousel").css("display", "block");
+  $(".full-screen-carousel-image#" + $(this).attr("id")).addClass("selected");
+  disableScroll();
+  setTimeout(() => {
+    $(".full-screen-carousel").addClass("open");
+  }, 100);
+});
+$(".full-screen-carousel-background, .full-screen-carousel-container").on(
+  "click",
+  function () {
+    $(".full-screen-carousel").removeClass("open");
+    $(".full-screen-carousel-image.selected").removeClass("selected");
+    enableScroll();
+    setTimeout(() => {
+      $(".full-screen-carousel").css("display", "none");
+    }, 1000);
+  }
+);
+$(".full-screen-carousel-control").on("click", function () {
+  let selected = $(".full-screen-carousel-image.selected");
+  let selectedIndex = selected.index();
+  let totalIndexes = $(".full-screen-carousel-image").length;
+  let newIndex = selectedIndex + 1;
+  if ($(this).hasClass("left")) {
+    newIndex = selectedIndex - 1;
+  }
+  newIndex = newIndex == -1 ? totalIndexes - 1 : newIndex;
+  newIndex = newIndex == totalIndexes ? 0 : newIndex;
+  newIndex++;
+  $(".full-screen-carousel-image.selected").removeClass("selected");
+  $(".full-screen-carousel-image:nth-child(" + newIndex + ")").addClass(
+    "selected"
+  );
 });
 
 $(window).on("scroll resize", async function () {
-    if (isScrolledIntoView($(".gif-cellulari"), false, 0)) {
-        animateCustom($(".gif-cellulari .column:eq(1)"), 850, {"margin-top": "0"}, "easeOutCubic", true);
-        await animateFadeIn($(".gif-cellulari .column:eq(1)"), 500);
-        animateFadeIn($(".gif-cellulari .column:eq(0)"), 500);
-        animateCustom($(".gif-cellulari .column:eq(0)"), 850, {"margin-top": "0"}, "easeOutCubic", true);
-        $(".gif-cellulari .column:eq(0)").css("transform", "scale(1)");
-        animateFadeIn($(".gif-cellulari .column:eq(2)"), 500);
-        animateCustom($(".gif-cellulari .column:eq(2)"), 850, {"margin-top": "0"}, "easeOutCubic", true);
-        $(".gif-cellulari .column:eq(2)").css("transform", "scale(1)");
-    }
+  if (isScrolledIntoView($(".gif-cellulari"), false, 0)) {
+    animateCustom(
+      $(".gif-cellulari .column:eq(1)"),
+      850,
+      { "margin-top": "0" },
+      "easeOutCubic",
+      true
+    );
+    await animateFadeIn($(".gif-cellulari .column:eq(1)"), 500);
+    animateFadeIn($(".gif-cellulari .column:eq(0)"), 500);
+    animateCustom(
+      $(".gif-cellulari .column:eq(0)"),
+      850,
+      { "margin-top": "0" },
+      "easeOutCubic",
+      true
+    );
+    $(".gif-cellulari .column:eq(0)").css("transform", "scale(1)");
+    animateFadeIn($(".gif-cellulari .column:eq(2)"), 500);
+    animateCustom(
+      $(".gif-cellulari .column:eq(2)"),
+      850,
+      { "margin-top": "0" },
+      "easeOutCubic",
+      true
+    );
+    $(".gif-cellulari .column:eq(2)").css("transform", "scale(1)");
+  }
 });
+// BLOCK SCROLL ON OPEN CAROUSEL
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
-function trackLocation(e) {
-    var rect = videoContainer.getBoundingClientRect(),
-        position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
-    if (position <= 100) {
-        videoClipper.style.width = position + "%";
-        clippedVideo.style.width = (100 / position) * 100 + "%";
-        clippedVideo.style.zIndex = 3;
-    }
+function preventDefault(e) {
+  e.preventDefault();
 }
 
-var videoContainer = document.getElementById("video-compare-container"),
-    videoClipper = document.getElementById("video-clipper"),
-    clippedVideo = videoClipper.getElementsByTagName("video")[0];
-videoContainer.addEventListener("mousemove", trackLocation, false);
-videoContainer.addEventListener("touchstart", trackLocation, false);
-videoContainer.addEventListener("touchmove", trackLocation, false);
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener(
+    "test",
+    null,
+    Object.defineProperty({}, "passive", {
+      get: function () {
+        supportsPassive = true;
+      },
+    })
+  );
+} catch (e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent =
+  "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
+  window.addEventListener("keydown", preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener("DOMMouseScroll", preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+  window.removeEventListener("touchmove", preventDefault, wheelOpt);
+  window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
+}
