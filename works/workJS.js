@@ -118,7 +118,7 @@ $(window).on("scroll resize", async function () {
         var children = $(".gif-photo").children();
         Array.prototype.forEach.call(children, element => {
             if (($(element).isOnScreen())) {
-                console.log(element)
+
                 gsap.to($(element),
                     {
                         duration: 2,

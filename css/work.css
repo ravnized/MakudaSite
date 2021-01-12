@@ -684,3 +684,8 @@ div.mask {
     padding: 10px;
     transform: rotate(45deg);
 }
+
+.playMakuda {
+    padding-right: 3em;
+    padding-left: 3em;
+}

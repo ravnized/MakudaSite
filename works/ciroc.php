@@ -117,8 +117,13 @@ foreach ($parsed as $v)
             L'importanza del<span class="black-font">Sound Design</span>
         </p>
         <div id="waveform"></div>
-        <button class="button is-dark playMakuda"><i class="bi bi-play"></i></button>
-
+        <div class="columns is-centered">
+            <div class="column">
+                <div class="buttons is-centered">
+                    <button class="button is-dark bi bi-play is-medium playMakuda"></button>
+                </div>
+            </div>
+        </div>
 
         <p class="frase">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
@@ -194,28 +199,23 @@ foreach ($parsed as $v)
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
 <script>
+
     $(function () {
-        var context = new AudioContext();
-
-        $('.playMakuda').on('click', function () {
-
+        var buttonPlay = $('.playMakuda');
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'black',
+            progressColor: 'black'
+        });
+        wavesurfer.load('/media/Audio/AudioCiroc.mp3');
+        buttonPlay.on('click', function () {
+            var context = new AudioContext();
             context.resume().then(() => {
-                var wavesurfer = WaveSurfer.create({
-                    container: '#waveform',
-                    waveColor: 'black',
-                    progressColor: 'black'
-                });
-                wavesurfer.load('/media/Audio/AudioCiroc.mp3');
-                wavesurfer.playPause()
-            });
-
-
-            $('.playMakuda').toggleClass('.bi-play');
-            $('.playMakuda').toggleClass('.bi-pause-fill');
-        })
+                wavesurfer.playPause();
+                buttonPlay.toggleClass('bi-play bi-pause');
+            })
+        });
     });
-
-
 </script>
 </body>
 
