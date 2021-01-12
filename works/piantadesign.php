@@ -13,7 +13,7 @@ foreach ($parsed as $v)
 
 <head>
     <meta charset="UTF-8"/>
-    <title>Ciroc</title>
+    <title>Piantanida</title>
     <link href="../css/bulma.min.css" rel="stylesheet"/>
     <link href="../css/work.css" rel="stylesheet" type="text/css"/>
     <link href="../css/bello.css" rel="stylesheet" type="text/css"/>
@@ -25,16 +25,22 @@ foreach ($parsed as $v)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 </head>
 
 <body style="background-color:#111;">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 <style>
+
     #img1 {
         background-image: url(/media/img/works/piantanida_1.JPG);
     }
 
     #img2 {
         background-image: url(/media/img/works/piantanida_2.JPG);
+        background-size: contain;
+
     }
 
     #img3 {
@@ -149,7 +155,7 @@ foreach ($parsed as $v)
 
                 <div id="video-clipper">
                     <video id="video1"
-                            autoplay
+                           autoplay
                            loop
                            muted
                     >
@@ -172,47 +178,72 @@ foreach ($parsed as $v)
         </p>
         <br/>
 
-        <div class="container">
+        <div class="container imgs-slide">
             <div class="columns gif-photo">
-                <div class="column"
-                >
+                <div class="column">
                     <div class="img-slide">
-                        <div id="img1" class="small-image" data-toggle="modal" data-target="#myModal"></div>
+                        <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column"
-                >
+                <div class="column">
                     <div class="img-slide">
-                        <div id="img2" class="big-image"></div>
+                        <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column"
-                >
+                <div class="column">
                     <div class="img-slide">
-                        <div id="img3" class="small-image"></div>
+                        <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
             </div>
             <div class="columns gif-photo">
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img4" class="big-image"></div>
+                        <div id="img4" class="big-image image-div"></div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img5" class="small-image"></div>
+                        <div id="img5" class="small-image image-div"></div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img6" class="big-image"></div>
+                        <div id="img6" class="big-image image-div"></div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
+</div>
+<div class="full-screen-carousel" style="display:none;">
+    <div class="full-screen-carousel-background"></div>
+    <div class="full-screen-carousel-container">
+        <div id="img1" class="full-screen-carousel-image"></div>
+        <div id="img2" class="full-screen-carousel-image"></div>
+        <div id="img3" class="full-screen-carousel-image"></div>
+        <div id="img4" class="full-screen-carousel-image"></div>
+        <div id="img5" class="full-screen-carousel-image"></div>
+        <div id="img6" class="full-screen-carousel-image"></div>
+
+    </div>
+    <div class="full-screen-carousel-control left">
+        <div class="full-screen-carousel-arrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </div>
+    <div class="full-screen-carousel-control right">
+        <div class="full-screen-carousel-arrow right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <a class='cross'>
+        <i class="bi bi-plus" style="font-size: 3em"></i>
+    </a>
+
 </div>
 
 <?php require "../components/footer.php" ?>
@@ -225,7 +256,27 @@ foreach ($parsed as $v)
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
+<script>
 
+
+    function trackLocation(e) {
+        var rect = videoContainer.getBoundingClientRect(),
+            position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
+        if (position <= 100) {
+            videoClipper.style.width = position + "%";
+
+        }
+    }
+
+    var videoContainer = document.getElementById("video-compare-container")
+
+    var videoClipper = document.getElementById("video-clipper"),
+        clippedVideo = videoClipper.getElementsByTagName("video")[0];
+    videoContainer.addEventListener("mousemove", trackLocation, false);
+    videoContainer.addEventListener("touchstart", trackLocation, false);
+    videoContainer.addEventListener("touchmove", trackLocation, false);
+
+</script>
 </body>
 
 </html>

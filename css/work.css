@@ -159,7 +159,6 @@ body {
     will-change: transform;
     z-index: 1;
     opacity: 70%;
-    transition: all 0.5s;
 }
 
 .workBlockImageSub:hover {
@@ -676,4 +675,12 @@ div.mask {
     margin-top: 220px;
     transform: scale(1.2);
     opacity: 0;
+}
+
+.cross {
+    position: fixed;
+    right: 150px;
+    top: 50px;
+    padding: 10px;
+    transform: rotate(45deg);
 }

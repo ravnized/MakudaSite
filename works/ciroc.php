@@ -32,7 +32,24 @@ foreach ($parsed as $v)
 <?php require("../components/navbar.php"); ?>
 
 <?php require("../components/menu.php"); ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<style>
+    #img1 {
+        background-image: url(/media/img/works/ciroc_3.jpg);
+    }
 
+    #img2 {
+        background-image: url(/media/img/works/ciroc_2.jpg);
+
+
+    }
+
+    #img3 {
+        background-image: url(/media/img/works/Ciroc.png);
+    }
+
+
+</style>
 <div class="mainSection">
     <section class="sectionFullWorks">
         <div class="workList">
@@ -97,6 +114,18 @@ foreach ($parsed as $v)
 <div class="pubblicazione-social" style="padding:50px 0;background-color:#FFBF1B;">
     <div class="container">
         <p class="title" style="margin-bottom:10px;">
+            L'importanza del<span class="black-font">Sound Design</span>
+        </p>
+        <div id="waveform"></div>
+        <button class="button is-dark playMakuda"><i class="bi bi-play"></i></button>
+
+
+        <p class="frase">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+            Aliquam volutpat eros et blandit maximus.
+        </p>
+        <br/>
+        <p class="title" style="margin-bottom:10px;">
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase">
@@ -104,49 +133,58 @@ foreach ($parsed as $v)
             Aliquam volutpat eros et blandit maximus.
         </p>
         <br/>
-        <div class="gif-cellulari columns" data-animated="true">
-            <div class="container imgs-slide">
-                <div class="columns">
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img1" class="small-image" data-toggle="modal" data-target="#myModal"></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img2" class="big-image"></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img3" class="small-image"></div>
-                        </div>
+
+        <div class="container imgs-slide">
+            <div class="columns gif-photo">
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img4" class="big-image"></div>
-                        </div>
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img2" class="big-image image-div"></div>
                     </div>
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img5" class="small-image"></div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="img-slide">
-                            <div id="img6" class="big-image"></div>
-                        </div>
+                </div>
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </div>
 </div>
 
-<?php require "../components/footer.php" ?>
+<div class="full-screen-carousel" style="display:none;">
+    <div class="full-screen-carousel-background"></div>
+    <div class="full-screen-carousel-container">
+        <div id="img1" class="full-screen-carousel-image"></div>
+        <div id="img2" class="full-screen-carousel-image"></div>
+        <div id="img3" class="full-screen-carousel-image"></div>
 
+
+    </div>
+    <div class="full-screen-carousel-control left">
+        <div class="full-screen-carousel-arrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </div>
+    <div class="full-screen-carousel-control right">
+        <div class="full-screen-carousel-arrow right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <a class='cross'>
+        <i class="bi bi-plus" style="font-size: 3em"></i>
+    </a>
+
+</div>
+<?php require "../components/footer.php" ?>
+<script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.js"></script>
 <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
 <script crossorigin="anonymous"
         integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
@@ -155,7 +193,30 @@ foreach ($parsed as $v)
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        var context = new AudioContext();
 
+        $('.playMakuda').on('click', function () {
+
+            context.resume().then(() => {
+                var wavesurfer = WaveSurfer.create({
+                    container: '#waveform',
+                    waveColor: 'black',
+                    progressColor: 'black'
+                });
+                wavesurfer.load('/media/Audio/AudioCiroc.mp3');
+                wavesurfer.playPause()
+            });
+
+
+            $('.playMakuda').toggleClass('.bi-play');
+            $('.playMakuda').toggleClass('.bi-pause-fill');
+        })
+    });
+
+
+</script>
 </body>
 
 </html>
