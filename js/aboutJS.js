@@ -220,6 +220,8 @@ async function animateShowValori(index) {
     instancesAnimations[index]--;
     return;
   }
+  if (hidingAnimation)
+    return;
 
   $(".valori-vertical-line").css({
     "width": widthLine + "px",
@@ -240,6 +242,11 @@ async function animateShowValori(index) {
     instancesAnimations[index]--;
     return;
   }
+  if (hidingAnimation)
+  {
+    instancesAnimations[index]--;
+    return;
+  }
 
   return new Promise(async function(resolve) {
     if (index < 2)
@@ -253,6 +260,11 @@ async function animateShowValori(index) {
         }
       );
       if (currentValoriAnimation != index)
+      {
+        instancesAnimations[index]--;
+        return;
+      }
+      if (hidingAnimation)
       {
         instancesAnimations[index]--;
         return;
@@ -278,6 +290,11 @@ async function animateShowValori(index) {
         }
       );
       if (currentValoriAnimation != index)
+      {
+        instancesAnimations[index]--;
+        return;
+      }
+      if (hidingAnimation)
       {
         instancesAnimations[index]--;
         return;
