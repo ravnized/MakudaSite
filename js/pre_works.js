@@ -1,3 +1,10 @@
+unloadScrollBars()
+function disablePointerEvent(element){
+    element.css('pointer-events', 'none');
+}
+function enablePointerEvent(element){
+    element.css('pointer-events', 'auto');
+}
 function video1Enter() {
     var tl = gsap.timeline();
 
@@ -123,6 +130,9 @@ $(document).ready(function () {
     $('#video1').get(0).play();
     $('#video2').get(0).play();
     var tlStart = gsap.timeline();
+    disablePointerEvent($('#video1,#video2'));
+
+
     tlStart.fromTo(
         $("#video-clipper"),
         {
@@ -189,7 +199,9 @@ $(document).ready(function () {
             duration: 1,
             x: -1000,
         },
-        {duration: 1, x: 100},
+        {duration: 1, x: 100, onComplete: function(){
+            enablePointerEvent($('#video1,#video2'));
+            }},
         0
     );
 });

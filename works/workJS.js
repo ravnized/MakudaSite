@@ -167,6 +167,38 @@ $(window).on("scroll resize", async function () {
         }
     }
 
+    if ($(".gif-zoda").length !== 0) {
+        if (($(".gif-zoda").isOnScreen())) {
+
+            animateCustom(
+                $(".gif-zoda .column:eq(1)"),
+                850,
+                {"margin-top": "0"},
+                "easeOutCubic",
+                true
+            );
+            await animateFadeIn($(".gif-zoda .column:eq(1)"), 500);
+            animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
+            animateCustom(
+                $(".gif-zoda .column:eq(0)"),
+                850,
+                {"margin-top": "100px"},
+                "easeOutCubic",
+                true
+            );
+            $(".gif-zoda .column:eq(0)").css("transform", "scale(1)");
+            animateFadeIn($(".gif-zoda .column:eq(2)"), 500);
+            animateCustom(
+                $(".gif-zoda .column:eq(2)"),
+                850,
+                {"margin-top": "100px"},
+                "easeOutCubic",
+                true
+            );
+            $(".gif-zoda .column:eq(2)").css("transform", "scale(1)");
+        }
+    }
+
 });
 
 /*

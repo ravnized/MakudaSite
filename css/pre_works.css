@@ -43,6 +43,8 @@ div.mask {
 
 #video-clipper video {
     position: absolute;
+    left: 0;
+    top: 0;
     height: 100vh;
     max-width: unset;
     filter: grayscale(100%);

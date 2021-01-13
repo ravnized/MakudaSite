@@ -148,38 +148,34 @@
     </div>
 </div>
 </div>
-<div class="makuda-bgcolor has-text-centered significato-makuda">
-    <div class="container">
-        <p class="whiteText quote">
-            “Makuda significa tutto nero in lingua Shona, originaria dell’Africa
-            meridionale.”
-        </p>
-    </div>
-</div>
-<div class="container" style="padding: 60px 0;">
-    <div style="display: flex;">
-        <div style="flex: 1"></div>
+<div class=" has-text-centered " style="padding-top: 300px">
+    <div class="works-band" style="margin-top: -300px"></div>
+    <div class="container" style="margin-top: -140px;">
         <div style="display: flex;">
-            <div class="counter-box">
-                <span class="counter" data-count='249'>0</span>
-                <p class="italian-counter">PROGETTI COMPLETATI</p>
+            <div style="flex: 1"></div>
+            <div style="display: flex;">
+                <div class="counter-box">
+                    <span class="counter" data-count='249'>0</span>
+                    <p class="italian-counter">PROGETTI <br> COMPLETATI</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-count='249'>0</span>
+                    <p class="italian-counter">CLIENTI <br> SODDISFATTI</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-count='249'>0</span>
+                    <p class="italian-counter">POST - IT <br> ATTACCATI</p>
+                </div>
+                <div class="counter-box">
+                    <span class="counter" data-count='249'>0</span>
+                    <p class="italian-counter">CAFFÈ <br> BEVUTI</p>
+                </div>
             </div>
-            <div class="counter-box">
-                <span class="counter" data-count='249'>0</span>
-                <p class="italian-counter">CLIENTI SODDISFATTI</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter" data-count='249'>0</span>
-                <p class="italian-counter">POST - IT ATTACCATI</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter" data-count='249'>0</span>
-                <p class="italian-counter">CAFFÈ BEVUTI</p>
-            </div>
+            <div style="flex: 1"></div>
         </div>
-        <div style="flex: 1"></div>
     </div>
 </div>
+
 <?php require("components/footer.php") ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>

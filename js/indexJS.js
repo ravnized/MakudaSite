@@ -2,6 +2,7 @@ var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 $(document).ready(function () {
     /*NAPO*/
+    gsap.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
     let fadingCarouselClicked = false;
     $(".fading-circle").click(function (target) {
         let new_work_index = $(this).attr("data-index");

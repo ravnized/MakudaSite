@@ -45,7 +45,7 @@ foreach ($parsed as $v)
     }
 
     #img3 {
-        background-image: url(/media/img/works/Ciroc.png);
+        background-image: url(/media/img/works/ciroc_1.jpg);
     }
 
 

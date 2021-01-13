@@ -659,9 +659,10 @@ a:hover {
 }
 
 .parallelepipedo .secondText {
+    top:0;
     font-size: 2em;
     position: absolute;
-    transform: skewY(20deg) translateX(-50px) translateY(650px) scale(-1, -1);
+    transform: skewY(20deg) translateX(-50px) translateY(650px) scale(-1, -1) ;
     transform-origin: 0 0;
     font-family: Gelion-black;
     writing-mode: vertical-rl;
