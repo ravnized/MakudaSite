@@ -96,6 +96,8 @@ if ($(".gif-firstSection").length !== 0) {
     })
 }
 $(window).on("scroll resize", async function () {
+    $(".separator-yellow").css("height", $(".works-band").height() - $(".gif-zoda").position().top + "px");
+
     if ($(".gif-firstSection").length !== 0) {
         if (($(".gif-firstSection").isOnScreen())) {
 
@@ -177,12 +179,13 @@ $(window).on("scroll resize", async function () {
                 "easeOutCubic",
                 true
             );
+            $(".gif-zoda .gif-cellulare").css("background", "transparent");
             await animateFadeIn($(".gif-zoda .column:eq(1)"), 500);
             animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
             animateCustom(
                 $(".gif-zoda .column:eq(0)"),
                 850,
-                {"margin-top": "100px"},
+                {"margin-top": "0"},
                 "easeOutCubic",
                 true
             );
@@ -191,11 +194,13 @@ $(window).on("scroll resize", async function () {
             animateCustom(
                 $(".gif-zoda .column:eq(2)"),
                 850,
-                {"margin-top": "100px"},
+                {"margin-top": "0"},
                 "easeOutCubic",
                 true
             );
             $(".gif-zoda .column:eq(2)").css("transform", "scale(1)");
+            animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
+            animateFadeIn($(".parallax-image"), 500);
         }
     }
 

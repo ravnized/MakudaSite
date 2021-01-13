@@ -154,48 +154,68 @@ $view = ButtonBeforeAfter("ZODA");
             Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
             condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
         </p>
-        <div class="gif-zoda columns" data-animated="true" style="padding-top:55px">
+        <br>
+        <div class="parallax-image" id="imgRectangle_3"></div>
+        <div class="gif-zoda columns" data-animated="true">
             <div class="column"
-                 style="margin-top: 220px; transform: scale(1.2); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_1">
-                    <p class="numberRectangle">1</p>
-                    <p class="titleRectangle">Pre-Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
-
+            style="margin-top: 120px; transform: scale(1.2); transition: transform 0.8s;">
+                <div class="parallax-spacing"></div>
+                <div class="parallax-container">
+                    <div class="gif-cellulare" style="height: 800px;">
+                        <p class="numberRectangle" style="top:100px;">1</p>
+                        <p class="titleRectangle">Pre-Produzione</p>
+                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+                            sagittis tellus vel
+                            ultricies. <br>
+                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
+                            arcu maximus
+                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="column"
-                 style="margin-top: 220px; transform: scale(1); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_3">
-                    <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">2</p>
-                    <p class="titleRectangle">Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
-                </div>
+            <div class="separator">
+                <div class="separator-yellow"></div>
+                <div class="separator-black"></div>
             </div>
             <div class="column"
-                 style="margin-top: 220px; transform: scale(1.2); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_3">
-                    <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">3</p>
-                    <p class="titleRectangle">Post-Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
+            style="margin-top: 220px; transform: scale(1); transition: transform 0.8s;">
+                <div class="parallax-container"
+                    >
+                    <div class="gif-cellulare" style="height: 800px;">
+                        <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">2</p>
+                        <p class="titleRectangle">Produzione</p>
+                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+                            sagittis tellus vel
+                            ultricies. <br>
+                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
+                            arcu maximus
+                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+                        </p>
+                    </div>
+                </div>
+                <div class="parallax-spacing" style="background-color: #111;"></div>
+            </div>
+            <div class="separator">
+                <div class="separator-yellow"></div>
+                <div class="separator-black"></div>
+            </div>
+            <div class="column"
+            style="margin-top: 120px; transform: scale(1.2); transition: transform 0.8s;">
+                <div class="parallax-spacing"></div>
+                <div class="parallax-container"
+                    >
+                    <div class="gif-cellulare" style="height: 800px;">
+                        <p class="numberRectangle" style="margin-right: 0; margin-top: -200px;top:100px;">3</p>
+                        <p class="titleRectangle">Post-Produzione</p>
+                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+                            sagittis tellus vel
+                            ultricies. <br>
+                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
+                            arcu maximus
+                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
