@@ -160,7 +160,10 @@ $(document).ready(function () {
             duration: 2,
             right: 0+'%',
             width: 50+'%',
-            ease: 'power4.out'
+            ease: 'power4.out',
+            onComplete: function(){
+                enablePointerEvent($('#video1,#video2'));
+            }
         },
         0);
     tlStart.add(function () {
@@ -199,9 +202,7 @@ $(document).ready(function () {
             duration: 1,
             x: -1000,
         },
-        {duration: 1, x: 100, onComplete: function(){
-            enablePointerEvent($('#video1,#video2'));
-            }},
+        {duration: 1, x: 100},
         0
     );
 });
