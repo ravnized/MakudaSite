@@ -716,3 +716,17 @@ div.mask {
     margin-right: -20px;
     font-family: Gelion-Regular, Serif, sans-serif;
 }
+
+.cross:hover, .fa-chevron-right:hover .fa-chevron-left:hover {
+    color: rgb(255, 197, 32) !important;
+}
+.fixed-right{
+    position: fixed;
+    top: 80px;
+    right: 0;
+}
+.fixed-left{
+    position: fixed;
+    top: 80px;
+    left: 0;
+}

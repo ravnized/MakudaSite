@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
 <html class="has-navbar-fixed-top" lang="en">
-
 <head>
     <meta charset="UTF-8"/>
-    <title>Zoda</title>
+    <title>De cube</title>
     <link href="../css/bulma.min.css" rel="stylesheet"/>
     <link href="../css/work.css" rel="stylesheet" type="text/css"/>
     <link href="../css/bello.css" rel="stylesheet" type="text/css"/>
@@ -18,53 +17,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
 </head>
-
-<body style="background-color:#111;">
+<body style="background-color: #111; min-height: 100vh">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 <style>
-
-    #imgRectangle_1 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
-        background-size: contain;
-        padding: 20px;
-    }
-
-    #imgRectangle_2 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
-        background-size: contain;
-        padding: 20px;
-    }
-
-    #imgRectangle_3 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
-        background-size: contain;
-        padding: 20px;
-    }
-
     #img1 {
-        background-image: url(/media/img/works/zoda_1.jpg);
+        background-image: url(/media/img/works/toia_1.JPG);
     }
 
     #img2 {
-        background-image: url(/media/img/works/zoda_2.jpg);
-
+        background-image: url(/media/img/works/toia_2.JPG);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/zoda_3.jpg);
+        background-image: url(/media/img/works/toia_3.JPG);
     }
 
     #img4 {
-        background-image: url(/media/img/works/zoda_4.jpg);
+        background-image: url(/media/img/works/toia_4.JPG);
     }
 
     #img5 {
-        background-image: url(/media/img/works/zoda_5.jpg);
+        background-image: url(/media/img/works/toia_5.JPG);
     }
 
     #img6 {
-        background-image: url(/media/img/works/zoda_6.jpg);
+        background-image: url(/media/img/works/toia_6.JPG);
     }
 </style>
 <?php require("../components/navbar.php"); ?>
@@ -73,7 +52,7 @@
 
 <?php
 require('workPHP.php');
-$view = ButtonBeforeAfter("ZODA");
+$view = ButtonBeforeAfter("DECUBE");
 
 ?>
 
@@ -88,8 +67,7 @@ $view = ButtonBeforeAfter("ZODA");
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
-                                        <source src="/media/video/works/Oh%20Madre%20Mia%20Finale-1web.m4v"
-                                                type="video/mp4"/>
+                                        <source src="/media/video/works/Habitat%20De%20Cube-web.m4v" type="video/mp4"/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that
@@ -111,7 +89,7 @@ $view = ButtonBeforeAfter("ZODA");
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
                         <br/><br/>
-                        <p class="subVideo">STRATEGIA</p>
+                        <p class="subVideo">Il Risultato delle PR</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
@@ -127,11 +105,13 @@ $view = ButtonBeforeAfter("ZODA");
                                 </p>
                             </div>
                             <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Daniele "Zoda" Sodano</p>
+                                <p><span class="boldOrange">Cliente: </span>De Cube</p>
+                                <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
                                 <div class="columns">
-                                    <div class="column is-one-fifth"><p><span class="boldOrange">Direct:</span></p>
+                                    <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
-                                    <div class="column"><p> Simone Santacroce <br> Taras Snegovoy</p></div>
+                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                            D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
 
 
@@ -144,71 +124,61 @@ $view = ButtonBeforeAfter("ZODA");
     </section>
 </div>
 <div class="pubblicazione-social">
-    <div class="works-band" style="height: 110vh"></div>
+    <div class="works-band" style="height: 150%"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
-            Color <span class="black-font">Grading</span>
+            <span class="black-font">Il risultato del Network</span>
         </p>
         <p class="frase">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
+            maximus<br>
+            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
+            maximus<br>
+            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
+            maximus<br>
         </p>
-        <div class="gif-zoda columns" data-animated="true" style="padding-top:55px">
-            <div class="column"
-                 style="margin-top: 220px; transform: scale(1.2); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_1">
-                    <p class="numberRectangle">1</p>
-                    <p class="titleRectangle">Pre-Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
-
+        <br>
+        <div class="container">
+            <div class="columns gif-photo">
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img1" class="small-image image-div"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="column"
-                 style="margin-top: 220px; transform: scale(1); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_3">
-                    <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">2</p>
-                    <p class="titleRectangle">Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img2" class="big-image image-div"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="column"
-                 style="margin-top: 220px; transform: scale(1.2); transition: transform 0.8s; opacity: 0;">
-                <div class="gif-cellulare" style="height: 800px;" id="imgRectangle_3">
-                    <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">3</p>
-                    <p class="titleRectangle">Post-Produzione</p>
-                    <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                        sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
-                    </p>
+                <div class="column">
+                    <div class="img-slide">
+                        <div id="img3" class="small-image image-div"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <br><br>
-        <p class="title makuda-color" style="margin-bottom:10px;">
-            I Risultati
-        </p>
-        <p class="frase" style="color: white">
+
+
+        <br><br><br>
+        <p class="frase">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
             Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
             condimentum a non ex.<br>
         </p>
-        <br/>
+        <br>
+        <div class="container is-max-desktop">
+            <video autoplay class=" video-js vjs-default-skin vjs-16-9"
+                   data-setup='{"controls":true}' loop muted preload="none">
+                <source src="/media/video/works/Teaser%20De%20Cube-1web.m4v" type="video/mp4"/>
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and
+                    consider upgrading to a web browser that
+                    <a href="https://videojs.com/html5-video-support/"
+                       target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
         <br><br>
         <p class="title" style="margin-bottom:10px;">
             Qualche Nostro <span class="makuda-color">Scatto</span>
@@ -218,7 +188,6 @@ $view = ButtonBeforeAfter("ZODA");
             Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
             condimentum a non ex.<br>
         </p>
-        <br/>
 
         <div class="container imgs-slide">
             <div class="columns gif-photo">
@@ -299,5 +268,4 @@ $view = ButtonBeforeAfter("ZODA");
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
 </body>
-
 </html>
