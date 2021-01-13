@@ -640,6 +640,63 @@ div.mask {
 
 }
 
+.gif-zoda {
+    padding: 0 12px;
+}
+
+.parallax-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 900px;
+    position: absolute;
+    width: 100%;
+    padding: 0 !important;
+    opacity: 0;
+    background-image: url("/media/img/73401809_390252275190258_686177937147393055_n.jpg") !important;
+}
+
+.parallax-image .gif-zoda{
+    display: flex;
+    opacity: 0;
+}
+
+.separator {
+    width: 2%;
+    height: 900px;
+    z-index: 1;
+    margin-top: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.separator-yellow {
+    background-color: rgb(255, 197, 32);
+    width: 100%;
+}
+
+.separator-black {
+    background-color: #111;
+    width: 100%;
+    flex: 1;
+}
+
+.parallax-spacing {
+    width: calc(102% + 24px);
+    height: 112px;
+    margin-left: -12px;
+    margin-top: -12px;
+    background-color: rgb(255, 197, 32);
+    z-index: 100;
+}
+
+.gif-zoda .gif-cellulare {
+    padding-top: 12px;
+    background-color: rgb(255, 197, 32);
+    transition: all 0.1s;
+}
+
 @media (min-width: 1200px) {
     .works-band {
         height: 52%;
