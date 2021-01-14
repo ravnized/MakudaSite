@@ -201,21 +201,45 @@ foreach ($parsed as $v)
 <script>
 
     $(function () {
-        var buttonPlay = $('.playMakuda');
-        var wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: 'black',
-            progressColor: 'black'
-        });
-        wavesurfer.load('/media/Audio/AudioCiroc.mp3');
-        buttonPlay.on('click', function () {
-            var context = new AudioContext();
-            context.resume().then(() => {
+
+
+        let wavesurfer;
+
+        var AudioContext = window.AudioContext // Default
+            || window.webkitAudioContext // Safari and old versions of Chrome
+            || false;
+
+        if (AudioContext) {
+            var buttonPlay = $('.playMakuda');
+            wavesurfer = WaveSurfer.create({
+                container: '#waveform',
+                waveColor: 'black',
+                progressColor: 'black'
+            });
+            wavesurfer.load('/media/Audio/AudioCiroc.mp3');
+            buttonPlay.on('click', function () {
+                var context = new AudioContext();
+                context.resume().then(() => {
+                    wavesurfer.playPause();
+                    buttonPlay.toggleClass('bi-play bi-pause');
+                })
+            });
+        } else {
+            var buttonPlay = $('.playMakuda');
+            wavesurfer = WaveSurfer.create({
+                container: '#waveform',
+                waveColor: 'black',
+                progressColor: 'black'
+            });
+            wavesurfer.load('/media/Audio/AudioCiroc.mp3');
+            buttonPlay.on('click', function () {
                 wavesurfer.playPause();
                 buttonPlay.toggleClass('bi-play bi-pause');
             })
-        });
-    });
+        }
+    })
+
+
 </script>
 </body>
 
