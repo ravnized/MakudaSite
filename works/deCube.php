@@ -105,7 +105,7 @@ $view = ButtonBeforeAfter("DECUBE");
                             </div>
                             <div class="column">
                                 <p><span class="boldOrange">Cliente: </span>De Cube</p>
-                                <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
+                                <p><span class="boldOrange">Anno:</span> Inizio 2019</p>
                                 <div class="columns">
                                     <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>

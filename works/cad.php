@@ -66,7 +66,8 @@ $view = ButtonBeforeAfter("DANZA");
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
-                                        <source src="/media/video/works/Habitat%20De%20Cube-web.m4v" type="video/mp4"/>
+                                        <source src="/media/video/works/Video%20Intervista%20Ballerino%20Deff-1web.m4v"
+                                                type="video/mp4"/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that
@@ -88,7 +89,7 @@ $view = ButtonBeforeAfter("DANZA");
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
                         <br/><br/>
-                        <p class="subVideo">Il Risultato delle PR</p>
+                        <p class="subVideo">L'importanza dell' Analisi</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
@@ -104,7 +105,7 @@ $view = ButtonBeforeAfter("DANZA");
                                 </p>
                             </div>
                             <div class="column">
-                                <p><span class="boldOrange">Cliente: </span>De Cube</p>
+                                <p><span class="boldOrange">Cliente: </span>Centro Arti Danza</p>
                                 <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
                                 <div class="columns">
                                     <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
@@ -123,10 +124,10 @@ $view = ButtonBeforeAfter("DANZA");
     </section>
 </div>
 <div class="pubblicazione-social">
-    <div class="works-band" style="height: 150%"></div>
+    <div class="works-band" style="height: 110%"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
-            <span class="black-font">Il risultato del Network</span>
+            <span class="black-font">Bello e semplice</span>
         </p>
         <p class="frase">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
@@ -159,74 +160,9 @@ $view = ButtonBeforeAfter("DANZA");
         </div>
 
 
-        <br><br><br>
-        <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
-        </p>
-        <br>
-        <div class="container is-max-desktop">
-            <video autoplay class=" video-js vjs-default-skin vjs-16-9"
-                   data-setup='{"controls":true}' loop muted preload="none">
-                <source src="/media/video/works/Teaser%20De%20Cube-1web.m4v" type="video/mp4"/>
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and
-                    consider upgrading to a web browser that
-                    <a href="https://videojs.com/html5-video-support/"
-                       target="_blank">supports HTML5 video</a>
-                </p>
-            </video>
-        </div>
-        <br><br>
-        <p class="title" style="margin-bottom:10px;">
-            Qualche Nostro <span class="makuda-color">Scatto</span>
-        </p>
-        <p class="frase" style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
-        </p>
-
-        <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img2" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img4" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img5" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img6" class="big-image image-div"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
     </div>
+
+
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>
@@ -234,9 +170,7 @@ $view = ButtonBeforeAfter("DANZA");
         <div id="img1" class="full-screen-carousel-image"></div>
         <div id="img2" class="full-screen-carousel-image"></div>
         <div id="img3" class="full-screen-carousel-image"></div>
-        <div id="img4" class="full-screen-carousel-image"></div>
-        <div id="img5" class="full-screen-carousel-image"></div>
-        <div id="img6" class="full-screen-carousel-image"></div>
+
 
     </div>
     <div class="full-screen-carousel-control left">
@@ -257,8 +191,6 @@ $view = ButtonBeforeAfter("DANZA");
 </div>
 <?php
 button('DANZA');
-
-
 ?>
 <?php require "../components/footer.php" ?>
 

@@ -53,81 +53,81 @@ function button($ID)
 
 
     ?>
-    <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column">
+
+    <div class="columns is-vcentered">
+        <div class="column">
+            <a class="button is-dark buttonBack <?php
+            if (empty($vBefore)) {
+                echo 'hide';
+            }
+            ?>"
+               href="<?php
+               if (!empty($vBefore)) {
+                   echo '/works/' . $vBefore['link'];
+               }
+               ?>">
+
+                <img alt='' class="backgroundButton"
+
+                     src="<?php
+                     if (!empty($vBefore)) {
+                         echo '/media/img/works/' . $vBefore['image'];
+                     }
+                     ?>">
+
+
+                <p class="buttonText" style="text-align: left"><?php
+                    if (!empty($vBefore)) {
+                        echo $vBefore['title'];
+                    } ?></p>
+
+
+            </a>
+        </div>
+        <div class="column">
+            <div class="has-text-centered">
+                <a class="button is-dark buttonBack" href="<?php
+                if ($view['case-study'] == true) {
+                    echo '/work_case.php';
+                } else {
+                    echo '/work_prod.php';
+                }
+                ?>">
+                    <p class="buttonText " style="text-align: center">Torna Indietro</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="buttons is-right">
                 <a class="button is-dark buttonBack <?php
-                if (empty($vBefore)) {
+                if (empty($vAfter)) {
                     echo 'hide';
                 }
                 ?>"
                    href="<?php
-                   if (!empty($vBefore)) {
-                       echo '/works/' . $vBefore['link'];
+                   if (!empty($vAfter)) {
+                       echo '/works/' . $vAfter['link'];
                    }
                    ?>">
-
+                    <p class="buttonText" style="text-align: right"><?php
+                        if (!empty($vAfter)) {
+                            echo $vAfter['title'];
+                        } ?></p>
                     <img alt='' class="backgroundButton"
 
                          src="<?php
-                         if (!empty($vBefore)) {
-                             echo '/media/img/works/' . $vBefore['image'];
+                         if (!empty($vAfter)) {
+                             echo '/media/img/works/' . $vAfter['image'];
                          }
                          ?>">
 
 
-                    <p class="buttonText" style="text-align: left"><?php
-                        if (!empty($vBefore)) {
-                            echo $vBefore['title'];
-                        } ?></p>
-
-
                 </a>
-            </div>
-            <div class="column">
-                <div class="has-text-centered">
-                    <a class="button is-dark buttonBack" href="<?php
-                    if ($view['case-study'] == true) {
-                        echo '/work_case.php';
-                    } else {
-                        echo '/work_prod.php';
-                    }
-                    ?>">
-                        <p class="buttonText " style="text-align: center">Torna Indietro</p>
-                    </a>
-                </div>
-            </div>
 
-            <div class="column">
-                <div class="buttons is-right">
-                    <a class="button is-dark buttonBack <?php
-                    if (empty($vAfter)) {
-                        echo 'hide';
-                    }
-                    ?>"
-                       href="<?php
-                       if (!empty($vAfter)) {
-                           echo '/works/' . $vAfter['link'];
-                       }
-                       ?>">
-                        <p class="buttonText" style="text-align: right"><?php
-                            if (!empty($vAfter)) {
-                                echo $vAfter['title'];
-                            } ?></p>
-                        <img alt='' class="backgroundButton"
-
-                             src="<?php
-                             if (!empty($vAfter)) {
-                                 echo '/media/img/works/' . $vAfter['image'];
-                             }
-                             ?>">
-
-
-                    </a>
-
-                </div>
             </div>
         </div>
     </div>
+
     <?php
 }
