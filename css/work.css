@@ -815,4 +815,17 @@ div.mask {
     right: 0;
     width: 200px;
     height: 100px;
+.playMakuda{
+border-color: unset;
+ border-width: 0;
+    background-color: transparent;
+}
+
+.playMakuda:focus {
+border-color: unset;
+    box-shadow: unset;
+}
+
+.playMakuda:focus:not(:active) {
+    box-shadow: unset;
 }
