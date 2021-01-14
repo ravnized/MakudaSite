@@ -120,7 +120,7 @@ foreach ($parsed as $v)
         <div class="columns is-centered">
             <div class="column">
                 <div class="buttons is-centered">
-                    <button class="button is-dark bi bi-play is-medium playMakuda"></button>
+                    <button class="button bi bi-play is-medium playMakuda"></button>
                 </div>
             </div>
         </div>
