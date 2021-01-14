@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <?php
 require('workPHP.php');
-$view = ButtonBeforeAfter("DECUBE");
+$view = ButtonBeforeAfter("DANZA");
 
 ?>
 <html class="has-navbar-fixed-top" lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>De cube</title>
+    <title>CAD</title>
     <link href="../css/bulma.min.css" rel="stylesheet"/>
     <link href="../css/work.css" rel="stylesheet" type="text/css"/>
     <link href="../css/bello.css" rel="stylesheet" type="text/css"/>
@@ -256,8 +256,8 @@ $view = ButtonBeforeAfter("DECUBE");
 
 </div>
 <?php
+button('DANZA');
 
-button('DECUBE');
 
 ?>
 <?php require "../components/footer.php" ?>

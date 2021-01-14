@@ -656,7 +656,7 @@ div.mask {
     background-image: url("/media/img/73401809_390252275190258_686177937147393055_n.jpg") !important;
 }
 
-.parallax-image .gif-zoda{
+.parallax-image .gif-zoda {
     display: flex;
     opacity: 0;
 }
@@ -777,13 +777,42 @@ div.mask {
 .cross:hover, .fa-chevron-right:hover .fa-chevron-left:hover {
     color: rgb(255, 197, 32) !important;
 }
-.fixed-right{
+
+.fixed-right {
     position: fixed;
     top: 80px;
     right: 0;
 }
-.fixed-left{
+
+.fixed-left {
     position: fixed;
     top: 80px;
     left: 0;
+}
+
+.backgroundButton {
+    width: 200px;
+    height: auto;
+
+    z-index: 3;
+}
+
+.buttonBack {
+    background-color: transparent !important;
+    left: 0;
+    height: 100px;
+}
+
+.buttonText {
+    padding: 10px;
+    color: white;
+    z-index: 5;
+    font-family: "Gelion-Black", Gelion-Black, sans-serif;
+    text-transform: uppercase;
+}
+
+.buttonForward {
+    right: 0;
+    width: 200px;
+    height: 100px;
 }
