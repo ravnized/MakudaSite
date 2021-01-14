@@ -32,9 +32,11 @@ function button($ID)
     $index = 0;
     $vBefore = [];
     $vAfter = [];
+    $view = [];
     foreach ($parsed as $v) {
 
         if ($v["id"] == $ID) {
+            $view = $v;
             $vAfter = array_values($parsed)[$index + 1];
             $vBefore = array_values($parsed)[$index - 1];
             if ($v['case-study'] != $vBefore['case-study']) {
@@ -52,7 +54,7 @@ function button($ID)
 
     ?>
     <div class="container">
-        <div class="columns">
+        <div class="columns is-vcentered">
             <div class="column">
                 <a class="button is-dark buttonBack <?php
                 if (empty($vBefore)) {
@@ -81,6 +83,19 @@ function button($ID)
 
 
                 </a>
+            </div>
+            <div class="column">
+                <div class="has-text-centered">
+                    <a class="button is-dark buttonBack" href="<?php
+                    if ($view['case-study'] == true) {
+                        echo '/work_case.php';
+                    } else {
+                        echo '/work_prod.php';
+                    }
+                    ?>">
+                        <p class="buttonText " style="text-align: center">Torna Indietro</p>
+                    </a>
+                </div>
             </div>
 
             <div class="column">
