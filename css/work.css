@@ -830,3 +830,16 @@ border-color: unset;
 .playMakuda:focus:not(:active) {
     box-shadow: unset;
 }
+
+
+@media (max-width: 1920px) {
+    #containerBrioche{
+        top: 0 !important;
+    }
+}
+
+.fixedBottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

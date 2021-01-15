@@ -206,112 +206,68 @@ $view = ButtonBeforeAfter("BUFFEL");
 
     </div>
 </div>
-<style>
-    .bg {
-        height: auto;
-    }
 
-    canvas {
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-
-    #container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100vh;
-    }
-
-    #container h1 {
-        z-index: 9999;
-        color: white;
-        font-size: 12rem;
-        font-weight: 900;
-    }
-
-    .container-hero {
-        height: calc(3770px - 100vh);
-        top: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-
-    .container-hero div.h1 {
-        width: 50%;
-        font-size: 8rem;
-        font-weight: 600;
-        text-align: center;
-        color: white;
-    }
-
-    @media (max-width: 800px) {
-        .container-hero div.h1 {
-            width: 90%;
-        }
-    }
-</style>
 
 <div class="pubblicazione-social makuda-bgcolor">
+
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top: 10px;">
             Innovazione
         </p>
     </div>
+
     <div id="containerBrioche">
-        <div class="bg">
-            <canvas id="hero-lightpass"></canvas>
+        <canvas id="hero-lightpass"></canvas>
+    </div>
 
+
+</div>
+
+
+<!--
+<div class="container imgs-slide">
+    <div class="columns gif-photo">
+        <div class="column">
+            <div class="img-slide">
+                <div id="img4" class="small-image image-div"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img5" class="big-image image-div"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img6" class="small-image image-div"></div>
+            </div>
         </div>
     </div>
 
-    <!--
-    <div class="container imgs-slide">
-        <div class="columns gif-photo">
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img4" class="small-image image-div"></div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img5" class="big-image image-div"></div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img6" class="small-image image-div"></div>
-                </div>
+    <div class="columns gif-photo">
+        <div class="column">
+            <div class="img-slide">
+                <div id="img7" class="small-image image-div"></div>
             </div>
         </div>
-
-        <div class="columns gif-photo">
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img7" class="small-image image-div"></div>
-                </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img8" class="big-image image-div"></div>
             </div>
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img8" class="big-image image-div"></div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="img-slide">
-                    <div id="img9" class="small-image image-div"></div>
-                </div>
+        </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img9" class="small-image image-div"></div>
             </div>
         </div>
     </div>
+</div>
 
 -->
-    <br><br>
-    <?php
-    button('BUFFEL');
-    ?>
+<br><br>
+<?php
+button('BUFFEL');
+?>
 </div>
 
 <div class="full-screen-carousel" style="display:none;">
