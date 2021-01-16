@@ -88,7 +88,8 @@
                     </p>
                     <p class="black-font makuda-light">
                         <span id="s4" style="vertical-align:top">PER RACCONTARTI</span>
-                        <span id="s5" class="makuda-bold" style="font-size:2em;position:relative;top:-12px;">AL MEGLIO</span>
+                        <span id="s5" class="makuda-bold"
+                              style="font-size:2em;position:relative;top:-12px;">AL MEGLIO</span>
                     </p>
                 </div>
                 <div id="g2" class="band-view">
@@ -100,8 +101,8 @@
                         <span id="s8" class="makuda-bold">FERMARTI</span>
                     </p>
                     <p
-                        class="white-font makuda-bold"
-                        style="
+                            class="white-font makuda-bold"
+                            style="
                         font-size: 19em;
                         margin-left: 0.15em;
                         margin-top: -0.15em;"
@@ -546,13 +547,13 @@
                 data-infinite="true"
                 data-autoplay="true"
                 data-navigation="false"
-                data-slidesToShow="7"
+
                 id="carousel3"
         >
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_900.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/buffel.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
@@ -560,7 +561,7 @@
                 <div class="card-image">
                     <figure class="image is-covered">
                         <img
-                                src="/media/img/Carousel_Logo/Logo_buffel_bianco.png"
+                                src="/media/img/Carousel_Logo/Carpisa.png"
                                 alt="" class="centeredImg"
                         />
                     </figure>
@@ -569,69 +570,60 @@
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_carpisa.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/decube.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_deCube.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/dsquared.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/Logo_Josselin.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/FDP.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_LBA.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/LBA.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_pedavena.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/Prime.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_prime.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/suite&atelier.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_suites.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/Tork.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
             <div class="card cardino">
                 <div class="card-image">
                     <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/logo_yolown.png" class="centeredImg" alt=""/>
+                        <img src="/media/img/Carousel_Logo/YOLOWN.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>
-            <div class="card cardino">
-                <div class="card-image">
-                    <figure class="image is-covered">
-                        <img
-                                src="/media/img/Carousel_Logo/Tork_logo_bianco.png"
-                                alt="" class="centeredImg"
-                        />
-                    </figure>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>

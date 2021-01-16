@@ -8,22 +8,14 @@ $view = ButtonBeforeAfter("DANZA");
 <head>
     <meta charset="UTF-8"/>
     <title>CAD</title>
-    <link href="../css/bulma.min.css" rel="stylesheet"/>
-    <link href="../css/work.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/bello.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/animations.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet"/>
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet"/>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9eeab300fc.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <?php require('../components/common_libraries.php') ?>
+    <link href="/css/work.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/animations.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body style="background-color: #111; min-height: 100vh">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 <style>
     #img1 {
         background-image: url(/media/img/works/toia_1.JPG);
@@ -194,11 +186,6 @@ button('DANZA');
 ?>
 <?php require "../components/footer.php" ?>
 
-<script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>

@@ -1,30 +1,20 @@
 <!DOCTYPE html>
+
 <?php
-$myfile = fopen("../media/json/home-works.json", "r") or die("Unable to open file!");
-$to_parse = fread($myfile, filesize("../media/json/home-works.json"));
-fclose($myfile);
-$parsed = json_decode($to_parse, true);
-$view = [];
-foreach ($parsed as $v)
-    if ($v["id"] == "DSQUARED2")
-        $view = $v;
+require('workPHP.php');
+$view = ButtonBeforeAfter("DSQUARED2");
 ?>
 <html class="has-navbar-fixed-top" lang="en">
 
 <head>
     <meta charset="UTF-8"/>
     <title>DSQUARED</title>
-    <link href="../css/bulma.min.css" rel="stylesheet"/>
-    <link href="../css/work.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/bello.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/menu.css" rel="stylesheet" type="text/css"/>
-    <link href="../css/animations.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" rel="stylesheet"/>
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet"/>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9eeab300fc.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <?php require('../components/common_libraries.php') ?>
+    <link href="/css/work.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/animations.css" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body style="background-color:#111;">
@@ -32,7 +22,6 @@ foreach ($parsed as $v)
 <?php require("../components/navbar.php"); ?>
 
 <?php require("../components/menu.php"); ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <style>
 
 
@@ -133,15 +122,12 @@ foreach ($parsed as $v)
 
     </div>
 </div>
-
+<br><br>
+<?php
+button('DSQUARED2');
+?>
 
 <?php require "../components/footer.php" ?>
-<script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.js"></script>
-<script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
