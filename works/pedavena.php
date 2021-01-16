@@ -118,7 +118,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
     </section>
 </div>
 <div class="pubblicazione-social">
-    <div class="works-band" style="height: 122%"></div>
+    <div class="works-band" style="height: 140%"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             <span class="black-font">Seguire la Tendenza</span>
@@ -135,7 +135,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
                 <div class="column">
                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                            data-setup='{"controls":false}' loop muted preload="none">
-                        <source src="/media/video/works/BackstageMakuda%20for%20web.mp4" type="video/mp4"/>
+                        <source src="/media/video/works/JokerFilm.mp4" type="video/mp4"/>
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and
                             consider upgrading to a web browser that
@@ -153,7 +153,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
                 <div class="column">
                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                            data-setup='{"controls":false}' loop muted preload="none">
-                        <source src="/media/video/works/BackstageMakuda%20for%20web.mp4" type="video/mp4"/>
+                        <source src="/media/video/works/Pedavena%20Joker.mp4" type="video/mp4"/>
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and
                             consider upgrading to a web browser that

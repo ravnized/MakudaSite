@@ -93,32 +93,13 @@ if ($(".gif-firstSection").length !== 0) {
 $(window).on("scroll resize", async function () {
 
 
-    if ($(".gif-firstSection").length !== 0) {
-        if (($(".gif-firstSection").isOnScreen())) {
+        if ($(".gif-firstSection").length !== 0) {
+            if (($(".gif-firstSection").isOnScreen())) {
 
 
-            tl.to($(".gif-firstSection"),
-                {
-                    duration: 0.8,
-                    css: {
-
-                        marginTop: 0,
-                        scale: 1,
-                        opacity: 1,
-                    },
-                    ease: 'expo.out'
-                })
-        }
-    }
-
-    if ($(".gif-photo").length !== 0) {
-        var children = $(".gif-photo").children();
-        Array.prototype.forEach.call(children, element => {
-            if (($(element).isOnScreen())) {
-
-                gsap.to($(element),
+                tl.to($(".gif-firstSection"),
                     {
-                        duration: 2,
+                        duration: 0.8,
                         css: {
 
                             marginTop: 0,
@@ -128,78 +109,101 @@ $(window).on("scroll resize", async function () {
                         ease: 'expo.out'
                     })
             }
-        });
-
-    }
-
-    if ($(".gif-cellulari").length !== 0) {
-        if (($(".gif-cellulari").isOnScreen())) {
-            console.log('aa')
-            animateCustom(
-                $(".gif-cellulari .column:eq(1)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            await animateFadeIn($(".gif-cellulari .column:eq(1)"), 500);
-            animateFadeIn($(".gif-cellulari .column:eq(0)"), 500);
-            animateCustom(
-                $(".gif-cellulari .column:eq(0)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            $(".gif-cellulari .column:eq(0)").css("transform", "scale(1)");
-            animateFadeIn($(".gif-cellulari .column:eq(2)"), 500);
-            animateCustom(
-                $(".gif-cellulari .column:eq(2)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            $(".gif-cellulari .column:eq(2)").css("transform", "scale(1)");
         }
-    }
 
-    if ($(".gif-zoda").length !== 0) {
-        if (($(".gif-zoda").isOnScreen())) {
+        if ($(".gif-photo").length !== 0) {
+            var children = $(".gif-photo").children();
+            Array.prototype.forEach.call(children, element => {
+                if (($(element).isOnScreen())) {
 
-            animateCustom(
-                $(".gif-zoda .column:eq(1)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            $(".gif-zoda .gif-cellulare").css("background", "transparent");
-            await animateFadeIn($(".gif-zoda .column:eq(1)"), 500);
-            animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
-            animateCustom(
-                $(".gif-zoda .column:eq(0)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            $(".gif-zoda .column:eq(0)").css("transform", "scale(1)");
-            animateFadeIn($(".gif-zoda .column:eq(2)"), 500);
-            animateCustom(
-                $(".gif-zoda .column:eq(2)"),
-                850,
-                {"margin-top": "0"},
-                "easeOutCubic",
-                true
-            );
-            $(".gif-zoda .column:eq(2)").css("transform", "scale(1)");
-            animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
-            animateFadeIn($(".parallax-image"), 500);
+                    gsap.to($(element),
+                        {
+                            duration: 2,
+                            css: {
+
+                                marginTop: 0,
+                                scale: 1,
+                                opacity: 1,
+                            },
+                            ease: 'expo.out'
+                        })
+                }
+            });
+
         }
-    }
 
-});
+        if ($(".gif-cellulari").length !== 0) {
+            if (($(".gif-cellulari").isOnScreen())) {
+                console.log('aa')
+                animateCustom(
+                    $(".gif-cellulari .column:eq(1)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                await animateFadeIn($(".gif-cellulari .column:eq(1)"), 500);
+                animateFadeIn($(".gif-cellulari .column:eq(0)"), 500);
+                animateCustom(
+                    $(".gif-cellulari .column:eq(0)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                $(".gif-cellulari .column:eq(0)").css("transform", "scale(1)");
+                animateFadeIn($(".gif-cellulari .column:eq(2)"), 500);
+                animateCustom(
+                    $(".gif-cellulari .column:eq(2)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                $(".gif-cellulari .column:eq(2)").css("transform", "scale(1)");
+            }
+        }
+
+
+
+
+        if ($(".gif-zoda").length !== 0) {
+            if (($(".gif-zoda").isOnScreen())) {
+
+                animateCustom(
+                    $(".gif-zoda .column:eq(1)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                $(".gif-zoda .gif-cellulare").css("background", "transparent");
+                await animateFadeIn($(".gif-zoda .column:eq(1)"), 500);
+                animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
+                animateCustom(
+                    $(".gif-zoda .column:eq(0)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                $(".gif-zoda .column:eq(0)").css("transform", "scale(1)");
+                animateFadeIn($(".gif-zoda .column:eq(2)"), 500);
+                animateCustom(
+                    $(".gif-zoda .column:eq(2)"),
+                    850,
+                    {"margin-top": "0"},
+                    "easeOutCubic",
+                    true
+                );
+                $(".gif-zoda .column:eq(2)").css("transform", "scale(1)");
+                animateFadeIn($(".gif-zoda .column:eq(0)"), 500);
+                animateFadeIn($(".parallax-image"), 500);
+            }
+        }
+
+    }
+);
 
 /*
 $(window).on("scroll resize", async function () {

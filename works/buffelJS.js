@@ -4,6 +4,18 @@ function redirect(URL) {
     window.location = '/works/buffel.php' + '#' + URL;
 }
 
+$(window).on("scroll resize", function () {
+    if ($('#titleOne').length !== 0) {
+
+        if ($('#titleOne').isOnScreen()) {
+            gsap.to(
+                '#titleOne',
+                {duration: 1, x: 0},
+            )
+        }
+    }
+})
+
 $(function () {
     const timeline = gsap.timeline();
     const canvas = document.getElementById("hero-lightpass");
@@ -12,13 +24,13 @@ $(function () {
     canvas.width = 1920;
     canvas.height = 1080;
 
-    const frameCount = 28;
+    const frameCount = 79;
     const currentFrame = index => (
-        `/media/img/Brioche/croissant3_1_${(index).toString().padStart(4, '0')}.png`
+        `/media/img/Brioche/croissant5_1_${(index).toString().padStart(4, '0')}.png`
     );
     const images = [];
     const airpods = {
-        frame: 0
+        frame: 20
     };
     for (let i = 0; i < frameCount; i++) {
         const img = new Image();
@@ -26,36 +38,56 @@ $(function () {
         images.push(img);
     }
     images[0].onload = render;
-    timeline.addLabel('first');
+
     timeline.to(airpods, {
-        frame: 10,
+        frame: 30,
         snap: "frame",
         onUpdate: (self) => {
             render();
         }
-    });
-    timeline.addLabel('second');
+    }, 'first');
+
+    timeline.fromTo(
+        '#titleOne',
+        {opacity: 1}, {duration: 0.5, opacity: 0, display: 'none'}, 'first'
+    )
+    timeline.fromTo(
+        '#titleTwo',
+        {x: 700}, {delay: 0.5, duration: 0.5, x: 0}, 'first'
+    )
     timeline.to(airpods, {
-        frame: 20,
+        frame: 50,
         snap: "frame",
         onUpdate: (self) => {
             render();
         }
-    });
-    timeline.addLabel('third');
+    }, 'second');
+    timeline.fromTo(
+        '#titleTwo',
+        {x: 0, opacity: 1}, {duration: 0.5, x: 700, opacity: 0, display: 'none'}, 'second'
+    )
+    timeline.fromTo(
+        '#titleThree', {
+            opacity: 0,
+        }, {
+            delay: 0.5,
+            duration: 0.5,
+            opacity: 1,
+        }, 'second'
+    )
+
     timeline.to(airpods, {
-        frame: frameCount-1,
+        frame: frameCount - 1,
         snap: "frame",
         onUpdate: (self) => {
             render();
         }
-    });
-    timeline.addLabel('last');
+    }, 'third');
 
     var scroller = ScrollTrigger.create({
         trigger: "#containerBrioche",
         start: '-200px',
-        end: '+=300%',
+        end: '+=100%',
         markers: true,
         scrub: 0.1,
         pin: true,

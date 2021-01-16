@@ -11,4 +11,5 @@ echo '<link href="/css/bulma-carousel.min.css" rel="stylesheet"/>
     <script src="/js/gsap.min.js"></script>
     <script src="/js/videojs.js"></script>
 <script src="/js/CSSRulePlugin.min.js"></script>
-<script src="/js/ScrollToPlugin.min.js"></script>';
+<script src="/js/ScrollToPlugin.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>';

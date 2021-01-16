@@ -204,10 +204,53 @@ $view = ButtonBeforeAfter("BUFFEL");
         <p class="title" style="margin-bottom:10px;padding-top: 10px;">
             Innovazione
         </p>
-    </div>
+        <div id="containerBrioche" class="columns is-vcentered">
+            <div class="column" style="position:absolute;">
+                <p class="title" style="margin-bottom:10px;">
+                    Brioche<span class="black-font">3D WOW</span>
+                </p>
+            </div>
+            <div class="column">
 
-    <div id="containerBrioche">
-        <canvas id="hero-lightpass"></canvas>
+                <canvas id="hero-lightpass" style="width: 1400px"></canvas>
+            </div>
+            <div class="column" style="position:absolute; right: 0">
+                <p class="title" id="titleOne" style="transform: translateX(600px)">
+                    DUDU <span class="black-font">WOW</span>
+                </p>
+                <p class="title" id="titleTwo">
+                    SECONDO <span class="black-font">WOW</span>
+                </p>
+                <div class="title" id="titleThree" style="width: 150%">
+                    <div id="video-compare-container" style="padding-top: 250px; width: 400px">
+                        <div class="mask">
+                            <video id="video2"
+                                   autoplay
+                                   loop
+                                   muted
+                            >
+                                <source
+
+                                        src='/media/video/works/Buffel_VFX.mp4'>
+
+                            </video>
+                        </div>
+
+                        <div id="video-clipper">
+                            <video id="video1"
+                                   autoplay
+                                   loop
+                                   muted
+                            >
+                                <source
+                                        src='/media/video/works/Buffel_NoVFX.mp4'>
+
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -258,7 +301,7 @@ $view = ButtonBeforeAfter("BUFFEL");
 <?php
 button('BUFFEL');
 ?>
-</div>
+
 
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>
@@ -297,6 +340,27 @@ button('BUFFEL');
     setTimeout(() => {
         $('.eapps-link').remove();
     }, 2000);
+
+</script>
+<script>
+
+
+    function trackLocation(e) {
+        var rect = videoContainer.getBoundingClientRect(),
+            position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
+        if (position <= 100) {
+            videoClipper.style.width = position + "%";
+
+        }
+    }
+
+    var videoContainer = document.getElementById("video-compare-container")
+
+    var videoClipper = document.getElementById("video-clipper"),
+        clippedVideo = videoClipper.getElementsByTagName("video")[0];
+    videoContainer.addEventListener("mousemove", trackLocation, false);
+    videoContainer.addEventListener("touchstart", trackLocation, false);
+    videoContainer.addEventListener("touchmove", trackLocation, false);
 
 </script>
 </body>

@@ -5,7 +5,7 @@
         <div class="columns fade-in-animation" id="main-block-footer">
             <div class="column find-us">
                 <p class="has-text-centered">FIND US</p>
-                <a href="contacts.php">
+                <a href="/contacts.php">
                     <div class="animatedBtn">
                         <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
                             <rect class="shape" height="50" width="200" />
@@ -40,4 +40,3 @@
 </footer>
 <script src="/js/footer.js"></script>
 <script src="/js/animations.js"></script>
-<script src="https://kit.fontawesome.com/9eeab300fc.js" crossorigin="anonymous"></script>
