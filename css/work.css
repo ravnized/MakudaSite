@@ -130,7 +130,7 @@ body {
 }
 
 .workBlockTitle {
-    font-family: Gelion-Black;
+    font-family: Gelion-Black, serif;
     z-index: 10;
     pointer-events: none;
     transform-style: preserve-3d;
@@ -144,7 +144,7 @@ body {
 }
 
 .singleWorkBlockTitle {
-    font-family: Gelion-Black;
+    font-family: Gelion-Black, serif;
     z-index: 10;
     pointer-events: none;
     transform-style: preserve-3d;
@@ -219,7 +219,7 @@ body {
     color: #fff;
     font-weight: 500;
     line-height: 1;
-    font-family: Gelion-black;
+    font-family: Gelion-black, serif;
     text-transform: uppercase;
 }
 
@@ -232,7 +232,7 @@ body {
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    font-family: Gelion-black;
+    font-family: Gelion-black, serif;
 }
 
 .container .descVideo {
@@ -240,7 +240,7 @@ body {
     z-index: 2;
     color: white;
     line-height: 1;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
     transform: translate(0, 200px);
     opacity: 0;
     font-size: 2em;
@@ -261,7 +261,7 @@ video {
 
 .descriptionVideo {
     color: white;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
     transform: translateX(-25%);
     perspective: 1000px;
 }
@@ -269,13 +269,13 @@ video {
 .titleDescriptionVideo {
     color: #f6b600;
     font-size: 2em;
-    font-family: Gelion-black;
+    font-family: Gelion-black, serif;
     text-transform: uppercase;
 }
 
 .boldOrange {
     font-size: 1em;
-    font-family: Gelion-black;
+    font-family: Gelion-black, serif;
     color: #f6b600;
 }
 
@@ -291,33 +291,33 @@ video {
 
 .simpleOrange {
     color: #f6b600;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
     margin-left: 10px;
     font-size: 1em;
 }
 
 .subTitleOrange {
     color: #f6b600;
-    font-family: Gelion-Regular;
+    font-family: Gelion-Regular, serif;
     font-size: 1.5em;
     margin-top: -10px;
 }
 
 .orangeOnly {
     color: #f6b600;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
     font-size: 1em;
 }
 
 .giantAssText {
     font-size: 6em;
     color: white;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
 }
 
 .whiteText {
     color: white;
-    font-family: Gelion-light;
+    font-family: Gelion-light, serif;
     font-size: 1.5em;
 }
 
@@ -536,7 +536,7 @@ VideoJS Custom
         position: fixed;
         width: 10em;
         height: 20em;
-        right: 10vw;
+        right: 35vw;
         bottom: 5em;
     }
 
@@ -848,4 +848,32 @@ div.mask {
 
 .fa-facebook-square {
     color: white;
+}
+.full-screen-carousel-arrow i:hover {
+    color: rgb(255, 197, 32) !important;
+}
+
+.rightBandSign{
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 30vw;
+    top: 0;
+    pointer-events: auto;
+    z-index: 7;
+}
+
+
+.makuda-home-link--contacts.makuda-home-link-wrap {
+    left: calc(80% + 21px) !important;
+}
+.blackScreenLeft{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
 }

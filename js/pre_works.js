@@ -7,7 +7,10 @@ function disablePointerEvent(element) {
 function enablePointerEvent(element) {
     element.css('pointer-events', 'auto');
 }
-
+$('#video2').get(0).currentTime = 5;
+$('#video1').get(0).currentTime = 5;
+$('#video1').get(0).play();
+$('#video2').get(0).play();
 function video1Enter() {
     var tl = gsap.timeline();
 
@@ -129,9 +132,7 @@ function animationStart() {
             "filterAnimation"
         );
     });
-    $('#video2').get(0).currentTime = 5;
-    $('#video1').get(0).play();
-    $('#video2').get(0).play();
+
     var tlStart = gsap.timeline();
     disablePointerEvent($('#video1,#video2'));
 
@@ -150,7 +151,7 @@ function animationStart() {
             width: 50 + '%',
             ease: 'power4.out'
         },
-        0
+        1
     );
 
     tlStart.fromTo($(".mask"),
@@ -167,7 +168,7 @@ function animationStart() {
                 enablePointerEvent($('#video1,#video2'));
             }
         },
-        0);
+        1);
     tlStart.add(function () {
 
     })
@@ -178,7 +179,7 @@ function animationStart() {
             x: -1000,
         },
         {duration: 1, x: -100},
-        0
+        1
     );
     tlStart.fromTo(
         $(".makuda-home-link--contacts.is-loaded span:last-child"),
@@ -187,7 +188,7 @@ function animationStart() {
             x: 1000,
         },
         {duration: 1, x: 100},
-        0
+        1
     );
     tlStart.fromTo(
         $(".makuda-home-link--works.is-loaded span:first-child "),
@@ -196,7 +197,7 @@ function animationStart() {
             x: 1000,
         },
         {duration: 1, x: -100},
-        0
+        1
     );
     tlStart.fromTo(
         $(".makuda-home-link--works.is-loaded span:last-child"),
@@ -205,7 +206,7 @@ function animationStart() {
             x: -1000,
         },
         {duration: 1, x: 100},
-        0
+        1
     );
 }
 
