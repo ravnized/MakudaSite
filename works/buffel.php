@@ -84,14 +84,11 @@ $view = ButtonBeforeAfter("BUFFEL");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+
+
+
+
+
                                 </p>
                             </div>
                             <div class="column">
@@ -112,6 +109,7 @@ $view = ButtonBeforeAfter("BUFFEL");
         </div>
     </section>
 </div>
+
 <div class="pubblicazione-social">
     <div class="works-band" style="height: 80%"></div>
     <div class="container">
@@ -197,11 +195,10 @@ $view = ButtonBeforeAfter("BUFFEL");
     </div>
 </div>
 
-
-<div class="pubblicazione-social makuda-bgcolor">
+<div class="pubblicazione-social makuda-bgcolor" id="makudaContainer">
 
     <div class="container">
-        <p class="title" style="margin-bottom:10px;padding-top: 10px;">
+        <p class="title" style="padding-bottom:10px;padding-top: 10px;">
             Innovazione
         </p>
         <div id="containerBrioche" class="columns is-vcentered">
@@ -211,7 +208,6 @@ $view = ButtonBeforeAfter("BUFFEL");
                 </p>
             </div>
             <div class="column">
-
                 <canvas id="hero-lightpass" style="width: 1400px"></canvas>
             </div>
             <div class="column" style="position:absolute; right: 0">

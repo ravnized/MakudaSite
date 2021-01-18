@@ -86,7 +86,7 @@ $(function () {
 
     var scroller = ScrollTrigger.create({
         trigger: "#containerBrioche",
-        start: '-200px',
+        start: 'top middle',
         end: '+=100%',
         markers: true,
         scrub: 0.1,

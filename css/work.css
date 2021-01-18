@@ -816,14 +816,15 @@ div.mask {
     width: 200px;
     height: 100px;
 }
-.playMakuda{
-border-color: unset;
- border-width: 0;
+
+.playMakuda {
+    border-color: unset;
+    border-width: 0;
     background-color: transparent;
 }
 
 .playMakuda:focus {
-border-color: unset;
+    border-color: unset;
     box-shadow: unset;
 }
 
@@ -831,24 +832,20 @@ border-color: unset;
     box-shadow: unset;
 }
 
-
-@media (max-width: 1920px) {
-    #containerBrioche{
-        top: 0 !important;
-    }
-}
-
-.fixedBottom{
+.fixedBottom {
     position: fixed;
     bottom: 0;
     right: 0;
 }
-.fa-vimeo{
+
+.fa-vimeo {
     color: white;
 }
-.fa-instagram{
+
+.fa-instagram {
     color: white;
 }
-.fa-facebook-square{
+
+.fa-facebook-square {
     color: white;
 }
