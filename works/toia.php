@@ -19,28 +19,28 @@ $view = ButtonBeforeAfter("TOIA");
 
 <style>
     #img1 {
-        background-image: url(/media/img/works/toia_1.JPG);
+        background-image: url(/media/img/works/toia_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/toia_2.JPG);
+        background-image: url(/media/img/works/toia_2.jpg);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/toia_3.JPG);
+        background-image: url(/media/img/works/toia_3.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/toia_4.JPG);
+        background-image: url(/media/img/works/toia_4.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/toia_5.JPG);
+        background-image: url(/media/img/works/toia_5.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/toia_6.JPG);
+        background-image: url(/media/img/works/toia_6.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>
