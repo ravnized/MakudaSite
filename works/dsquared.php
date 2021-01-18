@@ -89,8 +89,6 @@ $view = ButtonBeforeAfter("DSQUARED2");
 </div>
 <div class="pubblicazione-social" style="background-color:#FFBF1B;">
     <div class="container">
-
-
         <br/>
         <p class="title" style="margin-bottom:10px;">
             Altri Lavori <span class="black-font">Insieme</span>
@@ -105,7 +103,7 @@ $view = ButtonBeforeAfter("DSQUARED2");
         <div class="container is-max-desktop">
             <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                    data-setup='{"controls":true}' loop muted preload="none">
-                <source src="/media/video/works/Dsquared2%20Deff%20web.m4v" type="video/mp4"/>
+                <source src="/media/video/works/Herca%20Final-1web.m4v" type="video/mp4"/>
                 <p class="vjs-no-js">
                     To view this video please enable JavaScript, and
                     consider upgrading to a web browser that

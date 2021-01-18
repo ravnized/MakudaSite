@@ -263,6 +263,16 @@ progress {
     z-index: 2;
 }
 
+.wrapper-testimonial{
+    min-height: 250px;
+}
+.testimonial-dopo{
+    padding-left: 0 !important;
+}
+.testimonial-prima{
+    padding-right: 0 !important;
+}
+
 .wrapper-gradient {
     position: absolute;
     width: 100%;
@@ -301,9 +311,7 @@ progress {
     color: #f6b600 !important;
 }
 
-.testimonial-dopo:before {
-    opacity: 0;
-}
+
 
 .slider-pagination .slider-page {
     background: #f6b600 !important;
@@ -328,11 +336,7 @@ progress {
     animation: opacityAnimation 2s;
 }
 
-.testimonial-dopo {
-    background: linear-gradient(to left, #111111 60%, rgba(0, 0, 0, 0));
 
-    animation: opacityAnimation 2s;
-}
 
 @keyframes opacityAnimation {
     0% {
@@ -343,10 +347,7 @@ progress {
     }
 }
 
-.testimonial-prima {
-    background: linear-gradient(to right, #111111 60%, rgba(0, 0, 0, 0));
-    animation: opacityAnimation 1s;
-}
+
 
 .circle canvas {
     vertical-align: middle;
@@ -515,34 +516,6 @@ a:hover {
     }
 }
 
-.pageloaderLogo {
-    background-color: #111111;
-    min-height: 100%;
-    min-width: 100%;
-    transform-origin: center center;
-    -webkit-transform-origin: center center;
-}
-
-@keyframes scaleUP {
-    /* You could think of as "step 1" */
-    0% {
-        transform: scale(0, 0);
-    }
-    /* You could think of as "step 2" */
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
-.circleInit {
-    transform-origin: center;
-    transform: scale(0, 0);
-}
-
-.circleScale {
-    transform-origin: center center;
-    animation: scaleUP 0.3s;
-}
 
 :not(svg) {
     transform-origin: center;
@@ -773,7 +746,7 @@ div > .uno {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px !important;
+    width: 150px !important;
     height: auto;
     margin-right: 50px;
 }

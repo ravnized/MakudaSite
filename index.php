@@ -4,26 +4,11 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Homepage</title>
-    <link href="css/bulma.min.css" rel="stylesheet"/>
+    <?php require('./components/common_libraries.php') ?>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="css/animations.css" rel="stylesheet" type="text/css"/>
-    <link
-            href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
-            rel="stylesheet"
-    />
-    <link href="css/pageLoader.css" rel="stylesheet"/>
-    <link href="css/menu.css" rel="stylesheet"/>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script
-            crossorigin="anonymous"
-            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    ></script>
-
-    <script src="js/pixi.min.js"></script>
+    <script type="text/javascript" src="js/pixi.min.js"></script>
 </head>
 
 <body>
@@ -289,25 +274,27 @@
         <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
         <div class="fading-carousel">
             <?php
-            $myfile = fopen("media/json/home-works.json", "r") or die("Unable to open file!");
-            $to_parse = fread($myfile, filesize("media/json/home-works.json"));
+            $myfile = fopen("media/json/carousel-home.json", "r") or die("Unable to open file!");
+            $to_parse = fread($myfile, filesize("media/json/carousel-home.json"));
             fclose($myfile);
             $parsed = json_decode($to_parse, true);
             ?>
             <div class="fading-images fade-in-right-animation">
                 <?php
                 $c = 0;
+
                 foreach ($parsed as $view) {
                     $c++;
+
                     $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
                     echo "<div class='fading-image $classes_added'>
-                      <img class='' src='media/img/works/" . $view["fragmented-image"] . "'></img>
+                      <img class='' src='media/img/works/" . $view["fragmented-image"] . "'>
                     </div>";
                 }
                 ?>
             </div>
             <div style="flex: 1;">
-                <img class='opacity-0' src='media/img/works/img1.png'></img>
+                <img class='opacity-0' src='media/img/works/img1.png'>
             </div>
             <div class="fade-in-left-animation fading-caption-content">
                 <?php
@@ -361,7 +348,7 @@
                 <div class="item-1">
                     <div class="card card-padding">
                         <div class="card-image wrapper-testimonial">
-                            <div class="testimonials-gradient"></div>
+
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
@@ -390,7 +377,7 @@
                 <div class="item-2">
                     <div class="card card-padding">
                         <div class="card-image wrapper-testimonial">
-                            <div class="testimonials-gradient"></div>
+
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
@@ -419,7 +406,7 @@
                 <div class="item-3">
                     <div class="card card-padding">
                         <div class="card-image wrapper-testimonial">
-                            <div class="testimonials-gradient"></div>
+
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
@@ -630,35 +617,12 @@
 
 <?php require "components/footer.php" ?>
 
-<script
-        crossorigin="anonymous"
-        integrity="sha512-2LEOQqARBlk67mYfoWcJah3Rt1Tan5TYsWUNBPtviIk206eyqQpUSpuBK5S77UFu3Pm+zlJOdw8uP5UfO/AtPw=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"
-></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-<script src="js/circleScroll.js" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script src="js/bulma-carousel.min.js"></script>
 <script>
     var carousels = bulmaCarousel.attach(".carousel");
     var carousel2 = bulmaCarousel.attach(".hero-carousel");
 </script>
 <script src="js/carouselManipulator.js"></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
-></script>
-<script
-        crossorigin="anonymous"
-        integrity="sha512-HxCVV6ztUUQxy4YKONLIA2qjMsobBr0OVaXrVWqVcuDrlY9cFxQs9u346FLzDXQlrGKYTXfA+w5DbGyq2P5C+g=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"
-></script>
 <script src="js/swipe.js"></script>
 <script src="js/indexJS.js"></script>
 <script src="js/menu.js"></script>

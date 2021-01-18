@@ -8,7 +8,6 @@ $(document).ready(function ($) {
             parallelepipedParent = parallelepipedo.parent(),
             timer = 0;
 
-        console.log(parallelepipedParent);
 
         for (let i = 0; i < parallelepipedParent.length; i++) {
             disable[i] = false;
@@ -79,7 +78,7 @@ $(document).ready(function ($) {
                 $(parallelepipedParent[i]).find(".parallelepipedo"),
                 {
                     duration: 0.5,
-                    background: "#3b3b3b",
+                    background: "linear-gradient(#3b3b3b,#3b3b3b)",
                 },
                 0.2
             );
@@ -358,7 +357,7 @@ $(document).ready(function ($) {
             parallelepipedo.secondText,
             {
                 duration: 0.3,
-                y: 350,
+                y: 380,
                 ease: "power2.in",
             },
             "mouseEnter"
@@ -389,7 +388,7 @@ $(document).ready(function ($) {
             "mouseenter",
 
             function () {
-                console.log('mouseEnter')
+
                 parallelepipedo.tl.play();
             }
         );
@@ -398,7 +397,7 @@ $(document).ready(function ($) {
             "mouseleave",
 
             function () {
-                console.log('mouseleave')
+
                 if (disable[parallelepipedo.idElement - 1] !== true) {
                     parallelepipedo.tl.reverse();
                 }

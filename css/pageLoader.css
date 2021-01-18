@@ -19,3 +19,39 @@
   display: flex;
   color: #111111;
 }
+
+
+.pageloaderLogo {
+  background-color: #111111;
+  min-height: 100%;
+  min-width: 100%;
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+}
+
+@keyframes scaleUP {
+  /* You could think of as "step 1" */
+  0% {
+    transform: scale(0, 0);
+  }
+  /* You could think of as "step 2" */
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.circleInit {
+  transform-origin: center;
+  transform: scale(0, 0);
+}
+
+.circleScale {
+  transform-origin: center center;
+  animation: scaleUP 0.3s;
+}
+:not(svg) {
+  transform-origin: center;
+  -moz-transform-origin: center;
+  -webkit-transform-origin: center center;
+  transform-box: fill-box;
+}

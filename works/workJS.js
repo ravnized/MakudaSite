@@ -91,6 +91,11 @@ if ($(".gif-firstSection").length !== 0) {
     })
 }
 $(window).on("scroll resize", async function () {
+        if ($(".separator-yellow").length !== 0) {
+            console.log('separator')
+            $(".separator-yellow").css("height", $(".works-band").height() - $(".gif-zoda").position().top + "px");
+
+        }
 
 
         if ($(".gif-firstSection").length !== 0) {
@@ -163,8 +168,6 @@ $(window).on("scroll resize", async function () {
                 $(".gif-cellulari .column:eq(2)").css("transform", "scale(1)");
             }
         }
-
-
 
 
         if ($(".gif-zoda").length !== 0) {

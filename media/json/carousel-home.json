@@ -1,0 +1,57 @@
+[
+  {
+    "id": "DSQUARED2",
+    "case-study": false,
+    "produzione": true,
+    "link": "dsquared.php",
+    "image": "dsquared_copertina.png",
+    "fragmented-image": "dsquared_copertina.png",
+    "title": "Dsquared2",
+    "subtitle": "55th anniversary",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+  },
+  {
+    "id": "BUFFEL",
+    "case-study": true,
+    "produzione": false,
+    "link": "buffel.php",
+    "image": "buffel_copertina.png",
+    "fragmented-image": "img1.png",
+    "title": "Buffel",
+    "subtitle": "Case Study",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+  },
+  {
+    "id": "ZODA",
+    "case-study": false,
+    "produzione": true,
+    "link": "zoda.php",
+    "image": "zoda_copertina.png",
+    "fragmented-image": "img1.png",
+    "title": "Zoda",
+    "subtitle": "oh madre mia",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+  },
+  {
+    "id": "SUITES",
+    "case-study": true,
+    "produzione": false,
+    "link": "suites.php",
+    "image": "suites_copertina.png",
+    "fragmented-image": "img1.png",
+    "title": "Suites & <br>Atelier",
+    "subtitle": "",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+  },
+  {
+    "id": "CIROC",
+    "case-study": false,
+    "produzione": true,
+    "link": "ciroc.php",
+    "image": "Ciroc.png",
+    "fragmented-image": "Ciroc.png",
+    "title": "Ciroc",
+    "subtitle": "B-roll",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+  }
+]

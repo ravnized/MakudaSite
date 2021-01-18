@@ -1,10 +1,13 @@
 unloadScrollBars()
-function disablePointerEvent(element){
+
+function disablePointerEvent(element) {
     element.css('pointer-events', 'none');
 }
-function enablePointerEvent(element){
+
+function enablePointerEvent(element) {
     element.css('pointer-events', 'auto');
 }
+
 function video1Enter() {
     var tl = gsap.timeline();
 
@@ -88,7 +91,7 @@ function video2Leave() {
     );
 }
 
-$(document).ready(function () {
+function animationStart() {
     $("#video1").on("mouseenter", function () {
         video1Enter();
         video2Leave();
@@ -137,14 +140,14 @@ $(document).ready(function () {
         $("#video-clipper"),
         {
 
-            left: 50+'%',
+            left: 50 + '%',
             width: 0,
         },
         {
-            delay: 3,
+
             duration: 2,
-            left: 0+'%',
-            width: 50+'%',
+            left: 0 + '%',
+            width: 50 + '%',
             ease: 'power4.out'
         },
         0
@@ -152,16 +155,15 @@ $(document).ready(function () {
 
     tlStart.fromTo($(".mask"),
         {
-            right: 50+'%',
+            right: 50 + '%',
             width: 0,
         },
         {
-            delay: 3,
             duration: 2,
-            right: 0+'%',
-            width: 50+'%',
+            right: 0 + '%',
+            width: 50 + '%',
             ease: 'power4.out',
-            onComplete: function(){
+            onComplete: function () {
                 enablePointerEvent($('#video1,#video2'));
             }
         },
@@ -205,4 +207,39 @@ $(document).ready(function () {
         {duration: 1, x: 100},
         0
     );
-});
+}
+
+const tl3 = gsap.timeline();
+
+function loader() {
+    unloadScrollBars();
+    var pageloader;
+    pageloader = $(".pageloaderLogo").find("circle");
+    for (let i = 0; i < 20; i += 2) {
+        tl3.add(function () {
+            $(pageloader[i]).addClass("circleScale");
+            $(pageloader[i]).removeClass("circleInit");
+            $(pageloader[i + 1]).addClass("circleScale");
+            $(pageloader[i + 1]).removeClass("circleInit");
+        }, "+=0.1");
+
+        if (i === 20) {
+            finished = true;
+        }
+    }
+    var makuda = ["M", "A_2", "K", "U", "D", "A", "triangle"];
+
+    for (let k = 0; k < makuda.length; k++) {
+        tl3.to("#" + makuda[k], {duration: 0, autoAlpha: 1, delay: 0.1});
+    }
+    tl3.to(".pageloader", {
+        duration: 0.5,
+        autoAlpha: 0,
+        onComplete: function () {
+            animationStart();
+            $(".pageloader").hide();
+        },
+    });
+}
+
+loader();

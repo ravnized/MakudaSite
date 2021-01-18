@@ -26,7 +26,6 @@ $view = ButtonBeforeAfter("TOIA");
         background-image: url(/media/img/works/toia_2.jpg);
 
     }
-
     #img3 {
         background-image: url(/media/img/works/toia_3.jpg);
     }

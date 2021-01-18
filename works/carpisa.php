@@ -19,16 +19,15 @@ $view = ButtonBeforeAfter("CARPISA");
 <body style="background-color:#111;">
 <style>
     #img1 {
-        background-image: url(/media/img/works/toia_1.JPG);
+        background-image: url(/media/img/works/carpisa_foto_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/toia_2.JPG);
+        background-image: url(/media/img/works/carpisa_foto_2.jpg);
 
     }
-
     #img3 {
-        background-image: url(/media/img/works/toia_3.JPG);
+        background-image: url(/media/img/works/carpisa_foto_3.jpg);
     }
 
 </style>

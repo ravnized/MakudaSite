@@ -1,12 +1,14 @@
 /* FOOTER */
 footer {
-  font-family: Gelion-black;
+  font-family: Gelion-black, serif !important;
   text-transform: uppercase;
   padding-top: 100px;
   background-color: black;
   position: relative;
 }
 footer p {
+  font-family: Gelion-black, serif !important;
+  color: white;
   font-size: 20px;
   letter-spacing: 0.2em !important;
 }

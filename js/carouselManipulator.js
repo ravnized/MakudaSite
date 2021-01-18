@@ -63,26 +63,27 @@ function reviewNextPrevious() {
     ".testimonials-gradient"
   );
   tl.to($(elementTestimonial), { duration: 1, scaleX: 1, scaleY: 1 }, 0);
-  if (elementTestimonialPrevious.length != 0) {
+  if (elementTestimonialPrevious.length !== 0) {
     tl.to(
       $(elementTestimonialPrevious),
-      { duration: 1, scaleX: 0.7, scaleY: 0.7 },
+      { duration: 1, scaleX: 0.7, scaleY: 0.7,transformOrigin: 'right' },
       0
     );
   }
-  if (elementTestimonialNext.length != 0) {
+  if (elementTestimonialNext.length !== 0) {
     tl.to(
       $(elementTestimonialNext),
-      { duration: 1, scaleX: 0.7, scaleY: 0.7 },
+      { duration: 1, scaleX: 0.7, scaleY: 0.7, transformOrigin: 'left' },
       0
     );
   }
 
-  elementTestimonialGradientPrevious.addClass("testimonial-prima");
-  elementTestimonialGradientNext.addClass("testimonial-dopo");
-  elementTestimonialGradient.removeClass("testimonial-prima");
-  elementTestimonialGradient.removeClass("testimonial-dopo");
+  elementTestimonialPrevious.parent().addClass("testimonial-prima");
+  elementTestimonialNext.parent().addClass("testimonial-dopo");
+  elementTestimonial.parent().removeClass("testimonial-prima");
+  elementTestimonial.parent().removeClass("testimonial-dopo");
 }
+reviewNextPrevious();
 
 function videoNextPrevious() {
   var tl = gsap.timeline();
