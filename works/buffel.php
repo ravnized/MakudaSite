@@ -14,6 +14,7 @@ $view = ButtonBeforeAfter("BUFFEL");
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/animations.css" rel="stylesheet" type="text/css"/>
+
     <?php require('../components/common_libraries.php') ?>
 </head>
 <body style="background-color: #111; min-height: 100vh">
@@ -84,11 +85,11 @@ $view = ButtonBeforeAfter("BUFFEL");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-
-
-
-
-
+                                    Lʼazienda nel 2020 si è rivolta a noi per far si che il brand Buffel fosse
+                                    riconoscibile e acquistasse man mano nel tempo riconoscibilità. Per questa sfida ci
+                                    siamo immersi nel mercato della pasticceria e gelateria preparando insieme alla
+                                    proprietà un percorso che ad oggi sta cambiando la storia della società in
+                                    questione.
                                 </p>
                             </div>
                             <div class="column">
@@ -110,57 +111,44 @@ $view = ButtonBeforeAfter("BUFFEL");
     </section>
 </div>
 
+
+<!--
 <div class="pubblicazione-social">
-    <div class="works-band" style="height: 80%"></div>
-    <div class="container">
-        <p class="title" style="margin-bottom:10px;padding-top:40px;">L'importanza dell'
-            <span class="black-font">IdentitÁ</span>
-        </p>
+<div class="works-band" style="height: 80%"></div>
+<div class="container">
+<p class="title" style="margin-bottom:10px;padding-top:40px;">L'importanza dell'
+    <span class="black-font">IdentitÁ</span>
+</p>
 
-        <div class="gif-firstSection">
+<div class="gif-firstSection">
 
-            <div class="columns" style="padding-top: 50px; ">
-                <div class="column">
-                    <p class="frase" style="text-align: right;padding-right: 50px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu maximus
-                    </p>
-                </div>
-                <div class="column">
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
-                </div>
-            </div>
-
+    <div class="columns" style="padding-top: 50px; ">
+        <div class="column">
+            <p class="frase" style="text-align: right;padding-right: 50px">
+                Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
+                Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
+                mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
+                dal mercato attuale. Sperimentare e sondare la risposta degli utenti tramite i social media è
+                stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
+            </p>
         </div>
+        <div class="column" style="min-height: 50vh">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
+        </div>
+    </div>
 
-        <br><br>
-        <p class="title" style="margin-bottom:10px;">
-            Andiamo a <span class="makuda-color">Mille</span>
-        </p>
-        <p class="frase" style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
-        </p>
-
-
+</div>
+<br><br>
+<p class="title" style="margin-bottom:10px;color: white">
+    Andiamo a <span class="makuda-color">Mille</span>
+</p>
+<p class="frase" style="color: white">
+    Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
+    abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
+    fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
+    brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
+</p>
         <div class="container imgs-slide">
             <div class="columns gif-photo">
                 <div class="column">
@@ -190,10 +178,10 @@ $view = ButtonBeforeAfter("BUFFEL");
             <br><br>
 
         </div>
-
-
-    </div>
 </div>
+</div>
+-->
+
 
 <div class="pubblicazione-social makuda-bgcolor" id="makudaContainer">
 
@@ -338,6 +326,9 @@ button('BUFFEL');
     }, 2000);
 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lethargy/1.0.9/lethargy.min.js"
+        integrity="sha512-ux1qF1kwkCG5MM/4Hjp7MO8FqcJLyzfJavf6Nq2Xklh1Hr/YQbKk36NL0PDZMB//PzIZTBiCpMZdwScH/e4z6w=="
+        crossorigin="anonymous"></script>
 <script>
 
 
@@ -359,5 +350,6 @@ button('BUFFEL');
     videoContainer.addEventListener("touchmove", trackLocation, false);
 
 </script>
+
 </body>
 </html>

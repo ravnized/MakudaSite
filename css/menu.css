@@ -121,3 +121,26 @@
   font-family: Gelion-Regular-italic, serif;
   font-size: 4em;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu-background{
+    display: none;
+  }
+  /* CSS */
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* CSS */
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .menu-background{
+    display: none;
+  }
+  /* CSS */
+
+}
+@Aagbator

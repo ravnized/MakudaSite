@@ -86,14 +86,11 @@ $view = ButtonBeforeAfter("DANZA");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Una scuola storica ha bisogno di rimanere al passo con i tempi in tutti i sensi. La
+                                    richiesta del cliente è stata di trasferire la loro offerta anche sul web e di farla
+                                    percepire nel modo più aderente possibile alla qualità del servizio offerto. La
+                                    chiave in questo caso sono stati i sondaggi interni ed esterni alla struttura che
+                                    hanno permesso di individuare facilmente gli obiettivi.
                                 </p>
                             </div>
                             <div class="column">
@@ -122,13 +119,10 @@ $view = ButtonBeforeAfter("DANZA");
             <span class="black-font">Bello e semplice</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
+            Il mood scelto per Centro arti Danza è stato il pulito. Dalla scelta della linea grafica alla attenzione
+            sullo scatto fino alla creazione del sito web, la coerenza è stata la mossa vincente per seguire lʼidentità
+            della scuola.
+
         </p>
         <br>
         <div class="container">

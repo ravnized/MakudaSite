@@ -86,14 +86,10 @@ $view = ButtonBeforeAfter("SUITES");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Suites & Atelier è il risultato dellʼincontro di arte ed eleganza, la residenza di
+                                    un artista trasformata in un alloggio (5 suites) vicino la riva del lago di Como.
+                                    Richiesta: avviare la presenza digitale dellʼattività curando in particolare modo la
+                                    storia della struttura.
                                 </p>
                             </div>
                             <div class="column">
@@ -143,17 +139,10 @@ $view = ButtonBeforeAfter("SUITES");
                 </div>
                 <div class="column" style="margin-left: -300px">
                     <p class="frase" style="text-align:left;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies. <br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu
-                        maximus<br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu
-                        maximus<br>
-                        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                        arcu
-                        maximus<br>
+                        Al giorno dʼoggi strutture così curate possono permettersi di gestire pochi canali di vendita.
+                        La struttura presenta la sua offerta esclusivamente online; avendo riscosso da subito un grande
+                        successo la proprietà ha deciso di dedicarsi anche ad eventi di cultura programmando mostre
+                        allʼinterno dei propri spazi.
                     </p>
                 </div>
             </div>

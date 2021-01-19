@@ -86,14 +86,10 @@ $view = ButtonBeforeAfter("DECUBE");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Una delle sfide più interessanti e complesse, come dʼaltronde è il momento storico
+                                    delle discoteche, settore in forte crisi da ormai diversi anni. Ogni business ha la
+                                    propria strada da seguire per arrivare al successo. In questo caso lʼazienda ha
+                                    scelto di dare priorità alle pubbliche relazione rispetto a tutto il resto.
                                 </p>
                             </div>
                             <div class="column">
@@ -119,16 +115,13 @@ $view = ButtonBeforeAfter("DECUBE");
     <div class="works-band" style="height: 150%"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
-            <span class="black-font">Il risultato del Network</span>
+            <span class="black-font">QUESTO È NETWORK</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-            maximus<br>
+            Qualsiasi azione pensata per DE CUBE ha avuto come obiettivo il coinvolgimento di più persone possibili.
+            Dalla personale allʼartistico, dai fornitori alle grafiche, dagli scatti alla comunicazione. Lʼobiettivo è
+            stato chiaro fin da subito: il locale deve essere il centro del network creato.
+
         </p>
         <br>
         <div class="container">

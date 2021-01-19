@@ -83,20 +83,42 @@ $(function () {
             render();
         }
     }, 'third');
+    /*
+        var scroller = ScrollTrigger.create({
+            trigger: "#containerBrioche",
+            start: 'top middle',
+            end: '+=100%',
+            markers: true,
+            scrub: 0.1,
+            pin: true,
+            animation: timeline,
+            snap: {
+                snapTo: 'labels',
+                duration: 0.1,
+            },
+        });
+    */
 
-    var scroller = ScrollTrigger.create({
-        trigger: "#containerBrioche",
-        start: 'top middle',
-        end: '+=100%',
-        markers: true,
-        scrub: 0.1,
-        pin: true,
-        animation: timeline,
-        snap: {
-            snapTo: 'labels',
-            duration: 0.1,
-        },
+    var lethargy = new Lethargy();
+
+    // Bind all mousewheel events and pass it to Lethargy.check()
+    $(window).bind('mousewheel DOMMouseScroll wheel MozMousePixelScroll', function (e) {
+        e.preventDefault()
+        e.stopPropagation();
+        var scrollPosition = 0;
+        // Lethargy.check() must only be called once per mouse event
+        // If you need to use the result in more than one place
+        // you MUST store it as a variable and use that variable instead
+        // See https://github.com/d4nyll/lethargy/issues/5
+        var result = lethargy.check(e);
+
+        // false means it's not a scroll intent, 1 or -1 means it is
+        console.log(result);
+        if(result === 1){
+            scrollPosition++;
+        }
     });
+
 
     function render() {
         context.clearRect(0, 0, canvas.width, canvas.height);

@@ -89,14 +89,10 @@ $view = ButtonBeforeAfter("PEDAVENA");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Siamo stati contattati da uno dei ristoranti più grandi nella zona dellʼalto
+                                    milanese che conta più di 200 posti a sedere. La richiesta è stata semplice e
+                                    diretta. Aumentare il fatturato soprattutto nei giorni feriali dove non è sfruttata
+                                    completamente la potenzialità del locale.
                                 </p>
                             </div>
                             <div class="column">
@@ -124,10 +120,10 @@ $view = ButtonBeforeAfter("PEDAVENA");
             <span class="black-font">Seguire la Tendenza</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
+            Quando il prodotto è valido ed è ben posizionato sul mercato la strada è sicuramente in discesa. Cʼè stato
+            solo bisogno di potenziale al massimo la comunicazione digitale per far si che il posto fosse visibili agli
+            occhi dei potenziali futuri clienti. E per fare questo occorre un prodotto diverso dal solito. Date
+            unʼocchiata.
         </p>
         <div class="gif-firstSection">
 
@@ -143,12 +139,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
                                target="_blank">supports HTML5 video</a>
                         </p>
                     </video>
-                    <p class="frase" style="padding-top: 20px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies.
-                        <br>
 
-                    </p>
                 </div>
                 <div class="column">
                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
@@ -161,14 +152,13 @@ $view = ButtonBeforeAfter("PEDAVENA");
                                target="_blank">supports HTML5 video</a>
                         </p>
                     </video>
-                    <p class="frase" style="padding-top: 20px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel
-                        ultricies.
-                        <br>
-                    </p>
-                </div>
-            </div>
 
+                </div>
+
+            </div>
+            <p class="frase" style="padding-top: 20px">
+                Abbiamo sfruttato lʼuscita del film del momento “Joker” e abbiamo scelto di riprendere una delle scene che sarebbe diventata cult nel giro di poco tempo, ovvero la danza del protagonista sulle scale. In maniera scherzosa lʼabbiamo reinterpretata; questo è il risultato finale.
+            </p>
         </div>
 
         <br><br>
