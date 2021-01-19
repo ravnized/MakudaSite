@@ -7,10 +7,15 @@ function disablePointerEvent(element) {
 function enablePointerEvent(element) {
     element.css('pointer-events', 'auto');
 }
+
+$('<style>.makuda-home-link--works:before{width: 100%}</style>').appendTo('head');
+$('<style>.makuda-home-link--contacts:before{width: 100%}</style>').appendTo('head');
+
 $('#video2').get(0).currentTime = 5;
 $('#video1').get(0).currentTime = 5;
 $('#video1').get(0).play();
 $('#video2').get(0).play();
+
 function video1Enter() {
     var tl = gsap.timeline();
 
@@ -169,9 +174,8 @@ function animationStart() {
             }
         },
         1);
-    tlStart.add(function () {
 
-    })
+
     tlStart.fromTo(
         $(".makuda-home-link--contacts.is-loaded span:first-child "),
         {

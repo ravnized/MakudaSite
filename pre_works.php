@@ -28,6 +28,47 @@
 
 <?php require "components/menu.php"; ?>
 
+<style>
+    .makuda-home-link--works.is-loaded .makuda-home-link.is-hover span:first-child {
+        transform: translateX(-50px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+
+    .makuda-home-link--works.is-loaded .makuda-home-link.is-hover span:last-child {
+        transform: translateX(-50px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+
+    .makuda-home-link--works.is-loaded .makuda-home-link:hover span:first-child {
+        transform: translateX(-50px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+
+    .makuda-home-link--works.is-loaded .makuda-home-link:hover span:last-child {
+        transform: translateX(-50px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+    .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+        color: rgba(255, 197, 32, 1);
+        transform: translateX(-40px) !important;
+    }
+
+    .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+        transform: translateX(-40px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+
+    .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
+        color: rgba(255, 197, 32, 1);
+        transform: translateX(-40px) !important;
+    }
+
+    .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:last-child {
+        transform: translateX(-40px) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+</style>
+
 <div id='mainSection' class="grained">
     <header>
         <div class="makuda-home-link--works makuda-home-link-wrap is-loaded" style="top: 100%;">
@@ -79,14 +120,10 @@
         </div>
     </div>
 </div>
-</div>
-<script
-        crossorigin="anonymous"
-        integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA=="
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"
-></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+<script src="js/CSSRulePlugin.min.js" type="text/javascript"></script>
 <script src="js/menu.js" type="text/javascript"></script>
 <script src='js/pre_works.js' type='text/javascript'></script>
 </body>

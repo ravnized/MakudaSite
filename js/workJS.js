@@ -129,7 +129,7 @@ $(window).on("scroll", function () {
     if (s > height - $(window).height() - $("footer").height())
         $(".progress_wrap").css("bottom", s - (height - $(window).height() - $("footer").height()) + 100);
     else
-        $(".progress_wrap").css("bottom", "5em");
+        $(".progress_wrap").css("bottom", "0");
 });
 
 imageVideo.mousemove(function (e) {
@@ -288,6 +288,7 @@ $(function () {
     var timeline = gsap.timeline({paused: true});
     var rule1 = CSSRulePlugin.getRule(".makuda-home-link--contacts:before");
     var rightBandSign = $('.rightBandSign');
+    timeline.set('.blackScreenLeft',{zIndex: 10})
     timeline.fromTo(
         rule1,
         {
@@ -303,6 +304,7 @@ $(function () {
     timeline.fromTo(
         '.blackScreenLeft',
         {
+            delay: 0.1,
             duration: 0.5,
             opacity: 0,
         },
@@ -310,18 +312,8 @@ $(function () {
             duration: 0.5,
             opacity: 1,
         }
-    );
-    timeline.fromTo(
-        '.blackScreenLeft',
-        {
-            duration: 0.5,
-            zIndex: 0,
-        },
-        {
-            duration: 0.5,
-            zIndex: 10,
-        },'start'
-    );
+    ,'start');
+
 
     rightBandSign.mouseover(
         function (e) {

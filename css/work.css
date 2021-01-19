@@ -536,8 +536,8 @@ VideoJS Custom
         position: fixed;
         width: 10em;
         height: 20em;
-        right: 35vw;
-        bottom: 5em;
+        right: 30vw;
+        bottom: 0;
     }
 
     .progress {
@@ -854,26 +854,34 @@ div.mask {
 }
 
 .rightBandSign{
-    right: 0;
-    position: fixed;
+    width: 5%; height: 80%;
     bottom: 0;
-    width: 30vw;
-    top: 0;
-    pointer-events: auto;
+    right: 0;
     z-index: 7;
+    position: fixed;
 }
 
 
 .makuda-home-link--contacts.makuda-home-link-wrap {
-    left: calc(80% + 21px) !important;
+    left: calc(88% + 21px) !important;
 }
 .blackScreenLeft{
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    position: fixed;
+    width: 70vw;
+    height: 100vh;
     opacity: 0;
     z-index: 0;
-    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+}
+
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+    color: rgba(255, 197, 32, 1);
+    transform: translateX(-70px) !important;
+}
+
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+    transform: translateX(0) !important ;
+    color: rgba(255, 197, 32, 1);
 }
