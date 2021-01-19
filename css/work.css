@@ -186,7 +186,7 @@ body {
 }
 
 .workBlockTitle .titleVideo {
-    transition: all 1s;
+    transition: all 0.2s;
 }
 
 .workBlockImageSub:hover + .workBlockTitle .titleVideo {

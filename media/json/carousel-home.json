@@ -5,7 +5,7 @@
     "produzione": true,
     "link": "dsquared.php",
     "image": "dsquared_copertina.png",
-    "fragmented-image": "dsquared_copertina.png",
+    "fragmented-image": "dsquared_copertina_fragmented.png",
     "title": "Dsquared2",
     "subtitle": "55th anniversary",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
@@ -16,7 +16,7 @@
     "produzione": false,
     "link": "buffel.php",
     "image": "buffel_copertina.png",
-    "fragmented-image": "img1.png",
+    "fragmented-image": "buffel_copertina_fragmented.png",
     "title": "Buffel",
     "subtitle": "Case Study",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
@@ -27,7 +27,7 @@
     "produzione": true,
     "link": "zoda.php",
     "image": "zoda_copertina.png",
-    "fragmented-image": "img1.png",
+    "fragmented-image": "zoda_copertina_fragmented.png",
     "title": "Zoda",
     "subtitle": "oh madre mia",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
@@ -38,7 +38,7 @@
     "produzione": false,
     "link": "suites.php",
     "image": "suites_copertina.png",
-    "fragmented-image": "img1.png",
+    "fragmented-image": "suites_copertina_fragmented.png",
     "title": "Suites & <br>Atelier",
     "subtitle": "",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
@@ -49,7 +49,7 @@
     "produzione": true,
     "link": "ciroc.php",
     "image": "Ciroc.png",
-    "fragmented-image": "Ciroc.png",
+    "fragmented-image": "ciroc_copertina_fragmented.png",
     "title": "Ciroc",
     "subtitle": "B-roll",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
