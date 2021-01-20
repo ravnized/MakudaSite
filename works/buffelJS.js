@@ -4,17 +4,98 @@ function redirect(URL) {
     window.location = '/works/buffel.php' + '#' + URL;
 }
 
-$(window).on("scroll resize", function () {
-    if ($('#titleOne').length !== 0) {
+// $(window).on("scroll resize", function () {
+//     if ($('#titleOne').length !== 0) {
 
-        if ($('#titleOne').isOnScreen()) {
-            gsap.to(
-                '#titleOne',
-                {duration: 1, x: 0},
-            )
-        }
+//         if ($('#titleOne').isOnScreen()) {
+//             gsap.to(
+//                 '#titleOne',
+//                 {duration: 1, x: 0},
+//             )
+//         }
+//     }
+// })
+// 1 - 27 trasparente (27) +3
+// 28 - 56 trasparente (29) +1
+// 57 - 80 trasparente (24) +6
+async function goToFrame(frameIndex){
+    let toDo = frameIndex - currentFrame;
+    let toAdd = 1;
+    if(frameIndex < currentFrame){
+        toAdd = -1;
+        toDo = currentFrame - frameIndex;
     }
-})
+    for(let i = 0; i < toDo; i++){
+        brioche.move_relative(toAdd);
+        currentFrame += toAdd;
+        await sleep(30);
+    }
+}
+var isAutoScrolling = 0;
+var actualBriocheStep = 0; //Da 0 a 2
+var lastScrollTop = 0;
+var currentFrame = 0;
+$(window).on("scroll", function (e) {
+    let s = $(window).scrollTop(),
+        d = $(document).height(),
+        c = $(window).height();
+    var briocheContainerPos = $("#containerBrioche").offset().top - 70;
+    let endBriocheContainer = $("#containerBrioche").height() - c + 150;
+    let posFromContainer = s - briocheContainerPos;
+    let percScrollBrioche = (posFromContainer * 100) / endBriocheContainer;
+    let isScrollingDown = s > lastScrollTop;
+    let newBriocheStep = actualBriocheStep + (isScrollingDown ? 1 : - 1);
+    if(!brioche.get_loading() && isAutoScrolling == 0 && newBriocheStep >= 0 && newBriocheStep <= 3 && percScrollBrioche > 0 && percScrollBrioche < 100){
+        let newFrame = newBriocheStep * 30 > 89 ? 89 : newBriocheStep * 30;
+        goToFrame(newFrame);
+        disableScroll();
+        isAutoScrolling++;
+        if(
+            !(actualBriocheStep == 0 && newBriocheStep == 1) &&
+            !(actualBriocheStep == 1 && newBriocheStep == 0)
+        ){
+            $(".didascalia-brioche:eq("+(actualBriocheStep-1)+")").css("opacity", 0);
+            $(".didascalia-brioche:eq("+(newBriocheStep-1)+")").css("opacity", 1);
+        }
+        actualBriocheStep = newBriocheStep;
+        var newY = briocheContainerPos + (actualBriocheStep * (c * 0.95));
+        $('html, body').stop().animate(
+            {
+                scrollTop: newY
+            },
+            {
+                duration: 900,
+                step: function() { 
+                    disableScroll();
+                    let newPos = $(window).scrollTop() - briocheContainerPos;
+                    $("#innovazioneTitle, .titolo-brioche, .didascalie-brioche, .brioche").css("top", newPos);
+                },
+                complete: function() { 
+                    enableScroll();
+                    isAutoScrolling = -1;
+                    brioche.pause();
+                }
+            }
+        );
+    }
+    if(isAutoScrolling == -1)
+        isAutoScrolling = 0;
+    lastScrollTop = s;
+});
+var brioche;
+$(document).ready(()=>{
+    brioche = new SuperGif({ 
+        gif: document.getElementById('gif-brioche'),
+        rubbable: false,
+        auto_play: false
+     } );
+     brioche.load(()=>{
+        $("#gif-brioche-div").css("opacity", "100%");
+        $("#brioche-loader").css("opacity", "0");
+        $("#containerBrioche").css("height", "380vh");
+        brioche.move_to(currentFrame);
+    });
+});
 
 $(function () {
     const timeline = gsap.timeline();

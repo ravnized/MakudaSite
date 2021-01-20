@@ -885,3 +885,56 @@ div.mask {
     transform: translateX(0) !important ;
     color: rgba(255, 197, 32, 1);
 }
+
+#containerBrioche {
+    height: 94vh;
+}
+
+.columns-brioche {
+    height: 94vh;
+    position: relative;
+    top: 300px;
+}
+
+#innovazioneTitle {
+    position: relative;
+}
+
+.brioche {
+    position: relative;
+    display: flex;
+}
+
+#gif-brioche-div {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+#brioche-loader {
+    position: absolute;
+    transition: all 1s;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.didascalie-brioche {
+    position: relative;
+}
+
+.didascalia-brioche {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.titolo-brioche {
+    position: relative;
+}

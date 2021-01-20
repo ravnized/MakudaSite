@@ -37,8 +37,14 @@ function button($ID)
 
         if ($v["id"] == $ID) {
             $view = $v;
-            $vAfter = array_values($parsed)[$index + 1];
-            $vBefore = array_values($parsed)[$index - 1];
+            $vAfterIndex = $index + 1;
+            $vBeforeIndex = $index - 1;
+            if($vAfterIndex >= count($parsed))
+                $vAfterIndex = 0;
+            if($vBeforeIndex < 0)
+                $vBeforeIndex = count($parsed) - 1;
+            $vAfter = array_values($parsed)[$vAfterIndex];
+            $vBefore = array_values($parsed)[$vBeforeIndex];
             if ($v['case-study'] != $vBefore['case-study']) {
                 $vBefore = [];
             }

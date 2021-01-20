@@ -111,125 +111,65 @@ $view = ButtonBeforeAfter("BUFFEL");
     </section>
 </div>
 
-
-<!--
-<div class="pubblicazione-social">
-<div class="works-band" style="height: 80%"></div>
-<div class="container">
-<p class="title" style="margin-bottom:10px;padding-top:40px;">L'importanza dell'
-    <span class="black-font">IdentitÁ</span>
-</p>
-
-<div class="gif-firstSection">
-
-    <div class="columns" style="padding-top: 50px; ">
-        <div class="column">
-            <p class="frase" style="text-align: right;padding-right: 50px">
-                Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
-                Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
-                mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
-                dal mercato attuale. Sperimentare e sondare la risposta degli utenti tramite i social media è
-                stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
-            </p>
-        </div>
-        <div class="column" style="min-height: 50vh">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
-        </div>
-    </div>
-
-</div>
-<br><br>
-<p class="title" style="margin-bottom:10px;color: white">
-    Andiamo a <span class="makuda-color">Mille</span>
-</p>
-<p class="frase" style="color: white">
-    Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
-    abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
-    fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
-    brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
-</p>
-        <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img2" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
-                    </div>
-                </div>
-            </div>
-
-            <p class="frase" style="color: white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies.
-                <br>
-                Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu
-                maximus
-                condimentum a non ex.<br>
-            </p>
-            <br><br>
-
-        </div>
-</div>
-</div>
--->
-
-
-<div class="pubblicazione-social makuda-bgcolor" id="makudaContainer">
-
+<div class="pubblicazione-social makuda-bgcolor" id="containerBrioche">
     <div class="container">
-        <p class="title" style="padding-bottom:10px;padding-top: 10px;">
-            Innovazione
+        <p class="title" id="innovazioneTitle">
+            <br>Innovazione
         </p>
-        <div id="containerBrioche" class="columns is-vcentered">
-            <div class="column" style="position:absolute;">
-                <p class="title" style="margin-bottom:10px;">
-                    Brioche<span class="black-font">3D WOW</span>
-                </p>
-            </div>
-            <div class="column">
-                <canvas id="hero-lightpass" style="width: 1400px"></canvas>
-            </div>
-            <div class="column" style="position:absolute; right: 0">
-                <p class="title" id="titleOne" style="transform: translateX(600px)">
-                    DUDU <span class="black-font">WOW</span>
-                </p>
-                <p class="title" id="titleTwo">
-                    SECONDO <span class="black-font">WOW</span>
-                </p>
-                <div class="title" id="titleThree" style="width: 150%">
-                    <div id="video-compare-container" style="padding-top: 250px; width: 400px">
-                        <div class="mask">
-                            <video id="video2"
-                                   autoplay
-                                   loop
-                                   muted
-                            >
-                                <source
-
-                                        src='/media/video/works/Buffel_VFX.mp4'>
-
-                            </video>
+        <div class="columns-brioche">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <p class="title titolo-brioche">
+                        Brioche<span class="black-font">3D WOW</span>
+                    </p>
+                </div>
+                <div class="column">
+                    <div class="brioche">
+                        <div id="gif-brioche-div"><img id="gif-brioche" src="/media/gif/brioche.gif"/></div>
+                        <img src="/media/gif/loader.gif" id="brioche-loader"/>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="didascalie-brioche">
+                        <div class="didascalia-brioche" style="opacity:100%">
+                            <p class="title">
+                                DUDU <span class="black-font">WOW</span>
+                            </p>
                         </div>
+                        <div class="didascalia-brioche">
+                            <p class="title">
+                                SECONDO <span class="black-font">WOW</span>
+                            </p>
+                        </div>
+                        <div class="didascalia-brioche">
+                            <div class="title" style="width: 150%">
+                                <div id="video-compare-container" style="padding-top: 250px; width: 400px">
+                                    <div class="mask">
+                                        <video id="video2"
+                                            autoplay
+                                            loop
+                                            muted
+                                        >
+                                            <source
 
-                        <div id="video-clipper">
-                            <video id="video1"
-                                   autoplay
-                                   loop
-                                   muted
-                            >
-                                <source
-                                        src='/media/video/works/Buffel_NoVFX.mp4'>
+                                                    src='/media/video/works/Buffel_VFX.mp4'>
 
-                            </video>
+                                        </video>
+                                    </div>
+
+                                    <div id="video-clipper">
+                                        <video id="video1"
+                                            autoplay
+                                            loop
+                                            muted
+                                        >
+                                            <source
+                                                    src='/media/video/works/Buffel_NoVFX.mp4'>
+
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -316,6 +256,9 @@ button('BUFFEL');
 </div>
 <?php require "../components/footer.php" ?>
 
+<script src="/js/libgif.js" type="text/javascript"></script>
+<!-- <script src="/js/rubbable.js" type="text/javascript"></script> -->
+<script src="/js/utils.js" type="text/javascript"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
