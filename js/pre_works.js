@@ -214,6 +214,10 @@ function animationStart() {
     );
 }
 
+animationStart();
+
+/*
+
 const tl3 = gsap.timeline();
 
 function loader() {
@@ -248,3 +252,5 @@ function loader() {
 }
 
 loader();
+
+ */

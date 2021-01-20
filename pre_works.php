@@ -22,7 +22,7 @@
 </head>
 <body style="background-color: #111">
 
-<?php require "components/loader.html"; ?>
+
 
 <?php require "components/navbar.php"; ?>
 
@@ -101,7 +101,7 @@
                    autoplay
             >
                 <source
-                        src='/media/video/A Story Of Matteo web Optimization.mp4'>
+                        src='/media/video/Toia_preWork.m4v'>
 
             </video>
         </div>
@@ -114,7 +114,7 @@
                    autoplay
             >
                 <source
-                        src='/media/video/Suites for Web.mp4'>
+                        src='/media/video/Suites_preWork.m4v'>
 
             </video>
         </div>

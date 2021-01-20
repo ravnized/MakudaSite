@@ -1,146 +1,148 @@
 @font-face {
-  font-family: Gelion-Black;
-  src: url("../media/fonts/Gelion-Black.ttf");
+    font-family: Gelion-Black;
+    src: url("../media/fonts/Gelion-Black.ttf");
 }
 
 @font-face {
-  font-family: Gelion-Regular;
-  src: url("../media/fonts/Gelion-Regular.ttf");
+    font-family: Gelion-Regular;
+    src: url("../media/fonts/Gelion-Regular.ttf");
 }
 
 @font-face {
-  font-family: la-regular;
-  src: url("../media/fonts/la-regular-400.ttf");
+    font-family: la-regular;
+    src: url("../media/fonts/la-regular-400.ttf");
 }
 
 @font-face {
-  font-family: EuroStile-Bold;
-  src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
+    font-family: EuroStile-Bold;
+    src: url("../media/fonts/EurostileLTStd-BoldEx2.otf");
 }
 
 @font-face {
-  font-family: Gelion-light;
-  src: url("../media/fonts/Gelion-Light.ttf");
+    font-family: Gelion-light;
+    src: url("../media/fonts/Gelion-Light.ttf");
 }
 
 @font-face {
-  font-family: Gelion-Regular-italic;
-  src: url("../media/fonts/Gelion-RegularItalic.ttf");
+    font-family: Gelion-Regular-italic;
+    src: url("../media/fonts/Gelion-RegularItalic.ttf");
 }
 
 @font-face {
-  font-family: Gelion-SemiBoldItalic;
-  src: url("../media/fonts/Gelion-SemiBoldItalic.ttf");
+    font-family: Gelion-SemiBoldItalic;
+    src: url("../media/fonts/Gelion-SemiBoldItalic.ttf");
 }
 
 .menu-background {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99;
-  transform: translate(50%);
-  height: 100vh;
-  width: 200vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    transform: translate(50%);
+    height: 100vh;
+    width: 200vw;
 }
 
 .navbar-burger {
-  display: initial !important;
+    display: initial !important;
 }
 
 .menuWrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  display: none;
-  z-index: 100;
-  background-color: #f6b600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: none;
+    z-index: 100;
+    background-color: #f6b600;
 }
 
 .letter {
-  transform: translateX(-45%);
-  opacity: 0;
-  font-family: "Gelion-Black", Gelion-Black, sans-serif;
-  color: black;
-  display: flex;
-  font-size: 100%;
-  transform-style: preserve-3d;
+    transform: translateX(-45%);
+    opacity: 0;
+    font-family: "Gelion-Black", Gelion-Black, sans-serif;
+    color: black;
+    display: flex;
+    font-size: 100%;
+    transform-style: preserve-3d;
 }
 
 .buttonMenu {
-  display: inherit;
-  margin: auto;
+    display: inherit;
+    margin: auto;
 }
 
 .letterWrapper {
-  display: inherit;
-  margin: auto auto;
+    display: inherit;
+    margin: auto auto;
 }
 
 .exit {
-  position: fixed;
-  right: 3em;
-  top: 2em;
-  z-index: 100;
+    position: fixed;
+    right: 3em;
+    top: 2em;
+    z-index: 100;
 }
 
 .exit a {
-  color: black;
+    color: black;
 }
 
 .letterWrapper a {
-  display: inherit;
+    display: inherit;
 }
 
 .rectangle {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 99;
-  transform: translate(100%);
-  background-color: #f6b600;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    transform: translate(100%);
+    background-color: #f6b600;
 }
 
 .menuButton {
-  font-family: "Gelion-Black", Gelion-Black, sans-serif;
-  letter-spacing: 0.2em;
-  left: -5px;
+    font-family: "Gelion-Black", Gelion-Black, sans-serif;
+    letter-spacing: 0.2em;
+    left: -5px;
 }
 
 .rectangleNavbar {
-  position: absolute;
-  z-index: -1;
-  right: 5px;
+    position: absolute;
+    z-index: -1;
+    right: 5px;
 }
 
 .quote {
-  font-family: Gelion-Regular-italic, serif;
-  font-size: 4em;
+    font-family: Gelion-Regular-italic, serif;
+    font-size: 4em;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .menu-background{
-    display: none;
-  }
-  /* CSS */
+    .menu-background {
+        display: none;
+    }
+
+    /* CSS */
 
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
 
-  /* CSS */
+    /* CSS */
 
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .menu-background{
-    display: none;
-  }
-  /* CSS */
+    .menu-background {
+        display: none;
+    }
+
+    /* CSS */
 
 }
-@Aagbator

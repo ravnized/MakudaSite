@@ -2,7 +2,7 @@ var elementInsideUS = $("#containerDaLevare");
 var elementHeroBody = $("#containerText");
 $(document).ready(function () {
     /*NAPO*/
-    gsap.to($(window), { duration: 0.5, scrollTo: 0 }, 0);
+    gsap.to($(window), {duration: 0.5, scrollTo: 0}, 0);
     let fadingCarouselClicked = false;
     $(".fading-circle").click(function (target) {
         let new_work_index = $(this).attr("data-index");
@@ -48,7 +48,7 @@ $(document).ready(function () {
     video.loop = true;
     video.crossOrigin = "anonymous";
     video.preload = "auto";
-    video.src = "/media/video/Finale_1web.mp4";
+    video.src = "/media/video/IndexVideo.m4v";
     video.autoload = true;
     video.muted = true;
     video.playsinline = "playsinline";
@@ -161,6 +161,7 @@ $(document).ready(function () {
                     function sleep(ms) {
                         return new Promise((resolve) => setTimeout(resolve, ms));
                     }
+
                     async function homeBandAnimation() {
                         while (true) {
                             let g0 = $('#g0');
@@ -214,6 +215,7 @@ $(document).ready(function () {
                             await sleep(500);
                         }
                     }
+
                     reloadScrollBars();
                     homeBandAnimation();
                 }, "animationVideoGruppo");
