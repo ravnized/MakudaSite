@@ -26,6 +26,7 @@ $view = ButtonBeforeAfter("CARPISA");
         background-image: url(/media/img/works/carpisa_foto_2.jpg);
 
     }
+
     #img3 {
         background-image: url(/media/img/works/carpisa_foto_3.jpg);
     }
@@ -42,7 +43,7 @@ $view = ButtonBeforeAfter("CARPISA");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class="imageVideo video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -73,10 +74,12 @@ $view = ButtonBeforeAfter("CARPISA");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Inaugurazione apertura negozio #GoCarpisa x #Helbitz Piazza Cordusio.
+                                    Collaborazione che ha permesso all'Architetto e Ricercatore Alessandro Ciambrone di
+                                    esprimere la sua visione attraverso un murales visibile salendo al secondo piano del
+                                    negozio.
+                                    Abbiamo documentato tutto il processo creativo e abbiamo poi postprodotto il girato
+                                    per poter consetire la pubblicazione sulla Pagina @carpisaofficial e @gocarpisa
                                 </p>
                             </div>
                             <div class="column">
@@ -99,8 +102,8 @@ $view = ButtonBeforeAfter("CARPISA");
             Pubblicazione <span class="black-font">Social</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
+            Le storie sono state pubblicate tutte in 3 giorni diversi in modo da raggiungere un maggior numero di utenti
+            e rimarcarne l'efficacia.
         </p>
         <br/>
         <div class="gif-cellulari columns" data-animated="true">
@@ -142,7 +145,15 @@ $view = ButtonBeforeAfter("CARPISA");
         </div>
     </div>
 </div>
+
 <div class="container imgs-slide">
+    <p class="title" style="margin-bottom:10px;">
+        Le Nostre <span class="makuda-color">FOTO</span>
+    </p>
+    <p class="frase" style="color: white; text-align:center;">
+        Oltre alle produzioni video, abbiamo colto l'occasione per fare qualche scatto del processo creativo intrapreso.
+    </p>
+    <br><br>
     <div class="columns">
         <div class="column">
             <div class="img-slide">

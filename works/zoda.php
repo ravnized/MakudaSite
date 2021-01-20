@@ -74,7 +74,7 @@ $view = ButtonBeforeAfter("ZODA");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -101,19 +101,15 @@ $view = ButtonBeforeAfter("ZODA");
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
                         <br/><br/>
-                        <p class="subVideo">STRATEGIA</p>
+                        <p class="subVideo">Messaggio</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Raccontare Il passaggio turbolento e difficile da uno stile di vita afflitto da
+                                    dipendenze e falsa gioia ad uno più cosciente e pulito. Il messaggio ha
+                                    un'importanza vitale per il target giovanile del cantante, che mira ad esprimere le
+                                    proprie difficoltà e ad aprirsi ai propri ascoltatori.
                                 </p>
                             </div>
                             <div class="column">
@@ -137,12 +133,11 @@ $view = ButtonBeforeAfter("ZODA");
     <div class="works-band" style="height: 110vh"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
-            Color <span class="black-font">Grading</span>
+            Il Processo <span class="black-font">Creativo</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+            Tutto il processo, a partire dall'idea, avviene a stretto contatto con l'artista, al fine di garantire una
+            corretta interpretazione del messaggio centrale ed avere una constante comunicazione efficace.
         </p>
         <br>
         <div class="parallax-image" id="imgRectangle_3"></div>
@@ -154,13 +149,14 @@ $view = ButtonBeforeAfter("ZODA");
                     <div class="gif-cellulare" style="height: 800px;">
                         <p class="numberRectangle" style="top:100px;">1</p>
                         <p class="titleRectangle">Pre-Produzione</p>
-                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                            sagittis tellus vel
-                            ultricies. <br>
-                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                            arcu maximus
-                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie
-                            tellus.
+                        <p class="textRectangle">
+                            Il prodotto in fase pre produttiva è stato sviluppato in poche settimane interfacciandosi e
+                            collaborando con l'artisa constantemente, al fine di comprendere perfettamente l'espressione
+                            artistica del cliente.<br><br>
+                            - Scrittura <br>
+                            - Studio di una migliore soluzione di noleggio <br>
+                            - Scenografia <br>
+                            - Casting
                         </p>
                     </div>
                 </div>
@@ -176,17 +172,19 @@ $view = ButtonBeforeAfter("ZODA");
                     <div class="gif-cellulare" style="height: 800px;">
                         <p class="numberRectangle" style="margin-right: 0; margin-top: -200px">2</p>
                         <p class="titleRectangle">Produzione</p>
-                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                            sagittis tellus vel
-                            ultricies. <br>
-                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                            arcu maximus
-                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie
-                            tellus.
+                        <p class="textRectangle">
+                            La fase produttiva ed esecutiva é stata portata con successo in soli due giorni realizzando
+                            comunque una notevole quantitá di scene. <br>
+                            Le riprese si sono svolte in 3 principali location ricercate con cura. <br>
+                            Macchine e Strumenti tecnici: <br><br>
+                            - Blackmagic URSA 4 <br>
+                            - 6K G2 per una qualitá professionale <br>
+                            - Kit delle lenti ZEISS CP3 <br>
+                            - Lente 'PROBE' per filmare dettagli a pochi millimetri di distanza
                         </p>
                     </div>
                 </div>
-                <div class="parallax-spacing" style="background-color: #111;"></div>
+
             </div>
             <div class="separator">
                 <div class="separator-yellow"></div>
@@ -200,13 +198,13 @@ $view = ButtonBeforeAfter("ZODA");
                     <div class="gif-cellulare" style="height: 800px;">
                         <p class="numberRectangle" style="margin-right: 0; margin-top: -200px;top:100px;">3</p>
                         <p class="titleRectangle">Post-Produzione</p>
-                        <p class="textRectangle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
-                            sagittis tellus vel
-                            ultricies. <br>
-                            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et
-                            arcu maximus
-                            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie
-                            tellus.
+                        <p class="textRectangle">
+                            Seguendo lo storyboard le scene sono state montate con: <br>
+                            - Effettistica mirata a suscitare l'emozione di "confusione" e di alterazione dello stato
+                            mentale dell'artista <br>
+                            - Tecniche di editing mirate al messagio <br>
+                            - Studio ad hoc del colore su Da Vinci Resolve <br>
+                            - Color Grade su piú di 80 clip.
                         </p>
                     </div>
                 </div>
@@ -217,9 +215,11 @@ $view = ButtonBeforeAfter("ZODA");
             I Risultati
         </p>
         <p class="frase" style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
+            Dopo sole due settimane dalla pubblicazione del video, sono state raggiunte piú di <span style="color: white; font-weight: 800">180'000
+                visulizzazioni</span> <br>
+            <br>
+            Campagna promo pubblicazione: <br><br>
+            Diversi Teaser
         </p>
         <br/>
         <br><br>
@@ -227,9 +227,9 @@ $view = ButtonBeforeAfter("ZODA");
             Qualche Nostro <span class="makuda-color">Scatto</span>
         </p>
         <p class="frase" style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
+            Ecco qualche nostro scatto realizzato per i profili social dell'artista che lo ritraggono sul set, abbiamo
+            approfittato di questo progetto per aggiungere qualche nostra foto BTS, riuscendo cosí a mostrare
+            l'attrezzatura e i set da noi utilizzati.
         </p>
         <br/>
 

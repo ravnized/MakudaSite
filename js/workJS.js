@@ -252,17 +252,24 @@ $(workBlockImageSub).one("click", function () {
         {
             duration: 1,
             ease: "power3.in",
-
             x: halfWindowWidth,
             y: halfWindowHeight,
             transformOrigin: "center center",
             scale: 1.5,
-            onComplete: function () {
-                window.location.href = url;
-            }
         },
         "startAnimation"
     );
+    tl.to(
+        this,{
+            duration: 0.1,
+            opacity: 0,
+            ease: 'expo.out'
+        }
+    )
+    tl.add(function () {
+        console.log('redirect');
+        window.location.href = url;
+    })
 
 });
 

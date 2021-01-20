@@ -54,7 +54,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">

@@ -54,7 +54,7 @@ $view = ButtonBeforeAfter("SUITES");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -125,7 +125,7 @@ $view = ButtonBeforeAfter("SUITES");
                     <video autoplay class=" video-js vjs-default-skin"
                            style="height: 400px; width: auto; background-color: unset;"
                            data-setup='{"controls":false}' loop muted preload="none">
-                        <source src="/media/video/works/Web%20Desktop%20Buffel%20web.mp4"
+                        <source src="/media/video/works/Suites%20&%20Atelier%20web.mp4"
                                 style="width: auto; height: 600px;"
                                 type="video/mp4"/>
                         <p class="vjs-no-js">

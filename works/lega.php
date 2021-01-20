@@ -2,13 +2,13 @@
 
 <?php
 require('workPHP.php');
-$view = ButtonBeforeAfter("DSQUARED2");
+$view = ButtonBeforeAfter("LEGABASKET");
 ?>
 <html class="has-navbar-fixed-top" lang="en">
 
 <head>
     <meta charset="UTF-8"/>
-    <title>DSQUARED</title>
+    <title>LEGABASKET</title>
     <?php require('../components/common_libraries.php') ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css"/>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
@@ -33,11 +33,11 @@ $view = ButtonBeforeAfter("DSQUARED2");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
-                                        <source src="/media/video/works/" type="video/mp4"/>
+                                        <source src="/media/video/works/lega-basket.mp4" type="video/mp4"/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that
@@ -64,20 +64,18 @@ $view = ButtonBeforeAfter("DSQUARED2");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Grazie a Gaia Accoto, anchor woman della Lega Basket Serie A, abbiamo realizzato
+                                    vari prodotti videografici per la federazione.
+                                    Dai social media alla web tv e in quest’ultimo caso anche canali televisivi come Rai
+                                    Sport.
+                                    Tutti i contenuti da noi realizzati sono visibili sui social di Gaia Accoto e della
+                                    Lega Basket Serie A sul loro sito web ufficiale.
                                 </p>
                             </div>
                             <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> DSQuared</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Santacroce</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
+                                <p><span class="boldOrange">Cliente:</span> LBA</p>
+                                <p><span class="boldOrange">Direct:</span> Simone Bioli & Riccardo Bitonto</p>
+                                <p><span class="boldOrange">Anno:</span> Inzio 2019 - In Corso</p>
 
                             </div>
                         </div>
@@ -87,43 +85,12 @@ $view = ButtonBeforeAfter("DSQUARED2");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social" style="background-color:#FFBF1B;">
-    <div class="container">
-        <br/>
-        <p class="title" style="margin-bottom:10px;">
-            Altri Lavori <span class="black-font">Insieme</span>
-        </p>
-        <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
-        </p>
-        <br/>
-        <div class="container is-max-desktop">
-            <video autoplay class=" video-js vjs-default-skin vjs-16-9"
-                   data-setup='{"controls":true}' loop muted preload="none">
-                <source src="/media/video/works/Herca%20Final-1web.m4v" type="video/mp4"/>
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and
-                    consider upgrading to a web browser that
-                    <a href="https://videojs.com/html5-video-support/"
-                       target="_blank">supports HTML5 video</a>
-                </p>
-            </video>
-        </div>
-        <p class="frase" style="padding-top: 30px; padding-bottom: 30px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
-
-        </p>
-
-    </div>
-</div>
 <br><br>
 <?php
-button('DSQUARED2');
+button('LEGABASKET');
 ?>
+
+
 
 <?php require "../components/footer.php" ?>
 <script src="workJS.js" type="text/javascript"></script>

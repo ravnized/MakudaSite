@@ -58,7 +58,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -84,19 +84,17 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
                         <br/><br/>
-                        <p class="subVideo">STRATEGIA</p>
+                        <p class="subVideo">CONCEPT</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Ferro, fuoco e passione, sono queste le componenti principali che abbiamo voluto
+                                    trasmettere per raccontare questa opera d’arte, un prodotto artigianale made in
+                                    italy.
+                                    Il nostro scopo era quello di rappresentare attraverso questo video il processo di
+                                    produzione attuato con dedizione e passione dal nostro cliente, un attento lavoro di
+                                    precisione volto a realizzare un prodotto di qualità.
                                 </p>
                             </div>
                             <div class="column">
@@ -120,9 +118,9 @@ $view = ButtonBeforeAfter("PIANTANIDA");
             Color <span class="black-font">Grading</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br> Aenean eget purus vestibulum, molestie neque eget, molestie tellus.
+            Grazie al profilo colore LOG della camera da presa abbiamo ottenuto un’ottima materia prima, bene esposta ed
+            illuminata, è stata poi nostra premura riuscire a colorare le clip dando un feeling cinematico al prodotto
+            finale.
         </p>
         <div class="gif-firstSection">
 
@@ -160,9 +158,8 @@ $view = ButtonBeforeAfter("PIANTANIDA");
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
+            Di seguito qualche nostro scatto BTS e qualche contenuto realizzato per i social del cliente.
+            Il tutto realizzato durante i giorni di girato del video <br>
         </p>
         <br/>
 

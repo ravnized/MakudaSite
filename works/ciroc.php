@@ -45,7 +45,7 @@ $view = ButtonBeforeAfter("CIROC");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -71,19 +71,19 @@ $view = ButtonBeforeAfter("CIROC");
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
                         <br/><br/>
-                        <p class="subVideo">STRATEGIA</p>
+                        <p class="subVideo">CONCEPT</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Destinato alla pubblicazione social, abbiamo realizzato questo video per valorizzare
+                                    la partnership fra il rinomato brand francese Ciroc e il locale De Cube Club.
+                                    Abbiamo deciso di non realizzare il classico video incentrato esclusivamente sul
+                                    prodotto, valorizzando invece la preparazione di un ottimo drink utilizzando come
+                                    materia prima la Vodka Ciroc.
+                                    Per risaltare maggiormente la preparazione abbiamo deciso di utilizzare come stile
+                                    di girato e montato, quello del B-roll, stile che in America sta riscontrando
+                                    molto successo.
                                 </p>
                             </div>
                             <div class="column">
@@ -114,16 +114,16 @@ $view = ButtonBeforeAfter("CIROC");
         </div>
 
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
+            Il suono sicuramente ricopre una delle peculiarità più importanti per la riuscita di un buon B-Roll.
+            Abbiamo deciso di emulare con una banca suoni virtuale tutti i rumori presenti sul set durante le riprese,
+            coinvolgendo così lo spettatore in maniera attiva nell’osservare il processo di composizione del Drink.
         </p>
         <br/>
         <p class="title" style="margin-bottom:10px;">
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
+            Ecco qualche nostro scatto realizzato per i profili social Ciroc e del locale De Cube Club.
         </p>
         <br/>
 
@@ -149,6 +149,10 @@ $view = ButtonBeforeAfter("CIROC");
         </div>
 
     </div>
+    <br><br>
+    <?php
+    button('CIROC');
+    ?>
 </div>
 
 <div class="full-screen-carousel" style="display:none;">
@@ -176,10 +180,7 @@ $view = ButtonBeforeAfter("CIROC");
     </a>
 
 </div>
-<br><br>
-<?php
-button('CIROC');
-?>
+
 <?php require "../components/footer.php" ?>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>

@@ -33,7 +33,7 @@ $view = ButtonBeforeAfter("DSQUARED2");
                 <div class="container">
                     <div class="workBlockContainer">
                         <div class="workBlock">
-                            <div class="workBlockImageSub">
+                            <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
@@ -64,14 +64,14 @@ $view = ButtonBeforeAfter("DSQUARED2");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
-                                    Sed ex nisi, condimentum
-                                    non magna sollicitudin, imperdiet pellentesque lorem. Cras eget leo
-                                    purus. Vivamus a metus eu arcu venenatis venenatis. In volutpat vel
-                                    enim non interdum.
+                                    Grazie al noto DJ Herca abbiamo realizzato questo After Movie del 55esimo compleanno
+                                    dei fratelli Dean e Dan Caten fondatori della casa di moda Dsquared.
+                                    Questo video oltre all’aspetto celebrativo ha come scopo quello raccontare in chiave
+                                    fresca e ritmata una festa anni 80 nelle rinomate
+                                    Palestre Ceresio 7.
+                                    Presenti nel video troviamo personaggi celebri provenienti da tutti i settori, dal
+                                    mondo della moda come Neil Barret, a quello dell’estetica come Aldo coppola e quello
+                                    della fotografia come Giampaolo Sgrua.
                                 </p>
                             </div>
                             <div class="column">
@@ -94,10 +94,10 @@ $view = ButtonBeforeAfter("DSQUARED2");
             Altri Lavori <span class="black-font">Insieme</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
+            Abbiamo deciso di partecipare attivamente all’iniziativa ideata da Cora Lin e da Herca, iniziativa che aveva
+            come scopo quello di aiutare 50
+            senzatetto donando ad ognuno un sacchetto contenente un pasto caldo, indumenti termici ecc…
+
         </p>
         <br/>
         <div class="container is-max-desktop">
@@ -113,17 +113,18 @@ $view = ButtonBeforeAfter("DSQUARED2");
             </video>
         </div>
         <p class="frase" style="padding-top: 30px; padding-bottom: 30px;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-            Aliquam volutpat eros et blandit maximus.
+            Presenti e partecipanti in questa iniziativa troviamo : i fratelli Dsquared2, Frank, Felisja in arte
+            Fishball e lo chef Nicola Ferrelli.
 
         </p>
 
     </div>
+    <br><br>
+    <?php
+    button('DSQUARED2');
+    ?>
 </div>
-<br><br>
-<?php
-button('DSQUARED2');
-?>
+
 
 <?php require "../components/footer.php" ?>
 <script src="workJS.js" type="text/javascript"></script>
