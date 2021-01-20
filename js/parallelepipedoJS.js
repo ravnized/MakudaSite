@@ -48,7 +48,7 @@ $(document).ready(function ($) {
                 $(parallelepipedParent[i]).find(".secondText"),
                 {
                     duration: 0.5,
-                    translateY: 650,
+                    translateY: 680,
                     ease: "power2.in",
                 },
                 0.2
@@ -136,7 +136,7 @@ $(document).ready(function ($) {
                     $(parallelepipedParent[i]).find(".secondText"),
                     {
                         duration: 0.5,
-                        translateY: 650,
+                        translateY: 680,
                         ease: "power2.in",
                     },
                     0
@@ -215,7 +215,7 @@ $(document).ready(function ($) {
                     $(parallelepipedParent[i]).find(".secondText"),
                     {
                         duration: 0.5,
-                        translateY: 650,
+                        translateY: 680,
                         ease: "power2.in",
                     },
                     0
@@ -288,7 +288,7 @@ $(document).ready(function ($) {
             {
                 duration: 0.2,
                 css: {
-                    letterSpacing: 0.3 + "em",
+                    letterSpacing: 0.2 + "em",
                 },
             },
             0
@@ -309,14 +309,14 @@ $(document).ready(function ($) {
             $(this).parent().find(".square"),
             {
                 display: "flex",
-                duration: 0.4,
+                duration: 0.2,
                 opacity: 1,
                 width: 400,
                 translateX: 170,
                 ease: "power2.in",
                 zIndex: 0,
             },
-            0.5
+            0.3
         );
         tl.to($(this).parent().find(".textInsideSquare"), {
             duration: 0.5,
@@ -378,7 +378,7 @@ $(document).ready(function ($) {
             {
                 duration: 0.3,
                 css: {
-                    letterSpacing: 0.3 + "em",
+                    letterSpacing: 0.2 + "em",
                 },
             },
             "mouseEnter"

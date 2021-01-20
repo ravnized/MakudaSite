@@ -19,11 +19,11 @@ $view = ButtonBeforeAfter("DECUBE");
 
 <style>
     #img1 {
-        background-image: url(/media/img/works/toia_1.JPG);
+        background-image: url(/media/img/works/deCube/decube_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/toia_2.JPG);
+        background-image: url(/media/img/works/deCube/decube_2.jpg);
 
     }
 
@@ -119,37 +119,36 @@ $view = ButtonBeforeAfter("DECUBE");
         </p>
         <p class="frase">
             Qualsiasi azione pensata per DE CUBE ha avuto come obiettivo il coinvolgimento di più persone possibili.
-            Dalla personale allʼartistico, dai fornitori alle grafiche, dagli scatti alla comunicazione. Lʼobiettivo è
+            Dal personale allʼartistico, dai fornitori alle grafiche, fino agli scatti alla comunicazione. Lʼobiettivo è
             stato chiaro fin da subito: il locale deve essere il centro del network creato.
 
         </p>
         <br>
         <div class="container">
             <div class="columns gif-photo">
-                <div class="column">
+                <div class="column is-2">
+                </div>
+                <div class="column ">
                     <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
+                        <div id="img1" class="big-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat "></div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img2" class="big-image image-div"></div>
+                        <div id="img2" class="big-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
-                    </div>
+                <div class="column is-2">
                 </div>
+
             </div>
         </div>
 
 
         <br><br><br>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
+            Per lanciare l’apertura del locale invernale ci siamo ispirati alla rinomata serie Sky: “Il Trono Di Spade”
+            creando uno shooting per tutto il personal pr e influencer che potesse ricordare la suddetta serie. <br>
         </p>
         <br>
         <div class="container is-max-desktop">

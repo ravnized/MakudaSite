@@ -11,6 +11,18 @@
 </head>
 <body style="background-color: #111">
 
+<style>
+    .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+        color: rgba(255, 197, 32, 1);
+        transform: translateX(-250px) !important;
+    }
+
+    .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+        transform: translateX(-100px) !important ;
+        color: rgba(255, 197, 32, 1);
+    }
+</style>
+
 <?php require "components/navbar.php"; ?>
 
 <?php require "components/menu.php"; ?>
@@ -44,8 +56,8 @@
     <div class="makuda-home-link--contacts makuda-home-link-wrap is-loaded" style="top: 100%;">
         <div class="makuda-home-link is-link ">
             <a id="text-produzioni" style="cursor: default;">
-                <span class='noWrap' style="font-size: 4em">PRODUZIONI</span>
-                <span class='noWrap' style="font-size: 1.5em">cinematic & spot adv, shooting, 3D VFX</span>
+                <span class='noWrap' style="font-size: 4em">CASE STUDY</span>
+                <span class='noWrap' style="font-size: 1.5em">strategia, branding, management, social media</span>
             </a>
         </div>
     </div>

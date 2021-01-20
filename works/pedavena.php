@@ -121,7 +121,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
         </p>
         <p class="frase">
             Quando il prodotto è valido ed è ben posizionato sul mercato la strada è sicuramente in discesa. Cʼè stato
-            solo bisogno di potenziale al massimo la comunicazione digitale per far si che il posto fosse visibili agli
+            solo bisogno di potenziale al massimo la comunicazione digitale per far si che il posto fosse visibile agli
             occhi dei potenziali futuri clienti. E per fare questo occorre un prodotto diverso dal solito. Date
             unʼocchiata.
         </p>

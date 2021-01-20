@@ -10,43 +10,59 @@
     <link href="css/pre_works.css" rel="stylesheet" type="text/css"/>
 </head>
 <body style="background-color: #111">
+
+<style>.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+        color: rgba(255, 197, 32, 1);
+        transform: translateX(-70px) !important;
+    }
+
+    .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+        transform: translateX(0) !important;
+        color: rgba(255, 197, 32, 1);
+    }
+</style>
+
 <?php require "components/navbar.php"; ?>
 
 <?php require "components/menu.php"; ?>
 
-<div class="mainSection">
-    <div class="progress_wrap">
-        <div class="progress">
-            <div class="progress_w_in">
-                <div class="progress_in_selected"></div>
-                <div class="progress_in"></div>
-            </div>
-            <div class="progress_subtitle">
-                <p>Scroll</p>
-            </div>
+<div class="progress_wrap">
+    <div class="progress">
+        <div class="progress_w_in">
+            <div class="progress_in_selected"></div>
+            <div class="progress_in"></div>
+        </div>
+        <div class="progress_subtitle">
+            <p>Scroll</p>
         </div>
     </div>
+</div>
+<div class="mainSection">
+
     <div class="blackScreenLeft"></div>
     <p class="title" style="padding-top:30px; font-size: 4em;">
         CASE <span class="makuda-color">STUDY</span>
     </p>
-    <div class="rightBandSign">
-        <div class="full-screen-carousel-control right" style="position: fixed">
+    <div class="rightBandSign"></div>
+        <div class="full-screen-carousel-control right" style=" top: 0;
+    position: fixed;
+    ">
             <div class="full-screen-carousel-arrow right">
-                <i class="fas fa-chevron-right"></i>
+                <i class="bi bi-chevron-right makuda-color" style="font-size: 40px;
+"></i>
             </div>
         </div>
         <header>
             <div class="makuda-home-link--contacts makuda-home-link-wrap is-loaded" style="top: 100%;">
                 <div class="makuda-home-link is-link ">
-                    <a id="text-produzioni">
-                        <span class='noWrap'>PRODUZIONI</span>
-                        <span class='noWrap'>cinematic & spot adv, shooting, 3D VFX</span>
+                    <a id="text-produzioni" style="cursor: default;">
+                        <span class='noWrap' style="font-size: 4em">PRODUZIONI</span>
+                        <span class='noWrap' style="font-size: 1.5em"> cinematic & spot adv, shooting, 3D VFX</span>
                     </a>
                 </div>
             </div>
         </header>
-    </div>
+
     <section class="sectionFullWorks">
         <div class="workList">
             <?php

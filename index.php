@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Homepage</title>
-    <?php require './components/common_libraries.php'?>
+    <?php require './components/common_libraries.php' ?>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="css/animations.css" rel="stylesheet" type="text/css"/>
@@ -12,11 +12,11 @@
 </head>
 
 <body>
-<?php require "components/loader.html";?>
+<?php require "components/loader.html"; ?>
 
-<?php require "components/navbar.php";?>
+<?php require "components/navbar.php"; ?>
 
-<?php require "components/menu.php";?>
+<?php require "components/menu.php"; ?>
 
 <div id="section-animated">
     <section class="hero is-fullheight video" id="sectionVideo">
@@ -127,7 +127,7 @@
         <div class="paralleGruppo">
             <div id="1" class="fade-in-top-animation">
                 <div class="parallelepipedo">
-                    <p class="secondText">Meeting</p>
+                    <p class="secondText">CONOSCIAMOCI</p>
                     <p class="numberParallelepipedo uno">1</p>
                 </div>
                 <div class="square">
@@ -137,25 +137,19 @@
                         </a>
 
                         <div class="textInsideSquare">
-                            <p class="titleInsideSquare">Meeting</p>
+                            <p class="titleInsideSquare">CONOSCIAMOCI</p>
                             <p class="underTitleInsideSquare"></p>
-                            <div class="textInsideSquareLong">
-                            <ul>
-                                <li>Presentazione</li>
-                                <li>Ascolto</li>
-                                <li>Analisi</li>
-                                <li>Condivisione</li>
-                                <li>Bozza strategia</li>
-                            </ul>
-                            Come in ogni viaggio, conoscersi è la parte più interessante e stimolante.
-                        </div>
+                            <p class="textInsideSquareLong">
+                                Per capire le necessitá, i problemi, i punti di forza e molto altro di una azienda
+                                bisogna viverla. Per questo il conoscere ed essere in azienda con voi è il primo passo.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="2" class="fade-in-top-animation">
                 <div class="parallelepipedo">
-                    <p class="secondText">Strategia</p>
+                    <p class="secondText">DOVE SIAMO</p>
                     <p class="numberParallelepipedo">2</p>
                 </div>
 
@@ -165,24 +159,19 @@
                             <i class="fas fa-times"></i>
                         </a>
                         <div class="textInsideSquare">
-                            <p class="titleInsideSquare">Strategia</p>
+                            <p class="titleInsideSquare">DOVE SIAMO</p>
                             <p class="underTitleInsideSquare"></p>
-                            <div class="textInsideSquareLong">
-                                Una volta condivisa la fase conoscitiva, si sviluppa in maniera approfondita
-                                una strategia condivisa che sia:
-                            <ul>
-                                <li>diretta all’obiettivo</li>
-                                <li>efficiente nel minimizzare i rischi</li>
-                                <li>con iniziative coerenti ed efficaci</li>
-                            </ul>
-                        </div>
+                            <p class="textInsideSquareLong">
+                                Prima di scegliere la direzione dobbiamo sapere chi siamo e dove ci troviamo in questo
+                                momento. Perfetto, qui la nasce la strategia.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="3" class="fade-in-top-animation">
                 <div class="parallelepipedo">
-                    <p class="secondText">Creazione</p>
+                    <p class="secondText">PRODUCIAMO</p>
                     <p class="numberParallelepipedo">3</p>
                 </div>
                 <div class="square">
@@ -191,27 +180,18 @@
                             <i class="fas fa-times"></i>
                         </a>
                         <div class="textInsideSquare">
-                            <p class="titleInsideSquare">Creazione</p>
+                            <p class="titleInsideSquare">PRODUCIAMO</p>
                             <p class="underTitleInsideSquare"></p>
-                            <div class="textInsideSquareLong">
-                                La cura per la realizzazione di un progetto passa da un attento studio e
-                                sviluppo di ogni singola iniziativa e contenuto da parte
-                                di un team di professionisti di:
-                            <ul>
-                                <li>Marketers</li>
-                                <li>Fotografi e Videomakers</li>
-                                <li>Grafici</li>
-                                <li>Specialisti Design</li>
-                                <li>Programmatori e Specialisti digitali</li>
-                            </ul>
-                        </div>
+                            <p class="textInsideSquareLong">
+                                Una volta che il percorso è chiaro, ci serviranno i mezzi per affrontarlo. Qui dobbiamo lasciarti senza parole. Al tuo servizio Manager, Marketers, Fotografi, Videomaker, Grafici, Designer, Programmatori.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="4" class="fade-in-top-animation">
                 <div class="parallelepipedo">
-                    <p class="secondText">Management</p>
+                    <p class="secondText">DIFFERENZA</p>
                     <p class="numberParallelepipedo">4</p>
                 </div>
                 <div class="square">
@@ -220,13 +200,11 @@
                             <i class="fas fa-times"></i>
                         </a>
                         <div class="textInsideSquare">
-                            <p class="titleInsideSquare">Management</p>
+                            <p class="titleInsideSquare">FARE LA DIFFERENZA</p>
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
-                                Alla creazione e realizzazione del progetto viene sempre
-                                accompagnato un cospicuo lavoro di accounting e monitoraggio
-                                dei processi esecutivi, al fine di massimizzare il successo delle
-                                iniziative non solo nel breve, ma anche nel medio e lungo periodo.
+                                Eʼ arrivato il momento di dire: “Check mate”. Hai scelto Makuda e insieme abbiamo fatto la differenza sul mercato. Iniziamo a percepire i primi risultati della strategia scelta
+
                             </p>
                         </div>
                     </div>
@@ -234,7 +212,7 @@
             </div>
             <div id="5" class="fade-in-top-animation">
                 <div class="parallelepipedo">
-                    <p class="secondText">Risultati</p>
+                    <p class="secondText">PERCORSO</p>
                     <p class="numberParallelepipedo">5</p>
                 </div>
                 <div class="square">
@@ -243,15 +221,10 @@
                             <i class="fas fa-times"></i>
                         </a>
                         <div class="textInsideSquare">
-                            <p class="titleInsideSquare">Risultati</p>
+                            <p class="titleInsideSquare">LA STRADA É LUNGA</p>
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
-                                In fase strategia vengono definiti i così detti “speed temporali” che
-                                determinano quando e/o ogni quanto il progetto sarà oggetto di valutazione.<br>
-                                Lo sviluppo di un report consente di capire se la direzione verso l’obiettivo
-                                è sempre corretta, oppure si rende necessario attuare nuove iniziative o
-                                un cambio strategico per facilitarne il raggiungimento.
-                            </p>
+                                Nessuno è infallibile. Una volta raggiunti gli obiettivi prefissati ce ne saranno di nuovi da raggiungere. Calibra le tue mosse, Makuda sará sempre al tuo fianco quando ne avrai bisogno. </p>
                         </div>
                     </div>
                 </div>
@@ -274,66 +247,68 @@
         <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
         <div class="fading-carousel">
             <?php
-$myfile = fopen("media/json/carousel-home.json", "r") or die("Unable to open file!");
-$to_parse = fread($myfile, filesize("media/json/carousel-home.json"));
-fclose($myfile);
-$parsed = json_decode($to_parse, true);
-?>
+            $myfile = fopen("media/json/carousel-home.json", "r") or die("Unable to open file!");
+            $to_parse = fread($myfile, filesize("media/json/carousel-home.json"));
+            fclose($myfile);
+            $parsed = json_decode($to_parse, true);
+            ?>
             <div class="fading-images fade-in-right-animation">
                 <?php
-$c = 0;
+                $c = 0;
 
-foreach ($parsed as $view) {
-    $c++;
+                foreach ($parsed as $view) {
+                    $c++;
 
-    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-    echo "<div class='fading-image $classes_added'>
+                    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+                    echo "<div class='fading-image $classes_added'>
                       <img class='' src='media/img/works/" . $view["fragmented-image"] . "'>
                     </div>";
-}
-?>
+                }
+                ?>
             </div>
             <div style="flex: 1;">
                 <img class='opacity-0' src='media/img/works/img1.png'>
             </div>
             <div class="fade-in-left-animation fading-caption-content">
                 <?php
-$c = 0;
-foreach ($parsed as $view) {
-    $c++;
-    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
-    ?>
-                    <div class="fading-caption<?=$classes_added?>">
-                        <p class="fading-title"><?=$view["title"]?></p>
-                        <p class="fading-subtitle"><?=$view["subtitle"]?></p>
-                        <p class="fading-description" style="line-height:1.5;"><?=$view["description"]?></p>
-                        <a href="<?="works/" . $view["link"]?>">
+                $c = 0;
+                foreach ($parsed as $view) {
+                    $c++;
+                    $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
+                    ?>
+                    <div class="fading-caption<?= $classes_added ?>">
+                        <p class="fading-title"><?= $view["title"] ?></p>
+                        <p class="fading-subtitle"><?= $view["subtitle"] ?></p>
+                        <p class="fading-description" style="line-height:1.5;"><?= $view["description"] ?></p>
+                        <a href="<?= "works/" . $view["link"] ?>">
                             <div class="animatedBtn">
                                 <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
                                     <rect class="shape" height="50" width="200"/>
                                 </svg>
                                 <p class="text makuda-color">Visualizza</p>
                             </div>
-</a>
+                        </a>
                     </div>
-                <?php }?>
+                <?php } ?>
                 <div class="fading-select">
                     <?php
-$c = 1;
-foreach ($parsed as $view) {
-    $line = '<div class="fading-line"></div>';
-    if ($c == count($parsed)) {
-        $line = '<div class="fading-line hidden"></div>';
-    }
-    ?>
-                    <div data-index=<?=$c?> class="fading-choise <?=($c == 1) ? "selected" : ""?> index-<?=$c?>">
+                    $c = 1;
+                    foreach ($parsed
+
+                    as $view) {
+                    $line = '<div class="fading-line"></div>';
+                    if ($c == count($parsed)) {
+                        $line = '<div class="fading-line hidden"></div>';
+                    }
+                    ?>
+                    <div data-index=<?= $c ?> class="fading-choise <?= ($c == 1) ? "selected" : "" ?> index-<?= $c ?>">
                     <div class="fading-shapes">
-                        <div class="fading-circle" data-index=<?=$c?>></div>
-                        <?=$line?>
+                        <div class="fading-circle" data-index=<?= $c ?>></div>
+                        <?= $line ?>
                     </div>
-                    <p style="color: white;">0<?=$c++?></p>
+                    <p style="color: white;">0<?= $c++ ?></p>
                 </div>
-            <?php }?>
+            <?php } ?>
             </div>
         </div>
     </div>
@@ -382,7 +357,7 @@ foreach ($parsed as $view) {
                                         <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                       <p> <span>Web Designer</span></p>
+                                        <p><span>Web Designer</span></p>
                                         <h6>Tony Norton</h6>
                                     </div>
                                 </div>
@@ -613,7 +588,7 @@ foreach ($parsed as $view) {
     </div>
 </section>
 
-<?php require "components/footer.php"?>
+<?php require "components/footer.php" ?>
 
 <script src="js/bulma-carousel.min.js"></script>
 <script>
