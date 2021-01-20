@@ -89,6 +89,7 @@
 <?php require "components/footer.php" ?>
 
 
+<script src="js/utils.js" type="text/javascript"></script>
 <script src="js/workJS.js" type="text/javascript"></script>
 <script src="js/menu.js" type="text/javascript"></script>
 </body>

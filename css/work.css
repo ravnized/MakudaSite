@@ -876,3 +876,65 @@ div.mask {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
 }
 
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
+    color: rgba(255, 197, 32, 1);
+    transform: translateX(-70px) !important;
+}
+
+.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:last-child {
+    transform: translateX(0) !important ;
+    color: rgba(255, 197, 32, 1);
+}
+
+#containerBrioche {
+    height: 94vh;
+}
+
+.columns-brioche {
+    height: 94vh;
+    position: relative;
+    top: 300px;
+}
+
+#innovazioneTitle {
+    position: relative;
+}
+
+.brioche {
+    position: relative;
+    display: flex;
+}
+
+#gif-brioche-div {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+#brioche-loader {
+    position: absolute;
+    transition: all 1s;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.didascalie-brioche {
+    position: relative;
+}
+
+.didascalia-brioche {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.titolo-brioche {
+    position: relative;
+}
