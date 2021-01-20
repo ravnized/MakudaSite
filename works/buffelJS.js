@@ -18,6 +18,7 @@ function redirect(URL) {
 // 1 - 27 trasparente (27) +3
 // 28 - 56 trasparente (29) +1
 // 57 - 80 trasparente (24) +6
+var animationTimer = 1000;
 async function goToFrame(frameIndex){
     let toDo = frameIndex - currentFrame;
     let toAdd = 1;
@@ -28,7 +29,7 @@ async function goToFrame(frameIndex){
     for(let i = 0; i < toDo; i++){
         brioche.move_relative(toAdd);
         currentFrame += toAdd;
-        await sleep(30);
+        await sleep(animationTimer / toDo);
     }
 }
 var isAutoScrolling = 0;
@@ -46,16 +47,39 @@ $(window).on("scroll", function (e) {
     let isScrollingDown = s > lastScrollTop;
     let newBriocheStep = actualBriocheStep + (isScrollingDown ? 1 : - 1);
     if(!brioche.get_loading() && isAutoScrolling == 0 && newBriocheStep >= 0 && newBriocheStep <= 3 && percScrollBrioche > 0 && percScrollBrioche < 100){
-        let newFrame = newBriocheStep * 30 > 89 ? 89 : newBriocheStep * 30;
-        goToFrame(newFrame);
+        let newFrame = 0;
+        switch(newBriocheStep){
+            case 0:
+            case 1:
+                newFrame = 0;
+                break;
+            case 2:
+                newFrame = 52;
+                break;
+            case 3:
+                newFrame = 89;
+                break;
+        }
         disableScroll();
         isAutoScrolling++;
-        if(
-            !(actualBriocheStep == 0 && newBriocheStep == 1) &&
-            !(actualBriocheStep == 1 && newBriocheStep == 0)
-        ){
+        if(actualBriocheStep == 0 && newBriocheStep == 1)
+            gsap.fromTo(
+                "#didascalia-1",
+                {x: "1000%", y: "50%", opacity: 0},
+                {duration: 1, x: "50%", y: "50%", opacity: 1}
+            );
+            // $(".didascalia-brioche:eq(0)").css("opacity", 1);
+        else if(actualBriocheStep == 1 && newBriocheStep == 0)
+            $(".didascalia-brioche:eq(0)").css("opacity", 0);
+        else {
+            goToFrame(newFrame);
             $(".didascalia-brioche:eq("+(actualBriocheStep-1)+")").css("opacity", 0);
-            $(".didascalia-brioche:eq("+(newBriocheStep-1)+")").css("opacity", 1);
+            gsap.fromTo(
+                "#didascalia-"+newBriocheStep,
+                {x: "1000%", y: "50%", opacity: 0},
+                {duration: 1, x: "50%", y: "50%", opacity: 1}
+            );
+            // $(".didascalia-brioche:eq("+(newBriocheStep-1)+")").css("opacity", 1);
         }
         actualBriocheStep = newBriocheStep;
         var newY = briocheContainerPos + (actualBriocheStep * (c * 0.95));
@@ -64,7 +88,7 @@ $(window).on("scroll", function (e) {
                 scrollTop: newY
             },
             {
-                duration: 900,
+                duration: animationTimer,
                 step: function() { 
                     disableScroll();
                     let newPos = $(window).scrollTop() - briocheContainerPos;

@@ -131,18 +131,21 @@ $view = ButtonBeforeAfter("BUFFEL");
                 </div>
                 <div class="column">
                     <div class="didascalie-brioche">
-                        <div class="didascalia-brioche" style="opacity:100%">
+                        <div id="didascalia-1" class="didascalia-brioche">
                             <p class="title">
                                 DUDU <span class="black-font">WOW</span>
                             </p>
                         </div>
-                        <div class="didascalia-brioche">
+                        <div id="didascalia-2" class="didascalia-brioche">
                             <p class="title">
                                 SECONDO <span class="black-font">WOW</span>
                             </p>
                         </div>
-                        <div class="didascalia-brioche">
+                        <div id="didascalia-3" class="didascalia-brioche">
                             <div class="title" style="width: 150%">
+                                <p class="title">
+                                    VIDEO <span class="black-font">WOW</span>
+                                </p>
                                 <div id="video-compare-container" style="padding-top: 250px; width: 400px">
                                     <div class="mask">
                                         <video id="video2"
