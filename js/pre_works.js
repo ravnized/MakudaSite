@@ -1,102 +1,107 @@
 unloadScrollBars()
 
-function disablePointerEvent(element) {
-    element.css('pointer-events', 'none');
-}
-
-function enablePointerEvent(element) {
-    element.css('pointer-events', 'auto');
-}
 
 $('<style>.makuda-home-link--works:before{width: 100%}</style>').appendTo('head');
 $('<style>.makuda-home-link--contacts:before{width: 100%}</style>').appendTo('head');
-
+var isFinished = false;
 $('#video2').get(0).currentTime = 5;
 $('#video1').get(0).currentTime = 5;
 $('#video1').get(0).play();
 $('#video2').get(0).play();
 
 function video1Enter() {
-    var tl = gsap.timeline();
+    if (isFinished) {
+        var tl = gsap.timeline();
 
-    tl.to(
-        $("#video-clipper"),
-        {duration: 0.5, width: "75%"},
-        "filterAnimation"
-    );
-    tl.to(
-        $(".mask"),
-        {duration: 0.5, width: "25%"},
-        "filterAnimation"
-    );
-    tl.to(
-        $("#video1"),
-        {
-            duration: 1,
-            css: {filter: "grayscale(0%)", "-webkit-filter": "grayscale(0%)"},
-        },
-        "filterAnimation"
-    );
+        tl.to(
+            $("#video-clipper"),
+            {duration: 0.5, width: "75%"},
+            "filterAnimation"
+        );
+        tl.to(
+            $(".mask"),
+            {duration: 0.5, width: "25%"},
+            "filterAnimation"
+        );
+        tl.to(
+            $("#video1"),
+            {
+                duration: 1,
+                css: {filter: "grayscale(0%)", "-webkit-filter": "grayscale(0%)"},
+            },
+            "filterAnimation"
+        );
 
-    $(".makuda-home-link--works.is-loaded .makuda-home-link ").addClass(
-        "is-hover"
-    );
+        $(".makuda-home-link--works.is-loaded .makuda-home-link ").addClass(
+            "is-hover"
+        );
+    }
+
 }
 
 function video1Leave() {
-    var tl = gsap.timeline();
-    $(".makuda-home-link--works.is-loaded .makuda-home-link ").removeClass(
-        "is-hover"
-    );
-    tl.to(
-        $("#video1"),
-        {
-            duration: 0.5,
-            css: {filter: "grayscale(100%)", "-webkit-filter": "grayscale(100%)"},
-        },
-        "filterAnimation"
-    );
+    if (isFinished) {
+        var tl = gsap.timeline();
+        $(".makuda-home-link--works.is-loaded .makuda-home-link ").removeClass(
+            "is-hover"
+        );
+        tl.to(
+            $("#video1"),
+            {
+                duration: 0.5,
+                css: {filter: "grayscale(100%)", "-webkit-filter": "grayscale(100%)"},
+            },
+            "filterAnimation"
+        );
+    }
+
 
 }
 
 function video2Enter() {
-    var tl = gsap.timeline();
-    tl.to(
-        $("#video2"),
-        {
-            duration: 1,
-            css: {filter: "grayscale(0%)", "-webkit-filter": "grayscale(0%)"},
-        },
-        "filterAnimation"
-    );
-    tl.to(
-        $("#video-clipper"),
-        {duration: 0.5, width: "25%"},
-        "filterAnimation"
-    );
-    tl.to(
-        $(".mask"),
-        {duration: 0.5, width: "75%"},
-        "filterAnimation"
-    );
-    $(".makuda-home-link--contacts.is-loaded .makuda-home-link").addClass(
-        "is-hover"
-    );
+    if (isFinished) {
+        var tl = gsap.timeline();
+        tl.to(
+            $("#video2"),
+            {
+                duration: 1,
+                css: {filter: "grayscale(0%)", "-webkit-filter": "grayscale(0%)"},
+            },
+            "filterAnimation"
+        );
+        tl.to(
+            $("#video-clipper"),
+            {duration: 0.5, width: "25%"},
+            "filterAnimation"
+        );
+        tl.to(
+            $(".mask"),
+            {duration: 0.5, width: "75%"},
+            "filterAnimation"
+        );
+        $(".makuda-home-link--contacts.is-loaded .makuda-home-link").addClass(
+            "is-hover"
+        );
+    }
+
 }
 
 function video2Leave() {
-    var tl = gsap.timeline();
-    $(".makuda-home-link--contacts.is-loaded .makuda-home-link").removeClass(
-        "is-hover"
-    );
-    tl.to(
-        $("#video2"),
-        {
-            duration: 1,
-            css: {filter: "grayscale(100%)", "-webkit-filter": "grayscale(100%)"},
-        },
-        "filterAnimation"
-    );
+    if (isFinished) {
+        var tl = gsap.timeline();
+        $(".makuda-home-link--contacts.is-loaded .makuda-home-link").removeClass(
+            "is-hover"
+        );
+        tl.to(
+            $("#video2"),
+            {
+                duration: 1,
+                css: {filter: "grayscale(100%)", "-webkit-filter": "grayscale(100%)"},
+            },
+            "filterAnimation"
+        );
+    }
+
 }
 
 function animationStart() {
@@ -138,8 +143,8 @@ function animationStart() {
         );
     });
 
+
     var tlStart = gsap.timeline();
-    disablePointerEvent($('#video1,#video2'));
 
 
     tlStart.fromTo(
@@ -170,7 +175,7 @@ function animationStart() {
             width: 50 + '%',
             ease: 'power4.out',
             onComplete: function () {
-                enablePointerEvent($('#video1,#video2'));
+                isFinished = true;
             }
         },
         1);

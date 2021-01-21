@@ -39,15 +39,7 @@
         color: rgba(255, 197, 32, 1);
     }
 
-    .makuda-home-link--works.is-loaded .makuda-home-link:hover span:first-child {
-        transform: translateX(-50px) !important;
-        color: rgba(255, 197, 32, 1);
-    }
 
-    .makuda-home-link--works.is-loaded .makuda-home-link:hover span:last-child {
-        transform: translateX(-50px) !important;
-        color: rgba(255, 197, 32, 1);
-    }
     .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
         color: rgba(255, 197, 32, 1);
         transform: translateX(-40px) !important;
@@ -58,15 +50,7 @@
         color: rgba(255, 197, 32, 1);
     }
 
-    .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:first-child {
-        color: rgba(255, 197, 32, 1);
-        transform: translateX(-40px) !important;
-    }
 
-    .makuda-home-link--contacts.is-loaded .makuda-home-link:hover span:last-child {
-        transform: translateX(-40px) !important;
-        color: rgba(255, 197, 32, 1);
-    }
 </style>
 
 <div id='mainSection' class="grained">

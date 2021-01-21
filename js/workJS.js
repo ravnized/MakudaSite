@@ -138,6 +138,7 @@ $(function () {
     var timeline = gsap.timeline({paused: true});
     var rule1 = CSSRulePlugin.getRule(".makuda-home-link--contacts:before");
     var rightBandSign = $('.rightBandSign');
+    var timeline2 = gsap.timeline();
     timeline.set('.blackScreenLeft', {zIndex: 10})
     timeline.fromTo(
         rule1,
@@ -181,8 +182,26 @@ $(function () {
             );
         }
     );
-
-
+    rightBandSign.click(
+        function (e) {
+            console.log('click');
+            $(".makuda-home-link").removeClass("is-hover"
+            );
+            timeline2.to('.makuda-home-link-wrap', {
+                opacity: 0,
+                duration: 0.5,
+            })
+            timeline2.to('.progress_wrap', {
+                opacity: 0,
+                duration: 1,
+            })
+            timeline2.to('.mainSection', {
+                x: '-100%',
+                opacity: 0,
+                duration: 1,
+            }, '0.2')
+        }
+    )
 })
 
 $(workBlockImageSub).one("click", function () {
@@ -260,7 +279,7 @@ $(workBlockImageSub).one("click", function () {
         "startAnimation"
     );
     tl.to(
-        this,{
+        this, {
             duration: 0.1,
             opacity: 0,
             ease: 'expo.out'

@@ -62,12 +62,12 @@ function button($ID)
 
     <div class="columns is-vcentered">
         <div class="column">
-            <a class="button is-dark buttonBack <?php
+            <a id="buttonLeft" class="button is-dark buttonBack <?php
             if (empty($vBefore)) {
                 echo 'hide';
             }
             ?>"
-               href="<?php
+               data-link="<?php
                if (!empty($vBefore)) {
                    echo '/works/' . $vBefore['link'];
                }
@@ -92,7 +92,7 @@ function button($ID)
         </div>
         <div class="column">
             <div class="has-text-centered">
-                <a class="button is-dark buttonBack" href="<?php
+                <a  class="button is-dark buttonBack" href="<?php
                 if ($view['case-study'] == true) {
                     echo '/work_case.php';
                 } else {
@@ -106,12 +106,12 @@ function button($ID)
 
         <div class="column">
             <div class="buttons is-right">
-                <a class="button is-dark buttonBack <?php
+                <a id="buttonRight" class="button is-dark buttonBack <?php
                 if (empty($vAfter)) {
                     echo 'hide';
                 }
                 ?>"
-                   href="<?php
+                   data-link="<?php
                    if (!empty($vAfter)) {
                        echo '/works/' . $vAfter['link'];
                    }

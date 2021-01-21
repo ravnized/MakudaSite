@@ -90,6 +90,50 @@ if ($(".gif-firstSection").length !== 0) {
 
     })
 }
+
+
+$('#buttonLeft').on('click',function(e){
+    var timeline = gsap.timeline();
+    let url = $(this).attr("data-link");
+    timeline.to('footer',{
+        duration: 0.5,
+        y: '+100%',
+        },0);
+    timeline.to('.pubblicazione-social',{
+        duration: 0.5,
+        x: '+100%',
+    },0)
+    timeline.to('nav',{
+        duration: 0.5,
+        y: '-100%',
+    },0)
+    timeline.add(function(){
+        console.log('redirect');
+        window.location.href = url;
+    },1)
+})
+$('#buttonRight').on('click',function(e){
+    var timeline = gsap.timeline();
+    let url = $(this).attr("data-link");
+    timeline.to('footer',{
+        duration: 0.5,
+        y: '+100%',
+    },0);
+    timeline.to('.pubblicazione-social',{
+        duration: 0.5,
+        x: '-100%',
+    },0)
+    timeline.to('nav',{
+        duration: 0.5,
+        y: '-100%',
+    },0)
+    timeline.add(function(){
+        console.log('redirect');
+        window.location.href = url;
+    },1)
+})
+
+
 $(window).on("scroll resize", async function () {
         if ($(".separator-yellow").length !== 0) {
             console.log('separator')
