@@ -932,7 +932,7 @@ div.mask {
     right: 50%;
     transform: translate(50%, 50%);
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 .titolo-brioche {

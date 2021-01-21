@@ -4,21 +4,7 @@ function redirect(URL) {
     window.location = '/works/buffel.php' + '#' + URL;
 }
 
-// $(window).on("scroll resize", function () {
-//     if ($('#titleOne').length !== 0) {
-
-//         if ($('#titleOne').isOnScreen()) {
-//             gsap.to(
-//                 '#titleOne',
-//                 {duration: 1, x: 0},
-//             )
-//         }
-//     }
-// })
-// 1 - 27 trasparente (27) +3
-// 28 - 56 trasparente (29) +1
-// 57 - 80 trasparente (24) +6
-var animationTimer = 1000;
+var animationTimer = 750;
 async function goToFrame(frameIndex){
     let toDo = frameIndex - currentFrame;
     let toAdd = 1;
@@ -54,10 +40,10 @@ $(window).on("scroll", function (e) {
                 newFrame = 0;
                 break;
             case 2:
-                newFrame = 52;
+                newFrame = 37;
                 break;
             case 3:
-                newFrame = 89;
+                newFrame = 65;
                 break;
         }
         disableScroll();
@@ -66,9 +52,8 @@ $(window).on("scroll", function (e) {
             gsap.fromTo(
                 "#didascalia-1",
                 {x: "1000%", y: "50%", opacity: 0},
-                {duration: 1, x: "50%", y: "50%", opacity: 1}
+                {duration: animationTimer/1000, x: "50%", y: "50%", opacity: 1, ease: "Power4.easeOut"}
             );
-            // $(".didascalia-brioche:eq(0)").css("opacity", 1);
         else if(actualBriocheStep == 1 && newBriocheStep == 0)
             $(".didascalia-brioche:eq(0)").css("opacity", 0);
         else {
@@ -77,9 +62,8 @@ $(window).on("scroll", function (e) {
             gsap.fromTo(
                 "#didascalia-"+newBriocheStep,
                 {x: "1000%", y: "50%", opacity: 0},
-                {duration: 1, x: "50%", y: "50%", opacity: 1}
+                {duration: animationTimer/1000, x: "50%", y: "50%", opacity: 1, ease: "Power4.easeOut"}
             );
-            // $(".didascalia-brioche:eq("+(newBriocheStep-1)+")").css("opacity", 1);
         }
         actualBriocheStep = newBriocheStep;
         var newY = briocheContainerPos + (actualBriocheStep * (c * 0.95));
