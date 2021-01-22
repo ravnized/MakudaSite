@@ -40,10 +40,10 @@ $(window).on("scroll", function (e) {
                 newFrame = 0;
                 break;
             case 2:
-                newFrame = 37;
+                newFrame = 26;
                 break;
             case 3:
-                newFrame = 65;
+                newFrame = 44;
                 break;
         }
         disableScroll();
