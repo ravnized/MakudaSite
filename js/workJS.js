@@ -184,22 +184,52 @@ $(function () {
     );
     rightBandSign.click(
         function (e) {
+            console.log(e);
+            var URL = $(e.currentTarget).attr('data-link');
             console.log('click');
             $(".makuda-home-link").removeClass("is-hover"
             );
             timeline2.to('.makuda-home-link-wrap', {
                 opacity: 0,
                 duration: 0.5,
-            })
+            }, 0)
             timeline2.to('.progress_wrap', {
                 opacity: 0,
                 duration: 1,
-            })
-            timeline2.to('.mainSection', {
-                x: '-100%',
+                onComplete: function () {
+                    window.location.href = URL;
+                }
+            }, 0)
+            /*
+
+             */
+            timeline2.to(
+                '.full-screen-carousel-arrow.right', {
+                    x: +100,
+                    opacity: 0,
+                    duration: 1,
+                    ease: 'expo.out',
+                }, 0
+            )
+            timeline2.to('.title', {
+                x: -100,
                 opacity: 0,
                 duration: 1,
-            }, '0.2')
+                ease: 'expo.out',
+            }, 0)
+            var worklist = $('.workListItem').slice(0,4).get().reverse();
+            let i = 0;
+            Array.prototype.forEach.call(worklist, element => {
+                timeline2.to(element, {
+                    x: -100,
+                    opacity: 0,
+                    duration: 1,
+                    ease: 'expo.out',
+                }, '0.' + i)
+                i++;
+            })
+
+
         }
     )
 })

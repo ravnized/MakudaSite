@@ -45,7 +45,7 @@ let valoriTexts = [
   "Perché il nero rappresenta l'attimo prima del<br>\
   processo di creazione, l'attimo prima che si<br>\
   accenda la lampadina.",
-  "Qualsiasi sia il valore che di sà al nero esso rappresenta anche<br>\
+  "Qualsiasi sia il valore che si sà al nero esso rappresenta anche<br>\
   un punto di arrivo. Se è vero che il nero è un non colore, è anche<br>\
   vero che esso è l'insieme di tutti i colori. È solo esplorando tutte<br>\
   le sfumature che è possibile crescere."

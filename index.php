@@ -38,7 +38,7 @@
                     <!-- <div class="animatedBtn">
                       <span class="noselect">VISUALIZZA LAVORI</span>
                     </div> -->
-                    <a href="work.php">
+                    <a href="/pre_works.php">
                         <div class="animatedBtn" style="opacity: 0">
                             <svg
                                     height="50"

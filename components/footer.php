@@ -1,6 +1,6 @@
 <link rel='stylesheet' href='/components/footer.css'>
 <footer>
-    <div class="container">
+    <div class="container footerContainer">
         <p class="has-text-centered makuda-color title fade-in-animation" id="get-in-touch">GET IN TOUCH!</p>
         <div class="columns fade-in-animation" id="main-block-footer">
             <div class="column find-us">

@@ -277,6 +277,7 @@ video {
     font-size: 1em;
     font-family: Gelion-black, serif;
     color: #f6b600;
+    text-transform: uppercase;
 }
 
 .stickDiv p {
@@ -637,7 +638,6 @@ div.mask {
     left: 100px;
     opacity: 1;
     transform: scale(1.5);
-
 }
 
 .gif-zoda {

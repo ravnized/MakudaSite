@@ -28,19 +28,34 @@ $view = ButtonBeforeAfter("DECUBE");
     }
 
     #img3 {
-        background-image: url(/media/img/works/toia_3.JPG);
+        background-image: url(/media/img/works/deCube/1.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/toia_4.JPG);
+        background-image: url(/media/img/works/deCube/2.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/toia_5.JPG);
+        background-image: url(/media/img/works/deCube/3.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/toia_6.JPG);
+        background-image: url(/media/img/works/deCube/4.jpg);
+    }
+    #img7 {
+        background-image: url(/media/img/works/deCube/5.jpg);
+    }
+    #img8 {
+        background-image: url(/media/img/works/deCube/6.jpg);
+    }
+    #img9 {
+        background-image: url(/media/img/works/deCube/7.jpg);
+    }
+    #img10 {
+        background-image: url(/media/img/works/deCube/8.jpg);
+    }
+    #img11 {
+        background-image: url(/media/img/works/deCube/9.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>
@@ -96,9 +111,9 @@ $view = ButtonBeforeAfter("DECUBE");
                                 <p><span class="boldOrange">Cliente: </span>De Cube</p>
                                 <p><span class="boldOrange">Anno:</span> Inizio 2019</p>
                                 <div class="columns">
-                                    <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
+                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti: </span></p>
                                     </div>
-                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column"><p> Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
 
@@ -111,8 +126,7 @@ $view = ButtonBeforeAfter("DECUBE");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social">
-    <div class="works-band" style="height: 150%"></div>
+<div class="pubblicazione-social makuda-bgcolor">
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             <span class="black-font">QUESTO È NETWORK</span>
@@ -125,17 +139,19 @@ $view = ButtonBeforeAfter("DECUBE");
         </p>
         <br>
         <div class="container">
-            <div class="columns gif-photo">
+            <div class="columns is-vcentered gif-photo">
                 <div class="column is-2">
                 </div>
                 <div class="column ">
                     <div class="img-slide">
-                        <div id="img1" class="big-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat "></div>
+                        <div id="img1" class="big-image image-div"
+                             style="background-position: top; background-size: contain; background-repeat: no-repeat "></div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img2" class="big-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
+                        <div id="img2" class="big-image image-div"
+                             style="background-position: center; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
                 <div class="column is-2">
@@ -164,54 +180,76 @@ $view = ButtonBeforeAfter("DECUBE");
             </video>
         </div>
         <br><br>
-        <p class="title" style="margin-bottom:10px;">
-            Qualche Nostro <span class="makuda-color">Scatto</span>
-        </p>
-        <p class="frase" style="color: white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
-        </p>
+    </div>
+</div>
+<div class="container">
 
-        <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img2" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
-                    </div>
+    <br><br>
+    <p class="title" style="margin-bottom:10px;">
+        Qualche Nostro <span class="makuda-color">Scatto</span>
+    </p>
+    <p class="frase" style="color: white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
+        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
+        condimentum a non ex.<br>
+    </p>
+
+    <div class="container imgs-slide">
+        <div class="columns gif-photo">
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img3" class="small-image image-div"></div>
                 </div>
             </div>
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img4" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img5" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img6" class="big-image image-div"></div>
-                    </div>
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img4" class="big-image image-div" style="background-size: contain; background-repeat: no-repeat"></div>
                 </div>
             </div>
-
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img5" class="small-image image-div"></div>
+                </div>
+            </div>
+        </div>
+        <div class="columns gif-photo">
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img6" class="big-image image-div" style="background-position: top"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img7" class="big-image image-div" style="margin-top: 12em;background-position: top"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img8" class="big-image image-div" style="background-position: top"></div>
+                </div>
+            </div>
+        </div>
+        <div class="columns gif-photo">
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img9" class="big-image image-div" style="background-position: top"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img10" class="big-image image-div" style="margin-top: 12em"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-slide">
+                    <div id="img11" class="big-image image-div" style="background-position: top" ></div>
+                </div>
+            </div>
         </div>
 
     </div>
+
+</div>
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>
@@ -222,6 +260,11 @@ $view = ButtonBeforeAfter("DECUBE");
         <div id="img4" class="full-screen-carousel-image"></div>
         <div id="img5" class="full-screen-carousel-image"></div>
         <div id="img6" class="full-screen-carousel-image"></div>
+        <div id="img7" class="full-screen-carousel-image"></div>
+        <div id="img8" class="full-screen-carousel-image"></div>
+        <div id="img9" class="full-screen-carousel-image"></div>
+        <div id="img10" class="full-screen-carousel-image"></div>
+        <div id="img11" class="full-screen-carousel-image"></div>
 
     </div>
     <div class="full-screen-carousel-control left">

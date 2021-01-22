@@ -91,46 +91,74 @@ if ($(".gif-firstSection").length !== 0) {
     })
 }
 
+function photosAnimationOnClick(link) {
+    var timeline = gsap.timeline();
+    var slide = $('.img-slide')
+    if (slide.length !== 0) {
+        var photos = slide.children().get().reverse();
+        let i = 0;
+        Array.prototype.forEach.call(photos, element => {
+            timeline.fromTo(element, {opacity: 1}, {
+                y: -100,
+                opacity: 0,
+                duration: 0.5,
+                ease: 'expo.out',
+            }, '0.' + i)
+            i++;
+        })
+        timeline.add(function () {
+            console.log('redirect');
+            window.location.href = link;
+        })
+    }else {
+        timeline.to( $('.container').not('.footerContainer'), {
+            y: -100,
+            opacity: 0,
+            duration: 0.5,
+            ease: 'expo.out',
+        },0)
+        timeline.add(function () {
+            console.log('redirect');
+            window.location.href = link;
+        })
+    }
+}
 
-$('#buttonLeft').on('click',function(e){
+$('#buttonLeft').on('click', function (e) {
     var timeline = gsap.timeline();
     let url = $(this).attr("data-link");
-    timeline.to('footer',{
-        duration: 0.5,
-        y: '+100%',
-        },0);
-    timeline.to('.pubblicazione-social',{
-        duration: 0.5,
-        x: '+100%',
-    },0)
-    timeline.to('nav',{
-        duration: 0.5,
-        y: '-100%',
-    },0)
-    timeline.add(function(){
-        console.log('redirect');
-        window.location.href = url;
-    },1)
+    timeline.to('footer', {
+        y: +100,
+        opacity: 0,
+        duration: 1,
+        ease: 'expo.out',
+    }, 0)
+    timeline.to('.button', {
+        opacity: 0,
+        duration: 1,
+        ease: 'expo.out',
+    }, 0)
+    photosAnimationOnClick(url);
+
+
 })
-$('#buttonRight').on('click',function(e){
+$('#buttonRight').on('click', function (e) {
     var timeline = gsap.timeline();
     let url = $(this).attr("data-link");
-    timeline.to('footer',{
-        duration: 0.5,
-        y: '+100%',
-    },0);
-    timeline.to('.pubblicazione-social',{
-        duration: 0.5,
-        x: '-100%',
-    },0)
-    timeline.to('nav',{
-        duration: 0.5,
-        y: '-100%',
-    },0)
-    timeline.add(function(){
-        console.log('redirect');
-        window.location.href = url;
-    },1)
+    timeline.to('footer', {
+        y: +100,
+        opacity: 0,
+        duration: 1,
+        ease: 'expo.out',
+    }, 0)
+    timeline.to('.button', {
+        opacity: 0,
+        duration: 1,
+        ease: 'expo.out',
+    }, 0)
+    photosAnimationOnClick(url);
+
+
 })
 
 
@@ -276,3 +304,49 @@ $(window).on("scroll resize", async function () {
     }
 });
 */
+
+// BLOCK SCROLL ON OPEN CAROUSEL
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+    e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () {
+            supportsPassive = true;
+        }
+    }));
+} catch (e) {
+}
+
+var wheelOpt = supportsPassive ? {passive: false} : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}

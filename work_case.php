@@ -37,7 +37,7 @@
         </div>
     </div>
 </div>
-<div class="rightBandSign"></div>
+<div class="rightBandSign" data-link="/work_prod.php"></div>
 <div class="full-screen-carousel-control right" style=" top: 0;
     position: fixed;
     ">
