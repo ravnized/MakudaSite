@@ -21,7 +21,9 @@
 <div id="section-animated">
     <section class="hero is-fullheight video" id="sectionVideo">
         <div class="hero-video">
-            <div id="divVideo"></div>
+            <div id="divVideo">
+
+            </div>
         </div>
         <div class="hero-body grained" id="hero-body">
             <div class="container" id="containerText">
@@ -50,6 +52,15 @@
                             <div class="text">VISUALIZZA LAVORI</div>
                         </div>
                     </a>
+                </div>
+
+            </div>
+            <div class="scrolldown-wrapper" style="    bottom: 50%;" id="rotellinaVideo">
+                <div class="scrolldown">
+                    <svg height="30" width="10">
+                        <circle class="scrolldown-p1" cx="5" cy="15" r="2"/>
+                        <circle class="scrolldown-p2" cx="5" cy="15" r="2"/>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -183,7 +194,9 @@
                             <p class="titleInsideSquare">PRODUCIAMO</p>
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
-                                Una volta che il percorso è chiaro, ci serviranno i mezzi per affrontarlo. Qui dobbiamo lasciarti senza parole. Al tuo servizio Manager, Marketers, Fotografi, Videomaker, Grafici, Designer, Programmatori.
+                                Una volta che il percorso è chiaro, ci serviranno i mezzi per affrontarlo. Qui dobbiamo
+                                lasciarti senza parole. Al tuo servizio Manager, Marketers, Fotografi, Videomaker,
+                                Grafici, Designer, Programmatori.
                             </p>
                         </div>
                     </div>
@@ -203,7 +216,8 @@
                             <p class="titleInsideSquare">FARE LA DIFFERENZA</p>
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
-                                Eʼ arrivato il momento di dire: “Check mate”. Hai scelto Makuda e insieme abbiamo fatto la differenza sul mercato. Iniziamo a percepire i primi risultati della strategia scelta
+                                Eʼ arrivato il momento di dire: “Check mate”. Hai scelto Makuda e insieme abbiamo fatto
+                                la differenza sul mercato. Iniziamo a percepire i primi risultati della strategia scelta
 
                             </p>
                         </div>
@@ -224,7 +238,9 @@
                             <p class="titleInsideSquare">LA STRADA É LUNGA</p>
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
-                                Nessuno è infallibile. Una volta raggiunti gli obiettivi prefissati ce ne saranno di nuovi da raggiungere. Calibra le tue mosse, Makuda sará sempre al tuo fianco quando ne avrai bisogno. </p>
+                                Nessuno è infallibile. Una volta raggiunti gli obiettivi prefissati ce ne saranno di
+                                nuovi da raggiungere. Calibra le tue mosse, Makuda sará sempre al tuo fianco quando ne
+                                avrai bisogno. </p>
                         </div>
                     </div>
                 </div>
@@ -241,18 +257,18 @@
     </div>
 </a>
 
-<div class="nostri-progetti">
-    <div class="works-band"></div>
+<div class="nostri-progetti makuda-bgcolor">
     <div class="works-content">
         <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
-        <div class="fading-carousel">
+        <div class="fading-carousel columns is-vcentered">
             <?php
             $myfile = fopen("media/json/carousel-home.json", "r") or die("Unable to open file!");
             $to_parse = fread($myfile, filesize("media/json/carousel-home.json"));
             fclose($myfile);
             $parsed = json_decode($to_parse, true);
             ?>
-            <div class="fading-images fade-in-right-animation">
+
+            <div class="fading-images column fade-in-right-animation">
                 <?php
                 $c = 0;
 
@@ -266,10 +282,9 @@
                 }
                 ?>
             </div>
-            <div style="flex: 1;">
-                <img class='opacity-0' src='media/img/works/img1.png'>
-            </div>
-            <div class="fade-in-left-animation fading-caption-content">
+
+
+            <div class="fade-in-left-animation column fading-caption-content">
                 <?php
                 $c = 0;
                 foreach ($parsed as $view) {
@@ -290,7 +305,7 @@
                         </a>
                     </div>
                 <?php } ?>
-                <div class="fading-select">
+                <div class="fading-select column">
                     <?php
                     $c = 1;
                     foreach ($parsed
@@ -317,7 +332,7 @@
 <div class="testimonial-container fade-in-animation" style="height: 100%;">
     <section class="section containerCarousel">
         <div class="container containerCar">
-            <div class="carousel" data-initial-slide="1" id="carousel1">
+            <div class="carousel" data-initial-slide="1" data-navigation-swipe="false"  id="carousel1">
                 <div class="item-1">
                     <div class="card card-padding">
                         <div class="card-image wrapper-testimonial">
@@ -500,7 +515,7 @@
       <p class="counter-count giantAssTextLight">200</p>
     </div>
   </div> -->
-<section class="section">
+<section class="section" style="margin-bottom: 50px;">
     <div class="container fade-in-animation" id="logos-carousel">
         <div
                 class="carousel"

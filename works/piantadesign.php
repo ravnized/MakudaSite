@@ -99,10 +99,15 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                             </div>
                             <div class="column">
                                 <p><span class="boldOrange">Cliente:</span> Piantanida</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Santacroce & Simone Bioli</p>
+
                                 <p><span class="boldOrange">Ph:</span> Simone Bioli</p>
                                 <p><span class="boldOrange">Anno:</span> 2020</p>
                                 <p><span class="boldOrange">Tecnica:</span>Video Corporate</p>
+                                <div class="columns">
+                                    <div class="column is-two-fifths"><p><span class="boldOrange">Directors:</span></p>
+                                    </div>
+                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Simone Santacroce <br> Simone Bioli</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -41,6 +41,14 @@ $(document).ready(function () {
     });
     /*FINE NAPO*/
 
+    $('.fading-images.column.fade-in-right-animation').css('height',$('.fading-image').height()+'px');
+    $('.card-image.wrapper-testimonial').css('height',$('.makuda-testimonials-item').height()+'px');
+
+    window.addEventListener('resize', function(e){
+        $('.fading-images.column.fade-in-right-animation').css('height',$('.fading-image').height()+'px');
+        $('.card-image.wrapper-testimonial').css('height',$('.makuda-testimonials-item').height()+'px');
+    });
+
     var app,
         video = document.createElement("video"),
         divVideo = document.querySelector("#divVideo"),
@@ -48,7 +56,7 @@ $(document).ready(function () {
     video.loop = true;
     video.crossOrigin = "anonymous";
     video.preload = "auto";
-    video.src = "/media/video/IndexVideo.m4v";
+    video.src = "/media/video/Finale_1web.mp4";
     video.autoload = true;
     video.muted = true;
     video.playsinline = "playsinline";
@@ -268,15 +276,10 @@ $(document).ready(function () {
             onComplete: function () {
                 reloadScrollBars();
                 $(".pageloader").hide();
-                if ($(window).width() > 1024) {
+
                     initPixi();
                     divVideo.appendChild(app.view);
-                } else {
-                    $(".gradient-video").css(
-                        "height",
-                        $(".cardinoVideo").height() + "px"
-                    );
-                }
+
             },
         });
     }
@@ -372,7 +375,7 @@ $(document).ready(function () {
                 $(".works-content .title"),
                 500,
                 AnimationDirection.bottom,
-                {top: "25px", bottom: "50px"}
+                {bottom: "50px"}
             );
             setTimeout(function () {
                 animateFadeIn(

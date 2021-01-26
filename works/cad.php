@@ -18,29 +18,18 @@ $view = ButtonBeforeAfter("DANZA");
 <body style="background-color: #111; min-height: 100vh">
 <style>
     #img1 {
-        background-image: url(/media/img/works/toia_1.JPG);
+        background-image: url(/media/img/works/cad_1.png);
     }
 
     #img2 {
-        background-image: url(/media/img/works/toia_2.JPG);
+        background-image: url(/media/img/works/cad_2.png);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/toia_3.JPG);
+        background-image: url(/media/img/works/cad_3.png);
     }
 
-    #img4 {
-        background-image: url(/media/img/works/toia_4.JPG);
-    }
-
-    #img5 {
-        background-image: url(/media/img/works/toia_5.JPG);
-    }
-
-    #img6 {
-        background-image: url(/media/img/works/toia_6.JPG);
-    }
 </style>
 <?php require("../components/navbar.php"); ?>
 
@@ -97,7 +86,7 @@ $view = ButtonBeforeAfter("DANZA");
                                 <p><span class="boldOrange">Cliente: </span>Centro Arti Danza</p>
                                 <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
                                 <div class="columns">
-                                    <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
+                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
                                     <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
@@ -129,7 +118,7 @@ $view = ButtonBeforeAfter("DANZA");
             <div class="columns gif-photo">
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
+                        <div id="img1" class="small-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
                 <div class="column">
@@ -139,7 +128,7 @@ $view = ButtonBeforeAfter("DANZA");
                 </div>
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
+                        <div id="img3" class="small-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
             </div>

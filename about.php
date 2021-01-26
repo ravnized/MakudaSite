@@ -125,7 +125,7 @@
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
-                <h5 style="font-size: 30px;">Riccardo Vitonto</h5>
+                <h5 style="font-size: 30px;">Riccardo Bitonto</h5>
                 <h6 style="font-size: 26px;">Designer</h6>
             </div>
         </div>

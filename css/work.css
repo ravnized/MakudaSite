@@ -653,7 +653,7 @@ div.mask {
     width: 100%;
     padding: 0 !important;
     opacity: 0;
-    background-image: url("/media/img/73401809_390252275190258_686177937147393055_n.jpg") !important;
+    background-image: url("/media/img/works/zoda_3_1.jpg") !important;
 }
 
 .parallax-image .gif-zoda {
@@ -801,6 +801,7 @@ div.mask {
     background-color: transparent !important;
     left: 0;
     height: 100px;
+    margin-bottom: 2em;
 }
 
 .buttonText {
@@ -864,7 +865,9 @@ div.mask {
 
 .makuda-home-link--contacts.makuda-home-link-wrap {
     left: calc(88% + 21px) !important;
+    z-index: 21;
 }
+
 .blackScreenLeft{
     position: fixed;
     width: 70vw;
@@ -937,4 +940,13 @@ div.mask {
 
 .titolo-brioche {
     position: relative;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.fullscreen-toggle * {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
 }

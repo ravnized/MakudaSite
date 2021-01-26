@@ -53,6 +53,8 @@
           <div class="orangeStick">
             <h1 class="whiteH1meno"><a>Facebook</a></h1>
             <h1 class="whiteH1meno"><a>Instagram</a></h1>
+              <h1 class="whiteH1meno"><a>Vimeo</a></h1>
+              <h1 class="whiteH1meno"><a>Linkedin</a></h1>
           </div>
         </div>
         <div class="column">

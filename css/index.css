@@ -163,7 +163,7 @@ h2 {
 }
 
 .card {
-    background-color: #111111;
+    background-color: transparent;
 }
 
 .colorContainer {
@@ -194,7 +194,7 @@ p {
     }
 }
 
-.progress.is-makuda::-webkit-progress-value {
+.progresss-makuda::-webkit-progress-value {
     background-color: #f6b600;
 }
 
@@ -780,13 +780,13 @@ div > .uno {
 
 /* FADING CAROUSEL */
 .nostri-progetti {
-    padding: 100px 0;
+    margin: 100px 0;
     color: black;
 }
 
 .nostri-progetti .title {
     margin: auto;
-    margin-top: 25px;
+    padding-top: 25px;
     margin-bottom: 50px;
     position: relative;
     color: black;
@@ -814,8 +814,6 @@ div > .uno {
 }
 
 .fading-images {
-    position: absolute;
-    width: 40%;
     top: 0;
     z-index: 1;
     transition: top 0.3s;
@@ -824,11 +822,14 @@ div > .uno {
 .fading-image {
     position: absolute;
     opacity: 0%;
+    top: 0;
+    width: 50%;
+    height: auto;
     transition: all 1s;
 }
 
+
 .fading-image.selected {
-    position: relative;
     opacity: 100%;
 }
 
@@ -1020,7 +1021,20 @@ p.fading-description {
         height: 52%;
     }
 }
+@media (max-width: 1024px) {
+    .card-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 
+@media (max-width: 780px) {
+    .makuda-testimonials-item__content {
+        margin: 0;
+
+    }
+
+}
 .square div .cross {
     padding: 10px;
     position: absolute;
@@ -1030,7 +1044,4 @@ p.fading-description {
 
 #sectionVideo {
     opacity: 0;
-}
-.cardino{
-    padding-top: 50%;
 }

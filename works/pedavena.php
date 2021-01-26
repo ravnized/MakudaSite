@@ -99,7 +99,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
                                 <p><span class="boldOrange">Cliente:</span> Fabbrica di Pedavena</p>
                                 <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
                                 <div class="columns">
-                                    <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
+                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
                                     <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
@@ -113,8 +113,8 @@ $view = ButtonBeforeAfter("PEDAVENA");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social">
-    <div class="works-band" style="height: 140%"></div>
+<div class="pubblicazione-social makuda-bgcolor">
+
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             <span class="black-font">Seguire la Tendenza</span>
@@ -211,6 +211,10 @@ $view = ButtonBeforeAfter("PEDAVENA");
         </div>
 
     </div>
+    <br><br>
+    <?php
+    button('PEDAVENA');
+    ?>
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>
@@ -239,10 +243,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
     </a>
 
 </div>
-<br><br>
-<?php
-button('PEDAVENA');
-?>
+
 <?php require "../components/footer.php" ?>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>

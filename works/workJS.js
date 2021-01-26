@@ -350,3 +350,14 @@ function enableScroll() {
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
+
+$(document).ready(function(){
+    videojs('.vjs-tech').ready(function(){
+        var myPlayer = this;
+        var myFunc = function(){
+            var myPlayer = this;
+            $('body').toggleClass('fullscreen-toggle');
+        };
+        myPlayer.on("fullscreenchange", myFunc);
+    });
+});

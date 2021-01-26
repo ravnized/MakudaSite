@@ -170,7 +170,7 @@ body.is-loaded .makuda-home-link-wrap {
 
 .makuda-home-link--works span:first-child {
     margin: 0 0px 3px 0;
-    transform: translateX(1000px);
+    transform: translateX(100vh);
     color: rgba(255, 197, 32, 0);
 }
 
@@ -186,12 +186,12 @@ body.is-loaded .makuda-home-link-wrap {
 
 .makuda-home-link--works.is-loaded span:first-child {
     color: rgba(255, 197, 32, 0.6);
-    transform: translateX(1000px);
+    transform: translateX(100vh);
 }
 
 .makuda-home-link--works.is-loaded span:last-child {
     color: rgba(255, 197, 32, 0.6);
-    transform: translateX(-1000px);
+    transform: translateX(-100vh);
 }
 
 
@@ -211,7 +211,6 @@ Contacts
 
 .makuda-home-link--contacts span:first-child {
     margin: 20px 0 3px 0;
-
     transform: translateX(100px);
     color: rgba(255, 197, 32, 0);
 }
@@ -225,12 +224,12 @@ Contacts
 
 .makuda-home-link--contacts.is-loaded span:first-child {
     color: rgba(255, 197, 32, 0.6);
-    transform: translateX(-1000px);
+    transform: translateX(-100vh);
 }
 
 .makuda-home-link--contacts.is-loaded span:last-child {
     color: rgba(255, 197, 32, 0.6);
-    transform: translateX(1000px);
+    transform: translateX(100vh);
 }
 
 

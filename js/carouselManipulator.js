@@ -64,18 +64,22 @@ function reviewNextPrevious() {
   );
   tl.to($(elementTestimonial), { duration: 1, scaleX: 1, scaleY: 1 }, 0);
   if (elementTestimonialPrevious.length !== 0) {
-    tl.to(
-      $(elementTestimonialPrevious),
-      { duration: 1, scaleX: 0.7, scaleY: 0.7,transformOrigin: 'right' },
-      0
-    );
+    if($(window).width() >= 1024) {
+      tl.to(
+          $(elementTestimonialPrevious),
+          {duration: 1, scaleX: 0.7, scaleY: 0.7, transformOrigin: 'right'},
+          0
+      );
+    }
   }
   if (elementTestimonialNext.length !== 0) {
-    tl.to(
-      $(elementTestimonialNext),
-      { duration: 1, scaleX: 0.7, scaleY: 0.7, transformOrigin: 'left' },
-      0
-    );
+    if($(window).width() >= 1024) {
+      tl.to(
+          $(elementTestimonialNext),
+          {duration: 1, scaleX: 0.7, scaleY: 0.7, transformOrigin: 'left'},
+          0
+      );
+    }
   }
 
   elementTestimonialPrevious.parent().addClass("testimonial-prima");
@@ -107,13 +111,18 @@ function videoNextPrevious() {
   console.log("next: " + nextSlideIDVideo);
   tl.to($(elementVideo), { duration: 1, scaleX: 1, scaleY: 1 }, 0);
   if (elementVideoPrevious.length != 0) {
-    tl.to(
-      $(elementVideoPrevious),
-      { duration: 1, scaleX: 0.7, scaleY: 0.7 },
-      0
-    );
+    if($(window).width() >= 1024){
+      tl.to(
+          $(elementVideoPrevious),
+          { duration: 1, scaleX: 0.7, scaleY: 0.7 },
+          0
+      );
+    }
+
   }
   if (elementVideoNext.length != 0) {
-    tl.to($(elementVideoNext), { duration: 1, scaleX: 0.7, scaleY: 0.7 }, 0);
+    if($(window).width() >= 1024) {
+      tl.to($(elementVideoNext), {duration: 1, scaleX: 0.7, scaleY: 0.7}, 0);
+    }
   }
 }

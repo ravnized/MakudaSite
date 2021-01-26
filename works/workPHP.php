@@ -39,9 +39,9 @@ function button($ID)
             $view = $v;
             $vAfterIndex = $index + 1;
             $vBeforeIndex = $index - 1;
-            if($vAfterIndex >= count($parsed))
+            if ($vAfterIndex >= count($parsed))
                 $vAfterIndex = 0;
-            if($vBeforeIndex < 0)
+            if ($vBeforeIndex < 0)
                 $vBeforeIndex = count($parsed) - 1;
             $vAfter = array_values($parsed)[$vAfterIndex];
             $vBefore = array_values($parsed)[$vBeforeIndex];
@@ -62,37 +62,39 @@ function button($ID)
 
     <div class="columns is-vcentered">
         <div class="column">
-            <a id="buttonLeft" class="button is-dark buttonBack <?php
-            if (empty($vBefore)) {
-                echo 'hide';
-            }
-            ?>"
-               data-link="<?php
-               if (!empty($vBefore)) {
-                   echo '/works/' . $vBefore['link'];
-               }
-               ?>">
+            <div class="buttons is-left">
+                <a id="buttonLeft" class="button is-dark buttonBack <?php
+                if (empty($vBefore)) {
+                    echo 'hide';
+                }
+                ?>"
+                   data-link="<?php
+                   if (!empty($vBefore)) {
+                       echo '/works/' . $vBefore['link'];
+                   }
+                   ?>">
 
-                <img alt='' class="backgroundButton"
+                    <img alt='' class="backgroundButton"
 
-                     src="<?php
-                     if (!empty($vBefore)) {
-                         echo '/media/img/works/' . $vBefore['image'];
-                     }
-                     ?>">
-
-
-                <p class="buttonText" style="text-align: left"><?php
-                    if (!empty($vBefore)) {
-                        echo $vBefore['title'];
-                    } ?></p>
+                         src="<?php
+                         if (!empty($vBefore)) {
+                             echo '/media/img/works/' . $vBefore['image'];
+                         }
+                         ?>">
 
 
-            </a>
+                    <p class="buttonText" style="text-align: left"><?php
+                        if (!empty($vBefore)) {
+                            echo $vBefore['title'];
+                        } ?></p>
+
+
+                </a>
+            </div>
         </div>
         <div class="column">
             <div class="has-text-centered">
-                <a  class="button is-dark buttonBack" href="<?php
+                <a class="button is-dark buttonBack" href="<?php
                 if ($view['case-study'] == true) {
                     echo '/work_case.php';
                 } else {

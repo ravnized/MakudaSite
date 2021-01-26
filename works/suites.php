@@ -96,7 +96,7 @@ $view = ButtonBeforeAfter("SUITES");
                                 <p><span class="boldOrange">Cliente: </span>Suites & Artelier</p>
                                 <p><span class="boldOrange">Anno:</span> 2020</p>
                                 <div class="columns">
-                                    <div class="column is-one-third"><p><span class="boldOrange">Consulenti:</span></p>
+                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
                                     <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
@@ -111,8 +111,7 @@ $view = ButtonBeforeAfter("SUITES");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social">
-    <div class="works-band" style="height: 110%"></div>
+<div class="pubblicazione-social" style="background-color:rgb(255,204,37)">
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">L'importanza della vendita
             <span class="black-font"> online</span>
@@ -162,7 +161,7 @@ $view = ButtonBeforeAfter("SUITES");
             <div class="columns gif-photo">
                 <div class="column">
                     <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
+                        <div id="img1" class="small-image image-div" style="background-position: top;"></div>
                     </div>
                 </div>
                 <div class="column">
@@ -198,7 +197,10 @@ $view = ButtonBeforeAfter("SUITES");
 
 
     </div>
-
+    <br><br>
+    <?php
+    button('SUITES');
+    ?>
 
 </div>
 <div class="full-screen-carousel" style="display:none;">
@@ -229,10 +231,7 @@ $view = ButtonBeforeAfter("SUITES");
     </a>
 
 </div>
-<br><br>
-<?php
-button('SUITES');
-?>
+
 <?php require "../components/footer.php" ?>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>

@@ -234,7 +234,6 @@ $view = ButtonBeforeAfter("TOIA");
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="full-screen-carousel" style="display:none;">

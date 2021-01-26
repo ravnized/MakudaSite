@@ -12,22 +12,13 @@ $(function () {
     var workListItem = $($(".workListItem").get().reverse());
     gsap.to($(window), {duration: 0.5, scrollTo: 0}, 0);
     gsap.fromTo(
-        workListItem,
-        {
-            opacity: 0,
-        },
-        {
-            duration: 1,
-            opacity: 1,
-            delay: 0.5
-        },
-    );
-    gsap.fromTo(
         ".workListItem:nth-child(1)",
         {
+            opacity:0,
             y: 200,
         },
         {
+            opacity:1,
             duration: 0.3,
             y: 0,
             delay: 0.5
@@ -36,9 +27,11 @@ $(function () {
     gsap.fromTo(
         ".workListItem:nth-child(2)",
         {
+            opacity:0,
             y: 200,
         },
         {
+            opacity:1,
             duration: 0.8,
             y: 0,
             delay: 0.5
@@ -47,9 +40,11 @@ $(function () {
     gsap.fromTo(
         ".workListItem:nth-child(3)",
         {
+            opacity:0,
             y: 200,
         },
         {
+            opacity:1,
             duration: 1.4,
             y: 0,
             delay: 0.5
@@ -262,11 +257,11 @@ $(workBlockImageSub).one("click", function () {
     topTotalHeight = totalHeight + topImagePos;
     tl.to(
         ".workBlockTitle",
-        {duration: 0.5, css: {autoAlpha: 0}},
+        {duration: 0.3, css: {autoAlpha: 0}},
         0
     );
     tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts", {
-        duration: 0.5,
+        duration: 0.3,
         css: {autoAlpha: 0}
     }, 0);
 
