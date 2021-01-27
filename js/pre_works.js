@@ -144,84 +144,11 @@ function animationStart() {
     });
 
 
-    var tlStart = gsap.timeline();
 
-
-    tlStart.fromTo(
-        $("#video-clipper"),
-        {
-
-            left: 50 + '%',
-            width: 0,
-        },
-        {
-
-            duration: 2,
-            left: 0 + '%',
-            width: 50 + '%',
-            ease: 'power4.out'
-        },
-        1
-    );
-
-    tlStart.fromTo($(".mask"),
-        {
-            right: 50 + '%',
-            width: 0,
-        },
-        {
-            duration: 2,
-            right: 0 + '%',
-            width: 50 + '%',
-            ease: 'power4.out',
-            onComplete: function () {
-                isFinished = true;
-            }
-        },
-        1);
-
-
-    tlStart.fromTo(
-        $(".makuda-home-link--contacts.is-loaded span:first-child "),
-        {
-            duration: 1,
-            x: -1000,
-        },
-        {duration: 1, x: -100},
-        1
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--contacts.is-loaded span:last-child"),
-        {
-            duration: 1,
-            x: 1000,
-        },
-        {duration: 1, x: 100},
-        1
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--works.is-loaded span:first-child "),
-        {
-            duration: 1,
-            x: 1000,
-        },
-        {duration: 1, x: -100},
-        1
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--works.is-loaded span:last-child"),
-        {
-            duration: 1,
-            x: -1000,
-        },
-        {duration: 1, x: 100},
-        1
-    );
 }
 
-animationStart();
 
-/*
+
 
 const tl3 = gsap.timeline();
 
@@ -241,6 +168,46 @@ function loader() {
             finished = true;
         }
     }
+    var tlStart = gsap.timeline();
+
+    tlStart.fromTo(
+        $(".makuda-home-link--contacts.is-loaded span:first-child "),
+        {
+            duration: 1,
+            x: -1000,
+        },
+        {duration: 1, x: -100},
+        0
+    );
+    tlStart.fromTo(
+        $(".makuda-home-link--contacts.is-loaded span:last-child"),
+        {
+            duration: 1,
+            x: 1000,
+        },
+        {duration: 1, x: 100},
+        0
+    );
+    tlStart.fromTo(
+        $(".makuda-home-link--works.is-loaded span:first-child "),
+        {
+            duration: 1,
+            x: 1000,
+        },
+        {duration: 1, x: -100},
+        0
+    );
+    tlStart.fromTo(
+        $(".makuda-home-link--works.is-loaded span:last-child"),
+        {
+            duration: 1,
+            x: -1000,
+        },
+        {duration: 1, x: 100,onComplete: function(){
+                isFinished = true;
+            }},
+        0
+    );
     var makuda = ["M", "A_2", "K", "U", "D", "A", "triangle"];
 
     for (let k = 0; k < makuda.length; k++) {
@@ -258,4 +225,3 @@ function loader() {
 
 loader();
 
- */

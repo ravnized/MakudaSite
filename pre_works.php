@@ -22,7 +22,7 @@
 </head>
 <body style="background-color: #111">
 
-
+<?php require "components/loader.html"; ?>
 
 <?php require "components/navbar.php"; ?>
 

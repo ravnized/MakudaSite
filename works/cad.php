@@ -17,7 +17,7 @@ $view = ButtonBeforeAfter("DANZA");
 </head>
 <body style="background-color: #111; min-height: 100vh">
 <style>
-    #img1 {
+    #img3 {
         background-image: url(/media/img/works/cad_1.png);
     }
 
@@ -26,7 +26,7 @@ $view = ButtonBeforeAfter("DANZA");
 
     }
 
-    #img3 {
+    #img1 {
         background-image: url(/media/img/works/cad_3.png);
     }
 
@@ -137,31 +137,6 @@ $view = ButtonBeforeAfter("DANZA");
 
     </div>
 
-
-</div>
-<div class="full-screen-carousel" style="display:none;">
-    <div class="full-screen-carousel-background"></div>
-    <div class="full-screen-carousel-container">
-        <div id="img1" class="full-screen-carousel-image"></div>
-        <div id="img2" class="full-screen-carousel-image"></div>
-        <div id="img3" class="full-screen-carousel-image"></div>
-
-
-    </div>
-    <div class="full-screen-carousel-control left">
-        <div class="full-screen-carousel-arrow">
-            <i class="fas fa-chevron-left"></i>
-        </div>
-    </div>
-    <div class="full-screen-carousel-control right">
-        <div class="full-screen-carousel-arrow right">
-            <i class="fas fa-chevron-right"></i>
-        </div>
-    </div>
-
-    <a class='cross'>
-        <i class="bi bi-plus" style="font-size: 3em"></i>
-    </a>
 
 </div>
 <?php

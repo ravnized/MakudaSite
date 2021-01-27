@@ -950,3 +950,17 @@ body{
     -webkit-clip-path: none !important;
     clip-path: none !important;
 }
+
+@media (min-width: 2000px) {
+    .works-band {
+        height: 80vh;
+    }
+}
+@media (max-width: 1920px){
+    .works-band {
+        height: 100vh;
+    }
+}
+.workListItem{
+    opacity: 0;
+}

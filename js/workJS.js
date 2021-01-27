@@ -49,6 +49,7 @@ $(function () {
             y: 0,
             delay: 0.5
         },
+        'last'
     );
     gsap.fromTo(
         ".progress_in",
@@ -60,6 +61,16 @@ $(function () {
             height: "80%",
             delay: 1.5
         },
+    );
+    gsap.fromTo(
+        ".workListItem",
+        {opacity: 0},
+        {
+            opacity:1,
+            duration: 1.4,
+            delay: 0.5
+        },
+        'last'
     );
 });
 $(window).on("scroll", function () {
@@ -212,7 +223,13 @@ $(function () {
                 duration: 1,
                 ease: 'expo.out',
             }, 0)
-            var worklist = $('.workListItem').slice(0,4).get().reverse();
+            timeline2.to('footer', {
+                y: +100,
+                opacity: 0,
+                duration: 1,
+                ease: 'expo.out',
+            }, 0)
+            var worklist = $('.workListItem').get().reverse();
             let i = 0;
             Array.prototype.forEach.call(worklist, element => {
                 timeline2.to(element, {

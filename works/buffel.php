@@ -111,6 +111,28 @@ $view = ButtonBeforeAfter("BUFFEL");
     </section>
 </div>
 
+
+<div class="container imgs-slide">
+    <div class="columns gif-photo">
+        <div class="column">
+            <div class="img-slide">
+                <div id="img1" class="small-image image-div"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img2" class="big-image image-div"></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="img-slide">
+                <div id="img3" class="small-image image-div"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="pubblicazione-social makuda-bgcolor" id="containerBrioche">
     <div class="container">
         <p class="title" id="innovazioneTitle">
@@ -184,46 +206,8 @@ $view = ButtonBeforeAfter("BUFFEL");
 </div>
 
 
-<!--
-<div class="container imgs-slide">
-    <div class="columns gif-photo">
-        <div class="column">
-            <div class="img-slide">
-                <div id="img4" class="small-image image-div"></div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="img-slide">
-                <div id="img5" class="big-image image-div"></div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="img-slide">
-                <div id="img6" class="small-image image-div"></div>
-            </div>
-        </div>
-    </div>
 
-    <div class="columns gif-photo">
-        <div class="column">
-            <div class="img-slide">
-                <div id="img7" class="small-image image-div"></div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="img-slide">
-                <div id="img8" class="big-image image-div"></div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="img-slide">
-                <div id="img9" class="small-image image-div"></div>
-            </div>
-        </div>
-    </div>
-</div>
 
--->
 <br><br>
 <?php
 button('BUFFEL');
@@ -236,10 +220,6 @@ button('BUFFEL');
         <div id="img1" class="full-screen-carousel-image"></div>
         <div id="img2" class="full-screen-carousel-image"></div>
         <div id="img3" class="full-screen-carousel-image"></div>
-        <div id="img4" class="full-screen-carousel-image"></div>
-        <div id="img5" class="full-screen-carousel-image"></div>
-        <div id="img6" class="full-screen-carousel-image"></div>
-
     </div>
     <div class="full-screen-carousel-control left">
         <div class="full-screen-carousel-arrow">

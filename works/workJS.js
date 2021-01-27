@@ -352,7 +352,7 @@ function enableScroll() {
 }
 
 $(document).ready(function(){
-    videojs('.vjs-tech').ready(function(){
+    videojs(document.querySelector('.video-js')).ready(function(){
         var myPlayer = this;
         var myFunc = function(){
             var myPlayer = this;

@@ -11,7 +11,7 @@
 }
 
 div.mask {
-    width: 0%;
+    width: 50%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,8 +32,7 @@ div.mask {
 }
 
 #video-clipper {
-    left: 50%;
-    width: 0;
+    width: 50%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -242,4 +241,7 @@ Contacts
     overflow: hidden;
     position: relative;
     cursor: pointer;
+}
+.pageloader{
+    z-index: 10 !important;
 }

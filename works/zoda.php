@@ -130,7 +130,7 @@ $view = ButtonBeforeAfter("ZODA");
     </section>
 </div>
 <div class="pubblicazione-social">
-    <div class="works-band" style="height: 110vh"></div>
+    <div class="works-band"></div>
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             Il Processo <span class="black-font">Creativo</span>

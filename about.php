@@ -74,8 +74,9 @@
         <div class="person-container">
             <img src="/media/img/team/1.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">Facebook</a></li>
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.facebook.com/sdon92">Facebook</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/stefano-d%E2%80%99onofrio-8553661a3/">LinkedIn</a>
+                </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
@@ -86,8 +87,9 @@
         <div class="person-container">
             <img src="/media/img/team/2.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">Instagram</a></li>
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.instagram.com/simone_santacroce_/">Instagram</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/simone-santacroce-5a42431a4/">LinkedIn</a>
+                </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
@@ -98,7 +100,7 @@
         <div class="person-container">
             <img src="/media/img/team/3.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/simone-bioli-940176165/">LinkedIn</a></li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
@@ -109,8 +111,9 @@
         <div class="person-container">
             <img src="/media/img/team/4.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">Instagram</a></li>
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.instagram.com/taras.film/">Instagram</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/taras-snegovoy-924288203/">LinkedIn</a>
+                </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
@@ -121,7 +124,8 @@
         <div class="person-container">
             <img src="/media/img/team/5.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/riccardo-bitonto-1333471a9/">LinkedIn</a>
+                </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
@@ -132,8 +136,9 @@
         <div class="person-container">
             <img src="/media/img/team/6.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="#">Instagram</a></li>
-                <li><a class="person-link" href="#">LinkedIn</a></li>
+                <li><a class="person-link" href="https://www.instagram.com/armagaluf_/">Instagram</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/armando-aspesani-4592a0129/">LinkedIn</a>
+                </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
