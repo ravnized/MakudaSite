@@ -671,7 +671,12 @@ a:hover {
 }
 
 div > .uno {
+    margin-top: -40px;
     transform: skewY(20deg) translateX(0px);
+}
+
+div > .cinque {
+    margin-top: -45px;
 }
 
 .textInsideSquareLong {

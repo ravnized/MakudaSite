@@ -227,7 +227,7 @@
             <div id="5" class="fade-in-top-animation">
                 <div class="parallelepipedo">
                     <p class="secondText">PERCORSO</p>
-                    <p class="numberParallelepipedo">5</p>
+                    <p class="numberParallelepipedo cinque">5</p>
                 </div>
                 <div class="square">
                     <div style="padding: 10px">
