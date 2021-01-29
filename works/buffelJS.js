@@ -22,17 +22,28 @@ var isAutoScrolling = 0;
 var actualBriocheStep = 0; //Da 0 a 2
 var lastScrollTop = 0;
 var currentFrame = 0;
+// var maxScrollDelta = 0;
 $(window).on("scroll", function (e) {
     let s = $(window).scrollTop(),
         d = $(document).height(),
         c = $(window).height();
+    // let scrollDelta = Math.abs(lastScrollTop - s);
+    // if(scrollDelta > maxScrollDelta && isAutoScrolling == 0 && scrollDelta < c / 3)
+    //     maxScrollDelta = scrollDelta;
     var briocheContainerPos = $("#containerBrioche").offset().top - 70;
     let endBriocheContainer = $("#containerBrioche").height() - c + 150;
     let posFromContainer = s - briocheContainerPos;
     let percScrollBrioche = (posFromContainer * 100) / endBriocheContainer;
     let isScrollingDown = s > lastScrollTop;
     let newBriocheStep = actualBriocheStep + (isScrollingDown ? 1 : - 1);
-    if(!brioche.get_loading() && isAutoScrolling == 0 && newBriocheStep >= 0 && newBriocheStep <= 3 && percScrollBrioche > 0 && percScrollBrioche < 100){
+    if(
+        !brioche.get_loading() && 
+        isAutoScrolling == 0 && 
+        newBriocheStep >= 0 && 
+        newBriocheStep <= 3 && 
+        percScrollBrioche > 0 && 
+        percScrollBrioche < 100
+    ){
         let newFrame = 0;
         switch(newBriocheStep){
             case 0:
