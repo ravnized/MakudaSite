@@ -1069,6 +1069,11 @@ p.fading-description {
     .square {
         transform: translate(0, -200px);
         height: 150px;
+        width: 200px;
+    }
+
+    .cross{
+        display: none;
     }
 
     .parallelepipedo .secondText {
@@ -1125,6 +1130,9 @@ p.fading-description {
 
     .hero-body {
         padding: 0;
+    }
+    #we-are{
+        font-size: 4em;
     }
 }
 

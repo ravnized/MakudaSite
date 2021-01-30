@@ -423,7 +423,6 @@ $(document).ready(function ($) {
                         {
                             duration: 0.2,
                             opacity: 0,
-                            width: 0,
                             x: 0,
                             ease: "power2.in",
                             zIndex: 0,
@@ -531,7 +530,6 @@ $(document).ready(function ($) {
                     display: "flex",
                     duration: 0.2,
                     opacity: 1,
-                    width: 200,
 
                     translateX: '50%',
                     ease: "power2.in",

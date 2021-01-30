@@ -21,7 +21,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
         <a
                 aria-expanded="false"
                 aria-label="menu"
-                class="navbar-burger navbarBurgerMain"
+                class="navbar-burger navbarBurgerMain notDesktop"
                 onclick="animateMenu()"
                 role="button"
         >
