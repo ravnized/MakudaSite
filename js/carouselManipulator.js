@@ -62,7 +62,10 @@ function reviewNextPrevious() {
   var elementTestimonialGradientNext = nextSlideReview.find(
     ".testimonials-gradient"
   );
-  tl.to($(elementTestimonial), { duration: 1, scaleX: 1, scaleY: 1 }, 0);
+  if(elementTestimonial.length !==0){
+    tl.to($(elementTestimonial), { duration: 1, scaleX: 1, scaleY: 1 }, 0);
+  }
+
   if (elementTestimonialPrevious.length !== 0) {
     if($(window).width() >= 1024) {
       tl.to(

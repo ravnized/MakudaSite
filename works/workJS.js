@@ -110,13 +110,13 @@ function photosAnimationOnClick(link) {
             console.log('redirect');
             window.location.href = link;
         })
-    }else {
-        timeline.to( $('.container').not('.footerContainer'), {
+    } else {
+        timeline.to($('.container').not('.footerContainer'), {
             y: -100,
             opacity: 0,
             duration: 0.5,
             ease: 'expo.out',
-        },0)
+        }, 0)
         timeline.add(function () {
             console.log('redirect');
             window.location.href = link;
@@ -351,13 +351,25 @@ function enableScroll() {
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
-$(document).ready(function(){
-    videojs(document.querySelector('.video-js')).ready(function(){
-        var myPlayer = this;
-        var myFunc = function(){
-            var myPlayer = this;
-            $('body').toggleClass('fullscreen-toggle');
-        };
-        myPlayer.on("fullscreenchange", myFunc);
+
+
+$(document).ready(function () {
+    var find = $('*').filter(function () {
+        return $(this).css('position') == 'fixed';
     });
-});
+
+    Array.prototype.forEach.call($(".video-js"), element => {
+        $(element).ready(function () {
+            var videoId = $(element).attr("id");
+            var myPlayer = videojs(videoId);
+            var myFunc = function () {
+                var myPlayer = this;
+                console.log('aaa')
+                // Do something when the event is fired
+                $('body').toggleClass('fullscreen-toggle');
+            };
+
+            myPlayer.on("fullscreenchange", myFunc);
+        })
+    })
+})

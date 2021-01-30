@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
     <?php require('./components/common_libraries.php') ?>
     <link href="css/about.css" rel="stylesheet" type="text/css"/>
@@ -68,7 +68,7 @@
                 TEAM </span>
     </p>
 </div>
-<div class="container" style="margin-top: 25px;
+<div class="container" id="heightJS" style="margin-top: 25px;
     min-height: 50vh;">
     <div id="team-container">
         <div class="person-container">
@@ -148,13 +148,13 @@
         </div>
     </div>
 </div>
-</div>
-<div class=" has-text-centered " style="padding-top: 300px">
+
+<div class=" has-text-centered " id="containerCounter" style="padding-top: 300px">
     <div class="works-band" style="margin-top: -300px"></div>
     <div class="container" style="margin-top: -140px;">
         <div style="display: flex;">
             <div style="flex: 1"></div>
-            <div style="display: flex;">
+            <div class="containerBox" style="display: flex;">
                 <div class="counter-box">
                     <span class="counter" data-count='249'>0</span>
                     <p class="italian-counter">PROGETTI <br> COMPLETATI</p>

@@ -41,32 +41,31 @@ $(document).ready(function () {
     });
     /*FINE NAPO*/
 
-    $('.fading-images.column.fade-in-right-animation').css('height',$('.fading-image').height()+'px');
-    $('.card-image.wrapper-testimonial').css('height',$('.makuda-testimonials-item').height()+'px');
+    $('.fading-images.column.fade-in-right-animation').css('height', $('.fading-image').height() + 'px');
+    $('.card-image.wrapper-testimonial').css('height', $('.makuda-testimonials-item').height() + 'px');
 
-    window.addEventListener('resize', function(e){
-        $('.fading-images.column.fade-in-right-animation').css('height',$('.fading-image').height()+'px');
-        $('.card-image.wrapper-testimonial').css('height',$('.makuda-testimonials-item').height()+'px');
+    window.addEventListener('resize', function (e) {
+        $('.fading-images.column.fade-in-right-animation').css('height', $('.fading-image').height() + 'px');
+        $('.card-image.wrapper-testimonial').css('height', $('.makuda-testimonials-item').height() + 'px');
     });
-
+    var heightWindow = $(window).height();
+    var widthWindow = $(window).width();
     var app,
         video = document.createElement("video"),
-        divVideo = document.querySelector("#divVideo"),
-        oneTime = false;
-    video.loop = true;
-    video.crossOrigin = "anonymous";
-    video.preload = "auto";
+        divVideo = document.querySelector("#divVideo");
     video.src = "/media/video/Finale_1web.mp4";
-    video.autoload = true;
     video.muted = true;
-    video.playsinline = "playsinline";
-
+    video.setAttribute('playsinline', '');
+    video.setAttribute('preload', 'auto');
+    video.autoload = true;
+    video.loop = true;
+    video.autoplay=true;
+    video.width = widthWindow;
+    video.height = heightWindow;
+    video.load();
     var displacementSprite;
     var displacementFilter;
     let isFinished;
-    var heightWindow = $(window).height();
-    var widthWindow = $(window).width();
-
     function initPixi() {
         isFinished = false;
         app = new PIXI.Application({
@@ -84,11 +83,9 @@ $(document).ready(function () {
         displacementFilter = new PIXI.filters.DisplacementFilter(
             displacementSprite
         );
-
         displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
         app.stage.addChild(displacementSprite);
         app.stage.filters = [displacementFilter];
-
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
         app.renderer.view.style.transform = 'scale(1.16)';
@@ -104,7 +101,6 @@ $(document).ready(function () {
         });
         tl3.to(".consultingText", {duration: 0.5, autoAlpha: 1});
         tl3.to(".animatedBtn", {duration: 0.5, autoAlpha: 1});
-
         app.ticker.stop();
         gsap.ticker.add(() => {
             app.ticker.update();
@@ -246,10 +242,13 @@ $(document).ready(function () {
         });
     }
 
-    var finished = false;
+
+
     const tl3 = gsap.timeline();
+    var finished = false;
 
     function loader() {
+
         unloadScrollBars();
         var pageloader;
         pageloader = $(".pageloaderLogo").find("circle");
@@ -277,8 +276,8 @@ $(document).ready(function () {
                 reloadScrollBars();
                 $(".pageloader").hide();
 
-                    initPixi();
-                    divVideo.appendChild(app.view);
+                initPixi();
+                divVideo.appendChild(app.view);
 
             },
         });
@@ -393,7 +392,7 @@ $(document).ready(function () {
         }
 
         //Testimonials
-        if (
+        if ($('.testimonial-container').length != 0 &&
             !testimonialAnimation &&
             isScrolledIntoView($(".testimonial-container"), false, 90)
         ) {

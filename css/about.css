@@ -596,3 +596,59 @@ div > .uno {
     background-color: rgb(255, 197, 32) !important;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+
+    .boldBig{
+        font-size: 3em;
+    }
+    #valori-container{
+        width: 100vw;
+    }
+
+    .valori-line{
+        width: 10px !important;
+    }
+
+    #valori-text{
+        font-size: 0.8em;
+        width: 100vw;
+        margin: 0 !important;
+        padding: 30px;
+        padding-top: 0;
+    }
+
+    .valori-vertical-line{
+        border-right: 0 !important;
+        margin-left: 0 !important;
+        opacity: 0;
+    }
+    #subtitle-valore{
+        font-size: 1em;
+    }
+    .valori-title{
+        font-size: 0.8em;
+    }
+
+    .containerBox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #containerCounter{
+        padding-top: 0 !important;
+        margin-bottom: 100px;
+    }
+    #containerCounter > .works-band{
+
+        margin-top: -100px !important;
+        margin-bottom: 100px;
+        height: 100%;
+    }
+
+    .counter-box{
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

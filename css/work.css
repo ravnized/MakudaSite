@@ -949,6 +949,7 @@ body{
 .fullscreen-toggle * {
     -webkit-clip-path: none !important;
     clip-path: none !important;
+    z-index: -1 !important;
 }
 
 @media (min-width: 2000px) {
@@ -963,4 +964,7 @@ body{
 }
 .workListItem{
     opacity: 0;
+}
+.fullscreen-fix{
+    z-index: 999 !important;
 }

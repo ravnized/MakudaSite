@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <?php require './components/common_libraries.php' ?>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
@@ -29,7 +29,7 @@
             <div class="container" id="containerText">
                 <div class="textOverlay" id="textOverlay">
                     <h2 class="is-size-1" id="weAre">
-                        WE ARE
+                        <span>WE ARE</span>
                         <img
                                 alt="Makuda"
                                 class="makuda-logo"
@@ -322,17 +322,19 @@
                         <?= $line ?>
                     </div>
                     <p style="color: white;">0<?= $c++ ?></p>
-                </div>
-            <?php } ?>
             </div>
+
+        <?php } ?>
+        </div>
         </div>
     </div>
 </div>
 </div>
+
 <div class="testimonial-container fade-in-animation" style="height: 100%;">
     <section class="section containerCarousel">
         <div class="container containerCar">
-            <div class="carousel" data-initial-slide="1" data-navigation-swipe="false"  id="carousel1">
+            <div class="carousel" data-initial-slide="1" data-navigation-swipe="false" id="carousel1">
                 <div class="item-1">
                     <div class="card card-padding">
                         <div class="card-image wrapper-testimonial">
@@ -425,96 +427,6 @@
     </section>
 </div>
 
-
-<!--
-<div class="container is-fullheight">
-<div class="hero is-fullheight has-background">
-
-<div class="hero-body">
-    <div class="container container-font">
-        <div data-aos="fade-down">
-            <div>
-                <h2 class="has-text-light is-size-1">LE NOSTRE <span style="color: #f6b600">TESTIMONIANZE</span></h2>
-                <p class="has-text-light is-size-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit mi a purus posuere mattis. Proin tincidunt velit lobortis orci efficitur, a porta ante auctor. In magna enim, tincidunt non felis vel, rhoncus molestie erat. Suspendisse potenti. Etiam eget tellus ornare risus dignissim luctus.
-                </p>
-            </div>
-        </div>
-
-    </div>
-</div>
-</div>
-</div>
--->
-
-<!-- <div class="container">
-  <p class="boldOrange">Ultimi Lavori</p>
-</div>
-<div class="container">
-  <section class="hero is-fullheight has-carousel">
-    <div class="hero-carousel">
-      <div class="item-1">
-        <div class="containerText">
-          <p class="textInsideSquareWork">AAAA</p>
-          <div class="image imageMask">
-            <img alt="" src="/media/img/Matteo_Toia.jpg" />
-          </div>
-        </div>
-      </div>
-      <div class="item-2">
-        <div class="containerText">
-          <p class="textInsideSquareWork">AAAA</p>
-          <div class="image imageMask">
-            <img alt="" src="/media/img/Suites%20&%20Atelier.png" />
-          </div>
-        </div>
-      </div>
-      <div class="item-3">
-        <div class="containerText">
-          <p class="textInsideSquareWork">AAAA</p>
-          <div class="image imageMask">
-            <img alt="" src="/media/img/Buffel%202.0.png" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-head"></div>
-    <div class="hero-body"></div>
-    <div class="hero-foot"></div>
-  </section>
-  <br /><br /><br /><br /> -->
-
-<!-- <p class="boldOrange" style="margin-bottom: -7em">Aziende</p>
-  <div class="columns is-vcentered">
-    <div class="column" style="display: flex">
-      <h1 class="giantAssTextLight">+</h1>
-      <p class="counter-count giantAssTextLight">50</p>
-    </div>
-    <div class="column">
-      <p class="whiteText">
-        Nel 2020 siamo stati al fianco di aziende in ogni settore.
-        Ristorazione, Alberghiero, Metallurgico, No profit, Immobiliare,
-        Moda, Musica, Farmaceutico sono alcune delle realtà che abbiamo
-        affrontato, rispondendo ai loro obiettivi.
-      </p>
-    </div>
-  </div>
-  <p class="boldOrange" style="margin-bottom: -7em">Lavori eseguiti</p>
-  <div class="columns is-vcentered">
-    <div class="column">
-      <p class="whiteText">
-        Al fine di raggiungere gli obiettivi delle aziende abbiamo
-        realizzato più di 200 prodotti videografici e fotografici per i
-        nostri clienti, consegnati e utilizzati per il raggiungimento degli
-        obiettivi.
-      </p>
-    </div>
-    <div class="column" style="display: flex">
-      <h1 class="giantAssTextLight">+</h1>
-      <p class="counter-count giantAssTextLight">200</p>
-    </div>
-  </div> -->
 <section class="section" style="margin-bottom: 50px;">
     <div class="container fade-in-animation" id="logos-carousel">
         <div
