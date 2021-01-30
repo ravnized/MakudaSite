@@ -245,3 +245,47 @@ Contacts
 .pageloader{
     z-index: 10 !important;
 }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+    #video-clipper video {
+        width: 200vw;
+        height: unset;
+    }
+    #video-clipper {
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+    }
+    #video-compare-container div.mask video {
+        top: 0;
+        height: 100vw;
+        right: 0;
+    }
+    div.mask {
+        height: 50%;
+        width: 100%;
+        position: absolute;
+         top: unset;
+        bottom: 0;
+    }
+    .makuda-home-link--contacts .makuda-home-link span:first-child {
+        font-size: 3em;
+        margin: 0px 0 3px 0;
+    }
+    .makuda-home-link--contacts span:last-child {
+        opacity: 0;
+    }
+    .makuda-home-link--contacts.makuda-home-link-wrap {
+        left: calc(75% + 21px);
+    }
+    .makuda-home-link--works .makuda-home-link span:last-child{
+        font-size: 3em;
+        margin: -7px 0 3px 0;
+    }
+    .makuda-home-link--works.is-loaded span:first-child{
+        opacity: 0;
+    }
+}

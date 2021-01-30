@@ -968,3 +968,31 @@ body{
 .fullscreen-fix{
     z-index: 999 !important;
 }
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+    .makuda-home-link--contacts , .rightBandSign, .full-screen-carousel-control{
+        display: none !important;
+    }
+    .progress_wrap{
+        display: none;
+    }
+    .title{
+        font-size: 3em !important;
+    }
+    .workListItem > .container{
+        margin-left: 0 !important;
+    }
+    .workBlockTitle{
+        transform: translateY(100%);
+    }
+    .titleVideo{
+        font-size: 3em;
+    }
+    .subTitleVideo{
+        font-size: 1.5em;
+    }
+    .workListItem > .container > .columns{
+        margin: 0 !important;
+    }
+}

@@ -1075,29 +1075,7 @@ p.fading-description {
         transform: skewY(20deg) translateX(-25px) translateY(680px) scale(-1, -1);
         font-size: 0.9em;
     }
-    .buttonMenu{
-        font-size: 3em !important;
-        height: 100px;
-        margin: 0;
-        padding-right: 0 !important;
-        margin-right: 0 !important;
-    }
-    .exit{
-        right: 1em;
-        top: 2em;
-    }
-    .menuWrapper{
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
-    .navbar-menu.is-active{
-        background-color: transparent;
-        box-shadow: unset;
-        padding: 0;
-    }
+
     .fading-caption-content{
         margin-top: 100px;
     }

@@ -122,27 +122,32 @@
     font-size: 4em;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .menu-background {
-        display: none;
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+
+    .buttonMenu {
+        font-size: 3em !important;
+        height: 100px;
+        margin: 0;
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+    .navbar-menu.is-active{
+        background-color: transparent;
+        box-shadow: unset;
+        padding: 0;
+    }
+    .exit {
+        right: 1em;
+        top: 2em;
     }
 
-    /* CSS */
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-    /* CSS */
-
-}
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .menu-background {
-        display: none;
+    .menuWrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
-
-    /* CSS */
-
 }

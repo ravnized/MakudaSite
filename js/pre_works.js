@@ -170,44 +170,66 @@ function loader() {
     }
     var tlStart = gsap.timeline();
 
-    tlStart.fromTo(
-        $(".makuda-home-link--contacts.is-loaded span:first-child "),
-        {
-            duration: 1,
-            x: -1000,
-        },
-        {duration: 1, x: -100},
-        0
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--contacts.is-loaded span:last-child"),
-        {
-            duration: 1,
-            x: 1000,
-        },
-        {duration: 1, x: 100},
-        0
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--works.is-loaded span:first-child "),
-        {
-            duration: 1,
-            x: 1000,
-        },
-        {duration: 1, x: -100},
-        0
-    );
-    tlStart.fromTo(
-        $(".makuda-home-link--works.is-loaded span:last-child"),
-        {
-            duration: 1,
-            x: -1000,
-        },
-        {duration: 1, x: 100,onComplete: function(){
-                isFinished = true;
-            }},
-        0
-    );
+    if($(window).width()> 1024){
+        tlStart.fromTo(
+            $(".makuda-home-link--contacts.is-loaded span:first-child "),
+            {
+                duration: 1,
+                x: -1000,
+            },
+            {duration: 1, x: -100},
+            0
+        );
+        tlStart.fromTo(
+            $(".makuda-home-link--contacts.is-loaded span:last-child"),
+            {
+                duration: 1,
+                x: 1000,
+            },
+            {duration: 1, x: 100},
+            0
+        );
+        tlStart.fromTo(
+            $(".makuda-home-link--works.is-loaded span:first-child "),
+            {
+                duration: 1,
+                x: 1000,
+            },
+            {duration: 1, x: -100},
+            0
+        );
+        tlStart.fromTo(
+            $(".makuda-home-link--works.is-loaded span:last-child"),
+            {
+                duration: 1,
+                x: -1000,
+            },
+            {duration: 1, x: 100,onComplete: function(){
+                    isFinished = true;
+                }},
+            0
+        );
+    }else{
+        tlStart.fromTo(
+            $(".makuda-home-link--contacts.is-loaded span:first-child "),
+            {
+                duration: 1,
+                x: -1000,
+            },
+            {duration: 1, x: -70+'vh'},
+            0
+        );
+        tlStart.fromTo(
+            $(".makuda-home-link--works.is-loaded span:last-child "),
+            {
+                duration: 1,
+                x: 1000,
+            },
+            {duration: 1, x: 50},
+            0
+        );
+    }
+
     var makuda = ["M", "A_2", "K", "U", "D", "A", "triangle"];
 
     for (let k = 0; k < makuda.length; k++) {
