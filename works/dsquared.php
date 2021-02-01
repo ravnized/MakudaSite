@@ -23,8 +23,12 @@ $view = ButtonBeforeAfter("DSQUARED2");
 
 <?php require("../components/menu.php"); ?>
 <style>
-
-
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
 </style>
 <div class="mainSection">
     <section class="sectionFullWorks">
@@ -87,7 +91,7 @@ $view = ButtonBeforeAfter("DSQUARED2");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social" style="background-color:#FFBF1B;">
+<div class="pubblicazione-social" style="background-color:#FFBF1B;padding-bottom: 50px;">
     <div class="container">
         <br/>
         <p class="title" style="margin-bottom:10px;">

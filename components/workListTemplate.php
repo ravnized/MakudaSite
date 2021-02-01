@@ -4,6 +4,7 @@
       <div class="column">
         <div class="workBlockContainer">
           <div class="workBlock">
+              <div class="workBlockImgTriangle"></div>
             <div class="workBlockImageSub">
               <a data-link="<?php echo $linkPage; ?>">
                 <img alt="" class="imageVideo" style="padding-top: 0 !important;"  src="<?php echo $srcImg; ?>" />

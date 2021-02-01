@@ -115,9 +115,9 @@ $view = ButtonBeforeAfter("ZODA");
                             <div class="column">
                                 <p><span class="boldOrange">Cliente:</span> Daniele "Zoda" Sodano</p>
                                 <div class="columns">
-                                    <div class="column is-one-fifth"><p><span class="boldOrange">Direct:</span></p>
+                                    <div class="column is-one-fifth noPadding"><p><span class="boldOrange">Direct:</span></p>
                                     </div>
-                                    <div class="column"><p> Simone Santacroce <br> Taras Snegovoy</p></div>
+                                    <div class="column noPadding noPaddingTop"><p> Simone Santacroce <br> Taras Snegovoy</p></div>
                                 </div>
 
 

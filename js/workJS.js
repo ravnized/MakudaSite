@@ -8,7 +8,18 @@ var generalItem = $(".workBlockContainer"),
     insideAWork = false;
 let footer = $("footer");
 
+
+
+
+
+
 $(function () {
+    if ($(window).width() > 1024){
+        let image = document.createElement("img");
+        image.src ="/media/icons/TRIANGOLINO.png";
+        var workBlock =  $('.workBlockImgTriangle')
+        workBlock.append(image)
+    }
     var workListItem = $($(".workListItem").get().reverse());
     gsap.to($(window), {duration: 0.5, scrollTo: 0}, 0);
     gsap.fromTo(
@@ -277,11 +288,10 @@ $(workBlockImageSub).one("click", function () {
         {duration: 0.3, css: {autoAlpha: 0}},
         0
     );
-    tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts", {
+    tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts, .workBlockImgTriangle", {
         duration: 0.3,
         css: {autoAlpha: 0}
     }, 0);
-
     workListItem.css({top: totalHeight + "px"});
     workList.css({
         height: arrayListElementHeight * 2 + totalHeight + "px",

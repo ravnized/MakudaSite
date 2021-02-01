@@ -980,15 +980,83 @@ body{
     .title{
         font-size: 3em !important;
     }
+
     .workListItem > .container{
         margin-left: 0 !important;
     }
     .workBlockTitle{
-        transform: translateY(100%);
+        width: 100%;
+        transform: translateY(300%);
+        background: none;
     }
     .titleVideo{
-        font-size: 3em;
+        padding-left: 0;
+        font-size: 2em !important;
     }
+    .titleVideo {
+        text-align: center;
+    }
+
+    .subTitleVideo {
+        text-align: center;
+    }
+    .workBlockImgTriangle {
+        z-index: 1;
+        position: absolute;
+    }
+    .columns.gif-photo{
+        margin: 0;
+    }
+    .columns.gif-photo > .column{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        transform: scale(1);
+    }
+
+    .noPadding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .noPaddingTop{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .parallax-spacing{
+        display: none;
+    }
+    .separator{
+        display: none;
+    }
+    .parallax-image {
+        background-position: right;
+        height: 2400px;
+    }
+
+    .gif-zoda .column{
+        transform: scale(1) !important;
+    }
+    .numberRectangle{
+        margin-right: 0;
+    }
+
+    .gif-firstSection > .columns{
+        margin: 0;
+    }
+    .columns{
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100vw;
+    }
+    .gif-firstSection{
+        transform: scale(1) !important;
+        margin: 0;
+    }
+
+
+
     .subTitleVideo{
         font-size: 1.5em;
     }

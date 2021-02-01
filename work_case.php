@@ -20,6 +20,7 @@
         transform: translateX(0) !important;
         color: rgba(255, 197, 32, 1);
     }
+
 </style>
 
 <?php require "components/navbar.php"; ?>
