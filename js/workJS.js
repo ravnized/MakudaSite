@@ -14,11 +14,12 @@ let footer = $("footer");
 
 
 $(function () {
-    if ($(window).width() > 1024){
+    if ($(window).width() < 1024){
         let image = document.createElement("img");
         image.src ="/media/icons/TRIANGOLINO.png";
         var workBlock =  $('.workBlockImgTriangle')
         workBlock.append(image)
+        console.log('aaa')
     }
     var workListItem = $($(".workListItem").get().reverse());
     gsap.to($(window), {duration: 0.5, scrollTo: 0}, 0);

@@ -96,9 +96,9 @@ $view = ButtonBeforeAfter("SUITES");
                                 <p><span class="boldOrange">Cliente: </span>Suites & Artelier</p>
                                 <p><span class="boldOrange">Anno:</span> 2020</p>
                                 <div class="columns">
-                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
+                                    <div class="column is-two-fifths noPadding"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
-                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column noPadding noPaddingTop marginLeft" style="padding-left: 0;margin-left: -10px;"><p> Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
 

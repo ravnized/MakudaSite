@@ -30,18 +30,6 @@ $view = ButtonBeforeAfter("BUFFEL");
     #img3 {
         background-image: url(/media/img/works/3_mille_giri/3.jpg);
     }
-
-    #img4 {
-        background-image: url(/media/img/works/toia_4.JPG);
-    }
-
-    #img5 {
-        background-image: url(/media/img/works/toia_5.JPG);
-    }
-
-    #img6 {
-        background-image: url(/media/img/works/toia_6.JPG);
-    }
 </style>
 <?php require("../components/navbar.php"); ?>
 
@@ -98,7 +86,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                                 <div class="columns">
                                     <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
                                     </div>
-                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column consulenti" style="padding-left: 0;margin-left: -10px;"><p> Stefano
                                             D'onofrio <br>Simone Santacroce <br> Armando Aspesani</p></div>
                                 </div>
 
