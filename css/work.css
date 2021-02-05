@@ -274,7 +274,7 @@ video {
 }
 
 .boldOrange {
-    font-size: 1em;
+    font-size: x-large;
     font-family: Gelion-black, serif;
     color: #f6b600;
     text-transform: uppercase;
@@ -733,6 +733,9 @@ div.mask {
     transform: scale(1.2);
     opacity: 0;
 }
+.gif-photo{
+    flex-wrap: wrap;
+}
 
 .cross {
     position: fixed;
@@ -973,6 +976,13 @@ body {
 .fullscreen-fix {
     z-index: 999 !important;
 }
+.subVideoDescription .columns .column:nth-child(1) {
+    padding: 0 !important;
+}
+.subVideoDescription .columns .column:nth-child(2) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 /* RESPONSIVE */
 
@@ -1109,4 +1119,15 @@ body {
     .works-band{
         height: 100vh;
     }
+    #video-compare-container{
+        padding-top: 300px !important;
+    }
+    .subVideoDescription .columns .column:nth-child(1) {
+        text-align: right;
+    }
+    .subVideoDescription .columns .column:nth-child(2) {
+        text-align: left;
+    }
+
+
 }

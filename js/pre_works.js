@@ -6,8 +6,26 @@ $('<style>.makuda-home-link--contacts:before{width: 100%}</style>').appendTo('he
 var isFinished = false;
 $('#video2').get(0).currentTime = 5;
 $('#video1').get(0).currentTime = 5;
-$('#video1').get(0).play();
-$('#video2').get(0).play();
+
+var promise1 = $('#video1').get(0).play();
+if (promise1 !== undefined){
+    promise1.catch(error => {
+        console.log(error)
+    }).then(() => {
+        console.log('Autoplay Started');
+    })
+}
+var promise2 =  $('#video2').get(0).play();
+if (promise2 !== undefined){
+    promise2.catch(error => {
+        console.log(error)
+    }).then(() => {
+        console.log('Autoplay Started');
+    })
+}
+
+
+
 
 function video1Enter() {
     if (isFinished) {

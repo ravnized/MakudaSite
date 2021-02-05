@@ -83,7 +83,11 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                             </p>
                         </div>
                         <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+
+                        <br/><div id="description">
+
+                        </div><br/>
+
                         <p class="subVideo">CONCEPT</p>
                         <br/>
                         <div class="columns is-6">
@@ -97,16 +101,28 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                     precisione volto a realizzare un prodotto di qualità.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Piantanida</p>
-
-                                <p><span class="boldOrange">Ph:</span> Simone Bioli</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
-                                <p><span class="boldOrange">Tecnica:</span>Video Corporate</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths"><p><span class="boldOrange">Directors:</span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Piantanida</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Ph: </p></div>
+                                    <div class="column"><p>Simone Bioli</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Anno: </p></div>
+                                    <div class="column"><p>2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Tecnica: </p></div>
+                                    <div class="column"><p>Video Corporate</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Directors: </span></p>
                                     </div>
-                                    <div class="column" style="padding-left: 0;margin-left: -10px;"><p> Simone Santacroce <br> Simone Bioli</p></div>
+                                    <div class="column"><p> Simone
+                                            Santacroce <br> Simone Bioli</p></div>
                                 </div>
                             </div>
                         </div>
@@ -117,96 +133,97 @@ $view = ButtonBeforeAfter("PIANTANIDA");
     </section>
 </div>
 <div class="pubblicazione-social">
-    <div class="works-band"></div>
-    <div class="container">
-        <p class="title" style="margin-bottom:10px;padding-top:40px;">
-            Color <span class="black-font">Grading</span>
-        </p>
-        <p class="frase">
-            Grazie al profilo colore LOG della camera da presa abbiamo ottenuto un’ottima materia prima, bene esposta ed
-            illuminata, è stata poi nostra premura riuscire a colorare le clip dando un feeling cinematico al prodotto
-            finale.
-        </p>
-        <div class="gif-firstSection">
+    <div class="makuda-bgcolor">
+
+        <div class="container">
+            <p class="title" style="margin-bottom:10px;padding-top:40px;">
+                Color <span class="black-font">Grading</span>
+            </p>
+            <p class="frase">
+                Grazie al profilo colore LOG della camera da presa abbiamo ottenuto un’ottima materia prima, bene
+                esposta ed
+                illuminata, è stata poi nostra premura riuscire a colorare le clip dando un feeling cinematico al
+                prodotto
+                finale.
+            </p>
+            <div class="gif-firstSection">
+
+                <br><br>
+                <div id="video-compare-container">
+                    <div class="mask">
+                        <video id="video2"
+                               autoplay
+                               loop
+                               muted
+                        >
+                            <source
+
+                                    src='/media/video/works/Piantanida_Color.mp4'>
+
+                        </video>
+                    </div>
+
+                    <div id="video-clipper">
+                        <video id="video1"
+                               autoplay
+                               loop
+                               muted
+                        >
+                            <source
+                                    src='/media/video/works/Piantanida_NoColor.mp4'>
+
+                        </video>
+                    </div>
+                </div>
+            </div>
 
             <br><br>
-            <div id="video-compare-container">
-                <div class="mask">
-                    <video id="video2"
-                           autoplay
-                           loop
-                           muted
-                    >
-                        <source
-
-                                src='/media/video/works/Piantanida_Color.mp4'>
-
-                    </video>
-                </div>
-
-                <div id="video-clipper">
-                    <video id="video1"
-                           autoplay
-                           loop
-                           muted
-                    >
-                        <source
-                                src='/media/video/works/Piantanida_NoColor.mp4'>
-
-                    </video>
-                </div>
-            </div>
+            <p class="title" style="margin-bottom:10px;">
+                Qualche Nostro <span class="black-font">Scatto</span>
+            </p>
+            <p class="frase">
+                Di seguito qualche nostro scatto BTS e qualche contenuto realizzato per i social del cliente.
+                Il tutto realizzato durante i giorni di girato del video <br>
+            </p>
+            <br/>
         </div>
-
-        <br><br>
-        <p class="title" style="margin-bottom:10px;">
-            Qualche Nostro <span class="black-font">Scatto</span>
-        </p>
-        <p class="frase">
-            Di seguito qualche nostro scatto BTS e qualche contenuto realizzato per i social del cliente.
-            Il tutto realizzato durante i giorni di girato del video <br>
-        </p>
-        <br/>
-
-        <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img1" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img2" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img3" class="small-image image-div"></div>
-                    </div>
+    </div>
+    <div class="container imgs-slide">
+        <div class="columns is-mobile gif-photo">
+            <div class="column is-one-third-desktop">
+                <div class="img-slide">
+                    <div id="img1" class="small-image image-div"></div>
                 </div>
             </div>
-            <div class="columns gif-photo">
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img4" class="big-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img5" class="small-image image-div"></div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="img-slide">
-                        <div id="img6" class="big-image image-div"></div>
-                    </div>
+            <div class="column is-one-third-desktop">
+                <div class="img-slide ">
+                    <div id="img2" class="big-image image-div"></div>
                 </div>
             </div>
-
+            <div class="column is-one-third-desktop">
+                <div class="img-slide">
+                    <div id="img3" class="small-image image-div"></div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop">
+                <div class="img-slide">
+                    <div id="img4" class="big-image image-div"></div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop">
+                <div class="img-slide">
+                    <div id="img5" class="small-image image-div"></div>
+                </div>
+            </div>
+            <div class="column is-one-third-desktop">
+                <div class="img-slide">
+                    <div id="img6" class="big-image image-div"></div>
+                </div>
+            </div>
         </div>
 
     </div>
+
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>

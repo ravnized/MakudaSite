@@ -115,7 +115,7 @@ $view = ButtonBeforeAfter("DANZA");
         </p>
         <br>
         <div class="container">
-            <div class="columns gif-photo">
+            <div class="columns gif-photo is-mobile">
                 <div class="column">
                     <div class="img-slide">
                         <div id="img1" class="small-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
