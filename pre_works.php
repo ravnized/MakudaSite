@@ -83,6 +83,7 @@
                    loop
                    muted
                    autoplay
+                   playsinline
             >
                 <source
                         src='/media/video/Toia_preWork.m4v'>
@@ -96,6 +97,7 @@
                    loop
                    muted
                    autoplay
+                   playsinline
             >
                 <source
                         src='/media/video/Suites_preWork.m4v'>
