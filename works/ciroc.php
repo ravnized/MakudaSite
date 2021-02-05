@@ -22,6 +22,13 @@ $view = ButtonBeforeAfter("CIROC");
 
 <?php require("../components/menu.php"); ?>
 <style>
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
+
     #img1 {
         background-image: url(/media/img/works/ciroc_3.jpg);
     }
@@ -69,8 +76,10 @@ $view = ButtonBeforeAfter("CIROC");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">CONCEPT</p>
                         <br/>
                         <div class="columns is-6">
@@ -86,11 +95,26 @@ $view = ButtonBeforeAfter("CIROC");
                                     molto successo.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Ciroc</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Santacroce</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
-                                <p><span class="boldOrange">Tecnica:</span> B-Roll</p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Ciroc</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    </div>
+                                    <div class="column"><p> Simone Santacroce</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
+                                    </div>
+                                    <div class="column"><p> 2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Tecnica: </span></p>
+                                    </div>
+                                    <div class="column"><p>B-Roll</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,24 +152,25 @@ $view = ButtonBeforeAfter("CIROC");
         <br/>
 
         <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
+
+
+            <div class="columns is-mobile gif-photo">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
+                <div class="column is-one-third-desktop">
+                    <div class="img-slide ">
                         <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
             </div>
-
         </div>
 
     </div>

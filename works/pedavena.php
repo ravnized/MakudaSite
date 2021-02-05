@@ -19,9 +19,12 @@ $view = ButtonBeforeAfter("PEDAVENA");
 
 </head>
 <body style="background-color: #111; min-height: 100vh">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 <style>
+    @media only screen and (max-width: 1024px) {
+        .pubblicazione-social{
+            padding-bottom: 50px;
+        }
+    }
     #img1 {
         background-image: url(/media/img/works/FDP/1.jpg);
     }
@@ -82,8 +85,10 @@ $view = ButtonBeforeAfter("PEDAVENA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">200 posti da valorizzare</p>
                         <br/>
                         <div class="columns is-6">
@@ -95,13 +100,20 @@ $view = ButtonBeforeAfter("PEDAVENA");
                                     completamente la potenzialità del locale.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Fabbrica di Pedavena</p>
-                                <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths noPadding"><p><span class="boldOrange">Consulenti:</span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Fabbrica di Pedavena</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
                                     </div>
-                                    <div class="column noPadding noPaddingTop marginLeft" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column"><p>Inizio 2019 - Fine 2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Consulenti: </span></p>
+                                    </div>
+                                    <div class="column"><p>Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
                             </div>
@@ -156,7 +168,9 @@ $view = ButtonBeforeAfter("PEDAVENA");
 
             </div>
             <p class="frase" style="padding-top: 20px">
-                Abbiamo sfruttato lʼuscita del film del momento “Joker” e abbiamo scelto di riprendere una delle scene che sarebbe diventata cult nel giro di poco tempo, ovvero la danza del protagonista sulle scale. In maniera scherzosa lʼabbiamo reinterpretata; questo è il risultato finale.
+                Abbiamo sfruttato lʼuscita del film del momento “Joker” e abbiamo scelto di riprendere una delle scene
+                che sarebbe diventata cult nel giro di poco tempo, ovvero la danza del protagonista sulle scale. In
+                maniera scherzosa lʼabbiamo reinterpretata; questo è il risultato finale.
             </p>
         </div>
 
@@ -172,35 +186,33 @@ $view = ButtonBeforeAfter("PEDAVENA");
         <br/>
 
         <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
+            <div class="columns is-mobile gif-photo">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
+                <div class="column is-one-third-desktop">
+                    <div class="img-slide ">
                         <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
-            </div>
-            <div class="columns gif-photo">
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img4" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img5" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img6" class="big-image image-div"></div>
                     </div>

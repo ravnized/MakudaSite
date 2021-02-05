@@ -1129,5 +1129,9 @@ body {
         text-align: left;
     }
 
+    .marginTopPhotoMobile{
+        margin-top: 3em !important;
+    }
+
 
 }

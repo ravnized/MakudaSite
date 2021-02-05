@@ -23,7 +23,12 @@ $view = ButtonBeforeAfter("LEGABASKET");
 
 <?php require("../components/menu.php"); ?>
 <style>
-
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
 
 </style>
 <div class="mainSection">
@@ -57,8 +62,10 @@ $view = ButtonBeforeAfter("LEGABASKET");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">STRATEGIA</p>
                         <br/>
                         <div class="columns is-6">
@@ -72,11 +79,21 @@ $view = ButtonBeforeAfter("LEGABASKET");
                                     Lega Basket Serie A sul loro sito web ufficiale.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> LBA</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Bioli & Riccardo Bitonto</p>
-                                <p><span class="boldOrange">Anno:</span> Inzio 2019 - In Corso</p>
-
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>LBA</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    </div>
+                                    <div class="column"><p>
+                                            Simone Bioli <br> Riccardo Bitonto</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Anno: </p></div>
+                                    <div class="column"><p>Inzio 2019 - In Corso</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>

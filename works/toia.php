@@ -18,6 +18,13 @@ $view = ButtonBeforeAfter("TOIA");
 <body style="background-color: #111; min-height: 100vh">
 
 <style>
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
+
     #img1 {
         background-image: url(/media/img/works/toia_1.jpg);
     }
@@ -78,8 +85,10 @@ $view = ButtonBeforeAfter("TOIA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">STRATEGIA</p>
                         <br/>
                         <div class="columns is-6">
@@ -96,11 +105,22 @@ $view = ButtonBeforeAfter("TOIA");
                                     parenti, per dedicarsi successivamente alle piccole e grandi aziende.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Matteo Toia</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Santacroce & Taras Snegovoy</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
 
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Matteo Toia</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    </div>
+                                    <div class="column"><p>
+                                            Simone Santacroce <br> Taras Snegovoy</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Anno: </p></div>
+                                    <div class="column"><p>2020</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +140,9 @@ $view = ButtonBeforeAfter("TOIA");
             Per regalare allo spettatore un feeling cinematico abbiamo montato lenti anamorfiche su una Blackmagic
             pocket cinema camera 4k, mantenendo così un aspect ratio 2.4:1, ossia ciò che vi trovereste a vedere
             normalmente ad hollywood.<br><br>
-            Abbiamo realizzato un montaggio narrativo seguendo lo storyboard,<br> aggiungendo un pizzico di sperimentazione, una manciata di VFX, sound design e color grading professionale,<br> esportando il video in PRORES per rispettare l’eccelsa qualità alla quale abbiamo puntato fin dall’inizio.
+            Abbiamo realizzato un montaggio narrativo seguendo lo storyboard,<br> aggiungendo un pizzico di
+            sperimentazione, una manciata di VFX, sound design e color grading professionale,<br> esportando il video in
+            PRORES per rispettare l’eccelsa qualità alla quale abbiamo puntato fin dall’inizio.
         </p>
         <div class="gif-firstSection">
 
@@ -190,8 +212,6 @@ $view = ButtonBeforeAfter("TOIA");
 </div>
 
 
-
-
 <div class="container imgs-slide">
     <p class="title" style="margin-bottom:10px;">
         Qualche Nostro <span class="makuda-color">Scatto</span>
@@ -200,35 +220,34 @@ $view = ButtonBeforeAfter("TOIA");
         Eccoci in azione, di seguito qualche nostro scatto del BTS del video.
     </p>
     <br/>
-    <div class="columns gif-photo">
-        <div class="column">
+
+    <div class="columns is-mobile gif-photo">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img1" class="small-image image-div"></div>
             </div>
         </div>
-        <div class="column">
-            <div class="img-slide">
+        <div class="column is-one-third-desktop">
+            <div class="img-slide ">
                 <div id="img2" class="big-image image-div"></div>
             </div>
         </div>
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img3" class="small-image image-div"></div>
             </div>
         </div>
-    </div>
-    <div class="columns gif-photo">
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img4" class="big-image image-div"></div>
             </div>
         </div>
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img5" class="small-image image-div"></div>
             </div>
         </div>
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img6" class="big-image image-div"></div>
             </div>

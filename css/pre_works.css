@@ -279,7 +279,7 @@ Contacts
         opacity: 0;
     }
     .makuda-home-link--contacts.makuda-home-link-wrap {
-        left: calc(75% + 21px);
+        left: calc(68vw + 21px);
     }
     .makuda-home-link--works .makuda-home-link span:last-child{
         font-size: 3em;

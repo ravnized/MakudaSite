@@ -234,7 +234,7 @@ function loader() {
                 duration: 1,
                 x: -1000,
             },
-            {duration: 1, x: -70+'vh'},
+            {duration: 1, x: -85+'vh'},
             0
         );
         tlStart.fromTo(
@@ -243,7 +243,7 @@ function loader() {
                 duration: 1,
                 x: 1000,
             },
-            {duration: 1, x: 50},
+            {duration: 1, x: -30+'vh'},
             0
         );
     }

@@ -23,6 +23,7 @@ var actualBriocheStep = 0; //Da 0 a 2
 var lastScrollTop = 0;
 var currentFrame = 0;
 // var maxScrollDelta = 0;
+var brioche;
 $(window).on("scroll", function (e) {
     let s = $(window).scrollTop(),
         d = $(document).height(),
@@ -101,7 +102,7 @@ $(window).on("scroll", function (e) {
         isAutoScrolling = 0;
     lastScrollTop = s;
 });
-var brioche;
+
 $(document).ready(()=>{
     brioche = new SuperGif({ 
         gif: document.getElementById('gif-brioche'),
@@ -116,114 +117,4 @@ $(document).ready(()=>{
     });
 });
 
-$(function () {
-    const timeline = gsap.timeline();
-    const canvas = document.getElementById("hero-lightpass");
-    const context = canvas.getContext("2d");
-
-    canvas.width = 1920;
-    canvas.height = 1080;
-
-    const frameCount = 79;
-    const currentFrame = index => (
-        `/media/img/Brioche/croissant5_1_${(index).toString().padStart(4, '0')}.png`
-    );
-    const images = [];
-    const airpods = {
-        frame: 20
-    };
-    for (let i = 0; i < frameCount; i++) {
-        const img = new Image();
-        img.src = currentFrame(i);
-        images.push(img);
-    }
-    images[0].onload = render;
-
-    timeline.to(airpods, {
-        frame: 30,
-        snap: "frame",
-        onUpdate: (self) => {
-            render();
-        }
-    }, 'first');
-
-    timeline.fromTo(
-        '#titleOne',
-        {opacity: 1}, {duration: 0.5, opacity: 0, display: 'none'}, 'first'
-    )
-    timeline.fromTo(
-        '#titleTwo',
-        {x: 700}, {delay: 0.5, duration: 0.5, x: 0}, 'first'
-    )
-    timeline.to(airpods, {
-        frame: 50,
-        snap: "frame",
-        onUpdate: (self) => {
-            render();
-        }
-    }, 'second');
-    timeline.fromTo(
-        '#titleTwo',
-        {x: 0, opacity: 1}, {duration: 0.5, x: 700, opacity: 0, display: 'none'}, 'second'
-    )
-    timeline.fromTo(
-        '#titleThree', {
-            opacity: 0,
-        }, {
-            delay: 0.5,
-            duration: 0.5,
-            opacity: 1,
-        }, 'second'
-    )
-
-    timeline.to(airpods, {
-        frame: frameCount - 1,
-        snap: "frame",
-        onUpdate: (self) => {
-            render();
-        }
-    }, 'third');
-    /*
-        var scroller = ScrollTrigger.create({
-            trigger: "#containerBrioche",
-            start: 'top middle',
-            end: '+=100%',
-            markers: true,
-            scrub: 0.1,
-            pin: true,
-            animation: timeline,
-            snap: {
-                snapTo: 'labels',
-                duration: 0.1,
-            },
-        });
-    */
-
-    var lethargy = new Lethargy();
-
-    // Bind all mousewheel events and pass it to Lethargy.check()
-    $(window).bind('mousewheel DOMMouseScroll wheel MozMousePixelScroll', function (e) {
-        e.preventDefault()
-        e.stopPropagation();
-        var scrollPosition = 0;
-        // Lethargy.check() must only be called once per mouse event
-        // If you need to use the result in more than one place
-        // you MUST store it as a variable and use that variable instead
-        // See https://github.com/d4nyll/lethargy/issues/5
-        var result = lethargy.check(e);
-
-        // false means it's not a scroll intent, 1 or -1 means it is
-        console.log(result);
-        if(result === 1){
-            scrollPosition++;
-        }
-    });
-
-
-    function render() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-        context.drawImage(images[airpods.frame], 0, 0);
-    }
-
-})
 

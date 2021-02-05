@@ -19,18 +19,6 @@ $view = ButtonBeforeAfter("ZODA");
 <body style="background-color:#111;">
 <style>
 
-    #imgRectangle_1 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
-        background-size: contain;
-        padding: 20px;
-    }
-
-    #imgRectangle_2 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
-        background-size: contain;
-        padding: 20px;
-    }
-
     #imgRectangle_3 {
         background-image: url(/media/img/works/piantanida_1.JPG);
         background-size: contain;
@@ -99,8 +87,8 @@ $view = ButtonBeforeAfter("ZODA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <br/>
                         <p class="subVideo">Messaggio</p>
                         <br/>
                         <div class="columns is-6">
@@ -112,15 +100,17 @@ $view = ButtonBeforeAfter("ZODA");
                                     proprie difficoltà e ad aprirsi ai propri ascoltatori.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Daniele "Zoda" Sodano</p>
-                                <div class="columns">
-                                    <div class="column is-one-fifth noPadding"><p><span class="boldOrange">Direct:</span></p>
-                                    </div>
-                                    <div class="column noPadding noPaddingTop"><p> Simone Santacroce <br> Taras Snegovoy</p></div>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Daniele "Zoda" Sodano</p></div>
                                 </div>
-
-
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    </div>
+                                    <div class="column"><p> Simone
+                                            Santacroce <br> Taras Snegovoy</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,7 +205,8 @@ $view = ButtonBeforeAfter("ZODA");
             I Risultati
         </p>
         <p class="frase" style="color: white">
-            Dopo sole due settimane dalla pubblicazione del video, sono state raggiunte piú di <span style="color: white; font-weight: 800">180'000
+            Dopo sole due settimane dalla pubblicazione del video, sono state raggiunte piú di <span
+                    style="color: white; font-weight: 800">180'000
                 visulizzazioni</span> <br>
             <br>
             Campagna promo pubblicazione: <br><br>
@@ -234,35 +225,33 @@ $view = ButtonBeforeAfter("ZODA");
         <br/>
 
         <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
+            <div class="columns is-mobile gif-photo">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
+                <div class="column is-one-third-desktop">
+                    <div class="img-slide ">
                         <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
-            </div>
-            <div class="columns gif-photo">
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img4" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img5" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img6" class="big-image image-div"></div>
                     </div>

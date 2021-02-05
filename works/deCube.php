@@ -18,6 +18,14 @@ $view = ButtonBeforeAfter("DECUBE");
 <body style="background-color: #111; min-height: 100vh">
 
 <style>
+
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
+
     #img1 {
         background-image: url(/media/img/works/deCube/decube_1.jpg);
     }
@@ -94,8 +102,11 @@ $view = ButtonBeforeAfter("DECUBE");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+
+                        <br/>
+                        <div id="description">
+
+                        </div><br/>
                         <p class="subVideo">Il Risultato delle PR</p>
                         <br/>
                         <div class="columns is-6">
@@ -107,17 +118,22 @@ $view = ButtonBeforeAfter("DECUBE");
                                     scelto di dare priorità alle pubbliche relazione rispetto a tutto il resto.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente: </span>De Cube</p>
-                                <p><span class="boldOrange">Anno:</span> Inizio 2019</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti: </span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>De Cube</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
                                     </div>
-                                    <div class="column"><p> Stefano
+                                    <div class="column"><p>
+                                            Inizio 2019</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Consulenti: </p></div>
+                                    <div class="column"><p>Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -195,61 +211,57 @@ $view = ButtonBeforeAfter("DECUBE");
     </p>
 
     <div class="container imgs-slide">
-        <div class="columns gif-photo">
-            <div class="column">
+        <div class="columns is-mobile gif-photo">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
                     <div id="img3" class="small-image image-div"></div>
                 </div>
             </div>
-            <div class="column">
-                <div class="img-slide">
+            <div class="column is-one-third-desktop">
+                <div class="img-slide ">
                     <div id="img4" class="big-image image-div" style="background-size: contain; background-repeat: no-repeat"></div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
                     <div id="img5" class="small-image image-div"></div>
                 </div>
             </div>
-        </div>
-        <div class="columns gif-photo">
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img6" class="big-image image-div" style="background-position: top"></div>
+                    <div id="img6" class="big-image image-div"  style="background-position: top"></div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img7" class="big-image image-div" style="margin-top: 12em;background-position: top"></div>
+                    <div id="img7" class="small-image image-div marginTopPhotoMobile" style="margin-top: 12em;background-position: top"></div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
                     <div id="img8" class="big-image image-div" style="background-position: top"></div>
                 </div>
             </div>
-        </div>
-        <div class="columns gif-photo">
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img9" class="big-image image-div" style="background-position: top"></div>
+                    <div id="img9" class="big-image image-div"  style="background-position: top"></div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img10" class="big-image image-div" style="margin-top: 12em"></div>
+                    <div id="img10" class="small-image image-div marginTopPhotoMobile" style="margin-top: 12em"></div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img11" class="big-image image-div" style="background-position: top" ></div>
+                    <div id="img11" class="big-image image-div marginTopPhotoMobile" style="background-position: top"></div>
                 </div>
             </div>
         </div>
 
     </div>
 
-</div>
+
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>

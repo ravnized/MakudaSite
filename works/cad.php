@@ -68,8 +68,10 @@ $view = ButtonBeforeAfter("DANZA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">L'importanza dell' Analisi</p>
                         <br/>
                         <div class="columns is-6">
@@ -82,18 +84,24 @@ $view = ButtonBeforeAfter("DANZA");
                                     hanno permesso di individuare facilmente gli obiettivi.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente: </span>Centro Arti Danza</p>
-                                <p><span class="boldOrange">Anno:</span> Inizio 2019 - Fine 2020</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths noPadding"><p><span class="boldOrange">Consulenti:</span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Centro Arti Danza</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
                                     </div>
-                                    <div class="column noPadding noPaddingTop marginLeft" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column"><p>
+                                            Inizio 2019 - Fine 2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Consulenti: </p></div>
+                                    <div class="column"><p>Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
-
-
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -114,24 +122,26 @@ $view = ButtonBeforeAfter("DANZA");
 
         </p>
         <br>
-        <div class="container">
-            <div class="columns gif-photo is-mobile">
-                <div class="column">
+        <div class="container imgs-slide">
+            <div class="columns is-mobile gif-photo">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img1" class="small-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
+                <div class="column is-one-third-desktop">
+                    <div class="img-slide ">
                         <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img3" class="small-image image-div" style="background-position: top; background-size: contain; background-repeat: no-repeat"></div>
                     </div>
                 </div>
+
             </div>
+
         </div>
 
 
@@ -142,6 +152,35 @@ $view = ButtonBeforeAfter("DANZA");
 <?php
 button('DANZA');
 ?>
+
+<div class="full-screen-carousel" style="display:none;">
+    <div class="full-screen-carousel-background"></div>
+    <div class="full-screen-carousel-container">
+        <div id="img1" class="full-screen-carousel-image"></div>
+        <div id="img2" class="full-screen-carousel-image"></div>
+        <div id="img3" class="full-screen-carousel-image"></div>
+
+
+
+    </div>
+    <div class="full-screen-carousel-control left">
+        <div class="full-screen-carousel-arrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </div>
+    <div class="full-screen-carousel-control right">
+        <div class="full-screen-carousel-arrow right">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <a class='cross'>
+        <i class="bi bi-plus" style="font-size: 3em"></i>
+    </a>
+
+</div>
+
+
 <?php require "../components/footer.php" ?>
 
 <script src="workJS.js" type="text/javascript"></script>

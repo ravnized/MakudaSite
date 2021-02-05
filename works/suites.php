@@ -17,6 +17,11 @@ $view = ButtonBeforeAfter("SUITES");
 
 
 <style>
+    @media only screen and (max-width: 1024px) {
+        .pubblicazione-social{
+            padding-bottom: 50px;
+        }
+    }
     #img1 {
         background-image: url(/media/img/works/Suite&Atelier/1.jpg);
     }
@@ -79,8 +84,11 @@ $view = ButtonBeforeAfter("SUITES");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+
+                        <br/>
+                        <div id="description">
+                        </div>
+                        <br/>
                         <p class="subVideo">Il Lusso della nicchia</p>
                         <br/>
                         <div class="columns is-6">
@@ -92,18 +100,25 @@ $view = ButtonBeforeAfter("SUITES");
                                     storia della struttura.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente: </span>Suites & Artelier</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths noPadding"><p><span class="boldOrange">Consulenti:</span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Suites & Artelier</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
                                     </div>
-                                    <div class="column noPadding noPaddingTop marginLeft" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column"><p>
+                                            2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Consulenti: </p></div>
+                                    <div class="column"><p>Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
-
-
                             </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -158,35 +173,33 @@ $view = ButtonBeforeAfter("SUITES");
         <br/>
 
         <div class="container imgs-slide">
-            <div class="columns gif-photo">
-                <div class="column">
+            <div class="columns is-mobile gif-photo">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
-                        <div id="img1" class="small-image image-div" style="background-position: top;"></div>
+                        <div id="img1" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="img-slide">
+                <div class="column is-one-third-desktop">
+                    <div class="img-slide ">
                         <div id="img2" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img3" class="small-image image-div"></div>
                     </div>
                 </div>
-            </div>
-            <div class="columns gif-photo">
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img4" class="big-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img5" class="small-image image-div"></div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-one-third-desktop">
                     <div class="img-slide">
                         <div id="img6" class="big-image image-div"></div>
                     </div>

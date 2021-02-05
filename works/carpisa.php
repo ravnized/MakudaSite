@@ -67,8 +67,12 @@ $view = ButtonBeforeAfter("CARPISA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+
+                        </div>
+
+                        <br/>
                         <p class="subVideo">STRATEGIA</p>
                         <br/>
                         <div class="columns is-6">
@@ -82,12 +86,19 @@ $view = ButtonBeforeAfter("CARPISA");
                                     per poter consetire la pubblicazione sulla Pagina @carpisaofficial e @gocarpisa
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Carpisa</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
-                                <p>
-                                    <span class="boldOrange">Agency:</span> Think Soluzioni Creative
-                                </p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Carpisa</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Anno: </p></div>
+                                    <div class="column"><p>2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Agency: </p></div>
+                                    <div class="column"><p>Think Soluzioni Creative</p></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,24 +165,24 @@ $view = ButtonBeforeAfter("CARPISA");
         Oltre alle produzioni video, abbiamo colto l'occasione per fare qualche scatto del processo creativo intrapreso.
     </p>
     <br><br>
-    <div class="columns">
-        <div class="column">
+
+    <div class="columns is-mobile gif-photo">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img1" class="small-image image-div"></div>
             </div>
         </div>
-        <div class="column">
-            <div class="img-slide">
+        <div class="column is-one-third-desktop">
+            <div class="img-slide ">
                 <div id="img2" class="big-image image-div"></div>
             </div>
         </div>
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img3" class="small-image image-div"></div>
             </div>
         </div>
     </div>
-
 </div>
 <div class="full-screen-carousel" style="display:none;">
     <div class="full-screen-carousel-background"></div>

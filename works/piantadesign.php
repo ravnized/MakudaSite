@@ -20,7 +20,12 @@ $view = ButtonBeforeAfter("PIANTANIDA");
 <body style="background-color:#111;">
 
 <style>
-
+    @media only screen and (max-width: 1024px) {
+        .subTitleVideo:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
     #img1 {
         background-image: url(/media/img/works/piantanida_1.JPG);
     }
@@ -82,7 +87,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
+
 
                         <br/><div id="description">
 

@@ -66,8 +66,11 @@ $view = ButtonBeforeAfter("BUFFEL");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+                        <br/>
+                        <div id="description">
+                        </div>
+
+                        <br/>
                         <p class="subVideo">Dal Brand al Prodotto</p>
                         <br/>
                         <div class="columns is-6">
@@ -80,16 +83,22 @@ $view = ButtonBeforeAfter("BUFFEL");
                                     questione.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> Buffel</p>
-                                <p><span class="boldOrange">Anno:</span> Inizio 2020</p>
-                                <div class="columns">
-                                    <div class="column is-two-fifths"><p><span class="boldOrange">Consulenti:</span></p>
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>Buffel</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
                                     </div>
-                                    <div class="column consulenti" style="padding-left: 0;margin-left: -10px;"><p> Stefano
+                                    <div class="column"><p>Inizio 2020</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Consulenti: </span></p>
+                                    </div>
+                                    <div class="column"><p>Stefano
                                             D'onofrio <br>Simone Santacroce <br> Armando Aspesani</p></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -99,20 +108,21 @@ $view = ButtonBeforeAfter("BUFFEL");
     </section>
 </div>
 
-
 <div class="container imgs-slide">
-    <div class="columns gif-photo">
-        <div class="column">
+
+
+    <div class="columns is-mobile gif-photo">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img1" class="small-image image-div"></div>
             </div>
         </div>
-        <div class="column">
-            <div class="img-slide">
+        <div class="column is-one-third-desktop">
+            <div class="img-slide ">
                 <div id="img2" class="big-image image-div"></div>
             </div>
         </div>
-        <div class="column">
+        <div class="column is-one-third-desktop">
             <div class="img-slide">
                 <div id="img3" class="small-image image-div"></div>
             </div>
