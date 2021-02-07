@@ -1186,8 +1186,9 @@ p.fading-description {
     .home-band p{
         font-size: unset;
     }
-    .animatedBtn{
+    .hero-body.grained{
         pointer-events: none !important;
+        cursor:none !important;
     }
 }
 

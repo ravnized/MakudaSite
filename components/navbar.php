@@ -11,7 +11,7 @@ $this_folder = substr($dir_name, strlen($root), strlen($dir_name));
         role="navigation"
 >
     <div class="navbar-brand">
-        <a class="navbar-item" href="/index.php">
+        <a class="navbar-item" href="/">
             <img
                     height="28"
                     src="/media/img/LogoIcona_PNG_Negativo(1).png"
