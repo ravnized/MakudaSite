@@ -149,9 +149,8 @@
     </div>
 </div>
 
-<div class=" has-text-centered " id="containerCounter" style="padding-top: 300px">
-    <div class="works-band" style="margin-top: -300px"></div>
-    <div class="container" style="margin-top: -140px;">
+<div class=" has-text-centered makuda-bgcolor" style="margin-top: -100px" id="containerCounter">
+    <div class="container">
         <div style="display: flex;">
             <div style="flex: 1"></div>
             <div class="containerBox" style="display: flex;">

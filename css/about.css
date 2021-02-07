@@ -566,34 +566,15 @@ div > .uno {
 } */
 
 
-@media (min-width: 1200px) {
-    .works-band {
-        height: 52%;
-    }
-}
-
-@media (min-width: 992px) {
-    .works-band {
-        height: 56%;
-    }
-}
-
-@media (min-width: 768px) {
-    .works-band {
-        height: 60vh;
-    }
-}
-
-@media (min-width: 576px) {
-    .works-band {
-        height: 60vh;
-    }
-}
-
 .works-band {
     position: absolute;
     width: 100%;
     background-color: rgb(255, 197, 32) !important;
+}
+
+#containerCounter > .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
 }
 
 /* RESPONSIVE */

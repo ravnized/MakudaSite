@@ -457,6 +457,15 @@ async function resizeTeam(animation = true) {
         $('.person-container:eq(4)').css({"left": 0});
         $('.person-container:eq(5)').css({"left": newWidth + "px"});
         $('#heightJS').css({"height": newSize2.height*2 + newSize1.height+ 250 + 'px'})
+    }else{
+        var heightTotal = 0;
+        $('.person-container').each(function() {
+            heightTotal += $(this).height();
+        });
+        console.log(heightTotal)
+        $('#heightJS').css({"height": heightTotal/3 + 'px'})
+
+
     }
 
 
