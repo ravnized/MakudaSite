@@ -66,7 +66,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                             <div class="workBlockImageSub" style="opacity: 100%">
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
-                                           data-setup='{"controls":true}' loop muted preload="none">
+                                           data-setup='{"controls":true}' loop muted preload="auto" playsinline>
                                         <source src="/media/video/works/Piantanida%20Deff-1web.m4v" type="video/mp4"/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
@@ -160,6 +160,8 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                autoplay
                                loop
                                muted
+                               playsinline
+                               preload="auto"
                         >
                             <source
 
@@ -173,6 +175,8 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                autoplay
                                loop
                                muted
+                               playsinline
+                               preload="auto"
                         >
                             <source
                                     src='/media/video/works/Piantanida_NoColor.mp4'>
