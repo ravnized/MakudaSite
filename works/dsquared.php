@@ -61,8 +61,11 @@ $view = ButtonBeforeAfter("DSQUARED2");
                                       style="font-size:0.5em;"><?= $view["subtitle"] ?></span>
                             </p>
                         </div>
-                        <!-- <h1 class="tVideo">GELATERIA BUFFEL</h1> -->
-                        <br/><br/>
+
+                        <br/>
+                        <div id="description">
+
+                        </div><br/>
                         <p class="subVideo">STRATEGIA</p>
                         <br/>
                         <div class="columns is-6">
@@ -78,12 +81,23 @@ $view = ButtonBeforeAfter("DSQUARED2");
                                     della fotografia come Giampaolo Sgrua.
                                 </p>
                             </div>
-                            <div class="column">
-                                <p><span class="boldOrange">Cliente:</span> DSQuared</p>
-                                <p><span class="boldOrange">Direct:</span> Simone Santacroce</p>
-                                <p><span class="boldOrange">Anno:</span> 2020</p>
-
+                            <div class="column subVideoDescription">
+                                <div class="columns is-mobile">
+                                    <div class="column"><p class="boldOrange">Cliente: </p></div>
+                                    <div class="column"><p>DSQuared</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    </div>
+                                    <div class="column"><p> Simone Santacroce</p></div>
+                                </div>
+                                <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Anno: </span></p>
+                                    </div>
+                                    <div class="column"><p> 2020</p></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

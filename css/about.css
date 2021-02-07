@@ -601,21 +601,28 @@ div > .uno {
 @media only screen and (max-width: 1024px) {
 
     .boldBig{
-        font-size: 3em;
+        font-size: 2em;
     }
     #valori-container{
-        width: 100vw;
+        width: 90vw;
     }
 
     .valori-line{
         width: 10px !important;
+        margin: 0 7px 4px 7px;
+    }
+
+    .start-text{
+        font-size: x-large;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     #valori-text{
-        font-size: 0.8em;
-        width: 100vw;
+        font-size: 70%;
+        width: 100%;
         margin: 0 !important;
-        padding: 30px;
+        padding: 10px;
         padding-top: 0;
     }
 
@@ -650,5 +657,12 @@ div > .uno {
         width: 40%;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .person-infos h5{
+        font-size: 100% !important;
+    }
+    .person-infos h6{
+        font-size: 70% !important;
     }
 }

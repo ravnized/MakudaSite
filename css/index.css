@@ -1049,6 +1049,8 @@ p.fading-description {
     .paralleGruppo > div > .parallelepipedo {
         width: 70px;
         height: 150px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .numberParallelepipedo {
@@ -1107,21 +1109,42 @@ p.fading-description {
         white-space: pre;
     }
 
-    #g0 > .makuda-bold {
-        font-size: 3em !important;
+    #g0 > p{
+        font-size: 2em !important;
     }
 
-    #g1 > .makuda-bold {
-        font-size: 3em !important;
+    #g0 > .makuda-light{
+        font-size: 1em !important
+     }
+
+
+    #g1 > p{
+        font-size: 2em !important;
     }
 
-    #g2 > .makuda-bold {
-        font-size: 3em !important;
+    #g1 > .makuda-light{
+        font-size: 1em !important
     }
 
-    #s5 {
-        font-size: 1em !important;
+    #g2 > p{
+        font-size: 2em !important;
     }
+
+    #g2 > .makuda-light{
+        font-size: 1em !important
+    }
+
+    #s5{
+        top: 0 !important;
+    }
+
+    .home-band span{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+
 
     #s4::after {
         content: '\a';
@@ -1132,7 +1155,35 @@ p.fading-description {
         padding: 0;
     }
     #we-are{
-        font-size: 4em;
+        font-size: 2em;
+    }
+    .title{
+        font-size: 2em !important;
+    }
+    body > div.container.has-text-centered .whiteText{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    body > div.nostri-progetti.makuda-bgcolor > div > div {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    body > div.nostri-progetti.makuda-bgcolor > div > div > div.fade-in-left-animation.column.fading-caption-content{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .fading-caption{
+        margin-left: 0;
+        top: 0 !important;
+        transform: translateY(0) !important;
+    }
+
+    .home-band p{
+        font-size: unset;
     }
 }
 

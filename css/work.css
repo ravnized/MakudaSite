@@ -996,7 +996,7 @@ body {
     }
 
     .title {
-        font-size: 3em !important;
+        font-size: 2em !important;
     }
 
     .workListItem > .container {
@@ -1058,10 +1058,10 @@ body {
 
     .parallax-image {
         background-position: right;
-        height: 2400px;
     }
 
     .gif-zoda .column {
+        margin-top: 0 !important;
         transform: scale(1) !important;
     }
 
@@ -1133,5 +1133,35 @@ body {
         margin-top: 3em !important;
     }
 
+    .subVideo{
+        padding-left: 10px;
+    }
+    body > div.mainSection > section > div > div > div > div.container.textContainer > div.columns.is-6 > div > p{
+        padding-left:20px;
+        padding-right:20px;
+        text-justify: newspaper;
+        font-size: large;
+    }
+    .frase{
+        padding-left:20px;
+        padding-right:20px;
+        text-justify: newspaper;
+        font-size: large;
+        text-align: left;
+    }
+    .titleRectangle{
+        font-size: 2em !important;
+    }
+    .textRectangle{
+        font-size: large !important;
+    }
 
+    .parallax-container > .gif-cellulare {
+        height: auto !important;
+    }
+
+    .buttons .button{
+        display: flex;
+        flex-direction: column;
+    }
 }

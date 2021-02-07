@@ -228,13 +228,18 @@ function loader() {
             0
         );
     }else{
+        var leftBand = $('.makuda-home-link--works.makuda-home-link-wrap');
+        var navBar = $('nav').height();
+        leftBand.css('width',$(window).height()-navBar+'px');
+        var rightBand = $('.makuda-home-link--contacts.makuda-home-link-wrap');
+        rightBand.css('left', $(window).width() -80 +'px');
         tlStart.fromTo(
             $(".makuda-home-link--contacts.is-loaded span:first-child "),
             {
                 duration: 1,
                 x: -1000,
             },
-            {duration: 1, x: -85+'vh'},
+            {duration: 1, x: 0},
             0
         );
         tlStart.fromTo(
@@ -243,7 +248,7 @@ function loader() {
                 duration: 1,
                 x: 1000,
             },
-            {duration: 1, x: -30+'vh'},
+            {duration: 1, x: 0},
             0
         );
     }

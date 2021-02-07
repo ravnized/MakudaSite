@@ -271,19 +271,27 @@ Contacts
          top: unset;
         bottom: 0;
     }
+
     .makuda-home-link--contacts .makuda-home-link span:first-child {
         font-size: 3em;
         margin: 0px 0 3px 0;
+        text-align: left;
     }
     .makuda-home-link--contacts span:last-child {
         opacity: 0;
     }
     .makuda-home-link--contacts.makuda-home-link-wrap {
-        left: calc(68vw + 21px);
+        padding-left: 0 !important;
+    }
+    .makuda-home-link--works.makuda-home-link-wrap {
+        padding-left: 0 !important;
+        text-align: right;
+        justify-content: flex-end;
     }
     .makuda-home-link--works .makuda-home-link span:last-child{
         font-size: 3em;
         margin: -7px 0 3px 0;
+        transform: translateX(1000px);
     }
     .makuda-home-link--works.is-loaded span:first-child{
         opacity: 0;

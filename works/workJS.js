@@ -380,9 +380,15 @@ $(document).ready(function () {
                 }
             }
         }
+        if($('.parallax-image').length !== 0){
+            var heightColumns = $('.gif-zoda.columns').height();
+            console.log(heightColumns)
+            $('#imgRectangle_3').css('height',heightColumns + 'px');
+        }
     }
 
     if($(window).width() > 1024){
+
         let column = $('.subVideoDescription .columns .column');
         column.addClass('is-narrow');
     }

@@ -88,6 +88,9 @@ $view = ButtonBeforeAfter("ZODA");
                             </p>
                         </div>
                         <br/>
+                        <div id="description">
+
+                        </div>
                         <br/>
                         <p class="subVideo">Messaggio</p>
                         <br/>
@@ -298,7 +301,6 @@ button('ZODA');
 
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
-<script src="/js/aboutJS.js" type="text/javascript"></script>
 </body>
 
 </html>

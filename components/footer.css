@@ -59,3 +59,12 @@ footer #get-in-touch {
     height: 500px;
   }
 }
+
+
+@media only screen and (max-width: 1024px) {
+  footer #get-in-touch{
+    font-size: x-large !important;
+  }
+
+
+}
