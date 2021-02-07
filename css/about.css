@@ -625,15 +625,17 @@ div > .uno {
     }
     #containerCounter{
         padding-top: 0 !important;
-        margin-bottom: 100px;
-    }
-    #containerCounter > .works-band{
-
-        margin-top: -100px !important;
-        margin-bottom: 100px;
-        height: 100%;
+        margin-bottom: 0;
     }
 
+    .has-text-centered.makuda-bgcolor{
+        margin-top: 0 !important;
+    }
+
+    #containerCounter > div {
+        padding-top: 100px !important;
+        padding-bottom: 100px;
+    }
     .counter-box{
         width: 40%;
         margin-top: 20px;

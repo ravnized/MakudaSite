@@ -448,6 +448,12 @@ async function resizeTeam(animation = true) {
     $(".person-container:eq(2), .person-container:eq(5)").css({"left": (newWidth * 2) + "px"});
     $(".person-container:eq(3), .person-container:eq(5)").css({"top": newSize1.height + "px"});
     $(".person-container:eq(4)").css({"top": newSize2.height + "px"});
+    var heightTotal = 0;
+    $('.person-container').each(function() {
+        heightTotal += $(this).height();
+    });
+    console.log(heightTotal)
+    $('#heightJS').css({"height": heightTotal/3 + 'px'})
     if ($(window).width() < 1024) {
         $(".person-container:eq(1), .person-container:eq(2)").css({"left": newWidth + "px"});
         $(".person-container:eq(4)").css({"left": (newWidth * 2) + "px"});
@@ -456,16 +462,7 @@ async function resizeTeam(animation = true) {
         $(".person-container:eq(4),.person-container:eq(5)").css({"top": newSize2.height + newSize1.height + "px"});
         $('.person-container:eq(4)').css({"left": 0});
         $('.person-container:eq(5)').css({"left": newWidth + "px"});
-        $('#heightJS').css({"height": newSize2.height*2 + newSize1.height+ 250 + 'px'})
-    }else{
-        var heightTotal = 0;
-        $('.person-container').each(function() {
-            heightTotal += $(this).height();
-        });
-        console.log(heightTotal)
-        $('#heightJS').css({"height": heightTotal/3 + 'px'})
-
-
+        $('#heightJS').css({"height": newSize2.height*2 + newSize1.height + 'px'})
     }
 
 
