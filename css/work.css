@@ -1005,8 +1005,9 @@ body {
 
     .workBlockTitle {
         width: 100%;
-        transform: translateY(300%);
+        transform: translateY(0);
         background: none;
+        top: 75% !important;
     }
 
     .titleVideo {

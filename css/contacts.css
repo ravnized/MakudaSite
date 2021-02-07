@@ -1,64 +1,94 @@
 .startContainer {
-  padding-top: 100px;
-  min-height: 100vh;
-  margin-bottom: 100px;
+    padding-top: 100px;
+    min-height: 100vh;
+    margin-bottom: 100px;
 }
 
 label {
-  color: white !important;
-  font-family: Gelion-light, sans-serif;
+    color: white !important;
+    font-family: Gelion-light, sans-serif;
 }
 
 .inputMakuda.inputMakuda {
-  background: transparent;
-  color: white;
-  font-family: Gelion-light, sans-serif;
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: #f6b600;
-  border-radius: 0px;
+    background: transparent;
+    color: white;
+    font-family: Gelion-light, sans-serif;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #f6b600;
+    border-radius: 0px;
 }
 
 .inputMakuda::placeholder {
-  color: white;
-  font-family: Gelion-light, sans-serif;
+    color: white;
+    font-family: Gelion-light, sans-serif;
 }
 
 .textAreaMakuda.textAreaMakuda {
-  background: #2f2f2f;
-  border: none;
-  color: white;
-  font-family: Gelion-light, sans-serif;
+    background: #2f2f2f;
+    border: none;
+    color: white;
+    font-family: Gelion-light, sans-serif;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .whiteH1 {
-  font-size: 3em !important;
-  color: white;
+    font-size: 3em !important;
+    color: white;
 }
+
 .whiteH1meno {
-  font-size: 2em !important;
-  color: white;
+    font-size: 2em !important;
+    color: white;
 }
 
 .orangeStick {
-  width: 100%;
+    width: 100%;
 }
 
 .orangeStick::after {
-  content: "";
-  display: block;
-  width: 9em;
-  height: 5px;
-  margin-top: 1em;
-  background-color: #f6b600;
+    content: "";
+    display: block;
+    width: 9em;
+    height: 5px;
+    margin-top: 1em;
+    background-color: #f6b600;
 }
 
 .button-makuda {
-  color: white;
-  border-color: transparent;
-  background-color: #f6b600;
+    color: white;
+    border-color: transparent;
+    background-color: #f6b600;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+    iframe {
+        height: 200px !important;
+    }
+
+    .columns {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .columns > .firstChild {
+        display: none;
+    }
+
+    .columns > .column {
+        padding: 50px;
+    }
+    #form > div:nth-child(9) > div > div > div > div > iframe{
+        width: 100% !important;
+    }
+    #form > div:nth-child(9) > div > div > div{
+        width: 100% !important;
+        height: auto !important;
+    }
 }

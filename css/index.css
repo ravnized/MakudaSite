@@ -1072,6 +1072,7 @@ p.fading-description {
         transform: translate(0, -200px);
         height: 150px;
         width: 200px;
+        transform-origin: 50% 50%;
     }
 
     .cross{

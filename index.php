@@ -40,7 +40,7 @@
                     <!-- <div class="animatedBtn">
                       <span class="noselect">VISUALIZZA LAVORI</span>
                     </div> -->
-                    <a href="/pre_works.php">
+                    <a href="/pre_works.php" style="display: block">
                         <div class="animatedBtn" style="opacity: 0">
                             <svg
                                     height="50"

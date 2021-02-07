@@ -531,7 +531,7 @@ $(document).ready(function ($) {
                     duration: 0.2,
                     opacity: 1,
 
-                    translateX: '50%',
+                    x: '20vw',
                     ease: "power2.in",
                     zIndex: 0,
                 },

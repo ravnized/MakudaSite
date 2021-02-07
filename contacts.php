@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact US</title>
     <link href="css/bulma.min.css" rel="stylesheet" />
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
@@ -39,7 +40,7 @@
     <div class="container startContainer">
       <iframe src="https://snazzymaps.com/embed/281128" width="100%" height="600px" style="border:none;"></iframe>
       <div class="columns" style="margin-top: 3em">
-        <div class="column">
+        <div class="column firstChild">
           <img
             src="/media/img/LogoIcona_PNG_Negativo(1).png"
             height="100px"
