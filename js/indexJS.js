@@ -48,6 +48,7 @@ $(document).ready(function () {
         $('.fading-images.column.fade-in-right-animation').css('height', $('.fading-image').height() + 'px');
         $('.card-image.wrapper-testimonial').css('height', $('.makuda-testimonials-item').height() + 'px');
     });
+    window.scrollTo(0, 0);
     var heightWindow = $(window).height();
     var widthWindow = $(window).width();
     var app,
@@ -59,13 +60,15 @@ $(document).ready(function () {
     video.setAttribute('preload', 'auto');
     video.autoload = true;
     video.loop = true;
-    video.autoplay=true;
+    video.autoplay = true;
     video.width = widthWindow;
     video.height = heightWindow;
+    console.log(video)
     video.load();
     var displacementSprite;
     var displacementFilter;
     let isFinished;
+
     function initPixi() {
         isFinished = false;
         app = new PIXI.Application({
@@ -75,8 +78,18 @@ $(document).ready(function () {
         var videoTexture = new PIXI.Texture.from(video);
         var videoSprite = new PIXI.Sprite.from(videoTexture);
         var container = new PIXI.Container();
-        videoSprite.width = widthWindow;
-        videoSprite.height = heightWindow;
+        if($(window).width() < 1024){
+            videoSprite.width = widthWindow*2;
+            videoSprite.height = heightWindow;
+            videoSprite.position.x = -(widthWindow/2)
+
+        }else{
+            videoSprite.width = widthWindow;
+            videoSprite.height = heightWindow;
+        }
+
+
+
         app.stage.addChild(container);
         container.addChild(videoSprite);
         displacementSprite = new PIXI.Sprite.from("media/img/clouds.jpg");
@@ -88,7 +101,12 @@ $(document).ready(function () {
         app.stage.filters = [displacementFilter];
         displacementSprite.scale.x = 0;
         displacementSprite.scale.y = 0;
-        app.renderer.view.style.transform = 'scale(1.16)';
+        if($(window).width() < 1024){
+        app.renderer.view.style.transform = 'scale(1.5)';
+
+            }else{
+            app.renderer.view.style.transform = 'scale(1.16)';
+        }
         app.renderer.view.style.transformOrigin = 'center center';
         app.renderer.view.style.opacity = '60%';
         displacementSprite.position.x = app.screen.width / 2;
@@ -226,9 +244,7 @@ $(document).ready(function () {
         }
 
 
-
-
-        $("#section-animated").on('click touchstart touchmove',function () {
+        $("#section-animated").on('click touchstart touchmove', function () {
             console.log(this);
             animationScroller();
         });
@@ -245,7 +261,6 @@ $(document).ready(function () {
             },
         });
     }
-
 
 
     const tl3 = gsap.timeline();

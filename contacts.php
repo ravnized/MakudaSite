@@ -136,7 +136,7 @@
             <div class="field is-grouped">
               <div class="control">
                 <button class="button button-makuda" type="submit">
-                  Submit
+                  Invia
                 </button>
               </div>
             </div>

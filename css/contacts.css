@@ -89,6 +89,5 @@ label {
     }
     #form > div:nth-child(9) > div > div > div{
         width: 100% !important;
-        height: auto !important;
     }
 }

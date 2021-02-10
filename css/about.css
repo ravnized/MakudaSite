@@ -600,7 +600,7 @@ div > .uno {
     }
 
     #valori-text{
-        font-size: 70%;
+        font-size: x-large;
         width: 100%;
         margin: 0 !important;
         padding: 10px;
@@ -613,10 +613,10 @@ div > .uno {
         opacity: 0;
     }
     #subtitle-valore{
-        font-size: 1em;
+        font-size: x-large;
     }
     .valori-title{
-        font-size: 0.8em;
+        font-size: x-large;
     }
 
     .containerBox{
