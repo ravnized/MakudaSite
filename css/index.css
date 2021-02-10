@@ -1188,7 +1188,6 @@ p.fading-description {
     }
     .hero-body.grained{
         pointer-events: none !important;
-        cursor:none !important;
     }
 }
 
