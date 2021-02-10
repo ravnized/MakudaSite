@@ -225,7 +225,11 @@ $(document).ready(function () {
                 }, "animationVideoGruppo");
         }
 
-        $("#section-animated").click(function () {
+
+
+
+        $("#section-animated").on('click touchstart touchmove',function () {
+            console.log(this);
             animationScroller();
         });
 

@@ -1033,7 +1033,7 @@ p.fading-description {
 @media only screen and (max-width: 1024px) {
 
     .hero-video {
-        display: initial !important;
+        display: block !important;
     }
 
     .consultingText {
@@ -1186,6 +1186,6 @@ p.fading-description {
     .home-band p{
         font-size: unset;
     }
-    
+
 }
 
