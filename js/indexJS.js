@@ -42,7 +42,7 @@ $(document).ready(function () {
     /*FINE NAPO*/
     if($(window).width()< 1024){
         console.log()
-        $('.works-content').css('height',( $('.works-content').height() + $('.fading-image').height() ) * 2+ 'px')
+        $('.works-content').css('height',( $('.works-content').height() + $('.fading-image').height() ) * 1.8+ 'px')
     }
     $('.fading-images.column.fade-in-right-animation').css('height', $('.fading-image').height() + 'px');
     $('.card-image.wrapper-testimonial').css('height', $('.makuda-testimonials-item').height() + 'px');

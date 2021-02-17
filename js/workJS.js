@@ -287,12 +287,12 @@ $(workBlockImageSub).one("click", function () {
     tl.to(
         ".workBlockTitle",
         {duration: 0.3, css: {autoAlpha: 0}},
-        0
+        'startAnimation'
     );
     tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts, .workBlockImgTriangle", {
         duration: 0.3,
         css: {autoAlpha: 0}
-    }, 0);
+    }, 'startAnimation');
     workListItem.css({top: totalHeight + "px"});
     workList.css({
         height: arrayListElementHeight * 2 + totalHeight + "px",

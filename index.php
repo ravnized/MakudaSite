@@ -297,10 +297,10 @@
                         <p class="fading-description" style="line-height:1.5;"><?= $view["description"] ?></p>
                         <a href="<?= "works/" . $view["link"] ?>">
                             <div class="animatedBtn">
-                                <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
-                                    <rect class="shape" height="50" width="200"/>
+                                <svg height="50" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="50" width="200px"/>
                                 </svg>
-                                <p class="text makuda-color">Visualizza</p>
+                                <p class="text makuda-color">VISUALIZZA</p>
                             </div>
                         </a>
                     </div>

@@ -1209,6 +1209,9 @@ p.fading-description {
     .fading-description{
         width: 70% !important;
     }
+    .section{
+        margin-bottom: 0 !important;
+    }
 
 }
 
