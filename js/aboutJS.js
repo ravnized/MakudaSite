@@ -175,20 +175,30 @@ async function animateShowValori(index) {
 
     switch (index) {
         case 0:
-            widthLine = marginLeft;
-            marginLeftLine = -containerLeft - 60;
-            marginLeftText = -50;
-            textAlignText = "left";
-            borderLeftText = "none";
-            borderRightText = "3px solid white";
-            break;
+            if ($(window).width() < 1024) {
+                widthLine = marginLeft;
+                marginLeftLine = -containerLeft - 60;
+                marginLeftText = -50;
+                textAlignText = "center";
+                borderLeftText = "none";
+                borderRightText = "3px solid white";
+                break;
+            }else{
+                widthLine = marginLeft;
+                marginLeftLine = -containerLeft - 60;
+                marginLeftText = -50;
+                textAlignText = "left";
+                borderLeftText = "none";
+                borderRightText = "3px solid white";
+                break;
+            }
         case 1:
             if ($(window).width() < 1024) {
                 console.log('left');
                 widthLine = marginLeft;
                 marginLeftLine = -containerLeft - 60;
                 marginLeftText = -50;
-                textAlignText = "left";
+                textAlignText = "center";
                 borderLeftText = "none";
                 borderRightText = "3px solid white";
             } else {
@@ -204,7 +214,7 @@ async function animateShowValori(index) {
             if ($(window).width() < 1024) {
                 marginLeftLine = $(window).width() - containerLeft * 2 - 60 + 60;
                 marginLeftText = containerWidth - textWidth + 50;
-                textAlignText = "right";
+                textAlignText = "center";
                 borderLeftText = "none";
                 borderRightText = "3px solid white";
             } else {
@@ -221,7 +231,7 @@ async function animateShowValori(index) {
 
                 marginLeftLine = $(window).width() - containerLeft * 2 - 60 + 60;
                 marginLeftText = containerWidth - textWidth + 50;
-                textAlignText = "right";
+                textAlignText = "center";
                 borderLeftText = "none";
                 borderRightText = "3px solid white";
             } else {
@@ -418,6 +428,8 @@ async function zoomOutValoriLines() {
     await animateCustom($(".valori-line"), 400, {"width": "10px"});
 }
 
+var heightTotal = 0;
+
 async function resizeTeam(animation = true) {
     if (animation == false)
         $(".person-container").css({"transition": "none"});
@@ -448,12 +460,12 @@ async function resizeTeam(animation = true) {
     $(".person-container:eq(2), .person-container:eq(5)").css({"left": (newWidth * 2) + "px"});
     $(".person-container:eq(3), .person-container:eq(5)").css({"top": newSize1.height + "px"});
     $(".person-container:eq(4)").css({"top": newSize2.height + "px"});
-    var heightTotal = 0;
-    $('.person-container').each(function() {
+
+    $('.person-container').each(function () {
         heightTotal += $(this).height();
     });
     console.log(heightTotal)
-    $('#heightJS').css({"height": heightTotal/3 + 'px'})
+    $('#heightJS').css({"height": heightTotal / 3 + 'px'})
     if ($(window).width() < 1024) {
         $(".person-container:eq(1), .person-container:eq(2)").css({"left": newWidth + "px"});
         $(".person-container:eq(4)").css({"left": (newWidth * 2) + "px"});
@@ -462,7 +474,7 @@ async function resizeTeam(animation = true) {
         $(".person-container:eq(4),.person-container:eq(5)").css({"top": newSize2.height + newSize1.height + "px"});
         $('.person-container:eq(4)').css({"left": 0});
         $('.person-container:eq(5)').css({"left": newWidth + "px"});
-        $('#heightJS').css({"height": newSize2.height*2 + newSize1.height + 'px'})
+        $('#heightJS').css({"height": newSize2.height * 2 + newSize1.height + 'px'})
     }
 
 

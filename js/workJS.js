@@ -300,7 +300,7 @@ $(workBlockImageSub).one("click", function () {
 
     for (let i = 0; i < arrayListElement.length; i++) {
         if ($(arrayListElement[i]).attr("id") !== idElement) {
-            tl.to(arrayListElement[i], {duration: 1, opacity: 0}, 0);
+            tl.to(arrayListElement[i], {duration: 1, opacity: 0}, 'startAnimation');
             $(arrayListElement[i]).remove();
         }
     }

@@ -45,7 +45,7 @@
             <span class="valori-title"> Trasparenza </span>
             <hr class="valori-line">
             <span class="valori-title"> Curiosità </span>
-            <hr class="valori-line">
+            <hr class="valori-line" id="noLine">
             <span class="valori-title"> Creazione </span>
             <hr class="valori-line">
             <span class="valori-title"> Crescita </span>

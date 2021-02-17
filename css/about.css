@@ -581,6 +581,10 @@ div > .uno {
 
 @media only screen and (max-width: 1024px) {
 
+    #noLine{
+        display: none !important;
+    }
+
     .boldBig{
         font-size: 2em;
     }
@@ -641,6 +645,8 @@ div > .uno {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+
 
     .person-infos h5{
         font-size: 100% !important;

@@ -25,6 +25,12 @@ if (promise2 !== undefined){
 }
 
 
+window.addEventListener('touchmove', function(e) {
+
+    e.preventDefault();
+
+}, false);
+
 
 
 function video1Enter() {
