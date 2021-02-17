@@ -733,7 +733,8 @@ div.mask {
     transform: scale(1.2);
     opacity: 0;
 }
-.gif-photo{
+
+.gif-photo {
     flex-wrap: wrap;
 }
 
@@ -976,9 +977,11 @@ body {
 .fullscreen-fix {
     z-index: 999 !important;
 }
+
 .subVideoDescription .columns .column:nth-child(1) {
     padding: 0 !important;
 }
+
 .subVideoDescription .columns .column:nth-child(2) {
     padding-top: 0;
     padding-bottom: 0;
@@ -1083,6 +1086,7 @@ body {
     .gif-firstSection {
         transform: scale(1) !important;
         margin: 0;
+        padding: 30px;
     }
 
     .consulenti {
@@ -1114,47 +1118,56 @@ body {
     .workListItem > .container > .columns {
         margin: 0 !important;
     }
-    .columns.gif-photo > .column{
+
+    .columns.gif-photo > .column {
         margin-left: 0 !important;
     }
-    .works-band{
+
+    .works-band {
         height: 100vh;
     }
-    #video-compare-container{
+
+    #video-compare-container {
         padding-top: 300px !important;
     }
+
     .subVideoDescription .columns .column:nth-child(1) {
         text-align: right;
     }
+
     .subVideoDescription .columns .column:nth-child(2) {
         text-align: left;
     }
 
-    .marginTopPhotoMobile{
+    .marginTopPhotoMobile {
         margin-top: 3em !important;
     }
 
-    .subVideo{
+    .subVideo {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    body > div.mainSection > section > div > div > div > div.container.textContainer > div.columns.is-6 > div > p{
-        padding-left:20px;
-        padding-right:20px;
+
+    body > div.mainSection > section > div > div > div > div.container.textContainer > div.columns.is-6 > div > p {
+        padding-left: 20px;
+        padding-right: 20px;
         text-justify: newspaper;
         font-size: x-large;
     }
-    .frase{
-        padding-left:20px;
-        padding-right:20px;
+
+    .frase {
+        padding-left: 20px;
+        padding-right: 20px;
         text-justify: newspaper;
         font-size: x-large;
         text-align: left;
     }
-    .titleRectangle{
+
+    .titleRectangle {
         font-size: 2em !important;
     }
-    .textRectangle{
+
+    .textRectangle {
         font-size: x-large !important;
     }
 
@@ -1162,14 +1175,37 @@ body {
         height: auto !important;
     }
 
-    .buttons .button{
+    .buttons .button {
         display: flex;
         flex-direction: column;
         margin: 0 !important;
         height: 100%;
     }
-    .buttons{
+
+    .buttons {
         margin: 0 !important;
+    }
+
+    .gif-cellulari > .column {
+        margin-top: 0 !important;
+        transform: scale(1) !important;
+    }
+
+    .buttonText {
+        position: absolute;
+    }
+
+    .backgroundButton {
+        filter: grayscale(50%);
+        -webkit-filter: grayscale(50%);
+    }
+
+    .buttonText{
+        text-align: center !important;
+    }
+
+    #waveform {
+        padding: 10px;
     }
 
 }

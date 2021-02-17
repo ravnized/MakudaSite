@@ -79,7 +79,7 @@ $(document).ready(function () {
         var videoSprite = new PIXI.Sprite.from(videoTexture);
         var container = new PIXI.Container();
         if($(window).width() < 1024){
-            videoSprite.width = widthWindow*2;
+            videoSprite.width = widthWindow*2.5;
             videoSprite.height = heightWindow;
             videoSprite.position.x = -(widthWindow/2)
 
@@ -244,7 +244,7 @@ $(document).ready(function () {
         }
 
 
-        $("#section-animated").on('click touchstart touchmove', function () {
+        $("#section-animated").one('click touchstart touchmove', function () {
             console.log(this);
             animationScroller();
         });
