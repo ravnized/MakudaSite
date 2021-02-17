@@ -40,7 +40,10 @@ $(document).ready(function () {
         //   alert("Left")
     });
     /*FINE NAPO*/
-
+    if($(window).width()< 1024){
+        console.log()
+        $('.works-content').css('height',( $('.works-content').height() + $('.index-1').height() ) * 2+ 'px')
+    }
     $('.fading-images.column.fade-in-right-animation').css('height', $('.fading-image').height() + 'px');
     $('.card-image.wrapper-testimonial').css('height', $('.makuda-testimonials-item').height() + 'px');
 
@@ -79,9 +82,9 @@ $(document).ready(function () {
         var videoSprite = new PIXI.Sprite.from(videoTexture);
         var container = new PIXI.Container();
         if($(window).width() < 1024){
-            videoSprite.width = widthWindow*2.5;
+            videoSprite.width = widthWindow*2.7;
             videoSprite.height = heightWindow;
-            videoSprite.position.x = -(widthWindow/2)
+            videoSprite.position.x = -(widthWindow)
 
         }else{
             videoSprite.width = widthWindow;

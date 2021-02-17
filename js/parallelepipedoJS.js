@@ -405,6 +405,7 @@ $(document).ready(function ($) {
             );
         });
     }else{
+        let parallelegruppo = $('.paralleGruppo')
 
         parallelepipedo.click(function (e) {
             let idElement = $(this).parent().attr("id"),
@@ -524,25 +525,38 @@ $(document).ready(function ($) {
                 0
             );
 
-            tl.to(
+            tl.fromTo(
                 $(this).parent().find(".square"),
                 {
-                    display: "flex",
+                    duration: 0.2,
+                    y:-( $(this).parent().find(".square").height())-60,
+                    x: 0,
+                },
+                {
+                    display: "block",
                     duration: 0.2,
                     opacity: 1,
-
-                    x: '20vw',
+                    x: '5%',
                     ease: "power2.in",
                     zIndex: 0,
                 },
                 0.3
             );
+            console.log($(this).parent().find(".square").height())
+            tl.to(
+                parallelegruppo,{
+                    duration: 0.5,
+                    marginTop: $(this).parent().find(".square").height()+100,
+                    ease: "power2.in",
+                },0
+                )
             tl.to($(this).parent().find(".textInsideSquare"), {
                 duration: 0.5,
                 opacity: 1,
                 ease: "power2.in",
             });
         })
+
     }
 
 });
