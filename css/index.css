@@ -1212,6 +1212,10 @@ p.fading-description {
     .section{
         margin-bottom: 0 !important;
     }
+    .fading-caption a{
+        display: block !important;
+        width: 200px !important;
+    }
 
 }
 

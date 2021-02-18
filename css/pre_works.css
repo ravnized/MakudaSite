@@ -194,7 +194,6 @@ body.is-loaded .makuda-home-link-wrap {
 }
 
 
-
 /*
 Contacts
  */
@@ -232,7 +231,6 @@ Contacts
 }
 
 
-
 .noWrap {
     white-space: nowrap;
 }
@@ -242,7 +240,8 @@ Contacts
     position: relative;
     cursor: pointer;
 }
-.pageloader{
+
+.pageloader {
     z-index: 10 !important;
 }
 
@@ -253,22 +252,25 @@ Contacts
         width: 200vw;
         height: unset;
     }
+
     #video-clipper {
         top: 0;
         bottom: 0;
         width: 100%;
         height: 50%;
     }
+
     #video-compare-container div.mask video {
         top: 0;
         height: 100vw;
         right: 0;
     }
+
     div.mask {
         height: 50%;
         width: 100%;
         position: absolute;
-         top: unset;
+        top: unset;
         bottom: 0;
     }
 
@@ -277,23 +279,42 @@ Contacts
         margin: 0px 0 3px 0;
         text-align: left;
     }
+
     .makuda-home-link--contacts span:last-child {
         opacity: 0;
     }
+
     .makuda-home-link--contacts.makuda-home-link-wrap {
         padding-left: 0 !important;
     }
+
     .makuda-home-link--works.makuda-home-link-wrap {
         padding-left: 0 !important;
         text-align: right;
         justify-content: flex-end;
     }
-    .makuda-home-link--works .makuda-home-link span:last-child{
+
+    .makuda-home-link--works .makuda-home-link span:last-child {
         font-size: 3em;
         margin: -7px 0 3px 0;
         transform: translateX(1000px);
     }
-    .makuda-home-link--works.is-loaded span:first-child{
+
+    .makuda-home-link--works.is-loaded span:first-child {
         opacity: 0;
+    }
+
+    body {
+        max-height: 100vh !important;
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently
+                                         supported by Chrome, Edge, Opera and Firefox */
+    
     }
 }
