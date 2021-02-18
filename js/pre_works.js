@@ -256,6 +256,14 @@ function loader() {
             {duration: 1, x: 0},
             0
         );
+
+        $(window).resize(function() {
+
+            alert('window was resized!');
+
+        });
+
+
     }
 
     var makuda = ["M", "A_2", "K", "U", "D", "A", "triangle"];
