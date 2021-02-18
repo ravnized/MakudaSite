@@ -207,7 +207,7 @@ $view = ButtonBeforeAfter("DECUBE");
     <p class="frase" style="color: white">
         Ecco qualche nostro scatto<br>
     </p>
-
+    
     <div class="container imgs-slide">
         <div class="columns is-mobile gif-photo">
             <div class="column is-one-third-desktop">

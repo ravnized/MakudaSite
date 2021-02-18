@@ -37,9 +37,7 @@
                         />
                     </h2>
                     <h2 class="consultingText">CONSULTING</h2>
-                    <!-- <div class="animatedBtn">
-                      <span class="noselect">VISUALIZZA LAVORI</span>
-                    </div> -->
+
                     <a href="/pre_works.php" style="display: block">
                         <div class="animatedBtn" style="opacity: 0">
                             <svg
@@ -65,7 +63,7 @@
             </div>
         </div>
 
-        <div id="replacement"> <!-- se si sposta il replacement rompe lo scroller al refresh -->
+        <div id="replacement">
             <div class="home-band grained">
                 <div id="g0" class="band-view" style="display:block;">
                     <p class="makuda-bold" style="font-size: 7em;">
@@ -118,6 +116,7 @@
         </div>
     </section>
 </div>
+
 <div id="triggerElement"></div>
 
 <div class="container has-text-centered" style="padding-bottom:50px;">

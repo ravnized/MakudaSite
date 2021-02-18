@@ -1,213 +1,226 @@
 .menu {
-  transition: transform 0.3s ease;
-  will-change: transform;
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .menu_trigger {
-  font-size: 1rem;
-  top: 0;
-  opacity: 0;
-  cursor: pointer;
+    font-size: 1rem;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
 }
 
 .menu_trigger:focus,
 .menu_trigger:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {
-  .menu_trigger {
-    font-size: 0.8rem;
-    margin-top: 0.5em;
-  }
+    .menu_trigger {
+        font-size: 0.8rem;
+        margin-top: 0.5em;
+    }
 }
 
 .menu_trigger_in {
-  margin-right: 2rem;
-  color: #fff;
-  font-size: 1.4em;
-  font-weight: 700;
+    margin-right: 2rem;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
 }
 
 .menu_trigger_in .letter {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1023px) {
-  .menu_trigger_in {
-    height: 3.05882em;
-    font-size: 1.7em;
-    line-height: 3.05882em;
-    letter-spacing: 0.06rem;
-  }
+    .menu_trigger_in {
+        height: 3.05882em;
+        font-size: 1.7em;
+        line-height: 3.05882em;
+        letter-spacing: 0.06rem;
+    }
 }
 
 .letter {
-  min-width: 0.3em;
+    min-width: 0.3em;
 }
 
 .menu_trigger_decor {
-  top: 0;
+    top: 0;
 }
 
 .size {
-  height: 60px;
-  width: 60px;
+    height: 60px;
+    width: 60px;
 }
 
 a,
 a:visited {
-  color: white;
+    color: white;
 }
 
 .makuda-color {
-  color: rgb(255, 197, 32) !important;
+    color: rgb(255, 197, 32) !important;
 }
 
 .makuda-bgcolor {
-  background-color: rgb(255, 197, 32) !important;
+    background-color: rgb(255, 197, 32) !important;
 }
 
 .title {
-  font-family: Gelion-black;
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2em !important;
-  color: white;
+    font-family: Gelion-black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2em !important;
+    color: white;
 }
+
 .light-font {
-  font-family: Gelion-light;
+    font-family: Gelion-light;
 }
+
 .white-font {
-  color: white;
+    color: white;
 }
+
 /*definizione animatedBtn */
 .animatedBtn {
-  position: relative;
-  margin: auto;
-  cursor: pointer;
-  display: flex;
-  width: 320px;
-  padding-top: 15px;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    width: 320px;
+    padding-top: 15px;
 }
+
 .animatedBtn svg {
-  position: absolute;
+    position: absolute;
 }
+
 .animatedBtn .svg-wrapper {
-  position: absolute;
-  margin: auto;
-  width: 320px;
+    position: absolute;
+    margin: auto;
+    width: 320px;
 }
+
 .animatedBtn .shape {
-  stroke-dasharray: 140 240;
-  stroke-dashoffset: -465;
-  stroke-width: 5px;
-  fill: transparent;
-  stroke: #f6b600;
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    stroke-dasharray: 140 240;
+    stroke-dashoffset: -465;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #f6b600;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
+
 .animatedBtn .text {
-  position: relative;
-  margin: auto;
-  font-size: 15px;
-  letter-spacing: 0.2em;
-  color: #fff;
-  padding-top: 13px;
+    position: relative;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    color: #fff;
+    padding-top: 13px;
 }
+
 .animatedBtn:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
 }
+
 /*fine definizione animatedBtn */
 .makuda-color {
-  color: rgb(255, 197, 32) !important;
+    color: rgb(255, 197, 32) !important;
 }
 
 .black-font {
-  color: black;
+    color: black;
 }
 
 .white-font {
-  color: white;
+    color: white;
 }
 
 .makuda-bold {
-  font-family: Gelion-black;
+    font-family: Gelion-black;
 }
 
 .makuda-light {
-  font-family: Gelion-light;
+    font-family: Gelion-light;
 }
 
 .title {
-  font-family: Gelion-black;
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.2em !important;
-  color: white;
+    font-family: Gelion-black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em !important;
+    color: white;
 }
+
 body {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 .grained:after {
-  animation: grain 8s steps(10) infinite;
-  background-image: url("/media/img/noise.png");
-  background-size: 600px;
-  background-repeat: repeat;
-  content: "";
-  height: 300%;
-  left: -50%;
-  opacity: 0.3;
-  position: absolute;
-  top: -100%;
-  width: 300%;
-  pointer-events: none;
+    animation: grain 8s steps(10) infinite;
+    background-image: url("/media/img/noise.png");
+    background-size: 600px;
+    background-repeat: repeat;
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.3;
+    position: absolute;
+    top: -100%;
+    width: 300%;
+    pointer-events: none;
 }
 
 @keyframes grain {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, 5%);
-  }
-  30% {
-    transform: translate(7%, -25%);
-  }
-  40% {
-    transform: translate(-5%, 25%);
-  }
-  50% {
-    transform: translate(-15%, 10%);
-  }
-  60% {
-    transform: translate(15%, 0%);
-  }
-  70% {
-    transform: translate(0%, 15%);
-  }
-  80% {
-    transform: translate(3%, 35%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
-  }
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(3%, 35%);
+    }
+    90% {
+        transform: translate(-10%, 10%);
+    }
 }
+
 .noWrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
+
 @media only screen and (max-width: 1024px) {
-  .navbar-brand{
-    max-width: 100vw;
-  }
+    .grained:after {
+        width: 100%;
+        height: 100%;
+    }
 }
