@@ -166,9 +166,7 @@ $view = ButtonBeforeAfter("SUITES");
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-            Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-            condimentum a non ex.<br>
+            Ecco qualche nostro scatto<br>
         </p>
         <br/>
 

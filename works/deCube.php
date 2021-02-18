@@ -205,9 +205,7 @@ $view = ButtonBeforeAfter("DECUBE");
         Qualche Nostro <span class="makuda-color">Scatto</span>
     </p>
     <p class="frase" style="color: white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod sagittis tellus vel ultricies. <br>
-        Nullam neque lectus, laoreet a efficitur eget, rhoncus gravida quam. Fusce venenatis diam et arcu maximus
-        condimentum a non ex.<br>
+        Ecco qualche nostro scatto<br>
     </p>
 
     <div class="container imgs-slide">
