@@ -306,7 +306,6 @@ Contacts
 
     body {
         max-height: 100vh !important;
-
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
         -khtml-user-select: none; /* Konqueror HTML */
@@ -315,6 +314,6 @@ Contacts
         user-select: none;
         /* Non-prefixed version, currently
                                          supported by Chrome, Edge, Opera and Firefox */
-    
+
     }
 }
