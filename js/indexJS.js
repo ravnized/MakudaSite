@@ -139,7 +139,7 @@ $(document).ready(function () {
 
         function animationScroller() {
             var tl = gsap.timeline();
-            unloadScrollBars();
+
             tl.to(displacementSprite.scale, {duration: 1, x: "+=10", y: "+=10"}, 0)
                 .to(
                     displacementFilter.scale,
@@ -241,7 +241,7 @@ $(document).ready(function () {
                         }
                     }
 
-                    reloadScrollBars();
+
                     homeBandAnimation();
                 }, "animationVideoGruppo");
         }
