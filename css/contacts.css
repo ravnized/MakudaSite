@@ -77,11 +77,15 @@ label {
         margin-left: 0 !important;
     }
 
-    .columns > .firstChild {
+    .startContainer .columns > .firstChild {
         display: none;
     }
 
-    .columns > .column {
+    .startContainer{
+        margin-bottom: 0;
+    }
+
+    .startContainer .columns > .column {
         padding: 50px;
     }
     #form > div:nth-child(9) > div > div > div > div > iframe{

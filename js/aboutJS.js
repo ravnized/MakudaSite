@@ -183,7 +183,7 @@ async function animateShowValori(index) {
                 borderLeftText = "none";
                 borderRightText = "3px solid white";
                 break;
-            }else{
+            } else {
                 widthLine = marginLeft;
                 marginLeftLine = -containerLeft - 60;
                 marginLeftText = -50;
@@ -412,6 +412,12 @@ async function animateHideValori(index, zoomOutLines = false) {
     hidingAnimation = false;
 }
 
+if ($(window).width() < 1024) {
+    console.log('br')
+    $('#brTime').append("<br>")
+}
+
+
 async function zoomInValoriLines(index) {
     if (index < 2) {
         animateCustom($(".valori-line:eq(" + index + ")"), 400, {"width": "100px"});
@@ -429,7 +435,7 @@ async function zoomOutValoriLines() {
 }
 
 var heightTotal = 0;
-
+var oneTime = true;
 async function resizeTeam(animation = true) {
     if (animation == false)
         $(".person-container").css({"transition": "none"});
@@ -461,11 +467,18 @@ async function resizeTeam(animation = true) {
     $(".person-container:eq(3), .person-container:eq(5)").css({"top": newSize1.height + "px"});
     $(".person-container:eq(4)").css({"top": newSize2.height + "px"});
 
-    $('.person-container').each(function () {
-        heightTotal += $(this).height();
-    });
-    console.log(heightTotal)
-    $('#heightJS').css({"height": heightTotal / 3 + 'px'})
+    if(oneTime){
+        $('.person-container').each(function () {
+            heightTotal += $(this).height();
+            $('#heightJS').css({"height": heightTotal / 3 + 'px'})
+            console.log(heightTotal)
+            oneTime = false;
+        });
+
+    }
+
+
+
     if ($(window).width() < 1024) {
         $(".person-container:eq(1), .person-container:eq(2)").css({"left": newWidth + "px"});
         $(".person-container:eq(4)").css({"left": (newWidth * 2) + "px"});

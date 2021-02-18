@@ -646,12 +646,19 @@ div > .uno {
         margin-bottom: 20px;
     }
 
-
+    #brTime{
+        height: 0 !important;
+    }
 
     .person-infos h5{
         font-size: 100% !important;
     }
     .person-infos h6{
         font-size: 70% !important;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #brTime{
+        display: none;
     }
 }

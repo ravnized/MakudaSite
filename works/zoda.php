@@ -170,8 +170,7 @@ $view = ButtonBeforeAfter("ZODA");
                             comunque una notevole quantitá di scene. <br>
                             Le riprese si sono svolte in 3 principali location ricercate con cura. <br>
                             Macchine e Strumenti tecnici: <br><br>
-                            - Blackmagic URSA 4 <br>
-                            - 6K G2 per una qualitá professionale <br>
+                            - Blackmagic URSA 4,6K G2 per una qualitá professionale <br>
                             - Kit delle lenti ZEISS CP3 <br>
                             - Lente 'PROBE' per filmare dettagli a pochi millimetri di distanza
                         </p>
