@@ -8,15 +8,15 @@ $('#video2').get(0).currentTime = 5;
 $('#video1').get(0).currentTime = 5;
 
 var promise1 = $('#video1').get(0).play();
-if (promise1 !== undefined){
+if (promise1 !== undefined) {
     promise1.catch(error => {
         console.log(error)
     }).then(() => {
         console.log('Autoplay Started');
     })
 }
-var promise2 =  $('#video2').get(0).play();
-if (promise2 !== undefined){
+var promise2 = $('#video2').get(0).play();
+if (promise2 !== undefined) {
     promise2.catch(error => {
         console.log(error)
     }).then(() => {
@@ -25,12 +25,11 @@ if (promise2 !== undefined){
 }
 
 
-window.addEventListener('touchmove', function(e) {
+window.addEventListener('touchmove', function (e) {
 
     e.preventDefault();
 
 }, false);
-
 
 
 function video1Enter() {
@@ -168,10 +167,7 @@ function animationStart() {
     });
 
 
-
 }
-
-
 
 
 const tl3 = gsap.timeline();
@@ -194,7 +190,7 @@ function loader() {
     }
     var tlStart = gsap.timeline();
 
-    if($(window).width()> 1024){
+    if ($(window).width() > 1024) {
         tlStart.fromTo(
             $(".makuda-home-link--contacts.is-loaded span:first-child "),
             {
@@ -228,16 +224,19 @@ function loader() {
                 duration: 1,
                 x: -1000,
             },
-            {duration: 1, x: 100,onComplete: function(){
+            {
+                duration: 1, x: 100, onComplete: function () {
                     isFinished = true;
-                }},
+                }
+            },
             0
         );
-    }else{
+    } else {
         var leftBand = $('.makuda-home-link--works.makuda-home-link-wrap');
-        leftBand.css('width',$(window).height()+'px');
+        var navBar = $('nav').height();
+        leftBand.css('width', $(window).height() - navBar + 'px');
         var rightBand = $('.makuda-home-link--contacts.makuda-home-link-wrap');
-        rightBand.css('left', $(window).width() -80 +'px');
+        rightBand.css('left', $(window).width() - 80 + 'px');
         tlStart.fromTo(
             $(".makuda-home-link--contacts.is-loaded span:first-child "),
             {
@@ -256,17 +255,15 @@ function loader() {
             {duration: 1, x: 0},
             0
         );
-
-        $(window).resize(function() {
+        $(window).resize(function () {
             var leftBand = $('.makuda-home-link--works.makuda-home-link-wrap');
-            leftBand.css('width',$(window).height()+'px');
+            var navBar = $('nav').height();
+            leftBand.css('width', $(window).height() - navBar + 'px');
             var rightBand = $('.makuda-home-link--contacts.makuda-home-link-wrap');
-            rightBand.css('left', $(window).width() -80 +'px');
+            rightBand.css('left', $(window).width() - 80 + 'px');
 
 
         });
-
-
     }
 
     var makuda = ["M", "A_2", "K", "U", "D", "A", "triangle"];
