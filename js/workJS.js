@@ -9,15 +9,11 @@ var generalItem = $(".workBlockContainer"),
 let footer = $("footer");
 
 
-
-
-
-
 $(function () {
-    if ($(window).width() < 1024){
+    if ($(window).width() < 1024) {
         let image = document.createElement("img");
-        image.src ="/media/icons/TRIANGOLINO.png";
-        var workBlock =  $('.workBlockImgTriangle')
+        image.src = "/media/icons/TRIANGOLINO.png";
+        var workBlock = $('.workBlockImgTriangle')
         workBlock.append(image)
         console.log('aaa')
     }
@@ -26,11 +22,11 @@ $(function () {
     gsap.fromTo(
         ".workListItem:nth-child(1)",
         {
-            opacity:0,
+            opacity: 0,
             y: 200,
         },
         {
-            opacity:1,
+            opacity: 1,
             duration: 0.3,
             y: 0,
             delay: 0.5
@@ -39,11 +35,11 @@ $(function () {
     gsap.fromTo(
         ".workListItem:nth-child(2)",
         {
-            opacity:0,
+            opacity: 0,
             y: 200,
         },
         {
-            opacity:1,
+            opacity: 1,
             duration: 0.8,
             y: 0,
             delay: 0.5
@@ -52,11 +48,11 @@ $(function () {
     gsap.fromTo(
         ".workListItem:nth-child(3)",
         {
-            opacity:0,
+            opacity: 0,
             y: 200,
         },
         {
-            opacity:1,
+            opacity: 1,
             duration: 1.4,
             y: 0,
             delay: 0.5
@@ -78,7 +74,7 @@ $(function () {
         ".workListItem",
         {opacity: 0},
         {
-            opacity:1,
+            opacity: 1,
             duration: 1.4,
             delay: 0.5
         },
@@ -259,89 +255,95 @@ $(function () {
 })
 
 $(workBlockImageSub).one("click", function () {
-    unloadScrollBars()
-    let positionImageVideo = imageVideo.offset(),
-        leftImagePos = positionImageVideo.left,
-        topImagePos = $(".workListItem").offset().top,
-        workListItem = $(this).closest('.workListItem'),
-        workList = $(this).closest('.workList'),
-        idElement = workListItem.attr("id"),
-        imageHeight = $(this).height(),
-        imageWidth = $(this).width(),
-        arrayListElementHeight,
-        totalHeight = 0,
-        tl = gsap.timeline(),
-        cycle = 0,
-        topTotalHeight,
-        centerImageLeft,
-        scrollTop,
-        url = $(this).find('a').attr("data-link");
-    centerImageLeft = imageWidth / 2;
-    arrayListElementHeight = $(arrayListElement[0]).height();
-    scrollTop = $(window).scrollTop();
-    while (idElement !== $(arrayListElement[cycle]).attr("id")) {
-        totalHeight += $(arrayListElement[cycle]).height();
-        cycle++;
-    }
-    topTotalHeight = totalHeight + topImagePos;
-    tl.to(
-        ".workBlockTitle",
-        {duration: 0.3, css: {autoAlpha: 0}},
-        'startAnimation'
-    );
-    tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts, .workBlockImgTriangle", {
-        duration: 0.3,
-        css: {autoAlpha: 0}
-    }, 'startAnimation');
-    workListItem.css({top: totalHeight + "px"});
-    workList.css({
-        height: arrayListElementHeight * 2 + totalHeight + "px",
-    });
-
-    for (let i = 0; i < arrayListElement.length; i++) {
-        if ($(arrayListElement[i]).attr("id") !== idElement) {
-            tl.to(arrayListElement[i], {duration: 1, opacity: 0}, 'startAnimation');
-            $(arrayListElement[i]).remove();
+    if ($(window).width() > 1024) {
+        console.log('aa')
+        unloadScrollBars()
+        let positionImageVideo = imageVideo.offset(),
+            leftImagePos = positionImageVideo.left,
+            topImagePos = $(".workListItem").offset().top,
+            workListItem = $(this).closest('.workListItem'),
+            workList = $(this).closest('.workList'),
+            idElement = workListItem.attr("id"),
+            imageHeight = $(this).height(),
+            imageWidth = $(this).width(),
+            arrayListElementHeight,
+            totalHeight = 0,
+            tl = gsap.timeline(),
+            cycle = 0,
+            topTotalHeight,
+            centerImageLeft,
+            scrollTop,
+            url = $(this).find('a').attr("data-link");
+        centerImageLeft = imageWidth / 2;
+        arrayListElementHeight = $(arrayListElement[0]).height();
+        scrollTop = $(window).scrollTop();
+        while (idElement !== $(arrayListElement[cycle]).attr("id")) {
+            totalHeight += $(arrayListElement[cycle]).height();
+            cycle++;
         }
-    }
-
-    halfWindowHeight =
-        $(window).height() / 2 - topTotalHeight - imageHeight + scrollTop;
-    halfWindowWidth = $(window).width() / 2 - leftImagePos - centerImageLeft;
-
-    tl.to(
-        workBlockImageSub,
-        {
+        topTotalHeight = totalHeight + topImagePos;
+        tl.to(
+            ".workBlockTitle",
+            {duration: 0.3, css: {autoAlpha: 0}},
+            'startAnimation'
+        );
+        tl.to("footer, .title, .progress_wrap, .full-screen-carousel-control, .makuda-home-link--contacts, .workBlockImgTriangle", {
             duration: 0.3,
-            rotateX: 0,
-            rotateY: 0,
-        },
-        "startAnimation"
-    );
+            css: {autoAlpha: 0}
+        }, 'startAnimation');
+        workListItem.css({top: totalHeight + "px"});
+        workList.css({
+            height: arrayListElementHeight * 2 + totalHeight + "px",
+        });
 
-    tl.to(
-        this,
-        {
-            duration: 1,
-            ease: "power3.in",
-            x: halfWindowWidth,
-            y: halfWindowHeight,
-            transformOrigin: "center center",
-            scale: 1.5,
-        },
-        "startAnimation"
-    );
-    tl.to(
-        this, {
-            duration: 0.1,
-            opacity: 0,
-            ease: 'expo.out'
+        for (let i = 0; i < arrayListElement.length; i++) {
+            if ($(arrayListElement[i]).attr("id") !== idElement) {
+                tl.to(arrayListElement[i], {duration: 1, opacity: 0}, 'startAnimation');
+                $(arrayListElement[i]).remove();
+            }
         }
-    )
-    tl.add(function () {
+
+        halfWindowHeight =
+            $(window).height() / 2 - topTotalHeight - imageHeight + scrollTop;
+        halfWindowWidth = $(window).width() / 2 - leftImagePos - centerImageLeft;
+
+        tl.to(
+            workBlockImageSub,
+            {
+                duration: 0.3,
+                rotateX: 0,
+                rotateY: 0,
+            },
+            "startAnimation"
+        );
+
+        tl.to(
+            this,
+            {
+                duration: 1,
+                ease: "power3.in",
+                x: halfWindowWidth,
+                y: halfWindowHeight,
+                transformOrigin: "center center",
+                scale: 1.5,
+            },
+            "startAnimation"
+        );
+        tl.to(
+            this, {
+                duration: 0.1,
+                opacity: 0,
+                ease: 'expo.out'
+            }
+        )
+        tl.add(function () {
+            console.log('redirect');
+            window.location.href = url;
+        })
+    }else{
+        let url = $(this).find('a').attr("data-link");
         console.log('redirect');
         window.location.href = url;
-    })
-
+    }
 });
 

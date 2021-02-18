@@ -321,10 +321,10 @@
                         <?= $line ?>
                     </div>
                     <p style="color: white;">0<?= $c++ ?></p>
-            </div>
+                </div>
 
-        <?php } ?>
-        </div>
+            <?php } ?>
+            </div>
         </div>
     </div>
 </div>
@@ -344,19 +344,17 @@
                                         <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                        <p><span>Web Designer</span></p>
-                                        <h6>Tony Norton</h6>
+                                        <p><span>Artista Musicale</span></p>
+                                        <h6>Zoda</h6>
                                     </div>
                                 </div>
                                 <div class="makuda-testimonials-item__content">
                                     <div class="makuda-testimonials-item__stars makuda-stars5"></div>
                                     <p>
-                                        I am a web developer. And, as known, good clipart is a
-                                        half of successful web design. Today is not so easy to
-                                        find realy good photos for website. And one day I have
-                                        ordered a clipart for my new project and works of Andrew
-                                        are fit just amazing for me. Thank you, Andrew, for your
-                                        work! 5 stars without a doubt!
+                                        Instancabili!
+                                        Non saprei come altro descrivere questi ragazzi per l'impegno che hanno messo
+                                        nella realizzazione del videoclip della mia canzone 'oh madre mia' sia in pre
+                                        produzione, produzione, postproduzione
                                     </p>
                                 </div>
                             </div>
@@ -373,19 +371,16 @@
                                         <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                        <p><span>Web Designer</span></p>
-                                        <h6>Tony Norton</h6>
+                                        <p><span>Giornalista</span></p>
+                                        <h6>Gaia Accoto per LBA</h6>
                                     </div>
                                 </div>
                                 <div class="makuda-testimonials-item__content">
                                     <div class="makuda-testimonials-item__stars makuda-stars5"></div>
                                     <p>
-                                        I am a web developer. And, as known, good clipart is a
-                                        half of successful web design. Today is not so easy to
-                                        find realy good photos for website. And one day I have
-                                        ordered a clipart for my new project and works of Andrew
-                                        are fit just amazing for me. Thank you, Andrew, for your
-                                        work! 5 stars without a doubt!
+                                        I ragazzi sono sempre super gentili e disponibili, mi ha colpito la loro
+                                        dedizione nel portare a termine un lavoro ben curato e strutturato per andare in
+                                        onda.
                                     </p>
                                 </div>
                             </div>
@@ -402,19 +397,42 @@
                                         <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                        <p><span>Web Designer</span></p>
-                                        <h6>Tony Norton</h6>
+                                        <p><span>Proprietario</span></p>
+                                        <h6>Luca</h6>
                                     </div>
                                 </div>
                                 <div class="makuda-testimonials-item__content">
                                     <div class="makuda-testimonials-item__stars makuda-stars5"></div>
                                     <p>
-                                        I am a web developer. And, as known, good clipart is a
-                                        half of successful web design. Today is not so easy to
-                                        find realy good photos for website. And one day I have
-                                        ordered a clipart for my new project and works of Andrew
-                                        are fit just amazing for me. Thank you, Andrew, for your
-                                        work! 5 stars without a doubt!
+                                        Se volete dare slancio al vostro Brand vi consiglio fortemente questo team.
+                                        Gelateria Buffel si è fidata fin dal l'inaugurazione e i risultati si sono visti
+                                        immediatamente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="card card-padding">
+                        <div class="card-image wrapper-testimonial">
+
+                            <div class="makuda-testimonials-item">
+                                <div class="makuda-testimonials-item__author">
+                                    <div class="makuda-testimonials-item__author--image">
+                                        <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
+                                    </div>
+                                    <div class="makuda-testimonials-item__author--name">
+                                        <p><span>Dj & Brand Manager</span></p>
+                                        <h6>Dj Herca</h6>
+                                    </div>
+                                </div>
+                                <div class="makuda-testimonials-item__content">
+                                    <div class="makuda-testimonials-item__stars makuda-stars5"></div>
+                                    <p>
+                                        Il talento messo a disposizione di ogni tipo di progetto. <br>
+                                        Dal mondo della notte agli aftermovie fino ai servizi videografici,
+                                        La loro capacitá di adattamento é una garanzia.
                                     </p>
                                 </div>
                             </div>
