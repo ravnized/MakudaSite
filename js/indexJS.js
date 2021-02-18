@@ -247,7 +247,7 @@ $(document).ready(function () {
         }
 
 
-        $("#section-animated").one('click touchstart touchmove', function () {
+        $("#hero-body").one('click touchstart touchmove', function () {
             console.log(this);
             animationScroller();
         });

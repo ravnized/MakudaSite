@@ -124,7 +124,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                     <div class="column"><p>Video Corporate</p></div>
                                 </div>
                                 <div class="columns is-mobile">
-                                    <div class="column"><p><span class="boldOrange">Directors: </span></p>
+                                    <div class="column"><p><span class="boldOrange">Regia: </span></p>
                                     </div>
                                     <div class="column"><p> Simone
                                             Santacroce <br> Simone Bioli</p></div>

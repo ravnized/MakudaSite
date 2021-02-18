@@ -24,6 +24,8 @@
     overflow: hidden;
     color: white;
     text-align: center;
+    touch-action: none;
+    pointer-events: none;
 }
 
 .home-band p {

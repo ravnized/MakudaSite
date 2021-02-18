@@ -8,18 +8,7 @@
     "fragmented-image": "dsquared_copertina_fragmented.png",
     "title": "Dsquared2",
     "subtitle": "55th anniversary",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
-  },
-  {
-    "id": "BUFFEL",
-    "case-study": true,
-    "produzione": false,
-    "link": "buffel.php",
-    "image": "buffel_copertina.png",
-    "fragmented-image": "buffel_copertina_fragmented.png",
-    "title": "Buffel",
-    "subtitle": "Case Study",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    "description": "Compleanno di Deen e Dan, filmato e raccontato in stile moderno appositamente per i social"
   },
   {
     "id": "ZODA",
@@ -30,7 +19,7 @@
     "fragmented-image": "zoda_copertina_fragmented.png",
     "title": "Zoda",
     "subtitle": "oh madre mia",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    "description": "Video musicale scritto e diretto dal team makuda con la missione di raccontare la rinascita artistica del cantante."
   },
   {
     "id": "SUITES",
@@ -41,7 +30,7 @@
     "fragmented-image": "suites_copertina_fragmented.png",
     "title": "S & A",
     "subtitle": "Como",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    "description": "La travel experience degli ospiti di un lussuoso boutique hotel sulle rive del lago di como"
   },
   {
     "id": "CIROC",
@@ -52,6 +41,6 @@
     "fragmented-image": "ciroc_copertina_fragmented.png",
     "title": "Ciroc",
     "subtitle": "B-roll",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
+    "description": "Video promozionale reso dinamico grazie alla popolare tecnica estera \"B-roll\" che unitosi al sound design creato ad hoc, dona fluidità e coerenza narrativa."
   }
 ]

@@ -19,7 +19,7 @@
                 <p class="brand-icons">
                     <a href="https://www.facebook.com/makudaconsulting/"><i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.instagram.com/makudaofficial/?hl=it"><i class="fab fa-instagram"></i></a>
-                    <a href="https://vimeo.com/490741306"><i class="fab fa-vimeo"></i></a>
+                    <a href="https://vimeo.com/makudaconsulting"><i class="fab fa-vimeo"></i></a>
                     <a href="https://www.linkedin.com/company/makudaconsulting/"><i class="fab fa-linkedin"></i></a>
                 </p>
             </div>

@@ -204,7 +204,7 @@ $view = ButtonBeforeAfter("DECUBE");
     <p class="title" style="margin-bottom:10px;">
         Qualche Nostro <span class="makuda-color">Scatto</span>
     </p>
-    <p class="frase" style="color: white">
+    <p class="frase" style="color: white; text-align:center">
         Ecco qualche nostro scatto<br>
     </p>
     

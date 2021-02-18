@@ -1184,28 +1184,33 @@ body {
 
     .buttons {
         margin: 0 !important;
+        justify-content: center !important;
     }
+    .buttonBack{
+        height: unset;
+         margin-bottom: 0;
+}
 
-    .gif-cellulari > .column {
-        margin-top: 0 !important;
-        transform: scale(1) !important;
-    }
+.gif-cellulari > .column {
+    margin-top: 0 !important;
+    transform: scale(1) !important;
+}
 
-    .buttonText {
-        position: absolute;
-    }
+.buttonText {
+    position: absolute;
+}
 
-    .backgroundButton {
-        filter: grayscale(50%);
-        -webkit-filter: grayscale(50%);
-    }
+.backgroundButton {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
 
-    .buttonText{
-        text-align: center !important;
-    }
+.buttonText{
+    text-align: center !important;
+}
 
-    #waveform {
-        padding: 10px;
-    }
+#waveform {
+    padding: 10px;
+}
 
 }

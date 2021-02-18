@@ -178,7 +178,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
         <p class="title" style="margin-bottom:10px;">
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
-        <p class="frase">
+        <p class="frase" style="text-align:center;">
             Ecco qualche nostro scatto, Buon Appetito<br>
         </p>
         <br/>

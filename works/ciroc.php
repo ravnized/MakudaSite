@@ -101,7 +101,7 @@ $view = ButtonBeforeAfter("CIROC");
                                     <div class="column"><p>Ciroc</p></div>
                                 </div>
                                 <div class="columns is-mobile">
-                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    <div class="column"><p><span class="boldOrange">Regia: </span></p>
                                     </div>
                                     <div class="column"><p> Simone Santacroce</p></div>
                                 </div>

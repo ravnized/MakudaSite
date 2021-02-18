@@ -87,7 +87,7 @@ $view = ButtonBeforeAfter("DSQUARED2");
                                     <div class="column"><p>DSQuared</p></div>
                                 </div>
                                 <div class="columns is-mobile">
-                                    <div class="column"><p><span class="boldOrange">Direct: </span></p>
+                                    <div class="column"><p><span class="boldOrange">Regia: </span></p>
                                     </div>
                                     <div class="column"><p> Simone Santacroce</p></div>
                                 </div>
