@@ -289,8 +289,6 @@ Contacts
     }
 
     .makuda-home-link--works.makuda-home-link-wrap {
-        top: 0 !important;
-        bottom: 0;
         padding-left: 0 !important;
         text-align: right;
         justify-content: flex-end;

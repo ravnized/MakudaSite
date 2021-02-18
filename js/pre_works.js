@@ -232,6 +232,7 @@ function loader() {
             0
         );
     } else {
+        $('*').bind('touchmove', false);
         var leftBand = $('.makuda-home-link--works.makuda-home-link-wrap');
         var navBar = $('nav').height();
         leftBand.css('width', $(window).height() - navBar + 'px');
