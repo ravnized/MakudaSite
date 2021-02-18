@@ -108,6 +108,14 @@ $view = ButtonBeforeAfter("BUFFEL");
     </section>
 </div>
 
+<div class="container">
+
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
+
+</div>
+
+
 <div class="container imgs-slide">
 
 
@@ -130,7 +138,7 @@ $view = ButtonBeforeAfter("BUFFEL");
     </div>
 </div>
 
-
+<!--
 <div class="pubblicazione-social makuda-bgcolor" id="containerBrioche">
     <div class="container">
         <p class="title" id="innovazioneTitle">
@@ -202,9 +210,29 @@ $view = ButtonBeforeAfter("BUFFEL");
 
 
 </div>
+<script>
 
 
+    function trackLocation(e) {
+        var rect = videoContainer.getBoundingClientRect(),
+            position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
+        if (position <= 100) {
+            videoClipper.style.width = position + "%";
 
+        }
+    }
+
+    var videoContainer = document.getElementById("video-compare-container")
+
+    var videoClipper = document.getElementById("video-clipper"),
+        clippedVideo = videoClipper.getElementsByTagName("video")[0];
+    videoContainer.addEventListener("mousemove", trackLocation, false);
+    videoContainer.addEventListener("touchstart", trackLocation, false);
+    videoContainer.addEventListener("touchmove", trackLocation, false);
+
+</script>
+
+-->
 
 <br><br>
 <?php
@@ -238,12 +266,13 @@ button('BUFFEL');
 <?php require "../components/footer.php" ?>
 
 <script src="/js/libgif.js" type="text/javascript"></script>
-<!-- <script src="/js/rubbable.js" type="text/javascript"></script> -->
+<!-- <script src="/js/rubbable.js" type="text/javascript"></script>
+ <script src="buffelJS.js" type="text/javascript"></script>-->
 <script src="/js/utils.js" type="text/javascript"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 <script src="/js/aboutJS.js" type="text/javascript"></script>
-<script src="buffelJS.js" type="text/javascript"></script>
+
 <script>
     setTimeout(() => {
         $('.eapps-link').remove();
@@ -253,27 +282,6 @@ button('BUFFEL');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lethargy/1.0.9/lethargy.min.js"
         integrity="sha512-ux1qF1kwkCG5MM/4Hjp7MO8FqcJLyzfJavf6Nq2Xklh1Hr/YQbKk36NL0PDZMB//PzIZTBiCpMZdwScH/e4z6w=="
         crossorigin="anonymous"></script>
-<script>
-
-
-    function trackLocation(e) {
-        var rect = videoContainer.getBoundingClientRect(),
-            position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
-        if (position <= 100) {
-            videoClipper.style.width = position + "%";
-
-        }
-    }
-
-    var videoContainer = document.getElementById("video-compare-container")
-
-    var videoClipper = document.getElementById("video-clipper"),
-        clippedVideo = videoClipper.getElementsByTagName("video")[0];
-    videoContainer.addEventListener("mousemove", trackLocation, false);
-    videoContainer.addEventListener("touchstart", trackLocation, false);
-    videoContainer.addEventListener("touchmove", trackLocation, false);
-
-</script>
 
 </body>
 </html>

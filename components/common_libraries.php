@@ -1,6 +1,7 @@
 <?php
 
 echo '<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/favicon.png"/>
 <link href="/css/bulma.min.css" rel="stylesheet"/>
 <link href="/css/menu.css" rel="stylesheet" type="text/css"/>';
 echo '<link href="/css/bulma-carousel.min.css" rel="stylesheet"/>
