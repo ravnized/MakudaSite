@@ -136,10 +136,10 @@ $(document).ready(function () {
                 app.renderer.resize(widthWindow, heightWindow);
             });
         });
-
+        let oneTime = true;
         function animationScroller() {
             var tl = gsap.timeline();
-
+            unloadScrollBars()
             tl.to(displacementSprite.scale, {duration: 1, x: "+=10", y: "+=10"}, 0)
                 .to(
                     displacementFilter.scale,
@@ -240,16 +240,20 @@ $(document).ready(function () {
                             await sleep(500);
                         }
                     }
-
-
+                    oneTime = false;
+                    reloadScrollBars()
                     homeBandAnimation();
                 }, "animationVideoGruppo");
         }
 
 
-        $("#hero-body").one('click touchstart touchmove', function () {
-            console.log(this);
-            animationScroller();
+        $("#section-animated").one('click touchstart touchmove', function () {
+            if(oneTime){
+                console.log(this);
+                animationScroller();
+                oneTime = false;
+            }
+
         });
 
         var scroller = ScrollTrigger.create({

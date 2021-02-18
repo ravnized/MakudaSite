@@ -341,7 +341,7 @@
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
-                                        <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
+                                        <img alt="Zoda" src="media/img/zoda_img.jpg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
                                         <p><span>Artista Musicale</span></p>
@@ -368,7 +368,7 @@
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
-                                        <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
+                                        <img alt="Gaia Accoto" src="media/img/gaia_img.jpg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
                                         <p><span>Giornalista</span></p>
@@ -394,7 +394,7 @@
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
-                                        <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
+                                        <img alt="LucaImg" src="media/img/luca_img.jpeg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
                                         <p><span>Proprietario</span></p>
@@ -420,7 +420,7 @@
                             <div class="makuda-testimonials-item">
                                 <div class="makuda-testimonials-item__author">
                                     <div class="makuda-testimonials-item__author--image">
-                                        <img alt="Tony Norton" src="media/img/avatar-1577909_640.png"/>
+                                        <img alt="Dj Herca" src="media/img/djHerca_img.jpg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
                                         <p><span>Dj & Brand Manager</span></p>
