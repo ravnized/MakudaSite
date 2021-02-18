@@ -285,10 +285,12 @@ Contacts
     }
 
     .makuda-home-link--contacts.makuda-home-link-wrap {
+        position: absolute;
         padding-left: 0 !important;
     }
 
     .makuda-home-link--works.makuda-home-link-wrap {
+        position: absolute;
         padding-left: 0 !important;
         text-align: right;
         justify-content: flex-end;
