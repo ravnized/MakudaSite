@@ -94,16 +94,17 @@ $view = ButtonBeforeAfter("SUITES");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Suites & Atelier è il risultato dellʼincontro di arte ed eleganza, la residenza di
+                                    Suites & Atelier è il risultato dellʼincontro di arte ed eleganza,nata da una residenza di
                                     un artista trasformata in un alloggio (5 suites) vicino la riva del lago di Como.
-                                    Richiesta: avviare la presenza digitale dellʼattività curando in particolare modo la
+                                    <br>
+                                    Richiesta: avviare la presenza digitale dellʼattività curando in particolar modo la
                                     storia della struttura.
                                 </p>
                             </div>
                             <div class="column subVideoDescription">
                                 <div class="columns is-mobile">
                                     <div class="column"><p class="boldOrange">Cliente: </p></div>
-                                    <div class="column"><p>Suites & Artelier</p></div>
+                                    <div class="column"><p>Suites & Atelier</p></div>
                                 </div>
                                 <div class="columns is-mobile">
                                     <div class="column"><p><span class="boldOrange">Anno: </span></p>
@@ -166,7 +167,7 @@ $view = ButtonBeforeAfter("SUITES");
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase">
-            Ecco qualche nostro scatto<br>
+            La bellezza del turismo italiano.<br>
         </p>
         <br/>
 

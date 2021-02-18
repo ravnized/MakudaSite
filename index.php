@@ -123,7 +123,7 @@
     <p class="makuda-color title cut-fade-animation" id="we-are">WE ARE</p>
     <p class="whiteText" style="line-height:1.5;">
         Strategia, produzione e innovazione sono i 3 criteri sulla quale è stata
-        fondata Makuda; affida la tua azienda ad <span class="makuda-bold makuda-color">una singola realtà</span>,
+        fondata Makuda; affida la tua azienda ad <span class="makuda-bold makuda-color">una singola realtà</span>
         capace di
         unire la consulenza manageriale alla produzione di contenuti multimediali.
     </p>
@@ -216,7 +216,7 @@
                             <p class="underTitleInsideSquare"></p>
                             <p class="textInsideSquareLong">
                                 Eʼ arrivato il momento di dire: “Check mate”. Hai scelto Makuda e insieme abbiamo fatto
-                                la differenza sul mercato. Iniziamo a percepire i primi risultati della strategia scelta
+                                la differenza sul mercato. Iniziamo a percepire i primi risultati della strategia scelta.
 
                             </p>
                         </div>
@@ -371,7 +371,7 @@
                                         <img alt="Gaia Accoto" src="media/img/gaia_img.jpg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                        <p><span>Giornalista</span></p>
+                                        <p><span>Anchor Woman</span></p>
                                         <h6>Gaia Accoto per LBA</h6>
                                     </div>
                                 </div>

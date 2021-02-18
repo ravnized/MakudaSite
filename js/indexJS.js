@@ -27,7 +27,7 @@ $(document).ready(function () {
             $(".selected").removeClass("selected");
             $(".index-" + new_work_index).addClass("selected");
         }
-    }, 3000);
+    }, 10000);
     //DA GESTIRE MOBILE
     $(".fading-carousel").onSwipe(function (results) {
         // if(results.up == true)

@@ -78,7 +78,7 @@ $view = ButtonBeforeAfter("CARPISA");
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Inaugurazione apertura negozio #GoCarpisa x #Helbitz Piazza Cordusio.
+                                    Inaugurazione apertura del negozio #GoCarpisa x #Helbitz Piazza Cordusio.
                                     Collaborazione che ha permesso all'Architetto e Ricercatore Alessandro Ciambrone di
                                     esprimere la sua visione attraverso un murales visibile salendo al secondo piano del
                                     negozio.

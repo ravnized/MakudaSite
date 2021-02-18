@@ -73,11 +73,11 @@ $view = ButtonBeforeAfter("DSQUARED2");
                                 <p style="color: white;">
                                     Grazie al noto DJ Herca abbiamo realizzato questo After Movie del 55esimo compleanno
                                     dei fratelli Dean e Dan Caten fondatori della casa di moda Dsquared.
-                                    Questo video oltre all’aspetto celebrativo ha come scopo quello raccontare in chiave
+                                    Questo video oltre all’aspetto celebrativo ha come scopo quello di raccontare in chiave
                                     fresca e ritmata una festa anni 80 nelle rinomate
                                     Palestre Ceresio 7.
                                     Presenti nel video troviamo personaggi celebri provenienti da tutti i settori, dal
-                                    mondo della moda come Neil Barret, a quello dell’estetica come Aldo coppola e quello
+                                    mondo della moda come Neil Barret, a quello dell’estetica come Aldo Coppola e quello
                                     della fotografia come Giampaolo Sgrua.
                                 </p>
                             </div>

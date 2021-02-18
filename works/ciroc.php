@@ -91,7 +91,7 @@ $view = ButtonBeforeAfter("CIROC");
                                     prodotto, valorizzando invece la preparazione di un ottimo drink utilizzando come
                                     materia prima la Vodka Ciroc.
                                     Per risaltare maggiormente la preparazione abbiamo deciso di utilizzare come stile
-                                    di girato e montato, quello del B-roll, stile che in America sta riscontrando
+                                    di girato e montato: quello del B-roll, stile che in America sta riscontrando
                                     molto successo.
                                 </p>
                             </div>

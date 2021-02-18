@@ -132,7 +132,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
         </p>
         <p class="frase">
             Quando il prodotto è valido ed è ben posizionato sul mercato la strada è sicuramente in discesa. Cʼè stato
-            solo bisogno di potenziale al massimo la comunicazione digitale per far si che il posto fosse visibile agli
+            solo bisogno di potenziare al massimo la comunicazione digitale per far si che il posto fosse visibile agli
             occhi dei potenziali futuri clienti. E per fare questo occorre un prodotto diverso dal solito. Date
             unʼocchiata.
         </p>
@@ -168,7 +168,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
 
             </div>
             <p class="frase" style="padding-top: 20px">
-                Abbiamo sfruttato lʼuscita del film del momento “Joker” e abbiamo scelto di riprendere una delle scene
+                Abbiamo sfruttato lʼuscita del film del momento, “Joker”, e abbiamo scelto di riprendere una delle scene
                 che sarebbe diventata cult nel giro di poco tempo, ovvero la danza del protagonista sulle scale. In
                 maniera scherzosa lʼabbiamo reinterpretata; questo è il risultato finale.
             </p>
@@ -179,7 +179,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
             Qualche Nostro <span class="black-font">Scatto</span>
         </p>
         <p class="frase" style="text-align:center;">
-            Ecco qualche nostro scatto, Buon Appetito<br>
+            Ecco qualche nostro scatto, buon appetito.<br>
         </p>
         <br/>
 

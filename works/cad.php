@@ -116,8 +116,8 @@ $view = ButtonBeforeAfter("DANZA");
             <span class="black-font">Bello e semplice</span>
         </p>
         <p class="frase">
-            Il mood scelto per Centro arti Danza è stato il pulito dalla scelta della linea grafica, all' attenzione
-            sullo scatto fino alla creazione del sito web. La coerenza è stata la mossa vincente per seguire lʼidentità
+            Il mood scelto per Centro arti danza è stato il pulito, dalla scelta della linea grafica all' attenzione
+            sullo scatto, fino alla creazione del sito web. La coerenza è stata la mossa vincente per valorizzare lʼidentità
             della scuola.
 
         </p>

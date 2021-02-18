@@ -66,7 +66,7 @@
                   class="input inputMakuda"
                   name="firstName"
                   type="text"
-                  placeholder="Name"
+                  placeholder="Nome"
                 />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
@@ -81,7 +81,7 @@
                   class="input inputMakuda"
                   name="lastName"
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Cognome"
                 />
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
@@ -105,7 +105,7 @@
             </div>
             <br />
             <div class="field">
-              <label class="label">Message</label>
+              <label class="label">Messaggio</label>
               <div class="control">
                 <textarea
                   name="textArea"

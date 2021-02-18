@@ -144,7 +144,7 @@
             <div style="flex: 1"></div>
             <div class="person-infos">
                 <h5 style="font-size: 30px;">Armando Aspesani</h5>
-                <h6 style="font-size: 26px;">Project Manager</h6>
+                <h6 style="font-size: 26px;">Strategic Marketing Specialist</h6>
             </div>
         </div>
     </div>

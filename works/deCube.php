@@ -50,18 +50,23 @@ $view = ButtonBeforeAfter("DECUBE");
     #img6 {
         background-image: url(/media/img/works/deCube/4.jpg);
     }
+
     #img7 {
         background-image: url(/media/img/works/deCube/5.jpg);
     }
+
     #img8 {
         background-image: url(/media/img/works/deCube/6.jpg);
     }
+
     #img9 {
         background-image: url(/media/img/works/deCube/7.jpg);
     }
+
     #img10 {
         background-image: url(/media/img/works/deCube/8.jpg);
     }
+
     #img11 {
         background-image: url(/media/img/works/deCube/9.jpg);
     }
@@ -106,14 +111,15 @@ $view = ButtonBeforeAfter("DECUBE");
                         <br/>
                         <div id="description">
 
-                        </div><br/>
+                        </div>
+                        <br/>
                         <p class="subVideo">Il Risultato delle PR</p>
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
                                 <p style="color: white;">
-                                    Una delle sfide più interessanti e complesse, come dʼaltronde è il momento storico
-                                    delle discoteche, settore in forte crisi da ormai diversi anni. Ogni business ha la
+                                    Una delle sfide più interessanti e complesse, settore in forte crisi da ormai
+                                    diversi anni. Ogni business ha la
                                     propria strada da seguire per arrivare al successo. In questo caso lʼazienda ha
                                     scelto di dare priorità alle pubbliche relazione rispetto a tutto il resto.
                                 </p>
@@ -149,7 +155,8 @@ $view = ButtonBeforeAfter("DECUBE");
         </p>
         <p class="frase">
             Qualsiasi azione pensata per DE CUBE ha avuto come obiettivo il coinvolgimento di più persone possibili.
-            Dal personale allʼartistico, dai fornitori alle grafiche, fino agli scatti alla comunicazione. Lʼobiettivo è
+            Dal personale allʼartistico, dai fornitori alle grafiche, fino agli scatti della comunicazione. Lʼobiettivo
+            è
             stato chiaro fin da subito: il locale deve essere il centro del network creato.
 
         </p>
@@ -205,9 +212,9 @@ $view = ButtonBeforeAfter("DECUBE");
         Qualche Nostro <span class="makuda-color">Scatto</span>
     </p>
     <p class="frase" style="color: white; text-align:center">
-        Ecco qualche nostro scatto<br>
+        L'importanza di cogliere l'attimo<br>
     </p>
-    
+
     <div class="container imgs-slide">
         <div class="columns is-mobile gif-photo">
             <div class="column is-one-third-desktop">
@@ -217,7 +224,8 @@ $view = ButtonBeforeAfter("DECUBE");
             </div>
             <div class="column is-one-third-desktop">
                 <div class="img-slide ">
-                    <div id="img4" class="big-image image-div" style="background-size: contain; background-repeat: no-repeat"></div>
+                    <div id="img4" class="big-image image-div"
+                         style="background-size: contain; background-repeat: no-repeat"></div>
                 </div>
             </div>
             <div class="column is-one-third-desktop">
@@ -227,12 +235,13 @@ $view = ButtonBeforeAfter("DECUBE");
             </div>
             <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img6" class="big-image image-div"  style="background-position: top"></div>
+                    <div id="img6" class="big-image image-div" style="background-position: top"></div>
                 </div>
             </div>
             <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img7" class="small-image image-div marginTopPhotoMobile" style="margin-top: 12em;background-position: top"></div>
+                    <div id="img7" class="small-image image-div marginTopPhotoMobile"
+                         style="margin-top: 12em;background-position: top"></div>
                 </div>
             </div>
             <div class="column is-one-third-desktop">
@@ -242,7 +251,7 @@ $view = ButtonBeforeAfter("DECUBE");
             </div>
             <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img9" class="big-image image-div"  style="background-position: top"></div>
+                    <div id="img9" class="big-image image-div" style="background-position: top"></div>
                 </div>
             </div>
             <div class="column is-one-third-desktop">
@@ -252,7 +261,8 @@ $view = ButtonBeforeAfter("DECUBE");
             </div>
             <div class="column is-one-third-desktop">
                 <div class="img-slide">
-                    <div id="img11" class="big-image image-div marginTopPhotoMobile" style="background-position: top"></div>
+                    <div id="img11" class="big-image image-div marginTopPhotoMobile"
+                         style="background-position: top"></div>
                 </div>
             </div>
         </div>

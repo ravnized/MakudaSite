@@ -100,7 +100,7 @@ $view = ButtonBeforeAfter("TOIA");
                                     l’intenzione di rendere
                                     protagonista un bambino, ossia il cliente da giovane. Un personaggio nel quale
                                     ognuno è in grado di
-                                    riconoscersi. Un protagonista che si pone come obiettivo quello dell’aiutare
+                                    riconoscersi, un protagonista che si pone come obiettivo quello di aiutare
                                     inizialmente amici e
                                     parenti, per dedicarsi successivamente alle piccole e grandi aziende.
                                 </p>
