@@ -258,8 +258,11 @@ function loader() {
         );
 
         $(window).resize(function() {
+            var leftBand = $('.makuda-home-link--works.makuda-home-link-wrap');
+            leftBand.css('width',$(window).height()+'px');
+            var rightBand = $('.makuda-home-link--contacts.makuda-home-link-wrap');
+            rightBand.css('left', $(window).width() -80 +'px');
 
-            alert('window was resized!');
 
         });
 
