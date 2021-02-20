@@ -10,12 +10,13 @@ $view = ButtonBeforeAfter("BUFFEL");
 <head>
     <meta charset="UTF-8"/>
     <title>BUFFEL</title>
+    <?php require('../components/common_libraries.php') ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css"/>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>
     <link href="/css/animations.css" rel="stylesheet" type="text/css"/>
 
-    <?php require('../components/common_libraries.php') ?>
+
 </head>
 <body style="background-color: #111; min-height: 100vh">
 <style>
