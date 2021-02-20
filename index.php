@@ -259,7 +259,7 @@
 <div class="nostri-progetti makuda-bgcolor">
     <div class="works-content">
         <p class="title fade-in-top-animation">I NOSTRI PROGETTI</p>
-        <div class="fading-carousel columns is-vcentered">
+        <div class="fading-carousel columns is-desktop is-vcentered">
             <?php
             $myfile = fopen("media/json/carousel-home.json", "r") or die("Unable to open file!");
             $to_parse = fread($myfile, filesize("media/json/carousel-home.json"));
