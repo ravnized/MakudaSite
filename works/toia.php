@@ -65,7 +65,10 @@ $view = ButtonBeforeAfter("TOIA");
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="none">
-                                        <source src="/media/video/A_Story_Of_Matteo_Toia.mp4" type="video/mp4"/>
+                                        <source src="/media/video/works/Toia.mp4" type="video/mp4" label='2160p'/>
+                                        <source src="/media/video/works/Toia-1440p.m4v" type="video/mp4" label='1440p'/>
+                                        <source src="/media/video/works/Toia-1080p.m4v" type="video/mp4" label='1080p'/>
+                                        <source src="/media/video/works/Toia-720p.m4v" type="video/mp4" label='720p' selected='true'/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that

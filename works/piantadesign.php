@@ -67,7 +67,8 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="auto" playsinline>
-                                        <source src="/media/video/works/Piantanida%20Deff-1web.m4v" type="video/mp4"/>
+                                        <source src="/media/video/works/Piantanida.m4v" type="video/mp4" label='1080p'/>
+                                        <source src="/media/video/works/Piantanida-720p.m4v" type="video/mp4" label='720p'/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that

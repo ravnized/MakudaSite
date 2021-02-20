@@ -41,7 +41,8 @@ $view = ButtonBeforeAfter("DSQUARED2");
                                 <div class="container is-max-desktop">
                                     <video autoplay class=" video-js vjs-default-skin vjs-16-9"
                                            data-setup='{"controls":true}' loop muted preload="auto" playsinline>
-                                        <source src="/media/video/works/Dsquared2%20Deff%20web.m4v" type="video/mp4"/>
+                                        <source src="/media/video/works/Dsquared.m4v" type="video/mp4" label='1080p'/>
+                                        <source src="/media/video/works/Dsquared-720p.m4v" type="video/mp4" label='720p' selected='true'/>
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and
                                             consider upgrading to a web browser that
