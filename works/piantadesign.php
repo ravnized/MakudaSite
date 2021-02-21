@@ -33,6 +33,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
     #img2 {
         background-image: url(/media/img/works/piantanida_2.jpg);
         background-size: contain;
+        background-repeat: no-repeat;
 
     }
 

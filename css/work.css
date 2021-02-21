@@ -1005,6 +1005,12 @@ body {
 
 /* RESPONSIVE */
 
+@media only screen and (max-width: 850px) {
+  #video-compare-container {
+    padding-top: 300px !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .makuda-home-link--contacts,
   .rightBandSign,
@@ -1143,10 +1149,6 @@ body {
 
   .works-band {
     height: 100vh;
-  }
-
-  #video-compare-container {
-    padding-top: 300px !important;
   }
 
   .subVideoDescription .columns .column:nth-child(1) {
