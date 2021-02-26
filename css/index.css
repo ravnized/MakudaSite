@@ -1217,4 +1217,7 @@ p.fading-description {
     display: block !important;
     width: 200px !important;
   }
+  .makuda-testimonials-item__author--name h6 {
+    line-height: 1em;
+  }
 }
