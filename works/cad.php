@@ -98,10 +98,17 @@ $view = ButtonBeforeAfter("DANZA");
                                             Inizio 2019 - Fine 2020</p></div>
                                 </div>
                                 <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Agency: </span></p>
+                                    </div>
+                                    <div class="column"><p>
+                                            In Partnership con think+++</p></div>
+                                </div>
+                                <div class="columns is-mobile">
                                     <div class="column"><p class="boldOrange">Consulenti: </p></div>
                                     <div class="column"><p>Stefano
                                             D'onofrio <br> Armando Aspesani <br> Simone Santacroce</p></div>
                                 </div>
+                                
                             </div>
 
                         </div>

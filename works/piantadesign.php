@@ -126,6 +126,12 @@ $view = ButtonBeforeAfter("PIANTANIDA");
                                     <div class="column"><p>Video Corporate</p></div>
                                 </div>
                                 <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Agency: </span></p>
+                                    </div>
+                                    <div class="column"><p>
+                                            In Partnership con think+++</p></div>
+                                </div>
+                                <div class="columns is-mobile">
                                     <div class="column"><p><span class="boldOrange">Regia: </span></p>
                                     </div>
                                     <div class="column"><p> Simone

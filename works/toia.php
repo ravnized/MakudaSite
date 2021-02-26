@@ -121,6 +121,12 @@ $view = ButtonBeforeAfter("TOIA");
                                             Simone Santacroce <br> Taras Snegovoy</p></div>
                                 </div>
                                 <div class="columns is-mobile">
+                                    <div class="column"><p><span class="boldOrange">Agency: </span></p>
+                                    </div>
+                                    <div class="column"><p>
+                                            In Partnership con think+++</p></div>
+                                </div>
+                                <div class="columns is-mobile">
                                     <div class="column"><p class="boldOrange">Anno: </p></div>
                                     <div class="column"><p>2020</p></div>
                                 </div>
