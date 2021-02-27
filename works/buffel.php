@@ -112,15 +112,35 @@ $view = ButtonBeforeAfter("BUFFEL");
         </div>
     </section>
 </div>
-
-<div class="container">
-
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
-
+<div class='container'>
+<div class="gif-firstSection">
+    <div class="columns" style="padding-top: 50px; ">
+        <div class="column">
+            <p class="frase" style="text-align: right;padding-right: 50px">
+                Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
+                Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
+                mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
+                dal mercato attuale. Sperimentare e sondare la risposta degli utenti tramite i social media è
+                stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
+            </p>
+        </div>
+        <div class="column" style="min-height: 50vh">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
+        </div>
+    </div>
 </div>
-
-
+<br><br>
+<p class="title" style="margin-bottom:10px;color: white">
+    Andiamo a <span class="makuda-color">Mille</span>
+</p>
+<p class="frase" style="color: white">
+    Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
+    abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
+    fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
+    brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
+</p>
+</div>
 <div class="container imgs-slide">
 
 

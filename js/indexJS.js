@@ -44,11 +44,17 @@ $(document).ready(function () {
     console.log();
     $(".works-content").css(
       "height",
-      $(".works-content").height() +
+      $(".works-content .title").height() +
+        $(".works-content").height() +
         $(".fading-image").height() +
-        $(".fading-caption").height() +
+        $(".index-4").height() +
+        50 +
         "px"
     );
+  }
+  if ($(window).width() < 1024) {
+    console.log("br");
+    $("#brTime").append("<br>");
   }
   $(".fading-images.column.fade-in-right-animation").css(
     "height",

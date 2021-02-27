@@ -29,7 +29,7 @@
             <div class="container" id="containerText">
                 <div class="textOverlay" id="textOverlay">
                     <h2 class="is-size-1" id="weAre">
-                        <span>WE ARE</span>
+                        <span>WE ARE</span><div id="brTime"></div>
                         <img
                                 alt="Makuda"
                                 class="makuda-logo"
@@ -397,7 +397,7 @@
                                         <img alt="LucaImg" src="media/img/luca_img.jpeg"/>
                                     </div>
                                     <div class="makuda-testimonials-item__author--name">
-                                        <p><span>Proprietario</span></p>
+                                        <p><span>Proprietario Buffel</span></p>
                                         <h6>Luca</h6>
                                     </div>
                                 </div>
@@ -510,13 +510,6 @@
                 <div class="card-image">
                     <figure class="image is-covered">
                         <img src="/media/img/Carousel_Logo/suite&atelier.png" class="centeredImg" alt=""/>
-                    </figure>
-                </div>
-            </div>
-            <div class="card cardino">
-                <div class="card-image">
-                    <figure class="image is-covered">
-                        <img src="/media/img/Carousel_Logo/Tork.png" class="centeredImg" alt=""/>
                     </figure>
                 </div>
             </div>

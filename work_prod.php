@@ -59,7 +59,7 @@
 <div class="mainSection">
     <div class="blackScreenLeft"></div>
     <p class="title" style="padding-top:30px; font-size: 4em;">
-        PRODU<span class="makuda-color">ZIONI</span>
+        <span class="makuda-color">PRODUZIONI</span>
     </p>
 
 

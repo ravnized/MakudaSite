@@ -118,8 +118,8 @@ $view = ButtonBeforeAfter("DANZA");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social">
-    <div class="works-band" style="height: 110%"></div>
+<div class="pubblicazione-social makuda-bgcolor">
+    
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             <span class="black-font">Bello e semplice</span>
@@ -158,6 +158,7 @@ $view = ButtonBeforeAfter("DANZA");
 
 
 </div>
+<br><br>
 <?php
 button('DANZA');
 ?>

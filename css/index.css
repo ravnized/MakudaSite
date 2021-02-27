@@ -1039,10 +1039,10 @@ p.fading-description {
 
   .consultingText {
     letter-spacing: 1em;
+    margin-left: 0.9em;
   }
 
   .makuda-logo {
-    margin-left: -0.3em;
     width: 7.7em;
     height: auto;
   }
@@ -1101,10 +1101,8 @@ p.fading-description {
   #weAre {
     font-size: 2em !important;
   }
-
-  #weAre > span::after {
-    content: "\a";
-    white-space: pre;
+  #weAre span {
+    margin-right: -0.8em;
   }
 
   #g0 > p {
@@ -1113,6 +1111,9 @@ p.fading-description {
 
   #g0 > .makuda-light {
     font-size: 1em !important;
+  }
+  #brTime {
+    height: 0 !important;
   }
 
   #g1 > p {

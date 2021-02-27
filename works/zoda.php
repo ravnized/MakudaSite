@@ -125,8 +125,8 @@ $view = ButtonBeforeAfter("ZODA");
         </div>
     </section>
 </div>
-<div class="pubblicazione-social">
-    <div class="works-band"></div>
+<div class="pubblicazione-social makuda-bgcolor">
+    
     <div class="container">
         <p class="title" style="margin-bottom:10px;padding-top:40px;">
             Il Processo <span class="black-font">Creativo</span>
@@ -205,17 +205,18 @@ $view = ButtonBeforeAfter("ZODA");
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class='container'>
         <br><br>
         <p class="title makuda-color" style="margin-bottom:10px;">
             I Risultati
         </p>
         <p class="frase" style="color: white">
             Dopo sole due settimane dalla pubblicazione del video, sono state raggiunte piú di <span
-                    style="color: white; font-weight: 800">180'000
-                visulizzazioni</span> <br>
-            <br>
-            Campagna promo pubblicazione: <br><br>
-            Diversi Teaser
+                    style="color: white; font-weight: 800"><span class='makuda-color'>180'000 visulizzazioni</span>
+                </span> 
+            
         </p>
         <br/>
         <br><br>

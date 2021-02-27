@@ -156,19 +156,19 @@
             <div style="flex: 1"></div>
             <div class="containerBox" style="display: flex;">
                 <div class="counter-box">
-                    <span class="counter" data-count='249'>0</span>
+                    <span class="counter" data-count='170'>0</span>
                     <p class="italian-counter">PROGETTI <br> COMPLETATI</p>
                 </div>
                 <div class="counter-box">
-                    <span class="counter" data-count='249'>0</span>
+                    <span class="counter" data-count='94'>0</span>
                     <p class="italian-counter">CLIENTI <br> SODDISFATTI</p>
                 </div>
                 <div class="counter-box">
-                    <span class="counter" data-count='249'>0</span>
+                    <span class="counter" data-count='325'>0</span>
                     <p class="italian-counter">POST - IT <br> ATTACCATI</p>
                 </div>
                 <div class="counter-box">
-                    <span class="counter" data-count='249'>0</span>
+                    <span class="counter" data-count='780'>0</span>
                     <p class="italian-counter">CAFFÈ <br> BEVUTI</p>
                 </div>
             </div>

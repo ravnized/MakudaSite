@@ -205,6 +205,9 @@ $view = ButtonBeforeAfter("CARPISA");
             <i class="fas fa-chevron-right"></i>
         </div>
     </div>
+    <a class='cross'>
+        <i class="bi bi-plus" style="font-size: 3em"></i>
+    </a>
 </div>
 <br><br>
 <?php

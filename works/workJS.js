@@ -180,15 +180,15 @@ $("#buttonRight").on("click", function (e) {
   photosAnimationOnClick(url);
 });
 
-$(window).on("scroll resize", async function () {
-  if ($(".separator-yellow").length !== 0) {
-    console.log("separator");
-    $(".separator-yellow").css(
-      "height",
-      $(".works-band").height() - $(".gif-zoda").position().top + "px"
-    );
-  }
+if ($(".separator-yellow").length !== 0) {
+  console.log("separator");
+  $(".separator-yellow").css(
+    "height",
+    $(".pubblicazione-social").height() - $(".gif-zoda").position().top + "px"
+  );
+}
 
+$(window).on("scroll resize", async function () {
   if ($(".gif-firstSection").length !== 0) {
     if ($(".gif-firstSection").isOnScreen()) {
       tl.to($(".gif-firstSection"), {
