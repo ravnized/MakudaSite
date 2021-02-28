@@ -41,16 +41,21 @@ $(document).ready(function () {
   });
   /*FINE NAPO*/
   if ($(window).width() < 1024) {
-    console.log();
-    $(".works-content").css(
-      "height",
+    let height =
       $(".works-content .title").height() +
-        $(".works-content").height() +
-        $(".fading-image").height() +
-        $(".index-4").height() +
-        50 +
-        "px"
-    );
+      +$(".works-content").height() +
+      +$(
+        "body > div.nostri-progetti.makuda-bgcolor > div > div > div.fading-images.column.fade-in-right-animation > div.fading-image.index-4"
+      ).height() +
+      +$(
+        "body > div.nostri-progetti.makuda-bgcolor > div > div > div.fade-in-left-animation.column.fading-caption-content > div.fading-caption.index-4"
+      ).height() +
+      50;
+    console.log(height);
+
+    $(".works-content").css("height", height + "px");
+    let heightImage = $(".fading-image").height();
+    $(".fading-images ").css("height", heightImage + "px");
   }
 
   $(".fading-images.column.fade-in-right-animation").css(
