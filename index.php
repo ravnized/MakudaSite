@@ -29,7 +29,7 @@
             <div class="container" id="containerText">
                 <div class="textOverlay" id="textOverlay">
                     <h2 class="is-size-1" id="weAre">
-                        <span>WE ARE</span><div id="brTime"></div>
+                        <span>WE ARE</span>
                         <img
                                 alt="Makuda"
                                 class="makuda-logo"

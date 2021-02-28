@@ -1033,6 +1033,10 @@ p.fading-description {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1024px) {
+  #weAre > span::after {
+    content: "\a";
+    white-space: pre;
+  }
   .hero-video {
     display: block !important;
   }

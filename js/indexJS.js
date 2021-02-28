@@ -52,10 +52,7 @@ $(document).ready(function () {
         "px"
     );
   }
-  if ($(window).width() < 1024) {
-    console.log("br");
-    $("#brTime").append("<br>");
-  }
+
   $(".fading-images.column.fade-in-right-animation").css(
     "height",
     $(".fading-image").height() + "px"
