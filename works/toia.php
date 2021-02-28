@@ -15,8 +15,9 @@ $view = ButtonBeforeAfter("TOIA");
     <link href="/css/animations.css" rel="stylesheet" type="text/css"/>
 
 </head>
-<body style="background-color: #111; min-height: 100vh">
 
+<body style="background-color: #111; min-height: 100vh">
+<?php require('../components/libraries_after_body.php') ?>
 <style>
     @media only screen and (max-width: 1024px) {
         .subTitleVideo:before {

@@ -31,7 +31,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
-  <body style="background-color: #111">
+  <body style="background-color:#111"><?php require('/components/libraries_after_body.php') ?>
 
     <?php require("components/navbar.php"); ?>
 

@@ -16,7 +16,7 @@ $view = ButtonBeforeAfter("CIROC");
 
 </head>
 
-<body style="background-color:#111;">
+<body style="background-color:#111"><?php require('../components/libraries_after_body.php') ?>
 
 <?php require("../components/navbar.php"); ?>
 

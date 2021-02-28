@@ -17,7 +17,7 @@ $view = ButtonBeforeAfter("PIANTANIDA");
 </head>
 
 
-<body style="background-color:#111;">
+<body style="background-color:#111"><?php require('../components/libraries_after_body.php') ?>
 
 <style>
     @media only screen and (max-width: 1024px) {

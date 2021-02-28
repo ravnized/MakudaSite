@@ -19,6 +19,7 @@ $view = ButtonBeforeAfter("BUFFEL");
 
 </head>
 <body style="background-color: #111; min-height: 100vh">
+<?php require('../components/libraries_after_body.php') ?>
 <style>
     #img1 {
         background-image: url(/media/img/works/3_mille_giri/1.jpg);

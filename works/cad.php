@@ -16,6 +16,7 @@ $view = ButtonBeforeAfter("DANZA");
 
 </head>
 <body style="background-color: #111; min-height: 100vh">
+<?php require('../components/libraries_after_body.php') ?>
 <style>
     #img3 {
         background-image: url(/media/img/works/cad_1.png);

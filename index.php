@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<?php require('/components/libraries_after_body.php') ?>
 <?php require "components/loader.html"; ?>
 
 <?php require "components/navbar.php"; ?>

@@ -40,5 +40,3 @@
 </footer>
 <script src="/js/footer.js"></script>
 <script src="/js/animations.js"></script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD8SSC7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

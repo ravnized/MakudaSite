@@ -9,7 +9,8 @@
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="css/pre_works.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="background-color: #111">
+<body style="background-color:#111">
+<?php require('/components/libraries_after_body.php') ?>
 
 <style>
     .makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
