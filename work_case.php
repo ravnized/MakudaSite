@@ -10,7 +10,7 @@
     <link href="css/pre_works.css" rel="stylesheet" type="text/css"/>
 </head>
 <body style="background-color:#111">
-<?php require('/components/libraries_after_body.php') ?>
+<?php require('./components/libraries_after_body.php') ?>
 
 <style>.makuda-home-link--contacts.is-loaded .makuda-home-link.is-hover span:first-child {
         color: rgba(255, 197, 32, 1);

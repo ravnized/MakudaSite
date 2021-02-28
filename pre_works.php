@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 <body style="background-color:#111">
-<?php require('/components/libraries_after_body.php') ?>
+<?php require('./components/libraries_after_body.php') ?>
 
 <?php require "components/loader.html"; ?>
 
