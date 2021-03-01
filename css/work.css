@@ -650,7 +650,7 @@ div.mask {
   width: 100%;
   padding: 0 !important;
   opacity: 0;
-  background-image: url("/media/img/works/zoda_3_1.jpg") !important;
+  background-image: url("/media/img/lavori/zoda_3_1.jpg") !important;
 }
 
 .parallax-image .gif-zoda {
@@ -1240,5 +1240,15 @@ body {
 
   #waveform {
     padding: 10px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .makuda-home-link--contacts,
+  .rightBandSign,
+  .full-screen-carousel-control {
+    display: none !important;
+  }
+  .progress_wrap {
+    display: none !important;
   }
 }

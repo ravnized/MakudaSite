@@ -5,7 +5,7 @@
         <div class="columns fade-in-animation" id="main-block-footer">
             <div class="column find-us">
                 <p class="has-text-centered">FIND US</p>
-                <a href="/contacts.php">
+                <a href="/contatti">
                     <div class="animatedBtn">
                         <svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
                             <rect class="shape" height="50" width="200" />
@@ -35,6 +35,7 @@
                 </a>
             </div>
         </div>
+        <a href="/privacy_policy"><p class="has-text-centered copyright">Privacy e Policy</p></a>
         <p class="has-text-centered copyright">© MAKUDA 2021 - P.IVA 03736540125</p>
     </div>
 </footer>

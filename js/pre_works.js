@@ -153,11 +153,11 @@ function animationStart() {
   }
 
   $("#video1,#text-case-study").on("click", function () {
-    location.href = "/work_case.php";
+    location.href = "/case_study";
   });
 
   $("#video2,#text-produzioni").on("click", function () {
-    location.href = "/work_prod.php";
+    location.href = "/produzioni";
   });
 }
 

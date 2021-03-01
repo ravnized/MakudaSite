@@ -30,17 +30,17 @@ $view = ButtonBeforeAfter("CIROC");
     }
 
     #img1 {
-        background-image: url(/media/img/works/ciroc_3.jpg);
+        background-image: url(/media/img/lavori/ciroc_3.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/ciroc_2.jpg);
+        background-image: url(/media/img/lavori/ciroc_2.jpg);
 
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/ciroc_1.jpg);
+        background-image: url(/media/img/lavori/ciroc_1.jpg);
     }
 
 

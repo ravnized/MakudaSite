@@ -1,7 +1,7 @@
 ScrollTrigger.saveStyles(".container-hero div")
 
 function redirect(URL) {
-    window.location = '/works/buffel.php' + '#' + URL;
+    window.location = '/lavori/buffel.php' + '#' + URL;
 }
 
 var animationTimer = 750;

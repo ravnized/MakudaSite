@@ -22,15 +22,15 @@ $view = ButtonBeforeAfter("BUFFEL");
 <?php require('../components/libraries_after_body.php') ?>
 <style>
     #img1 {
-        background-image: url(/media/img/works/3_mille_giri/1.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/3_mille_giri/2.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/2.jpg);
     }
 
     #img3 {
-        background-image: url(/media/img/works/3_mille_giri/3.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/3.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

@@ -39,7 +39,7 @@
                     </h2>
                     <h2 class="consultingText">CONSULTING</h2>
 
-                    <a href="/pre_works.php" style="display: block">
+                    <a href="/lavori_selezione" style="display: block">
                         <div class="animatedBtn" style="opacity: 0">
                             <svg
                                     height="50"
@@ -248,7 +248,7 @@
         </div>
     </div>
 </div>
-<a href="about.php">
+<a href="about">
     <div class="animatedBtn">
         <svg height="50" width="320" xmlns="http://www.w3.org/2000/svg" class="scopri-chi-siamo">
             <rect class="shape" height="50" width="320"/>
@@ -277,7 +277,7 @@
 
                     $classes_added = ($c == 1 ? " selected" : " ") . " index-" . $c;
                     echo "<div class='fading-image $classes_added'>
-                      <img class='' src='media/img/works/" . $view["fragmented-image"] . "'>
+                      <img class='' src='media/img/lavori/" . $view["fragmented-image"] . "'>
                     </div>";
                 }
                 ?>
@@ -295,7 +295,7 @@
                         <p class="fading-title"><?= $view["title"] ?></p>
                         <p class="fading-subtitle"><?= $view["subtitle"] ?></p>
                         <p class="fading-description" style="line-height:1.5;"><?= $view["description"] ?></p>
-                        <a href="<?= "works/" . $view["link"] ?>">
+                        <a href="<?= "lavori/" . $view["link"] ?>">
                             <div class="animatedBtn">
                                 <svg height="50" width="200px" xmlns="http://www.w3.org/2000/svg">
                                     <rect class="shape" height="50" width="200px"/>

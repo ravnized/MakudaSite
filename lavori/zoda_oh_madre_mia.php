@@ -20,35 +20,35 @@ $view = ButtonBeforeAfter("ZODA");
 <style>
 
     #imgRectangle_3 {
-        background-image: url(/media/img/works/piantanida_1.JPG);
+        background-image: url(/media/img/lavori/piantanida_1.JPG);
         background-size: contain;
         padding: 20px;
     }
 
     #img1 {
-        background-image: url(/media/img/works/zoda_1.jpg);
+        background-image: url(/media/img/lavori/zoda_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/zoda_2.jpg);
+        background-image: url(/media/img/lavori/zoda_2.jpg);
 
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/zoda_3.jpg);
+        background-image: url(/media/img/lavori/zoda_3.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/zoda_4.jpg);
+        background-image: url(/media/img/lavori/zoda_4.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/zoda_5.jpg);
+        background-image: url(/media/img/lavori/zoda_5.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/zoda_6.jpg);
+        background-image: url(/media/img/lavori/zoda_6.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

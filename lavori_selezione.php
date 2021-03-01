@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Works</title>
-    <link href="css/bulma.min.css" rel="stylesheet"/>
+    <title>Lavori</title>
+
+    <?php require './components/common_libraries.php' ?>
     <link href="css/pre_works.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="css/menu.css" rel="stylesheet" type="text/css"/>
-    <link
-            href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
-            rel="stylesheet"
-    />
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet"/>
-    <script
-            crossorigin="anonymous"
-            src="https://kit.fontawesome.com/9eeab300fc.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 </head>
 <body style="background-color:#111">
 <?php require('./components/libraries_after_body.php') ?>

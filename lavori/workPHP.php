@@ -3,8 +3,8 @@
 
 function ButtonBeforeAfter($ID)
 {
-    $myfile = fopen("../media/json/home-works.json", "r") or die("Unable to open file!");
-    $to_parse = fread($myfile, filesize("../media/json/home-works.json"));
+    $myfile = fopen("../media/json/home-lavori.json", "r") or die("Unable to open file!");
+    $to_parse = fread($myfile, filesize("../media/json/home-lavori.json"));
     fclose($myfile);
     $parsed = json_decode($to_parse, true);
     $index = 0;
@@ -25,8 +25,8 @@ function ButtonBeforeAfter($ID)
 
 function button($ID)
 {
-    $myfile = fopen("../media/json/home-works.json", "r") or die("Unable to open file!");
-    $to_parse = fread($myfile, filesize("../media/json/home-works.json"));
+    $myfile = fopen("../media/json/home-lavori.json", "r") or die("Unable to open file!");
+    $to_parse = fread($myfile, filesize("../media/json/home-lavori.json"));
     fclose($myfile);
     $parsed = json_decode($to_parse, true);
     $index = 0;
@@ -70,7 +70,7 @@ function button($ID)
                 ?>"
                    data-link="<?php
                    if (!empty($vBefore)) {
-                       echo '/works/' . $vBefore['link'];
+                       echo '/lavori/' . $vBefore['link'];
                    }
                    ?>">
 
@@ -78,7 +78,7 @@ function button($ID)
 
                          src="<?php
                          if (!empty($vBefore)) {
-                             echo '/media/img/works/' . $vBefore['image'];
+                             echo '/media/img/lavori/' . $vBefore['image'];
                          }
                          ?>">
 
@@ -96,9 +96,9 @@ function button($ID)
             <div class="has-text-centered">
                 <a class="button is-dark buttonBack" href="<?php
                 if ($view['case-study'] == true) {
-                    echo '/work_case.php';
+                    echo '/case_study';
                 } else {
-                    echo '/work_prod.php';
+                    echo '/produzioni';
                 }
                 ?>">
                     <p class="buttonText " style="text-align: center">Torna Indietro</p>
@@ -115,7 +115,7 @@ function button($ID)
                 ?>"
                    data-link="<?php
                    if (!empty($vAfter)) {
-                       echo '/works/' . $vAfter['link'];
+                       echo '/lavori/' . $vAfter['link'];
                    }
                    ?>">
                     <p class="buttonText" style="text-align: right"><?php
@@ -126,7 +126,7 @@ function button($ID)
 
                          src="<?php
                          if (!empty($vAfter)) {
-                             echo '/media/img/works/' . $vAfter['image'];
+                             echo '/media/img/lavori/' . $vAfter['image'];
                          }
                          ?>">
 

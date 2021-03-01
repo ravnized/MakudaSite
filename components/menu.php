@@ -15,7 +15,7 @@
 
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="/index.php">
+      <a href="/">
         <span class="letter">H</span>
         <span class="letter">O</span>
         <span class="letter">M</span>
@@ -26,7 +26,7 @@
 
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="/about.php">
+      <a href="/about">
         <span class="letter">A</span>
         <span class="letter">B</span>
         <span class="letter">O</span>
@@ -37,26 +37,27 @@
   </div>
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="/pre_works.php">
-        <span class="letter">W</span>
+      <a href="/lavori_selezione">
+        <span class="letter">L</span>
+        <span class="letter">A</span>
+        <span class="letter">V</span>
         <span class="letter">O</span>
         <span class="letter">R</span>
-        <span class="letter">K</span>
-        <span class="letter">S</span>
+        <span class="letter">I</span>
       </a>
     </div>
   </div>
   <div class="buttonMenu">
     <div class="letterWrapper">
-      <a href="/contacts.php">
+      <a href="/contatti">
         <span class="letter">C</span>
         <span class="letter">O</span>
         <span class="letter">N</span>
         <span class="letter">T</span>
         <span class="letter">A</span>
-        <span class="letter">C</span>
         <span class="letter">T</span>
-        <span class="letter">S</span>
+        <span class="letter">T</span>
+        <span class="letter">I</span>
       </a>
     </div>
   </div>

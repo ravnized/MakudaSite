@@ -19,16 +19,16 @@ $view = ButtonBeforeAfter("DANZA");
 <?php require('../components/libraries_after_body.php') ?>
 <style>
     #img3 {
-        background-image: url(/media/img/works/cad_1.png);
+        background-image: url(/media/img/lavori/cad_1.png);
     }
 
     #img2 {
-        background-image: url(/media/img/works/cad_2.png);
+        background-image: url(/media/img/lavori/cad_2.png);
 
     }
 
     #img1 {
-        background-image: url(/media/img/works/cad_3.png);
+        background-image: url(/media/img/lavori/cad_3.png);
     }
 
 </style>

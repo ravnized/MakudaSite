@@ -60,7 +60,6 @@
 }
 
 .letter {
-    transform: translateX(-45%);
     opacity: 0;
     font-family: "Gelion-Black", Gelion-Black, sans-serif;
     color: black;

@@ -27,48 +27,48 @@ $view = ButtonBeforeAfter("DECUBE");
     }
 
     #img1 {
-        background-image: url(/media/img/works/deCube/decube_1.jpg);
+        background-image: url(/media/img/lavori/deCube/decube_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/deCube/decube_2.jpg);
+        background-image: url(/media/img/lavori/deCube/decube_2.jpg);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/deCube/1.jpg);
+        background-image: url(/media/img/lavori/deCube/1.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/deCube/2.jpg);
+        background-image: url(/media/img/lavori/deCube/2.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/deCube/3.jpg);
+        background-image: url(/media/img/lavori/deCube/3.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/deCube/4.jpg);
+        background-image: url(/media/img/lavori/deCube/4.jpg);
     }
 
     #img7 {
-        background-image: url(/media/img/works/deCube/5.jpg);
+        background-image: url(/media/img/lavori/deCube/5.jpg);
     }
 
     #img8 {
-        background-image: url(/media/img/works/deCube/6.jpg);
+        background-image: url(/media/img/lavori/deCube/6.jpg);
     }
 
     #img9 {
-        background-image: url(/media/img/works/deCube/7.jpg);
+        background-image: url(/media/img/lavori/deCube/7.jpg);
     }
 
     #img10 {
-        background-image: url(/media/img/works/deCube/8.jpg);
+        background-image: url(/media/img/lavori/deCube/8.jpg);
     }
 
     #img11 {
-        background-image: url(/media/img/works/deCube/9.jpg);
+        background-image: url(/media/img/lavori/deCube/9.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

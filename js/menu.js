@@ -99,21 +99,24 @@ function animateMenu() {
             autoAlpha: 1,
             display: "flex",
         })
-        .to(".letter", {
+        .fromTo(".letter",{
+          x:"-45%",
+        }, {
             duration: 0.5,
-            translateX: 0,
+            x: 0,
             autoAlpha: 1,
         });
 }
 
 function animateMenuReverse() {
     let tl = gsap.timeline();
-    tl.to(
+    tl.fromTo(
         ".letter",
+        {x: 0},
         {
             duration: 0.5,
             autoAlpha: 0,
-            translateX: "+45%",
+            x: "+45%",
         },
         0
     )
@@ -133,7 +136,7 @@ function animateMenuReverse() {
             "-=0.5"
         )
         .to(".letter", {
-            translateX: "-45%",
+            x: "-45%",
         });
     tl.add(function () {
         $(".menu-background").removeAttr("style");

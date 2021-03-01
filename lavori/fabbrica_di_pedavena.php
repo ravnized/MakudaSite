@@ -27,28 +27,28 @@ $view = ButtonBeforeAfter("PEDAVENA");
         }
     }
     #img1 {
-        background-image: url(/media/img/works/FDP/1.jpg);
+        background-image: url(/media/img/lavori/FDP/1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/FDP/2.jpg);
+        background-image: url(/media/img/lavori/FDP/2.jpg);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/FDP/3.jpg);
+        background-image: url(/media/img/lavori/FDP/3.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/FDP/4.jpg);
+        background-image: url(/media/img/lavori/FDP/4.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/FDP/5.jpg);
+        background-image: url(/media/img/lavori/FDP/5.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/FDP/6.jpg);
+        background-image: url(/media/img/lavori/FDP/6.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

@@ -27,30 +27,30 @@ $view = ButtonBeforeAfter("PIANTANIDA");
         }
     }
     #img1 {
-        background-image: url(/media/img/works/piantanida_1.jpg);
+        background-image: url(/media/img/lavori/piantanida_1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/piantanida_2.jpg);
+        background-image: url(/media/img/lavori/piantanida_2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/piantanida_3.jpg);
+        background-image: url(/media/img/lavori/piantanida_3.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/piantanida_4.jpg);
+        background-image: url(/media/img/lavori/piantanida_4.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/piantanida_5.jpg);
+        background-image: url(/media/img/lavori/piantanida_5.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/piantanida_6.jpg);
+        background-image: url(/media/img/lavori/piantanida_6.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

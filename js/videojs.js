@@ -26149,7 +26149,7 @@
         if (fullscreenOptions !== undefined) {
           fsOptions = fullscreenOptions;
         }
-      } // This method works as follows:
+      } // This method lavori as follows:
       // 1. if a fullscreen api is available, use it
       //   1. call requestFullscreen with potential options
       //   2. if we got a promise from above, use it to update isFullscreen()
@@ -59516,7 +59516,7 @@
     if (sourceOptions && !player.eme) {
       videojs$1.log.warn('DRM encrypted source cannot be decrypted without a DRM plugin');
       return;
-    } // works around https://bugs.chromium.org/p/chromium/issues/detail?id=895449
+    } // lavori around https://bugs.chromium.org/p/chromium/issues/detail?id=895449
     // in non-IE11 browsers. In IE11 this is too early to initialize media keys
 
 
@@ -59745,7 +59745,7 @@
         tech.overrideNativeAudioTracks(true);
         tech.overrideNativeVideoTracks(true);
       } else if (_this.options_.overrideNative && (tech.featuresNativeVideoTracks || tech.featuresNativeAudioTracks)) {
-        // overriding native HLS only works if audio tracks have been emulated
+        // overriding native HLS only lavori if audio tracks have been emulated
         // error early if we're misconfigured
         throw new Error('Overriding native HLS requires emulated tracks. ' + 'See https://git.io/vMpjB');
       } // listen for fullscreenchange events for this player so that we

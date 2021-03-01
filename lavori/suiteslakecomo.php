@@ -23,28 +23,28 @@ $view = ButtonBeforeAfter("SUITES");
         }
     }
     #img1 {
-        background-image: url(/media/img/works/Suite&Atelier/1.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/1.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/works/Suite&Atelier/2.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/2.jpg);
 
     }
 
     #img3 {
-        background-image: url(/media/img/works/Suite&Atelier/3.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/3.jpg);
     }
 
     #img4 {
-        background-image: url(/media/img/works/Suite&Atelier/4.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/4.jpg);
     }
 
     #img5 {
-        background-image: url(/media/img/works/Suite&Atelier/5.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/5.jpg);
     }
 
     #img6 {
-        background-image: url(/media/img/works/Suite&Atelier/6.jpg);
+        background-image: url(/media/img/lavori/Suite&Atelier/6.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact US</title>
+    <title>Contattaci</title>
     <link href="css/bulma.min.css" rel="stylesheet" />
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" />
@@ -52,10 +52,10 @@
           </h1>
           <br />
           <div class="orangeStick">
-            <h1 class="whiteH1meno"><a>Facebook</a></h1>
-            <h1 class="whiteH1meno"><a>Instagram</a></h1>
-              <h1 class="whiteH1meno"><a>Vimeo</a></h1>
-              <h1 class="whiteH1meno"><a>Linkedin</a></h1>
+            <h1 class="whiteH1meno"><a href="https://www.facebook.com/makudaconsulting/">Facebook</a></h1>
+            <h1 class="whiteH1meno"><a href="https://www.instagram.com/makudaofficial/?hl=it">Instagram</a></h1>
+              <h1 class="whiteH1meno"><a href="https://vimeo.com/makudaconsulting">Vimeo</a></h1>
+              <h1 class="whiteH1meno"><a href="https://www.linkedin.com/company/makudaconsulting/">Linkedin</a></h1>
           </div>
         </div>
         <div class="column">
