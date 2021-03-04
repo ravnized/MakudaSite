@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contattaci</title>
     <?php require './components/common_libraries.php' ?>
-    <link href="css/bulma.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contattaci - Makuda</title>
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/contacts.css" />
     <link
       rel="stylesheet"
@@ -18,7 +16,6 @@
       src="https://kit.fontawesome.com/9eeab300fc.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"
       integrity="sha512-O7kHS9ooekX8EveiC94z9xSvD/4xt10Qigl6uEKvspYykdux3Ci5QNu5fwi4ca0ZkZI/oCgx5ja8RklWUEqzxQ=="
@@ -29,7 +26,6 @@
       integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body style="background-color:#111">
