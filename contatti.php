@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contattaci</title>
+    <?php require './components/common_libraries.php' ?>
     <link href="css/bulma.min.css" rel="stylesheet" />
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/menu.css" />
@@ -31,7 +32,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
-  <body style="background-color:#111"><?php require('./components/libraries_after_body.php') ?>
+  <body style="background-color:#111">
+    <?php require('./components/libraries_after_body.php') ?>
 
     <?php require("components/navbar.php"); ?>
 
