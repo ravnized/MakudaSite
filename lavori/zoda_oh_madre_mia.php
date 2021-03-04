@@ -301,7 +301,7 @@ button('ZODA');
 ?>
 
 <?php require "../components/footer.php" ?>
-
+<?php require "../components/works_libraries.php" ?>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
 </body>

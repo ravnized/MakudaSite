@@ -534,9 +534,11 @@
     var carousel2 = bulmaCarousel.attach(".hero-carousel");
 </script>
 <script src="js/carouselManipulator.js"></script>
-<script src="js/swipe.js"></script>
 <script src="js/indexJS.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/parallelepipedoJS.js"></script>
+<script src="/js/CSSRulePlugin.min.js"></script>
+<script src="/js/ScrollToPlugin.min.js"></script>
+<script src="/js/ScrollTrigger.min.js"></script>
 </body>
 </html>

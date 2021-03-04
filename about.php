@@ -9,8 +9,6 @@
     <link href="css/about.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="css/animations.css" rel="stylesheet" type="text/css"/>
-
-
 </head>
 
 <body style="background-color:#111">
@@ -107,7 +105,7 @@
             <div style="flex: 1"></div>
             <div class="person-infos">
                 <h5 style="font-size: 30px;">Simone Bioli</h5>
-                <h6 style="font-size: 26px;">Photografer & Videomaker</h6>
+                <h6 style="font-size: 26px;">Photographer & Videomaker</h6>
             </div>
         </div>
         <div class="person-container">

@@ -41,5 +41,4 @@
 </footer>
 <script src="/js/footer.js"></script>
 <script src="/js/animations.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<script src="https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+<script src="/js/font-awesome.js"></script>

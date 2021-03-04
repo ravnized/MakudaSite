@@ -29,16 +29,6 @@ $(document).ready(function () {
     }
   }, 10000);
   //DA GESTIRE MOBILE
-  $(".fading-carousel").onSwipe(function (results) {
-    // if(results.up == true)
-    //   alert("Up")
-    // if(results.right == true)
-    //   alert("Right")
-    // if(results.down == true)
-    //   alert("Down")
-    // if(results.left == true)
-    //   alert("Left")
-  });
   /*FINE NAPO*/
   if ($(window).width() < 1024) {
     let height =
@@ -50,7 +40,7 @@ $(document).ready(function () {
       +$(
         "body > div.nostri-progetti.makuda-bgcolor > div > div > div.fade-in-left-animation.column.fading-caption-content > div.fading-caption.index-4"
       ).height() +
-      50;
+      100;
     console.log(height);
 
     $(".works-content").css("height", height + "px");

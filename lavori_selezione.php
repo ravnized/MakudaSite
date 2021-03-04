@@ -98,9 +98,6 @@
         </div>
     </div>
 </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
 <script src="js/CSSRulePlugin.min.js" type="text/javascript"></script>
 <script src="js/menu.js" type="text/javascript"></script>
 <script src='js/pre_works.js' type='text/javascript'></script>

@@ -290,14 +290,13 @@ button('BUFFEL');
 
 </div>
 <?php require "../components/footer.php" ?>
-
+<?php require "../components/works_libraries.php" ?>
 <script src="/js/libgif.js" type="text/javascript"></script>
 <!-- <script src="/js/rubbable.js" type="text/javascript"></script>
  <script src="buffelJS.js" type="text/javascript"></script>-->
 <script src="/js/utils.js" type="text/javascript"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
-<script src="/js/aboutJS.js" type="text/javascript"></script>
 
 <script>
     setTimeout(() => {
@@ -305,9 +304,5 @@ button('BUFFEL');
     }, 2000);
 
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lethargy/1.0.9/lethargy.min.js"
-        integrity="sha512-ux1qF1kwkCG5MM/4Hjp7MO8FqcJLyzfJavf6Nq2Xklh1Hr/YQbKk36NL0PDZMB//PzIZTBiCpMZdwScH/e4z6w=="
-        crossorigin="anonymous"></script>
-
 </body>
 </html>
