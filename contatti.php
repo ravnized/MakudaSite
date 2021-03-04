@@ -28,7 +28,7 @@
     ></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
-  <body style="background-color:#fff">
+  <body style="background-color:#111">
     <?php require('./components/libraries_after_body.php') ?>
 
     <?php require("components/navbar.php"); ?>
