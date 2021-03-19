@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <title>Lavori</title>
+    <title>Lavori - Makuda Consulting</title>
 
     <?php require './components/common_libraries.php' ?>
     <link href="css/pre_works.css" rel="stylesheet" type="text/css"/>

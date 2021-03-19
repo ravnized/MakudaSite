@@ -9,7 +9,7 @@ $view = ButtonBeforeAfter("BUFFEL");
 <html class="has-navbar-fixed-top" lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>BUFFEL</title>
+    <title>BUFFEL - Makuda Consulting</title>
     <?php require('../components/common_libraries.php') ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css"/>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>

@@ -7,7 +7,7 @@ $view = ButtonBeforeAfter("ZODA");
 
 <head>
     <meta charset="UTF-8"/>
-    <title>Zoda</title>
+    <title>Zoda - Makuda Consulting</title>
     <?php require('../components/common_libraries.php') ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css"/>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>

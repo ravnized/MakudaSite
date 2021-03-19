@@ -4,7 +4,8 @@
     <?php require './components/common_libraries.php' ?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contattaci - Makuda</title>
+    <title>Contattaci - Makuda Consulting</title>
+    <meta name="description" content="Contattaci al numero +39 345 4044802 o scrivi alla mail info@makudaconsulting.com">
     <link href="css/bello.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/contacts.css" />
     <link

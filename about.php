@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About Us</title>
+    <title>About Us - Makuda Consulting</title>
     <?php require('./components/common_libraries.php') ?>
     <link href="css/about.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>

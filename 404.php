@@ -7,7 +7,7 @@ header("HTTP/1.1 404 Not Found");
 
 <head>
     <meta charset="UTF-8"/>
-    <title>TOIA</title>
+    <title>TOIA - Makuda Consulting</title>
     <?php require('./components/common_libraries.php') ?>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <title>Privacy</title>
+    <title>Privacy - Makuda Consulting</title>
     <?php require('./components/common_libraries.php') ?>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>
     <link href="/css/menu.css" rel="stylesheet" type="text/css"/>

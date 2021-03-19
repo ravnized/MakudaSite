@@ -9,7 +9,7 @@ $view = ButtonBeforeAfter("PEDAVENA");
 <html class="has-navbar-fixed-top" lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>PEDAVENA</title>
+    <title>PEDAVENA - Makuda Consulting</title>
     <?php require('../components/common_libraries.php') ?>
     <link href="/css/work.css" rel="stylesheet" type="text/css"/>
     <link href="/css/bello.css" rel="stylesheet" type="text/css"/>

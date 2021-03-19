@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage - Makuda</title>
+    <title>Homepage - Makuda Consulting</title>
+    <meta name="description" content="Strategia, produzione e innovazione sono i 3 criteri 
+        sulla quale è stata fondata Makuda; affida la tua azienda ad una singola realtà
+        capace di unire la consulenza manageriale alla produzione di contenuti multimediali.">
     <?php require './components/common_libraries.php' ?>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
     <link href="css/bello.css" rel="stylesheet" type="text/css"/>
