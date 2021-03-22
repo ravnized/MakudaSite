@@ -37,7 +37,7 @@
     <?php require("components/menu.php"); ?>
 
     <div class="container startContainer">
-      <iframe src="https://snazzymaps.com/embed/281128" width="100%" height="600px" style="border:none;"></iframe>
+      <iframe src="https://snazzymaps.com/embed/299187" width="100%" height="600px" style="border:none;"></iframe>
       <div class="columns" style="margin-top: 3em">
         <div class="column firstChild">
           <img
