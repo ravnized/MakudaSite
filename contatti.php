@@ -3,7 +3,7 @@
   <head>
     <?php require './components/common_libraries.php' ?>
     <!-- Event snippet for Website lead conversion page -->
-    <script> gtag('event', 'conversion', {'send_to': 'AW-397981285/K_ReCN_18vwBEOXs4r0B'}); </script>
+    <!-- <script> gtag('event', 'conversion', {'send_to': 'AW-397981285/K_ReCN_18vwBEOXs4r0B'}); </script> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contattaci - Makuda Consulting</title>
