@@ -113,38 +113,19 @@ $view = ButtonBeforeAfter("BUFFEL");
         </div>
     </section>
 </div>
-<div class='container'>
-<div class="gif-firstSection">
-    <div class="columns" style="padding-top: 50px; ">
-        <div class="column">
-            <p class="frase" style="text-align: right;padding-right: 50px">
-                Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
-                Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
-                mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
-                dal mercato attuale. Sperimentare e sondare la risposta degli utenti tramite i social media è
-                stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
-            </p>
-        </div>
-        <div class="column" style="min-height: 50vh">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
-        </div>
-    </div>
-</div>
-<br><br>
-<p class="title" style="margin-bottom:10px;color: white">
-    Andiamo a <span class="makuda-color">Mille</span>
-</p>
-<p class="frase" style="color: white">
-    Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
-    abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
-    fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
-    brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
-</p>
+<div class="container">
+    <br><br>
+    <p class="title" style="margin-bottom:10px;color: white">
+        Andiamo a <span class="makuda-color">Mille</span>
+    </p>
+    <p class="frase" style="color: white">
+        Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
+        abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
+        fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
+        brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
+    </p>
 </div>
 <div class="container imgs-slide">
-
-
     <div class="columns is-mobile gif-photo">
         <div class="column is-one-third-desktop">
             <div class="img-slide">
@@ -164,41 +145,47 @@ $view = ButtonBeforeAfter("BUFFEL");
     </div>
 </div>
 
-<!--
+<div id="yellow-under-images" class="makuda-bgcolor" style="width: 100vw;"></div>
+
+<div class="makuda-bgcolor" style="height:86vh;" id="containerBriocheEmpty"></div>
+
 <div class="pubblicazione-social makuda-bgcolor" id="containerBrioche">
     <div class="container">
         <p class="title" id="innovazioneTitle">
-            <br>Innovazione
+            Innovazione
+        </p>
+        <p class="title titolo-brioche-small">
+            Brioche <span class="black-font">3D WOW</span>
         </p>
         <div class="columns-brioche">
+            <div class="brioche">
+                <div id="gif-brioche-div"><img id="gif-brioche" src="/media/gif/brioche.gif"/></div>
+                <img src="/media/gif/loader.gif" id="brioche-loader"/>
+            </div>
             <div class="columns is-vcentered">
                 <div class="column">
                     <p class="title titolo-brioche">
-                        Brioche<span class="black-font">3D WOW</span>
+                        Brioche<span class="black-font wow">3D WOW</span>
                     </p>
                 </div>
                 <div class="column">
-                    <div class="brioche">
-                        <div id="gif-brioche-div"><img id="gif-brioche" src="/media/gif/brioche.gif"/></div>
-                        <img src="/media/gif/loader.gif" id="brioche-loader"/>
-                    </div>
                 </div>
                 <div class="column">
                     <div class="didascalie-brioche">
                         <div id="didascalia-1" class="didascalia-brioche">
                             <p class="title">
-                                DUDU <span class="black-font">WOW</span>
+                                DUDU <span class="black-font wow">WOW</span>
                             </p>
                         </div>
                         <div id="didascalia-2" class="didascalia-brioche">
                             <p class="title">
-                                SECONDO <span class="black-font">WOW</span>
+                                SECONDO <span class="black-font wow">WOW</span>
                             </p>
                         </div>
                         <div id="didascalia-3" class="didascalia-brioche">
-                            <div class="title" style="width: 150%">
-                                <p class="title">
-                                    VIDEO <span class="black-font">WOW</span>
+                            <div>
+                                <p class="title" id="video-wow">
+                                    VIDEO <span class="black-font wow">WOW</span>
                                 </p>
                                 <div id="video-compare-container" style="padding-top: 250px; width: 400px">
                                     <div class="mask">
@@ -236,6 +223,25 @@ $view = ButtonBeforeAfter("BUFFEL");
 
 
 </div>
+<div class='container'>
+    <div class="gif-firstSection">
+        <div class="columns" style="padding-top: 50px; ">
+            <div class="column">
+                <p class="frase" style="text-align: right;padding-right: 50px">
+                    Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
+                    Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
+                    mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
+                    dal mercato attuale. Sperimentare e sondare la risposta degli utenti tramite i social media è
+                    stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
+                </p>
+            </div>
+            <div class="column" style="min-height: 50vh">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
 
 
@@ -258,7 +264,7 @@ $view = ButtonBeforeAfter("BUFFEL");
 
 </script>
 
--->
+
 
 <br><br>
 <?php
@@ -292,8 +298,8 @@ button('BUFFEL');
 <?php require "../components/footer.php" ?>
 <?php require "../components/works_libraries.php" ?>
 <script src="/js/libgif.js" type="text/javascript"></script>
-<!-- <script src="/js/rubbable.js" type="text/javascript"></script>
- <script src="buffelJS.js" type="text/javascript"></script>-->
+<script src="/js/rubbable.js" type="text/javascript"></script>
+ <script src="buffelJS.js" type="text/javascript"></script>
 <script src="/js/utils.js" type="text/javascript"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
