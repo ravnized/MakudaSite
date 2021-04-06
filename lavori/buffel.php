@@ -155,7 +155,8 @@ $view = ButtonBeforeAfter("BUFFEL");
             Innovazione
         </p>
         <p class="title titolo-brioche-small">
-            Brioche <span class="black-font">3D WOW</span>
+            <span class="black-font">CGI creation</span>
+            <span class="wow">process</span>
         </p>
         <div class="columns-brioche">
             <div class="brioche">
@@ -165,7 +166,7 @@ $view = ButtonBeforeAfter("BUFFEL");
             <div class="columns is-vcentered">
                 <div class="column">
                     <p class="title titolo-brioche">
-                        Brioche<span class="black-font wow">3D WOW</span>
+                        CGI creation <span class="black-font wow">process</span> 
                     </p>
                 </div>
                 <div class="column">
@@ -174,18 +175,27 @@ $view = ButtonBeforeAfter("BUFFEL");
                     <div class="didascalie-brioche">
                         <div id="didascalia-1" class="didascalia-brioche">
                             <p class="title">
-                                DUDU <span class="black-font wow">WOW</span>
+                                Modellazione
+                                <span class="black-font wow-small">
+                                    Dallo studio delle forme all'extrude e bevel.
+                                    Il primo processo di creazione
+                                </span>
                             </p>
                         </div>
                         <div id="didascalia-2" class="didascalia-brioche">
                             <p class="title">
-                                SECONDO <span class="black-font wow">WOW</span>
+                                Texturing
+                                <span class="black-font wow-small">
+                                    Il realismo nasce con lo studio dei materiali e la pittura digitale.
+                                    Ogni piccolo dettaglio è importante affinchè il modello si inserisca
+                                    bene nella scena
+                                </span>
                             </p>
                         </div>
                         <div id="didascalia-3" class="didascalia-brioche">
                             <div>
                                 <p class="title" id="video-wow">
-                                    VIDEO <span class="black-font wow">WOW</span>
+                                    Compositing e <span class="black-font wow">final render</span>
                                 </p>
                                 <div id="video-compare-container" style="padding-top: 250px; width: 400px">
                                     <div class="mask">
