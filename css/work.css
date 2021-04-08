@@ -987,7 +987,7 @@ div.mask {
 }
 
 #didascalia-1 {
-  right: -15%;
+  right: -12%;
 }
 
 .titolo-brioche, .titolo-brioche-small {
@@ -1044,6 +1044,9 @@ body {
 .wow-small {
   display: block;
   font-size: 18px;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-top: 10px;
 }
 
 #innovazioneTitle {

@@ -85,7 +85,7 @@ $(window).on("scroll resize", function (e) {
         }
         disableScroll();
         isAutoScrolling++;
-        let x = window.innerWidth < 1280 ? "0" : "50px";
+        let x = window.innerWidth < 1280 || newBriocheStep == 1 ? "0" : "50px";
         let y = window.innerWidth < 1280 ? "0" : "50%";
         if(actualBriocheStep == 0 && newBriocheStep == 1)
             gsap.fromTo(

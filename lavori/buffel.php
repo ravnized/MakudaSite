@@ -155,8 +155,8 @@ $view = ButtonBeforeAfter("BUFFEL");
             Innovazione
         </p>
         <p class="title titolo-brioche-small">
-            <span class="black-font">CGI creation</span>
-            <span class="wow">process</span>
+            <span class="black-font">CGI process</span>
+            <span class=""></span>
         </p>
         <div class="columns-brioche">
             <div class="brioche">
@@ -166,7 +166,7 @@ $view = ButtonBeforeAfter("BUFFEL");
             <div class="columns is-vcentered">
                 <div class="column">
                     <p class="title titolo-brioche">
-                        CGI creation <span class="black-font wow">process</span> 
+                        CGI <span class="black-font">process</span> 
                     </p>
                 </div>
                 <div class="column">
@@ -195,7 +195,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                         <div id="didascalia-3" class="didascalia-brioche">
                             <div>
                                 <p class="title" id="video-wow">
-                                    Compositing e <span class="black-font wow">final render</span>
+                                    Final render
                                 </p>
                                 <div id="video-compare-container" style="padding-top: 250px; width: 400px">
                                     <div class="mask">
