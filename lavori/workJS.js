@@ -318,7 +318,8 @@ $(window).on("scroll resize", async function () {
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
 function preventDefault(e) {
-  e.preventDefault();
+  if (e.cancelable)
+    e.preventDefault();
 }
 
 function preventDefaultForScrollKeys(e) {

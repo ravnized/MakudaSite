@@ -395,6 +395,10 @@ VideoJS Custom
   text-align: center;
 }
 
+.gif-firstSection .frase {
+  color: white;
+}
+
 .gif-cellulari .imageVideo {
   background-color: rgb(255, 197, 32);
   padding-top: 200% !important;
@@ -897,6 +901,11 @@ div.mask {
   );
 }
 
+#frase-mondo {
+  text-align: right;
+  padding-right: 50px;
+}
+
 .makuda-home-link--contacts.is-loaded
   .makuda-home-link.is-hover
   span:first-child {
@@ -927,7 +936,7 @@ div.mask {
 }
 
 .columns-brioche {
-  height: 94vh;
+  height: fit-content;
   position: relative;
   top: 20px;
 }
@@ -986,9 +995,17 @@ div.mask {
   width: fit-content;
 }
 
-#didascalia-1 {
-  right: -12%;
+#column-didascalie {
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 20px;
 }
+
+/* #didascalia-1 {
+  right: -12%;
+} */
 
 .titolo-brioche, .titolo-brioche-small {
   position: relative;
@@ -1063,29 +1080,6 @@ body {
 }
 
 /* RESPONSIVE */
-
-@media screen and (max-height: 800px) {
-  #innovazioneTitle {
-    margin-bottom: 0;
-    padding-top: 20px;
-  }
-
-  .titolo-brioche-small {
-    display: none;
-    margin-top: 15px;
-  }
-
-  #video-wow {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .wow-small {
-    font-size: 17px;
-    letter-spacing: 4px;
-  }
-}
 
 @media only screen and (max-width: 1024px) {
   .makuda-home-link--contacts,
@@ -1313,6 +1307,7 @@ body {
     padding: 10px;
   }
 }
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   .makuda-home-link--contacts,
   .rightBandSign,
@@ -1321,6 +1316,54 @@ body {
   }
   .progress_wrap {
     display: none !important;
+  }
+}
+
+/* Brioche */
+
+.container-brioche {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.jsgif > canvas {
+  max-height: 70vh;
+  margin-left: -20px;
+}
+
+@media screen and (max-height: 800px) and (max-width: 720px) {
+  #innovazioneTitle {
+    margin-bottom: 0;
+    padding-top: 0px;
+  }
+
+  .titolo-brioche-small {
+    display: none;
+    margin-top: 15px;
+  }
+
+  #video-wow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .wow-small {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .jsgif > canvas {
+    margin-top: 0;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (min-height: 780px) and (min-width: 1280px) {
+  .jsgif > canvas {
+    margin-top: 5vh;
   }
 }
 
@@ -1447,6 +1490,22 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+  #andiamo-a-mille-title {
+    margin-left: -0.75rem;
+  }
+  
+  #frase-mondo {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .gif-firstSection {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+
   .jsgif > canvas {
     max-width: 80vw;
     max-height: 37vh;
@@ -1482,6 +1541,9 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    height: fit-content;
+    margin-bottom: auto;
+    margin-top: auto;
   }
 
   #didascalia-1, #didascalia-2 {
@@ -1497,7 +1559,7 @@ body {
 
   #innovazioneTitle {
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 0px;
   }
 
   #video-wow {
@@ -1506,5 +1568,31 @@ body {
 
   .title {
     font-size: 1.8em !important;
+  }
+
+  .didascalie-brioche {
+    height: 100%;
+  }
+
+  #containerBrioche {
+    margin-top: 7vh;
+    box-sizing: content-box;
+  }
+
+  .centerVerticallyFixed {
+    top: unset !important;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-height: 700px) {
+  .titolo-brioche-small {
+    margin-top: 3vh;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-height: 800px) {
+  .titolo-brioche-small {
+    margin-top: 5vh;
   }
 }

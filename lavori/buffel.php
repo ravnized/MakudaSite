@@ -22,15 +22,15 @@ $view = ButtonBeforeAfter("BUFFEL");
 <?php require('../components/libraries_after_body.php') ?>
 <style>
     #img1 {
-        background-image: url(/media/img/lavori/3_mille_giri/1.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/1_small.jpg);
     }
 
     #img2 {
-        background-image: url(/media/img/lavori/3_mille_giri/2.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/2_small.jpg);
     }
 
     #img3 {
-        background-image: url(/media/img/lavori/3_mille_giri/3.jpg);
+        background-image: url(/media/img/lavori/3_mille_giri/3_small.jpg);
     }
 </style>
 <?php require("../components/navbar.php"); ?>
@@ -81,7 +81,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                         <br/>
                         <div class="columns is-6">
                             <div class="column is-two-thirds">
-                                <p style="color: white;">
+                                <p style="color: white;" class="frase" id="frase-brand">
                                     Lʼazienda nel 2020 si è rivolta a noi per far si che il brand Buffel fosse
                                     riconoscibile e acquistasse man mano nel tempo riconoscibilità. Per questa sfida ci
                                     siamo immersi nel mercato della pasticceria e gelateria preparando insieme alla
@@ -115,15 +115,17 @@ $view = ButtonBeforeAfter("BUFFEL");
 </div>
 <div class="container">
     <br><br>
-    <p class="title" style="margin-bottom:10px;color: white">
-        Andiamo a <span class="makuda-color">Mille</span>
-    </p>
-    <p class="frase" style="color: white">
-        Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
-        abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
-        fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
-        brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
-    </p>
+    <div class="column">
+        <p class="title" style="margin-bottom:10px;color: white" id="andiamo-a-mille-title">
+            Andiamo a <span class="makuda-color">Mille</span>
+        </p>
+        <p class="frase" style="color: white" id="frase-andiamo-a-mille">
+            Lʼidentità di Buffel risiede molto nei propri prodotti. Ed è così che dopo un lungo periodo di ricerche
+            abbiamo creato insieme alla proprietà la “Millegiri”. Si tratta di una brioche iper sfogliata croccante
+            fuori e soffice dentro, decorata con colori diversi. Ad oggi da Buffel non si va a fare colazione per una
+            brioche, ma si va per la propria “millegiri” preferita. Questo è solo il primo dei prodotto legati Buffel.
+        </p>
+    </div>
 </div>
 <div class="container imgs-slide">
     <div class="columns is-mobile gif-photo">
@@ -150,7 +152,7 @@ $view = ButtonBeforeAfter("BUFFEL");
 <div class="makuda-bgcolor" style="height:86vh;" id="containerBriocheEmpty"></div>
 
 <div class="pubblicazione-social makuda-bgcolor" id="containerBrioche">
-    <div class="container">
+    <div class="container-brioche">
         <p class="title" id="innovazioneTitle">
             Innovazione
         </p>
@@ -163,7 +165,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                 <div id="gif-brioche-div"><img id="gif-brioche" src="/media/gif/brioche.gif"/></div>
                 <img src="/media/gif/loader.gif" id="brioche-loader"/>
             </div>
-            <div class="columns is-vcentered">
+            <div class="columns is-vcentered" id="column-didascalie">
                 <div class="column">
                     <p class="title titolo-brioche">
                         CGI <span class="black-font">process</span> 
@@ -206,7 +208,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                                         >
                                             <source
 
-                                                    src='/media/video/works/Buffel_VFX.mp4'>
+                                                    src='/media/video/works/Buffel_VFX_small.mp4'>
 
                                         </video>
                                     </div>
@@ -218,7 +220,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                                             muted
                                         >
                                             <source
-                                                    src='/media/video/works/Buffel_NoVFX.mp4'>
+                                                    src='/media/video/works/Buffel_NoVFX_small.mp4'>
 
                                         </video>
                                     </div>
@@ -237,7 +239,7 @@ $view = ButtonBeforeAfter("BUFFEL");
     <div class="gif-firstSection">
         <div class="columns" style="padding-top: 50px; ">
             <div class="column">
-                <p class="frase" style="text-align: right;padding-right: 50px">
+                <p class="frase" id="frase-mondo">
                     Nel mondo sono presenti più di 100.000 gelaterie. Perché dovrebbero ricordarsi proprio di noi?
                     Questa è la domanda da cui abbiamo iniziato a lavorare. La risposta di Buffel è di unire il
                     mondo della pasticceria a quello della gelaterie, creando gusti variegati al momento differenti
@@ -245,7 +247,7 @@ $view = ButtonBeforeAfter("BUFFEL");
                     stata la chiave e i risultati sono sorprendenti sotto il punto di vista del fatturato.
                 </p>
             </div>
-            <div class="column" style="min-height: 50vh">
+            <div class="column" style="min-height: 50vh" id="elfsight-script">
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-c2df58ca-e01b-4a25-a267-584f337a176c"></div>
             </div>
@@ -309,7 +311,7 @@ button('BUFFEL');
 <?php require "../components/works_libraries.php" ?>
 <script src="/js/libgif.js" type="text/javascript"></script>
 <script src="/js/rubbable.js" type="text/javascript"></script>
- <script src="buffelJS.js" type="text/javascript"></script>
+ <script src="buffelJS.js?v=1.13" type="text/javascript"></script>
 <script src="/js/utils.js" type="text/javascript"></script>
 <script src="workJS.js" type="text/javascript"></script>
 <script src="/js/menu.js" type="text/javascript"></script>
