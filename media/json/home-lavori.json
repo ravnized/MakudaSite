@@ -88,14 +88,14 @@
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
   },
   {
-    "id": "LEGABASKET",
+    "id": "SHOPPING",
     "case-study": false,
     "produzione": true,
-    "link": "lba_interviste",
-    "image": "legabasket_copertina.png",
+    "link": "shopping_live",
+    "image": "Matteo_Toia.jpg",
     "fragmented-image": "img1.png",
-    "title": "LEGA SERIE A",
-    "subtitle": "Dirette Rai",
+    "title": "Shopping-Live",
+    "subtitle": "Commercial",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
   },
   {
@@ -131,5 +131,4 @@
     "subtitle": "Corporate",
     "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere."
   }
-
 ]
