@@ -48,10 +48,16 @@ $(document).ready(function () {
     $(".fading-images ").css("height", heightImage + "px");
   }
 
-  $(".fading-images.column.fade-in-right-animation").css(
-    "height",
-    $(".fading-image").height() + "px"
-  );
+  $(".fading-images .fading-image img").one("load", function() {
+    $(".fading-images").css(
+      "height",
+      $(".fading-image").height() + "px"
+    );
+  }).each(function() {
+    if(this.complete) 
+        $(this).load();
+  });
+
   $(".card-image.wrapper-testimonial").css(
     "height",
     $(".makuda-testimonials-item").height() + "px"
