@@ -30,8 +30,8 @@
             per raggiungere i propri obiettivi senza timore degli ostacoli”
         </p>
         <p class="start-text text-light">
-            Makuda è in un processo di costante crescita che ci porta ad affrontare
-            ogni realtà in maniera positiva.<br>
+            Fondata da Simone Santacroce e Stefano D’onofrio, Makuda è in un processo di<br>
+            costante crescita che ci porta ad affrontare ogni realtà in maniera positiva.<br>
             Crescere per noi è imparare a saper offrire le giuste sfumature di colore
             per un obiettivo finale<br>
             concreto, che sia sempre di successo e di qualità.
@@ -74,19 +74,6 @@
         <div class="person-container">
             <img src="/media/img/team/1.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="https://www.facebook.com/sdon92">Facebook</a></li>
-                <li><a class="person-link" href="https://www.linkedin.com/in/stefano-d%E2%80%99onofrio-8553661a3/">LinkedIn</a>
-                </li>
-            </ul>
-            <div style="flex: 1"></div>
-            <div class="person-infos">
-                <h5 style="font-size: 30px;">Stefano D'onofrio</h5>
-                <h6 style="font-size: 26px;">Founder & Manager</h6>
-            </div>
-        </div>
-        <div class="person-container">
-            <img src="/media/img/team/2.jpg" class="person-image">
-            <ul class="person-links">
                 <li><a class="person-link" href="https://www.instagram.com/simone_santacroce_/">Instagram</a></li>
                 <li><a class="person-link" href="https://www.linkedin.com/in/simone-santacroce-5a42431a4/">LinkedIn</a>
                 </li>
@@ -98,18 +85,7 @@
             </div>
         </div>
         <div class="person-container">
-            <img src="/media/img/team/3.jpg" class="person-image">
-            <ul class="person-links">
-                <li><a class="person-link" href="https://www.linkedin.com/in/simone-bioli-940176165/">LinkedIn</a></li>
-            </ul>
-            <div style="flex: 1"></div>
-            <div class="person-infos">
-                <h5 style="font-size: 30px;">Simone Bioli</h5>
-                <h6 style="font-size: 26px;">Photographer & Videomaker</h6>
-            </div>
-        </div>
-        <div class="person-container">
-            <img src="/media/img/team/4.jpg" class="person-image">
+            <img src="/media/img/team/2.jpg" class="person-image">
             <ul class="person-links">
                 <li><a class="person-link" href="https://www.instagram.com/taras.film/">Instagram</a></li>
                 <li><a class="person-link" href="https://www.linkedin.com/in/taras-snegovoy-924288203/">LinkedIn</a>
@@ -122,19 +98,45 @@
             </div>
         </div>
         <div class="person-container">
-            <img src="/media/img/team/5.jpg" class="person-image">
+            <img src="/media/img/team/3.jpg" class="person-image">
             <ul class="person-links">
-                <li><a class="person-link" href="https://www.linkedin.com/in/riccardo-bitonto-1333471a9/">LinkedIn</a>
+                <li><a class="person-link" href="https://www.instagram.com/matthias_di_giorno/">Instagram</a></li>
+            </ul>
+            <div style="flex: 1"></div>
+            <div class="person-infos">
+                <h5 style="font-size: 30px;">Matthias Di Giorno</h5>
+                <h6 style="font-size: 26px;">Filmmaker & VFX Artist</h6>
+            </div>
+        </div>
+        <div class="person-container">
+            <img src="/media/img/team/4.jpg" class="person-image">
+            <ul class="person-links">
+                <li><a class="person-link" href="https://www.instagram.com/fam.famu/">Instagram</a></li>
+                <li><a class="person-link" href="https://www.linkedin.com/in/alessandro-famulari-644681111/">LinkedIn</a>
                 </li>
             </ul>
             <div style="flex: 1"></div>
             <div class="person-infos">
-                <h5 style="font-size: 30px;">Riccardo Bitonto</h5>
-                <h6 style="font-size: 26px;">Designer</h6>
+                <h5 style="font-size: 30px;">Alessandro Famulari</h5>
+                <h6 style="font-size: 26px;">Filmmaker & Fotographer</h6>
             </div>
         </div>
         <div class="person-container">
-            <img src="/media/img/team/6.jpg" class="person-image">
+            <img src="/media/img/team/5.jpg" class="person-image">
+            <ul class="person-links">
+                <li><a class="person-link" href="https://www.behance.net/gaiadetata2/moodboards">Behance</a></li>
+                <li><a class="person-link" href="https://www.instagram.com/detagaia/">Instagram</a>
+                </li>
+            </ul>
+            <div style="flex: 1"></div>
+            <div class="person-infos">
+                <h5 style="font-size: 30px;">Gaia De Tata</h5>
+                <h6 style="font-size: 26px;">Graphic designer
+</h6>
+            </div>
+        </div>
+        <div class="person-container">
+            <img src="/media/img/team/6.jpg" class="person-image" style="margin-top: -83px">
             <ul class="person-links">
                 <li><a class="person-link" href="https://www.instagram.com/armagaluf_/">Instagram</a></li>
                 <li><a class="person-link" href="https://www.linkedin.com/in/armando-aspesani-4592a0129/">LinkedIn</a>

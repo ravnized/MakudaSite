@@ -194,7 +194,7 @@ async function animateShowValori(index) {
             }
         case 1:
             if ($(window).width() < 1024) {
-                console.log('left');
+                // console.log('left');
                 widthLine = marginLeft;
                 marginLeftLine = -containerLeft - 60;
                 marginLeftText = -50;
@@ -413,7 +413,7 @@ async function animateHideValori(index, zoomOutLines = false) {
 }
 
 if ($(window).width() < 1024) {
-    console.log('br')
+    // console.log('br')
     $('#brTime').append("<br>")
 }
 
@@ -449,29 +449,29 @@ async function resizeTeam(animation = true) {
         newWidth = $("#team-container").width() / 2.0;
     }
 
-    let newSize1 = {width: newWidth, height: newWidth * originalSize1.height / originalSize1.width};
-    let newSize2 = {width: newWidth, height: newWidth * originalSize2.height / originalSize2.width};
+    const newSize1 = {width: newWidth, height: newWidth * originalSize1.height / originalSize1.width};
+    const newSize2 = {width: newWidth, height: newWidth * originalSize2.height / originalSize2.width};
 
     $("#team-container").css({"height": (newSize1.height + newSize2.height - 125) + "px"});
 
     $(".person-container:eq(0), .person-container:eq(2), .person-container:eq(4)").css({
-        "width": newSize1.width + "px",
-        "height": newSize1.height + "px"
-    });
-    $(".person-container:eq(1), .person-container:eq(3), .person-container:eq(5)").css({
         "width": newSize2.width + "px",
         "height": newSize2.height + "px"
     });
+    $(".person-container:eq(1), .person-container:eq(3), .person-container:eq(5)").css({
+        "width": newSize1.width + "px",
+        "height": newSize1.height + "px"
+    });
     $(".person-container:eq(1), .person-container:eq(4)").css({"left": newWidth + "px"});
     $(".person-container:eq(2), .person-container:eq(5)").css({"left": (newWidth * 2) + "px"});
-    $(".person-container:eq(3), .person-container:eq(5)").css({"top": newSize1.height + "px"});
-    $(".person-container:eq(4)").css({"top": newSize2.height + "px"});
+    $(".person-container:eq(4)").css({"top": newSize1.height + "px"});
+    $(".person-container:eq(3), .person-container:eq(5)").css({"top": newSize2.height + "px"});
 
     if(oneTime){
         $('.person-container').each(function () {
             heightTotal += $(this).height();
             $('#heightJS').css({"height": heightTotal / 3 + 'px'})
-            console.log(heightTotal)
+            // console.log(heightTotal)
             oneTime = false;
         });
 
