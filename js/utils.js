@@ -9,8 +9,7 @@ function sleep(ms) {
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
-    if (e.cancelable)
-        e.preventDefault();
+    e.preventDefault();
 }
 
 function preventDefaultForScrollKeys(e) {

@@ -77,6 +77,10 @@
         }
       }
     </style>
+
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-397981285/K_ReCN_18vwBEOXs4r0B'});
+    </script>
   </head>
   <body style="background-color:#111; max-height: unset !important;">
     <?php require('./components/libraries_after_body.php') ?>

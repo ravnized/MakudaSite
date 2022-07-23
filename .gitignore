@@ -1,6 +1,12 @@
-
 js/spot.js
 media/gif/Home Page Cell Buffel.gif
 media/gif/Web Desktop Buffel.gif
 *.mp4
 *.m4v
+*.mp3
+backend/php_errorlog
+css/.DS_Store
+*.DS_Store
+php_errorlog
+media/Audio/._AudioToia.mp3
+media/Audio/._AudioCiroc.mp3

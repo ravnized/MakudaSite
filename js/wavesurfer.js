@@ -2457,13 +2457,13 @@ var _min = _interopRequireDefault(__webpack_require__(/*! ./min */ "./src/util/m
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * Get the largest absolute value in an array
- *
- * @param   {Array} values Array of numbers
- * @returns {Number} Largest number found
- * @example console.log(max([-3, 2, 1]), max([-3, 2, 4])); // logs 3 4
- * @since 4.3.0
+/**
+ * Get the largest absolute value in an array
+ *
+ * @param   {Array} values Array of numbers
+ * @returns {Number} Largest number found
+ * @example console.log(max([-3, 2, 1]), max([-3, 2, 4])); // logs 3 4
+ * @since 4.3.0
  */
 function absMax(values) {
   var max = (0, _max.default)(values);

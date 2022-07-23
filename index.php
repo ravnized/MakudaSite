@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage - Makuda Consulting</title>
+    <title>Homepage - Makuda</title>
     <meta name="description" content="Strategia, produzione e innovazione sono i 3 criteri 
         sulla quale è stata fondata Makuda; affida la tua azienda ad una singola realtà
         capace di unire la consulenza manageriale alla produzione di contenuti multimediali.">

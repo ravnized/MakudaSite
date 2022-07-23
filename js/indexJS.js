@@ -53,9 +53,6 @@ $(document).ready(function () {
       "height",
       $(".fading-image").height() + "px"
     );
-  }).each(function() {
-    if(this.complete) 
-        $(this).load();
   });
 
   $(".card-image.wrapper-testimonial").css(
