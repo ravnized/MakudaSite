@@ -136,7 +136,7 @@
             </div>
         </div>
         <div class="person-container">
-            <img src="/media/img/team/6.jpg" class="person-image" style="margin-top: -83px">
+            <img id="armando" src="/media/img/team/6.jpg" class="person-image">
             <ul class="person-links">
                 <li><a class="person-link" href="https://www.instagram.com/armagaluf_/">Instagram</a></li>
                 <li><a class="person-link" href="https://www.linkedin.com/in/armando-aspesani-4592a0129/">LinkedIn</a>
@@ -151,7 +151,7 @@
     </div>
 </div>
 
-<div class=" has-text-centered makuda-bgcolor" style="margin-top: -100px" id="containerCounter">
+<div class=" has-text-centered makuda-bgcolor" style="margin-top: 40px" id="containerCounter">
     <div class="container">
         <div style="display: flex;">
             <div style="flex: 1"></div>

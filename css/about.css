@@ -388,6 +388,10 @@ div > .uno {
   z-index: -1;
 }
 
+/* #armando {
+  margin-top: -83px
+} */
+
 .person-links {
   opacity: 0;
   width: 100%;
@@ -631,9 +635,9 @@ div > .uno {
     margin-bottom: 0;
   }
 
-  .has-text-centered.makuda-bgcolor {
+  /* .has-text-centered.makuda-bgcolor {
     margin-top: 0 !important;
-  }
+  } */
 
   #containerCounter > div {
     padding-top: 100px !important;
