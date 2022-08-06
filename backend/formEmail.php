@@ -8,12 +8,12 @@ $fistName = '';
 $lastName = '';
 $email = '';
 $message = '';
-$mail_makuda = 'info@makudaconsulting.com';
+$mail_makuda = 'info@makuda.black';
 $mail_object = 'Form Contact from makudaConsulting site';
 if (!$captcha) {
     echo -1;
 }else{
-    $secretKey = "6LdPUN8ZAAAAAIeuWpVjrtIv3NoXTj0VQZQX_Mks";
+    $secretKey = "6LfhzVAhAAAAAMtvR4kik8zDlEdN_7BqutLOaNDo";
     $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
     $response = file_get_contents($url);
     $responseKeys = json_decode($response,true);
